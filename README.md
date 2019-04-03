@@ -1,7 +1,7 @@
-# Code Study Project
-* Test1
-* Test2
-* Test3
+# Study
+* 1. Python
+* 2. Javascript
+* 3. Java
 ```
 code block
 ```
