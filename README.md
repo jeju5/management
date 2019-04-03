@@ -10,6 +10,7 @@
   * React.js
   * GraphQL.js
 * Java
+  * Elements of Programming Interviews
   * Spring Framework
 * DB
   * MySQL
