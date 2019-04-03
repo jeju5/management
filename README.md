@@ -2,6 +2,3 @@
 * Python
 * Javascript
 * Java
-```
-code block
-```
