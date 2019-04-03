@@ -11,3 +11,6 @@
   * GraphQL.js
 * Java
   * Spring Framework
+* Tools
+  * Docker & Kubernates
+  * Shell Scripting
