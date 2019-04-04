@@ -2,14 +2,17 @@
 
 ## Languages and Tools
 * Python
+  * Python Basics
   * Python for Data Structures, Algorithms, and Interviews
   * Elements of Programming Interviews
 * Javascript
-  * Javascript Language
+  * Javascript Basics
   * Node.js
-  * React.js
-  * GraphQL.js
+  * React
+  * Redux
+  * GraphQL
 * Java
+  * Javascript Basics
   * Elements of Programming Interviews
   * Spring Framework
 * DB
