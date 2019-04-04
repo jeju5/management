@@ -27,5 +27,5 @@
   * TED
   * Modern Family
 * Exercise
-  * Running
+  * Routine
   * Boxing
