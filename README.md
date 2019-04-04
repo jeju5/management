@@ -26,3 +26,6 @@
 * English
   * TED
   * Modern Family
+* Exercise
+  * Running
+  * Boxing
