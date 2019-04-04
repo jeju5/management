@@ -31,3 +31,5 @@
 * Exercise
   * Routine
   * Boxing
+* Meal
+* Computer Management
