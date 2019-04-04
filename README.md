@@ -1,6 +1,6 @@
 # Study
 
-## Languages and Tools
+## Topics
 * Python
   * Python Basics
   * Python for Data Structures, Algorithms, and Interviews
@@ -21,3 +21,5 @@
 * Tool
   * Docker & Kubernates
   * Shell Scripting
+* Mathematics
+  * Discrete Mathematics
