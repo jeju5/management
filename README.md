@@ -6,7 +6,7 @@
   * Python for Data Structures, Algorithms, and Interviews
   * Elements of Programming Interviews
 * Java
-  * Javascript Basics
+  * Java Basics
   * Elements of Programming Interviews
   * Spring Framework
 * Javascript
