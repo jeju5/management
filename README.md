@@ -10,7 +10,7 @@
   * Elements of Programming Interviews
   * Spring Framework
 * Javascript
-  * Javascript Basics  aa
+  * Javascript Basics
   * Node.js
   * React
   * Redux
