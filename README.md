@@ -15,6 +15,8 @@
   * Javascript Basics
   * Elements of Programming Interviews
   * Spring Framework
+* Ocaml
+  * Functional Programming
 * DB
   * SQL: MySQL
   * NoSQL: DynamoDB
