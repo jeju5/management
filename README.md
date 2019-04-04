@@ -13,7 +13,8 @@
   * Elements of Programming Interviews
   * Spring Framework
 * DB
-  * MySQL
+  * SQL: MySQL
+  * NoSQL: DynamoDB
 * Tool
   * Docker & Kubernates
   * Shell Scripting
