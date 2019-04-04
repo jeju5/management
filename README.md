@@ -16,6 +16,7 @@
   * Elements of Programming Interviews
   * Spring Framework
 * Ocaml
+  * Ocaml Basics
   * Functional Programming
 * DB
   * SQL: MySQL
