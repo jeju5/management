@@ -16,8 +16,8 @@
   * Redux
   * GraphQL
 * DB
-  * SQL: MySQL
-  * NoSQL: DynamoDB
+  * MySQL
+  * DynamoDB
 * Tool
   * Docker & Kubernates
   * Shell Scripting
@@ -29,9 +29,3 @@
 * Exercise
   * Routine
   * Boxing
-
-<pre>
-JFIE                13
-Fef                 12
-afeEre              11
-</pre>
