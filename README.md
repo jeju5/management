@@ -1,6 +1,6 @@
 # Develop
 
-## Topics
+## CS
 * Python
   * Python Basics
   * Python for Data Structures, Algorithms, and Interviews
@@ -23,6 +23,8 @@
   * Shell Scripting
 * Mathematics
   * Discrete Mathematics
+  
+## Life
 * English
   * TED
   * Modern Family
