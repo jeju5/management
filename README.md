@@ -23,3 +23,6 @@
   * Shell Scripting
 * Mathematics
   * Discrete Mathematics
+* English
+  * TED
+  * Modern Family
