@@ -18,18 +18,17 @@
 * DB
   * MySQL
   * DynamoDB
-* Tool
+* AWS
+* Tools
   * Docker & Kubernates
   * Shell Scripting
-* Mathematics
-  * Discrete Mathematics
   
 ## Life
 * English
   * TED
   * Modern Family
-* Exercise
-  * Routine
+* Balance
+  * Meal
+  * Workout
   * Boxing
-* Meal
-* Computer Management
+  * Device
