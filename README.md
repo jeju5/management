@@ -24,9 +24,8 @@
   * Shell Scripting
   
 ## Life
-* Balance
-  * Meal
-  * Workout
-  * Boxing
-  * Device
-  * English
+* Meal
+* Workout
+* Boxing
+* Device
+* English
