@@ -27,5 +27,5 @@
 * Meal
 * Workout
 * Boxing
-* Device
+* Device Management
 * English
