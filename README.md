@@ -24,11 +24,9 @@
   * Shell Scripting
   
 ## Life
-* English
-  * TED
-  * Modern Family
 * Balance
   * Meal
   * Workout
   * Boxing
   * Device
+  * English
