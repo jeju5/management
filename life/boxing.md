@@ -63,67 +63,67 @@
 
 * slip
   * left-slip
-    * jab
-      1	(left-slip) jab (left-slip)
-      2 (left-slip) jab two (right-roll)
-  * left-slip &two
-    *	(left-slip) & two (left-dash)
-    *	(left-slip) & two two (left-dash)
-    *	(left-slip) left-hook (left-slip)
-    * (left-slip) left-hook right-hook (right-roll)
+    * left-slip left-hook
+      *	(left-slip) left-hook (left-roll)
+      * (left-slip) left-hook right-hook (right-roll)
+    * left-slip left-upper
+      *	(left-slip) left-upper (left-roll)
+      * (left-slip) left-upper two (right-slip)
+    * left-slip &two
+      *	(left-slip) & two (left-dash)
+      *	(left-slip) & two two (left-dash)
   * right-slip
-    *	(right-slip) jab (left-slip)
-    * (right-slip) jab two (right-slip)
-    * (right-slip) 
-    * (right-slip
-    *	(right-slip) two (right-slip)
-    *	(right-slip) two left-hook (left-roll)
+    * right-slip jab
+      *	(right-slip) jab (left-slip)
+      * (right-slip) jab jab (left-slip)
+    * (right-slip) & jab
+      * (right-slip) & jab (left-slip)
+      *	(right-slip) & jab two (right-slip)
+    * (right-slip) & left-hook
+      * (right-slip) & left-hook (left-roll)
+      * (right-slip) & left-hook right-hook (right-roll)
+    *	(right-slip) two
+      * (right-slip) two (right-slip)
+      * (right-slip) two left-hook (left-roll)
+    * (right-slip) right-hook
+      * (right-slip) right-hook (right-roll)
+      * (right-slip) right-hook left-hook (left-roll)
     
-    *	(left-slip) & two (left-dash)
-    *	(left-slip) & two two (left-dash)
-    *	(left-slip) left-hook (left-slip)
-    * left-hook right-hook (right-roll)
- 
- 
- *	(right-slip) two (right-slip) two left-hook (right-roll)
-  *	(right-slip) right-hook (right-slip) right-hook left-hook (left-roll)
-  
-  
-  (left-slip) & two left-upper (left-roll)
-  *	(right-slip) & jab (left-slip) / (right-slip) & jab two (right-roll)
+ * roll
+   1.	(left-roll) left-upper (left-roll) / (left-roll) left-upper two (right-roll)
+   2.	(right-roll) two (right-roll) / (right-roll) two left-upper (left-roll)
+   3.	(left-roll) bab (left-roll) / (left-roll) bab two (right-roll)
+   4.	(right-roll) boo (right-roll) / (right-roll) boo left-upper (left-roll)
 
-* roll
-  1.	(left-roll) left-upper (left-roll) / (left-roll) left-upper two (right-roll)
-  2.	(right-roll) two (right-roll) / (right-roll) two left-upper (left-roll)
-  3.	(left-roll) bab (left-roll) / (left-roll) bab two (right-roll)
-  4.	(right-roll) boo (right-roll) / (right-roll) boo left-upper (left-roll)
+ * pivot
+   1.	(left-pivot) & jab / (left-pivot) & jab two / 
+   (left-pivot) & left-hook / (left-pivot) & left-body left-hook
+   (left-slip) (left-pivot) jab jab
+   2.	
+   3.
+   4.
 
-* pivot
-  1.	(left-pivot) & jab / (left-pivot) & jab two / 
-  (left-pivot) & left-hook / (left-pivot) & left-body left-hook
-  (left-slip) (left-pivot) jab jab
-  2.	
-  3.
-  4.
+ * circle
+   1.
+   2.
+   3.	(left-slip) (left-pivot)
+   
+## Signature
+ * Mayweather
+   * left-hook left-upper left-hook / two left-hook two left-block / two left-hook two left-shoulder / two left-hook two
+   right-slip left-roll / two left-hook two sway / two left-hook two jab jab jab
 
-* circle
-  1.
-  2.
-  3.	(left-slip) (left-pivot)
+ * Fort
+   * right-upper left-hook (slip-left) left-body left-hook (left-roll) jab jab
 
-* Mayweather
-  * left-hook left-upper left-hook / two left-hook two left-block / two left-hook two left-shoulder / two left-hook two right-slip left-roll / two left-hook two sway / two left-hook two jab jab jab
+ * Pacquiao
+   * jab two left-upper right-upper left-upper /
+   * jab two jab two jab (slip-left) jab two (slip-right) two (right-roll) & left-hook
 
-* Fort
-  * right-upper left-hook (slip-left) left-body left-hook (left-roll) jab jab
-
-* Pacquiao
-  * jab two left-upper right-upper left-upper /
-  * jab two jab two jab (slip-left) jab two (slip-right) two (right-roll) & left-hook
-
-* Lomachenko
-  * (back right-roll) (left-roll) (pivot-left) jab jab
-  * (right-roll) (left-roll) (pivot-left) jab jab
-  * (left-block) (left-pivot) left-hook
-  * (right-block) (right-pivot) two jab right-upper jab two left-body
-  * jab right-upper jab two (slip-right) (pivot-right)
+ * Lomachenko
+   * (back right-roll) (left-roll) (pivot-left) jab jab
+   * (right-roll) (left-roll) (pivot-left) jab jab
+   * (left-block) (left-pivot) left-hook
+   * (right-block) (right-pivot) two jab right-upper jab two left-body
+   * jab right-upper jab two (slip-right) (pivot-right)
+   * jab (left-dash) & left-hook
