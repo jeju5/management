@@ -32,42 +32,65 @@
   * right-hook
   * right-body
 * Defense
-  * feet  : step, pivot,	switch
+  * move  : step, pivot,	turn, dash-turn, switch
   * evade : slip, roll, sway
   * hand  : block, shoulder
 
 ## COMBO SETS
 * jab jab
-  1.	jab jab jab two
-  2.	jab jab two left-hook
-  3.	jab jab bab two
-  4.	jab jab boo left-hook
+  *	jab jab jab two
+  *	jab jab two left-hook
+  *	jab jab right-hook left-hook
+  *	jab jab bab two
 
 * jab two
-  1.	jab two jab two
-  2.	jab two left-hook left-upper
-  3.	jab two left-hook right-hook
-  4.	jab two left-upper boo
+  *	jab two jab two
+  *	jab two left-hook right-hook
+  *	jab two left-body left-hook
+  *	jab two left-upper bwo
 
 * jab
-  1. jab right-upper left-hook right-hook
-  2. jab boo left-upper
-  3.
-  4.
+  *	jab left-body left-body left-hook
+  *	jab left-body left-upper two
+  *	jab left-upper jab left-hook
+  *	jab bwo left-upper two
 
 * two
-  1.	two jab two bab
-  2.	two left-body left-hook two
-  3.	two left-body left-upper boo
-  4.	two left-hook right-body right-hook
+  *	two jab two bab
+  *	two left-body left-hook right-upper
+  *	two left-body left-upper right-upper
+  *	two left-body right-body left-hook
 
 * slip
-  1.	(left-slip) jab (left-slip) jab two (right-roll)
-  (left-slip) left-hook (left-slip) left-hook right-hook (right-roll)
-  2.	(right-slip) two (right-slip) two left-hook (right-roll)
-  (right-slip) right-hook (right-slip) right-hook left-hook (left-roll)
-  3.	(left-slip) & two (right-slip) / (left-slip) & two left-upper (left-roll)
-  4.	(right-slip) & jab (left-slip) / (right-slip) & jab two (right-roll)
+  * left-slip
+    * jab
+      1	(left-slip) jab (left-slip)
+      2 (left-slip) jab two (right-roll)
+  * left-slip &two
+    *	(left-slip) & two (left-dash)
+    *	(left-slip) & two two (left-dash)
+    *	(left-slip) left-hook (left-slip)
+    * (left-slip) left-hook right-hook (right-roll)
+  * right-slip
+    *	(right-slip) jab (left-slip)
+    * (right-slip) jab two (right-slip)
+    * (right-slip) 
+    * (right-slip
+    *	(right-slip) two (right-slip)
+    *	(right-slip) two left-hook (left-roll)
+    
+    *	(left-slip) & two (left-dash)
+    *	(left-slip) & two two (left-dash)
+    *	(left-slip) left-hook (left-slip)
+    * left-hook right-hook (right-roll)
+ 
+ 
+ *	(right-slip) two (right-slip) two left-hook (right-roll)
+  *	(right-slip) right-hook (right-slip) right-hook left-hook (left-roll)
+  
+  
+  (left-slip) & two left-upper (left-roll)
+  *	(right-slip) & jab (left-slip) / (right-slip) & jab two (right-roll)
 
 * roll
   1.	(left-roll) left-upper (left-roll) / (left-roll) left-upper two (right-roll)
