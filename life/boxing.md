@@ -9,7 +9,7 @@
 
 ## Rope
 * FREE    : sole, toe, hill, knee / single, switch, single
-* COMBO   : (5) x - (20)toe  - (5)double x - (20)toe
+* COMBO   : (5)x - (20)toe  - (5)double x - (20)toe
 
 ## Ladder
 * HOP     : hop, hop-cross, hop-switch-L, hop-switch-R
@@ -90,23 +90,26 @@
       * (right-slip) right-hook left-hook (left-roll)
     
  * roll
-   1.	(left-roll) left-upper (left-roll) / (left-roll) left-upper two (right-roll)
-   2.	(right-roll) two (right-roll) / (right-roll) two left-upper (left-roll)
-   3.	(left-roll) bab (left-roll) / (left-roll) bab two (right-roll)
-   4.	(right-roll) boo (right-roll) / (right-roll) boo left-upper (left-roll)
+   * left-roll
+     * (left-roll) jab (left-roll)
+     * (left-roll) left-hook (left-roll)
+     * (left-roll) left-upper two (right-slip)
+   * right-roll
+     * (right-roll) two (right-roll)
+     * (right-roll) right-hook (right-roll)
+     * (right-roll) right-upper left-hook (left-roll)
 
  * pivot
-   1.	(left-pivot) & jab / (left-pivot) & jab two / 
-   (left-pivot) & left-hook / (left-pivot) & left-body left-hook
-   (left-slip) (left-pivot) jab jab
-   2.	
-   3.
-   4.
-
- * circle
-   1.
-   2.
-   3.	(left-slip) (left-pivot)
+   * left-pivot
+     * (left-pivot) & jab (left-slip)
+     * (left-pivot) & jab jab (left-slip)
+     * (left-pivot) & left-hook (left-roll)
+     * (left-pivot) & left-body left-hook (left-roll)
+   * right-pivot
+     * (right-pivot) two (left-slip)
+     * (right-pivot) two left-hook (left-roll)
+     * (right-pivot) & right-hook (right-roll)
+     * (right-pivot) & right-body right-hook (right-roll)
    
 ## Signature
  * Mayweather
