@@ -19,6 +19,12 @@
     * a namespaced resources that runs a process(s). (partition of resources)
     * Namespace (Linux Namespace) is a feature of Linux kernel to partition resources for processes.
     
+# Docker and busybox
+  ```
+  docker run busy-box ls
+  ```
+  * busybox is a VM
+    
   
 
 
