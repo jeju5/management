@@ -79,3 +79,19 @@
   ```
   * docker stop command will send SIGTERM signal to a container to stop the container itself. (allows clean up itself)
   * docker kill command will send SIGKILL signal to a container to kill the container process right awaw.
+  ```
+  docker run redis
+  ```
+  * redis is an in-memory database program. when you run redis, you can use redis-cli to interact with redis database.
+  however, you can't directly interact with the container that you just created for running redis. you need to get inside
+  the container that is running and execute a second command for redis-cli operations.
+  ```
+  (assume 06c404248d22 is the container-id of docker redis)
+  docker exec 06c404248d22 redis-cli
+  docker exec -it 06c404248d22 redis-cli
+  ```
+  * exec allows you to execute additional commands inside the container.
+  * -it = -i -t
+    * -i: attach my terminal to the STDIN of the container you exec (stuff we typed goes to the STDIN of redis-cli in this 
+    case)
+    * -t: format the output text coming from the exec commmand
