@@ -1,4 +1,5 @@
 ## Docker and Kubernetes: The Complete Guide
+* Stephen Grider
 
 # Install Docker on Mac
   * sign up for docker hub
@@ -22,7 +23,7 @@
     * a namespaced resources that runs a process(s). (partition of resources)
       * Namespace (Linux Namespace) is a feature of Linux kernel to partition resources for processes.
     
-# Docker containers
+# Docker containers (section 2)
   ```
   docker run busy-box ls
   ```
@@ -70,6 +71,10 @@
   docker start e37740465d64c50b3e913c7e22dd5  -->  k37740465d64c50b3e913c7e22aa6
   docker logs k37740465d64c50b3e913c7e22aa6 --> hi there
   ```
-  * docker logs doesn't actually start a container, instead, it will bring out the printouts generated from starting a    
-  container. note that 'docker start e37740465d64c50b3e913c7e22dd5' itself won't generate a message to us. (need -a)
-
+  * docker logs doesn't actually start a container. It will simply bring out the any messages generated from having started a   container. note that 'docker start e37740465d64c50b3e913c7e22dd5' itself won't generate a message to us.
+  ```
+  docker stop e37740465d64c50b3e913c7e22dd5
+  docker kill e37740465d64c50b3e913c7e22dd5
+  ```
+  * docker stop command will send SIGTERM signal to a container to stop the container itself. (allows clean up itself)
+  * docker kill command will send SIGKILL signal to a container to kill the container process right awaw.
