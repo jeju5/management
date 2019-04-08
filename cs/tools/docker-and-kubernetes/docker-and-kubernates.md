@@ -1,5 +1,6 @@
 ## Docker and Kubernetes: The Complete Guide
-* Udemy course taught by Stephen Grider
+* Udemy
+* Stephen Grider
 
 # Install Docker on Mac
   * sign up for docker hub
