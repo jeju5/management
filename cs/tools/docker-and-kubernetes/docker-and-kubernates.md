@@ -60,6 +60,7 @@
   docker start -a ddf1b6421e72 bye there
   ```
   * this command will fail because you can not replace the startup commands of a previously created container.
+    * you will see an error message: 'you cannot start and attach multiple containers at once'
   
 
 
