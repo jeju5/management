@@ -50,16 +50,16 @@
   *	jab two left-upper bwo
 
 * jab
+  *	jab bwo left-upper two
   *	jab left-body left-body left-hook
   *	jab left-body left-upper two
-  *	jab left-upper jab left-hook
-  *	jab bwo left-upper two
+  *	jab left-upper two left-hook
 
 * two
-  *	two jab two bab
+  * two jab two bab
   *	two left-body left-hook right-upper
-  *	two left-body left-upper right-upper
   *	two left-body right-body left-hook
+  * two left-upper two left-hook
 
 * slip
   * left-slip
