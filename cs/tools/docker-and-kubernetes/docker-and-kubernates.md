@@ -23,7 +23,13 @@
   ```
   docker run busy-box ls
   ```
-  * busybox is a VM
+  * busybox is a lite-weight linux program.
+  
+# ps
+  ```
+  docker ps
+  ```
+  * lists all running process.
     
   
 
