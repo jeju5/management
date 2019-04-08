@@ -36,7 +36,7 @@
   ```
   docker ps --all
   ```
-  * lists currently existing containers. (containers can exist without being run)
+  * lists currently existing containers. (containers can exist without being started = stop)
   
   ```
   docker create hello-world
@@ -61,6 +61,15 @@
   ```
   * this command will fail because you can not replace the startup commands of a previously created container.
     * you will see an error message: 'you cannot start and attach multiple containers at once'
-  
-
+  ```
+  docker system prune
+  ```
+  * this command will delete some resources including image-cache and stopped containers.
+  ```
+  docker create busybox echo hi there -->  e37740465d64c50b3e913c7e22dd5
+  docker start e37740465d64c50b3e913c7e22dd5  -->  k37740465d64c50b3e913c7e22aa6
+  docker logs k37740465d64c50b3e913c7e22aa6 --> hi there
+  ```
+  * docker logs doesn't actually start a container, instead, it will bring out the printouts generated from starting a    
+  container. note that 'docker start e37740465d64c50b3e913c7e22dd5' itself won't generate a message to us. (need -a)
 
