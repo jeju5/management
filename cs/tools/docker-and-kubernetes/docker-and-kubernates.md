@@ -29,7 +29,7 @@
   ```
   docker ps
   ```
-  lists all running process.
+  * lists all running process.
     
   
 
