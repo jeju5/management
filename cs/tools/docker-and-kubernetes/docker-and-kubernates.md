@@ -36,7 +36,7 @@
   ```
   docker ps --all
   ```
-  * lists history of containers.
+  * lists currently existing containers. (containers can exist without being run)
   
   ```
   docker create hello-world
