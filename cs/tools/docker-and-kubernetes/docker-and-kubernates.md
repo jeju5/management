@@ -91,7 +91,13 @@
   docker exec -it 06c404248d22 redis-cli
   ```
   * exec allows you to execute additional commands inside the container.
+    * docker exec {container-id} {command you want to execute inside the container you specified}
   * -it = -i -t
     * -i: attach my terminal to the STDIN of the container you exec (stuff we typed goes to the STDIN of redis-cli in this 
     case)
     * -t: format the output text coming from the exec commmand
+  ```
+  (assume 06c404248d44 is the container-id of docker redis)
+  docker exec -it 06c404248d44 sh
+  ```
+   
