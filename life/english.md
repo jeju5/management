@@ -108,7 +108,7 @@
 
 # TED - The surprisingly charming science of your gut
 * https://www.youtube.com/watch?v=HNMQ_w7hXTA
-* REP: 2
+* REP: 3
 * tract			생물의 계, 관
 * nerve tract		신경계
 * intestinal tract	장관
