@@ -117,7 +117,7 @@
 * mediate		중재하다
 * resilient		되돌아가는, 탄성이있는
 
-## How to take a picture of a black hole
+# TED - How to take a picture of a black hole
 * https://www.youtube.com/watch?v=BIvezCVcsYs
 * REP: 1
 * set against A   A에 기대어 세워놓다
