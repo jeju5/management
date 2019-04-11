@@ -115,6 +115,7 @@
 * trickle			흘러내리다
 * sphincter		[스핑털]괄약근; sphinc.ter
 * mediate		중재하다
+* newfound .  새롭게 발견한
 * resilient		되돌아가는, 탄성이있는
 
 # TED - How to take a picture of a black hole
@@ -127,3 +128,8 @@
 * pose    자세를 취하다, 제기하다
 * be posed with A   A가 제기되다
 * conundrum   수수께끼
+
+
+
+https://www.youtube.com/watch?v=_QdPW8JrYzQ
+https://www.youtube.com/watch?v=PlytMrKfOFA
