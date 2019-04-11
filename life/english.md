@@ -115,7 +115,9 @@
 * trickle			흘러내리다
 * sphincter		[스핑털]괄약근; sphinc.ter
 * mediate		중재하다
-* newfound .  새롭게 발견한
+* newfound   새롭게 발견한
+* lie   놓여있다
+* lay   눕혀놓다
 * resilient		되돌아가는, 탄성이있는
 
 # TED - How to take a picture of a black hole
