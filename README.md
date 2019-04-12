@@ -1,5 +1,12 @@
 # Develop
 
+## PLAN
+* MAY - AWS Practioner
+* JUL - AWS Developer
+* AUG - React, Redux, Node
+* OCT - TwinCity Marathon under 5hours
+* OCT - Amateur Boxing 1 Win
+
 ## CS
 * Python
   * Python Basics
