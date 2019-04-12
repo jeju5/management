@@ -84,10 +84,13 @@
       * (right-slip) & left-hook right-hook (right-roll)
     *	(right-slip) two
       * (right-slip) two (right-slip)
-      * (right-slip) two left-hook (left-roll)
+      * (right-slip) two left-upper (left-roll)
     * (right-slip) right-hook
       * (right-slip) right-hook (right-roll)
       * (right-slip) right-hook left-hook (left-roll)
+    * (right-slip) right-upper
+      * (right-slip) right-upper (right-roll)
+      * (right-slip) right-upper left-hook (left-roll)
     
  * roll
    * left-roll
