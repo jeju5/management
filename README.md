@@ -1,11 +1,11 @@
 # Develop
 
 ## PLAN
-* MAY - AWS Practioner
-* JUL - AWS Developer
-* AUG - React, Redux, Node
-* OCT - TwinCity Marathon under 5hours
-* OCT - Amateur Boxing 1 Win
+* 2019 MAY - AWS Practioner
+* 2019 JUL - AWS Developer
+* 2019 AUG - React, Redux, Node
+* 2019 OCT - TwinCity Marathon under 5hours
+* 2019 OCT - Amateur Boxing 1 Win
 
 ## CS
 * Python
