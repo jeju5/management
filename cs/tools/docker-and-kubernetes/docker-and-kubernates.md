@@ -24,6 +24,7 @@
     * a namespaced resources that runs a process(s). (partition of resources)
       * Namespace (Linux Namespace) is a feature of Linux kernel to partition resources for processes.
     * = resource partition (easy understand)
+  * Container loads image when running it.
     
 # Docker containers (section 2)
   * busybox is a lite-weight linux program.
@@ -77,8 +78,9 @@
     docker kill e37740465d64c50b3e913c7e22dd5
     ```
   * redis is an in-memory database program. when you run redis, you can use redis-cli to interact with redis database.
-    however, you can't directly interact with the container that you just created for running redis. you need to get inside
-    the container that is running and execute a second command for redis-cli operations.
+    redis-cli is a command line tool for redis operations. however, you can't directly interact with the container that you   
+    just created for running redis. you need to get inside the container that is running and execute a second command for   
+    redis-cli operations.
     ```
     docker run redis
     ```
@@ -99,3 +101,23 @@
     ```
 
 # Docker Custom Image
+  * Let's create an image that runs redis server.
+  * Create a Dockerfile in redis-image directory 
+    * base image works like an OS when running your image. (initial starting point to your image)
+    * alpine has apk included. (apk is a apache package manager)
+    * $redis-server will be executed as a terminal command when this image starts
+
+    * alpine base image is downloaded ---> it is used to execute commands specified by RUN ---> 
+    ```
+    # User an existing docker image as a base image.
+    FROM alpine
+
+    # Download and install dependencies.
+    RUN apk add --update redis
+
+    # Tell the image what to do when it starts as a container.
+    CMD ["redis-server"]
+    ```
+    * FROM alpine base image is downloaded.
+    * RUN create a temp container from a image downloaded previously and execute commands specified and get these as an image.
+    * CMD speicies what commands a container with an image from previous step will execute.
