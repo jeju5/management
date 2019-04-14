@@ -18,11 +18,12 @@
     * docker server looks at image cache where it realizes image cache doesn't have the image.
     * docker server downloads hello-world image from docker hub
   * Image
-    * a file that describes a program configuration and startup commands.
-    * = FS snapshot + startup commands; (FS = file system)
+    * a file that describes a program configuration and startup commands; FS snapshot + startup commands; (FS = file system)
+    * = program configurtation (easy understand)
   * Container
     * a namespaced resources that runs a process(s). (partition of resources)
       * Namespace (Linux Namespace) is a feature of Linux kernel to partition resources for processes.
+    * = resource partition (easy understand)
     
 # Docker containers (section 2)
   * busybox is a lite-weight linux program.
