@@ -119,5 +119,6 @@
     CMD ["redis-server"]
     ```
     * FROM alpine base image is downloaded.
-    * RUN create a temp container from a image downloaded previously and execute commands specified and get these as an image.
+    * RUN create a temporary container from a image downloaded previously and execute commands specified and get these as an 
+    image.
     * CMD speicies what commands a container with an image from previous step will execute.
