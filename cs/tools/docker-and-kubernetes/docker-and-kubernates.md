@@ -121,3 +121,4 @@
     * FROM A: download a base image A
     * RUN B: create a temporary container with 'FROM A' image and execute B on top of it, and generate the final result as an     image.
     * CMD C: execute C on a container built with image generated from 'RUN B'
+ * When you run 'RUN B' commands several times after 'FROM A', then Docker knows to use cached container instead of destroying    container and rebuilding everytime.
