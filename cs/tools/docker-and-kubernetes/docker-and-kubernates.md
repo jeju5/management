@@ -118,7 +118,6 @@
     # Tell the image what to do when it starts as a container.
     CMD ["redis-server"]
     ```
-    * FROM alpine base image is downloaded.
-    * RUN create a temporary container from a image downloaded previously and execute commands specified and get these as an 
-    image.
-    * CMD speicies what commands a container with an image from previous step will execute.
+    * FROM A: download a base image A
+    * RUN B: create a temporary container with 'FROM A' image and execute B on top of it, and generate the final result as an     image.
+    * CMD C: execute C on a container built with image generated from 'RUN B'
