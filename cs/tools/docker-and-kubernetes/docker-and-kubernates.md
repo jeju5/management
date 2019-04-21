@@ -25,6 +25,7 @@
       * Namespace (Linux Namespace) is a feature of Linux kernel to partition resources for processes.
     * = resource partition (easy understand)
   * Container loads image when running it.
+  * Image creates a container and container can create an image.
     
 # Docker containers (section 2)
   * busybox is a lite-weight linux program.
@@ -115,10 +116,23 @@
     # Download and install dependencies.
     RUN apk add --update redis
 
-    # Tell the image what to do when it starts as a container.
+    # Tell what to execute when a container starts. -> returns an id of an image generated.
     CMD ["redis-server"]
     ```
     * FROM A: download a base image A
     * RUN B: create a temporary container with 'FROM A' image and execute B on top of it, and generate the final result as an     image.
     * CMD C: execute C on a container built with image generated from 'RUN B'
- * When you run 'RUN B' commands several times after 'FROM A', then Docker knows to use cached container instead of destroying    container and rebuilding everytime.
+ * When you run same 'RUN B' commands after its first use, Docker knows to use cached image generating a same new one.
+ * You can tag an image by following syntax
+   '''
+   docker build -t minho/redis:latest .
+   '''
+   * -t: TAG.
+   * docker id is minho, project name is redis, and project version is latest.
+   * build at current directory specified by .
+ * You can create an image out of a container. (assuming 39075441dw1 is a container id)
+   ```
+   docker commit -c 'CMD["redis-server"]' 3907544dw1
+   ```
+   
+   ```
