@@ -1,7 +1,8 @@
 # Develop
 
 ## PLAN
-* 2019 MAY - AWS Practioner, 통기타 완강
+* 2019 APR - Docker and Kubernetes 완강
+* 2019 MAY - AWS Practioner, 통기타 완강 -> 내사랑내곁에 연주
 * 2019 JUL - AWS Developer
 * 2019 AUG - React, Redux, Node
 * 2019 OCT - TwinCity Marathon under 5hours
