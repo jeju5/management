@@ -186,14 +186,16 @@
     ```
 # Creating a visitor counting Docker Project
   * Node.js project will need a database to store visior counts. Redis will take care of this part. Then how do we point Redis     project from Node.js project?
-  * You can write docker commands in docker-compose.yml to automate build statements as below. Docker compose will also take       care of networking betweeen containers. For example, redis-server and node-app containers below will have free access to       each other.
+  * You can write docker commands in docker-compose.yml to automate build statements as below. Docker compose will take           care of networking betweeen containers. For example, redis-server and node-app containers below will have free access to       each other.
     * docker-compose.yml specifies communications between containers.
        ```
        version: '3'
        services:
            redis-server:
+               restart: always     (this is a restart policy. If it crashes, restart it)
                image: 'redis'
            node-app:
+               restart: always     (this is a restart policy. If it crashes, restart it)
                build: .
                ports: 
                    - "4001:8081"
@@ -220,5 +222,9 @@
         console.log('Listening on port 8081');
       });
       ```
-    
-    
+  * docker compose statements
+    ```
+    docker-compose up           (run docker project with images; if images doesn't exist generate images)
+    docker-compuse up --build   (build docker images from scratch and run them)
+    docker-compose up -d        (run docker project in background; so that you can use terminal)
+    ```
