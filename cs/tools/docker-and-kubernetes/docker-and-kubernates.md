@@ -87,10 +87,9 @@
     ```
   * exec allows you to execute additional commands inside the container.
     * docker exec {container-id} {command you want to execute inside the container you specified}
-    * -it = -i -t
-    * -i: attach my terminal to the STDIN of the container you exec (stuff we typed goes to the STDIN of redis-cli in this 
-    case)
-    * -t: format the output text coming from the exec commmand
+    * -it = --interactive + --pseudo-TTY
+    * -i: attach terminal STDIN of local to STDIN of container
+    * -t: format the whole thing using pseudotty(pseudo terminal)
     ```
     (assume 06c404248d22 is the container-id of docker redis)
     docker exec 06c404248d22 redis-cli
@@ -125,14 +124,66 @@
  * When you run same 'RUN B' commands after its first use, Docker knows to use cached image generating a same new one.
  * You can tag an image by following syntax
    '''
-   docker build -t minho/redis:latest .
+   docker build -t id/project:version .
    '''
-   * -t: TAG.
-   * docker id is minho, project name is redis, and project version is latest.
+   * -t: TAG flag (note that -t flag used with docker run is a pseudo-terminal flag)
    * build at current directory specified by .
  * You can create an image out of a container. (assuming 39075441dw1 is a container id)
    ```
    docker commit -c 'CMD["redis-server"]' 3907544dw1
    ```
-   
-   ```
+# Creating a Docker Project
+  * lets create a Node.js project with index.js and package.json.
+  * create a Dockerfile in the same directory
+    * which base image is proper for your project?
+      * go check at hub.docker.com (https://hub.docker.com/_/node/)
+      * let's use node:alpine is available
+    * index.js and package.json are not pointed by npm
+      * COPY {from directory} {to directory}
+      * you can split copy operations to maximize the use of cached images.
+        * command below will execute npm install everytime there is any change in ./
+        ```
+        COPY ./ ./
+        RUN npm install
+        ```
+        * However, we expect that npm install should be executed when there is a change in package.json file that manages npm         dependencies. you can write docker commands like below to execute npm install when there is a change in package.json           only.
+        ```
+        COPY ./package.json ./
+        RUN npm install
+        COPY ./ ./
+        ```
+        
+    * node.js is started in container, and its port mapping is happending inside the container.  
+      * docker run -p {local-port}:{container-port} {image}
+      * it maps incoming request to local-port to container-port inside the container built with the image specified.
+    * you can make working directory where you can isolate project related works with WORKDIR command
+    ```
+    # Specify a base image
+    FROM alpine
+    
+    # Specify directory to put everything inside the container
+    # 'workdir' is like 'mkdir & cd'
+    WORKDIR /usr/app
+
+    # Install dependencies
+    COPY ./package.json ./
+    RUN npm Install
+    COPY ./ ./
+
+    # Default command
+    CMD ["npm", "start"]
+    ```
+  * build/tag a docker image from Dockerfile, and start it. check the project at localhost:8080
+    ```
+    docker build -t jexxx009/simpleweb . # if you don't specify docker tag version, it is latest is by default.
+    docker run -p 8080:8080 jexxx009/simpleweb
+    ```
+  * you can specify terminal command to execute like this
+    ```
+    docker run -it jexxx009/simpleweb {terminal command}
+    docker run -it jexxx009/sinpleweb ls
+    docker run -it jexxx009/sinpleweb sh  (sh means execute shell)
+    ```
+    
+    
+    
