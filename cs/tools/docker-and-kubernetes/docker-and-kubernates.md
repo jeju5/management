@@ -184,6 +184,41 @@
     docker run -it jexxx009/sinpleweb ls
     docker run -it jexxx009/sinpleweb sh  (sh means execute shell)
     ```
-    
+# Creating a visitor counting Docker Project
+  * Node.js project will need a database to store visior counts. Redis will take care of this part. Then how do we point Redis     project from Node.js project?
+  * You can write docker commands in docker-compose.yml to automate build statements as below. Docker compose will also take       care of networking betweeen containers. For example, redis-server and node-app containers below will have free access to       each other.
+    * docker-compose.yml specifies communications between containers.
+       ```
+       version: '3'
+       services:
+           redis-server:
+               image: 'redis'
+           node-app:
+               build: .
+               ports: 
+                   - "4001:8081"
+       ```
+    * index.js specifies client host url as 'redis-server'. This is a url to redis app which is made available by docker             compose.
+      ```
+      const express = require('express');
+      const redis = require('redis');
+
+      const app = express();
+      const client = redis.createClient({
+        host: 'redis-server'
+      });
+      client.set('visits', 0);
+
+      app.get('/', (req, res) => {
+        client.get('visits', (err, visits) => {
+          res.send('Number of visits is ' + visits);
+          client.set('visits', parseInt(visits) + 1);
+        });
+      });
+
+      app.listen(8081, () => {
+        console.log('Listening on port 8081');
+      });
+      ```
     
     
