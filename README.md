@@ -5,7 +5,7 @@
   * 67kg
   * Docker and Kubernetes 완강
 * 2019 MAY
-  * 61kg
+  * 61kg (keep under 63kg)
   * AWS Practioner
   * 통기타 완강 -> 내 사랑 내 곁에 완주
 * 2019 JUL
