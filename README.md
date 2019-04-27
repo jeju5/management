@@ -1,12 +1,21 @@
 # Develop
 
 ## PLAN
-* 2019 APR - 67kg, Docker and Kubernetes 완강
-* 2019 MAY - 59kg, AWS Practioner, 통기타 완강 -> 내 사랑 내 곁에 완주, 
-* 2019 JUL - AWS Developer
-* 2019 AUG - React, Redux, Node
-* 2019 OCT - TwinCity Marathon under 5hours
-* 2019 OCT - Amateur Boxing 1 Win
+* 2019 APR
+  * 67kg
+  * Docker and Kubernetes 완강
+* 2019 MAY
+  * 59kg
+  * AWS Practioner
+  * 통기타 완강 -> 내 사랑 내 곁에 완주
+* 2019 JUL
+  * AWS Developer
+* 2019 AUG
+  * React, Redux, Node
+* 2019 OCT
+  * TwinCity Marathon under 5hours
+* 2019 NOV
+  * Amateur Boxing 1 Win
 
 ## CS
 * Python
