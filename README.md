@@ -1,11 +1,9 @@
 # Develop
 
 ## PLAN
-* 2019 APR
-  * 67kg
-  * Docker and Kubernetes 완강
 * 2019 MAY
-  * reach 62kg, keep 64kg, under 65kg
+  * reach 62kg, keep 64kg (63-65)
+  * Docker and Kubernetes 완강
   * AWS Practioner
   * 통기타 완강 -> 내 사랑 내 곁에 완주
 * 2019 JUL
