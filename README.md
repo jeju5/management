@@ -2,7 +2,7 @@
 
 ## PLAN
 * 2019 MAY
-  * reach 62kg, keep 64kg (63-65)
+  * reach 63kg, keep 64kg (63-65)
   * Docker and Kubernetes 완강
   * AWS Practioner
   * 통기타 완강 -> 내 사랑 내 곁에 완주
