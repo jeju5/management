@@ -277,7 +277,24 @@
     ```
     docker build -f Dockerfile.dev .  (put . in the end)
     ```
-    * map port to port
+    * map local port to container port
     ```
     docker run -p 3000:3000 e9e31d0bf073
     ```
+    * Docker Volume
+      * make change in local is not reflected to app because container uses src files that is previously copied.
+      * using Docker Volume, you can reference files in local from container, instead of copying them. 
+    ```
+    docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app {image-id}
+    
+    # -v
+    # -vis a Volume flag
+    
+    # -v /app/node_modules
+    # map container '/app/node_modules' --> local 'node_modules'
+    
+    # -v $(pwd):/app
+    # $(pwd) returns a current working directory
+    # map container '/app' --> local $(pwd)
+    ```
+    
