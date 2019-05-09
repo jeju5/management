@@ -19,7 +19,7 @@
   * docker server downloads hello-world image from docker hub
 * Image
   * a file that describes a program configuration and startup commands; FS snapshot + startup commands; (FS = file system)
-  * = program configurtation (easy understand)
+  * = program configuration (easy understand)
 * Container
   * a namespaced resources that runs a process(s). (partition of resources)
     * Namespace (Linux Namespace) is a feature of Linux kernel to partition resources for processes.
@@ -319,5 +319,26 @@
     * running tests
     ```
     docker build -f Dockerfile.dev .        # get {image-id}
-    docker run {image-id} npm run test
+    docker run {image-id} npm run test      # note that you need to interact with terminal
+    docker run -it {image-id} npm run test  # use -it flag to enable terminal interaction within the container
+    ```
+    * live updating tests
+      * run test(s) using 'docker run -it {image-id} npm run test' command, and update App.test.js (src code for tests)
+      * this doesn't retrigger test execution
+      * SOLUTION 1 - using exec
+        ```
+        # terminal A
+        docker build -f Dockerfile.dev .
+        docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app {image-id}
+        
+        # terminal B (open another terminal)
+        docker ps   # get container-id
+        docker exec -it {container-id} npm run test
+        
+        # try altering App.test.js --> retriggers tests. 
+        ```
+      * SOLUTION 2 - 
+    ```
+    services:
+     
     ```
