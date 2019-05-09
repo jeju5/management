@@ -246,3 +246,15 @@
     * test passed
   * Deploymnet
     * app deployed to AWS Elastic Beanstalk
+* Create a React project
+  * starting a React project with create-react-app tool
+    ```
+    npm install -g create-react-app
+    create-react-app frontend
+    ```
+  * npm commands
+    ```
+    npm run start   # starts up a development server
+    npm run test    # run tests associated with the project
+    npm run build   # build production version ---> files built can be found at build/static.
+    ```
