@@ -3,8 +3,8 @@
 * Stephen Grider
 
 # Install Docker on Mac
-  * sign up for docker hub
-    * jexxx009
+* sign up for docker hub
+  * jexxx009
 
 # What is Docker?
   * Docker Client(CLI), Docker Server and Docker Hub
@@ -228,3 +228,8 @@
     docker-compuse up --build   (build docker images from scratch and run them)
     docker-compose up -d        (run docker project in background; so that you can use terminal)
     ```
+
+# Docker & Production
+  * Application Development workflow
+    * Development -> Testing -> Deployment
+  
