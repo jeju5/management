@@ -300,4 +300,16 @@
     
     # try making changes in App.js in local
     ```
-    
+    * Docker compose reduces coding complexity when using Docker Volume
+    ```
+    # docker-compose.yml
+    version: '3'
+    services:
+      web:
+        build: .
+        ports:
+          - "3000:3000"
+        volumes:
+          - /app/node_modues
+          - .:/app                (. equivalent to $(pwd)
+    ```
