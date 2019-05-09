@@ -162,7 +162,7 @@
   FROM alpine
 
   # Specify directory to put everything inside the container
-  # 'workdir' is like 'mkdir & cd'
+  # 'workdir' is like 'mkdir & cd' within the container
   WORKDIR /usr/app
 
   # Install dependencies
@@ -257,4 +257,27 @@
     npm run start   # starts up a development server
     npm run test    # run tests associated with the project
     npm run build   # build production version ---> files built can be found at build/static.
+    ```
+  * It is reasonable to keep two docker files. One for development the other for production.
+  * Development
+    * Dockerfile.dev
+    ```
+    FROM node:alpine
+
+    WORKDIR '/app'
+
+    COPY package.json
+    RUN npm install
+
+    COPY . .
+
+    CMD ["npm", "run", "start"]
+    ```
+    * docker build with -f -> specify Dockerfile you want to use
+    ```
+    docker build -f Dockerfile.dev .  (put . in the end)
+    ```
+    * map port to port
+    ```
+    docker run -p 3000:3000 e9e31d0bf073
     ```
