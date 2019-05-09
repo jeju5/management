@@ -232,4 +232,17 @@
 # Docker & Production
 * Application Development workflow
   * Development -> Testing -> Deployment
-
+* Production plan
+  * Development
+    * work at feature branch
+    * create a PR to master branch
+    * code pushed to Travis-CI
+  * Testing
+    * run tests
+    * test passed
+    * merge a PR to master branch
+    * code pushed to Travis-CI
+    * run tests 
+    * test passed
+  * Deploymnet
+    * app deployed to AWS Elastic Beanstalk
