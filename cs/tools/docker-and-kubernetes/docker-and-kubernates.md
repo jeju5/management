@@ -337,8 +337,25 @@
         
         # try altering App.test.js --> retriggers tests. 
         ```
-      * SOLUTION 2 - 
-    ```
-    services:
-     
-    ```
+      * SOLUTION 2 - using docker-compose
+        ```
+        version: '3'
+        services:
+          web:                                # first container for react
+            build:
+              context: .
+              dockerfile: Dockerfile.dev
+            ports:
+              - "3000:3000"
+            volumes:
+              - /app/node_modues
+              - .:/app
+          web-test:                           # second container for react test
+            build:
+              context: .
+              dockerfile: Dockerfile.dev      # port mapping is not required
+            volumes:
+              - /app/node_modues
+              - .:/app
+            command: ["npm", "run", "test"]   # this overrides starting command specified as CMD in Dockerfiile.dev
+        ```
