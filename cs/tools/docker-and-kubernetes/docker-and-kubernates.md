@@ -284,6 +284,7 @@
     * Docker Volume
       * make change in local is not reflected to app because container uses src files that is previously copied.
       * using Docker Volume, you can reference files in local from container, instead of copying them. 
+      * creating a volume means having a shared file system between local and container
     ```
     docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app {image-id}
     
@@ -291,10 +292,12 @@
     # -vis a Volume flag
     
     # -v /app/node_modules
-    # map container '/app/node_modules' --> local 'node_modules'
+    # don't share container's /app/node_modules (this is where package dependencies are)
     
     # -v $(pwd):/app
     # $(pwd) returns a current working directory
-    # map container '/app' --> local $(pwd)
+    # share local's $(pwd) --> container '/app'
+    
+    # try making changes in App.js in local
     ```
     
