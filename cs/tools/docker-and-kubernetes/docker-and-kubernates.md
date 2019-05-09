@@ -316,3 +316,8 @@
           - /app/node_modues
           - .:/app                          # $(pwd) is specified as . in docker compose
     ```
+    * running tests
+    ```
+    docker build -f Dockerfile.dev .        # get {image-id}
+    docker run {image-id} npm run test
+    ```
