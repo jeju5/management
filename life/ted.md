@@ -131,6 +131,21 @@
 * be posed with A   A가 제기되다
 * conundrum   수수께끼
 
+# TED - The case for curiosity-driven research
+* https://www.youtube.com/watch?v=PlytMrKfOFA
+* REP: 1
+* cathode   음극
+* impoverish   피폐하게하다
+* shrapnel   [슈렙넬]파편
+* probe   캐묻다, 조사하다 / 무인우주탐사선
+* annihilate   [애나힐레잇] 전멸시키다
+* delve into A    A를 파고들다
 
+# TED - 
+*
 
-https://www.youtube.com/watch?v=PlytMrKfOFA
+# TED - 
+*
+
+# TED - 
+*
