@@ -306,10 +306,12 @@
     version: '3'
     services:
       web:
-        build: .
+        build:
+          context: .                        # look at .
+          dockerfile: Dockerfile.dev        # for Dockerfile.dev
         ports:
           - "3000:3000"
         volumes:
           - /app/node_modues
-          - .:/app                (. equivalent to $(pwd)
+          - .:/app                          # $(pwd) is specified as . in docker compose
     ```
