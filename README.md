@@ -4,12 +4,12 @@
 * 2019
   * 05/12-05/18
     * reach 64kg
-    * guitar codes: C D E F G
+    * guitar codes: C D E F G A B
     * Docker & Kubernetes (100%)
     * run 13mi
   * 05/19-05/25
     * reach 63kg -> keep 64kg
-    * guitar codes: C D E F G A B C
+    * 제주도의 푸른밤 기타 완주
     * AWS udemy course (50%)
   * 05/26-06/01
     * AWS udemy course (100%)
