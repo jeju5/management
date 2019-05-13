@@ -4,12 +4,15 @@
 * 2019
   * 05/12-05/18
     * reach 64kg
+    * guitar codes: C D E F G
     * Docker & Kubernetes (100%)
     * run 13mi
   * 05/19-05/25
     * reach 63kg -> keep 64kg
-    * AWS udemy course (50%), 
+    * guitar codes: C D E F G A B C
+    * AWS udemy course (50%)
   * 05/26-06/01
+    * AWS udemy course (100%)
     * AWS Practioner exam
   * 06/02-06/08
   * tasks
