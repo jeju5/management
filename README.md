@@ -2,11 +2,13 @@
 
 ## WEEKLY PLAN
 * 2019
+  * 05/05-05/11
+    * ~~reach 67kg~~
   * 05/12-05/18
     * reach 64kg
     * guitar codes: C D E F G A B
     * Docker & Kubernetes (100%)
-    * ~~run 13mi~~ done
+    * run 13mi
   * 05/19-05/25
     * reach 63kg -> keep 64kg
     * 제주도의 푸른밤 기타 완주
