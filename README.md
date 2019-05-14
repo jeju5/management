@@ -2,8 +2,6 @@
 
 ## PLAN
 * 2019
-  * 05/05-05/11
-    * ~~reach 67kg~~ done
   * 05/12-05/18
     * reach 66kg
     * guitar codes: C D E F G A B
