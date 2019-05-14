@@ -6,7 +6,7 @@
     * reach 66kg
     * guitar codes: C D E F G A B
     * Docker & Kubernetes (100%); 금, 토, 일
-    * run 13mi; 토
+    * run 13mi; 금/토
   * 05/19-05/25
     * reach 65kg
     * 제주도의 푸른밤 기타 완주
