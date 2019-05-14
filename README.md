@@ -5,7 +5,7 @@
   * 05/05-05/11
     * ~~reach 67kg~~ done
   * 05/12-05/18
-    * reach 67kg
+    * reach 66kg
     * guitar codes: C D E F G A B
     * Docker & Kubernetes (100%)
     * run 13mi
