@@ -18,11 +18,10 @@
     * AWS Practioner exam
   * 06/02-06/08
     * keep 64kg
-    * Uppercut Boxing Gym
+    * Start Boxing (Uppercut Boxing Gym)
     * AWS udemy course (75%)
     * 통기타 때려잡기 (66%)
   * 06/09-06/15
-    * reach 63kg -> keep under 65kg 
     * AWS udemy course (100%)
     * 통기타 때려잡기 (100%)
   * 06/09-06/15
