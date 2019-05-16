@@ -5,19 +5,18 @@
   * 05/12-05/18
     * reach 67kg
     * guitar codes: C D E F G A B
-    * Docker & Kubernetes (100%); 금, 토, 일
-    * run 13mi; 금/토
+    * Docker & Kubernetes (100%) - 금토일
+    * run 13mi - 금
   * 05/19-05/25
-    * reach 66kg
+    * reach 63kg
     * 제주도의 푸른밤 기타 완주
     * AWS udemy course (25%)
   * 05/26-06/01
-    * reach 65kg
+    * keep 64kg
     * 통기타 때려잡기 (33%)
     * AWS udemy course (50%)
     * AWS Practioner exam
   * 06/02-06/08
-    * keep 64kg
     * Start Boxing (Uppercut Boxing Gym)
     * AWS udemy course (75%)
     * 통기타 때려잡기 (66%)
