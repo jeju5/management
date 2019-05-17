@@ -15,3 +15,13 @@
 * purveyor   [펄베이얼] 조달업자
 * indictment   [인다잇먼트] 기소
 * indebt to A  [인데트] A에 빚을 지다
+* mob   무리, 조폭
+* tumbleweed   회전풀 (미국 서부영화 길거리풀)
+* smack   풍미, 헤로인 / 찰싹 때리다
+* buck   수사슴, 달러 / 날뛰다
+* joint   깜빵
+* wop   이탈리아 새끼
+* spic   스페인 새끼
+* whack   후려치다
+* shyster   사기꾼
+* acquit   [어큇] 무죄를 선고하다
