@@ -25,3 +25,12 @@
 * whack   후려치다
 * shyster   사기꾼
 * acquit   [어큇] 무죄를 선고하다
+
+# Prisoners
+* budge   태도를 바꾸다
+* penitent   뉘우치는
+* clam up   입을 꼭다물다
+* clack   딸깍딸깍거리다
+* lye   소다액
+* reconcile   화홰시키다, 조화시키다
+* penance   속죄
