@@ -2,15 +2,10 @@
 
 ## PLAN
 * 2019
-  * 05/12-05/18
-    * reach 68kg
-    * guitar codes: C D E F G A B
-    * Docker & Kubernetes (100%) - 금토일
-    * run 13mi - 금
   * 05/19-05/25
     * reach 65kg
-    * 제주도의 푸른밤 기타 완주
-    * AWS udemy course (25%)
+    * _ 제주도의 푸른밤 기타 완주
+    * _ Docker & Kubernetes (100%) - 금토일
   * 05/26-06/01
     * reach 63kg
     * 통기타 때려잡기 (33%)
