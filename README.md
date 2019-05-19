@@ -4,17 +4,20 @@
 * 2019
   * 05/19-05/25
     * reach 65kg
-    * _ 제주도의 푸른밤 기타 완주
-    * _ Docker & Kubernetes (100%) - 금토일
+    * 코드 C D E F G A B
+    * Docker & Kubernetes (100%)
+    * 8 MILES
   * 05/26-06/01
     * reach 63kg
-    * 통기타 때려잡기 (33%)
+    * 제주도의 푸른밤 기타 완주
     * AWS udemy course (50%)
     * AWS Practioner exam
+    * 13 MILES
   * 06/02-06/08
     * Start Boxing (Uppercut Boxing Gym)
     * AWS udemy course (75%)
     * 통기타 때려잡기 (66%)
+    * 13 MILES
   * 06/09-06/15
     * AWS udemy course (100%)
     * 통기타 때려잡기 (100%)
