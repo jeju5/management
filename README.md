@@ -11,15 +11,15 @@
     * reach 63kg
     * 제주도의 푸른밤 기타 완주
     * AWS udemy course (50%)
-    * AWS Practioner exam
     * 13 MILES
   * 06/02-06/08
     * Start Boxing (Uppercut Boxing Gym)
-    * AWS udemy course (75%)
+    * AWS udemy course (100%)
     * 통기타 때려잡기 (66%)
     * 13 MILES
   * 06/09-06/15
     * AWS udemy course (100%)
+    * AWS Practioner exam
     * 통기타 때려잡기 (100%)
   * 06/09-06/15
     * reach 63kg -> keep under 65kg 
