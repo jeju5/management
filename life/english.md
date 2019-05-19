@@ -34,3 +34,22 @@
 * lye   소다액
 * reconcile   화홰시키다, 조화시키다
 * penance   속죄
+
+# LA Confidential
+* snitch   일러바치다
+* hobnob   유명한 사람들과 어울리다
+* adjunct   부속물
+* recant   진술을 철회하다
+* scapegoat   희생양
+* lad   녀석
+* consolidate   합병하다, 굳건하게 하다
+* bootleg   불법 제작된
+* heinous   극악무도한
+* peripheral   주변의 
+* sissy   계집애같은 남자
+* morgue   영안실
+* truant officer   무단 결석학생 지도원
+* ruckus   대소동
+* valediction   고별사
+* scour   샅샅이 뒤지다 
+* reciprocity   상호 이익(호혜)
