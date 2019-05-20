@@ -5,16 +5,17 @@
 ## PLAN
 * 2019
   * 05/19-05/25
-    * reach 65kg
+    * reach 63kg (70kg -> 63kg)
     * 코드 C D E F G A B
     * Docker & Kubernetes (~ section7)
     * AWS udemy course (100%)
-    * 8 MILES
+    * RUN: 8(MON)-5(TUE)-5(WED)-5(THU)-5(FRI)
   * 05/26-06/01
-    * reach 63kg
+    * keep 64kg
     * 제주도의 푸른밤 기타 완주
     * 13 MILES
   * 06/02-06/08
+    * keep 64kg
     * Start Boxing (Uppercut Boxing Gym)
     * AWS udemy course (100%)
     * 통기타 때려잡기 (66%)
