@@ -1,16 +1,18 @@
 # Develop
+* 맥북은 회사에 놓고 올 것
+* 맥북을 써야한다면 회사에서 쓸 것
 
 ## PLAN
 * 2019
   * 05/19-05/25
     * reach 65kg
     * 코드 C D E F G A B
-    * Docker & Kubernetes (100%)
+    * Docker & Kubernetes (~ section7)
+    * AWS udemy course (100%)
     * 8 MILES
   * 05/26-06/01
     * reach 63kg
     * 제주도의 푸른밤 기타 완주
-    * AWS udemy course (50%)
     * 13 MILES
   * 06/02-06/08
     * Start Boxing (Uppercut Boxing Gym)
