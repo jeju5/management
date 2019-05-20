@@ -18,3 +18,8 @@
 
 * monthly save
   * save around $2000/month
+  
+ * plan
+   * CHECKING: U.S. Bank.
+   * SAVING:   U.S. Ban.
+   * CREDIT:   
