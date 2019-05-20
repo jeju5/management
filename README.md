@@ -1,7 +1,8 @@
 # Develop
 * 맥북은 회사에 놓고 올 것
 * 맥북을 써야한다면 회사에서 쓸 것
-
+* 찬양
+  * https://www.youtube.com/watch?v=Ky-3WLmFcgA
 ## PLAN
 * 2019
   * 05/19-05/25
