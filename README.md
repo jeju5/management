@@ -3,6 +3,8 @@
 * 맥북을 써야한다면 회사에서 쓸 것
 * 찬양
   * https://www.youtube.com/watch?v=Ky-3WLmFcgA
+  * https://www.youtube.com/watch?v=iN-abAReAEY
+  * 소원 한웅재
 ## PLAN
 * 2019
   * 05/19-05/25
