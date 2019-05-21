@@ -26,7 +26,7 @@
   * = resource partition (easy understand)
 * Container loads image when running it.
 * Image creates a container and container can create an image.
-* IN SHORT: "image is a VM config file & container is a live process in VM."
+* IN SHORT: "image is a VM config file & container is a VM"
 
 # Docker containers (section 2)
 * busybox is a lite-weight linux program.
@@ -363,9 +363,13 @@
         ```
       * Shortcomings of SOLUTION2: Docker compose doesn't know which container to attach terminal so your keyboard input can 
         not execute test commands (p q t w; React.js test suite commands)
-      * Note that two containers doesn't mean you have two VMs. Remember: "container is a process in VM."
-      * You can try 
+      * try
         ```
-        run docker ps -> get test container id -> docker attach {container-id}
-        docker exec -it {}
+        run docker ps                   # get test container id
+        
+        docker attach {container-id}    # this doesn't work 
+        
+        docker exec -it {container-id} sh  # see why it doesn't work. run shell in the container
+        ps                                 # and 
+        # 
         ```
