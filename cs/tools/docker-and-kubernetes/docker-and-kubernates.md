@@ -285,21 +285,21 @@
       * make change in local is not reflected to app because container uses src files that is previously copied.
       * using Docker Volume, you can reference files in local from container, instead of copying them. 
       * creating a volume means having a shared file system between local and container
-      * we don't need COPY . . in dockerfile.
+      * we may not need COPY . . in dockerfile. (but it still is good practice to keep COPY . .)
     ```
     docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app {image-id}
     
     # -v
-    # -vis a Volume flag
+    # -v is a Volume flag
     
     # -v /app/node_modules
-    # don't share container's /app/node_modules (this is where package dependencies are)
+    # don't touch container's /app/node_modules (this is where package dependencies are)
     
     # -v $(pwd):/app
     # $(pwd) returns a current working directory
     # share local's $(pwd) --> container '/app'
     
-    # try making changes in App.js in local
+    # try making changes in App.js in local and see how it reflects the container
     ```
     * Docker compose reduces coding complexity when using Docker Volume
     ```
@@ -313,7 +313,7 @@
         ports:
           - "3000:3000"
         volumes:
-          - /app/node_modues
+          - /app/node_modules               # don't touch container's /app/node_modules
           - .:/app                          # $(pwd) is specified as . in docker compose
     ```
     * running tests
@@ -324,8 +324,9 @@
     ```
     * live updating tests
       * run test(s) using 'docker run -it {image-id} npm run test' command, and update App.test.js (src code for tests)
-      * this doesn't retrigger test execution
-      * SOLUTION 1 - using exec
+      * this doesn't retrigger test execution, because image is built with older react source code.
+      
+      * SOLUTION 1 - building two containers with volume & exec
         ```
         # terminal A
         docker build -f Dockerfile.dev .
@@ -337,14 +338,14 @@
         
         # try altering App.test.js --> retriggers tests. 
         ```
-      * SOLUTION 2 - using docker-compose
+      * SOLUTION 2 - building two containers with compose
         ```
         version: '3'
         services:
           web:                                # first container for react
             build:
               context: .
-              dockerfile: Dockerfile.dev
+              dockerfile: Dockerfile.dev .    # executes npm run start
             ports:
               - "3000:3000"
             volumes:
@@ -353,9 +354,16 @@
           web-test:                           # second container for react test
             build:
               context: .
-              dockerfile: Dockerfile.dev      # port mapping is not required
+              dockerfile: Dockerfile.dev      # port mapping is not required because tests doesn't run on ports (integTest)
             volumes:
               - /app/node_modues
               - .:/app
             command: ["npm", "run", "test"]   # this overrides starting command specified as CMD in Dockerfiile.dev
+        ```
+      * Shortcomings of SOLUTION2: Docker compose doesn't know which container to attach terminal so your keyboard input can 
+        not execute test commands (p q t w; React.js test suite commands)
+      * You can try 
+        ```
+        run docker ps -> get test container id -> docker attach {container-id}
+        docker exec -it {}
         ```
