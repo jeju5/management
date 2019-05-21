@@ -363,17 +363,27 @@
         ```
       * Shortcomings of SOLUTION2: Docker compose doesn't know which container to attach terminal so your keyboard input can 
         not execute test commands (p q t w; React.js test suite commands)
-      * try
+      * try running commands in test container
         ```
         docker-compose up               # run two docker containers with compose
         
         docker ps                       # open up a second terminal and get test container id
         
-        docker attach {container-id}    # this doesn't work (try 'p q t w' test commands)
+        docker attach {container-id}    # this doesn't work (try 'p q t w' test commands) because attach always attach 
+                                        # terminal to the first process in the command let's see what this means
         
-        docker exec -it {container-id} sh  # see why it doesn't work. run shell in the container
+        docker exec -it {container-id} sh  # see why it doesn't work. -> run shell in the container
         ps                                 # note that there are three process for 'npm' 'test' 'test.js' in the container
                                            # when you 'attach' it always attach to the first process, which is 'npm'
                                            # however, you need to attach it to 'test.js' which accepts 'p q t w'
-                                           # unfortunately, you have no option to attach terminal to a secondary process.
+                                           # unfortunately, you have no option to attach terminal to a secondary process.  
+        ```
+      * then how about running tests in app container?
+        ```
+        docker-compose up             # run two docker containers with compose (we don't need the test container, however)
+        docker ps                     # get app container id
+        docker attach {container-id}  # this will fail because your terminal is attached to 'npm' process in the container
+        
+        docker exec -it {container-id} sh
+        npm run test                         # this is the solution, but not very convenient
         ```
