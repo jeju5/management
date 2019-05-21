@@ -365,11 +365,15 @@
         not execute test commands (p q t w; React.js test suite commands)
       * try
         ```
-        run docker ps                   # get test container id
+        docker-compose up               # run two docker containers with compose
         
-        docker attach {container-id}    # this doesn't work 
+        docker ps                       # open up a second terminal and get test container id
+        
+        docker attach {container-id}    # this doesn't work (try 'p q t w' test commands)
         
         docker exec -it {container-id} sh  # see why it doesn't work. run shell in the container
-        ps                                 # and 
-        # 
+        ps                                 # note that there are three process for 'npm' 'test' 'test.js' in the container
+                                           # when you 'attach' it always attach to the first process, which is 'npm'
+                                           # however, you need to attach it to 'test.js' which accepts 'p q t w'
+                                           # unfortunately, you have no option to attach terminal to a secondary process.
         ```
