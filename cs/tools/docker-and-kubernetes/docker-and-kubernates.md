@@ -285,7 +285,7 @@
       * make change in local is not reflected to app because container uses src files that is previously copied.
       * using Docker Volume, you can reference files in local from container, instead of copying them. 
       * creating a volume means having a shared file system between local and container
-      * we don't need COPY . . in dockerfile. (but you may leave COPY . . instruction)
+      * we don't need COPY . . in dockerfile.
     ```
     docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app {image-id}
     
