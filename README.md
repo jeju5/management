@@ -10,7 +10,7 @@
   * 05/19-05/25
     * SUN: 72kg
     * MON: 70kg, ~8MI~7MI, 
-    * TUE: 68kg, Docker & Kubernetes, AWS start, G A
+    * TUE: 68kg, Docker & Kubernetes, AWS IAM, G A
     * WED: 67.5kg, AWS (25%), G A B C
     * THU: 67kg, AWS (50%)
     * FRI: 66.5kg, AWS (75%)
