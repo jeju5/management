@@ -23,4 +23,4 @@
   * MFA
     * Security Status -> Manage MFA -> Virtual MFA device -> continue
     * Install MFA app into my phone
-
+    * Scan QR CODE with your phone -> try Authenticator login
