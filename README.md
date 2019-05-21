@@ -8,19 +8,30 @@
 ## PLAN
 * 2019
   * 05/19-05/25
+    * SUN: 72kg
+    * MON: 70kg, ~8MI~7MI, 
+    * TUE: 68kg, Docker & Kubernetes, AWS start, G A
+    * WED: 67.5kg, AWS (25%), G A B C
+    * THU: 67kg, AWS (50%)
+    * FRI: 66.5kg, AWS (75%)
+    * SAT: 66kg
+    ```
     * reach 63kg (70kg -> 63kg)
     * 코드 C D E F G A B
     * Docker & Kubernetes (~ section7)
-    * AWS udemy course (100%)
-    * RUN: 8(MON)-5(TUE)-5(WED)-5(THU)-5(FRI)
+    * AWS udemy course (50%)
+    * RUN
+      8(MON)-5(TUE)-5(WED)-5(THU)-5(FRI)
+    ```
   * 05/26-06/01
     * keep 64kg
     * 제주도의 푸른밤 기타 완주
+    * COMPLETE AWS UDEMY COURSE (100%)
     * 13 MILES
   * 06/02-06/08
     * keep 64kg
     * Start Boxing (Uppercut Boxing Gym)
-    * AWS udemy course (100%)
+    * AWS Practioner Exam
     * 통기타 때려잡기 (66%)
     * 13 MILES
   * 06/09-06/15
