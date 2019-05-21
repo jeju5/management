@@ -363,6 +363,7 @@
         ```
       * Shortcomings of SOLUTION2: Docker compose doesn't know which container to attach terminal so your keyboard input can 
         not execute test commands (p q t w; React.js test suite commands)
+      * Note that two containers doesn't mean you have two VMs. Remember: "container is a process in VM."
       * You can try 
         ```
         run docker ps -> get test container id -> docker attach {container-id}
