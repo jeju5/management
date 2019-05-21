@@ -18,7 +18,7 @@
   * docker server looks at image cache where it realizes image cache doesn't have the image.
   * docker server downloads hello-world image from docker hub
 * Image
-  * a file that describes a program configuration and startup commands; FS snapshot + startup commands; (FS = file system)
+  * a file that describes a configuration and startup commands; FS snapshot + startup commands; (FS = file system)
   * = program configuration (easy understand)
 * Container
   * a namespaced resources that runs a process(s). (partition of resources)
@@ -26,6 +26,7 @@
   * = resource partition (easy understand)
 * Container loads image when running it.
 * Image creates a container and container can create an image.
+* IN SHORT: "image is a VM config file & container is a live process in VM."
 
 # Docker containers (section 2)
 * busybox is a lite-weight linux program.
