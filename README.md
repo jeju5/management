@@ -8,12 +8,12 @@
 ## PLAN
 * 2019
   * 05/19-05/25
-    * SUN: 72kg
-    * MON: 70kg, ~8MI~7MI, 
-    * TUE: 68kg, Docker & Kubernetes, AWS IAM, G A
-    * WED: 67.5kg, AWS (25%), G A B C
-    * THU: 67kg, AWS (50%)
-    * FRI: 66.5kg, AWS (75%)
+    * ~SUN: 72kg~
+    * ~MON: 70kg, 8MI ~
+    * ~TUE: 68kg, Docker & Kubernetes, AWS IAM, G A~
+    * WED: 67.8kg, AWS (IAM), 8MI
+    * THU: 67kg, AWS (50%), 5MI
+    * FRI: 66.5kg, AWS (75%), 6MI
     * SAT: 66kg
     ```
     * reach 63kg (70kg -> 63kg)
