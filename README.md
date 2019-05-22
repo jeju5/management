@@ -10,7 +10,7 @@
   * 05/19-05/25
     * SUN: 72kg
     * MON: 7MI -> 70kg
-    * TUE: Docker & Kubernetes sec7 -> AWS Start -> 67.9kg
+    * TUE: Docker & Kubernetes (sec7) -> AWS Start -> 67.9kg
     * WED: 8.3MI -> G A B -> MOVIES -> 67.5kg
     * THU: 6.3MI -> C D E F G A B, AWS (25%), 67kg
     * FRI: 5.3MI -> Groceries -> Make Bobburgers -> AWS (50%)
