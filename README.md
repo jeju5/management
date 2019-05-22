@@ -8,20 +8,19 @@
 ## PLAN
 * 2019
   * 05/19-05/25
-    * ~SUN: 72kg~
-    * ~MON: 70kg, 8MI~
-    * ~TUE: 68kg, Docker & Kubernetes, AWS IAM, G A~
-    * WED: 67.8kg, AWS (IAM), 8MI
-    * THU: 67kg, AWS (50%), 5MI
-    * FRI: 66.5kg, AWS (75%), 6MI
+    * SUN: 72kg
+    * MON: 7MI -> 70kg
+    * TUE: Docker & Kubernetes sec7 -> AWS Start -> 67.9kg
+    * WED: 8.3MI -> G A B -> MOVIES -> 67.5kg
+    * THU: 6.3MI -> C D E F G A B, AWS (25%), 67kg
+    * FRI: 5.3MI -> Groceries -> Make Bobburgers -> AWS (50%)
     * SAT: 66kg
     ```
-    * reach 63kg (70kg -> 63kg)
-    * 코드 C D E F G A B
-    * Docker & Kubernetes (~ section7)
+    * reach 63kg
+    * 8MI
+    * C D E F G A B
+    * Docker & Kubernetes (sec7)
     * AWS udemy course (50%)
-    * RUN
-      8(MON)-5(TUE)-5(WED)-5(THU)-5(FRI)
     ```
   * 05/26-06/01
     * keep 64kg
@@ -39,9 +38,8 @@
     * AWS Practioner exam
     * 통기타 때려잡기 (100%)
   * 06/09-06/15
-    * reach 63kg -> keep under 65kg 
+    * reach 63kg -> keep under 65kg
     * 통기타 때려잡기 (100%)
-    
   * tasks
     * Docker and Kubernetes 완강
     * AWS Developer
