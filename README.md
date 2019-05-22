@@ -9,7 +9,7 @@
 * 2019
   * 05/19-05/25
     * ~SUN: 72kg~
-    * ~MON: 70kg, 8MI ~
+    * ~MON: 70kg, 8MI~
     * ~TUE: 68kg, Docker & Kubernetes, AWS IAM, G A~
     * WED: 67.8kg, AWS (IAM), 8MI
     * THU: 67kg, AWS (50%), 5MI
