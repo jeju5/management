@@ -24,21 +24,20 @@
   ```
 
 * WORKOUT
-  * General Plan
-    ```
-    SUN: rest
-    MON: PULL-UP  5.3 MILE
-    TUE: RING-DIP 5.3 MILE
-    WED: SIT-UP   5.3 MILE
-    THU: PUSH-UP  5.3 MILE
-    FRI: SIT-UP   3   MILE & DUMBBELLS
-    SAT:          LONG
+  ```
+  SUN: rest
+  MON: PULL-UP  5.3 MILE
+  TUE: RING-DIP 5.3 MILE
+  WED: SIT-UP   5.3 MILE
+  THU: PUSH-UP  5.3 MILE
+  FRI: SIT-UP   3   MILE & DUMBBELLS
+  SAT:          LONG
 
-    PULL-UP : 5 SET
-    RING-DIP: 5 SET
-    PUSH-UP : 150 REP
-    SIT-UP  : 150 REP
-    ```
+  PULL-UP : 5 SET
+  RING-DIP: 5 SET
+  PUSH-UP : 150 REP
+  SIT-UP  : 150 REP
+  ```
 
   * RUN (LONG)
     ```
