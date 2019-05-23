@@ -14,7 +14,8 @@
     * WED: 5.3MI -> Groceries -> Make Bobburgers -> 68kg
     * __THU: 5.3MI -> C D E F G A B, AWS (25%), 68kg__
     * __FRI: 8.3MI -> AWS (50%) -> 67kg__
-    * __SAT: 66kg__
+    * __SAT: 66.5kg__
+    * __SUN: 66kg__
     ```
     * reach 66kg
     * 8MI
