@@ -1,10 +1,5 @@
 # Develop
-* 맥북은 회사에 놓고 올 것
-* 맥북을 써야한다면 회사에서 쓸 것
-* 찬양
-  * https://www.youtube.com/watch?v=Ky-3WLmFcgA
-  * https://www.youtube.com/watch?v=iN-abAReAEY
-  * 소원 한웅재
+
 ## PLAN
 * 2019
   * 05/19-05/25
@@ -12,9 +7,9 @@
     * MON: 7MI -> 70kg
     * TUE: Docker & Kubernetes (sec7) -> AWS Start -> 68kg
     * WED: 5.3MI -> Groceries -> Make Bobburgers -> 70kg
-    * __THU: 8.3MI -> G A B -> AWS (25%), 68kg__
+    * __THU: 5.3MI -> G A B -> AWS (25%), 68kg__
     * __FRI: 5.3MI (AM) -> G A B -> AWS (50%) -> 5.3MI (PM) -> 67kg__
-    * __SAT: 새벽기도 -> 장보기 -> 요리 -> QT모임 -> 66.5kg__
+    * __SAT: 5.3MI (AM) -> 새벽기도 -> 장보기 -> 요리 -> QT모임 -> 66.5kg__
     * __SUN: 66kg__
     ```
     * reach 66kg
