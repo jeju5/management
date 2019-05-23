@@ -1,10 +1,5 @@
 # Develop
-* 맥북은 회사에 놓고 올 것
-* 맥북을 써야한다면 회사에서 쓸 것
-* 찬양
-  * https://www.youtube.com/watch?v=Ky-3WLmFcgA
-  * https://www.youtube.com/watch?v=iN-abAReAEY
-  * 소원 한웅재
+
 ## PLAN
 * 2019
   * 05/19-05/25
@@ -71,42 +66,7 @@
   * Shell Scripting
   
 ## Life
-* Meal
-* Run
-  ```
-  5
-  8
-  8
-  10
-
-  5
-  10
-  10
-  10 
-
-  8
-  13
-  13
-  8
-  
-  15
-  15
-  8
-  18
-  
-  18
-  8
-  20
-  20
-  
-  8
-  23
-  23
-  8
-  
-  26
-  8
-  ```
+* Meal and workout
 * Weight
 * Boxing
 * Device Management
