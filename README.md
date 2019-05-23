@@ -8,22 +8,22 @@
 ## PLAN
 * 2019
   * 05/19-05/25
-    * SUN: 72kg
-    * MON: 7MI -> 70kg
-    * TUE: Docker & Kubernetes (sec7) -> AWS Start -> 68kg
-    * WED: 5.3MI -> Groceries -> Make Bobburgers -> 68kg
+      * SUN: 72kg
+      * MON: 7MI -> 70kg
+      * TUE: Docker & Kubernetes (sec7) -> AWS Start -> 68kg
+      * WED: 5.3MI -> Groceries -> Make Bobburgers -> 68kg
     * THU: 5.3MI -> C D E F G A B, AWS (25%), 68kg
     * FRI: 8.3MI -> AWS (50%) -> 67kg
     * SAT: 66kg
     ```
-    * reach 63kg
+    * reach 66kg
     * 8MI
     * C D E F G A B
     * Docker & Kubernetes (sec7)
     * AWS udemy course (50%)
     ```
   * 05/26-06/01
-    * keep 64kg
+    * reach 63kg
     * 제주도의 푸른밤 기타 완주
     * COMPLETE AWS UDEMY COURSE (100%)
     * 13 MILES
