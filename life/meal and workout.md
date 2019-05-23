@@ -25,3 +25,7 @@ RING-DIP  : 5 SET
 MUSCLE-UP : 5 SET
 SIT-UP    : 300 REP
 ```
+
+* IDEAL WEIGHT
+  * keep 64kg (63kg - 65kg)
+  * if you are on a diet reach 63kg and bounce to 65kg then keep 64kg
