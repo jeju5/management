@@ -12,8 +12,8 @@
     * MON: 7MI -> 70kg
     * TUE: Docker & Kubernetes (sec7) -> AWS Start -> 68kg
     * WED: 5.3MI -> Groceries -> Make Bobburgers -> 70kg
-    * __THU: 8.3MI -> C D E F G A B, AWS (25%), 68kg__
-    * __FRI: 5.3MI (AM) -> AWS (50%) -> 4.3MI (PM) -> 67kg__
+    * __THU: 8.3MI -> G A B -> AWS (25%), 68kg__
+    * __FRI: 5.3MI (AM) -> G A B -> AWS (50%) -> 5.3MI (PM) -> 67kg__
     * __SAT: 새벽기도 -> 장보기 -> 요리 -> QT모임 -> 66.5kg__
     * __SUN: 66kg__
     ```
