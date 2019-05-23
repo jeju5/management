@@ -12,8 +12,8 @@
     * MON: 7MI -> 70kg
     * TUE: Docker & Kubernetes (sec7) -> AWS Start -> 68kg
     * WED: 5.3MI -> Groceries -> Make Bobburgers -> 68kg
-    * __THU: 5.3MI -> C D E F G A B, AWS (25%), 67.7kg__
-    * __FRI: 8.3MI -> AWS (50%) -> 67kg__
+    * __THU: 8.3MI -> C D E F G A B, AWS (25%), 67.7kg__
+    * __FRI: 5.3MI (AM) -> AWS (50%) -> 4.3MI (PM) -> 67kg__
     * __SAT: 66.5kg__
     * __SUN: 66kg__
     ```
