@@ -3,10 +3,6 @@
 ## PLAN
 * 2019
   * 05/19-05/25
-    * SUN: 72kg
-    * MON: 7MI -> 70kg
-    * TUE: Docker & Kubernetes (sec7) -> AWS Start -> 68kg
-    * WED: 5.3MI -> Groceries -> Make Bobburgers -> 70kg
     * __THU: 5.3MI -> G A B -> AWS (25%), 68kg__
     * __FRI: 5.3MI (AM) -> G A B -> AWS (50%) -> 5.3MI (PM) -> 67kg__
     * __SAT: 5.3MI (AM) -> 새벽기도 -> 장보기 -> 요리 -> QT모임 -> 66.5kg__
