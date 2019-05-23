@@ -3,8 +3,8 @@
 ## PLAN
 * 2019
   * 05/19-05/25
-    * __THU: 5.3MI -> G A B -> AWS (25%), 67.9kg__
-    * __FRI: 5.3MI (AM) -> G A B -> AWS (50%) -> 5.3MI (PM) -> 67kg__
+    * __THU: 5.3MI -> G A B -> AWS, 67.7kg__
+    * __FRI: 8.3MI (AM) -> G A B -> AWS (25%) -> 67kg__
     * __SAT: 5.3MI (AM) -> 새벽기도 -> 장보기 -> 요리 -> QT모임 -> 66.5kg__
     * __SUN: 66kg__
     ```
@@ -12,7 +12,7 @@
     * 8MI
     * C D E F G A B
     * Docker & Kubernetes (sec7)
-    * AWS udemy course (50%)
+    * AWS udemy course (20%)
     ```
   * 05/26-06/01
     * reach 63kg
