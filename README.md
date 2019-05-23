@@ -1,14 +1,19 @@
 # Develop
-
+* 맥북은 회사에 놓고 올 것
+* 맥북을 써야한다면 회사에서 쓸 것
+* 찬양
+  * https://www.youtube.com/watch?v=Ky-3WLmFcgA
+  * https://www.youtube.com/watch?v=iN-abAReAEY
+  * 소원 한웅재
 ## PLAN
 * 2019
   * 05/19-05/25
     * SUN: 72kg
     * MON: 7MI -> 70kg
-    * TUE: Docker & Kubernetes (sec7) -> AWS Start -> 67.9kg
-    * WED: 8.3MI -> G A B -> MOVIES -> 67.5kg
-    * THU: 6.3MI -> C D E F G A B, AWS (25%), 67kg
-    * FRI: 5.3MI -> Groceries -> Make Bobburgers -> AWS (50%)
+    * TUE: Docker & Kubernetes (sec7) -> AWS Start -> 68kg
+    * WED: 5.3MI -> Groceries -> Make Bobburgers -> 68kg
+    * THU: 5.3MI -> C D E F G A B, AWS (25%), 68kg
+    * FRI: 8.3MI -> AWS (50%) -> 67kg
     * SAT: 66kg
     ```
     * reach 63kg
@@ -66,8 +71,7 @@
   * Shell Scripting
   
 ## Life
-* Meal and workout
-* Weight
-* Boxing
-* Device Management
-* English
+* meal-workout-weight
+* boxing
+* device management
+* english
