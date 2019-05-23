@@ -1,4 +1,4 @@
-* Schedule MEAL
+* TIME
   ```
   0430 0530 기상, 샤워, 운동
   0530 0630 예배
@@ -24,25 +24,26 @@
   ```
 
 * WORKOUT
-  ```
-  SUN: rest
-  MON: PULL-UP  5.3 MILE
-  TUE: RING-DIP 5.3 MILE
-  WED: SIT-UP   5.3 MILE
-  THU: PUSH-UP  5.3 MILE
-  FRI: SIT-UP   3   MILE & DUMBBELLS
-  SAT:          LONG
+  * General Plan
+    ```
+    SUN: rest
+    MON: PULL-UP  5.3 MILE
+    TUE: RING-DIP 5.3 MILE
+    WED: SIT-UP   5.3 MILE
+    THU: PUSH-UP  5.3 MILE
+    FRI: SIT-UP   3   MILE & DUMBBELLS
+    SAT:          LONG
 
-  PULL-UP : 5 SET
-  RING-DIP: 5 SET
-  PUSH-UP : 150 REP
-  SIT-UP  : 150 REP
-  ```
+    PULL-UP : 5 SET
+    RING-DIP: 5 SET
+    PUSH-UP : 150 REP
+    SIT-UP  : 150 REP
+    ```
 
-* RUN (LONG)
-  ```
-  5 8 8 10 5 10 10 10 (8) 13 13 8 15 15 8 18 18 8 20 20 8 23 23 8 26 8
-  ```
+  * RUN (LONG)
+    ```
+    5 8 8 10 5 10 10 10 (8) 13 13 8 15 15 8 18 18 8 20 20 8 23 23 8 26 8
+    ```
 
 * IDEAL WEIGHT
   * keep 64kg (63kg - 65kg)
