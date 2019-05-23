@@ -12,7 +12,16 @@
 
 * WORKOUT
 ```
-SUN   MON  TUE  WED  THU  FRI  SAT
- X    PULL DIP  ABS  MUP  ABS
- X    5.3  5.3  5.3  5.3  5.3  10+
+SUN: rest
+MON: PULL-UP    5.3 MILE
+TUE: RING-DIP   5.3 MILE
+WED: SIT-UP     5.3 MILE
+THU: MUSCLE-UP  5.3 MILE
+FRI: SIT-UP     5.3 MILE
+SAT:            10+
+ 
+PULL-UP   : 5 SET
+RING-DIP  : 5 SET
+MUSCLE-UP : 5 SET
+SIT-UP    : 300 REP
 ```
