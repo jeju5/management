@@ -3,9 +3,8 @@
 ## PLAN
 * 2019
   * 05/19-05/25
-    * __THU: 5.3MI -> G A B -> AWS, 67.7kg__
-    * __FRI: 8.3MI (AM) -> G A B -> AWS (25%) -> 67kg__
-    * __SAT: 5.3MI (AM) -> 새벽기도 -> 장보기 -> 요리 -> QT모임 -> 66.5kg__
+    * __FRI: G A B -> AWS (25%) -> 68kg__
+    * __SAT: 요리 -> QT모임 -> 66.5kg__
     * __SUN: 66kg__
     ```
     * reach 66kg
