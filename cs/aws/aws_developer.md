@@ -24,3 +24,13 @@
     * Security Status -> Manage MFA -> Virtual MFA device -> continue
     * Install MFA app into my phone
     * Scan QR CODE with your phone -> try Authenticator login
+  * User
+    * a AWS user
+  * Groups
+    * collection of users
+  * Policy
+    * defines permission
+    * written in JSON
+    * delegate policy(es) to a group or directly assign to a user
+  * Roles
+    * set of permissions assigned to an entity(ex. EC2)
