@@ -3,21 +3,13 @@
 ## PLAN
 * 2019
   * 05/19-05/25
-    * __FRI: G A B -> AWS (25%) -> 68kg__
-    * __SAT: 요리 -> QT모임 -> 66.5kg__
-    * __SUN: 66kg__
-    ```
-    * reach 66kg
-    * 8MI
-    * C D E F G A B
-    * Docker & Kubernetes (sec7)
-    * AWS udemy course (20%)
-    ```
+    * __SAT: 요리 -> QT모임 -> AWS IAM & AWS EC2 -> 67.5kg__
+    * __SUN: 67kg__
   * 05/26-06/01
-    * reach 63kg
-    * 제주도의 푸른밤 기타 완주
-    * COMPLETE AWS UDEMY COURSE (100%)
-    * 13 MILES
+    * Reach 65kg
+    * C D E F G A B
+    * AWS (section: 4, 5, 6, 7)
+    * RUN 13 MILES
   * 06/02-06/08
     * keep 64kg
     * Start Boxing (Uppercut Boxing Gym)
