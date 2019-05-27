@@ -2,18 +2,15 @@
 
 ## PLAN
 * 2019
-  * 05/19-05/25
-    * __SAT: 요리 -> QT모임 -> AWS IAM & AWS EC2 -> 67.5kg__
-    * __SUN: 67kg__
   * 05/26-06/01
-    * Reach 65kg
+    * reach 66kg
     * C D E F G A B
     * AWS (section: 4, 5, 6, 7)
     * RUN 13 MILES
   * 06/02-06/08
-    * keep 64kg
+    * reach 64kg
     * Start Boxing (Uppercut Boxing Gym)
-    * AWS Practioner Exam
+    * AWS (section: 
     * 통기타 때려잡기 (66%)
     * 13 MILES
   * 06/09-06/15
