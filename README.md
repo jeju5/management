@@ -5,7 +5,7 @@
   * 05/26-06/01
     * reach 66kg
     * C D E F G A B
-    * AWS (section: 4, 5, 6, 7)
+    * AWS complete (section: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
     * RUN 13 MILES
   * 06/02-06/08
     * reach 64kg
