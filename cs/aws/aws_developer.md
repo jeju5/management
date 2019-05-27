@@ -43,7 +43,7 @@
     * spot: bidding for capacity -> good for flexible-time need (start time & end time), good for temporary additional need
       * if terminated partial hour usage -> if AWS EC2 terminates it, you won't be charged / if you terminate it, you will be charged for a complete hour
     * dedicated host: physical EC2 server -> good for region-specific regulations
-  * Instance Type (optimized for)
+  * Instance Type (optimized for) "ATM CRX PGF HID"
     * General: A T M
     * Compute: C
     * Memory: R X(extreme)
@@ -66,4 +66,65 @@
       * Magnetic
         * legacy service
         * lowest cost among all
-      
+  * EC2 LAB
+    * AWS console -> Services -> EC2 -> Launch Instance
+      * you will see VMs, select what you want
+      * then select instance type: "ATM CRX PGF HID"
+      * then configure instance
+        * purchasing options, number of instances, network, shutdown behavior(STOP, Terminate) ... etc
+        * terminate means remove
+      * add storage
+        * gp2, io1, magnetic ... 
+      * add tag
+      * configure security group
+        * types: ssh, rdp, http...
+          * ssh: secure shell
+          * rdp: remote desktop protocol
+          * http: hyper text transfer protocol (protocol for http request/response)
+        * protocol: tcp
+        * source
+          * 0.0.0.0/0, ::/0
+            * 0.0.0.0/0 is for ipv4
+            * ::/0 is for ipv6
+        * launch
+          * you will need public key and private key
+            * public/private key
+              * symmetric key encryption
+                ```
+                PLAIN-TEXT ---encrypt with key1---> CIPHER-TEXT ---decrypt with key1---> PLAIN-TEXT
+                ```
+              * asymmetrical key encryption
+                ```
+                PLAIN-TEXT ---encrypt with key1---> CIPHER-TEXT ---decrypt with key1---> PLAIN-TEXT
+                
+                key1(public key): can be shared to the public
+                key2(private key): should be kept as a secret
+                ```
+          * create them and download them
+          * launch
+        * go to instances
+          * select an instance -> click connect
+            * you can connect via one of two options (standalone ssh / mindterm ssh)
+              * mindterm ssh is accessible through web browser such as Chrome. It requires JAVA
+            * ssh with standalone
+              ```
+              chmod 400 labKeyPair3.pem
+              ssh -i "labKeyPair3.pem" ec2-user@ec2-18-221-93-64.us-east-2.compute.amazonaws.com
+              ```
+            * work with your instance
+              ```
+              sudo su                # change working directory to a root user
+              yum update -y          # upate packages with yum; -y means say yes to all questions entailed
+              yum install httpd -y   # install Apache httpd server
+              service httpd start    # start Apache httpd server
+              service httpd status   # get Apache httpd server status
+
+              cd /var/www/html       # go to Apache httpd directory
+              nano index.html        # create an html file
+              ...                    # with a welcome message
+              head -10 index.html    # view first 10 lines
+              ```
+            * access IP address of your VM instance from a local
+              * IPv4 Public IP address can be found from AWS Instances pane
+    * Load Balancer
+      * 
