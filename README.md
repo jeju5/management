@@ -3,6 +3,13 @@
 ## PLAN
 * 2019
   * 05/26-06/01
+    ```
+    TUE AWS 3
+    WED AWS 4 5
+    THU AWS 6 7 
+    FRI AWS 8 9
+    SAT AWS 10 11 12
+    ```
     * reach 66kg
     * C D E F G A B
     * AWS complete (section: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
