@@ -4,16 +4,20 @@
 * 2019
   * 05/26-06/01
     ```
+    <PLAN>
     TUE AWS 3
     WED AWS 4
     THU AWS 5
     FRI AWS 6 7 8
     SAT AWS 9 10 11 12
     ```
-    * reach 66kg
-    * C D E F G A B
-    * AWS 100% (section: 3 - 12)
-    * RUN 13 MILES
+    ```
+    <GOALS>
+    AWS 100% (section: 3 - 12)
+    reach 66kg
+    guitar C D E F G A B
+    RUN 13 MILES
+    ```
   * 06/02-06/08
     * reach 64kg
     * Start Boxing (Try Gorilla Combat Boxing Gym)
