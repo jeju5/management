@@ -12,11 +12,24 @@
     ```
     ```
     <PLAN>
-    TUE AWS 3
-    WED AWS 4
-    THU AWS 5
-    FRI AWS 6 7 8
-    SAT AWS 9 10 11 12
+    TUE
+     - AWS 3
+     - 68.5kg
+    WED
+     - AWS 4
+     - 5MI
+     - 67.5kg
+    THU
+     - AWS 5
+     - 5MI
+     - 67kg
+    FRI
+     - AWS 6 7 8
+     - 13MI
+     - 66.5kg
+    SAT
+     - AWS 9 10 11 12
+     - 66kg
     ```
   * 06/02-06/08
     * reach 64kg
