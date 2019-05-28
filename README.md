@@ -25,7 +25,7 @@
     * AWS udemy course (100%)
     * AWS Practioner exam
     * 통기타 때려잡기 (100%)
-  * 06/09-06/15
+  * 06/16-06/23
     * reach 63kg -> keep under 65kg
     * 통기타 때려잡기 (100%)
   * tasks
