@@ -3,15 +3,15 @@
 ## PLAN
 * 2019
   * 05/26-06/01
-    * GOAL
     ```
+    <GOAL>
     AWS 100% (section: 3 - 12)
     reach 66kg
     guitar C D E F G A B
     RUN 13 MILES
     ```
-    * PLAN
     ```
+    <PLAN>
     TUE
      - AWS 3
      - 68.5kg
