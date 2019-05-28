@@ -5,6 +5,7 @@
   * 05/26-06/01
     ```
     <GOAL>
+    PRAY 5/28(TUE) - 6/17(MON)
     AWS 100% (section: 3 - 12)
     reach 66kg
     RUN 13 MILES
