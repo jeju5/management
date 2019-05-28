@@ -47,4 +47,4 @@
 
 * IDEAL WEIGHT
   * keep 64kg (63kg - 65kg)
-  * if you are on a diet reach 63kg and bounce to 65kg then keep 64kg
+  * reach 63kg and bounce upto 65kg then keep 64kg
