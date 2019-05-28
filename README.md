@@ -7,8 +7,8 @@
     <GOAL>
     AWS 100% (section: 3 - 12)
     reach 66kg
-    guitar C D E F G A B
     RUN 13 MILES
+    guitar C D E F G A B
     ```
     ```
     <PLAN>
