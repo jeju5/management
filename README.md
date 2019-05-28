@@ -7,17 +7,16 @@
     TUE AWS 3
     WED AWS 4
     THU AWS 5
-    FRI AWS 6
-    SAT AWS 7 8
+    FRI AWS 6 7 8
+    SAT AWS 9 10 11 12
     ```
     * reach 66kg
     * C D E F G A B
-    * AWS 90% (section: 3, 4, 5, 6, 7, 8)
+    * AWS 100% (section: 3 - 12)
     * RUN 13 MILES
   * 06/02-06/08
     * reach 64kg
-    * Start Boxing (Uppercut Boxing Gym)
-    * AWS 100% (section: 9 10 11 12)
+    * Start Boxing (Try Gorilla Combat Boxing Gym)
     * AWS practice exams
     * AWS reserve Cloud Practitioner
     * 통기타 때려잡기 (66%)
