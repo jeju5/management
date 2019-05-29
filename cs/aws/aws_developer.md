@@ -127,4 +127,37 @@
             * access IP address of your VM instance from a local
               * IPv4 Public IP address can be found from AWS Instances pane
     * Load Balancer
-      * 
+      * load balancer 101
+        * layer 4 load balancing: operates at transport layer
+        * layer 7 load balancing: operates at content layer
+        * when your load balancer fails, it throws 504 error (gateway timeout)
+        * x-forwarded-for header
+          * public ip makes a request to domain name
+          * DNS service transfers the request to a load balancer
+          * load balancer transfer a request to Application Server
+          * Application Server will get public ip as x-forwarded-for header
+      * Route53 Lab
+        * Route53 is AWS DNS service
+          * it maps the request to EC2, S3 or load balancer
+        * AWS -> EC2 -> Load Balancers
+          * Create Load Balancer
+            * you have 3 options (Application Load Balancer(HTTP/HTTPS), Network Load Balancer(TCP), Classic Load Balancer)
+            * select Application Load balancer for our use (flexible and general)
+            * configure name, listeners(protocol(HTTP/HTTPS) and port) and zones(region)
+            * configure security group
+            * configure routing (DNS Name --mapping--> App Server); you can route a request to Instance, IP, Lambda function
+            * select EC2 Instance you created
+            * configure health check
+        * AWS -> Route53
+          * Domains -> Register Domain (buy a domain and register it)
+          * Hosted Zones
+            * select the domain you registered
+            * create record set
+            * select Alias (this allows DNS server to map a request to AWS service you created) -> select the load balancer you created
+        * TEST: make a request to the domain you registerd ---> DNS server ---> load balancer --> EC2
+
+         -> DNS management get started now
+          * Create hosted zone
+
+
+
