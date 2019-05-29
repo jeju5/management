@@ -4,7 +4,7 @@
 * 2019
   * 05/26-06/01
     * PRAY 5/28(TUE) - 6/17(MON)
-    * reach 65kg
+    * reach 66kg
     * AWS 3-8
     * RUN 13 MILES
     * guitar C D E F G A B
