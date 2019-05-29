@@ -3,49 +3,45 @@
 ## PLAN
 * 2019
   * 05/26-06/01
+    * PRAY 5/28(TUE) - 6/17(MON)
+    * reach 65kg
+    * AWS 3-8
+    * RUN 13 MILES
+    * guitar C D E F G A B
     ```
-    <GOAL>
-    PRAY 5/28(TUE) - 6/17(MON)
-    AWS 100% (section: 3 - 12)
-    reach 66kg
-    RUN 13 MILES
-    guitar C D E F G A B
-    ```
-    ```
-    <PLAN>
     TUE
      - AWS 3
      - 68.5kg
     WED
-     - AWS 4
+     - AWS 3, 4
      - 5MI
      - 67.5kg
     THU
-     - AWS 5
+     - AWS 4, 5
      - 5MI
      - 67kg
     FRI
-     - AWS 6 7 8
+     - AWS 6
      - 13MI
      - 66.5kg
     SAT
-     - AWS 9 10 11 12
+     - AWS 7, 8
      - 66kg
     ```
   * 06/02-06/08
-    * reach 64kg
+    * reach 63kg
     * Start Boxing (Try Gorilla Combat Boxing Gym)
-    * AWS practice exams
-    * AWS reserve Cloud Practitioner
-    * 통기타 때려잡기 (66%)
-    * 13 MILES
+    * AWS 100% (9-12)
+    * AWS practice exams 50%
+    * Reserve AWS cloud practioner
+    * RUN 13 MILES
   * 06/09-06/15
-    * AWS udemy course (100%)
-    * AWS Practioner exam
-    * 통기타 때려잡기 (100%)
+    * keep 64kg
+    * AWS practice exams 100%
+    * RUN 8 MILES
   * 06/16-06/23
-    * reach 63kg -> keep under 65kg
-    * 통기타 때려잡기 (100%)
+    
+    
   * tasks
     * Docker and Kubernetes 완강
     * AWS Developer
