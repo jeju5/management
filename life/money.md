@@ -17,9 +17,4 @@
   * car insurance $ 660 (6month)
 
 * monthly save
-  * save around $2000/month
-  
- * plan
-   * CHECKING: U.S. Bank.
-   * SAVING:   U.S. Ban.
-   * CREDIT:   
+  * save at least $2500/month -> $30,000 / year
