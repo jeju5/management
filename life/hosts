@@ -353,8 +353,30 @@
 127.0.0.1 search.daum.net
 127.0.0.1 shopping.daum.net
 
-127.0.0.1 www.amazon.com
-127.0.0.1 amazon.com
+#127.0.0.1 www.amazon.com
+#127.0.0.1 amazon.com
+127.0.0.1 s3-iad-2.cf.dash.row.aiv-cdn.net
+127.0.0.1 s3.ll.dash.row.aiv-cdn.net
+127.0.0.1 s3-dub-2.cf.dash.row.aiv-cdn.net
+127.0.0.1 13s3.lvlt.dash.row.aiv-cdn.net
+127.0.0.1 https-117-121-250-225.sin.llnw.net
+127.0.0.1 s3.ll.hls.us.aiv-cdn.net
+127.0.0.1 16s3.lvlt.dash.row.aiv-cdn.net
+127.0.0.1 231s3.ll.dash.us.aiv-cdn.net
+127.0.0.1 233s3.ll.dash.us.aiv-cdn.net
+127.0.0.1 6s3.lvlt.smooth.us.aiv-cdn.net
+127.0.0.1 894s3.ll.dash.us.aiv-cdn.net
+127.0.0.1 8s3.lvlt.dash.us.aiv-cdn.net
+127.0.0.1 cds1244.lon.llnw.net
+127.0.0.1 cds135.nrt.llnw.net
+127.0.0.1 cds209.nrt.llnw.net
+127.0.0.1 https-178-79-238-56.mrs.llnw.net
+127.0.0.1 js-assets.aiv-cdn.net
+127.0.0.1 pop-iad-2.cf.dash.row.aiv-cdn.net
+127.0.0.1 s3-iad-2.cf.dash.row.aiv-cdn.net
+127.0.0.1 s3-iad-ww.cf.videorolls.row.aiv-cdn.net
+127.0.0.1 s3-sin-ww.cf.dash.row.aiv-cdn.net
+127.0.0.1 s3.ll.dash.row.aiv-cdn.net
 
 127.0.0.1 yahoo.com
 127.0.0.1 www.yahoo.com
@@ -7316,7 +7338,6 @@
 # unchecky_begin
 # These rules were added by the Unchecky program in order to block advertising software modules
 0.0.0.0 0.0.0.0 # fix for traceroute and netstat display anomaly
-0.0.0.0 tracking.opencandy.com.s3.amazonaws.com
 0.0.0.0 media.opencandy.com
 0.0.0.0 cdn.opencandy.com
 0.0.0.0 tracking.opencandy.com
