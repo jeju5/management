@@ -35,8 +35,8 @@
 
   PULL-UP : 5 SET
   RING-DIP: 5 SET
-  PUSH-UP : 150 REP
-  SIT-UP  : 150 REP
+  PUSH-UP : 100 REP
+  SIT-UP  : 100 REP
   ```
 
   * RUN (LONG)
