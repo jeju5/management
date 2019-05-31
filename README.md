@@ -7,33 +7,20 @@
     * AWS 3-8
     * RUN 13 MILES
     * guitar C D E F G A B
-    ```
-    THU
-     - AWS 4, 5
-     - 5MI
-     - 69kg
-    FRI
-     - AWS 6
-     - 13MI
-     - 67.5kg
-    SAT
-     - AWS 7, 8
-     - 67kg
-    ```
   * 06/02-06/08
-    * reach 63kg
+    * reach 68kg
     * Start Boxing (Try Gorilla Combat Boxing Gym)
     * AWS 100% (9-12)
     * AWS practice exams 50%
     * Reserve AWS cloud practioner
     * RUN 13 MILES
   * 06/09-06/15
-    * keep 64kg
-    * AWS practice exams 100%
-    * RUN 8 MILES
-  * 06/16-06/23
-    
-    
+    * reach 65kg
+  * 06/16-06/22
+    * reach 62kg
+  * 06/23-06/29
+
+
   * tasks
     * Docker and Kubernetes 완강
     * AWS Developer
