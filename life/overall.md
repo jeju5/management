@@ -57,7 +57,7 @@
     save      $2000 -> US Saving
     offering  $550  -> US Checking
     regular   $1400 -> AMEX Hilton / US Checking
-    personal  $500  -> AMEX Delta / TCF Checking
+    personal  $600  -> AMEX Delta / TCF Checking
   DETAILS
     offering
       Tithe: $450
@@ -70,5 +70,6 @@
       Auto: $200
     personal
       Eat: $100/wk -> $400/mo
-      Fun: $200
+      Box: $100
+      Fun: $100
   ```
