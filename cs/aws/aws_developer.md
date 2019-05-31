@@ -139,7 +139,7 @@
       * Route53 Lab
         * Route53 is AWS DNS service
           * it maps the request to EC2, S3 or load balancer
-        * AWS -> EC2 -> Load Balancers
+        * Build Load Balancers -> EC2
           * Create Load Balancer
             * you have 3 options (Application Load Balancer(HTTP/HTTPS), Network Load Balancer(TCP), Classic Load Balancer)
             * select Application Load balancer for our use (flexible and general)
@@ -148,13 +148,12 @@
             * configure routing (DNS Name --mapping--> App Server); you can route a request to Instance, IP, Lambda function
             * select EC2 Instance you created
             * configure health check
-        * AWS -> Route53
+        * Build Route53 DNS -> Load Balancer
           * Domains -> Register Domain (buy a domain and register it)
           * Hosted Zones
             * select the domain you registered
             * create record set
-            * select Alias (this allows DNS server to map a request to AWS service you created)
-            * select the load balancer you created
+            * select Alias(the load balancer you created); allows DNS to map AWS service you created
         * TEST
           * make a request to the domain you registerd --> DNS server --> load balancer --> EC2
 
