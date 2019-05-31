@@ -23,15 +23,15 @@
   0600 요거트, 사우어크라우트, 스테이크(연어/소고기)
   ```
 
-* WORKOUT
+* WORK OUT
   ```
   SUN: rest
-  MON: PULL-UP   5.3 MI
-  TUE: RING-DIP  5.3 MI
-  WED: SIT-UP    5.3 MI
-  THU: PUSH-UP   5.3 MI
-  FRI: SIT-UP    1 MI & DUMBBELLS
-  SAT:           LONG MI
+  MON: PULL-UP   5.3 MI BOX
+  TUE: RING-DIP  5.3 MI BOX
+  WED: SIT-UP    5.3 MI BOX
+  THU: PUSH-UP   5.3 MI BOX
+  FRI: SIT-UP    1 MI & DUMBBELLS BOX
+  SAT:           LONG MI BOX
 
   PULL-UP : 5 SET
   RING-DIP: 5 SET
