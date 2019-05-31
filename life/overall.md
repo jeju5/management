@@ -48,7 +48,7 @@
 * IDEAL WEIGHT
   * keep 64kg (64kg - 65kg)
   * diet: reach 63kg --> bounce 65kg --> keep 64kg
-    * skip 1200 meal when on diet
+    * skip 12:00 meal when on diet
 
 * Money Management (monthly)
   ```
