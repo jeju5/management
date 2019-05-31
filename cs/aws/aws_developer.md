@@ -153,8 +153,10 @@
           * Hosted Zones
             * select the domain you registered
             * create record set
-            * select Alias (this allows DNS server to map a request to AWS service you created) -> select the load balancer you created
-        * TEST: make a request to the domain you registerd ---> DNS server ---> load balancer --> EC2 -> DNS management get started now
+            * select Alias (this allows DNS server to map a request to AWS service you created)
+            * select the load balancer you created
+        * TEST
+          * make a request to the domain you registerd --> DNS server --> load balancer --> EC2
 
 
 
