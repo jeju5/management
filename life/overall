@@ -48,3 +48,25 @@
 * IDEAL WEIGHT
   * keep 64kg (64kg - 65kg)
   * diet: reach 63kg --> bounce 65kg --> keep 64kg
+
+
+* Money Management
+  ```
+  IN
+    concur    $4520/mo -> US Checking
+  OUT
+    save      $2000 -> US Saving
+    offering  $550  -> US Checking
+              Tithe: $450/mo
+              Weekly: $100/mo
+    personal  $700  -> AMEX Hilton -> TCF Checking
+              Eat: $100/wk -> $400/mo
+              Fun: $150/mo
+              Work: $150/mo
+    __regular   $1400 -> AMEX Delta -> TCF__
+              Paylease: $1095 -> US Checking
+              Xcel Energy: $30 -> US Checking
+              Xfinity: $25 -> AMEX Delta
+              Tmobile: $50 -> AMEX Delta
+              Auto: $200 -> AMEX Delta
+  ```
