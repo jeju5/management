@@ -2,10 +2,9 @@
 
 ## Routine
 * 5R rope/ladder
+* 10R hands
 * 10R gloves
-* 10R hand
-* 1R speed ball
-* 1R speed bag
+* 5R speed
 
 ## Rope
 * FREE    : sole, toe, hill, knee / single, switch, single
@@ -19,117 +18,118 @@
 * SNATCH  : snatch-side-L, snatch-side-R, snatch-forward-L, snatch-forward-R
 
 ## Skill
-* Left
+* lead
   * jab
   * bab
-  * left-hook
-  * left-upper
-  * left-body
-* Right
-  * two
-  * bwo
-  * right-hook
-  * right-hook
-  * right-body
+  * lead-hook
+  * lead-upper
+  * lead-body
+* rear
+  * cro
+  * bro
+  * rear-hook
+  * rear-hook
+  * rear-body
 * Defense
   * move  : step, pivot,	turn, dash-turn, switch
   * evade : slip, roll, sway
   * hand  : block, shoulder
 
-## COMBO SETS
+## FOUR OFFENSE COMBOS
 * jab jab
-  *	jab jab jab two
-  *	jab jab two left-hook
-  *	jab jab right-hook left-hook
-  *	jab jab bab two
+  *	jab jab jab cro
+  *	jab jab cro lead-hook
+  *	jab jab rear-hook lead-hook
+  *	jab jab bab cro
 
-* jab two
-  *	jab two jab two
-  *	jab two left-hook right-hook
-  *	jab two left-body left-hook
-  *	jab two left-upper bwo
+* jab cro
+  *	jab cro jab cro
+  *	jab cro lead-hook rear-hook
+  *	jab cro lead-body lead-hook
+  *	jab cro lead-upper bro
 
 * jab
-  *	jab bwo left-upper two
-  *	jab left-body left-body left-hook
-  *	jab left-body left-upper two
-  *	jab left-upper two left-hook
+  *	jab bro lead-upper cro
+  *	jab lead-body lead-body lead-hook
+  *	jab lead-body lead-upper cro
+  *	jab lead-upper cro lead-hook
 
-* two
-  * two jab two bab
-  *	two left-body left-hook right-upper
-  *	two left-body right-body left-hook
-  * two left-upper two left-hook
+* cro
+  * cro jab cro bab
+  *	cro lead-body lead-hook rear-upper
+  *	cro lead-body rear-body lead-hook
+  * cro lead-upper cro lead-hook
 
+## DEFENSE COMBOS
 * slip
-  * left-slip
-    * left-slip left-hook
-      *	(left-slip) left-hook (left-roll)
-      * (left-slip) left-hook right-hook (right-roll)
-    * left-slip left-upper
-      *	(left-slip) left-upper (left-roll)
-      * (left-slip) left-upper two (right-slip)
-    * left-slip &two
-      *	(left-slip) & two (left-dash)
-      *	(left-slip) & two two (left-dash)
-  * right-slip
-    * right-slip jab
-      *	(right-slip) jab (left-slip)
-      * (right-slip) jab jab (left-slip)
-    * (right-slip) & jab
-      * (right-slip) & jab (left-slip)
-      *	(right-slip) & jab two (right-slip)
-    * (right-slip) & left-hook
-      * (right-slip) & left-hook (left-roll)
-      * (right-slip) & left-hook right-hook (right-roll)
-    *	(right-slip) two
-      * (right-slip) two (right-slip)
-      * (right-slip) two left-upper (left-roll)
-    * (right-slip) right-hook
-      * (right-slip) right-hook (right-roll)
-      * (right-slip) right-hook left-hook (left-roll)
-    * (right-slip) right-upper
-      * (right-slip) right-upper (right-roll)
-      * (right-slip) right-upper left-hook (left-roll)
-    
+  * lead-slip
+    * lead-slip lead-hook
+      *	(lead-slip) lead-hook (lead-roll)
+      * (lead-slip) lead-hook rear-hook (rear-roll)
+    * lead-slip lead-upper
+      *	(lead-slip) lead-upper (lead-roll)
+      * (lead-slip) lead-upper cro (rear-slip)
+    * lead-slip &cro
+      *	(lead-slip) & cro (lead-dash)
+      *	(lead-slip) & cro cro (lead-dash)
+  * rear-slip
+    * rear-slip jab
+      *	(rear-slip) jab (lead-slip)
+      * (rear-slip) jab jab (lead-slip)
+    * (rear-slip) & jab
+      * (rear-slip) & jab (lead-slip)
+      *	(rear-slip) & jab cro (rear-slip)
+    * (rear-slip) & lead-hook
+      * (rear-slip) & lead-hook (lead-roll)
+      * (rear-slip) & lead-hook rear-hook (rear-roll)
+    *	(rear-slip) cro
+      * (rear-slip) cro (rear-slip)
+      * (rear-slip) cro lead-upper (lead-roll)
+    * (rear-slip) rear-hook
+      * (rear-slip) rear-hook (rear-roll)
+      * (rear-slip) rear-hook lead-hook (lead-roll)
+    * (rear-slip) rear-upper
+      * (rear-slip) rear-upper (rear-roll)
+      * (rear-slip) rear-upper lead-hook (lead-roll)
+
  * roll
-   * left-roll
-     * (left-roll) jab (left-roll)
-     * (left-roll) left-hook (left-roll)
-     * (left-roll) left-upper two (right-slip)
-   * right-roll
-     * (right-roll) two (right-roll)
-     * (right-roll) right-hook (right-roll)
-     * (right-roll) right-upper left-hook (left-roll)
+   * lead-roll
+     * (lead-roll) jab (lead-roll)
+     * (lead-roll) lead-hook (lead-roll)
+     * (lead-roll) lead-upper cro (rear-slip)
+   * rear-roll
+     * (rear-roll) cro (rear-roll)
+     * (rear-roll) rear-hook (rear-roll)
+     * (rear-roll) rear-upper lead-hook (lead-roll)
 
  * pivot
-   * left-pivot
-     * (left-pivot) & jab (left-slip)
-     * (left-pivot) & jab jab (left-slip)
-     * (left-pivot) & left-hook (left-roll)
-     * (left-pivot) & left-body left-hook (left-roll)
-   * right-pivot
-     * (right-pivot) two (left-slip)
-     * (right-pivot) two left-hook (left-roll)
-     * (right-pivot) & right-hook (right-roll)
-     * (right-pivot) & right-body right-hook (right-roll)
+   * lead-pivot
+     * (lead-pivot) & jab (lead-slip)
+     * (lead-pivot) & jab jab (lead-slip)
+     * (lead-pivot) & lead-hook (lead-roll)
+     * (lead-pivot) & lead-body lead-hook (lead-roll)
+   * rear-pivot
+     * (rear-pivot) cro (lead-slip)
+     * (rear-pivot) cro lead-hook (lead-roll)
+     * (rear-pivot) & rear-hook (rear-roll)
+     * (rear-pivot) & rear-body rear-hook (rear-roll)
    
-## Signature
+## SIGNATURE COMBOS
  * Mayweather
-   * left-hook left-upper left-hook / two left-hook two left-block / two left-hook two left-shoulder / two left-hook two
-   right-slip left-roll / two left-hook two sway / two left-hook two jab jab jab
+   * lead-hook lead-upper lead-hook / cro lead-hook cro lead-block / cro lead-hook cro lead-shoulder / cro lead-hook cro
+   rear-slip lead-roll / cro lead-hook cro sway / cro lead-hook cro jab jab jab
 
  * Fort
-   * right-upper left-hook (slip-left) left-body left-hook (left-roll) jab jab
+   * rear-upper lead-hook (slip-lead) lead-body lead-hook (lead-roll) jab jab
 
  * Pacquiao
-   * jab two left-upper right-upper left-upper /
-   * jab two jab two jab (slip-left) jab two (slip-right) two (right-roll) & left-hook
+   * jab cro lead-upper rear-upper lead-upper /
+   * jab cro jab cro jab (slip-lead) jab cro (slip-rear) cro (rear-roll) & lead-hook
 
  * Lomachenko
-   * (back right-roll) (left-roll) (pivot-left) jab jab
-   * (right-roll) (left-roll) (pivot-left) jab jab
-   * (left-block) (left-pivot) left-hook
-   * (right-block) (right-pivot) two jab right-upper jab two left-body
-   * jab right-upper jab two (slip-right) (pivot-right)
-   * jab (left-dash) & left-hook
+   * (back rear-roll) (lead-roll) (pivot-lead) jab jab
+   * (rear-roll) (lead-roll) (pivot-lead) jab jab
+   * (lead-block) (lead-pivot) lead-hook
+   * (rear-block) (rear-pivot) cro jab rear-upper jab cro lead-body
+   * jab rear-upper jab cro (slip-rear) (pivot-rear)
+   * jab (lead-dash) & lead-hook
