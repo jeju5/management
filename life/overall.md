@@ -56,8 +56,8 @@
   OUT
     save      $2000 -> US Saving
     offering  $550  -> US Checking
-    regular   $1400 -> AMEX Delta -> US Checking
-    personal  $700  -> AMEX Hilton -> TCF Checking
+    regular   $1400 -> AMEX Hilton & US Checking
+    personal  $700  -> AMEX Delta & TCF Checking
   DETAILS
     offering
       Tithe: $450
