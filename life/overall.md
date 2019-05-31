@@ -56,19 +56,20 @@
   OUT
     save      $2000 -> US Saving
     offering  $550  -> US Checking
-    regular   $1400 -> AMEX Hilton & US Checking
-    personal  $600  -> AMEX Delta & TCF Checking
+    regular   $1400 -> AMEX Hilton / US Checking
+    personal  $500  -> AMEX Delta / TCF Checking
   DETAILS
     offering
       Tithe: $450
       Weekly: $100
     regular
-      Paylease Rent: $1095 -> US Checking
-      Xcel Energy: $30 -> US Checking
-      Xfinity: $25 -> AMEX Delta
-      Tmobile: $50 -> AMEX Delta
-      Auto: $200 -> AMEX Delta
+      Paylease Rent: $1095
+      Xcel Energy: $30
+      Xfinity: $25
+      Tmobile: $50
+      Auto: $200
+      WorkOut: $150
     personal
       Eat: $100/wk -> $400/mo
-      Fun: $200/mo
+      Fun: $100
   ```
