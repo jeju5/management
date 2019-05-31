@@ -49,7 +49,7 @@
   * keep 64kg (64kg - 65kg)
   * diet: reach 63kg --> bounce 65kg --> keep 64kg
 
-* Money Management
+* Money Management (monthly)
   ```
   IN
     concur    $4520 -> US Checking
@@ -60,8 +60,8 @@
     personal  $700  -> AMEX Hilton -> TCF Checking
   DETAILS
     offering
-      Tithe: $450/mo
-      Weekly: $100/mo
+      Tithe: $450
+      Weekly: $100
     regular
       Paylease: $1095 -> US Checking
       Xcel Energy: $30 -> US Checking
