@@ -135,3 +135,8 @@
    * (rear-block) (rear-pivot) cro jab rear-upper jab cro lead-body
    * jab rear-upper jab cro (slip-rear) (pivot-rear)
    * jab (lead-dash) & lead-hook
+   
+ * Canelo
+   * (lead-slip) (rear-roll) 라이트잽x4ㅡ라이트ㅡ레프트훅
+   * rear-hook (rear-cover) lead-hook (lead-cover) 'jab cro'x4 lead-hook (lead-roll) (rear-roll)
+   * 'rear-body lead-body'x4 rear-body lead-hook
