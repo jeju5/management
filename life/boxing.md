@@ -61,6 +61,8 @@
   * cro lead-upper cro lead-hook
 
 ## DEFENSE COMBOS
+* pivot
+
 * slip
   * lead-slip
     * lead-slip lead-hook
