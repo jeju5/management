@@ -68,8 +68,7 @@
       Xfinity: $25
       Tmobile: $50
       Auto: $200
-      WorkOut: $150
     personal
       Eat: $100/wk -> $400/mo
-      Fun: $100
+      Fun: $200
   ```
