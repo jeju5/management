@@ -20,18 +20,18 @@
   0200 두유
   0300 아몬드
   ------------------------------
-  0600 요거트, 스테이크, 사우어크라우트
+  0600 요거트, 사우어크라우트, 스테이크(연어/소고기)
   ```
 
 * WORKOUT
   ```
   SUN: rest
-  MON: PULL-UP  5.3 MILE
-  TUE: RING-DIP 5.3 MILE
-  WED: SIT-UP   5.3 MILE
-  THU: PUSH-UP  5.3 MILE
-  FRI: SIT-UP   1 MILE & DUMBBELLS
-  SAT:          LONG
+  MON: PULL-UP   5.3 MI
+  TUE: RING-DIP  5.3 MI
+  WED: SIT-UP    5.3 MI
+  THU: PUSH-UP   5.3 MI
+  FRI: SIT-UP    1 MI & DUMBBELLS
+  SAT:           LONG MI
 
   PULL-UP : 5 SET
   RING-DIP: 5 SET
@@ -48,6 +48,7 @@
 * IDEAL WEIGHT
   * keep 64kg (64kg - 65kg)
   * diet: reach 63kg --> bounce 65kg --> keep 64kg
+    * skip 1200 meal when on diet
 
 * Money Management (monthly)
   ```
