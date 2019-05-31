@@ -48,7 +48,7 @@
 * IDEAL WEIGHT
   * keep 64kg (63kg - 65kg)
   * diet: reach 62kg --> bounce 64kg --> keep 64kg
-    * skip 12:00 meal when on diet
+    * replace 12:00 meal with beef jerky when on a diet
 
 * Money Management (monthly)
   ```
