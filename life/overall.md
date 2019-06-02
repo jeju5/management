@@ -64,13 +64,14 @@
       Tithe: $450
       Weekly: $100
     regular
-      Paylease Rent: $1095
-      Xcel Energy: $30
-      Xfinity: $25
-      Tmobile: $50
-      Auto: $200
+      Paylease Rent: $1095 -> US Checking
+      Xcel Energy: $30 -> US Checking
+      Auto: $200 -> US Checking
+      Xfinity: $25 -> AMEX Hilton
+      Tmobile: $50 -> AMEX Hilton
+      
     personal
-      Eat: $100/wk -> $400/mo
+      Eat: $400 ($100/wk)
       Box: $100
       Fun: $100
   ```
