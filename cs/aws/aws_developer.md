@@ -156,6 +156,43 @@
             * select Alias(the load balancer you created); allows DNS to map AWS service you created
         * TEST
           * make a request to the domain you registerd --> DNS server --> load balancer --> EC2
-
+    * CLI Lab
+      * create a user
+        * 'Developer1' with 'Developer' group with programmatic access
+        * get an access key id & secret access id
+      * configure access
+        * ssh into EC2 instance
+        ```
+        aws configure
+        ```
+        * enter access key id & secret access id.
+        * enter nothing for region and output format -> sets as a default
+      * create s3 bucket (the bucket name has to be unique)
+        ```
+        aws s3 mb s3://mjcloud123asdf
+        ```
+      * create txt file and copy into s3
+        ```
+        aws s3 ls                                  # you will see your s3 bucket
+        echo "hello" > hello.txt                   # create a txt file
+        aws s3 cp hello.txt s3://mjcloud123asdf    # copy a txt file to s3 bucket
+        aws s3 ls s3://mjcloud123asdf              # verify a txt file in s3 bucket
+        ```
+      * try deleting access key
+        * AWS UI -> Users -> Access Keys -> Delete access key
+      * try 'aws s3 ls' with exising user & keys, it will fail
+      * you have to configure again. repeat 'aws configure'
+      * manage S3 in console
+        * goto AWS console -> click 'mjcloud123
+        * click 'hello.txt'
+        * click 'make public'
+        * open text file
+        * now you can view txt file in AWS UI
+      * you can refer to aws commands at https://docs.aws.amazon.com/cli/latest/reference/
+      * Exam tips
+        * give least privilege to a user.
+        * create groups and assign to user(s) properly.
+        * don't use a single access key. when a developer leaves a group -> delete it and create a new one. (don't reuse it)
+        
 
 
