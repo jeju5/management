@@ -199,5 +199,5 @@
       * EC2 -> select ec2 instance you created
       * right click the instance
       * click Attach/Replace IAM Role
-
+      * you can use EC2 Role based
 
