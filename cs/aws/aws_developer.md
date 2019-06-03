@@ -193,6 +193,11 @@
         * give least privilege to a user.
         * create groups and assign to user(s) properly.
         * don't use a single access key. when a developer leaves a group -> delete it and create a new one. (don't reuse it)
-        
+    * EC2 with S3 Role
+      * IAM -> Roles -> Create Role -> select entity type: AWS Service and service: EC2
+      * select AmazonS3FullAccess Policy and create a role
+      * EC2 -> select ec2 instance you created
+      * right click the instance
+      * click Attach/Replace IAM Role
 
 
