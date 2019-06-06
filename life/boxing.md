@@ -15,7 +15,7 @@
   * rear-body
   
 * Defense
-  * move  : step, pivot,	turn, dash-turn, switch
+  * move  : step(FRONT IN BACK OUT), pivot,	turn, dash-turn, switch
   * evade : slip, roll, sway
   * hand  : block, shoulder
 ```
