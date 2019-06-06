@@ -20,8 +20,8 @@
   * hand  : block, shoulder
 ```
 
-## Routine
-* 5R rope/ladder
+## Training
+* 5R step/rope/ladder
 * 10R hands
 * 10R gloves
 * 5R speed
@@ -34,7 +34,7 @@
 
 ## ROPE 4X4
 * FEET    : L, R, LR, 2
-* POINT   : sole, toe, hill, knee
+* POINT   : toe, mid, hill, knee
 * X       : X - toe - 2X - toe
 * TWO     : 
 
