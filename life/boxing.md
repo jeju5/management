@@ -2,6 +2,12 @@
 
 ## Term
 ```
+* Direction
+    Front        Front
+  Lead  Rear   Rear Lead
+     Back        Back
+  <orthodox>   <southpaw>
+  
 * Offense
   * jab
   * bab
@@ -15,22 +21,24 @@
   * rear-body
   
 * Defense
-  * move  : step(FRONT IN BACK OUT), pivot,	turn, dash-turn, switch
+  * foot
+    * step
+    * pivot,	turn, dash-turn, switch
   * evade : slip, roll, sway
   * hand  : block, shoulder
 ```
 
 ## Training
-* 5R step/rope/ladder
+* 5R move/rope/ladder
 * 10R hands
 * 10R gloves
 * 5R speed
 
-## Step 4X4
-*  
+## MOVE 4X4
+* STEPS
 * 
-* 
-* 
+* SLIPS
+* ROLLS
 
 ## ROPE 4X4
 * FEET    : L, R, LR, 2
