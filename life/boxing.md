@@ -1,46 +1,57 @@
 # Boxing
 
+## Term
+```
+* Offense
+  * jab
+  * bab
+  * lead-hook
+  * lead-upper
+  * lead-body
+  * cro
+  * bro
+  * rear-hook
+  * rear-hook
+  * rear-body
+  
+* Defense
+  * move  : step, pivot,	turn, dash-turn, switch
+  * evade : slip, roll, sway
+  * hand  : block, shoulder
+```
+
 ## Routine
 * 5R rope/ladder
 * 10R hands
 * 10R gloves
 * 5R speed
 
-## Rope
-* FREE    : sole, toe, hill, knee / single, switch, single
-* COMBO   : (5)x - (20)toe  - (5)double x - (20)toe
+## Step 4X4
+*  
+* 
+* 
+* 
 
-## Ladder
-* HOP     : hop, hop-cross, hop-switch-L, hop-switch-R
+## ROPE 4X4
+* FEET    : L, R, LR, 2
+* POINT   : sole, toe, hill, knee
+* X       : X - toe - 2X - toe
+* TWO     : 
+
+## LADDER 4X4
 * RUMBLE  : rumble-L, rumble-R, rumble-Side, rumble-Dance
 * JUMBLE  : jumble-L-in, jumble-R-in, jumble-L-out, jumble-R-out
 * SKATE   : skate-2, skate-3, skate-4, skate-5
 * SNATCH  : snatch-side-L, snatch-side-R, snatch-forward-L, snatch-forward-R
 
-## Skill
-* lead
-  * jab
-  * bab
-  * lead-hook
-  * lead-upper
-  * lead-body
-* rear
-  * cro
-  * bro
-  * rear-hook
-  * rear-hook
-  * rear-body
-* Defense
-  * move  : step, pivot,	turn, dash-turn, switch
-  * evade : slip, roll, sway
-  * hand  : block, shoulder
+
 
 ## FOUR OFFENSE COMBOS
 * jab jab
   *	jab jab jab cro
+  *	jab jab bab cro
   *	jab jab cro lead-hook
   *	jab jab rear-hook lead-hook
-  *	jab jab bab cro
 
 * jab cro
   *	jab cro jab cro
@@ -115,7 +126,11 @@
      * (rear-pivot) cro lead-hook (lead-roll)
      * (rear-pivot) & rear-hook (rear-roll)
      * (rear-pivot) & rear-body rear-hook (rear-roll)
-   
+  
+  * rear-step
+    * (rear-step)&jab (lead-slip) &bro lead-hook
+    * (rear-step)&jab (lead-slip) &cro lead-hook
+  
 ## SIGNATURE COMBOS
  * Mayweather
    * lead-hook lead-upper lead-hook / cro lead-hook cro lead-block / cro lead-hook cro lead-shoulder / cro lead-hook cro
