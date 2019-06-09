@@ -200,4 +200,9 @@
       * right click the instance
       * click Attach/Replace IAM Role
       * you can use EC2 Role based
-
+  * RDS 101: AWS DB Services
+    * SQL Server, Oracle, MySQL ... (OLTP = Online Transaction Processing = Receieves the request and handles query reqeust. ex) ATM)
+    * RedShift (OLAP = Online Analytics Processing = Analyzes Data and provides the data. ex) Datawarehouse)
+    * DynamoDB (NoSQL)
+    * ElastiCache caches data in in-memory database, and it supports Memcached & Redis.
+  * RDS LAB
