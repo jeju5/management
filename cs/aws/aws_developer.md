@@ -208,7 +208,8 @@
   * RDS LAB
     * AWS UI -> RDS -> Launch DB
       * Select MySQL
-      * Create DB (set name, pw, ... as acloudguru
+      * Create DB (set username, password, hostname and dbname as acloudguru)
+      * click RDS instance you created. copy public endpoint (acloudguru.cn4wzd2dzaem.us-east-2.rds.amazonaws.com)
     * AWS UI -> EC2 -> Launch EC2
       * keep everything as default
       * 3. Configure User Details
@@ -223,3 +224,10 @@
           cd /var/www/html  
           wget https://s3.amazonaws.com/acloudguru-production/connect.php
           ```
+       * ssh into your EC2 instance
+         ```
+         ssh ec2-user@18.191.182.21 -i T2.pem  # ssh 
+         cd /var/www/html                      # go to html directory
+         nano connect.php
+         ```
+       * 
