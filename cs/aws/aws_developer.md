@@ -220,9 +220,9 @@
           yum update -y  
           chkconfig httpd on  
           service httpd start  
-          echo "<?php phpinfo();?>" > /var/www/html/index.php     # index.php in this directory is a default php page
-          cd /var/www/html  
-          wget https://s3.amazonaws.com/acloudguru-production/connect.php
+          echo "<?php phpinfo();?>" > /var/www/html/index.php              # create index.php with phpinfo();
+          cd /var/www/html                                        
+          wget https://s3.amazonaws.com/acloudguru-production/connect.php  # get connect.php from the link
           ```
        * ssh into your EC2 instance
          ```
