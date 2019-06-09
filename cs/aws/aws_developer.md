@@ -206,3 +206,20 @@
     * DynamoDB (NoSQL)
     * ElastiCache caches data in in-memory database, and it supports Memcached & Redis.
   * RDS LAB
+    * AWS UI -> RDS -> Launch DB
+      * Select MySQL
+      * Create DB (set name, pw, ... as acloudguru
+    * AWS UI -> EC2 -> Launch EC2
+      * keep everything as default
+      * 3. Configure User Details
+        * Place shell scripts for advanced details
+          ```
+          #!/bin/bash
+          yum install httpd php php-mysql -y  
+          yum update -y  
+          chkconfig httpd on  
+          service httpd start  
+          echo "<?php phpinfo();?>" > /var/www/html/index.php     # index.php in this directory is a default php page
+          cd /var/www/html  
+          wget https://s3.amazonaws.com/acloudguru-production/connect.php
+          ```
