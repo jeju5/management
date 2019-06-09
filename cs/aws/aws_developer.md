@@ -214,6 +214,7 @@
       * keep everything as default
       * 3. Configure User Details
         * Place shell scripts for advanced details. This script will be executed during the launch.
+        * make sure that the security group you use for this EC2 instance allows http as inbound.
           ```
           #!/bin/bash
           yum install httpd php php-mysql -y  
