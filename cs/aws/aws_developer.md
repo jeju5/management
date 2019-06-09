@@ -226,11 +226,16 @@
           ```
        * ssh into your EC2 instance
          ```
-         ssh ec2-user@18.191.182.21 -i T2.pem  # ssh
+         ssh ec2-user@18.191.182.21 -i T2.pem                    # ssh into an instance
          sudo su
          cd /var/www/html                                        # go to html directory
          nano connect.php
          replace $hostname with the public endpoint of your RDS  # acloudguru.cn4wzd2dzaem.us-east-2.rds.amazonaws.com
                                                                  # enter crtl+x to get out of nano editor
          ```
-       * 
+      * configure security group
+        * AWS -> EC2 -> Securit Group
+        * select rds-lab-wizard
+          * this is used by RDS instance by default. (go check RDS -> instance -> Security)
+          * click -> inbound -> edit
+            * add type: MySQL, port: 3306, source: myWebDMZ (type this it will give back a source)
