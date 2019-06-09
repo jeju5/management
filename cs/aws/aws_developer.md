@@ -212,7 +212,7 @@
     * AWS UI -> EC2 -> Launch EC2
       * keep everything as default
       * 3. Configure User Details
-        * Place shell scripts for advanced details
+        * Place shell scripts for advanced details. This script will be executed during the launch.
           ```
           #!/bin/bash
           yum install httpd php php-mysql -y  
