@@ -226,8 +226,11 @@
           ```
        * ssh into your EC2 instance
          ```
-         ssh ec2-user@18.191.182.21 -i T2.pem  # ssh 
-         cd /var/www/html                      # go to html directory
+         ssh ec2-user@18.191.182.21 -i T2.pem  # ssh
+         sudo su
+         cd /var/www/html                                        # go to html directory
          nano connect.php
+         replace $hostname with the public endpoint of your RDS  # acloudguru.cn4wzd2dzaem.us-east-2.rds.amazonaws.com
+                                                                 # enter crtl+x to get out of nano editor
          ```
        * 
