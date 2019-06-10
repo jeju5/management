@@ -48,8 +48,9 @@
   ```
 
 * WEIGHT
-  * keep 64kg (63kg - 65kg)
-  * diet: reach 62kg --> bounce 64kg --> keep 64kg
+  * keep 65kg (64kg - 66kg)
+  * diet: reach 63kg --> bounce 65kg --> keep 65kg
+  * Amateur Light Welterweight (- 64kg)
 
 * MONEY
   ```
