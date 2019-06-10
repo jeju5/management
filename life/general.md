@@ -61,8 +61,8 @@
     save      $2000 -> US Saving
     offering  $550  -> US Checking
     regular   $1400 -> AMEX Hilton / US Checking
-    personal  $600  -> AMEX Delta / TCF Checking
-  DETAILS
+    personal  $500  -> AMEX Delta / TCF Checking
+  DETAIL
     offering
       Tithe: $450
       Weekly: $100
@@ -74,7 +74,6 @@
       Tmobile: $50 -> AMEX Hilton
       
     personal
-      Eat: $400 ($100/wk)
+      Joy: $400 ($100/wk) -- includes anything you do (eat, drink, buy)
       Box: $100
-      Fun: $100
   ```
