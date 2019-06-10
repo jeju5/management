@@ -21,24 +21,27 @@
   0300 아몬드
   ----------------------
   0500 요거트
-  0600 사우어크라우트 앤 에그
+  0600 사우어크라우트 & 에그
   ```
 
 * WORK OUT
   ```
+         기상       아침       오후
   SUN: 휴식
-  MON: PULL-UP   3.3 MI BOX
-  TUE: RING-DIP  3.3 MI BOX
-  WED: SIT-UP    3.3 MI BOX
-  THU: PUSH-UP   3.3 MI BOX
-  FRI: SIT-UP    1.3 MI & DUMBBELLS
-  SAT:           LONG MI BOX
-
+  MON: PULL-UP   3.3 MI    BOX
+  TUE: RING-DIP  3.3 MI    BOX
+  WED: SIT-UP    3.3 MI    BOX
+  THU: PUSH-UP   3.3 MI    BOX
+  FRI: SIT-UP    Dumbbell  LONG MI
+  SAT: 휴식
+  ```
+  ```
   PULL-UP : 5 SET
   RING-DIP: 5 SET
   PUSH-UP : 100 REP
   SIT-UP  : 100 REP
   ```
+  
 
   * RUN (LONG)
     ```
