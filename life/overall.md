@@ -16,7 +16,7 @@
   0500 블루콜리
   ----------------------
   1200 점심식사              (프리쿡 OR 파워볼)
-  0100 피칸
+  0100 피넛
   0200 바나나
   0300 아몬드
   ----------------------
@@ -49,7 +49,6 @@
 * IDEAL WEIGHT
   * keep 64kg (63kg - 65kg)
   * diet: reach 62kg --> bounce 64kg --> keep 64kg
-    * replace 12:00 meal with beef jerky when on a diet
 
 * Money Management (monthly)
   ```
