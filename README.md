@@ -1,21 +1,22 @@
 # Develop
 
-## PLAN
-* 2019
+## Task
+* Open
+  * Start Boxing (Uppercut Gym)
+  * React & Redux
+  * Node
+* Plan
   * 06/09-06/15
     * reach 66kg
     * AWS Course Complete
     * RUN 13 MILES
   * 06/16-06/22
+    * AWS Developer Practice Exams
   * 06/23-06/29
-    * AWS Developer Exam
-
+    * AWS Developer Practice Exams
   * 06-30-07-06
-    * Start Boxing (Try Gorilla Combat Boxing Gym)
-
-  * tasks
-    * Docker and Kubernetes Course Complete
-    * React, Redux, Node
+    * Take AWS Developer Exam
+    * Wisdom Teeth Surgery
 
 ## CS
 * Python
@@ -41,7 +42,7 @@
   * Shell Scripting
   
 ## Life
-* overall
+* general
 * boxing
 * device management
 * english
