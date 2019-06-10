@@ -2,25 +2,20 @@
 
 ## PLAN
 * 2019
-  * 06/02-06/08
-    * reach 65kg
-    * Start Boxing (Try Gorilla Combat Boxing Gym)
-    * AWS 100%
-    * Reserve AWS cloud practioner
-    * RUN 13 MILES
   * 06/09-06/15
-    * reach 62kg
-    * AWS practice exams 50%
+    * reach 66kg
+    * AWS Course Complete
+    * RUN 13 MILES
   * 06/16-06/22
   * 06/23-06/29
+    * AWS Developer Exam
 
+  * 06-30-07-06
+    * Start Boxing (Try Gorilla Combat Boxing Gym)
 
   * tasks
-    * Docker and Kubernetes 완강
-    * AWS Developer
+    * Docker and Kubernetes Course Complete
     * React, Redux, Node
-    * TwinCity Marathon under 5hours
-    * Amateur Boxing 1 Win
 
 ## CS
 * Python
@@ -46,7 +41,7 @@
   * Shell Scripting
   
 ## Life
-* meal-workout-weight
+* overall
 * boxing
 * device management
 * english
