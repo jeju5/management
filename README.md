@@ -8,7 +8,7 @@
 * 06/09-06/15
   * reach 66kg
   * AWS Course Complete
-  * RUN 13 MI
+  * RUN: 5.3 MI (x5), 13 MI (x1)
 * 06/16-06/22
   * reach 64kg
   * RUN 13 MI
