@@ -10,7 +10,7 @@
   * AWS Course Complete
   * RUN 13 MI
 * 06/16-06/22
-  * reach 63kg
+  * reach 64kg
   * RUN 13 MI
   * AWS Developer Practice Exams 50%
 * 06/23-06/29
