@@ -41,20 +41,20 @@
   PUSH-UP : 100 REP
   SIT-UP  : 100 REP
   ```
-  
+  ```
+  LONG MI
+  - done: 5 8 8 10 5 10 10 10 8
+  - plan: 13 13 8 15 15 8 18 18 8 20 20 8 23 23 8 26 8
+  ```
 
-  * RUN (LONG)
-    ```
-    done: 5 8 8 10 5 10 10 10 8
-    plan: 13 13 8 15 15 8 18 18 8 20 20 8 23 23 8 26 8
-    ```
-
-* IDEAL WEIGHT
+* WEIGHT
   * keep 64kg (63kg - 65kg)
   * diet: reach 62kg --> bounce 64kg --> keep 64kg
 
-* Money Management (monthly)
+* MONEY
   ```
+  monthly management plan
+  
   IN
     concur    $4520 -> US Checking
   OUT
