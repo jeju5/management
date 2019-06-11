@@ -17,9 +17,11 @@
    <LEAD>      <REAR>       <LEAD>
   
 * Defense
-  * foot  : step, pivot, drift, switch
-  * evade : slip, roll, sway
-  * hand  : block, shoulder
+  FOOT  : step, pivot, drift
+  EVADE : slip, roll, sway
+  COVER : block, shoulder, full
+  
+  (+switch)
 ```
 
 ## Training
@@ -29,10 +31,10 @@
 * 5R speed
 
 ## MOVE 4X4
-* STEPS
+* foot
+* evade
+* foot & evade
 * 
-* SLIPS
-* ROLLS
 
 ## ROPE 4X4
 * FEET    : L, R, LR, 2
