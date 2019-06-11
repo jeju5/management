@@ -54,14 +54,14 @@
     * If you want to encrypt data, you have to configure encryption when creating EBS Volume
     * Types
       * SSD
-        * GP2 (General): 3IOPS/GB, max 16,000 IOPS (IOPS = input/output operations per second)
-        * IO1 (Intensive): proper for more than 16,000 IOPS
+        * General Purpose SSD = GP2 (General): 3IOPS/GB, max 16,000 IOPS (IOPS = input/output operations per second)
+        * Provisioned IOPS SSD = IO1 (Intensive): proper for more than 16,000 IOPS
       * HDD
-        * SC1
+        * Cold HHD = SC1
           * lowest cost among current
           * use case: file server
           * can't be boot volume
-        * ST1
+        * Throughput Optimized HDD = ST1
           * use case: big data, data warehousing
           * can't be boot volume (boot volume: disk that relates to OS booting)
       * Magnetic
