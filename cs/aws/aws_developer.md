@@ -49,8 +49,10 @@
     * Memory: R X(extreme)
     * Accelerated: P G F
     * Storage: H I D
-  * EBS
+  * EBS = elastic block store
     * Volumes that can be attached to EC2
+    * aws instance is placed at availability zone. (any instance like db, ec2, ...)
+      * Availability Zones < Region (ex. US-east-1; default regions)
     * If you want to encrypt data, you have to configure encryption when creating EBS Volume
     * Types
       * SSD
