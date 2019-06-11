@@ -9,16 +9,12 @@
  <orthodox>  <southpaw>
   
 * Offense
-  * jab
-  * bab
-  * lead-hook
-  * lead-upper
-  * lead-body
-  * cro
-  * bro
-  * rear-hook
-  * rear-hook
-  * rear-body
+  jab          cro          jab
+  bab          bro          bab
+  lead-hook    rear-hook    lead-hook
+  lead-upper   rear-upper   lead-upper
+  lead-body    rear-body    lead-body
+   <LEAD>      <REAR>       <LEAD>
   
 * Defense
   * foot  : step, pivot, drift, switch
