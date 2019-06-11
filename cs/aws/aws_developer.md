@@ -299,3 +299,5 @@
     * Metadata: user defined data about data
     * Subresources: bucket specific configuration data
       * bucket policy, access control list, CORS(cross origin resource sharing), transfer accelaraion
+  * 99.99% availability (likely to be accessible)
+  * 99.999999999% durability (unlikely to loss data)
