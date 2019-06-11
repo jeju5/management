@@ -325,3 +325,24 @@
     * access control list: applied at object level
     * you configure buckets to log every access and request
 * S3 Lab
+  * AWS Console -> S3 -> Create Bucket
+    * Version: you can choose to keep versions all objects.
+    * Log: you can log all request to bucket.
+    * Tag: you can set up taggings to track usage.
+    * Object level logging: via CloudTrail
+    * Encryption: AES256(256bit) / AWSKMS(key management system) (these are server-side encryption)
+    * Metrics: via CloudWatch
+    * Public Access: you can configure public accessibility.
+      * by default: it is completly private and S3 Log Delivery group has no write access
+  * Click created bucket
+    * create folders
+    * try uploading a file
+    * click file and try access with url: ACCESS DENIED because it is private by default
+    * goto bucket -> permissions -> enable public access
+    * goto a folder -> upload a file with public access -> try url access -> it works!
+    * bucket policy is in json format
+      * bucket -> permissions -> policy
+      * policy generator
+        * principal is the entity you are applying policy to (entity = user ARN; AWS Console -> IAM -> Users -> get User ARN)
+        * amazon resource name is the bucket arn
+        * click generate -> copy json -> paste into policy editor
