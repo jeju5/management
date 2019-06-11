@@ -51,6 +51,7 @@
     * Storage: H I D
   * EBS
     * Volumes that can be attached to EC2
+    * If you want to encrypt data, you have to configure encryption when creating EBS Volume
     * Types
       * SSD
         * GP2 (General): 3IOPS/GB, max 16,000 IOPS (IOPS = input/output operations per second)
