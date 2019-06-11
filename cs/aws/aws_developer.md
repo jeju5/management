@@ -284,6 +284,7 @@
   * Object based storage (not block storage)
     * allows you to upload files
     * block storage is a storage that holds data using raw volumes
+    * unavailable for OS, DB, Block
   * unlimited
   * each file can be 0-5TB
   * files are stores in bucket (similart to folder)
