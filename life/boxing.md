@@ -3,9 +3,9 @@
 ## Term
 ```
 * Direction
-    Front        Front
-  Lead  Rear   Rear Lead
-     Back        Back
+    Front      Front
+   Out  In    In  Out
+     Back       Back
   <orthodox>   <southpaw>
   
 * Offense
@@ -21,9 +21,7 @@
   * rear-body
   
 * Defense
-  * foot
-    * step
-    * pivot,	turn, dash-turn, switch
+  * foot  : step, pivot, drift, switch
   * evade : slip, roll, sway
   * hand  : block, shoulder
 ```
