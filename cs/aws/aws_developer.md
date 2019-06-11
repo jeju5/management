@@ -281,4 +281,11 @@
 # SECTION4: S3
 * S3 101
   * S3 = Simple Storage Service
-  
+  * Object based storage (not block storage)
+    * allows you to upload files
+    * block storage is a storage that holds data using raw volumes
+  * unlimited
+  * each file can be 0-5TB
+  * files are stores in bucket (similart to folder)
+  * s3 bucket name should be named universially unique. (globally unique)
+  * HTTP 200 Code if upload was successful
