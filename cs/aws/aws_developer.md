@@ -38,7 +38,7 @@
 # SECTION3: EC2
   * EC2 = ECC = Elastic Cloud Computing = Computing Service in Cloud
   * Pricing
-    * on demand: price by time -> good for short-term need
+    * on demand: price by time -> good for short-term need (short-term also means specific short time)
     * reserved: capacity reservation -> good for regular-basis need
     * spot: bidding for capacity -> good for flexible-time need (start time & end time), good for temporary additional need
       * if terminated partial hour usage -> if AWS EC2 terminates it, you won't be charged / if you terminate it, you will be charged for a complete hour
