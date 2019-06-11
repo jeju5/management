@@ -299,5 +299,15 @@
     * Metadata: user defined data about data
     * Subresources: bucket specific configuration data
       * bucket policy, access control list, CORS(cross origin resource sharing), transfer accelaraion
-  * 99.99% availability (likely to be accessible)
-  * 99.999999999% durability (unlikely to loss data)
+  * Tiers
+    * S3: 99.99% availability (likely to be accessible) & 99.999999999% durability (unlikely to loss data)
+    * S3 Intelligent Tiering
+      * good for unknown access patterns.
+      * It has two tiers (frequent/infrequent) and it automatically moves your data to cost-effective tier.
+      * same availability and durability as regular S3.
+      * no retrieval fee but has very small monthly maintenance fee.
+    * S3 IA (Infrequently Accessed): lower fee but charged retrieval fee.
+    * S3 One Zone IA: same as S3 -IA but is stored in a single availibility zone. 99.999999999% durability & 99.5% availibility.
+    * Reduced Redundancy Storage: 99.99% availibility and durability to provide one-year storage.
+      * good for data that can be easiliy regenerated if lost.
+    * Glacier: Very cheap, Verp slow. Works for very infrequently accessed data (historic archive)
