@@ -3,10 +3,10 @@
 ## Term
 ```
 * Direction
-    Front      Front
-   Out  In    In  Out
-     Back       Back
-  <orthodox>   <southpaw>
+    LEAD        LEAD
+   OUT IN      IN OUT
+    REAR        REAR
+ <orthodox>  <southpaw>
   
 * Offense
   * jab
