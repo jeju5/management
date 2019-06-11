@@ -141,7 +141,7 @@
           * it maps the request to EC2, S3 or load balancer
         * Build Load Balancers -> EC2
           * Create Load Balancer
-            * you have 3 options (Application Load Balancer(HTTP/HTTPS), Network Load Balancer(TCP), Classic Load Balancer)
+            * you have 3 options (Application Load Balancer(HTTP/HTTPS), Network Load Balancer(TCP), Classic Load Balancer(Elastic))
             * select Application Load balancer for our use (flexible and general)
             * configure name, listeners(protocol(HTTP/HTTPS) and port) and zones(region)
             * configure security group
@@ -270,5 +270,3 @@
       * ElastiCache for Memcached: pure caching, simple, scalability
       * ElastiCache for Redis: advanced data type (list, set, hash...), sorting & ranking, data persistency
         * data persistency: how likely is the data will remain safe? higher data persitency means safer the data is.
-    * Exam Tips
-      * 
