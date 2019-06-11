@@ -240,27 +240,35 @@
           * this is used by RDS instance by default. (go check RDS -> instance -> Security)
           * click -> inbound -> edit
             * add type: MySQL, port: 3306, source: myWebDMZ (type this it will give back a source)
-      * BackUps
-        * Automatic Backup
-        * Manual DB Snapshot
-        * AWS Console -> RDS
-          * Select RDS instance -> check actions 'Restore to point in time, Take Snapshots ...'
-          * Create a snapshot.
-          * ON the left, click Snapshots. You will see previously taken snapshots.
-          * Select the snapshot you created. Click 'Copy Snapshot'
-      * Encryption
-        * Done via AWS Key management (KMS)
-        * If encrpyted, anything related to it (data, read replica, backup and snapshots) is encrypted.
-      * Multi-AZ
-        * scenario: RDS instance you created in AWS is in US-east-1A. You keep the identical DB in US-east-1B
-        * Multi-AZ is for distarous recovery.
-        * If you want performance enhancement -> go for 'Read Replicas'
-      * Read Replicas
-        * scenario: RDS instance you created in AWS has replications in the same US-east-1A. (or in different regions is possible).
-        * When you get a heavy-load request to this DB, AWS will scale out and handle the load by spreading the request to DB replicas. 
-        * Read Replicas is for Scaling (Performance).
-        * You can have read replicas with Multi-AZ enabled.
-          * AWS Console -> select DB
-          * Instance Actions -> Create read replica
-          * configure settings (you can enable multi-AZ here)
-        * Read replicas can be promoted to a primary DB if you want. (This breaks replications)
+    * BackUps
+      * Automatic Backup
+      * Manual DB Snapshot
+      * AWS Console -> RDS
+        * Select RDS instance -> check actions 'Restore to point in time, Take Snapshots ...'
+        * Create a snapshot.
+        * ON the left, click Snapshots. You will see previously taken snapshots.
+        * Select the snapshot you created. Click 'Copy Snapshot'
+    * Encryption
+      * Done via AWS Key management (KMS)
+      * If encrpyted, anything related to it (data, read replica, backup and snapshots) is encrypted.
+    * Multi-AZ
+      * scenario: RDS instance you created in AWS is in US-east-1A. You keep the identical DB in US-east-1B
+      * Multi-AZ is for distarous recovery.
+      * If you want performance enhancement -> go for 'Read Replicas'
+    * Read Replicas
+      * scenario: RDS instance you created in AWS has replications in the same US-east-1A. (or in different regions is possible).
+      * When you get a heavy-load request to this DB, AWS will scale out and handle the load by spreading the request to DB replicas. 
+      * Read Replicas is for Scaling (Performance).
+      * You can have read replicas with Multi-AZ enabled.
+        * AWS Console -> select DB
+        * Instance Actions -> Create read replica
+        * configure settings (you can enable multi-AZ here)
+      * Read replicas can be promoted to a primary DB if you want. (This breaks replications)
+    * ElastiCache
+      * web cloud service that caches data in in-memory db to enhance performance. (low-latency access)
+      * supports Redis and Memcached. Both are in-memory DB
+      * ElastiCache for Memcached: pure caching, simple, scalability
+      * ElastiCache for Redis: advanced data type (list, set, hash...), sorting & ranking, data persistency
+        * data persistency: how likely is the data will remain safe? higher data persitency means safer the data is.
+    * Exam Tips
+      * 
