@@ -318,3 +318,10 @@
     * Storage Management (Analytics, Tagging)
     * Data Management (Data transfer out of S3; if data is transferred into S3, its free)
     * Transfer Acceleration (Use of Cloudfront)
+* S3 Security
+  * Bucket is private by default (only owner has access)
+  * You can set up
+    * bucket policy: applied at bucket level
+    * access control list: applied at object level
+    * you configure buckets to log every access and request
+* S3 Lab
