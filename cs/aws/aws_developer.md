@@ -289,3 +289,13 @@
   * files are stores in bucket (similart to folder)
   * s3 bucket name should be named universially unique. (globally unique)
   * HTTP 200 Code if upload was successful
+  * Data Consistency Model
+    * 1. Read and Write Consisteny: New file is immediately accessible
+    * 2. Eventual Consistency: Delete or overwriting is not immediatley applied. (takes time to propagate)
+  * Object consists of
+    * Key: File name
+    * Value: File data (key/value model)
+    * VersionId: versioning information
+    * Metadata: user defined data about data
+    * Subresources: bucket specific configuration data
+      * bucket policy, access control list, CORS(cross origin resource sharing), transfer accelaraion
