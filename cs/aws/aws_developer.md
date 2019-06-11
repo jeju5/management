@@ -311,3 +311,9 @@
     * Reduced Redundancy Storage: 99.99% availibility and durability to provide one-year storage.
       * good for data that can be easiliy regenerated if lost.
     * Glacier: Very cheap, Verp slow. Works for very infrequently accessed data (historic archive)
+  * Charges
+    * Storage (per GB)
+    * Requests (Get, Put, Copy)
+    * Storage Management (Analytics, Tagging)
+    * Data Management (Data transfer out of S3; if data is transferred into S3, its free)
+    * Transfer Acceleration (Use of Cloudfront)
