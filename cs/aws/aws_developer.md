@@ -133,6 +133,10 @@
       * load balancer 101
         * layer 4 load balancing: operates at transport layer
         * layer 7 load balancing: operates at content layer
+        * Types
+          * Application Load Balancer: HTTP, HTTPS. works within the application. incoming app traffic control
+          * Network Load Balancer: TCP works at layer-4, incoming network traffic controls
+          * Classic Load Balancer: HTTP, HTTPS, TCP, SSL. doesn't look at the request. single port mapping
         * when your load balancer fails, it throws 504 error (gateway timeout)
         * x-forwarded-for header
           * public ip makes a request to domain name
@@ -144,7 +148,6 @@
           * it maps the request to EC2, S3 or load balancer
         * Build Load Balancers -> EC2
           * Create Load Balancer
-            * you have 3 options (Application Load Balancer(HTTP/HTTPS), Network Load Balancer(TCP), Classic Load Balancer(Elastic))
             * select Application Load balancer for our use (flexible and general)
             * configure name, listeners(protocol(HTTP/HTTPS) and port) and zones(region)
             * configure security group
