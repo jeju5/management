@@ -48,8 +48,6 @@
 * SKATE   : skate-2, skate-3, skate-4, skate-5
 * SNATCH  : snatch-side-L, snatch-side-R, snatch-forward-L, snatch-forward-R
 
-
-
 ## FOUR OFFENSE COMBOS
 * jab jab
   *	jab jab jab cro
