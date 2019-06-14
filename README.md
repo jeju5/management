@@ -6,15 +6,16 @@
 
 # Plan
 * 06/09-06/15
-  * reach 66kg
+  * reach 69kg
   * AWS Course Complete
-  * RUN: 5.3 MI (x5), 13 MI (x1)
 * 06/16-06/22
-  * reach 64kg
+  * reach 66kg
   * RUN 13 MI
-  * AWS Developer Practice Exams 50%
+  * AWS Developer Practice Exams
 * 06/23-06/29
-  * AWS Developer Practice Exams 100%
+  * reach 63kg
+  * AWS Developer Practice Exams (2)
+  * Wisdom Teeth Surgery
 * 06-30-07-06
   * Take AWS Developer Exam
-  * Wisdom Teeth Surgery
+  * Start Boxing
