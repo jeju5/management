@@ -12,7 +12,7 @@
 # The Office S01E02
 * REP: 2
 * mandate 위임, 명령 / 위임하다, 명령하다
-* retaliate 보복하다
+* retaliate 보복하다
 * ground rule 기본규칙
 * defer to A A를 따르다 (defer 연기하다)
 * reenact 재재정하다, 재현하다
