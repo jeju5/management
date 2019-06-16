@@ -73,6 +73,7 @@
       Auto: $200 -> US Checking
       Xfinity: $25 -> AMEX Hilton
       Tmobile: $50 -> AMEX Hilton
+      Netflix: $13 -> AMEX Hilton
       
     personal
       Joy: $400 ($100/wk) -- includes anything you do (eat, drink, buy)
