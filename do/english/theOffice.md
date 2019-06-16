@@ -5,14 +5,14 @@
 * deem   여기다 (deem it appropriate 적절한 것으로 여기다)
 * flan   플랜파이 
 * pimp   매춘중계인
-* in that S V   S가 V하므로
+* in that S V   S가 V하므로
 * apiece   하나에
 * morale   [모랄] 사기 (전쟁터에서 그런 사기)
 
 # The Office S01E02
 * REP: 2
 * mandate   위임, 명령 / 위임하다, 명령하다
-* retaliate   보복하다
+* retaliate   보복하다
 * ground rule   기본규칙
 * defer to A   A를 따르다 (defer 연기하다)
 * reenact   재재정하다, 재현하다
