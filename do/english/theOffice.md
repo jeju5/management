@@ -77,7 +77,7 @@
 * sap 수액, 멍청이
 * terrarium 테리라움 (식물, 양서류를 기르는 유리통; eg 아쿠아리움)
 * armoire [암모얼] 장롱
-
+
 # The Office S02E04
 * REP: 2
 * musket 머스킷총
