@@ -5,7 +5,7 @@
 * deem 여기다 (deem it appropriate 적절한 것으로 여기다)
 * flan 플랜파이 
 * pimp 매춘중계인
-* in that S V S가 V하므로
+* in that S V S가 V하므로
 * apiece 하나에
 * morale [모랄] 사기 (전쟁터에서 그런 사기)
 
@@ -56,7 +56,7 @@
 # The Office S02E01
 * REP: 2
 * bling 반짝
-* appeteaser 전채요리
+* appeteaser 전채요리
 * deface 외관을 훼손하다
 * stickler 까다로운 사람
 * caboose 기차의 승무원실
