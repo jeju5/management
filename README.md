@@ -3,6 +3,7 @@
 * React & Redux
 * Node
 * Read Old Testament (~ Psamls)
+* Finish the Office
 
 # Plan
 * 06/09-06/15
