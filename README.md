@@ -7,8 +7,8 @@
 
 # Plan
 * 06/16-06/22
-  * reach 66kg
-  * RUN 8 MI
+  * reach 65kg
+  * RUN 6-6-6-6-8
   * AWS Course Complete
 * 06/23-06/29
   * reach 63kg
