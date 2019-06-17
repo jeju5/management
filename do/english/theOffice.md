@@ -85,7 +85,18 @@
 * iodine 요오드
 
 # The Office S02E05
+* REP: 1
+* damper 축축하게 하는 것, 흥을 깨는 것
+* spooky 으스스한
+* cobweb 거미줄
+* overage 노후한, 상품과잉
+* baleful 해로운
+* coop [쿱] 닭장
+
 # The Office S02E06
+* REP: 1
+* 
+
 # The Office S02E07
 # The Office S02E08
 # The Office S02E09
