@@ -95,9 +95,15 @@
 
 # The Office S02E06
 * REP: 1
-* 
+* rubble 돌무더기 
+* cursive 필기체인
+* rascal 악동
+* wuss 쪼다
+* probation 보호관찰, 수습
 
 # The Office S02E07
+* snooty 건방진
+* proctologist [프록톨로지스트] 항문병환자
 # The Office S02E08
 # The Office S02E09
 # The Office S02E10
