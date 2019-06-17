@@ -9,7 +9,7 @@
 * 06/16-06/22
   * reach 65kg
   * RUN 6-6-6-6-8
-  * AWS Course Complete
+  * AWS Course 50%
 * 06/23-06/29
   * reach 63kg
   * AWS Developer Practice Exams (2)
