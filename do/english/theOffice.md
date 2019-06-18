@@ -102,10 +102,38 @@
 * probation 보호관찰, 수습
 
 # The Office S02E07
+* REP: 1
 * snooty 건방진
 * proctologist [프록톨로지스트] 항문병환자
+
 # The Office S02E08
+* REP: 1
+* zone out 멍해지다
+* transpire 발생하다
+* it transpired that 알고보니
+* wham-bam 쿵쾅
+* consensual 합의한
+* up untill about a year ago 대충 1년 전까지
+* imply 직접 말하지 않고 암시하다
+* infer 어떤 것을 가지고 추론하다
+* skank 쓰레기같은 놈
+* pneumonia [뉴모니아] 폐렴
+* aphrodisiac [애프로디시악] 최음제
+* obnoxious 매우 불쾌한
+* inconsiderate 경솔한
+
 # The Office S02E09
+* REP: 1
+* forbid 금지하다
+* God forbid that S V S가 V하는 일은 없기를
+* brain aneurysm [애너뤼슴] 뇌 동맥류
+* perky 발랄한
+* yeast infection 질염
+* midget 난쟁이
+* ruse 계략
+* morgue 영안실
+* dibs 잔돈, 자기 차례
+
 # The Office S02E10
 # The Office S02E11
 # The Office S02E12
