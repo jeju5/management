@@ -135,8 +135,21 @@
 * dibs 잔돈, 자기 차례
 
 # The Office S02E10
+* sinus 안쪽 콧구멍
+
 # The Office S02E11
+* nebulous 모호한 (nebula 성운)
+* run aground 배가 좌초하다
+
 # The Office S02E12
+* protruberance 돌기
+* fussy 신경질적인
+* scoliosis 척추측만증
+* clamp 조임새로 고정하다
+* confide 털어놓다
+* confidant [컨피던트] 비밀을 털어놓을만한 친구
+* perp 범인
+
 # The Office S02E13
 # The Office S02E14
 # The Office S02E15
