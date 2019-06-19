@@ -149,6 +149,9 @@
 * confide 털어놓다
 * confidant [컨피던트] 비밀을 털어놓을만한 친구
 * perp 범인
+* rivet 리벳못
+* feasance [삐젼서] 이행
+* malfeasance 부정행위
 
 # The Office S02E13
 # The Office S02E14
