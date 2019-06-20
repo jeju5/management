@@ -146,6 +146,8 @@
 * fussy 신경질적인
 * scoliosis 척추측만증
 * clamp 조임새로 고정하다
+
+# The Office S02E13
 * confide 털어놓다
 * confidant [컨피던트] 비밀을 털어놓을만한 친구
 * perp 범인
@@ -153,9 +155,17 @@
 * feasance [삐젼서] 이행
 * malfeasance 부정행위
 
-# The Office S02E13
 # The Office S02E14
+* reek 악취를 풍기다
+* up the ante 판돈을 올리다
+* clerical [클레리컬] 성직자의, 사무직의
+
 # The Office S02E15
+* teem 충만하다
+* schlep 나르다
+* gripe 불만
+* whiff 훅 풍기는 냄새, 조짐
+
 # The Office S02E16
 # The Office S02E17
 # The Office S02E18
@@ -163,4 +173,3 @@
 # The Office S02E20
 # The Office S02E21
 # The Office S02E22
-
