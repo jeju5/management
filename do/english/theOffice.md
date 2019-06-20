@@ -172,8 +172,18 @@
 * bode well for A A에게 징조가 좋다
 
 # The Office S02E17
+* coop [쿱] 닭장
+* attain 달성하다
+* plaque [플랔] 명판
+
 # The Office S02E18
+* conjure 마술을 부리다
+* acquise [어콰이즈] 쑥스러워하다
+* husk 겉껍질
+* latchkey 현관열쇠
+
 # The Office S02E19
+
 # The Office S02E20
 # The Office S02E21
 # The Office S02E22
