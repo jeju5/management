@@ -167,6 +167,10 @@
 * whiff 훅 풍기는 냄새, 조짐
 
 # The Office S02E16
+* raving 발광하는
+* tightly wound 항상 날이 서있는
+* bode well for A A에게 징조가 좋다
+
 # The Office S02E17
 # The Office S02E18
 # The Office S02E19
