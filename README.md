@@ -3,17 +3,11 @@
 * React & Redux
 * Node
 * Read Old Testament (~ Psamls)
-* Finish the Office
+* The Office Season3
+* The Office Season4
+* AWS Developer Certificate
 
 # Plan
-* 06/16-06/22
-  * reach 65kg
-  * RUN 6-6-6-6-8
-  * AWS Course 50%
-* 06/23-06/29
-  * reach 63kg
-  * AWS Developer Practice Exams (2)
-  * Wisdom Teeth Surgery
-* 06-30-07-06
-  * Take AWS Developer Exam
-  * Start Boxing
+* JUNE-3: reach 68kg, The Office Season2, AWS Developer Course 25%
+* JUNE-4: AWS Developer Course 100%
+* JULY-1: Start Boxing
