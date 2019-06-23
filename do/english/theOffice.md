@@ -170,7 +170,7 @@
 # The Office S02E19 / REP:1
 * urologist 비뇨기과 전문의
 * pulverize 분쇄하다
-* baloney 볼로냐 소세지 (=bologna)
+* baloney 볼로냐 소세지 (=bologna), 거짓말
 * crass 무신경한 (ex: it sounds grass.)
 
 # The Office S02E20 / REP:1
@@ -204,16 +204,29 @@
 * Jan is peeved off 잰은 짜증이 났다
 * pet peeve 특히 짜증나는 것
 * ferocity 흉폭한 행동
+
+# The Office S03E04
 * sledgehammer 오함마
 * resorb 다시흡수하다
 * trample 짓밟다
 * wildebeest [와일비스트] 영양
 * confine 국한하다
 
-# The Office S03E04
 # The Office S03E05
+* consolidate 굳히다, 통합하다
+* whittle 깎아서 만들다
+* fad 유행
+
 # The Office S03E06
+* appletini 애플티니 (술)
+* appal 오싹하게 만들다 (=appall)
+* coronation 대관식
+* gringo 미국놈
+
 # The Office S03E07
+* relish 즐기다
+* viable 실행가능한
+
 # The Office S03E08
 # The Office S03E09
 # The Office S03E10
