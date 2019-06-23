@@ -227,7 +227,18 @@
 * relish 즐기다
 * viable 실행가능한
 
-# The Office S03E08
+# The Office S03E08 / REP:1
+* GI 미군 병사
+* nifty 훌륭한
+* zing 쌩쌩소리가 나다 / 흥미
+* marginalize 사회에서 소외시키다
+* ditto 마찬가지이다
+* heresy 이단
+* egregious [에그리지어스] 지독한
+* advert to A A로 주의를 돌리다, A를 언급하다
+* aplomb [어플람브] 침착함
+* lobotomy 뇌절제술
+
 # The Office S03E09
 # The Office S03E10
 # The Office S03E11
