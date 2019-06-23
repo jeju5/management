@@ -183,7 +183,25 @@
 * latchkey 현관열쇠
 
 # The Office S02E19
+* urologist 비뇨기과 전문의
+* pulverize 분쇄하다
+* baloney 볼로냐 소세지 (=bologna)
+* crass 무신경한 (ex: it sounds grass.)
 
 # The Office S02E20
+* unflinchingly [언플린칭리] 수그러들지않는
+* take a ganer at A A를 보다
+* tender 부드러운 / 돌보다, 제출하다
+
 # The Office S02E21
+* hussy 바람난 여자
+* spud gun =potato gun
+* derange 어지럽히다
+* spat 옥신각신
+* kitsch [킷치] 저속한 예술품
+* fester 곪다
+* redact 삭제하다
+* humongous 거대한
+
 # The Office S02E22
+* heirloom 가보
