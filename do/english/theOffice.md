@@ -1,4 +1,4 @@
-# The Office S01E01 / REP: 2
+# The Office S01E01 / REP:2
 * demarcation 경계, 경계선
 * garner 지지를 얻다
 * deem 여기다 (deem it appropriate 적절한 것으로 여기다)
@@ -8,7 +8,7 @@
 * apiece 하나에
 * morale [모랄] 사기 (전쟁터에서 그런 사기)
 
-# The Office S01E02 / REP: 2
+# The Office S01E02 / REP:2
 * mandate 위임, 명령 / 위임하다, 명령하다
 * retaliate 보복하다
 * ground rule 기본규칙
@@ -17,7 +17,7 @@
 * cop a squat 앉다 
 * inadvertent 의가 아닌
 
-# The Office S01E03 / REP: 2
+# The Office S01E03 / REP:2
 * orifice [오리피스] 구멍
 * groom 손질하다
 * coddle 애지중지하다
@@ -26,28 +26,28 @@
 * dermatitis 피부염
 * refer to A A를 언급하다
 
-# The Office S01E04 / REP: 2
+# The Office S01E04 / REP:2
 * scuttlebutt 가십
 * condone 용납하다
 * convalescence [콘발레센스] 요양하다
 * hysterectomy [히스털렉토미] 자궁절제술
 * flaunt 과시하다
 
-# The Office S01E05 / REP: 2
+# The Office S01E05 / REP:2
 * rapport 친밀한 관계
 * zinger 재치있는 말
 * halter 고삐
 * halter top 홀터탑 드레스
 * posse [퍼시] 패거리 
 
-# The Office S01E06 / REP: 2
+# The Office S01E06 / REP:2
 * decisive 단호한
 * periwinkle [페리윙클] 청보라색
 * guzzle 먹어치우다
 * pry 사생활을 캐다
 * imperative 부득이한, 강제적인
 
-# The Office S02E01 / REP: 2
+# The Office S02E01 / REP:2
 * bling 반짝
 * appeteaser 전채요리
 * deface 외관을 훼손하다
@@ -56,7 +56,7 @@
 * xerox 복사하다
 * pronto 지금 당장
 
-# The Office S02E02 / REP: 2
+# The Office S02E02 / REP:2
 * breathalyzer 음주측정기 [브레스.얼라이저s]
 * scrutinize 면밀히 조사하다
 * mutiny [뮷니] 반란 
@@ -64,17 +64,17 @@
 * suit yourself 마음대로 해라
 * retainer 의뢰 비용
 
-# The Office S02E03 / REP: 2
+# The Office S02E03 / REP:2
 * sap 수액, 멍청이
 * terrarium 테리라움 (식물, 양서류를 기르는 유리통; eg 아쿠아리움)
 * armoire [암모얼] 장롱
 
-# The Office S02E04 / REP: 2
+# The Office S02E04 / REP:2
 * musket 머스킷총
 * musketeer 머스킷총을 쏘는 사람 (three musketeers 삼총사 (소설)))
 * iodine 요오드
 
-# The Office S02E05 / REP: 1
+# The Office S02E05 / REP:1
 * damper 축축하게 하는 것, 흥을 깨는 것
 * spooky 으스스한
 * cobweb 거미줄
@@ -82,18 +82,18 @@
 * baleful 해로운
 * coop [쿱] 닭장
 
-# The Office S02E06 / REP: 1
+# The Office S02E06 / REP:1
 * rubble 돌무더기 
 * cursive 필기체인
 * rascal 악동
 * wuss 쪼다
 * probation 보호관찰, 수습
 
-# The Office S02E07 / REP: 1
+# The Office S02E07 / REP:1
 * snooty 건방진
 * proctologist [프록톨로지스트] 항문병환자
 
-# The Office S02E08 / REP: 1
+# The Office S02E08 / REP:1
 * zone out 멍해지다
 * transpire 발생하다
 * it transpired that 알고보니
@@ -108,7 +108,7 @@
 * obnoxious 매우 불쾌한
 * inconsiderate 경솔한
 
-# The Office S02E09 / REP: 1
+# The Office S02E09 / REP:1
 * forbid 금지하다
 * God forbid that S V S가 V하는 일은 없기를
 * brain aneurysm [애너뤼슴] 뇌 동맥류
@@ -192,10 +192,13 @@
 * heirloom 가보
 * incidentally 그건 그렇고, 우발적으로, 부수적으로
 
-# The Office S03E01
-*
+# The Office S03E01 / REP:1
+* discretion 자유재량, 언행에 대한 신중함 (discreet 언행에 대해 신중한)
+* obtuse 둔감한
+* out 동성애자임을 폭로하다 (당사자의 의사에 반하여)
 
-# The Office S03E02
+# The Office S03E02 / REP:1
+
 # The Office S03E03
 # The Office S03E04
 # The Office S03E05
