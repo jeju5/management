@@ -198,8 +198,18 @@
 * out 동성애자임을 폭로하다 (당사자의 의사에 반하여)
 
 # The Office S03E02 / REP:1
+* phooey 쳇
 
 # The Office S03E03
+* Jan is peeved off 잰은 짜증이 났다
+* pet peeve 특히 짜증나는 것
+* ferocity 흉폭한 행동
+* sledgehammer 오함마
+* resorb 다시흡수하다
+* trample 짓밟다
+* wildebeest [와일비스트] 영양
+* confine 국한하다
+
 # The Office S03E04
 # The Office S03E05
 # The Office S03E06
