@@ -240,11 +240,26 @@
 * lobotomy 뇌절제술
 
 # The Office S03E09
+
 # The Office S03E10 / REP:1
 * narcolepsy 기면증
+* mensch 좋은사람
 
-# The Office S03E11
-# The Office S03E12
+# The Office S03E11 / REP:1
+* bonnet 자동차 보닛, 아이들이 쓰는 보닛모자
+* impoverish 빈곤하게하다
+* luau [루아우] 하와이안 파티
+* whack 후려치다
+* conch 고둥
+* skeevy 더러운
+* PMS 월경전 증후군 (premenstrual syndrome/tension)
+
+# The Office S03E12 / REP:1
+* decency 품위
+* gallant (남자가) 당당한
+* transpire 발생하다
+* bejesus 맙소사 (=bejabbers)
+
 # The Office S03E13
 # The Office S03E14
 # The Office S03E15
