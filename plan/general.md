@@ -64,13 +64,13 @@
                $450 (Tithe)
                $100 (Reg)
     regular   $1400 -> US Checking, AMEX Hilton
-               $1095 (Rent / US Checking)
-               $30 (XcelEnergy / US Checking)
-               $200 (Auto / US Checking)
+               $1095 (Rent -> US Checking)
+               $30 (XcelEnergy -> US Checking)
+               $200 (Auto -> US Checking)
                $30 (Xfinity -> AMEX Hilton)
                $50 (Tmobile -> AMEX Hilton)
                $13 (Netflix or Amazon -> AMEX Hilton)
-    personal  $500  -> US Checking, AMEX Delta
+    personal  $500 -> US Checking, AMEX Delta
                $400 ($100/WK -> AMEX Delta)
                $100 (Free -> AMEX Delta)
   ```
