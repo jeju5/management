@@ -240,7 +240,9 @@
 * lobotomy 뇌절제술
 
 # The Office S03E09
-# The Office S03E10
+# The Office S03E10 / REP:1
+* narcolepsy 기면증
+
 # The Office S03E11
 # The Office S03E12
 # The Office S03E13
