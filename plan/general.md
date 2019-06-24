@@ -61,21 +61,16 @@
   OUT
     save      $2000 -> US Saving
     offering  $550  -> US Checking
+               $450 (Tithe)
+               $100 (Reg)
     regular   $1400 -> US Checking, AMEX Hilton
+               $1095 (Rent / US Checking)
+               $30 (XcelEnergy / US Checking)
+               $200 (Auto / US Checking)
+               $30 (Xfinity -> AMEX Hilton)
+               $50 (Tmobile -> AMEX Hilton)
+               $13 (Netflix or Amazon -> AMEX Hilton)
     personal  $500  -> US Checking, AMEX Delta
-  DETAIL
-    offering
-      Tithe: $450
-      Weekly: $100
-    regular
-      Paylease Rent: $1095 -> US Checking
-      Xcel Energy: $30 -> US Checking
-      Auto: $200 -> US Checking
-      Xfinity: $30 -> AMEX Hilton
-      Tmobile: $50 -> AMEX Hilton
-      Netflix: $13 -> AMEX Hilton
-      
-    personal
-      Joy: $400 ($100/wk) -- includes anything you do (eat, drink, buy)
-      Box: $100
+               $400 ($100/WK -> AMEX Delta)
+               $100 (Free -> AMEX Delta)
   ```
