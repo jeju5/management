@@ -8,7 +8,7 @@
 * AWS Developer Certificate
 
 # Plan
-* JUN23: 64kg(9mi, 6mi + 6mi, 6mi, 6mi, 6mi), The Office Season3, The Office Season4, The Office Season5
-* JUN30: AWS Developer Course 75%, Read Old Testament (~ Psamls)
+* JUN23: 64kg(9mi, 6mi + 6mi, 6mi, 6mi, 6mi), The Office Season3, The Office Season4
+* JUN30: AWS Developer Course 75%, Read Old Testament (~ Psamls), The Office Season5
 * JUL07: Start Boxing (Uppercut Gym)
 * JUL14: 
