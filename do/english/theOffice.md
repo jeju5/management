@@ -260,7 +260,10 @@
 * transpire 발생하다
 * bejesus 맙소사 (=bejabbers)
 
-# The Office S03E13
+# The Office S03E13 / REP:1
+* shindig [신딕] 떠들썩한 파티
+* rough patch 어려운 시기
+
 # The Office S03E14
 # The Office S03E15
 # The Office S03E16
