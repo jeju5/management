@@ -261,15 +261,70 @@
 * bejesus 맙소사 (=bejabbers)
 
 # The Office S03E13 / REP:1
+
+
+# The Office S03E14 / REP:1
 * shindig [신딕] 떠들썩한 파티
 * rough patch 어려운 시기
+* eavesdrop 엿듣다
+* tats 문신 (tatto)
+* thong 가죽끈, 끈팬티
+* knickers 속바지
+* pantaloon (남성용) 팬털룬바지
+* saucy 음탕한
+* impersonator 흉내를 내는 연예인 (impersonate 남을 흉내내다)
+* syphilis [시필리스] 매독
+* illegitimate 사생아의, 위법의
+* sleaze 추잡한
+* sleazebag 추잡한놈
+* bifocal 이중초점렌즈의
 
-# The Office S03E14
-# The Office S03E15
-# The Office S03E16
+# The Office S03E15 / REP:1
+* linger 떠나기 싫어서 꾸물거리다
+* bleak 암울한
+* break wind 방구를 트다
+* pungent 톡 쏘는
+* manifest 분명한 / 분명히 드러내다 / 승객명부
+* matronly 아줌마같은
+
+# The Office S03E16 / REP:1
+* spazzy 별난
+* stool 스툴의자, 대변
+* tingly 따끔거리는
+* without further ado [어두] 지체없이
+* obsolete 구식의
+* ebony 흑단
+* realm 영역, 왕국
+* tracing 투사 (그림을 밑에 받치고 베껴 그리는 것)
+
 # The Office S03E17
+* normalcy 정상 상태 (normality)
+* banister 난간
+* termite 흰개미
+
 # The Office S03E18
+* agoraphobic 광장 공포증 환자
+* consternation 실망
+* disgruntle 기분상하게하다
+* gruntle 기분좋게하다
+* nunchuck 쌍절곤
+* intercede 선처를 호소하다, 중재하다
+* perpetrate 범죄를 저지르다
+* perpetrator 가해자
+* fend 막다, 타격을 받아넘기다
+* compelling 주목할 수 밖에 없는
+* infuriate 극도로 화나게 만들다
+* deposition 파면
+
 # The Office S03E19
+* shun 피하다
+* baler 뭉치는 기계
+* drafty 외풍이 있는
+* sedimentary 퇴적의 (sediment 퇴적물)
+* sedentary 주로 앉아서 하는
+* shenanigan [쉬내니건] 허튼소리
+* wimp 겁쟁이
+
 # The Office S03E20
 # The Office S03E21
 # The Office S03E22
