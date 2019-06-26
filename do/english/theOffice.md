@@ -297,12 +297,12 @@
 * realm 영역, 왕국
 * tracing 투사 (그림을 밑에 받치고 베껴 그리는 것)
 
-# The Office S03E17
+# The Office S03E17 / REP:1
 * normalcy 정상 상태 (normality)
 * banister 난간
 * termite 흰개미
 
-# The Office S03E18
+# The Office S03E18 / REP:1
 * agoraphobic 광장 공포증 환자
 * consternation 실망
 * disgruntle 기분상하게하다
@@ -316,7 +316,7 @@
 * infuriate 극도로 화나게 만들다
 * deposition 파면
 
-# The Office S03E19
+# The Office S03E19 / REP:1
 * shun 피하다
 * baler 뭉치는 기계
 * drafty 외풍이 있는
@@ -324,8 +324,78 @@
 * sedentary 주로 앉아서 하는
 * shenanigan [쉬내니건] 허튼소리
 * wimp 겁쟁이
+* indubitable 의문의 여지가 없는
+* ditz 바보
+* shun 피하다
+* drawbridge 들어올릴 수 있는 다리
+* bum out 불쾌하게 만들다
+* matinee [맷네] 낮 공연
+* wimpish 겁쟁이같은 [=wimpy]
 
-# The Office S03E20
-# The Office S03E21
-# The Office S03E22
-# The Office S03E23
+# The Office S03E20 / REP:1
+* obscene 외설적인
+* pooch 잡종견
+* obit 사망기사 (=obituary)
+
+# The Office S03E21 / REP:1
+* demerit 결점, 벌점
+* adulation 아첨
+* demean 품격을 떨어뜨리다
+* foliage 나뭇잎
+* measure 측정하다 / 정책
+* burlap 삼베
+* misogynist [미스오지니스트] 여성혐오자
+* menstruate 생리하다
+* preppy 프렙스쿨을 다니는 학생
+* pariah [퍼롸야] 떠돌이 개
+* deviant 일탈한 / 변태
+* dish 잡담하다
+* write home about A A에 대해서 특별히 내세우다
+
+# The Office S03E22 / REP:1
+* pail 버킷
+* gullet 식도
+* pall 관을 덮는 천
+* cast a pall over A A에게 찬물을 끼얹다
+* raunchy 선정적인
+
+# The Office S03E23 / REP:1
+* convoy 호송대
+* moratorium 활동중단
+* sitch 배수로, 곤란한문제
+* pomp 행사의 화려함
+* frill 주름 장식
+* it's always a treat 언제나 즐겁다
+* leprechaun [레프리컨] 아일랜드 꼬마요정
+* erratic 변덕스러운
+
+# The Office S04E01 / REP:1
+* pelvic 골반
+* spurn 퇴짜놓다
+* liege [리지] 영주
+* inhibitor 억제제
+* cataract [캐럴렉] 백내장
+* walrus 바다코끼리
+* egret 왜가리
+* antler 사슴뿔
+* eradicate 근절하다
+* chafe 쓸리다
+* ailment 질병
+* detract 주의를 딴데로 돌리다
+* solidarity 결속
+* more or less 거의
+* barf 토하다
+
+# The Office S04E02 / REP:
+# The Office S04E03 / REP:
+# The Office S04E04 / REP:
+# The Office S04E05 / REP:
+# The Office S04E06 / REP:
+# The Office S04E07 / REP:
+# The Office S04E08 / REP:
+# The Office S04E09 / REP:
+# The Office S04E10 / REP:
+# The Office S04E11 / REP:
+# The Office S04E12 / REP:
+# The Office S04E13 / REP:
+# The Office S04E14 / REP:
