@@ -38,7 +38,7 @@
   ```
   PULL-UP : 5 SET
   RING-DIP: 5 SET
-  CHIN-UP : 50 REP
+  CHIN-UP : 100 REP
   PUSH-UP : 100 REP
   SIT-UP  : 100 REP
   SQUAT   : 
