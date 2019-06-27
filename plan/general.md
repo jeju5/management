@@ -41,7 +41,6 @@
   CHIN-UP : 100 REP
   PUSH-UP : 100 REP
   SIT-UP  : 100 REP
-  SQUAT   : 
   ```
   ```
   LONG MI
