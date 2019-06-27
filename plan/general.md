@@ -27,19 +27,21 @@
 * WORK OUT
   ```
          기상       아침       오후
+  MON: SIT-UP    5.3 MI    BOX
+  TUE: PULL-UP   5.3 MI    BOX
+  WED: RING-DIP  5.3 MI    BOX
+  THU: SIT-UP    5.3 MI    BOX
+  FRI: CHIN-UP    
+  SAT: PUSH-UP   10+ MI
   SUN: 휴식
-  MON: PULL-UP   3.3 MI    BOX
-  TUE: RING-DIP  3.3 MI    BOX
-  WED: SIT-UP    3.3 MI    BOX
-  THU: PUSH-UP   3.3 MI    BOX
-  FRI: SIT-UP    Dumbbell  LONG MI
-  SAT: 휴식
   ```
   ```
   PULL-UP : 5 SET
   RING-DIP: 5 SET
+  CHIN-UP : 50 REP
   PUSH-UP : 100 REP
   SIT-UP  : 100 REP
+  SQUAT   : 
   ```
   ```
   LONG MI
