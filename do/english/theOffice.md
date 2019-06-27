@@ -386,7 +386,12 @@
 * more or less 거의
 * barf 토하다
 
-# The Office S04E02 / REP:
+# The Office S04E02 / REP:1
+* consensual 합의한, 대체로 동의하는
+* discreet 신중한, 조심스러운 (discretion 신중함, 자유재량)
+* infamy 오명, 불명예
+* feral 야생의 (feral cat 
+
 # The Office S04E03 / REP:
 # The Office S04E04 / REP:
 # The Office S04E05 / REP:
