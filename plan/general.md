@@ -36,11 +36,12 @@
   SUN: 휴식
   ```
   ```
+  SIT-UP  : 100 REP
   PULL-UP : 5 SET
   RING-DIP: 5 SET
   CHIN-UP : 100 REP
   PUSH-UP : 100 REP
-  SIT-UP  : 100 REP
+
   ```
   ```
   LONG MI
