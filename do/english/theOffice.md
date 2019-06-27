@@ -390,9 +390,25 @@
 * consensual 합의한, 대체로 동의하는
 * discreet 신중한, 조심스러운 (discretion 신중함, 자유재량)
 * infamy 오명, 불명예
-* feral 야생의 (feral cat 
+* feral 야생의 (feral cat 들고양이)
+* twerp 멍청이
+* ageism 노인차별
+* stagger 비틀거리며 걷다
+* proxy 대리, 대리인
+* putter 빈둥거리다, (엔진이) 통통거리다
+* repulse 밀어내다, 역겨움을 주다
+* repulsive 밀어내는, 역겨운
+* brittle 잘부러지는
+* peanut brittle 땅콩캔디
+* leech 거머리
+* premises 구역 (premise 전제)
+* meteoric 유성의 (comet 혜성, meteor 유성; 유성이 혜성보다 더큼)
+* meteoric rise 급부상
+* noogie 주먹으로 가볍게 치다
 
-# The Office S04E03 / REP:
+# The Office S04E03 / REP:1
+*
+
 # The Office S04E04 / REP:
 # The Office S04E05 / REP:
 # The Office S04E06 / REP:
