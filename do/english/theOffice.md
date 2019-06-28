@@ -434,8 +434,15 @@
 * stirrup 말 안장의 발걸이 (등자)
 * consolidator 통합 정리자
 
-# The Office S04E05 / REP:
+# The Office S04E05 / REP:1
+* shabby 누더기같은
+* leeway 자유재량
+* nuzzle 코를 비비다
+* titillate 성적으로 자극하다
+* pivotal 중심이 되는
+
 # The Office S04E06 / REP:
+
 # The Office S04E07 / REP:
 # The Office S04E08 / REP:
 # The Office S04E09 / REP:
