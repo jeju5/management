@@ -398,7 +398,7 @@
 * putter 빈둥거리다, (엔진이) 통통거리다
 * repulse 밀어내다, 역겨움을 주다
 * repulsive 밀어내는, 역겨운
-* brittle 잘부러지는
+* brittle 잘 부서지는
 * peanut brittle 땅콩캔디
 * leech 거머리
 * premises 구역 (premise 전제)
@@ -407,9 +407,33 @@
 * noogie 주먹으로 가볍게 치다
 
 # The Office S04E03 / REP:1
-*
+* earthling 지구인
+* prone to 명사 자주 명사되는
+* prone to 동사 자주 동사하는
+* in lieu of A A 대신에 (instead of A)
+* cutlery 포크와 나이프류
+* nemesis 강적, 천벌, 네메시스 (그리스 복수의 여신)
+* notarize 공증하다
+* notary 공증인
+* orchid 난초
+* snot 콧물
+* snot nose 건방진 놈
 
-# The Office S04E04 / REP:
+# The Office S04E04 / REP:1
+* apnea 무호흡
+* figurine 작은 조각상
+* irrigation (물) 관개 (irrigate 물을 관개하다)
+* frail 노쇠한
+* writhe [롸잇] 고통으로 몸부림치다
+* captivate 마음을 사로잡다
+* nab 붙잡다
+* disinfect 살균하다
+* WASPs =White Anglo Saxon Protestant
+* conviction 유죄선고, 강한신념
+* slate 석판
+* stirrup 말 안장의 발걸이 (등자)
+* consolidator 통합 정리자
+
 # The Office S04E05 / REP:
 # The Office S04E06 / REP:
 # The Office S04E07 / REP:
