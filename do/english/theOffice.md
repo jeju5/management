@@ -480,7 +480,14 @@
 * plough 쟁기로 땅을 갈다 (=plow)
 * hangar 격납고
 
-# The Office S04E11 / REP:
-# The Office S04E12 / REP:
+# The Office S04E11 / REP:1
+* livid 몹시 화가난
+* taunt 놀리다
+* catch A's drift A의 말의 취지를 이해하다
+* weevil (벌레) 바구미
+
+
+# The Office S04E12 / REP:1
+* percolate
 # The Office S04E13 / REP:
 # The Office S04E14 / REP:
