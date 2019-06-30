@@ -495,8 +495,9 @@
 * tell on A A를 고자질하다
 * migraine 편두통
 
-# The Office S04E14 / REP:
+# The Office S04E14 / REP:1
 * imposter 사칭하는 사기꾼
 * allot 할당하다
 * extraterrestrial 외계인
 * psyche 심령
+* delirious 의식이 혼미 할 정도로 기쁜
