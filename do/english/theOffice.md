@@ -496,3 +496,4 @@
 * migraine 편두통
 
 # The Office S04E14 / REP:
+* imposter 사칭하는 사기꾼
