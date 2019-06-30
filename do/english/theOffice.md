@@ -497,3 +497,6 @@
 
 # The Office S04E14 / REP:
 * imposter 사칭하는 사기꾼
+* allot 할당하다
+* extraterrestrial 외계인
+* psyche 심령
