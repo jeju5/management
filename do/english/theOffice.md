@@ -489,5 +489,10 @@
 # The Office S04E12 / REP:1
 * percolate 스며나오다, percolator로 커피를 내리다
 
-# The Office S04E13 / REP:
+# The Office S04E13 / REP:1
+* probation 보호관찰, 수습기간
+* urn 유골 항아리
+* tell on A A를 고자질하다
+* migraine 편두통
+
 # The Office S04E14 / REP:
