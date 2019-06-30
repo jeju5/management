@@ -459,9 +459,19 @@
 * impale 찌르다
 
 # The Office S04E08 / REP:1
+* depose 통치자를 물러나게하다 (deposition 퇴적, 통치자를 물러나게함)
+* plaintiff 원고
+* digression (주제를 벗어난 이야기) 여담
+* patronize 후원하다, 단골손님이 되다
+* ambivalent 감정이 양면적인
 
-# The Office S04E09 / REP:
-# The Office S04E10 / REP:
+# The Office S04E09 / REP:1
+* doodle 낙서를 끼적이다
+* asylum 망명, 보호소
+* smudge 얼룩
+* carnal 육욕적인
+
+# The Office S04E10 / REP:1
 # The Office S04E11 / REP:
 # The Office S04E12 / REP:
 # The Office S04E13 / REP:
