@@ -441,10 +441,25 @@
 * titillate 성적으로 자극하다
 * pivotal 중심이 되는
 
-# The Office S04E06 / REP:
+# The Office S04E06 / REP:1
+* gig (코미디언의) 공연
+* poach (요리) 졸이다, 밀렵하다, 가로채다
+* repercussion 파급효과
+* want ad 구인광고
+* sass 건방진 행동
 
-# The Office S04E07 / REP:
-# The Office S04E08 / REP:
+# The Office S04E07 / REP:1
+* smore 스모어 스낵 (캠핑에서 먹는 마시멜로 크래커 샌드위치)
+* frolic 장난치며 뛰놀다
+* asbestos 석면
+* cathartic 카타르시스의 (catharsis 카타르시스)
+* thicket 덤불
+* carotid artery 경동맥
+* hemorrhoids [헤모로이드] 치질; piles 치핵
+* impale 찌르다
+
+# The Office S04E08 / REP:1
+
 # The Office S04E09 / REP:
 # The Office S04E10 / REP:
 # The Office S04E11 / REP:
