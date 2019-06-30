@@ -472,6 +472,14 @@
 * carnal 육욕적인
 
 # The Office S04E10 / REP:1
+* feisty 혈기왕성한
+* rowbow 노를 젓는 보트
+* capsize 배를 뒤집다
+* manipulative 교묘하게 다루는
+* closure 종결
+* plough 쟁기로 땅을 갈다 (=plow)
+* hangar 격납고
+
 # The Office S04E11 / REP:
 # The Office S04E12 / REP:
 # The Office S04E13 / REP:
