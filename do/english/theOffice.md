@@ -486,8 +486,8 @@
 * catch A's drift A의 말의 취지를 이해하다
 * weevil (벌레) 바구미
 
-
 # The Office S04E12 / REP:1
-* percolate
+* percolate 스며나오다, percolator로 커피를 내리다
+
 # The Office S04E13 / REP:
 # The Office S04E14 / REP:
