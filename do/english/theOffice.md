@@ -504,6 +504,7 @@
 
 # The Office S05E01 / REP:
 * serenity 평온함
+* tacky 싸구려같은
 
 # The Office S05E02 / REP:
 # The Office S05E03 / REP:
