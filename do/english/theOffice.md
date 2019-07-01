@@ -530,7 +530,17 @@
 * trapezoid 부등변 사각형
 * smock 여자가 입는 헐렁한 셔츠
 
-# The Office S05E07 / REP:
+# The Office S05E07 / REP:1
+* dusky 어둑어둑한 (dusk 땅거미)
+* abrasive 연마제 / 귀에 거슬리는
+* queasy 메스꺼운
+* dijon 겨자색
+* smudge 얼룩
+* smug 잘난체하는
+* hobo 떠돌이 노동자
+* nook 구석
+* juke 상대를 속이는 몸놀림을 하다
+
 # The Office S05E08 / REP:
 # The Office S05E09 / REP:
 # The Office S05E10 / REP:
