@@ -503,6 +503,8 @@
 * delirious 의식이 혼미 할 정도로 기쁜
 
 # The Office S05E01 / REP:
+* serenity 평온함
+
 # The Office S05E02 / REP:
 # The Office S05E03 / REP:
 # The Office S05E04 / REP:
