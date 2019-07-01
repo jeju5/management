@@ -520,8 +520,16 @@
 
 # The Office S05E04 / REP:1
 
-# The Office S05E05 / REP:
-# The Office S05E06 / REP:
+# The Office S05E05 / REP:1
+
+# The Office S05E06 / REP:1
+* confer A A를 수여하다
+* confer on A A에 대해 상의하다
+* inane 무의미한
+* accusation 고발 (accuse 고발하다)
+* trapezoid 부등변 사각형
+* smock 여자가 입는 헐렁한 셔츠
+
 # The Office S05E07 / REP:
 # The Office S05E08 / REP:
 # The Office S05E09 / REP:
