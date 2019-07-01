@@ -9,6 +9,6 @@
 * keep 65kg
 
 # Plan
-* JUN30: Read Old Testament (~ Psamls), The Office Season5, AWS Developer Course 75%, 68kg, RUN 12MI
-* JUL07: Start Boxing (Uppercut Gym), 66kg, RUN 12MI
-* JUL14: 65kg
+* JUN30: Read Old Testament (~ Psamls), The Office Season5, AWS Developer Course 75%, 68kg, RUN 13MI
+* JUL07: Start Boxing (Uppercut Gym), 66kg, RUN 13MI
+* JUL14: 65kg, RUN 8MI
