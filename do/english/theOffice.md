@@ -502,13 +502,24 @@
 * psyche 심령
 * delirious 의식이 혼미 할 정도로 기쁜
 
-# The Office S05E01 / REP:
+# The Office S05E01 / REP:1
 * serenity 평온함
 * tacky 싸구려같은
+* plop 퐁당
+* monsoon 몬순 장마
+* ruse 계략
+* ulcer 궤양
 
-# The Office S05E02 / REP:
-# The Office S05E03 / REP:
-# The Office S05E04 / REP:
+# The Office S05E02 / REP:1
+
+# The Office S05E03 / REP:1
+* liaison 연략, 불륜
+* chastity belt 정조벨트 (chastity 정조)
+* vigilant 바짝 경계하는
+* preclude from A A를 못하게하다
+
+# The Office S05E04 / REP:1
+
 # The Office S05E05 / REP:
 # The Office S05E06 / REP:
 # The Office S05E07 / REP:
