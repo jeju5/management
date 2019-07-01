@@ -6,9 +6,9 @@
 * The Office Season8
 * The Office Season9
 * AWS Developer Certificate
+* keep 65kg
 
 # Plan
-* JUN23: 68kg(9mi, 3mi, 6mi+3mi, 6mi+3mi, 6mi+3mi), The Office Season3, The Office Season4
-* JUN30: AWS Developer Course 75%, Read Old Testament (~ Psamls), The Office Season5
-* JUL07: Start Boxing (Uppercut Gym)
+* JUN30: Read Old Testament (~ Psamls), The Office Season5, AWS Developer Course 75%, 66.5kg, RUN 12MI
+* JUL07: Start Boxing (Uppercut Gym), 65kg, RUN 12MI
 * JUL14: 
