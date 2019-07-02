@@ -560,11 +560,25 @@
 * lumbar 요추의
 * collate 대조하다, 페이지 순서를 맞춰서 합치다
 
-# The Office S05E11 / REP:
-# The Office S05E12 / REP:
-# The Office S05E13 / REP:
-# The Office S05E14 / REP:
-# The Office S05E15 / REP:
+# The Office S05E11 / REP:1
+* milieu 환경
+
+# The Office S05E12 / REP:1
+ 
+# The Office S05E13 / REP:1
+* cruel 잔혹한
+
+# The Office S05E14 / REP:1
+* heed A A에 주의를 기울이다
+* take heed of A A에 주의를 기울이다
+* livid 몹시 화가 난
+* coddle 애지중지하다
+* resuscitate 소생시키다
+
+# The Office S05E15 / REP:1
+* wood chipper 톱밥기계
+* delegator 대표자 (delegate 대표로 위임하다)
+
 # The Office S05E16 / REP:
 # The Office S05E17 / REP:
 # The Office S05E18 / REP:
