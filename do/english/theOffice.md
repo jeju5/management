@@ -541,9 +541,25 @@
 * nook 구석
 * juke 상대를 속이는 몸놀림을 하다
 
-# The Office S05E08 / REP:
-# The Office S05E09 / REP:
-# The Office S05E10 / REP:
+# The Office S05E08 / REP:1
+* intrusive 침범하는, 주제넘는
+* per diem 일일경비
+* concierge 건물의 안내원
+* petite 여자가 앙증맞은
+* don (격식있게) 입다, 쓰다
+* wingman 대장 호위기
+* blow chunks 토하다
+
+# The Office S05E09 / REP:1
+* meander 구불구불 흐르다, 정처없이 걷다
+* icky 기분나쁜
+* pristine 자연 그대로의
+* elicit A A를 이끌어내다
+
+# The Office S05E10 / REP:1
+* lumbar 요추의
+* collate 대조하다, 페이지 순서를 맞춰서 합치다
+
 # The Office S05E11 / REP:
 # The Office S05E12 / REP:
 # The Office S05E13 / REP:
