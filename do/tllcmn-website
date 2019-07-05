@@ -9,3 +9,12 @@
     
   * uiside
     * wordpress
+  
+
+* run wordpress local
+  * download xampp
+  * start apache, mysql
+  * check http://localhost/dashboard/
+  * check http://localhost/phpmyadmin/
+  * move wordpress folder to C:\xampp\htdocs
+  * access http://localhost/tllcmn
