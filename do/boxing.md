@@ -25,47 +25,55 @@
 ```
 
 ## Training
-* 5R move/rope/ladder
+* 5R move/ladder/rope
 * 10R hands
 * 10R gloves
 * 5R speed
 
-## MOVE 4X4
-* foot
-* evade
-* foot & evade
-* 
+## MOVE
+* step (↑→↓←)
+* pivot
+* drift
+* slip
+* roll
 
-## ROPE 4X4
-* FEET    : L, R, LR, 2
-* POINT   : toe, mid, hill, knee
-* X       : X - toe - 2X - toe
-* TWO     : 
+## ROPE
+* FOOT    : toe, mid, hill
+* FEET    : L, R, LR
+* LEG     : left, kick, right
+* KNEE    : L, R, LR
+* COMBO   : idle & X/Double/DoubleX
 
-## LADDER 4X4
+## LADDER
+* HOP     : hop-single, hop-cross, hop-switchL, hop-switchR
 * RUMBLE  : rumble-L, rumble-R, rumble-Side, rumble-Dance
 * JUMBLE  : jumble-L-in, jumble-R-in, jumble-L-out, jumble-R-out
 * SKATE   : skate-2, skate-3, skate-4, skate-5
 * SNATCH  : snatch-side-L, snatch-side-R, snatch-forward-L, snatch-forward-R
 
-## FOUR OFFENSE COMBOS
+## COMBOS
 * jab jab
   *	jab jab jab cro
-  *	jab jab bab cro
   *	jab jab cro lead-hook
-  *	jab jab rear-hook lead-hook
+  *	jab jab bab cro
+  * jab jab bro jab
+  * jab jab lead-body lead-hook
 
 * jab cro
   *	jab cro jab cro
   *	jab cro lead-hook rear-hook
-  *	jab cro lead-body lead-hook
+  * jab cro lead-hook bro
   *	jab cro lead-upper bro
+  *	jab cro lead-body lead-hook
 
-* jab
-  *	jab bro lead-upper cro
-  *	jab lead-body lead-body lead-hook
-  *	jab lead-body lead-upper cro
+* jab 
+  *	jab rear-upper lead-hook
   *	jab lead-upper cro lead-hook
+  
+  
+  *	jab lead-body lead-upper cro
+  * jab lead-body lead-upper 
+  *	jab lead-body lead-body lead-hook
 
 * cro
   * cro jab cro bab
@@ -73,7 +81,7 @@
   *	cro lead-body rear-body lead-hook
   * cro lead-upper cro lead-hook
 
-## DEFENSE COMBOS
+## DEFENSE 
 * pivot
 
 * slip
@@ -157,3 +165,7 @@
    * (lead-slip) (rear-roll) 라이트잽x4ㅡ라이트ㅡ레프트훅
    * rear-hook (rear-cover) lead-hook (lead-cover) 'jab cro'x4 lead-hook (lead-roll) (rear-roll)
    * 'rear-body lead-body'x4 rear-body lead-hook
+
+
+
+(slip-out drift-out)
