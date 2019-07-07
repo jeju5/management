@@ -579,8 +579,20 @@
 * wood chipper 톱밥기계
 * delegator 대표자 (delegate 대표로 위임하다)
 
-# The Office S05E16 / REP:
-# The Office S05E17 / REP:
+# The Office S05E16 / REP:1
+* elope with A A와 눈이 맞아 달아나다
+* on the lam 경찰로 부터 달아나는
+* toboggan 토보건 썰매
+* distill 증류하다, 증류하여 추출하다
+* impregnate 임신시키다
+* dissolve 녹다, 녹이다
+
+# The Office S05E17 / REP:1
+* acclimate to A 새로운 환경 A에 적응하다
+* effeminate [이페미네잇] 여성적인
+* mnemonic [뉴모닉] 기억을 돕는
+* chiclet 치클렛 껌
+
 # The Office S05E18 / REP:
 # The Office S05E19 / REP:
 # The Office S05E20 / REP:
