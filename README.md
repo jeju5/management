@@ -1,6 +1,7 @@
 # Open Task
 * React & Redux
 * Node & React
+* Start Golf
 
 # Plan
 * JUL07: The Office Season5, Udemy AWS 50%, touch 66kg, RUN 13MI, Local TLLCMN, WFH FRI -> WAX SAT
