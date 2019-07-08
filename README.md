@@ -1,6 +1,8 @@
 # Open Task
 * React & Redux
 * Node & React
+* Buy Bed
+* Buy Sofa
 
 # Plan
 * JUL07: Udemy AWS 50%, touch 66kg, RUN 13MI, The Office Season5, Local TLLCMN
