@@ -593,9 +593,26 @@
 * mnemonic [뉴모닉] 기억을 돕는
 * chiclet 치클렛 껌
 
-# The Office S05E18 / REP:
-# The Office S05E19 / REP:
+# The Office S05E18 / REP:1
+* cordial 다정한
+* retract 철회하다, 안으로 움츠리다
+* clam up 입을 꼭 다물고 말을 안하다
+* clench 꽉쥐다
+* breed 사육하다, 새끼를 낳다
+* soldier on A A를 계속해 나가다
+
+# The Office S05E19 / REP:1
+* retribution 징벌
+* profligate [프로플리게이트] 낭비하는
+* whimsy 엉뚱한 생각
+* colonoscopy 결장 내시경검사
+* distal 말단의
+* fetishize 맹목적으로 집착하다 (fetish 맹목적인 집착)
+* coop up 갇혀지내다 (coop 닭장)
+
 # The Office S05E20 / REP:
+
+
 # The Office S05E21 / REP:
 # The Office S05E22 / REP:
 # The Office S05E23 / REP:
