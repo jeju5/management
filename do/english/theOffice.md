@@ -610,11 +610,21 @@
 * fetishize 맹목적으로 집착하다 (fetish 맹목적인 집착)
 * coop up 갇혀지내다 (coop 닭장)
 
-# The Office S05E20 / REP:
+# The Office S05E20 / REP:1
+* anthracite [앤쓰라사이트] 무연탄의
+* groove 홈, 리듬 / 리듬을 타다
+* discretionary 자유재량의
+* hypercritical 혹평하는
+* infantile 유아같은
+* dissolve 녹이다, 해산하다
 
+# The Office S05E21 / REP:1
+* stay trim 몸매를 유지하다
+* prudent 사려깊은
 
-# The Office S05E21 / REP:
-# The Office S05E22 / REP:
+# The Office S05E22 / REP:1
+* mediocre 보통정도의
+
 # The Office S05E23 / REP:
 # The Office S05E24 / REP:
 # The Office S05E25 / REP:
