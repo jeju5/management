@@ -638,7 +638,44 @@
 * pester 성가시게 조르다
 * truce 휴전
 
-# The Office S05E25 / REP:
-# The Office S05E26 / REP:
-# The Office S05E27 / REP:
-# The Office S05E28 / REP:
+# The Office S05E25 / REP:1
+* siphon 사이펀 (관으로 빨아서 액체를 옮기는 기기)
+* setback 걸림돌
+* apiarist [에피아리스트] 양봉가
+* nudge 팔꿈치로 쿡쿡찌르다
+* pejorative 경멸적인
+* heyday 전성기
+
+# The Office S05E26 / REP:1
+* pronto 당장
+* mutiny [뮷니] 반란
+* rescind 철회하다
+* shrill 귀가 째지는
+
+# The Office S05E27 / REP:1
+* lei 하와이의 화환
+* writhe 고통으로 온 몸을 비틀다
+
+# The Office S05E28 / REP:1
+* condone 용납하다 
+
+# The Office S06E01 / REP:
+# The Office S06E02 / REP:
+# The Office S06E03 / REP:
+# The Office S06E04 / REP:
+# The Office S06E05 / REP:
+# The Office S06E06 / REP:
+# The Office S06E07 / REP:
+# The Office S06E08 / REP:
+# The Office S06E09 / REP:
+# The Office S06E10 / REP:
+# The Office S06E11 / REP:
+# The Office S06E12 / REP:
+# The Office S06E13 / REP:
+# The Office S06E14 / REP:
+# The Office S06E15 / REP:
+# The Office S06E16 / REP:
+# The Office S06E17 / REP:
+# The Office S06E18 / REP:
+# The Office S06E19 / REP:
+# The Office S06E20 / REP:
