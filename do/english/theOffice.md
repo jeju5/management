@@ -624,9 +624,20 @@
 
 # The Office S05E22 / REP:1
 * mediocre 보통정도의
+* flunk out 낙제하다
 
-# The Office S05E23 / REP:
-# The Office S05E24 / REP:
+# The Office S05E23 / REP:1
+* brothel 매춘을 하는 집
+* gruesome 섬뜩한
+* bludgeon 곤봉으로 패다
+* bicker 다투다
+* dilate 팽창하다
+* cede 양도하다
+
+# The Office S05E24 / REP:1
+* pester 성가시게 조르다
+* truce 휴전
+
 # The Office S05E25 / REP:
 # The Office S05E26 / REP:
 # The Office S05E27 / REP:
