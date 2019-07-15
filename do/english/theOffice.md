@@ -605,7 +605,7 @@
 * retribution 징벌
 * profligate [프로플리게이트] 낭비하는
 * whimsy 엉뚱한 생각
-* colonoscopy 결장 내시경검사
+* colonoscopy 대장 내시경검사
 * distal 말단의
 * fetishize 맹목적으로 집착하다 (fetish 맹목적인 집착)
 * coop up 갇혀지내다 (coop 닭장)
@@ -668,8 +668,13 @@
 
 # The Office S06E02 / REP:1
 * colonoscopy 대장내시경검사
+* gist 요점
+* anomaly 변칙
+* gist 요점
 
 # The Office S06E03 / REP:
+* emerge 모습을 드러내다
+
 # The Office S06E04 / REP:
 # The Office S06E05 / REP:
 # The Office S06E06 / REP:
