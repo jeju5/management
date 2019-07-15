@@ -659,8 +659,16 @@
 # The Office S05E28 / REP:1
 * condone 용납하다 
 
-# The Office S06E01 / REP:
-# The Office S06E02 / REP:
+# The Office S06E01 / REP:1
+* scuttlebutt 가십
+* anorexia 거식증
+* wedlock 결혼한 상태
+* vapid 김이 빠진, 흥미가 없는
+* inconclusive 확정적이지 않은
+
+# The Office S06E02 / REP:1
+* colonoscopy 대장내시경검사
+
 # The Office S06E03 / REP:
 # The Office S06E04 / REP:
 # The Office S06E05 / REP:
