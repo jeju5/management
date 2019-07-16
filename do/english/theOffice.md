@@ -691,7 +691,12 @@
 * bumpkin 시골뜨기
 * bib 턱받이
  
-# The Office S06E06 / REP:
+# The Office S06E06 / REP:1
+* thorax 흉부
+* constitute A A를 구성하다, A로 여겨지다
+* far-fetched 터무니 없는
+* chump 멍청이
+
 # The Office S06E07 / REP:
 # The Office S06E08 / REP:
 # The Office S06E09 / REP:
