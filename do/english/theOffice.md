@@ -672,11 +672,25 @@
 * anomaly 변칙
 * gist 요점
 
-# The Office S06E03 / REP:
+# The Office S06E03 / REP:1
 * emerge 모습을 드러내다
+* pore 모공
+* procrastinate 일을 미루다
+* demean 품위를 떨어뜨리다 
+* matron 양호사
 
-# The Office S06E04 / REP:
-# The Office S06E05 / REP:
+# The Office S06E04 / REP:1
+* kitschy [킷치] 질 낮은 예술품 같은 (kitsch [킷치] 질 낮은 예술품)
+* impede 지연하다, 방해하다
+* noogie 주먹으로 툭 치다
+* geld 거세하다 
+* scrotum 음낭 
+
+# The Office S06E05 / REP:1
+* ravenous 배가 죽도록 고픈
+* bumpkin 시골뜨기
+* bib 턱받이
+ 
 # The Office S06E06 / REP:
 # The Office S06E07 / REP:
 # The Office S06E08 / REP:
