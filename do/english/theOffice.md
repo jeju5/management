@@ -714,9 +714,26 @@
 * unionize 노조(노동조합)를 결성하다 (union 통합, 조합, 노동조합)
 * docket 법정의 소송 일람표
 * slack off 게으름을 부리다 (slack 느슨한)
+* magnate 거물
+* scoundrel 악당
+* ogle [오글] 추파를 던지다
+* contraption 기묘한 기계 
+* molasses 흑설탕시럽
+* remiss 태만한
+* skedaddle 튀다 (도망가다)
+* insolvent 파산한
 
+# The Office S06E11 / REP:1
+* rolodex 롤로덱스 (회전식 인덱스카드)
+* consolidate 굳히다, 정리해서 합치다
+* sublime 기품있는 
+* eminence 명성
+* carbon neutral 탄소배출 제로의
+* A extraordinaire 탁월한 A
+* murky 흐린
+* rattle 달가닥거리다
+* rattle off 줄줄 말하다
 
-# The Office S06E11 / REP:
 # The Office S06E12 / REP:
 # The Office S06E13 / REP:
 # The Office S06E14 / REP:
