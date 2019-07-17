@@ -710,6 +710,11 @@
 
 # The Office S06E10 / REP:1
 * triad 삼인조, 삼합회
+* conjecture 추측
+* unionize 노조(노동조합)를 결성하다 (union 통합, 조합, 노동조합)
+* docket 법정의 소송 일람표
+* slack off 게으름을 부리다 (slack 느슨한)
+
 
 # The Office S06E11 / REP:
 # The Office S06E12 / REP:
