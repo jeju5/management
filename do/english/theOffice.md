@@ -697,10 +697,20 @@
 * far-fetched 터무니 없는
 * chump 멍청이
 
-# The Office S06E07 / REP:
+# The Office S06E07 / REP:1
+
 # The Office S06E08 / REP:
-# The Office S06E09 / REP:
-# The Office S06E10 / REP:
+* eject 쫓아내다, 튀어나오게하다
+
+# The Office S06E09 / REP:1
+* aphrodisiac 최음제
+* preemptive 선제권이있는 (preempt 선매권으로 선취하다)
+* frisky 까불거리고 놀고싶어하는
+* voyeur 관음증이 있는 사람
+
+# The Office S06E10 / REP:1
+* triad 삼인조, 삼합회
+
 # The Office S06E11 / REP:
 # The Office S06E12 / REP:
 # The Office S06E13 / REP:
