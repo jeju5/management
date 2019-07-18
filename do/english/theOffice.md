@@ -754,7 +754,11 @@
 * gullet 식도
 
 # The Office S06E15 / REP:1
-*
+* impulsivity 충동성
+* protege [프로레지] 제자
+* nonsensical 터무니없는
+* scourge 골칫거리
+* crass 무신경한
 
 # The Office S06E16 / REP:
 # The Office S06E17 / REP:
