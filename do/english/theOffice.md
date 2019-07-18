@@ -734,8 +734,19 @@
 * rattle 달가닥거리다
 * rattle off 줄줄 말하다
 
-# The Office S06E12 / REP:
-# The Office S06E13 / REP:
+# The Office S06E12 / REP:1
+* pernicious 치명적인
+* surefire 확실한
+* mantle 외투, 맨틀, 책임
+* diabolical [다이아볼리컬] 악마 같은
+
+# The Office S06E13 / REP:1
+* camaraderie [캐머레더리] 동지애 
+* tranny (=transsexual) 성전환자, (=transvestite) 복장 도착자
+* tidings 소식
+* heckle 야유하며 방해하다 
+* petulant 심술을 부리는
+
 # The Office S06E14 / REP:
 # The Office S06E15 / REP:
 # The Office S06E16 / REP:
