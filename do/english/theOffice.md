@@ -768,7 +768,35 @@
 * lair [레얼] 굴
 * wield 휘두르다
 
-# The Office S06E17 / REP:
-# The Office S06E18 / REP:
-# The Office S06E19 / REP:
+# The Office S06E17 / REP:1
+* gourd 박
+* contraction 진통
+* HMO (=health maintanence organizaion) 보건기관
+* recuperate 회복하다
+* plop 퐁당
+* epidural 진통마취제
+* potpourri 포푸리 방향제 (꽃잎 나뭇잎을 섞은), 짬뽕
+* sleight-of-hand 날랜 속임수의 손재주 (sleight 날랜 속임수)
+* induce 유도하다
+* grundle 회음부
+* frazzle 기진맥진하다
+* prawn 새우
+* dilate 팽창하다
+* impersonate 가장하다
+
+# The Office S06E18 / REP:1
+* eradicate 근절하다
+* gawky 키 큰 사람이 흐느적 거리는
+* insurmountable 극복할 수 없는 (surmount 극복하다)
+* meddle 간섭하다
+* lactation 젖을 분비하다
+* flick 손가락으로 툭툭 튀기다
+* latch 걸쇠 / 걸쇠를 걸다
+* agonize 고뇌하다
+* fussy 호들갑떠는 (fuss 호들갑)
+* discharge 떠나는 것을 허락하다; 해고하다, 짐을 내리다, 제대시키다, 퇴원시키다
+
+# The Office S06E19 / REP:1
+* bestiality 수간
+
 # The Office S06E20 / REP:
