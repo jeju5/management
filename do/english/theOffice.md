@@ -747,8 +747,15 @@
 * heckle 야유하며 방해하다 
 * petulant 심술을 부리는
 
-# The Office S06E14 / REP:
-# The Office S06E15 / REP:
+# The Office S06E14 / REP:1
+* drag queen 여장남자
+* dandruff 비듬
+* reverend 목사
+* gullet 식도
+
+# The Office S06E15 / REP:1
+*
+
 # The Office S06E16 / REP:
 # The Office S06E17 / REP:
 # The Office S06E18 / REP:
