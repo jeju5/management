@@ -760,7 +760,14 @@
 * scourge 골칫거리
 * crass 무신경한
 
-# The Office S06E16 / REP:
+# The Office S06E16 / REP:1
+* knucklehead 멍청이
+* abide 참다, 머무르다, 깃들다
+* tizzy 초조한
+* hustle 떠밀다
+* lair [레얼] 굴
+* wield 휘두르다
+
 # The Office S06E17 / REP:
 # The Office S06E18 / REP:
 # The Office S06E19 / REP:
