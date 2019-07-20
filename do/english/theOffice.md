@@ -837,5 +837,19 @@
 * detonator 기폭장치
 
 # The Office S06E25 / REP:1
+* cuckold 바람난 아내를 둔 남편
+* restrain 제지하다, 억누르다 (restraint 제지, 억누름)
+* disseminate (정보, 지식을) 퍼뜨리다
+* precedence 우선함
+* euphemism 완곡한 표현
+* stud fee 교배료
+* condone 묵인하다
 
 # The Office S06E26 / REP:1
+* allegation [엘리게이션] 혐의제기 (allege [알레지] 혐의를 제기하다)
+* pedophile 소아성애자
+* whistle blower 내부고발자
+* honcho 책임자
+* disparage 폄하하다
+* scapegoat 희생양
+* be back in the thick of A A의 주축으로 복귀하다
