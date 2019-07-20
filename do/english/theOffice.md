@@ -831,10 +831,10 @@
 * ooze 줄줄흐르다
 * anorexic 거식증 환자
 * urologist 비뇨기과 의사
-
-
+* barrette 여성용 머리핀
 
 # The Office S06E24 / REP:1
+* detonator 기폭장치
 
 # The Office S06E25 / REP:1
 
