@@ -1,10 +1,9 @@
 * MONEY
   ```
   monthly management plan
-  
-  IN
+  * IN
     concur    $4520 -> US Checking
-  OUT
+  * OUT
     save      $2000 -> US Saving
     offering  $550  -> US Checking
                $450 (Tithe)
@@ -19,7 +18,6 @@
     personal  $500 -> US Checking, AMEX Delta
                $400 ($100/WK -> AMEX Delta)
                $100 (Free -> AMEX Delta)
-               
                
   general plan
   * daily   : under $2000 (U.S. BANK Checking)
