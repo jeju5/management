@@ -860,9 +860,17 @@
 * lapse 과실, 일탈, 경과
 
 # The Office S07E01 / REP:1
-* 
+* exquisite 정교한
+* nepotism 족벌주의 (친족을 고용하는 행위)
+* tattle 고자질하다
+* talon 맹금류의 발톱
+* capital punishment 사형
 
 # The Office S07E02 / REP:1
+* heirloom [헤얼룸] 가보
+* monochromatic 단색의 (monochrome 단색의, 흑백의)
+* definitive 확정적인
+
 # The Office S07E03 / REP:1
 # The Office S07E04 / REP:1
 # The Office S07E05 / REP:1
