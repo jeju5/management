@@ -813,10 +813,26 @@
 * spool (실을 감는) 실패
 
 # The Office S06E21 / REP:1
+* decency 체면, 품위
+* repartee 재치있는 말재주
+* grope 더듬다 
+* strangle 목을 졸라 죽이다
 
 # The Office S06E22 / REP:1
+* rube 시골뜨기 
+* fiasco 낭패 
+* contrite 뉘우치는
+* tacky 싸구려 같은
+* retaliation 보복 
 
 # The Office S06E23 / REP:1
+* malleable (금속을 늘였다 폈다) 가단할 수 있는 
+* resent 분개하다
+* ooze 줄줄흐르다
+* anorexic 거식증 환자
+* urologist 비뇨기과 의사
+
+
 
 # The Office S06E24 / REP:1
 
