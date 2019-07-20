@@ -799,4 +799,27 @@
 # The Office S06E19 / REP:1
 * bestiality 수간
 
-# The Office S06E20 / REP:
+# The Office S06E20 / REP:1
+* numb nuts 멍청이
+* uppity 건방진
+* clerical 점원의, 성직자의 (clerk 점원, clergy 성직자)
+* incoherent 논리정연 하지않는 (coherent 논리정연한)
+* baba ganoush 바바 가누쉬 (시리아 음식)
+* patronize 후원하다, 단골로 삼다, 가르치려 들다 (patron 후원자, 단골) 
+* complicit 공모한
+* muck 가축의 분뇨
+* acorn 도토리
+* floozy 난잡한 여자
+* spool (실을 감는) 실패
+
+# The Office S06E21 / REP:1
+
+# The Office S06E22 / REP:1
+
+# The Office S06E23 / REP:1
+
+# The Office S06E24 / REP:1
+
+# The Office S06E25 / REP:1
+
+# The Office S06E26 / REP:1
