@@ -858,3 +858,32 @@
 * lurch 휘청거리다 
 * tycoon 거물
 * lapse 과실, 일탈, 경과
+
+# The Office S07E01 / REP:1
+* 
+
+# The Office S07E02 / REP:1
+# The Office S07E03 / REP:1
+# The Office S07E04 / REP:1
+# The Office S07E05 / REP:1
+# The Office S07E06 / REP:1
+# The Office S07E07 / REP:1
+# The Office S07E08 / REP:1
+# The Office S07E09 / REP:1
+# The Office S07E10 / REP:1
+# The Office S07E11 / REP:1
+# The Office S07E12 / REP:1
+# The Office S07E13 / REP:1
+# The Office S07E14 / REP:1
+# The Office S07E15 / REP:1
+# The Office S07E16 / REP:1
+# The Office S07E17 / REP:1
+# The Office S07E18 / REP:1
+# The Office S07E19 / REP:1
+# The Office S07E20 / REP:1
+# The Office S07E21 / REP:1
+# The Office S07E22 / REP:1
+# The Office S07E23 / REP:1
+# The Office S07E24 / REP:1
+# The Office S07E25 / REP:1
+# The Office S07E26 / REP:1
