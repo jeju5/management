@@ -1,4 +1,4 @@
-# Open Task
+# Task
 * React & Redux
 * Node & React
 
