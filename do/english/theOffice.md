@@ -836,8 +836,8 @@
 # The Office S06E24 / REP:1
 * detonator 기폭장치
 
-
 # The Office S06E25 / REP:1
+* empathize 공감하다 (sympathize 동정하다)
 * cuckold 바람난 아내를 둔 남편
 * restrain 제지하다, 억누르다 (restraint 제지, 억누름)
 * disseminate (정보, 지식을) 퍼뜨리다
@@ -857,3 +857,4 @@
 * timbre [팀벌] 음색
 * lurch 휘청거리다 
 * tycoon 거물
+* lapse 과실, 일탈, 경과
