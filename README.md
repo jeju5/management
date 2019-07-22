@@ -1,12 +1,10 @@
 # Task
 * React & Redux
 * Node & React
-* Start Boxing at Uppercut Gym
 
 # Plan
-* JUL14: The Office Season6, The Office Season7(-10), PacquiaoMatch, touch 69kg, RUN 8MI, TEETH, DELTA FLIGHT(SAT)
-* JUL21: Run 13MI, The Office Season7, Udemy AWS 50%, touch 66kg
-* JUL28: Udemy AWS 99%, touch 63kg, Buy Bed, Buy Tv
+* JUL21: The Office Season7, Udemy AWS 50%, Run 8MI, touch 66kg, RAV4 20k, RAV4 Renewal
+* JUL28: Udemy AWS 100%, touch 63kg, Buy Bed, RUN 15MI, Start Boxing at Uppercut
 
 # MANAGEMENT
 * TIME
@@ -54,8 +52,8 @@
   ```
   ```
   LONG MI
-  - done: 05 08 08 10 05 10 10 10 08 13
-  - plan: 13 08 15 15 08 18 18 08 20 20 08 23 23 08 26 08
+  - done: 05 08 08 10 05 10 10 10 08 13 13
+  - plan: 08 15 15 08 18 18 08 20 20 08 23 23 08 26 08
   ```
 
 * WEIGHT
