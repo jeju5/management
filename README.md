@@ -6,8 +6,7 @@
 * JUL21: The Office Season7, Udemy AWS 50%, Run 8MI, touch 66kg, RAV4 20k, RAV4 Renewal
 * JUL28: Udemy AWS 100%, touch 63kg, Buy Bed, RUN 15MI, Start Boxing at Uppercut
 
-# MANAGEMENT
-* TIME
+# TIME
   ```
   0430 0530 기상 샤워 운동
   0530 0630 예배
@@ -20,7 +19,7 @@
   0800 0830 정리 성경 취침
   ```
 
-* MEAL
+# MEAL
   ```
   0500 사우어크라우트, 오렌지주스
   ----------------------
@@ -30,9 +29,10 @@
   ----------------------
   0500 블루케일
   0600 요거트
+  0700 밥, 김, 
   ```
 
-* WORK OUT
+# WORK OUT
   ```
          기상        아침       오후
   MON: PULL-UP    5.3 MI    BOXING
@@ -56,7 +56,7 @@
   - plan: 08 15 15 08 18 18 08 20 20 08 23 23 08 26 08
   ```
 
-* WEIGHT
+# WEIGHT
   * weight loss: reach 63kg -> keep 65kg
   * cf) Amateur Light Welterweight (64kg)
 
