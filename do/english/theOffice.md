@@ -872,7 +872,20 @@
 * definitive 확정적인
 
 # The Office S07E03 / REP:1
+* rumor-monger [루머몽거] 소문을 퍼뜨리는 사람 (소문을 퍼뜨리는 사람)
+* woefully 비통하게 (woe 비통, woeful 비통한)
+* fell through 성사되지 못하다
+* thespian 비극 배우 / 비극의
+* cape 망토
+* procreate 아이를 낳다
+* permissible 허용되는
+* overture 전주곡, 교섭의 제안
+* sass 건방진 행동
+* fiend 악마 
+
 # The Office S07E04 / REP:1
+*
+
 # The Office S07E05 / REP:1
 # The Office S07E06 / REP:1
 # The Office S07E07 / REP:1
