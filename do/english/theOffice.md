@@ -884,7 +884,16 @@
 * fiend 악마 
 
 # The Office S07E04 / REP:1
-*
+* outhouse 변소
+* infestation 창궐
+* stigma 오명, 암술머리
+* mores [모얼스] 풍습
+* fun fling 썸
+* postmortem 사후의
+* abstinence 금욕 (ab.sti.nence; ab.sti.nent. 금욕적인)
+* quirky 변덕스러운
+* delude 현혹시키다
+* self-deluded 자기 오만에 빠진
 
 # The Office S07E05 / REP:1
 # The Office S07E06 / REP:1
