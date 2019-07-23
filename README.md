@@ -32,32 +32,24 @@
   0700 밥, 김, 달걀
   ```
 
-# WORK OUT
+# MOVE
   ```
-         기상        아침       오후
-  MON: PULL-UP    5.3 MI    BOXING
-  TUE: RING-DIP   5.3 MI    BOXING
-  WED: SIT-UP     5.3 MI    BOXING
-  THU: CHIN-UP    5.3 MI    BOXING
-  FRI: PUSH-UP    5.3 MI    BOXING 
-  SAT: SIT-UP      9+ MI
+       기상   아침       오후
+  MON: PULL  5.3 MI    BOXING
+  TUE: DIP   5.3 MI    BOXING
+  WED: SIT   5.3 MI    BOXING
+  THU: CHIN  5.3 MI    BOXING
+  FRI: PUSH  9+ MI
+  SAT: SIT
   SUN: 휴식
-  ```
-  ```
-  PULL-UP  : 5 SET
-  RING-DIP : 5 SET
-  CHIN-UP  : 40 REP
-  PUSH-UP  : 80 REP
-  SIT-UP   : 80 REP
-  ```
-  ```
-  LONG MI
+  
+  PULL          : 5x8
+  DIP           : 5x5
+  SIT/PUSH/CHIN : 80
+  9+
   - done: 05 08 08 10 05 10 10 10 08 13 13
   - plan: 08 15 15 08 18 18 08 20 20 08 23 23 08 26 08
+  
+  WEIGHT: reach63kg -> keep65kg
   ```
-
-# WEIGHT
-  * weight loss: reach 63kg -> keep 65kg
-  * cf) Amateur Light Welterweight (64kg)
-
 
