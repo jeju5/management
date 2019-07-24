@@ -896,6 +896,13 @@
 * self-deluded 자기 오만에 빠진
 
 # The Office S07E05 / REP:1
+* reluctant 마지못해하는
+* bested 돕다
+* pertain to A A와 관련되다
+* pander 포주질을 하다
+* snobbery 속물근성 (속물=우월주의)
+* snub 모욕하다
+
 # The Office S07E06 / REP:1
 # The Office S07E07 / REP:1
 # The Office S07E08 / REP:1
