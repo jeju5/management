@@ -904,7 +904,17 @@
 * snub 모욕하다
 
 # The Office S07E06 / REP:1
+* peeve 약올리다
+* superfluous 과다한 (superfluity 과다)
+* tart up A A를 잔뜩 꾸미다
+* gnaw at A A를 신경을 갉아먹다(괴롭히다) (gnaw 갉아먹다)
+* encumber 지장을 주다 (unencumber 지장을 받지 않는)
+* tally 계수하다
+
 # The Office S07E07 / REP:1
+* christen [크리슨] 세례를 주다
+* box out A A를 밀어내다
+
 # The Office S07E08 / REP:1
 # The Office S07E09 / REP:1
 # The Office S07E10 / REP:1
