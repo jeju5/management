@@ -916,6 +916,10 @@
 * box out A A를 밀어내다
 
 # The Office S07E08 / REP:1
+* copycat 모방하는 사람
+* waco =we ain't coming out (경찰)
+* wacko 미친사람
+
 # The Office S07E09 / REP:1
 # The Office S07E10 / REP:1
 # The Office S07E11 / REP:1
