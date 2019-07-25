@@ -3,7 +3,7 @@
 * Node & React
 
 # Plan
-* JUL21: The Office Season7, Udemy AWS 50%, Run 8MI, touch 66kg, RAV4 20k, RAV4 Renewal
+* JUL21: The Office Season7, Udemy AWS 50%, Run 8MI, touch 69kg, RAV4 20k, RAV4 Renewal
 * JUL28: Udemy AWS 100%, touch 63kg, Buy Bed, RUN 15MI, Start Boxing at Uppercut
 
 # TIME
