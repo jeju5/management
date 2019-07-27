@@ -926,12 +926,14 @@
 * skeevy 더럽고 초라한
 
 # The Office S07E09 / REP:1
- * bale 더미 / 더미를 뭉치다
- * infusion 스며들게 함, 주입 (infuse 스며들게 하다, 주입하다)
- * monetize 화폐로 정하다
+* bale 더미 / 더미를 뭉치다
+* infusion 스며들게 함, 주입 (infuse 스며들게 하다, 주입하다)
+* monetize 화폐로 정하다
+* rectify (잘못된 것을) 바로잡다
  
-
 # The Office S07E10 / REP:1
+*
+
 # The Office S07E11 / REP:1
 # The Office S07E12 / REP:1
 # The Office S07E13 / REP:1
