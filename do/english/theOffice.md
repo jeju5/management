@@ -919,8 +919,18 @@
 * copycat 모방하는 사람
 * waco =we ain't coming out (경찰)
 * wacko 미친사람
+* suet [수에잇 ] 수이트 (소, 양등의 콩팥 지방으로 만든 요리재료)
+* congeal [컨질] 엉기다
+* belle 최고 미인 (belle of the ball 무도회의 여왕)
+* prissy 얌전빼는
+* skeevy 더럽고 초라한
 
 # The Office S07E09 / REP:1
+ * bale 더미 / 더미를 뭉치다
+ * infusion 스며들게 함, 주입 (infuse 스며들게 하다, 주입하다)
+ * monetize 화폐로 정하다
+ 
+
 # The Office S07E10 / REP:1
 # The Office S07E11 / REP:1
 # The Office S07E12 / REP:1
