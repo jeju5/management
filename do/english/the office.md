@@ -932,7 +932,14 @@
 * rectify (잘못된 것을) 바로잡다
  
 # The Office S07E10 / REP:1
-*
+* ply (휴지  등의) 가닥
+* whim 변덕
+* coddle 애지중지하다
+* unspool (실패에서) 풀다 (spool (실패에) 감다)
+* agrarian 농업의
+* agrarian 문학의
+* bogeyman (서양) 도깨비
+* tamper 쓸데없이 참견하다
 
 # The Office S07E11 / REP:1
 # The Office S07E12 / REP:1
