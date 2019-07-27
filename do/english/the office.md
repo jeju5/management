@@ -942,6 +942,16 @@
 * tamper 쓸데없이 참견하다
 
 # The Office S07E11 / REP:1
+* lush 무성한
+* scrutiny 정밀조사 (scrutinize 정밀하게 조사하다)
+* He is upto his neck in A 그는 A에 온통 휘말려있다.
+* sassy 까칠한
+* tacky 싸구려같은
+* wreak havoc on A A에게 큰 파괴를 가하다 (wreak 가하다, havoc 큰 파괴)
+* judgement call 개인의 판단에 따른 결정
+* scowl 째려보다
+* shoo 쉬이하며 쫓하내다
+
 # The Office S07E12 / REP:1
 # The Office S07E13 / REP:1
 # The Office S07E14 / REP:1
