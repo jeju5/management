@@ -951,10 +951,23 @@
 * judgement call 개인의 판단에 따른 결정
 * scowl 째려보다
 * shoo 쉬이하며 쫓하내다
+* derivative 파생물
 
 # The Office S07E12 / REP:1
+* zit 여드름
+* topical 시사와 관련되
+* eradicate 근절하다
+* relent 마음이 누그러지다
+
 # The Office S07E13 / REP:1
+* partridge 자고새
+* snot 콧물
+* immense 엄청난
+* fudge on A A에대해 얼버무리다
+* loom 흐릿하게 나타나다
+
 # The Office S07E14 / REP:1
+
 # The Office S07E15 / REP:1
 # The Office S07E16 / REP:1
 # The Office S07E17 / REP:1
