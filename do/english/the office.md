@@ -967,6 +967,7 @@
 * loom 흐릿하게 나타나다
 
 # The Office S07E14 / REP:1
+* ploy 계략
 
 # The Office S07E15 / REP:1
 # The Office S07E16 / REP:1
