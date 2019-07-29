@@ -4,7 +4,7 @@
 * Start Boxing at Uppercut
 
 # Plan
-* JUL28: The Office Season7, Udemy AWS 33%, touch 64kg(사우어크라우트, 요거트, 블루케일, 계란흰자), Buy Bed, RUN 15MIRAV4 20k
+* JUL28: The Office Season7, Udemy AWS 33%, touch 64kg(사우어크라우트, 요거트, 블루케일, 계란흰자), Buy Bed, RUN 15MI, RAV4 20k
 
 # TIME
   ```
