@@ -968,8 +968,18 @@
 
 # The Office S07E14 / REP:1
 * ploy 계략
+* mine shaft 갱도
+* flake 얇은 조각
+* Loch Ness 네스호
+* lurch 배가 휘청하다 
 
 # The Office S07E15 / REP:1
+* marsupial 유대목 동물 (주머니가 있는 포유류)
+* canny 약삭빠른
+* uncanny 묘환
+* fan out 펼처지다
+
+
 # The Office S07E16 / REP:1
 # The Office S07E17 / REP:1
 # The Office S07E18 / REP:1
