@@ -1,10 +1,10 @@
 # Task
 * React & Redux
 * Node & React
+* Start Boxing at Uppercut
 
 # Plan
-* JUL21: The Office Season7, Run 8MI, touch 67kg, RAV4 Renewal
-* JUL28: Udemy AWS 50%, touch 63kg, Buy Bed, RUN 15MI, Start Boxing at Uppercut, RAV4 20k
+* JUL28: The Office Season7, Udemy AWS 33%, touch 64kg(사우어크라우트, 요거트, 블루케일, 계란흰자), Buy Bed, RUN 15MIRAV4 20k
 
 # TIME
   ```
