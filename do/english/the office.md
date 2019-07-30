@@ -979,9 +979,15 @@
 * uncanny 묘환
 * fan out 펼처지다
 
-
 # The Office S07E16 / REP:1
+* plip 액체가 물체 표면에 닿는 소리
+* exude 줄줄 흐르다
+* apropos of A A에 관하여
+* adieu [아듀] 작별의 안녕
+
 # The Office S07E17 / REP:1
+* 
+
 # The Office S07E18 / REP:1
 # The Office S07E19 / REP:1
 # The Office S07E20 / REP:1
