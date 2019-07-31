@@ -986,9 +986,17 @@
 * adieu [아듀] 작별의 안녕
 
 # The Office S07E17 / REP:1
-* 
+* integral 반드시 필요한 / 적분
+* yarn 실
 
 # The Office S07E18 / REP:1
+* drizzle 보슬보슬 내리다
+* jester 어릿광대
+* zen garden 젠가든 (조그만 정원모형의 모래상자)
+* luff 뱃머리를 돌리다
+* up-and-comer 장래가 유망한 사람
+* bygone 지나간 
+
 # The Office S07E19 / REP:1
 # The Office S07E20 / REP:1
 # The Office S07E21 / REP:1
