@@ -998,7 +998,18 @@
 * bygone 지나간 
 
 # The Office S07E19 / REP:1
+* spinster 노처녀
+* legume [레굼] 콩과식물
+
 # The Office S07E20 / REP:1
+* quirky 별난
+* rant 고함치다
+* go off on a rant 고함치다
+* gridlock 교착상태
+* berth 정박지
+* wide berth 피함
+* give a wide berth 피하다
+
 # The Office S07E21 / REP:1
 # The Office S07E22 / REP:1
 # The Office S07E23 / REP:1
