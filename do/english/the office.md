@@ -1009,6 +1009,7 @@
 * berth 정박지
 * wide berth 피함
 * give a wide berth 피하다
+* senioritis 4학년병 (졸업만을 하고 싶어하는 증상)
 
 # The Office S07E21 / REP:1
 # The Office S07E22 / REP:1
