@@ -2,11 +2,10 @@
 * React & Redux
 * Node & React
 * Start Boxing at Uppercut
-* Udemy AWS 50%
 
 # Plan
 * JUL28: The Office Season7, touch 64kg(사우어크라우트, 요거트, 블루케일, 계란흰자), RUN 15MI, RAV4 20k
-* AUG04: 
+* AUG04: Udemy AWS 50%
 * AUG11: 
 * AUG18: 
 * AUG25: 
