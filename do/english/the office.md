@@ -1012,8 +1012,20 @@
 * senioritis 4학년병 (졸업만을 하고 싶어하는 증상)
 
 # The Office S07E21 / REP:1
+* flak 대공포
+* debilitate [데빌리테이트] 심신을 약화시키다
+* cringe 움츠러들다, 아첨하다
+
 # The Office S07E22 / REP:1
+* drool 침을 질질 흘리다
+* baler 뭉치는 기계
+* superlative (형용사의) 최상급 / 최상급의
+
 # The Office S07E23 / REP:1
+* astute 약삭빠른
+* grub 뒤져서 찾다
+* murky 어두컴컴한
+
 # The Office S07E24 / REP:1
 # The Office S07E25 / REP:1
 # The Office S07E26 / REP:1
