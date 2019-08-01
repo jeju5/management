@@ -1027,5 +1027,28 @@
 * murky 어두컴컴한
 
 # The Office S07E24 / REP:1
+* stagger 비틀거리다, 엇갈리게 배열하다, (쉬는 시간등에) 시간차를 두다
+* stall 가판대 / 시간을 끌다
+* foment an insurrection 반란을 조성하다 (foment 조성하다, insurrection 반란)
+* interim 임시의, 과도의
+* horoscope 점성술
+* hokum 싸구려 영화, 헛소리
+* holster 권총집
+* shooting spree 총을 흥청망청 쓰는 것 (spree 흥청망청 쓰는 것)
+* figurative 비유적인
+* extortion 강탈 (extort 강탈하다)
+
 # The Office S07E25 / REP:1
+* refinery 정제공장
+* fallacy 오류
+* wad 뭉치
+* inadvertent 부주의한
+* demise 종말
+* bestiality 수간
+
 # The Office S07E26 / REP:1
+* poach 졸이다
+* chump 멍청이, 나무토막
+* travesty 졸렬한 모조품
+* bolster 북돋으다
+* liaison [리아이손] 연락책
