@@ -4,7 +4,7 @@
 * Start Boxing at Uppercut
 
 # Plan
-* JUL28: touch 66kg(사우어크라우트, 요거트, 블루케일, 계란흰자), RUN 15MI, RAV4 20k
+* JUL28: touch 66kg, RUN 15MI, RAV4 20k
 * AUG04: Udemy AWS 50%
 * AUG11: 
 * AUG18: 
@@ -33,7 +33,7 @@
   ----------------------
   0500 블루케일
   0600 요거트
-  0700 두유, 바나나
+  0700 스크램블드 에그
   ```
 
 # MOVE
