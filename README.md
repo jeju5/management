@@ -5,7 +5,7 @@
 
 # Plan
 * AUG04: RUN 15MI, touch 65kg, Udemy AWS 50%, Get Visa CreditCard
-* AUG11: 
+* AUG11: touch 63kg
 * AUG18: 
 * AUG25: 
 
