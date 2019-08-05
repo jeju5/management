@@ -4,8 +4,7 @@
 * Start Boxing at Uppercut
 
 # Plan
-* JUL28: touch 66kg, RUN 15MI, RAV4 20k
-* AUG04: Udemy AWS 50%
+* AUG04: RUN 15MI, touch 65kg, Udemy AWS 50%, Get Visa CreditCard
 * AUG11: 
 * AUG18: 
 * AUG25: 
