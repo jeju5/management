@@ -37,20 +37,20 @@
 
 # MOVE
   ```
-       기상   아침      오후
-  MON: PULL  3+ MI    BOXING
-  TUE: DIP   3+ MI    BOXING
-  WED: SIT   3+ MI    BOXING
-  THU: CHIN  3+ MI    BOXING
-  FRI: PUSH  9+ MI
+       기상   아침    오후
+  MON: PULL  RUN3+  BOXING
+  TUE: DIP   RUN3+  BOXING
+  WED: SIT   RUN3+  BOXING
+  THU: CHIN  RUN3+  BOXING
+  FRI: PUSH  RUN9+
   SAT: SIT
   SUN: 휴식
   
   PULL          : 5x8
   DIP           : 5x5
-  SIT/PUSH/CHIN : 80
-  9+            : 05 08 08 10 05 10 10 10 08 13 13 / 08 15 15 08 18 18 08 20 20 08 23 23 08 26 08
+  PUSH/CHIN/SIT : 80
+  RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 / 08 15 15 08 18 18 08 20 20 08 23 23 08 26 08
   
-  WEIGHT: reach63kg -> keep65kg
+  WEIGHT: keep 65kg
   ```
 
