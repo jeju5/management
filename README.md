@@ -5,8 +5,8 @@
 
 # Plan
 * AUG04: ~~RUN 15MI, Apply ChaseUnlimited,~~ touch 65kg, Udemy AWS 33%, Pants Alteration
-* AUG11: touch 63kg
-* AUG18: keep 65kg
+* AUG11: touch 64kg, keep 65kg
+* AUG18: 
 * AUG25: 
 
 # TIME
