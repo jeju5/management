@@ -1,3 +1,35 @@
+# You've Got a Friend in Me - Randy Newman
+```
+https://www.youtube.com/watch?v=DNZUKm0ApEM
+
+You've got a friend in me
+You've got a friend in me
+When the road looks rough ahead
+And you're miles and miles
+From your nice warm bed
+You just remember what your old pal said
+Boy, you've got a friend in me
+Yeah, you've got a friend in me
+You've got a friend in me
+You've got a friend in me
+If you've got troubles, I've got 'em too
+There isn't anything I wouldn't do for you
+We stick together and can see it through
+'Cause you've got a friend in me
+Yeah, you've got a friend in me
+Some other folks might be
+A little bit smarter than I am
+Bigger and stronger too, maybe
+But none of them will ever love you
+The way I do, it's me and you, boy
+And as the years go by
+Our friendship will never die
+You're gonna see it's our destiny
+You've got a friend in me
+You've got a friend in me
+Yeah, you've got a friend in me
+```
+
 # [V] Out of Time - The Rolling Stones
 ```
 https://www.youtube.com/watch?v=fp3FnulQ8R4
