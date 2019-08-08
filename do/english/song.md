@@ -30,7 +30,7 @@ You've got a friend in me
 Yeah, you've got a friend in me
 ```
 
-# [V] Out of Time - The Rolling Stones
+# Out of Time - The Rolling Stones
 ```
 https://www.youtube.com/watch?v=fp3FnulQ8R4
 
