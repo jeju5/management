@@ -63,6 +63,9 @@ jab bro         bab bro         lead-hook bro         lead-upper bro         lea
 jab rear-hook   bab rear-hook   lead-hook rear-hook   lead-upper rear-hook   lead-body rear-hook   cro rear-hook   bro rear-hook   rear-hook rear-hook   rear-upper rear-hook   rear-body rear-hook   
 jab rear-upper  bab rear-upper  lead-hook rear-upper  lead-upper rear-upper  lead-body rear-upper  cro rear-upper  bro rear-upper  rear-hook rear-upper  rear-upper rear-upper  rear-body rear-upper  
 jab rear-body   bab rear-body   lead-hook rear-body   lead-upper rear-body   lead-body rear-body   cro rear-body   bro rear-body   rear-hook rear-body   rear-upper rear-body   rear-body rear-body   
+
+Hit Hit -> left-step.left-slip.right-guard
+Hit Hit -> right-step.right-slip.left-guard
 ```
   
 
