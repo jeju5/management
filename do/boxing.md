@@ -51,6 +51,21 @@
 * SKATE   : skate-2, skate-3, skate-4, skate-5
 * SNATCH  : snatch-side-L, snatch-side-R, snatch-forward-L, snatch-forward-R
 
+## 10X10
+```
+jab jab         bab jab         lead-hook jab         lead-upper jab         lead-body jab         cro jab         bro jab         rear-hook jab         rear-upper jab         rear-body jab         
+jab bab         bab bab         lead-hook bab         lead-upper bab         lead-body bab         cro bab         bro bab         rear-hook bab         rear-upper bab         rear-body bab         
+jab lead-hook   bab lead-hook   lead-hook lead-hook   lead-upper lead-hook   lead-body lead-hook   cro lead-hook   bro lead-hook   rear-hook lead-hook   rear-upper lead-hook   rear-body lead-hook   
+jab lead-upper  bab lead-upper  lead-hook lead-upper  lead-upper lead-upper  lead-body lead-upper  cro lead-upper  bro lead-upper  rear-hook lead-upper  rear-upper lead-upper  rear-body lead-upper  
+jab lead-body   bab lead-body   lead-hook lead-body   lead-upper lead-body   lead-body lead-body   cro lead-body   bro lead-body   rear-hook lead-body   rear-upper lead-body   rear-body lead-body   
+jab cro         bab cro         lead-hook cro         lead-upper cro         lead-body cro         cro cro         bro cro         rear-hook cro         rear-upper cro         rear-body cro         
+jab bro         bab bro         lead-hook bro         lead-upper bro         lead-body bro         cro bro         bro bro         rear-hook bro         rear-upper bro         rear-body bro         
+jab rear-hook   bab rear-hook   lead-hook rear-hook   lead-upper rear-hook   lead-body rear-hook   cro rear-hook   bro rear-hook   rear-hook rear-hook   rear-upper rear-hook   rear-body rear-hook   
+jab rear-upper  bab rear-upper  lead-hook rear-upper  lead-upper rear-upper  lead-body rear-upper  cro rear-upper  bro rear-upper  rear-hook rear-upper  rear-upper rear-upper  rear-body rear-upper  
+jab rear-body   bab rear-body   lead-hook rear-body   lead-upper rear-body   lead-body rear-body   cro rear-body   bro rear-body   rear-hook rear-body   rear-upper rear-body   rear-body rear-body   
+```
+  
+
 ## COMBOS
 * jab jab
   *	jab jab jab cro
