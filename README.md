@@ -53,4 +53,41 @@
   
   WEIGHT: keep 65kg
   ```
+  
+# MONEY
+```
+<MONTHLY STAT>
+-------------------------------------------------------
+* IN TOTAL  : $4068
+              $4068 Concur Salary
+-------------------------------------------------------
+* OUT TOTAL : $2227
+              $ 407 Offering: Tithe
+              $  80 Offering: Reg
+              $1095 Housing : Rent
+              $  30 Housing : XcelEnergy
+              $ 120 Spending: Gas
+              $ 400 Spending: Personal (AMEX D)
+              $  30 Spending: Xfinity (AMEX H)
+              $  50 Spending: Tmobile (AMEX H)
+              $  15 Spending: Netflix/Amazon (AMEX H) 
+-------------------------------------------------------
+* OUT OTHER : $  41
+-------------------------------------------------------
+* SAVE EST  : $1800 (1800x12=21600)
+-------------------------------------------------------
+              
+<OTHERS>
+  - OUT: Auto Insurance
+  - OUT: Auto Maintenance
+  - OUT: Renters Insurance
+  - IN : SAP Share
+  - IN : 401K
+  - IN : HSA
 
+<MANAGE>
+* daily   : keep  $2000 (U.S. BANK Checking)
+* monthly : keep  $3000 (U.S. BANK Saving)
+* fund1   :             (High Yield Saving)
+* fund2   : 401K, Stock (forget about it)
+```
