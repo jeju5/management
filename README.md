@@ -88,6 +88,6 @@
 <MANAGE>
 * daily   : keep  $2000 (U.S. BANK Checking)
 * monthly : keep  $3000 (U.S. BANK Saving)
-* fund1   :             (High Yield Saving)
+* fund1   : save        (High Yield Saving)
 * fund2   : 401K, Stock (forget about it)
 ```
