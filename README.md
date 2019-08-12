@@ -4,7 +4,14 @@
 * Start Boxing at Uppercut
 
 # Plan
-* AUG11: 15mi, touch 65kg -> keep 66kg, Udemy AWS Course 100%
+* AUG11: 15mi, touch 66kg -> keep 66kg, Udemy AWS Course 100%
+  ```
+  MON: 68.0 15mi Section1,2,3,4 Review
+  TUE: 67.0  3mi Section5,6
+  WED: 66.5  3mi Section7,8
+  THU: 66.0  6mi Section9
+  FRI: 65.0  3mi Section10,11,12
+  ```
 * AUG18: 
 * AUG25: 
 
