@@ -33,7 +33,7 @@
   0600 요거트
   0700 타코 (토띠아, 계란, 닭가슴살, 양파, 토마토소스, 후무스, 과카몰리)
   
-  * No Caffeine, No DeCaf, No Dairy
+  * No Caffeine, No DeCaf, No Milk, No Cheese
   ```
 
 # MOVE
