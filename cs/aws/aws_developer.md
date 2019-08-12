@@ -184,24 +184,26 @@
       * configure health check
     * TEST
       * make a request to the domain you registerd --> DNS server --> load balancer --> EC2
-  * CLI Lab
+  * CLI(Command Line Interface) Demo
     * create a user
       * 'Developer1' with 'Developer' group with programmatic access
       * get an access key id & secret access id
+    * create a s3 bucket (the bucket name has to be unique)
+      ```
+      aws s3 mb s3://mjcloud123asdf
+      ```
+      * this will create a s3 bucket
     * configure access
       * ssh into EC2 instance and run
         ```
         aws configure
         ```
-      * enter access key id & secret access id.
+      * you will be prompted for more information
+      * enter access key id & secret access id. (from 'create a user' step)
       * enter nothing for region and output format -> sets as a default
-    * create s3 bucket (the bucket name has to be unique)
-      ```
-      aws s3 mb s3://mjcloud123asdf
-      ```
     * create txt file and copy into s3
       ```
-      aws s3 ls                                  # you will see your s3 bucket
+      aws s3 ls                                  # you will see s3 bucket list
       echo "hello" > hello.txt                   # create a txt file
       aws s3 cp hello.txt s3://mjcloud123asdf    # copy a txt file to s3 bucket
       aws s3 ls s3://mjcloud123asdf              # verify a txt file in s3 bucket
@@ -209,9 +211,9 @@
     * try deleting access key
       * AWS UI -> Users -> Access Keys -> Delete access key
     * try 'aws s3 ls' with exising user & keys, it will fail
-    * you have to configure again. repeat 'aws configure'
+    * you have to configure again. repeat 'aws configure' and enter additional data.
     * manage S3 in console
-      * goto AWS console -> click 'mjcloud123
+      * goto AWS console -> S3 -> click mjcloud123
       * click 'hello.txt'
       * click 'make public'
       * open text file
@@ -220,17 +222,35 @@
     * Exam tips
       * give least privilege to a user.
       * create groups and assign to user(s) properly.
-      * don't use a single access key. when a developer leaves a group -> delete it and create a new one. (don't reuse it)
-  * EC2 with S3 Role
+      * don't use a single access key. assign keys to different roles/users/groups.
+      * when a developer leaves a group -> delete it and create a new one. (don't reuse it)
+  * RoleBased EC2
+    * Create a S3 bucket
+    * Create a user that has no access
+    * SSH into this EC2 instance with this user and try 'aws s3 ls'. It will fail.
     * IAM -> Roles -> Create Role -> select entity type: AWS Service and service: EC2
     * select AmazonS3FullAccess Policy and create a role
     * EC2 -> select ec2 instance you created
-    * right click the instance
-    * click Attach/Replace IAM Role
-    * you can use EC2 Role based
+    * right click the instance, click Attach/Replace IAM Role
+    * you will still have to delete existing config & credentials (which stores keys, regions ...etc)
+      ```
+      cd ~/.aws
+      rm credentials
+      rm config
+      ```
+    * Try 'aws s3 ls'. It will list s3 buckets. You will also have availability to s3 features further on.
+    * you can use EC2 Role based!
+      * what does this mean?
+      * whenever you use this instance, you will have all permission that this Role has.
+      * if you try EC2 with a user that has no access, you will still have some permission to this RoleBasedEC2
+    * EXAM TIP
+      * Roles alloow you to not use Keys (Access Keys, Secret Keys)
+      * Rolse are preferred (security perspective) because it is easily detached/attached to instances without having to 
+        stop or terminate instances.
+    
 * RDS 101: AWS DB Services
-  * SQL Server, Oracle, MySQL ... (OLTP = Online Transaction Processing = Receieves the request and handles query reqeust. ex) ATM)
-  * RedShift (OLAP = Online Analytics Processing = Analyzes Data and provides the data. ex) Datawarehouse)
+  * SQL Server, MySQL...(OL"T"P = Online Transaction Processing = Receieves the request and handles query reqeust. ex) ATM)
+  * RedShift (OL"A"P = Online Analytics Processing = Analyzes Data and provides the data. ex) Datawarehousing)
   * DynamoDB (NoSQL)
   * ElastiCache caches data in in-memory database, and it supports Memcached & Redis.
 * RDS LAB
