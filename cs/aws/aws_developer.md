@@ -47,10 +47,11 @@
     * dedicated host: physical EC2 server -> good for region-specific regulations
   * Instance Type (optimized for)
     ```
-    MONEY-HONDA-GOLF-SPECIALFORCE
-    
-    ATM      C|RX   PGF   HID
-    General  Honda  Golf  SpecialForce
+    "MONEY-HONDA-GOLF-SPECIALFORCE"
+   
+    ATM           C|RX           PGF          HID
+    Money         Honda          Golf     SpecialForce
+    General  Compute|Memory  Accelerated    Storage
     ```
     * General: A T M
     * Compute: C
@@ -66,9 +67,11 @@
     * If you want to encrypt data, you have to configure encryption when creating EBS Volume
     * Types
       * SSD
+        * GP2 < 16000 < IO1
         * General Purpose SSD = GP2 (General): 3IOPS/GB, max 16,000 IOPS (IOPS = input/output operations per second)
         * Provisioned IOPS SSD = IO1 (Intensive): proper for more than 16,000 IOPS
       * HDD
+        * SC1 < Optimized < ST1 (op"T"imized)
         * Cold HHD = SC1
           * lowest cost among current
           * use case: file server
@@ -80,9 +83,9 @@
         * legacy service
         * lowest cost among all
 * EC2 LAB
-  * AWS console -> Services -> EC2 -> Launch Instance
+  * Services -> EC2 -> Launch Instance
     * you will see VMs, select what you want
-    * then select instance type: "ATM CRX PGF HID"
+    * then select instance type: "ATM C|RX PGF HID"
     * then configure instance
       * purchasing options, number of instances, network, shutdown behavior(STOP, Terminate) ... etc
       * terminate means remove
