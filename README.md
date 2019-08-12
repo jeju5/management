@@ -11,9 +11,29 @@
   WED: 66.5  3mi Section7,8
   THU: 66.0  6mi Section9
   FRI: 65.0  3mi Section10,11,12
+  SAT:
+  SUN:
   ```
 * AUG18: 
+  ```
+  MON: 
+  TUE: 
+  WED: 
+  THU: 
+  FRI: 
+  SAT:
+  SUN:
+  ```
 * AUG25: 
+  ```
+  MON: 
+  TUE: 
+  WED: 
+  THU: 
+  FRI: 
+  SAT:
+  SUN:
+  ```
 
 # TIME
   ```
