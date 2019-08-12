@@ -2,6 +2,7 @@
 * React & Redux
 * Node & React
 * Start Boxing at Uppercut
+* 황혼의 사무라이 (The Twilight Samurai)
 
 # Plan
 * AUG11: 15mi, touch 65.5kg, Udemy AWS Course 100%
