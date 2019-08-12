@@ -5,34 +5,35 @@
 # Intro
 * Exam Structure
   * https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS_Certified_Developer_Associate_Updated_June_2018_Exam_Guide_v1.3.pdf
-* 130 minutes & 65 questions
-* $150
+  * 130 minutes & 65 questions
+  * $150
 
 # SECTION2: IAM
 * IAM
   * Identity Access Management
-  * allows you to manage users and level of access to AWS console
+  * Allows you to manage users & level of access to AWS console
 * Terms
   * User: end user
   * Group: group of Users
-  * Role: Role with in the service
-  * Policy: Document that defines permissions
+  * Role: Role with in the service (set of permissions)
+  * Policy: Permission defining JSON (document)
 * IAM LAB
-  * click Services on the top -> Security, Identity, & Compliance -> IAM
-    *  you can customize url for sign-in link
-  * MFA
+  * Services -> Security, Identity, & Compliance -> IAM
+    * click Customize (you can customize url for sign-in link)
+    * you will have to delete existing setup if you customize url
+  * MFA (Multi Factor Authorization)
     * Security Status -> Manage MFA -> Virtual MFA device -> continue
     * Install MFA app into my phone
     * Scan QR CODE with your phone -> try Authenticator login
   * User
-    * a AWS user
+    * add/delete a AWS user
   * Groups
-    * collection of users
+    * group of users
   * Policy
     * defines permission
     * written in JSON
     * delegate policy(es) to a group or directly assign to a user
-  * Roles
+  * Role
     * set of permissions assigned to an entity(ex. EC2)
 
 # SECTION3: EC2
@@ -41,10 +42,16 @@
   * Pricing
     * on demand: price by time -> good for short-term need (short-term also means specific short time)
     * reserved: capacity reservation -> good for regular-basis need
-    * spot: bidding for capacity -> good for flexible-time need (start time & end time), good for temporary additional need
+    * spot: capacity bidding -> good for flexible-time need (start time & end time), good for temporary additional need
       * if terminated partial hour usage -> if AWS EC2 terminates it, you won't be charged / if you terminate it, you will be charged for a complete hour
     * dedicated host: physical EC2 server -> good for region-specific regulations
-  * Instance Type (optimized for) "ATM CRX PGF HID"
+  * Instance Type (optimized for)
+    ```
+    MONEY-HONDA-GOLF-SPECIALFORCE
+    
+    ATM      C|RX   PGF   HID
+    General  Honda  Golf  SpecialForce
+    ```
     * General: A T M
     * Compute: C
     * Memory: R X(extreme)
@@ -53,6 +60,8 @@
   * EBS = elastic block store
     * Volumes that can be attached to EC2
     * aws instance is placed at availability zone. (any instance like db, ec2, ...)
+      * AWS Region: geographic area
+      * AWS Availability Zone: resource isolation within AWS Region
       * Availability Zones < Region (ex. US-east-1; default regions)
     * If you want to encrypt data, you have to configure encryption when creating EBS Volume
     * Types
