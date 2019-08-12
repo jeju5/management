@@ -49,9 +49,11 @@
     ```
     "MONEY-HONDA-GOLF-SPECIALFORCE"
    
-    ATM           C|RX           PGF          HID
-    Money         Honda          Golf     SpecialForce
-    General  Compute|Memory  Accelerated    Storage
+    ATM           C|RX       PGF       HID
+    Money         Honda      Golf   SpecialForce
+    General  Compute|Memory  GPU    Storage
+    
+    * GPU = accelerated
     ```
     * General: A T M
     * Compute: C
@@ -89,9 +91,10 @@
     * then configure instance
       * purchasing options, number of instances, network, shutdown behavior(STOP, Terminate) ... etc
       * terminate means remove
-    * add storage
-      * gp2, io1, magnetic ... 
+    * add storage (EBS)
+      * SSD HDD MAGNETIC
     * add tag
+      * key/value pair to be used.
     * configure security group
       * types: ssh, rdp, http...
         * ssh: secure shell
@@ -103,6 +106,7 @@
           * 0.0.0.0/0 is for ipv4
           * ::/0 is for ipv6
       * launch
+        * upon launching an instance you will be prompted to "Select an existing key pair or create a new key pair"
         * you will need public key and private key
           * public/private key
             * symmetric key encryption
@@ -111,10 +115,10 @@
               ```
             * asymmetrical key encryption
               ```
-              PLAIN-TEXT ---encrypt with key1---> CIPHER-TEXT ---decrypt with key1---> PLAIN-TEXT
+              PLAIN-TEXT ---encrypt with key1---> CIPHER-TEXT ---decrypt with key2---> PLAIN-TEXT
 
-              key1(public key): can be shared to the public
-              key2(private key): should be kept as a secret
+              * key1(public key): can be shared to the public
+              * key2(private key): should be kept as a secret
               ```
         * create them and download them
         * launch
