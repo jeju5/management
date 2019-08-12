@@ -120,8 +120,7 @@
               * key1(public key): can be shared to the public
               * key2(private key): should be kept as a secret
               ```
-        * create them and download them
-        * launch
+        * create them and download them (or select an existing one)
   * go to instances
     * select an instance -> click connect
     * you can connect via one of two options (standalone ssh / mindterm ssh)
