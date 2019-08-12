@@ -168,22 +168,20 @@
         * Public IP makes a request -> DNS -> Load Balancer -> Application Server
         * Application Server will get public ip as "x-forwarded-for header"
   * Route53 Lab
-    * Route53 is AWS DNS service
-      * it maps the request to EC2, S3 or load balancer
-    * Build Load Balancers -> EC2
-      * Create Load Balancer
-        * select Application Load balancer for our use (flexible and general)
-        * configure name, listeners(protocol(HTTP/HTTPS) and port) and zones(region)
-        * configure security group
-        * configure routing (DNS Name --mapping--> App Server); you can route a request to Instance, IP, Lambda function
-        * select EC2 Instance you created
-        * configure health check
-    * Build Route53 DNS -> Load Balancer
-      * Domains -> Register Domain (buy a domain and register it)
-      * Hosted Zones
-        * select the domain you registered
-        * create record set
-        * select Alias(the load balancer you created); allows DNS to map AWS service you created
+    * Route53 is AWS DNS service. It maps the request to EC2, S3 or load balancer
+    * Services -> Route 53 -> DNS management 'Get Started Now'
+    * Registered Domain -> Register Domain
+      * buy a domain or register an existing one you own
+    * Hosted Zones -> Create Hosted Zone
+      * select the domain you registered
+      * create record set
+      * select Alias(the load balancer you created); allows DNS to map AWS service you created
+      * select Application Load balancer for our use (flexible and general)
+      * configure name, listeners(protocol(HTTP/HTTPS) and port) and zones(region)
+      * configure security group
+      * configure routing (DNS Name --mapping--> App Server); you can route a request to Instance, IP, Lambda function
+      * select EC2 Instance you created
+      * configure health check
     * TEST
       * make a request to the domain you registerd --> DNS server --> load balancer --> EC2
   * CLI Lab
@@ -191,10 +189,10 @@
       * 'Developer1' with 'Developer' group with programmatic access
       * get an access key id & secret access id
     * configure access
-      * ssh into EC2 instance
-      ```
-      aws configure
-      ```
+      * ssh into EC2 instance and run
+        ```
+        aws configure
+        ```
       * enter access key id & secret access id.
       * enter nothing for region and output format -> sets as a default
     * create s3 bucket (the bucket name has to be unique)
