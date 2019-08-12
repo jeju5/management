@@ -75,6 +75,10 @@
 -------------------------------------------------------
 * SAVE EST  : $1800 (1800x12=21600)
 -------------------------------------------------------
+* AT THE END OF MONTH
+  * MAKE AMEX D PAYMENT ($100)
+  * MAKE AMEX H PAYMENT ($400)
+  * TRANSFER DEPOSIT TO SAVING
               
 <OTHERS>
   - OUT: Auto Insurance
@@ -87,6 +91,6 @@
 <MANAGE>
 * daily   : keep  $2000 (U.S. BANK Checking)
 * monthly : keep  $3000 (U.S. BANK Saving)
-* fund1   : save        (High Yield Saving)
+* fund1   : save        (Marcus Saving)
 * fund2   : 401K, Stock (forget about it)
 ```
