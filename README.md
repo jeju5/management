@@ -4,8 +4,7 @@
 * Start Boxing at Uppercut
 
 # Plan
-* AUG04: ~~RUN 15MI, Apply ChaseUnlimited,~~ touch 66kg, Udemy AWS 33%, Pants Alteration
-* AUG11: touch 64kg -> keep 66kg
+* AUG11: touch 65kg -> keep 66kg, Udemy AWS 33%
 * AUG18: 
 * AUG25: 
 
