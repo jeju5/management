@@ -147,18 +147,26 @@
        * IPv4 Public IP address can be found from AWS Instances pane
   * Load Balancer
     * load balancer 101
-      * layer 4 load balancing: operates at transport layer
-      * layer 7 load balancing: operates at content layer
+      ```
+      <OSI MODEL>
+      LAYER7: Application
+      LAYER6
+      LAYER5
+      LAYER4: Transport
+      LAYER3
+      LAYER2
+      LAYER1
+      ```
+      * layer4 load balancing: operates at Transport layer
+      * layer7 load balancing: operates at Application layer
       * Types
         * Application Load Balancer: HTTP, HTTPS. works within the application. incoming app traffic control
         * Network Load Balancer: TCP works at layer-4, incoming network traffic controls
         * Classic Load Balancer: HTTP, HTTPS, TCP, SSL. doesn't look at the request. single port mapping
       * when your load balancer fails, it throws 504 error (gateway timeout)
       * x-forwarded-for header
-        * public ip makes a request to domain name
-        * DNS service transfers the request to a load balancer
-        * load balancer transfer a request to Application Server
-        * Application Server will get public ip as x-forwarded-for header
+        * Public IP makes a request -> DNS -> Load Balancer -> Application Server
+        * Application Server will get public ip as "x-forwarded-for header"
   * Route53 Lab
     * Route53 is AWS DNS service
       * it maps the request to EC2, S3 or load balancer
