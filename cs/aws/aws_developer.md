@@ -337,13 +337,13 @@
   * Data Consistency Model
     * Create -> Read after Write Consisteny -> New file is immediately accessible.
     * Update/Delete -> Eventual Consistency -> Delete or overwriting is not immediatley applied. (takes time to propagate)
-  * Object consists of
+  * Object consists of (5core/4subresources)
     * Key: File name
     * Value: File data (key/value model)
     * VersionId: versioning information
     * Metadata: user defined data about data
     * Subresources: bucket specific configuration data
-      * bucket policy, access control list, CORS(cross origin resource sharing), transfer accelaraion
+      * (4): bucket policy, access control list, CORS(cross origin resource sharing), transfer accelaraion
   * Tiers
     * S3 Standard
       * nine9 durability : 99.999999999% (unlikely to loss data)   # but data will be there anyway.
