@@ -335,8 +335,8 @@
   * s3 bucket name should be named universially unique. (globally unique)
   * HTTP 200 Code if upload was successful
   * Data Consistency Model
-    * 1. Read and Write Consisteny: New file is immediately accessible
-    * 2. Eventual Consistency: Delete or overwriting is not immediatley applied. (takes time to propagate)
+    * Read and Write Consisteny: New file is immediately accessible
+    * Eventual Consistency: Delete or overwriting is not immediatley applied. (takes time to propagate)
   * Object consists of
     * Key: File name
     * Value: File data (key/value model)
@@ -345,17 +345,25 @@
     * Subresources: bucket specific configuration data
       * bucket policy, access control list, CORS(cross origin resource sharing), transfer accelaraion
   * Tiers
-    * S3: 99.99% availability (likely to be accessible) & 99.999999999% durability (unlikely to loss data)
+    * S3 Standard
+      * nine9 durability : 99.999999999% (unlikely to loss data)   # but data will be there anyway.
+      * two9 availability: 99.99%        (likely to be accessible) # connection can be messed up
+    * S3 Standard IA (Infrequently Accessed)
+      * nine9 & one9
+      * lower fee but charged retrieval fee for all S3 IA object.
+    * S3 One Zone IA
+      * nine9 & 99.5
+      * same as S3 -IA, but is stored in a single availibility zone.
+    * Reduced Redundancy Storage
+      * 99.99% availibility and durability to provide one-year storage.
+      * good for data that can be easiliy regenerated if lost.
+    * Glacier
+      * Very cheap, Verp slow. Works for very infrequently accessed data (historic archive)
     * S3 Intelligent Tiering
+      * same availability and durability as Standard S3.
       * good for unknown access patterns.
       * It has two tiers (frequent/infrequent) and it automatically moves your data to cost-effective tier.
-      * same availability and durability as regular S3.
       * no retrieval fee but has very small monthly maintenance fee.
-    * S3 IA (Infrequently Accessed): lower fee but charged retrieval fee.
-    * S3 One Zone IA: same as S3 -IA but is stored in a single availibility zone. 99.999999999% durability & 99.5% availibility.
-    * Reduced Redundancy Storage: 99.99% availibility and durability to provide one-year storage.
-      * good for data that can be easiliy regenerated if lost.
-    * Glacier: Very cheap, Verp slow. Works for very infrequently accessed data (historic archive)
   * Charges
     * Storage (per GB)
     * Requests (Get, Put, Copy)
