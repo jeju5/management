@@ -5,12 +5,12 @@
 * 황혼의 사무라이 (The Twilight Samurai)
 
 # Plan
-* AUG11: 15mi, touch 65.5kg, Udemy AWS Course 100%
+* AUG11: touch 65.5kg, Udemy AWS Course 100%
   ```
-  MON: 68.0 15mi Section1,2,3,4 Review
-  TUE: 67.0  3mi Section5,6
-  WED: 66.5  3mi Section7,8
-  THU: 66.0  6mi Section9
+  MON: [O]68.0 [O]15mi 
+  TUE: 67.0  3mi Section1,2,3,4 Review, Section5
+  WED: 66.5  3mi Section6,7
+  THU: 66.0  6mi Section8,9
   FRI: 65.5  3mi Section10,11,12  bible study
   SAT: fish dinner
   SUN:      dinner
