@@ -10,12 +10,12 @@
 * AUG11: touch 65.5kg, Udemy AWS Course 100%
   ```
   MON: [o]68.0 [o]15mi [o]Section1Re [o]Section2Re
-  TUE: 67.0  [o]Section3Re Section4 Section5
-  WED: 66.5  3mi Section6 Section7 Section8
-  THU: 66.0  6mi Section9
-  FRI: 65.5  3mi Section10 Section11 Section12 BibleStudy
-  SAT: fish dinner
-  SUN:      dinner
+  TUE: 67.0  [o]Section3Re Section4
+  WED: 66.5  3mi Section5 Section6
+  THU: 66.0  6mi Section7 Section8
+  FRI: 65.5  3mi Section9
+  SAT: fish dinner Section10 Section11 Section12 BibleStudy
+  SUN:      dinner 
   ```
 * AUG18: 
   ```
