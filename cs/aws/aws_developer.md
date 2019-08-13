@@ -376,20 +376,20 @@
     * bucket policy: applied at bucket level
     * access control list: applied at object level
     * you configure buckets to log every access and request
-* S3 Lab
+* S3 Policies Lab
   * AWS Console -> S3 -> Create Bucket
     * Version: you can choose to keep versions all objects.
     * Log: you can log all request to bucket.
     * Tag: you can set up taggings to track usage.
     * Object level logging: via CloudTrail
     * Encryption: AES256(256bit) / AWSKMS(key management system) (these are server-side encryption)
-    * Metrics: via CloudWatch
+    * Metrics: via CloudWatch (AWS metrics sercice)
     * Public Access: you can configure public accessibility.
-      * by default: it is completly private and S3 Log Delivery group has no write access
+      * by default: it is completly "private" and S3 Log Delivery group has no write access
   * Click created bucket
     * create folders
     * try uploading a file
-    * click file and try access with url: ACCESS DENIED because it is private by default
+    * click file and try access with url: ACCESS DENIED because it is "private" by default
     * goto bucket -> permissions -> enable public access
     * goto a folder -> upload a file with public access -> try url access -> it works!
     * bucket policy is in json format
@@ -398,3 +398,28 @@
         * principal is the entity you are applying policy to (entity = user ARN; AWS Console -> IAM -> Users -> get User ARN)
         * amazon resource name is the bucket arn
         * click generate -> copy json -> paste into policy editor
+* S3 Encryption
+  * S3 Encryption "in Transit"
+    * SSL/TLS
+    * encrypts data in network
+  * S3 Encryption "at Rest"
+    * SSE (Server Side Encryption)
+      * SSE-S3
+        * S3 Managed Key
+        * x-amz-server-side-encryption: AES256
+      * SSE-KMS
+        * AWS Managed Key (=Key Management Service)
+        * x-amz-server-side-encryption: KMS
+      * SSE-C (Customer Managed Key)
+    * CSE (Client Side Encryption)
+      * You encryption data on your own (application level)
+  * When object is uploaded to S3, PUT method is initiated.
+  * If you want to enforce encryption, deny all PUT without x-amz-server-side-encryption expectation.
+* S3 Encryption Lab
+  * you can enable sse in console during creating a s3 bucket
+  * create a bucket and click that bucket
+  * click permissions tab -> bucket policy
+  * click policy generator
+  * click PUT Object as Actions you want to enforce encryption
+  * click options and add Key: x-amz-server-side-encryption & Value KMS
+      
