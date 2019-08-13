@@ -272,7 +272,7 @@
         cd /var/www/html                                        
         wget https://s3.amazonaws.com/acloudguru-production/connect.php  # get connect.php from the link
         ```
-
+    * make sure that the security group you use for this EC2 instance allows http as inbound because you want to hit this instance via url
      * ssh into your EC2 instance and modify connect.php to your rds endpoint
        ```
        ssh ec2-user@18.191.182.21 -i T2.pem      # ssh into an instance
@@ -283,12 +283,13 @@
                                                  # enter crtl+x to get out of nano editor
        ```
     * configure security group
-      * make sure that the security group you use for this EC2 instance allows http as inbound because you want to hit this instance via url
-      * AWS -> EC2 -> Securit Group
-      * select rds-lab-wizard
+      * AWS -> EC2 -> Security Group
+      * select rds-lab-wizard (Don't confuse with Security Group that EC2 uses. This is Security Group that RDS uses.)
         * this is used by RDS instance by default. (go check RDS -> instance -> Security)
         * click -> inbound -> edit
-          * add type: MySQL, port: 3306, source: myWebDMZ (type this it will give back a source)
+          * add type: MySQL, port: 3306, source: myWebDMZ (type this it will give back a source
+    * What will happen (TEST)
+      * {ipaddressofEC2}/connect.php --HTTP-'myWebDMZ'--> [EC2] --'rds-lab-wizard'--> [RDS]
 * BackUps
   * Automatic Backup
   * Manual DB Snapshot
