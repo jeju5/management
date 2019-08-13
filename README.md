@@ -4,7 +4,7 @@
 * Start Boxing at Uppercut (SEP)
 * 황혼의 사무라이 (The Twilight Samurai)
 * TwinCityMarathon - UnderFive (OCT)
-* 60년 할매국밥, 가야밀면, 해운대 대구탕
+* 60년 할매국밥, 가야밀면, 해운대 기와집 대구탕
 
 # Plan
 * AUG11: touch 65.5kg, Udemy AWS Course 100%
