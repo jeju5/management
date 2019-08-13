@@ -301,9 +301,9 @@
 * Encryption
   * Done via AWS Key management (KMS)
   * If encrpyted, anything related to it (data, read replica, backup and snapshots) is encrypted.
-* Multi-AZ
+* Multi-AZ (AZ = Availability Zone)
   * scenario: RDS instance you created in AWS is in US-east-1A. You keep the identical DB in US-east-1B
-  * Multi-AZ is for distarous recovery.
+  * Multi-AZ is for distarous recovery. (AZ Failure)
   * If you want performance enhancement -> go for 'Read Replicas'
 * Read Replicas
   * scenario: RDS instance you created in AWS has replications in the same US-east-1A. (or in different regions is possible).
@@ -320,6 +320,7 @@
   * ElastiCache for Memcached: pure caching, simple, scalability
   * ElastiCache for Redis: advanced data type (list, set, hash...), sorting & ranking, data persistency
     * data persistency: how likely is the data will remain safe? higher data persitency means safer the data is.
+  * IN-MEMORY CACHING: Memcached --Complexity--> Redis
 
 # SECTION4: S3
 * S3 101
