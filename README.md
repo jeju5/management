@@ -1,8 +1,9 @@
 # Task
 * React & Redux
 * Node & React
-* Start Boxing at Uppercut
+* Start Boxing at Uppercut (SEP)
 * 황혼의 사무라이 (The Twilight Samurai)
+* TwinCityMarathon - UnderFive (OCT)
 
 # Plan
 * AUG11: touch 65.5kg, Udemy AWS Course 100%
@@ -78,7 +79,7 @@
   PULL          : 5x8
   DIP           : 5x5
   PUSH/CHIN/SIT : 80
-  RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 08 15 15 / 08 18 18 08 20 20 08 23 23 08 26 08
+  RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 08 15 15 / 08 18 18 08 20 20 08 23 23 08 | *26* 08
   
   WEIGHT: keep 65kg
   ```
