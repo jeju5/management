@@ -7,11 +7,11 @@
 # Plan
 * AUG11: touch 65.5kg, Udemy AWS Course 100%
   ```
-  MON: [O]68.0 [O]15mi 
-  TUE: 67.0  Section1,2,3 Review, Section4,5
-  WED: 66.5  3mi Section6,7,8
+  MON: [o]68.0 [o]15mi [o]Section1Re [o]Section2Re
+  TUE: 67.0  [o]Section3Re Section4 Section5
+  WED: 66.5  3mi Section6 Section7 Section8
   THU: 66.0  6mi Section9
-  FRI: 65.5  3mi Section10,11,12  bible study
+  FRI: 65.5  3mi Section10 Section11 Section12 BibleStudy
   SAT: fish dinner
   SUN:      dinner
   ```
