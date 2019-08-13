@@ -335,8 +335,8 @@
   * s3 bucket name should be named universially unique. (globally unique)
   * HTTP 200 Code if upload was successful
   * Data Consistency Model
-    * Create        -> Read after Write Consisteny -> New file is immediately accessible.
-    * Update/Delete -> Eventual Consistency        ->:Delete or overwriting is not immediatley applied. (takes time to propagate)
+    * Create -> Read after Write Consisteny -> New file is immediately accessible.
+    * Update/Delete -> Eventual Consistency -> Delete or overwriting is not immediatley applied. (takes time to propagate)
   * Object consists of
     * Key: File name
     * Value: File data (key/value model)
