@@ -7,17 +7,17 @@
 * 60년 할매국밥, 가야밀면, 해운대 기와집 대구탕
 
 # Plan
-* AUG11: touch 66kg, Udemy AWS Course 90%
+* AUG11: touch 66kg, Udemy AWS Course 50% (-section4)
   ```
   MON: [o]68.0 [o]15mi [o]Section1Re [o]Section2Re
   TUE: [x]67.0 [o]Section3Re 
-  WED: [o]67.0 [o]3mi Section4
-  THU: 66.5  6mi
-  FRI: 66.0  3mi BibleStudy
-  SAT: fish dinner 
+  WED: [o]67.0 [o]3mi [x]Section4
+  THU: 66.5  6mi BananaRepublic
+  FRI: 66.0  3mi BibleStudy ChaseFax
+  SAT: fish dinner Section4
   SUN:      dinner 
   ```
-* AUG18: Udemy AWS Course 100% (Section9 Section10 Section11 Section12)
+* AUG18: Udemy AWS Course 100% (Section5 6 7 8 9 10 11 12)
   ```
   MON: 
   TUE: 
