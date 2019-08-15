@@ -415,11 +415,22 @@
       * You encryption data on your own (application level)
   * When object is uploaded to S3, PUT method is initiated.
   * If you want to enforce encryption, deny all PUT without x-amz-server-side-encryption expectation.
-* S3 Encryption Lab
-  * you can enable sse in console during creating a s3 bucket
+* S3 Encryption Lab (Server Side Encryption)
+  * you can enable SSE in console during creating a s3 bucket but lets enable SSE after creating a bucket.
   * create a bucket and click that bucket
   * click permissions tab -> bucket policy
   * click policy generator
-  * click PUT Object as Actions you want to enforce encryption
-  * click options and add Key: x-amz-server-side-encryption & Value KMS
+    * type of policy: select S3 bucket policy
+    * principal: * (all)
+    * effect: you can either allow or deny an access using this policy
+    * action: Put object
+    * ARN: arn is arn with s3 name ex) arn:aws:s3:::encryptionlab1289841239 when bucket name is encryptionlab1289841239
+    * click add condition -> Condition: StringNotEquals & Key: amz-serverside-encryption & Value: aws:kms
+    * generate it
+  * copy policy and add to S3 bucket policy section
+  * then you will see an error: Action does not apply to any resource(s) in statement
+  * just add /* after ARN that you added (often aws doesn't allow one resource as a target, so put /*)
+  * try uploading a file to this S3 (in set properties, select none as encryption) -> fail
+  * try uploading a file to this S3 (this time, select AWS-KMS: aws/s3) -> success
+  
       
