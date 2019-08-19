@@ -13,7 +13,7 @@
   THU: AWS Section10, AWS Section11, AWS Section12
   FRI: Bible Study
   SAT: Run 8mi
-  SUN: 
+  SUN: ChurchPicnic
   ```
 * AUG25: Start Boxing at Uppercut (SEP)
   ```
