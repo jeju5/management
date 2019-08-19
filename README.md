@@ -1,33 +1,21 @@
 # Task
 * React & Redux
 * Node & React
-* Start Boxing at Uppercut (SEP)
 * 황혼의 사무라이 (The Twilight Samurai)
 * TwinCityMarathon - UnderFive (OCT)
-* 60년 할매국밥, 가야밀면, 해운대 기와집 대구탕
 
 # Plan
-* AUG11: touch 66kg, Udemy AWS Course 50% (-section4)
+* AUG18: touch 66kg, Udemy AWS Course 100% (Section 4 5 6 7 8 9 10 11 12)
   ```
-  MON: [o]68.0 [o]15mi [o]Section1Re [o]Section2Re
-  TUE: [x]67.0 [o]Section3Re 
-  WED: [o]67.0 [o]3mi [x]Section4
-  THU: 66.5  6mi BananaRepublic
-  FRI: 66.0  3mi BibleStudy ChaseFax
-  SAT: fish dinner Section4
-  SUN:      dinner 
+  MON: AWS Section4, AWS Section5
+  TUE: AWS Section6, AWS Section7, AWS Section8
+  WED: AWS Section9
+  THU: AWS Section10, AWS Section11, AWS Section12
+  FRI: Bible Study
+  SAT: Run 8mi
+  SUN: 
   ```
-* AUG18: Udemy AWS Course 100% (Section5 6 7 8 9 10 11 12)
-  ```
-  MON: 
-  TUE: 
-  WED: 
-  THU: 
-  FRI: 
-  SAT:
-  SUN:
-  ```
-* AUG25: 
+* AUG25: Start Boxing at Uppercut (SEP)
   ```
   MON: 
   TUE: 
