@@ -7,12 +7,12 @@
 # Plan
 * AUG18: touch 66kg, Udemy AWS Course 100% (Section 4 5 6 7 8 9 10 11 12)
   ```
-  MON: AWS Section4
-  TUE: AWS Section5, AWS Section6
-  WED: AWS Section7, AWS Section8
-  THU: AWS Section9
+  MON: 
+  TUE: AWS Section4, AWS Section5
+  WED: AWS Section6, AWS Section7
+  THU: 
   FRI: Bible Study 5pm
-  SAT: Run 8mi, AWS Section10, AWS Section11, AWS Section12
+  SAT: Run 8mi, AWS Section8, AWS Section9, AWS Section10, AWS Section11, AWS Section12
   SUN: 
   ```
 * AUG25: Start Boxing at Uppercut (SEP)
