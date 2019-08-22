@@ -458,4 +458,15 @@
     * go to CORS configuration
     * add url of bucketA to AllowedOrigin
   * by default bucket has no access to different bucket -> you can configure with CORS policy
-      
+* CDN (content delivery network)
+  * web service that speeds up web content delivery based on geographic location of a user.
+  * edge location handles web requests from nearby locations instead of directly hitting origin
+    * edge location (!= AWS Region) (!= AZ)
+      * geographically dispersed data center that caches web contents
+      * you can also write contents you want inside edge location
+    * origin
+      * origin of all files that CDN will distribute
+  * AWS Cloudfront is Amazaon Web Service CDN. It is optimized to work with other AWS services.
+    * RTMP: media streaming CDN
+    * Web Distribution: web site CDN (HTTP/HTTPS)
+
