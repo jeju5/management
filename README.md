@@ -9,7 +9,7 @@
   ```
   MON: 
   TUE: 
-  WED: [o]68.0kg, AWS Section4, [o]Run 8mi
+  WED: [o]68.0kg, [x]AWS Section4, [o]Run 8mi
   THU: 67.5kg, AWS Section5, AWS Section6(50%)
   FRI: 67.0kg, AWS Section6(100%), Bible Study 5pm
   SAT: 66.5kg, Run 8mi, AWS Section7, AWS Section8, AWS Section9
