@@ -432,5 +432,30 @@
   * just add /* after ARN that you added (often aws doesn't allow one resource as a target, so put /*)
   * try uploading a file to this S3 (in set properties, select none as encryption) -> fail
   * try uploading a file to this S3 (this time, select AWS-KMS: aws/s3) -> success
-  
+* S3 CORS (Cross Origin Resource Sharing)
+  * create a public bucket (bucketA)
+  * click bucket -> static website hosting
+    * select use this bucket to host a website
+    * aws provides endpoint url in the top
+    * create index.html & error.html for index & error pages
+    * save
+  * click bucket -> overview -> upload
+    * upload index.html, error.html, loadpage.html (download from udemy)
+    * grant public access and upload
+  * try hitting the static hosting url from browser and see the content
+  * now create a new bucket (bucketB)-> static website hosting
+    * upload loadpage.html with public access
+  * go back to bucketA
+    * modify index.html and replace <script> in a way that it loads loadpage.html as its url
+      ```
+      <script>
+      $("#{div-id}").load(http://bucketA.s3-website.ca-central-1.amazonaws.com/loadpage.html)
+      </script>
+      ```
+    * if you try bucket static page index.html you will see 403error in chrome console (blocked by CORS policy)
+  * go back to bucketB
+    * go to permissions
+    * go to CORS configuration
+    * add url of bucketA to AllowedOrigin
+  * by default bucket has no access to different bucket -> you can configure with CORS policy
       
