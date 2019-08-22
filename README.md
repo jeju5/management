@@ -9,11 +9,11 @@
   ```
   MON: 
   TUE: 
-  WED: 68kg, AWS Section4, Run 9mi
-  THU: 67kg, AWS Section5, Run 9mi
-  FRI: 66kg, AWS Section6, Bible Study 5pm
-  SAT: Run 8mi, AWS Section7, AWS Section8, AWS Section9
-  SUN: AWS Section10, AWS Section11, AWS Section12
+  WED: [o]68kg, AWS Section4, [o]Run 8mi
+  THU: 67.5kg, AWS Section5, Run 9mi
+  FRI: 67kg, AWS Section6, Bible Study 5pm
+  SAT: 66.5kg, Run 8mi, AWS Section7, AWS Section8, AWS Section9
+  SUN: 66kg, AWS Section10, AWS Section11, AWS Section12
   ```
 * AUG25: Start Boxing at Uppercut (SEP)
   ```
