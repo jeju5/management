@@ -10,7 +10,7 @@
   MON: 
   TUE: 
   WED: [o]68.0kg, AWS Section4, [o]Run 8mi
-  THU: 67.5kg, AWS Section5, AWS Section6(50%), Run 9mi
+  THU: 67.5kg, AWS Section5, AWS Section6(50%)
   FRI: 67.0kg, AWS Section6(100%), Bible Study 5pm
   SAT: 66.5kg, Run 8mi, AWS Section7, AWS Section8, AWS Section9
   SUN: 66.0kg, AWS Section10, AWS Section11, AWS Section12
@@ -71,7 +71,7 @@
   PULL          : 5x8
   DIP           : 5x5
   PUSH/CHIN/SIT : 80
-  RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 08 15 15 / 08 18 18 08 20 20 08 23 23 08 | *26* 08
+  RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 08 15 15 08 / 18 18 08 20 20 08 23 23 08 | *26* 08
   
   WEIGHT: keep 66kg (touch 64kg)
   ```
