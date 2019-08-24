@@ -469,4 +469,46 @@
   * AWS Cloudfront is Amazaon Web Service CDN. It is optimized to work with other AWS services.
     * RTMP: media streaming CDN
     * Web Distribution: web site CDN (HTTP/HTTPS)
-
+  * S3 CloudFrond Lab
+    * Create a bucket
+      * crete a bucket in a region that is very far from your location
+      * upload images. (1.jpg, 2.jpg, 3.jpg)
+    * UI -> CloudFront -> Create Distribution
+      * you have two options. WEB vs RTMP
+      * select Web -> Get Started
+        * origin: select s3 bucket you created (origin is the actual data center where data remains)
+        * restrict bucket access: yes (all request to this bucket will go thru cloudfront)
+        * origin access identity: create a new identity (create a new user for cloudfront to access s3)
+        * grant access: Yes, Update Bucket Policy (by default new user will have no access. let aws handle this)
+        * configure -> Protocol(Http/Https), Requests
+        * restrict viewer access
+          * grant access to a user based on "signed url" or "signed cookies"
+          * lets say a user paid to view the content, then assign a url to a certain user (for example udemy)
+          * for this lab select no.
+    * CloudFront -> click the distribution you created
+      * Restriction tab -> you can configure regional restriction (ex. block access from China)
+    * go to bucket you created, which you created cloudfront for.
+      * delete public read access for an image 1.jpg
+      * you can't access this file vai URL
+    * now copy url of your cloudfront and replace it with s3 url, except file name part.
+      ex) https://labcf139.s3.eu-west-3.amazonaws.com/1.jpg -> 328r9328.cloudfront.net/1.jpg
+    * now your cloudfront will pull 1.jpg from s3 bucket. this works because access from cloudfront is not public. note that you created a origin access identitiy for this s3 bucket. the first time you pull this image is relatively slow. next time you try from a ingocnito browser tab. this request is quick.
+  * S3 optimization
+    * S3 optimization is based on workload you are running
+      * GET intensive workload: you use s3 for excessive GET requests.
+        * optimization: use cloudfront to speed it up.
+      * Mixed request type workload: you use s3 for various request types.
+        * s3 uses key name to determine the partition it will use to store this data.
+        * optimization: use random key prefix for each object. so that it is randomly distributed.
+        * if files in the same partition is frequently requested. this will cause IO issue.
+   * S3 performance update
+     * 3500 put/sec
+     * 5500 get/sec
+     * AWS updated its bucket performance. you don't need to randomize object key prefix to enhance s3 performance.
+   * S3 101 Summary
+     * s3 is object based
+     * unlimited storage but each file should be 0byte - 5TB
+     * files are stored in bucket
+     * universal naming
+     * put(create): read after write consistency -> immediate
+     * put(update) or delete: eventual consistency -> takes time
