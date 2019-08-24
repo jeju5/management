@@ -7,18 +7,18 @@
 # Plan
 * AUG18: touch 66kg
   ```
-  SAT: 67.0kg, Run 6mi, AWS4, AWS5
-  SUN: 66.0kg, AWS6, AWS7
+  SAT: 67.5kg, Run 6mi, AWS4, AWS5
+  SUN: 67.0kg, AWS6, AWS7
   ```
-* AUG25: Start Boxing at Uppercut (SEP)
+* AUG25: Start Boxing at Uppercut (SEP), 64.5kg
   ```
-  MON: AWS8
-  TUE: AWS9
-  WED: AWS10, AWS11, AWS12
-  THU: 
-  FRI: 
-  SAT:
-  SUN:
+  MON: 66.5kg, AWS8
+  TUE: 66.0kg, AWS9
+  WED: 65.5kg, AWS10, AWS11, AWS12
+  THU: 65.0kg
+  FRI: 64.5kg
+  SAT: 
+  SUN: 
   ```
 
 # TIME
@@ -68,7 +68,7 @@
   PUSH/CHIN/SIT : 80
   RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 08 15 15 08 / 18 18 08 20 20 08 23 23 08 | *26* 08
   
-  WEIGHT: keep 66kg (touch 64kg)
+  WEIGHT: keep 66kg (touch 64.5kg)
   ```
   
 # MONEY
