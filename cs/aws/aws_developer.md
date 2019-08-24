@@ -509,6 +509,7 @@
    * S3 101 Summary
      * s3 is object based
      * unlimited storage but each file should be 0byte - 5TB
+     * single operation can handle 5GB (PUT update -> 5GB is the limit)
      * files are stored in bucket
      * universal naming
      * put(create): read after write consistency -> immediate
