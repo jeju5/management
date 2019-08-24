@@ -501,6 +501,7 @@
         * s3 uses key name to determine the partition it will use to store this data.
         * optimization: use random key prefix for each object. so that it is randomly distributed.
         * if files in the same partition is frequently requested. this will cause IO issue.
+        * TTL (time to live): how long will you cache data in edge location
    * S3 performance update
      * 3500 put/sec
      * 5500 get/sec
@@ -512,3 +513,4 @@
      * universal naming
      * put(create): read after write consistency -> immediate
      * put(update) or delete: eventual consistency -> takes time
+     * don't use bucket url -> use s3 website url (url starts as https://s3-~~~~~)
