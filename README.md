@@ -5,21 +5,16 @@
 * TwinCityMarathon - UnderFive (OCT)
 
 # Plan
-* AUG18: touch 66kg, Udemy AWS Course 100% (Section 4 5 6 7 8 9 10 11 12)
+* AUG18: touch 66kg
   ```
-  MON: 
-  TUE: 
-  WED: [o]68.0kg, [x]AWS Section4, [o]Run 8mi
-  THU: 67.5kg, AWS Section4, AWS Section5
-  FRI: 67.0kg, AWS Section6(30%), Bible Study 5pm
-  SAT: 66.5kg, Run 8mi, AWS Section6, AWS Section7, AWS Section8, AWS Section9
-  SUN: 66.0kg, AWS Section10, AWS Section11, AWS Section12
+  SAT: 67.0kg, Run 6mi, AWS4, AWS5
+  SUN: 66.0kg, AWS6, AWS7
   ```
 * AUG25: Start Boxing at Uppercut (SEP)
   ```
-  MON: 
-  TUE: 
-  WED: 
+  MON: AWS8
+  TUE: AWS9
+  WED: AWS10, AWS11, AWS12
   THU: 
   FRI: 
   SAT:
