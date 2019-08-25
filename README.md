@@ -7,8 +7,7 @@
 # Plan
 * AUG18: touch 66kg
   ```
-  SAT: 67.5kg, Run 6mi, AWS4, AWS5
-  SUN: 67.0kg, AWS6, AWS7
+  SUN: 67.0kg, AWS5, AWS6, AWS7
   ```
 * AUG25: Start Boxing at Uppercut (SEP), 64.5kg
   ```
