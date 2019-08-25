@@ -624,3 +624,21 @@
     * select the version of lambda you want as its alias
     * you can split traffic to different versions by if you select 'additional version' and 'weight'
       * you can't target $Latest version and split traffic at the same time. this feature is supported only for non-latest versions.
+  * Alexa Lab
+    * create a S3 bucket
+    * make a bucket public
+    * paste following policy for this bucket
+      ```
+      {
+          "Version": "2012-10-17",
+          "Statement": [
+              {
+                  "Sid": "PublicReadGetObject",
+                  "Effect": "Allow",
+                  "Principal": "*",
+                  "Action": "s3:GetObject",
+                  "Resource": "{bucket resource arn}/*"   <--- copy the arn of bucket policy
+              }
+          ]
+      }
+      ``` 
