@@ -536,7 +536,16 @@
     ```
     CORS by example:
 
-    A web browser loads a page from www.example.com. The page includes a script that makes a request to www.example.org. The origin of the request is www.example.com. The browser either makes the request or sends an OPTIONS request first (the preflight request). When the server at www.example.org receives a request from an origin other than www.example.org it responds with a response header Access-Control-Allow-Origin which tells the browser the origins allowed to make requests. It may also respond with other headers like Access-Control-Allow-Methods and Access-Control-Allow-Headers that can restrict the types of allowed requests. When the browser is told what origins are allowed it will block future requests from disallowed origins.
+    A web browser loads a page from www.example.com.
+    The page includes a script that makes a request to www.example.org.
+    The origin of the request is www.example.com.
+    The browser either makes the request or sends an OPTIONS request first (the preflight request).
+    When the server at www.example.org receives a request from an origin other than www.example.org
+    it responds with a response header Access-Control-Allow-Origin which tells the browser the origins
+    allowed to make requests.
+    It may also respond with other headers like Access-Control-Allow-Methods and Access-Control-Allow-Headers that can 
+    restrict the types of allowed requests.
+    When the browser is told what origins are allowed it will block future requests from disallowed origins.
     ```
   * you can log results to CloudWatch
   
