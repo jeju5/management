@@ -547,5 +547,80 @@
     restrict the types of allowed requests.
     When the browser is told what origins are allowed it will block future requests from disallowed origins.
     ```
-  * you can log results to CloudWatch
-  
+  * you can log results to Cloud Watch
+  * you can track usage by api key
+  * you can maintain multiple versions
+* Build a serverless website
+  * S3
+    * create an S3
+    * enable static website hosting of this bucket and set index.html
+  * Route53
+    * register a domain
+  * Lambda
+    * create a Lambda
+    * select python
+    * select author from scratch
+    * role: myLambdaRole
+    * policy: simple microservice template
+    * paste following for function code
+      ```
+      function that returns a response with Ryan Kroonenburg body and 200 status.
+      
+      def lambda_handler(event, context):
+          print("In lambda handler")
+
+          resp = {
+              "statusCode": 200,
+              "headers": {
+                  "Access-Control-Allow-Origin": "*",
+              },
+              "body": "Ryan Kroonenburg"
+          }
+
+          return resp
+      ```
+    * add trigger: select API Gateway
+    * select create new API
+    * click API Gateway you created
+      * by default there is 'ANY' method, delete this method
+      * create a 'GET' method
+      * select integration type: Lambda
+      * allow proxy integration
+      * upon click Save, you get an ARN
+    * select action -> deploy API
+    * goto API Gateway
+      * select 'GET' method trigger you created
+      * copy 'invoke url' and load it on the browser.
+      * on terminal try the following and verify mytext.txt
+        ```
+        curl "{invokeURL}" > mytext.txt        
+        ```
+    * goto S3
+      * open and edit static index.html and add GET call to the new API Gateway endpoint you created
+        ```
+        xhttp.open({invokeURL}, true)
+        ```
+      * make S3 bucket public
+    * Route53
+      * open hosted zone -> open domain you registered
+      * create Record Set
+      * select 'Alias Target: S3 bucket you create'
+      * verify that you are redirected to a page built with API Gateway & Lambda & S3 when hitting a domain url you created.
+* Lambda Version Control
+  * each version of lambda function will have a unique ARN
+  * $LATEST is the latest version value of lambda function
+  * ARN
+    * qualified ARN: arn with version suffix
+    * unqualified ARN: arn without version suffix
+  * you can create an alias for each version of lambda function
+  * LAB
+    * goto Lambda
+    * create a functinon 'someFunc'
+    * select the function and click qualifiers.
+    * select $LATEST as its version
+    * click version: click publish new version and add 'v1' as its description
+    * modify code and do same with 'v2' and 'v3'
+    * select Actions -> create alias
+    * select the version of lambda you want as its alias
+    * you can split traffic to different versions by if you select 'additional version' and 'weight'
+      * you can't target $Latest version and split traffic at the same time. this feature is supported only for non-latest versions.
