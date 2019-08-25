@@ -515,3 +515,22 @@
      * put(create): read after write consistency -> immediate
      * put(update) or delete: eventual consistency -> takes time
      * don't use bucket url -> use s3 website url (url starts as https://s3-~~~~~)
+
+
+# SECTION5: Serverless Computing
+* AWS Lambda
+  * Lambda is abstract layer of 'Data Center + Hardware + Assembly Code + High Level Languages + OS + Application Layer)
+  * Language Support: Node.js Java Python C# Go
+  * first 1million requests are free. 20cents per 1million requests after.
+  * lambda scales out automatically (not scale up)
+  * AWS X-ray debugs AWS Lambda
+  * Lambda can work globally
+* API Gateway
+  * API = application programming interface = set of features that utilize an application.
+  * REST API uses JSON
+  * SOAP API uses XML
+  * AWS API Gateway is a fully managed API service
+  * API caching: you can cache endpoint response for redundant requests for TTL.
+  * same origin policy <--> CORS
+  * CORS
+  * you can log results to CloudWatch
