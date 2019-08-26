@@ -6,7 +6,7 @@
 * H1B interview scheduling
 
 # Plan
-* AUG25: Start Boxing at Uppercut (SEP), touch64.5kg, AWS
+* AUG25: Start Boxing at Uppercut (SEP), touch64.5kg, AWS, Kohls
   ```
   MON: RUN18, 67.5kg, AWS5
   TUE: RUN3,  67.0kg, AWS6, AWS7, AWS8
