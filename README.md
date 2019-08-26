@@ -45,7 +45,7 @@
   ----------------------
   금식 & 취침
   
-  * NO COFFEE. NO SODA. NO CHEESE. NO ICECREAM
+  * NO SODA. NO CAFFEINE. NO DAIRY.
   ```
 
 # MOVE
