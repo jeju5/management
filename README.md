@@ -5,19 +5,15 @@
 * TwinCityMarathon - UnderFive (OCT)
 
 # Plan
-* AUG18: touch 66kg
+* AUG25: Start Boxing at Uppercut (SEP), 64.5kg, AWS
   ```
-  SUN: 67.0kg, AWS5, AWS6, AWS7
-  ```
-* AUG25: Start Boxing at Uppercut (SEP), 64.5kg
-  ```
-  MON: 66.5kg, AWS8
-  TUE: 66.0kg, AWS9
-  WED: 65.5kg, AWS10, AWS11, AWS12
-  THU: 65.0kg
-  FRI: 64.5kg
-  SAT: 
-  SUN: 
+  MON: RUN18, 67.5kg, AWS5
+  TUE: 67.0kg, AWS6, AWS7, AWS8
+  WED: RUN6,  66.5kg, AWS9
+  THU: RUN6,  66.0kg, AWS10, AWS11, AWS12
+  FRI: RUN6,  65.5kg
+  SAT: RUN6,  65.0kg
+  SUN: 64.5kg
   ```
 
 # TIME
