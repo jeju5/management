@@ -6,15 +6,15 @@
 * H1B interview scheduling
 
 # Plan
-* AUG25: Start Boxing at Uppercut (SEP), touch64.5kg, AWS, Kohls
+* AUG25: Start Boxing at Uppercut (SEP), touch65.5kg, AWS, Kohls
   ```
   MON: RUN18, 67.5kg, AWS5
   TUE: RUN3,  67.0kg, AWS6, AWS7, AWS8
   WED: RUN6,  66.5kg, AWS9
   THU: RUN6,  66.0kg, AWS10, AWS11, AWS12
   FRI: RUN6,  65.5kg
-  SAT: RUN6,  65.0kg
-  SUN: 64.5kg
+  SAT: RUN6
+  SUN: 
   ```
 
 # TIME
@@ -64,7 +64,7 @@
   PUSH/CHIN/SIT : 80
   RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 08 15 15 08 / 18 18 08 20 20 08 23 23 08 | *26* 08
   
-  WEIGHT: keep 66kg (touch 64.5kg)
+  WEIGHT: keep 67kg (touch 65.5kg)
   ```
   
 # MONEY
