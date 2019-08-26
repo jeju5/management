@@ -3,9 +3,10 @@
 * Node & React
 * 황혼의 사무라이 (The Twilight Samurai)
 * TwinCityMarathon - UnderFive (OCT)
+* H1B interview scheduling
 
 # Plan
-* AUG25: Start Boxing at Uppercut (SEP), 64.5kg, AWS
+* AUG25: Start Boxing at Uppercut (SEP), touch64.5kg, AWS
   ```
   MON: RUN18, 67.5kg, AWS5
   TUE: 67.0kg, AWS6, AWS7, AWS8
