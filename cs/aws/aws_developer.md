@@ -691,5 +691,21 @@
     * HTTP client to call internal/external HTTP web services
   * LAB
     * AWS UI -> BeanStalk
-    * ApplicationName: scoreKeep, Code: Java
+      * ApplicationName: scoreKeep, Code: Java
+      * use sampleApplication
+      * after created
+    * go to IAM -> Role
+      * select AWS ElasticBeanStalk EC2 Role
+      * attach policy
+        * X-Ray Full Access, S3 Full Access, DynamoDB Full Access
+    * BeanStalk
+      * click 'Click to generate more data' to crete sample data traffic a few times
+      * in X-Ray you will be able to see data trace
+    * BeanStalk
+      * goto its dashboard, under RunningVersion upload source code of scoreKeep as zip file (from Udemy) and click deploy.
+      * this makes your BeanStalk to tic tac toe game app. play with it.
+    * AWS UI -> X-Ray console
+      * see that scoreKeep app data are traced
+      * click service node you are interested in and you can trace details.
+    * Xray integrates with ElasticLoadBalancing, S3, Lambda, EC2, ElasticBeanStalk
 #
