@@ -2,11 +2,13 @@
 * UDEMY
 * Ryan Kroonenburg & Faye Ellis
 
+
 # Intro
 * Exam Structure
   * https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS_Certified_Developer_Associate_Updated_June_2018_Exam_Guide_v1.3.pdf
   * 130 minutes & 65 questions
   * $150
+
 
 # SECTION2: IAM
 * IAM
@@ -35,6 +37,7 @@
     * delegate policy(es) to a group or directly assign to a user
   * Role
     * set of permissions assigned to an entity(ex. EC2)
+
 
 # SECTION3: EC2
 * EC2 101
@@ -321,6 +324,7 @@
   * ElastiCache for Redis: advanced data type (list, set, hash...), sorting & ranking, data persistency
     * data persistency: how likely is the data will remain safe? higher data persitency means safer the data is.
   * IN-MEMORY CACHING: Memcached --Complexity--> Redis
+
 
 # SECTION4: S3
 * S3 101
@@ -662,19 +666,30 @@
       * choose a template 'fact skill'
       * in dashboard paste lambda function arn into default region section
       * click save endpoint. this will host Alexa to this lambda endpoint.
-  * Step Function
-    * allows visualization of workflow
-    * Amazon States Language is the language that builds this step function (it is JSON-based)
-    * it logs state of each step
-    * LAB
-      * goto AWS UI -> Step Function
-      * click get Started
-      * click sample project (this visualizes sample Batch jobs that AWS provides as an example)
-      * click job status poller
-      * click create Resources
-      * enter an execution name and click start execution
-      * goto AWS UI -> Batch
-      * click Jobs and see batch job is generated
-      * goto AWS UI -> Step Function and see how this job is being executed.
-      * goto AWS Lambda and see lambda functions that this job created
-    
+* Step Function
+  * allows visualization of workflow
+  * Amazon States Language is the language that builds this step function (it is JSON-based)
+  * it logs state of each step
+  * LAB
+    * goto AWS UI -> Step Function
+    * click get Started
+    * click sample project (this visualizes sample Batch jobs that AWS provides as an example)
+    * click job status poller
+    * click create Resources
+    * enter an execution name and click start execution
+    * goto AWS UI -> Batch
+    * click Jobs and see batch job is generated
+    * goto AWS UI -> Step Function and see how this job is being executed.
+    * goto AWS Lambda and see lambda functions that this job created
+* X-Ray
+  * X-ray collects data on requests that application serves and allow users to view them.
+  * Architecture
+    * X-Ray SDK -> X-Ray Daemon -> X-Ray API -> X-Ray Console
+  * X-ray SDK provides
+    * interceptors to trace HTTP requests
+    * client handlers to instrument AWS SDK clients
+    * HTTP client to call internal/external HTTP web services
+  * LAB
+    * AWS UI -> BeanStalk
+    * ApplicationName: scoreKeep, Code: Java
+#
