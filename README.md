@@ -1,10 +1,11 @@
 # Task
-* React & Redux
-* Node & React
+* UDEMY: Modern React with Redux
+* UDEMY: Node with React
+* UDEMY: GraphQL with React
 * 황혼의 사무라이 (The Twilight Samurai)
 * TwinCityMarathon - UnderFive (OCT)
 * H1B interview scheduling
-* Udemy AWS https://www.udemy.com/aws-certified-developer-associate-practice-tests-dva-c01/
+* Udemy AWS Practice Exams https://www.udemy.com/aws-certified-developer-associate-practice-tests-dva-c01/
 
 # Plan
 * AUG25: Start Boxing at Uppercut (SEP), touch65.5kg, AWS, Kohls
