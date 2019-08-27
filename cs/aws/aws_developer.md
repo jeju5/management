@@ -531,8 +531,8 @@
   * Lambda can work globally
 * API Gateway
   * API = application programming interface = set of features that utilize an application.
-  * REST API uses JSON
-  * SOAP API uses XML
+    * REST API uses JSON
+    * SOAP API uses XML (you can configure SOAP API pass through)
   * AWS API Gateway is a fully managed API service
   * API caching: you can cache endpoint response for redundant requests for TTL.
   * same origin policy <--> CORS
@@ -540,6 +540,10 @@
     ```
     CORS by example:
 
+    [browser] -> [www.example.com] -> [www.example.org]
+                  Origin1              Origin2
+                                       Access-Control-Allow-Origin
+                                       
     A web browser loads a page from www.example.com.
     The page includes a script that makes a request to www.example.org.
     The origin of the request is www.example.com.
@@ -554,6 +558,12 @@
   * you can log results to Cloud Watch
   * you can track usage by api key
   * you can maintain multiple versions
+  * API Gateway supports Swagger Import, which creates an API based on the documentation
+  * you can update existing api endpoint with overwrite/merge.
+  * AWS API Gateway capacity
+    * 10,000 requests per second
+    *  5,000 requests concurrent across all APIs with in a single account
+    * if you reach the capacity you will get 429 Too Many Reqeusts response
 * Build a serverless website
   * S3
     * create an S3
@@ -708,4 +718,8 @@
       * see that scoreKeep app data are traced
       * click service node you are interested in and you can trace details.
     * Xray integrates with ElasticLoadBalancing, S3, Lambda, EC2, ElasticBeanStalk
+* Exam Tips
+  * Lambda Scales out, not scales up (this means you have flexibility on number of concurrent lambda services running at the same time)
+  * Lambda can work globally (ex. backup S3 bucket A to S3 bucket B)
+
 #
