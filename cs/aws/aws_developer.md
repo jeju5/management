@@ -722,4 +722,9 @@
   * Lambda Scales out, not scales up (this means you have flexibility on number of concurrent lambda services running at the same time)
   * Lambda can work globally (ex. backup S3 bucket A to S3 bucket B)
 
-#
+# SECTION6. DYNAMO DB
+* DYNAMO DB is AWS NO SQL DB.
+* Item: similar to row in table
+  * each item is made of key/value pairs
+* Attribute: similar to column in table
+  * partition key
