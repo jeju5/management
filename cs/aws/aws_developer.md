@@ -626,8 +626,8 @@
       * you can't target $Latest version and split traffic at the same time. this feature is supported only for non-latest versions.
   * Alexa Lab
     * create a S3 bucket
-    * make a bucket public
-    * paste following policy for this bucket
+    * copy ARN of the bucket. (ARN = Amazon Resource Name)
+    * make a bucket public by pasting the policy for this bucket. this policy allows public read/get
       ```
       {
           "Version": "2012-10-17",
@@ -642,3 +642,39 @@
           ]
       }
       ``` 
+    * goto Amazon Polly
+      * type in some text into Text-to-speech section
+      * click synthesize to S3
+      * select S3 output bucket and enter your bucket name
+      * click synthesize
+      * goto AWS Polly -> S3 synthesis task. you will see synthesis task you created
+      * goto S3 bucket and verify that mp3 file is there.
+      * goto AWS Lambda
+      * click create Function
+      * select aws serverless application repository (this is like public repo for aws lambda)
+      * select alexa-skills-kit-nodejs-factskill application
+      * click deploy
+      * in Lambda dashboard you will see function that is deployed. click it.
+      * copy arn of this lambda function
+      * goto developer.amazon.com and hit amazon alexa
+      * click create alexa skill
+      * click custom and click create skill
+      * choose a template 'fact skill'
+      * in dashboard paste lambda function arn into default region section
+      * click save endpoint. this will host Alexa to this lambda endpoint.
+  * Step Function
+    * allows visualization of workflow
+    * Amazon States Language is the language that builds this step function (it is JSON-based)
+    * it logs state of each step
+    * LAB
+      * goto AWS UI -> Step Function
+      * click get Started
+      * click sample project (this visualizes sample Batch jobs that AWS provides as an example)
+      * click job status poller
+      * click create Resources
+      * enter an execution name and click start execution
+      * goto AWS UI -> Batch
+      * click Jobs and see batch job is generated
+      * goto AWS UI -> Step Function and see how this job is being executed.
+      * goto AWS Lambda and see lambda functions that this job created
+    
