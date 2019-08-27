@@ -724,7 +724,14 @@
 
 # SECTION6. DYNAMO DB
 * DYNAMO DB is AWS NO SQL DB.
+* supports document and key/value pairs
+  * supported document: JSON, HTML and XML
 * Item: similar to row in table
   * each item is made of key/value pairs
 * Attribute: similar to column in table
-  * partition key
+* DynamoDB stores/retrieves data based on a primary key
+  * partition key: unique attribute -> each item has its unique partition key
+  * composite key: combination of partition key and sort key -> each item has its unique "partition key with sort key".
+* DynamoDB access control
+  * authentication and access control is managed by AWS IAM
+  * ex) you can add a condition to IAM policy that DynamoDB uses to control access to certain data. (dynamodb:LeadingKeys)
