@@ -10,7 +10,7 @@
 * AUG25: Start Boxing at Uppercut (SEP), touch65.5kg, AWS, Kohls
   ```
   MON: [o]RUN9, [o]67.5kg, [x]AWS5
-  TUE: 67.0kg, AWS5, AWS6, AWS7, AWS8
+  TUE: 67.0kg, [o]AWS5, AWS6, AWS7, AWS8
   WED: RUN6,  66.5kg, AWS9
   THU: RUN6,  66.0kg, AWS10, AWS11, AWS12
   FRI: RUN6,  65.5kg
