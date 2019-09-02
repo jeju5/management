@@ -777,4 +777,12 @@
       #Command to query Dynamodb from EC2 command line
       aws dynamodb get-item --table-name ProductCatalog --region eu-west-2  --key '{"Id":{"N":"205"}}'
       ```
+  * Index
+    * DynamoDB Index is a data structure that helps you perform fast queries. There are two types of DynamoDB Index,.
+    * Local Secondary Index
+      * index you can only create when you are creating a table. it can't be modified/added/removed.
+      * has same partition key(unique key) as table, but different sort key.
+    * Global Secondary Index
+      * index you can create when you create table or add later on
+      * different partition key and sort key as table
     
