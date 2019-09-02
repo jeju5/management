@@ -8,8 +8,9 @@
 * Udemy AWS Practice Exams https://www.udemy.com/aws-certified-developer-associate-practice-tests-dva-c01/
 
 # Plan
-* AUG25: Start Boxing at Uppercut (SEP), touch65.5kg, AWS, Kohls
+* SEP01: AWS 100%, touch63.0kg
   ```
+  MON: RUN6, AWS6, AWS7, AWS8, AWS9, AWS10, AWS11, AWS12
   THU: RUN6, 66.0kg, AWS6, AWS7, AWS8
   FRI: RUN6, 65.5kg, AWS9
   SAT: RUN6, AWS10, AWS11, AWS12
