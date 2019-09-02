@@ -736,6 +736,22 @@
   * DynamoDB access control
     * authentication and access control is managed by AWS IAM
     * ex) you can add a condition to IAM policy that DynamoDB uses to control access to certain data. (dynamodb:LeadingKeys)
+      ```
+      "Condition": {
+        "ForAllValues:StringEquals": {
+            "dynamodb:LeadingKeys": [
+                "${www.amazon.com:user_id}"
+            ],
+            "dynamodb:Attributes": [
+                "UserId",
+                "GameTitle",
+                "Wins",
+                "Losses",
+                "TopScore",
+                "TopScoreDateTime"
+            ]
+      },
+      ```
 * Create DynamoDB Table lab
   * Create a Role
     * IAM -> Create Role
