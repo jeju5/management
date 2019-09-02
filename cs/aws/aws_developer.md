@@ -897,3 +897,6 @@
   * exponential back off
     * AWS uses exponentialBackOff. This means when request fails AWS retries with progressively longer waits.
     * ExponentialBackOff is not limited to dynamoDB. It is a common feature of AWS SDK.
+  * BatchGetItem vs GetItem
+    * GetItem returns a single item
+    * BatchGetItem returns a set of items
