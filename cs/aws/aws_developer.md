@@ -892,6 +892,7 @@
     * logs are stored encrypted and for 24hrs.
     * only accessible thru dedicated dynamodb api endpoint.
     * can be used as a datasource for Lambda function
+    * capture a time-ordered sequence of all the activity which occurs on your DynamoDB table – e.g. insert, update, delete.
   * provisionedthroughputexceededexception
     * exception that dynamodb table throws when requests exceed your provision configuration.
     * if you use AWS SDK, it will automatically retry when exception is thrown.
@@ -901,3 +902,5 @@
   * BatchGetItem vs GetItem
     * GetItem returns a single item
     * BatchGetItem returns a set of items
+
+# SECTION7. DYNAMO DB
