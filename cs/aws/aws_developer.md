@@ -835,6 +835,7 @@
     * provisioned or on-demand?
       * unpredictable, unknown -> on-demand. otherwise, provisioned.
   * DAX (DynamoDB Accelerator)
+    * DAX in-memory write-through cache optimized for DynamoDB. (Elisticache is not optimized for DynamoDB)
     * clusted & in-memory cache for dynamodb
     * delivers upto 10X read performance
     * write thru caching service: data is written in cache & back-end datastore.
