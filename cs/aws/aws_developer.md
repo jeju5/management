@@ -919,5 +919,16 @@
     * define key administative permission: KMS manager (who administer this, but not uses)
     * define key usage permission: KMS encrypter (who uses this: encrypt/decrpy data)
 * CMK (customer master key)
-  * you can set up: Alias, Descryption, Key Material(KMS default/External, Tags, Administrative Permission, Usage Permission, Policy
+  * you can set up: Alias, Descryption, Created Date, Key Material(KMS default/External, Tags, Administrative Permission, Usage Permission, Policy
   * can never export CMK out of KMS
+  * API calls
+    * aws kms encrypt     take your plain text -> create it into ecrypted file (decrypted -> encrypted)
+    * aws kms decrypt     take your encrypted text -> create it into plain text (encrypted -> decrypted)
+    * aws kms re-encrypt  take your encrypted data -> decrypt it -> create it into encrypted file (encrypted -> encrypted)
+    * aws kms enable-key-rotation   take a key and rotate it every year
+  * Envelope encryption
+    ```
+    Customer Master Key -> Envelope Key (data key) -> Data
+    ```
+    * CMK decrypts the data key
+    * Envelop key decrypts the data
