@@ -903,4 +903,21 @@
     * GetItem returns a single item
     * BatchGetItem returns a set of items
 
-# SECTION7. DYNAMO DB
+# SECTION7. KMS (Key Management Service)
+* KMS is a AWS key management service
+* Lab
+  * create a group
+    * IAM -> group
+    * group administrator access policy
+  * create two users (name: KMS encrypter, KMS manager)
+    * enable programmatic access(ssh) & console access
+    * add a user to the group you created
+  * create key
+    * IAM -> Encryption Keys
+      * note that IAM is global service but their encryption key is regional. (you can't use encryption key in us-east for eu-london)
+    * select a region and create Key
+    * define key administative permission: KMS manager (who administer this, but not uses)
+    * define key usage permission: KMS encrypter (who uses this: encrypt/decrpy data)
+* CMK (customer master key)
+  * you can set up: Alias, Descryption, Key Material(KMS default/External, Tags, Administrative Permission, Usage Permission, Policy
+  * can never export CMK out of KMS
