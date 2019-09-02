@@ -10,10 +10,10 @@
 # Plan
 * SEP01: AWS 100%, touch64.5kg
   ```
-  MON: RUN18, 67.0kg, [o]AWS6, AWS7, AWS8
+  MON: RUN18, 67.0kg, [o]AWS6, [o]AWS7, AWS8
   TUE: RUN3,  66.0kg, AWS9, AWS10, AWS11, AWS12
-  WED: RUN3,  65.5kg, 
-  THU: RUN3,  65.0kg, AWS Practice Exam
+  WED: RUN6,  65.5kg, 
+  THU: RUN6,  65.0kg, AWS Practice Exam
   FRI: RUN6,  64.5kg, AWS Practice Exam
   SAT: RUN6,  
   SUN: 
