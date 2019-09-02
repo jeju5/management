@@ -8,12 +8,14 @@
 * Udemy AWS Practice Exams https://www.udemy.com/aws-certified-developer-associate-practice-tests-dva-c01/
 
 # Plan
-* SEP01: AWS 100%, touch63.0kg
+* SEP01: AWS 100%, touch64.5kg
   ```
-  MON: RUN6, AWS6, AWS7, AWS8, AWS9, AWS10, AWS11, AWS12
-  THU: RUN6, 66.0kg, AWS6, AWS7, AWS8
-  FRI: RUN6, 65.5kg, AWS9
-  SAT: RUN6, AWS10, AWS11, AWS12
+  MON: RUN18, 67.0kg, [o]AWS6, AWS7, AWS8
+  TUE: RUN3,  66.0kg, AWS9, AWS10, AWS11, AWS12
+  WED: RUN3,  65.5kg, 
+  THU: RUN3,  65.0kg, AWS Practice Exam
+  FRI: RUN6,  64.5kg, AWS Practice Exam
+  SAT: RUN6,  
   SUN: 
   ```
 
