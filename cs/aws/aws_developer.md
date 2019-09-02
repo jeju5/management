@@ -785,4 +785,99 @@
     * Global Secondary Index
       * index you can create when you create table or add later on
       * different partition key and sort key as table
-    
+  * Query
+    * fins item in a table based on Primary Key or distinct value you are searching for.
+    * you can use ProjectionExpression to return only wanted attributes from the query.
+    * results are by default sorted by sort key
+    * ScanIndexForwardParameter = false --> reverses the order of query result.
+    * By default it is Eventually Consistent. you can make it strongly consistent by explicitly setting it so.
+      * Eventual consistency: all access to the data are weakly guaranteed to return the same data.
+      * Strongly Eventual consistency: all access to the data are guaranteed to return the same data.
+  * Scan
+    * examines all data in the table. you can filter results by attributes.
+  * Query or Scan?
+    * Query is more efficient
+    * Scan dumps all data and filter it from there, this requires unwanted additional steps (SCAN takes longer operation time)
+  * Performance Improvement
+    * set smaller page size. (fewer read operation)
+    * isolate scan operations to specific tables
+    * try parallel scan
+      * by default scan uses sequential scan. it retrieves 1mb then increments additional 1mb sequentially.
+    * avoid scan.
+    * you can use ProjectionExpression to return only wanted attributes from the query.
+  * Capacity Units
+    * provisioned capacity
+      * when you create table you can specify read/write capacity units (1-4-8)
+      ```
+      * 1 write capacity unit = 1KB write/sec
+      * 1 read capacity unit  = 4KB strongly consistent read/sec
+                              = 8KB eventually consistent read/sec
+      ```
+    * on-demand capacity
+      * you don't need to specify requirements
+      * it automatically scales up/down based on the activity of your application
+    * provisioned or on-demand?
+      * unpredictable, unknown -> on-demand. otherwise, provisioned.
+  * DAX (DynamoDB Accelerator)
+    * clusted & in-memory cache for dynamodb
+    * delivers upto 10X read performance
+    * write thru caching service: data is written in cache & back-end datastore.
+    * suitable for eventual read consistency. (not suitable for strongly eventual read consistency)
+    * no benefit for write intensive app. (doesn't help write operation)
+  * Elisticache
+    * in-memory cache in the cloud
+    * good if your app is read-heavy and not frequently changing
+    * frequently-access data is stored in in-memory for low-latency access
+    * Two options
+      * Memcached
+        * multi-threaded
+        * no multi-AZ
+      * Redis
+        * open-source
+        * supports more complex data.
+        * supports multi-AZ
+    * Two caching strategies
+      * lazy-loading
+        ```
+        * when data is requested -> data is available in cache   -> return data from cache
+                                    data is unavailable in cache -> return null -> get data from datastore and write it in the cache
+                                   
+        returning null doesn't mean return null to the client. it means return null from cache. (to be handled by app)
+        ```
+        * advantage
+          * only requested data is filled in cache. you don't need to cache un-requested data
+          * elasticache node failure is not critical. you can create a new one (it will have lot of cache-miss at first)
+        * disadvantage
+          * cache miss penalty is somewhat large: 'Initial Request + Query to DB + write to Cache'
+          * stale data: data is only updated when there is a cache miss. this means data can be outdated
+            * TTL adjustment can help avoid stale data problem 
+      * write-through: 
+        * add/update data into cache whenever data is written(add/update) to the datastore.
+        * advantage
+          * data never stale.
+          * users are more tolerant of latency when updating the data.
+        * disadvantage
+          * every write involves write to datastore & cache
+          * cache node failure is big -> data is missing until data is written in datastore.
+  * DynamoDB Transaction
+    * ACID transaction
+      * atomic: each transaction is treated as a single unit
+      * consistent: no data corruption
+      * isolated: doesn't affect other data
+      * durable: when transaction is committed, data stays as committed (even when datacenter powerloss, for example)
+  * DynamoDB TTL
+    * you can set up TTL for dynamoDB tables so that you don't keep irrelevant data.
+    * TTL is expressed as epoch time(unix time stamp expression)
+    * Console -> DynamoDB -> select table -> action: manage TTL
+      * you can run preview TTL to see what happens afterward.
+  * DynamoDB Streams
+    * time ordered stream of item-level modification(insert/update/delete)
+    * logs are stored encrypted and for 24hrs.
+    * only accessible thru dedicated dynamodb api endpoint.
+    * can be used as a datasource for Lambda function
+  * provisionedthroughputexceededexception
+    * exception that dynamodb table throws when requests exceed your provision configuration.
+    * if you use AWS SDK, it will automatically retry when exception is thrown.
+  * exponential back off
+    * AWS uses exponentialBackOff. This means when request fails AWS retries with progressively longer waits.
+    * ExponentialBackOff is not limited to dynamoDB. It is a common feature of AWS SDK.
