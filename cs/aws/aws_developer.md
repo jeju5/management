@@ -723,15 +723,58 @@
   * Lambda can work globally (ex. backup S3 bucket A to S3 bucket B)
 
 # SECTION6. DYNAMO DB
-* DYNAMO DB is AWS NO SQL DB.
-* supports document and key/value pairs
-  * supported document: JSON, HTML and XML
-* Item: similar to row in table
-  * each item is made of key/value pairs
-* Attribute: similar to column in table
-* DynamoDB stores/retrieves data based on a primary key
-  * partition key: unique attribute -> each item has its unique partition key
-  * composite key: combination of partition key and sort key -> each item has its unique "partition key with sort key".
-* DynamoDB access control
-  * authentication and access control is managed by AWS IAM
-  * ex) you can add a condition to IAM policy that DynamoDB uses to control access to certain data. (dynamodb:LeadingKeys)
+* Intro
+  * DYNAMO DB is AWS NO SQL DB.
+  * supports document and key/value pairs
+    * supported document: JSON, HTML and XML
+  * Item: similar to row in table
+    * each item is made of key/value pairs
+  * Attribute: similar to column in table
+  * DynamoDB stores/retrieves data based on a primary key
+    * partition key: unique attribute -> each item has its unique partition key
+    * composite key: combination of partition key and sort key -> each item has its unique "partition key with sort key".
+  * DynamoDB access control
+    * authentication and access control is managed by AWS IAM
+    * ex) you can add a condition to IAM policy that DynamoDB uses to control access to certain data. (dynamodb:LeadingKeys)
+* Create DynamoDB Table lab
+  * Create a Role
+    * IAM -> Create Role
+    * select AWS Service, next
+    * select AmazonDynamoDBFullAccess policy
+    * create a role 'DynamoDB'
+  * Create an Instance and table
+    * EC2
+    * select Linux, t2micro, DynamoDB role
+    * add script
+      ```
+      #!/bin/bash
+      yum update -y
+      yum install httpd php git -y                     
+      service httpd start                   # apache service
+      chkconfig httpd on
+      cd /var/www/html
+      echo "<?php phpinfo();?>" > test.php
+      git clone https://github.com/acloudguru/dynamodb
+      ```
+    * select a security group that has http & ssh.
+    * launch instance
+    * copy public IPv4 address
+    * ssh into this instance and verify test.php and dynamodb git repo you set up with shell script
+      ```
+      ssh -i keypair.pem ec2-user@35.176.32.146
+      sudo su
+      cd /var/www/html
+      ```
+    * install aws sdk for php (https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/getting-started_installation.html)
+    * hit url page that runs createtable php scripts (http://35.176.32.146/dynamodb/cretetables.php)
+  * Play with table
+    * Console -> DynamoDB
+    * see 4tables that php script created
+    * select ProductCatalog table
+    * there are Query/Scan options. Query filters data and Scan fetches all data
+    * go to terminal that sshed into and run following command
+      ```
+      #Command to query Dynamodb from EC2 command line
+      aws dynamodb get-item --table-name ProductCatalog --region eu-west-2  --key '{"Id":{"N":"205"}}'
+      ```
+    
