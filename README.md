@@ -10,11 +10,11 @@
 # Plan
 * SEP01: AWS 100%, touch64.5kg
   ```
-  MON: RUN18, 67.0kg, [o]AWS6, [o]AWS7, AWS8
-  TUE: RUN3,  66.0kg, AWS9, AWS10, AWS11, AWS12
-  WED: RUN6,  65.5kg, 
-  THU: RUN6,  65.0kg, AWS Practice Exam
-  FRI: RUN6,  64.5kg, AWS Practice Exam
+  MON: [o]RUN18, [o]68.0kg, [o]AWS6, [o]AWS7
+  TUE: [x]RUN3,  67.0kg, AWS8, AWS9
+  WED: RUN6,  66.5kg, AWS10, AWS11, AWS12
+  THU: RUN6,  66.0kg, AWS Practice Exam
+  FRI: RUN6,  66.5kg, AWS Practice Exam
   SAT: RUN6,  
   SUN: 
   ```
