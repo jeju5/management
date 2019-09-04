@@ -11,12 +11,12 @@
 * SEP01: AWS 100%, touch64.5kg
   ```
   MON: [o]RUN18, [o]68.0kg, [o]AWS6, [o]AWS7
-  TUE: [x]RUN3,  67.0kg, AWS8, AWS9
-  WED: RUN6,  66.5kg, AWS10, AWS11, AWS12
-  THU: RUN6,  66.0kg, AWS Practice Exam
-  FRI: RUN6,  66.5kg, AWS Practice Exam
-  SAT: RUN6,  
-  SUN: 
+  TUE: [x]RUN3,  [o]67.0kg, [x]AWS8, [x]AWS9
+  WED: RUN6,  66.5kg, AWS8, AWS9
+  THU: RUN6,  66.0kg, AWS10, AWS11, AWS12
+  FRI: RUN6,  66.5kg
+  SAT: RUN6,  AWS Practice Exam
+  SUN:        AWS Practice Exam
   ```
 
 # TIME
