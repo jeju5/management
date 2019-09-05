@@ -1,4 +1,4 @@
-# Task
+# Task (calendar.google.com)
 * UDEMY: Modern React with Redux
 * UDEMY: Node with React
 * UDEMY: GraphQL with React
@@ -6,18 +6,7 @@
 * TwinCityMarathon - UnderFive (OCT)
 * H1B interview scheduling
 * Udemy AWS Practice Exams https://www.udemy.com/aws-certified-developer-associate-practice-tests-dva-c01/
-
-# Plan
-* SEP01: AWS 100%, touch64.5kg
-  ```
-  MON: [o]RUN18, [o]68.0kg, [o]AWS6, [o]AWS7
-  TUE: [x]RUN3,  [o]67.0kg, [x]AWS8, [x]AWS9
-  WED: [x]RUN6,  [x]66.5kg
-  THU: RUN6,  67.5kg, AWS8, AWS9
-  FRI: RUN6,  67.0kg, AWS10, AWS11, AWS12
-  SAT: RUN6,  AWS Practice Exam
-  SUN:        AWS Practice Exam
-  ```
+* Boxing at Minneapolis Boxing Club
 
 # TIME
   ```
