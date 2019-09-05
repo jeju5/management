@@ -932,3 +932,17 @@
     ```
     * CMK decrypts the data key
     * Envelop key decrypts the data
+
+# SECTION8. Other Services
+* SQS (Simple Queue Service)
+  * message queue management system
+  * message is a job message that tells a service to execute some tasks
+  * SQS is a pull based system (for example EC2 instance will have to pull message from SQS)
+  * SQS allows you to decouple components of an app so they run independently.
+  * Message maximum 256KB text in any format.
+  * Queue Types
+    * Standard
+      * No order in message
+    * FIFO
+      * First In First Out
+      * 0 --> [0000] --> 0
