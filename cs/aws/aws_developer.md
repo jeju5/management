@@ -937,7 +937,7 @@
 * SQS (Simple Queue Service)
   * message queue management system
   * message is a job message that tells a service to execute some tasks
-  * SQS is a pull based system (for example EC2 instance will have to pull message from SQS)
+  * SQS is a pull(=poll) based system (for example EC2 instance will have to pull message from SQS)
   * SQS allows you to decouple components of an app so they run independently.
   * Message maximum 256KB text in any format.
   * Queue Types
@@ -946,3 +946,40 @@
     * FIFO
       * First In First Out
       * 0 --> [0000] --> 0
+  * Visibility Timeout = amount of time that the message is invisible in the SQS queue after being read. (Default: 30sec, Max: 12Hours)
+  * Message can be kept unread for 1min to 14days.
+  * There is a chance that message being read more than once. So use Visibility Timeout
+  * Regular Short Poll returns immediately. (even if msg wanted is not queued)
+  * Long Poll returns after a msg is queued. (if not, times out)
+* SNS (Simple Notification Service)
+  * Push Based (no polling)
+  * SNS can deliver SMS text message, Emails and HTTP endpoints.
+  * SNS can trigger Lambda functions.
+  * follows pub-sub (publish-subscribe) model where SNS publishes msg and users subscribe to topics. (SNS pushes msg and no further checking on them)
+  * Consumer must subscribe to a topic to receieve notification from SNS.
+* SES (Simple Email Service)
+  * email can trigger Lambda function, SNS notification.
+  * email only
+  * email can be stored to S3
+  * can handle incoming / outgoing email (SNS only does outgoing notification)
+  * ex) automated email, Purchase Confirmation, Shipping Updates...etc
+  * SES only need email address and just sends it.
+* Elastic Beanstalk
+  * Deployment & Scaling Web service.
+  * You can select EC2 of your choice
+  * Supports Java, php, Python, Ruby, Go, Docker, .Net, Node.js / Tomcat, Passenger, Puma, IIS
+  * You can create an app with source code zip file. (this is saved to s3 bucket)
+  * Deployment policy (Updating EBS)
+    * All at once
+      * Deploys the new version to all instances simultaneously/
+      * Update Fail -> To roll back, perform all at once.
+    * Rolling
+      * deploys the new version in batches
+      * Update Fail -> To roll back, perform rolling update.
+    * Rolling with Additional Batch Policy
+      * Maintains full capacity during the deployment. (Performance Sensitive, Suitable for no-downtime app)
+      * Update Fail -> To roll back, perform rolling update.
+    * Immutable Deployment
+      * Maintains full capacity during the deployment.
+      * Creats a fresh group of instances in their autoscaling group -> Health Check Pass -> Move to new group -> Terminate old group
+      * Update Fail -> To roll back, delete new instance and autoscaling group.
