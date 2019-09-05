@@ -983,3 +983,14 @@
       * Maintains full capacity during the deployment.
       * Creats a fresh group of instances in their autoscaling group -> Health Check Pass -> Move to new group -> Terminate old group
       * Update Fail -> To roll back, delete new instance and autoscaling group.
+  * Configuring EBS
+    * You can have configuration file
+      * in YAML/JSON format
+      * with .config extension
+      * inside .ebextensions folder (.ebextensions folder in the top-level directory)
+  * EBS & RDS
+    * you can create RDS database inside EBS (from EBS console). This is good for test env, but since RDS is coupled with EBS it has no flexibility in lifecycle.
+    * Ideally in prod. env, decouple RDS from EBS.
+      * To allow EC2 (in your EBS) to connect to outside DB (ex. RDS), you need to do two things
+        1. add additional Security Group to auto scaling group.
+        2. provide DB connection credential in EBS. (with config file)
