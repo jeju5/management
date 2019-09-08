@@ -994,3 +994,14 @@
       * To allow EC2 (in your EBS) to connect to outside DB (ex. RDS), you need to do two things
         1. add additional Security Group to auto scaling group.
         2. provide DB connection credential in EBS. (with config file)
+* Kinesis
+  * Streaming data = small chunks of data that is sent from a web service.
+  * Kinesis Types
+    1. Kinesis Streams
+       * Producers -> Kinesis Streams: stored as shards -> Consumers
+       * Kinesis Streams consts of shards
+       * Shards have TTL
+    2. Kinesis Firehose
+       * Producers -> Kinesis Firehose: automated storage and consumption process
+    3. Kinesis Analytics
+       * Producers -> Kinesis Analytics: has availibility for SQL queries.
