@@ -1011,3 +1011,34 @@
   * AWS Sotrage Gateway: The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure. The AWS documentation states that; "You can think of a file gateway as a file system mount on S3."
   * Amazon Elastic File System (EFS) is a mountable file storage service for EC2, but has no connection to S3 which is an object storage service.
   * Amazon Elastic Block Store (EBS) is a block level storage service for use with Amazon EC2 and again has no connection to S3.
+
+# SECTION8. Developer Theroies
+* CI/CD
+  * CI: Code Repo -> Build -> Test (Code
+  * CD: Deploy -> Prod. Env.
+  * AWS CI/CD Services
+    ```
+    * Manage    = AWS CodePipeline (something like Jenkins)
+    * Code Repo = AWS CodeCommit
+    * Build     = AWS CodeBuild
+    * Deploy    = AWS CodeDeploy
+    ```
+* CodeCommit
+  * Based on Git
+  * Tracks and maintains commit history.
+* CodeDeploy
+  * Compatiable with other management tools: AWS CodePipeline, Jenkins, Puppet, and ... etc.
+  * Two Deployment Options
+    * In-Place Deployment
+      * Rolling Update
+      * Each instance stops an app when doing an upgrade installation.
+      * Only Ec2 and On-premise (Not Lambda)
+      * To roll back, you have to re-deploy older version.
+    * Blue/Green Deployment
+      * Blue is active(current) version instances
+      * Green is new version instances
+      * No Performance Down Issue
+    * Terms
+      * Deployment Group: A set of EC2 instances or Lambda functions where you will deploy new software.
+      * AppSpec File: A document that defines actions AWS CodeDeploy will execute
+  * 
