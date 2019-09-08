@@ -947,7 +947,7 @@
       * First In First Out
       * 0 --> [0000] --> 0
   * Visibility Timeout = amount of time that the message is invisible in the SQS queue after being read. (Default: 30sec, Max: 12Hours). Use ChangeMessageVisibility endpoint to do so.
-  * Message can be kept unread for 1min to 14days.
+  * Retention Period: Message can be kept unread for 1min to 14days.
   * There is a chance that message being read more than once. So use Visibility Timeout
   * Regular Short Poll returns immediately. (even if msg wanted is not queued)
   * Long Poll returns after a msg is queued. (if not, times out)
