@@ -956,6 +956,7 @@
   * SNS can deliver SMS text message, Emails and HTTP endpoints.
   * SNS can trigger Lambda functions.
   * follows pub-sub (publish-subscribe) model where SNS publishes msg and users subscribe to topics. (SNS pushes msg and no further checking on them)
+  * When using Amazon SNS, you (as the owner) create a topic and control access to it by defining policies that determine which publishers and subscribers can communicate with the topic.
   * Consumer must subscribe to a topic to receieve notification from SNS.
 * SES (Simple Email Service)
   * email can trigger Lambda function, SNS notification.
