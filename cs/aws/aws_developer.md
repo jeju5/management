@@ -974,7 +974,7 @@
       * Deploys the new version to all instances simultaneously/
       * Update Fail -> To roll back, perform all at once.
     * Rolling
-      * deploys the new version in batches
+      * deploys the new version in batches. (say you have 10, you update a batch of instances (say 3) then move on)
       * Update Fail -> To roll back, perform rolling update.
     * Rolling with Additional Batch Policy
       * Maintains full capacity during the deployment. (Performance Sensitive, Suitable for no-downtime app)
@@ -998,6 +998,7 @@
   * Streaming data = small chunks of data that is sent from a web service.
   * Kinesis Types
     1. Kinesis Streams
+       * Two Types: Data Stream & Video Stream
        * Producers -> Kinesis Streams: stored as shards -> Consumers
        * Kinesis Streams consts of shards
        * Shards have TTL
@@ -1005,3 +1006,7 @@
        * Producers -> Kinesis Firehose: automated storage and consumption process
     3. Kinesis Analytics
        * Producers -> Kinesis Analytics: has availibility for SQL queries.
+* AWS Storages
+  * AWS Sotrage Gateway: The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure. The AWS documentation states that; "You can think of a file gateway as a file system mount on S3."
+  * Amazon Elastic File System (EFS) is a mountable file storage service for EC2, but has no connection to S3 which is an object storage service.
+  * Amazon Elastic Block Store (EBS) is a block level storage service for use with Amazon EC2 and again has no connection to S3.
