@@ -950,7 +950,7 @@
   * Retention Period: Message can be kept unread for 1min to 14days.
   * There is a chance that message being read more than once. So use Visibility Timeout
   * Regular Short Poll returns immediately. (even if msg wanted is not queued)
-  * Long Poll returns after a msg is queued. (if not, times out)
+  * Long Poll returns after a msg is queued. (if not, times out - 20secondsx)
 * SNS (Simple Notification Service)
   * Push Based (no polling)
   * SNS can deliver SMS text message, Emails and HTTP endpoints.
