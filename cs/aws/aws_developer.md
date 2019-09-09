@@ -1018,10 +1018,13 @@
   * CD: Deploy -> Prod. Env.
   * AWS CI/CD Services
     ```
-    * Manage    = AWS CodePipeline (something like Jenkins)
+    ----------------------------------------------------------
     * Code Repo = AWS CodeCommit
     * Build     = AWS CodeBuild
     * Deploy    = AWS CodeDeploy
+    ----------------------------------------------------------
+    * Manage    = AWS CodePipeline (something like Jenkins)
+    ----------------------------------------------------------
     ```
 * CodeCommit
   * Based on Git
@@ -1042,3 +1045,7 @@
       * Deployment Group: A set of EC2 instances or Lambda functions where you will deploy new software.
       * AppSpec File: A document that defines actions AWS CodeDeploy will execute
   * CodeDeploy agent is a program that runs code deploy tasks in terminal
+  * You can store revision codes in S3.
+* CodePipeline
+  * You can configure it to trigger a pipeline when code change is committed in repo
+  * If one step in a pipeline fails, the whole flow stops there.
