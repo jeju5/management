@@ -1,4 +1,5 @@
-# Task (calendar.google.com)
+# Task
+* plans: calendar.google.com
 * UDEMY: Modern React with Redux
 * UDEMY: Node with React
 * UDEMY: GraphQL with React
