@@ -1041,4 +1041,4 @@
     * Terms
       * Deployment Group: A set of EC2 instances or Lambda functions where you will deploy new software.
       * AppSpec File: A document that defines actions AWS CodeDeploy will execute
-  * 
+  * CodeDeploy agent is a program that runs code deploy tasks in terminal
