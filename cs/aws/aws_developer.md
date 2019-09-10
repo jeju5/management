@@ -1026,10 +1026,34 @@
     * Manage    = AWS CodePipeline (something like Jenkins)
     ----------------------------------------------------------
     ```
-* CodeCommit
+* AWS CodeCommit
   * Based on Git
   * Tracks and maintains commit history.
-* CodeDeploy
+* AWS CodeBuild
+  * compiles and tests your code. (CodeCommit -> CodeBuild -> build Docker Image)
+  * AWS Elastic Container Service
+    * AWS docker container management platform
+    * You can create AWS ECS clusters. (cluster = a group of instances)
+  * AWS Elastic Container Registry
+    * AWS docker container registry platform
+    * You can create a Repository to hold each docker image
+    * ECR repo is different from CodeCommit repo. You can run following command in local {myCodeCommitRepo} with Dockerfile to push docker image to AWS ECR repo. You can find push commands in AWS console
+    ```
+    aws ecr get-login --no-include-email --region eu-central-1    # do ecr login
+    docker build -t {myECR-RepoName} .                            # build tag-able docker image
+    docker tag ........                                           # tag it
+    docker push .......                                           # push it to ECR-repo
+    ```
+  * buildspec.yml
+    * defines step to take on each build step
+    * you can specify ECS/ECR commands in this file to automate everything
+      * crete CodeBuild project with 'use a build spec file' & 'codeCommit repo you have with buildspec.yml & dockerfile'
+      * you can either 'use a build spec file' or 'insert build commands (do automation part in UI console)'
+        * 'insert build commands' lets you override 'buildspec.yml' specification
+      * you can override settings in UI
+        * 'Environment variables override' section
+    * you can check build logs in CodeBuild console. full logs in CloudWatch
+* AWS CodeDeploy
   * Compatiable with other management tools: AWS CodePipeline, Jenkins, Puppet, and ... etc.
   * Two Deployment Options
     * In-Place Deployment
@@ -1046,6 +1070,60 @@
       * AppSpec File: A document that defines actions AWS CodeDeploy will execute
   * CodeDeploy agent is a program that runs code deploy tasks in terminal
   * You can store revision codes in S3.
-* CodePipeline
+  * AppSpecFile
+    * Defines parameters used for CodeDeploy.
+    * For Lambda Deployment: three sections required (version, resources and hooks). Can be written in YAML/JSON
+      1. version: reserved for future use (currently 0.0 is allowed only)
+      2. resources: properties(name, alias, currentVersion, TargetVersion) of Lambda to deploy
+      3. hooks(Lambda): Lambda to run during deployment. You can specify point of time to execute each Lambda.
+         * new Lambda Created -> BeforeAllowTraffic -> trafficRerouted to new Lambda -> AfterAllowTraffic
+         * BeforeAllowTraffic: point of time before traffic is routed to newly deployed Lambda. (validate Lambda is deployed correctly)
+         * AfterAllowTraffic: point of time after traffic is routed to newly deployed Lambda. (validate Lambda is functioning correctly)
+    * For EC2/OnPremises Deployment: three sections required (version, resources and hooks). Can be written in YAML (not JSON)
+      ```
+      appsepc.yml should be in in the root directory of app for EC2/OnPremises Deployment.
+      
+      Typical Setup:
+        appspec.yml
+        /scripts
+        /config
+        /src
+      ```
+      1. version: reserved for future use (currently 0.0 is allowed only)
+      2. os: OS you are using
+      3. files: location of file to be copied from and to (source & destination)
+      4. hooks: Lifecycle Hooks to run during deployment. You can specify point of time to execute each Script.
+         * BeforeBlockTraffic: Run tasks on instances before they are deregistered from a load balancer
+         * BlockTraffic: Deregister instances from a load balancer
+         * AfterBlockTraffic: Run tasks on instances after they are deregistered from a load balancer
+         * ApplicationStop: stop app to prepare for new version deployment 
+         * DownloadBundle: copy app revision files to temp location
+         * BeforeInstall: before Install
+         * Install: Codedeploy agent copies the app revision files from temp location to correct location
+         * AfterInstall: after Install
+         * ApplicationStart: start app for new version deployment
+         * ValidateService: after app is started
+         * BeforeAllowTraffic: Run tasks on instances before they are egistered from a load balancer
+         * AllowTraffic: register instances from a load balancer
+         * AfterAllowTraffic: Run tasks on instances after they are registered from a load balancer
+         ```
+         example
+         
+         hooks: 
+          BeforeInstall:
+           - location: scripts/unzipResource.sh
+           - location: scripts/unzipData.sh
+          AfterInstall:
+           - location: scripts/runTests.sh
+             timeout: 180
+          ApplicationStart:
+           - location: scripts/runUnitTests.sh
+             timeout: 1800  
+          ValidateService:
+           - location: scripts/runIntegrationTests.sh
+             timeout: 1800
+             runas: deployUser
+         ```
+* AWS CodePipeline
   * You can configure it to trigger a pipeline when code change is committed in repo
   * If one step in a pipeline fails, the whole flow stops there.
