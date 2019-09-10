@@ -1127,3 +1127,20 @@
 * AWS CodePipeline
   * You can configure it to trigger a pipeline when code change is committed in repo
   * If one step in a pipeline fails, the whole flow stops there.
+* AWS CloudFormation
+  * CloudFormation lets you manage AWS infrastructure as code
+  * Supports YAML/JSON
+  * CloudFormation template describes endstate of infrastructure you want to provision.
+  * You upload template to CloudFormation using S3
+  * Resulting resource is called "CloudFormation Stack".
+  * CloudFormation Template (sections)
+    1. Parameters: input custom values (ex: env type)
+    2. Conditions: value based on condition (ex: create some resources based on input)
+    3. Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation)
+    4. Mappings: custom mappings (ex: use different AMI for different regions; AMI is an amazon VM image)
+    5. Transforms: reference code in S3 (ex: include template code snippet from outside into this template. use S3)
+* AWS SAM (Serverless Application Model)
+  * SAM is an extension for CloudFormation to deploy serverless apps
+  * SAM CLI commands
+    * sam package: package up your deployment packages and upload it to S3
+    * sam deploy: deploy serverless app with package you created with sam package. (deploys with CloudFormation)
