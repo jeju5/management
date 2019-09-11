@@ -228,3 +228,4 @@ Hit Hit -> right-step.right-slip.left-guard
   ---------------------------
                          171.1                 
   ```
+* Conclusion: keep 65kg
