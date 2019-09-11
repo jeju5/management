@@ -187,3 +187,40 @@ Hit Hit -> right-step.right-slip.left-guard
 
 
 (slip-out drift-out)
+
+
+## Olympic Medalist Boxers
+* Welter (64-69)
+  ```
+  Oleg Saitov 178cm
+  Serhiy Dotsenko 174cm
+  Vitalie GruÅac 176cm
+  Dorel Simion 172cm
+  
+ 
+ 
+ 
+  ```
+
+
+* LightWelter (60-64)
+  ```
+  
+  
+ 
+ 
+ 
+  ```
+
+* Light (56-60)
+  ```
+                         avg
+  ---------------------------
+  2000: 165 171 170 170  169
+  2004: 165 178 169 173  171.25
+  2008: 167 175 178 176  174
+  2012: 170 178 164 175  169.25
+  2016: 171 174 173 170  172
+  ---------------------------
+                         171.1                 
+  ```
