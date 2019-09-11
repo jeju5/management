@@ -1014,8 +1014,8 @@
 
 # SECTION8. Developer Theroies
 * CI/CD
-  * CI: Code Repo -> Build -> Test (Code
-  * CD: Deploy -> Prod. Env.
+  * CI=Continuous Integration: "Code Repo -> Build -> Test"
+  * CD=Continuous Delivery: "Code Update -> Production Release"
   * AWS CI/CD Services
     ```
     ----------------------------------------------------------
@@ -1056,7 +1056,7 @@
 * AWS CodeDeploy
   * Compatiable with other management tools: AWS CodePipeline, Jenkins, Puppet, and ... etc.
   * Two Deployment Options
-    * In-Place Deployment
+    * In-Place(Rolling) Deployment
       * Rolling Update
       * Each instance stops an app when doing an upgrade installation.
       * Only Ec2 and On-premise (Not Lambda)
@@ -1133,14 +1133,37 @@
   * CloudFormation template describes endstate of infrastructure you want to provision.
   * You upload template to CloudFormation using S3
   * Resulting resource is called "CloudFormation Stack".
+  * If deployment fails (part of deployment), it rolls back the entire stack.
   * CloudFormation Template (sections)
-    1. Parameters: input custom values (ex: env type)
-    2. Conditions: value based on condition (ex: create some resources based on input)
-    3. Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation)
-    4. Mappings: custom mappings (ex: use different AMI for different regions; AMI is an amazon VM image)
-    5. Transforms: reference code in S3 (ex: include template code snippet from outside into this template. use S3)
-* AWS SAM (Serverless Application Model)
-  * SAM is an extension for CloudFormation to deploy serverless apps
-  * SAM CLI commands
-    * sam package: package up your deployment packages and upload it to S3
-    * sam deploy: deploy serverless app with package you created with sam package. (deploys with CloudFormation)
+    * Parameters: input custom values (ex: env type)
+    * Conditions: value based on condition (ex: create some resources based on input)
+    * Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation)
+    * Mappings: custom mappings (ex: use different AMI for different regions; AMI is an amazon VM image)
+    * Transforms: reference code in S3 (ex: include template code snippet from outside into this template. use S3)
+    * Outputs: declare output values that you can import into different stacks.
+  * AWS SAM (Serverless Application Model)
+    * SAM is an extension for CloudFormation to deploy serverless apps
+    * SAM CLI commands
+      * sam package: package up your deployment packages and upload it to S3
+        ```
+        sam package --template-file ./cloudFormationTemplate.yml --output-template-file samTemplate.yml --s3-bucket bucketname
+        ```
+      * sam deploy: deploy serverless app with package you created with sam package. (deploys with CloudFormation
+        ```
+        sam deploy --template-file ./samTemplate.yml --stack-name serverlessStack --capabilities CAPABILITY_IAM
+
+        # capabilities: CAPABILITY_IAM grants permission for sam agent to create/deploy this app.
+        ```
+      * you still need CloudFormationTemplate (AWSTemplateFormat), and you put AWS::Serverless::Function as Resources Type;
+        ```
+        Resources:
+         Type: AWS::CloudFormation::Stack
+        ```
+  * CloudFormation Nested Stacks
+    * Nested Stacks allow re-use of CloudFormation code.
+    * Allows you to reuse pieces of CloudFormation code in multiple templates, for common use cases like provisioning a load balancer or web server?
+    * in CloudFormationTemplate, specify Type as follows
+      ```
+      Resources:
+       Type: AWS::CloudFormation::Stack
+      ```
