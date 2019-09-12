@@ -4,17 +4,17 @@
 ```
 * Direction
     LEAD        LEAD
-   OUT IN      IN OUT
+  LEAD REAR   REAR LEAD
     REAR        REAR
  <orthodox>  <southpaw>
   
 * Offense
-  jab          cro          jab
-  bab          bro          bab
-  lead-hook    rear-hook    lead-hook
-  lead-upper   rear-upper   lead-upper
-  lead-body    rear-body    lead-body
-   <LEAD>      <REAR>       <LEAD>
+  jab      cro      jab
+  bab      bro      bab
+  lhook    rhook    lhook
+  lupper   rupper   lupper
+  lbody    rbody    lbody
+  <LEAD>   <REAR>   <LEAD>
   
 * Defense
   FOOT  : step, pivot, drift
@@ -50,6 +50,15 @@
 * JUMBLE  : jumble-L-in, jumble-R-in, jumble-L-out, jumble-R-out
 * SKATE   : skate-2, skate-3, skate-4, skate-5
 * SNATCH  : snatch-side-L, snatch-side-R, snatch-forward-L, snatch-forward-R
+
+## BASIC FIVE FLOWS
+```
+Flow1: jab jab - jab cro - jab cro jab - jab cro jab cro
+Flow2: cro cro - cro jab - cro jab cro - cro jab cro jab
+Flow3: jab bab - jab bab cro - jab bro - jab bro jab
+Flow4: bro jab - bro jab cro - bro bab - bro bab cro
+Flow5: jab rupper - jab rupper lhook - jab lbody - jab lbody lupper
+```
 
 ## 10X10
 ```
