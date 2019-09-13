@@ -51,13 +51,19 @@
 * SKATE   : skate-2, skate-3, skate-4, skate-5
 * SNATCH  : snatch-side-L, snatch-side-R, snatch-forward-L, snatch-forward-R
 
-## BASIC FIVE FLOWS
+## BASIC TEN FLOWS
 ```
-Flow1: jab jab - jab cro - jab cro jab - jab cro jab cro
-Flow2: cro cro - cro jab - cro jab cro - cro jab cro jab
-Flow3: jab bab - jab bab cro - jab bro - jab bro jab
-Flow4: bro jab - bro jab cro - bro bab - bro bab cro
-Flow5: jab rupper - jab rupper lhook - jab lbody - jab lbody lupper
+Flow1: jab jab - jab jab cro - jab jab cro lhook
+Flow2: jab cro - jab cro jab - jab cro jab cro
+Flow3: jab cro - jab cro lhook - jab cro lhook rhook
+Flow4: cro cro - cro cro lhook - cro cro lhook rhook
+Flow5: cro jab - cro jab cro - cro jab cro jab 
+
+Flow6: jab bab - jab bab cro - jab bab cro lhook
+Flow7: jab bro - jab bro lhook - jab bro lhook cro
+Flow8: bro jab - bro jab cro - bro jab cro bab
+Flow9: jab lbody - jab lbody lbody - jab lbody lupper cro
+Flow10: jab rupper - jab rupper lhook - jab rupper lhook rbody
 ```
 
 ## 10X10
