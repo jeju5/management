@@ -1,10 +1,11 @@
 # Task
-* plans: calendar.google.com
+* Watch 황혼의 사무라이 (The Twilight Samurai)
+* Sumamrize Lord's Prayer Study Material
 * UDEMY: Modern React with Redux
 * UDEMY: Node with React
 * UDEMY: GraphQL with React
-* 황혼의 사무라이 (The Twilight Samurai)
-* TwinCityMarathon - UnderFive (OCT)
+
+* Mankato Marathon (Oct.19)
 * H1B interview scheduling
 * Udemy AWS Practice Exams https://www.udemy.com/aws-certified-developer-associate-practice-tests-dva-c01/
 * Boxing at Minneapolis Boxing Club
@@ -59,7 +60,7 @@
   PULL          : 5x8
   DIP           : 5x5
   PUSH/CHIN/SIT : 80
-  RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 08 15 15 08 18 / 18 08 20 20 08 23 23 08 | *26* 08
+  RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 08 15 15 08 18 18 08 20 20 08 (done) 23 23 | 08 08 08 *26*
   
   WEIGHT
   - usual: 65kg (64kg ~ 66kg)
