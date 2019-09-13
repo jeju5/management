@@ -1012,7 +1012,7 @@
   * Amazon Elastic File System (EFS) is a mountable file storage service for EC2, but has no connection to S3 which is an object storage service.
   * Amazon Elastic Block Store (EBS) is a block level storage service for use with Amazon EC2 and again has no connection to S3.
 
-# SECTION8. Developer Theroies
+# SECTION9. Developer Theroies
 * CI/CD
   * CI=Continuous Integration: "Code Repo -> Build -> Test"
   * CD=Continuous Delivery: "Code Update -> Production Release"
@@ -1167,3 +1167,35 @@
       Resources:
        Type: AWS::CloudFormation::Stack
       ```
+# SECTION10. Advanced IAM
+* Web Identity Federation
+  * Concept of granting permission to users who are authorized/authenticated through web identity provider. (Google/Facebook/Amazon...etc). Successful authentication from web identity provider is followed by getting an authentication code which can be traded for other credentials.
+* Amazon Cognito provides Web Identity Federation
+  * Provides sign-up/sign-in and guest access.
+  * Acts as identity broker between app and web identity provider.
+    * Cognito brokers between app and Web Identity Provider maps authentication code to temporary credential for IAM role. (Web Identity Provider --> Authentication Code --> Cognito Broker --> Temporary Credential --> IAM Role
+  * Synchronizes user data across devices
+  * AWS Recommended Approach for mobile apps.
+* Cognito User Pools
+  * User Pool = user directories to manage sign-up/sign-in functionality for apps.
+    * users can sign-in directly to user pool or via web identity providers.
+  * IdentityPool = service that lets you create unique ids for your users and authenticate them with web identity providers.
+  ```
+  1. User <--> UserPool <--> WebIdentityProvider
+  2.      <--> IdentityPool
+  3.      <--> App
+  ```
+  * AWS SNS is used to send silent notification to associated devices when user data is updated.
+* IAM Policies
+  * AWS Managed Policies
+    * IAM Policy creaed/administered by AWS.
+    * You can use(attach) this policy to multiple users/groups/roles across AWS accounts
+    * You can't change permissions defined in AWS Managed Policies.
+  * Customer Managed Policies
+    * IAM Policy created/administered by you (your own AWS account)
+    * You can use this policy to multiple users/groups/roles but only within your AWS account.
+  * Inline Policies
+    * IAM Policy embedded within the user/group/role. (strict 1:1 relationship between user and policy)
+    * You can't user this policy to different users/groups/roles.
+    * In general, AWS Managed Policies or Customer Managed Policies are recommended.
+    * Userful when permissions in a policy is strictly limited to this single user.
