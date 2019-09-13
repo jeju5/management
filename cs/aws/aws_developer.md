@@ -1171,19 +1171,19 @@
 * Web Identity Federation
   * Concept of granting permission to users who are authorized/authenticated through web identity provider. (Google/Facebook/Amazon...etc). Successful authentication from web identity provider is followed by getting an authentication code which can be traded for other credentials.
 * Amazon Cognito provides Web Identity Federation
-  * Provides sign-up/sign-in and guest access.
-  * Acts as identity broker between app and web identity provider.
+  * = Identity broker between app and web identity provider.
     * Cognito brokers between app and Web Identity Provider maps authentication code to temporary credential for IAM role. (Web Identity Provider --> Authentication Code --> Cognito Broker --> Temporary Credential --> IAM Role
+  * Provides sign-up/sign-in and guest access.
   * Synchronizes user data across devices
   * AWS Recommended Approach for mobile apps.
 * Cognito User Pools
-  * User Pool = user directories to manage sign-up/sign-in functionality for apps.
-    * users can sign-in directly to user pool or via web identity providers.
-  * IdentityPool = service that lets you create unique ids for your users and authenticate them with web identity providers.
+  * = User Directory
+  * uses 'User Pool' = user directories to manage sign-up/sign-in functionality for apps to manage user sign-in/sign-up directly or via Web Id Providers.
+* Cognito IdentityPool
+  * = User Authorizer
+  * Amazon Cognito identity pools provide temporary AWS credentials for users who are guests (unauthenticated) and for users who have been authenticated and received a token.
   ```
-  1. User <--> UserPool <--> WebIdentityProvider
-  2.      <--> IdentityPool
-  3.      <--> App
+  WebIdentityProvider -> User Pool -> Identity Pool -> AWS Resources
   ```
   * AWS SNS is used to send silent notification to associated devices when user data is updated.
 * IAM Policies
@@ -1199,3 +1199,17 @@
     * You can't user this policy to different users/groups/roles.
     * In general, AWS Managed Policies or Customer Managed Policies are recommended.
     * Userful when permissions in a policy is strictly limited to this single user.
+* AssumeRoleWithWebIdentity
+  * API provided by STS (Security Token Service)
+  * Returns temp credentials for users authenticated by WebIdentityProvider.
+    * Returns AssumedRoleUser ARN and AssumedRole Id which temporary refers to temporary credentials (not IAM role/user)
+  * Cognito uses STS to retrieve temp credentials for WebIndentityProvider authenticated users.
+    ```
+    1. User <--> WebIdentityProvider
+    2.      <--> STS
+    3.      <--> AWS Resources
+    ```
+
+* Exam Tips
+  * To allow one AWS account to access and manage resources in another AWS account -> configure aws cross account access
+  * Where would you store confidential information (credentials, license codes) for AWS resources? -> AWS Systems Manager Parameter Store (as parameter values)
