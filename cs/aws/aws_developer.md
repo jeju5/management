@@ -1210,6 +1210,27 @@
     3.      <--> AWS Resources
     ```
 
-* Exam Tips
+# SECTION11. CloudWatch
+* CloudWatch can monitor Compute, Storage, DB, Analytics and others...
+* CloudWatch can be used on premise apps (not limited to AWS resources)
+* CloudWatch Metrics
+  * Host Level Metrics: CPU, Network, Disk and Health Status
+    * You can't get storage of virtual disk it is a custom metric, Disk here in host level means disk IO.
+  * Custom metric
+    * RAM Utilization
+    * Disk Utilization
+  * Granularity (How small can the metric unit be?)
+    * 1min (detailed: minimum)
+    * 5min (standard)
+  * Retrievable with API
+  * By default logs are store indefinitely. (You can configure this)
+  * You can retrieve logs of terminated AWS resources.
+  * You can set up alert when CloudWatch monitors the conditions you are looking for
+* CloudWatch vs CloudTrail vs AWS Config
+  * CloudWatch watches performance
+  * CloudTrail watches API requests
+  * AWS Config records the state of AWS environment 
+
+# Other Exam Topics
   * To allow one AWS account to access and manage resources in another AWS account -> configure aws cross account access
   * Where would you store confidential information (credentials, license codes) for AWS resources? -> AWS Systems Manager Parameter Store (as parameter values)
