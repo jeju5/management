@@ -37,6 +37,8 @@
     * delegate policy(es) to a group or directly assign to a user
   * Role
     * set of permissions assigned to an entity(ex. EC2)
+* IAM Policy Simulator
+  * Test the effect of Policy before committing it.
 
 
 # SECTION3: EC2
@@ -324,7 +326,9 @@
   * ElastiCache for Redis: advanced data type (list, set, hash...), sorting & ranking, data persistency
     * data persistency: how likely is the data will remain safe? higher data persitency means safer the data is.
   * IN-MEMORY CACHING: Memcached --Complexity--> Redis
-
+* EC2 Auto Scaling Group
+  * An Auto Scaling group contains a collection of Amazon EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management.
+  * It ensures that proper number of EC2 Instances are used to handle the load of application
 
 # SECTION4: S3
 * S3 101
@@ -529,6 +533,24 @@
   * lambda scales out automatically (not scale up)
   * AWS X-ray debugs AWS Lambda
   * Lambda can work globally
+  * Lambda Concurrent Execution
+    * There is a concurret execution limit for Lambda
+    * default is 1000 execution per region (you can increase this limit)
+    * HTTP 429 TOO MANY REQUESTS error
+    * Reserved Concurrency guarantees number of execution sets for critical Lambda function (this also have a limit)
+  * Lambda Version
+    * When you create a new Lambda function. Its version is $LATEST
+    * You can create multiple versions and use it with alias to that version
+  * Access to VPC (Virtual Private Cloud)
+    * You can make Lambda to access third party VPC by providing private subnet id and security group id with vpc-config parameter (or in UI)
+      ```
+      aws lambda update-function-configuration \
+      --function-name myFunction \
+      --vpc-config SubnetIds=subnet=1122aa,SecuritGroupIds=sg-12321
+      ```
+      * private subnet id
+      * security group id
+      * then Lambda sets up ENIs
 * API Gateway
   * API = application programming interface = set of features that utilize an application.
     * REST API uses JSON
@@ -946,6 +968,15 @@
     * FIFO
       * First In First Out
       * 0 --> [0000] --> 0
+  * SQS Delay Queue
+    * postpones the delivery of new messages (invisible to consumers during delay duration)
+    * default is 0, maximum is 900 seconds
+    * setting delay queue doens't affect existing msg in Standard Queue (only new msg).
+    * setting delay queue does affect existing msg in FIFO Queue.
+  * Managing large message
+    * use S3 to store them
+    * Amazon SQS Extended Client Library for Java -> make SQS talk to S3
+    * use AWS Java SDK -> S3 API utilization (Can't use regular SQS API)
   * Visibility Timeout = amount of time that the message is invisible in the SQS queue after being read. (Default: 30sec, Max: 12Hours). Use ChangeMessageVisibility endpoint to do so.
   * Retention Period: Message can be kept unread for 1min to 14days.
   * There is a chance that message being read more than once. So use Visibility Timeout
@@ -958,6 +989,7 @@
   * follows pub-sub (publish-subscribe) model where SNS publishes msg and users subscribe to topics. (SNS pushes msg and no further checking on them)
   * When using Amazon SNS, you (as the owner) create a topic and control access to it by defining policies that determine which publishers and subscribers can communicate with the topic.
   * Consumer must subscribe to a topic to receieve notification from SNS.
+
 * SES (Simple Email Service)
   * email can trigger Lambda function, SNS notification.
   * email only
@@ -996,6 +1028,12 @@
         1. add additional Security Group to auto scaling group.
         2. provide DB connection credential in EBS. (with config file)
 * Kinesis
+  * Kinesis is a streaming service using Kinesis shards.
+    * Kinesis Shard = sequence of data
+    * Shard capacity
+      * READ: 5read/sec, 2MB/sec
+      * WRITE: 1000write/sec, 1MB/sec
+    * As data size increases, you increase the number of shards (re-sharding)
   * Streaming data = small chunks of data that is sent from a web service.
   * Kinesis Types
     1. Kinesis Streams
@@ -1007,6 +1045,14 @@
        * Producers -> Kinesis Firehose: automated storage and consumption process
     3. Kinesis Analytics
        * Producers -> Kinesis Analytics: has availibility for SQL queries.
+  * Kinesis Client Library
+    * A library running on consumer side at processor instance level.
+    * It creates a record processor for a shard.
+    * When shard number increases, KCL increases record processor number.
+    * LoadBalances between multiple consumers (processors number if equally distributed to consumer instances)
+    * You don't need multiple processors to process one shard. (because its only 1MB ~ 2MB).
+    * One consumer instance can handle multiple shards using multiple processors.
+    * Best Practice: AutoScaling Group
 * AWS Storages
   * AWS Sotrage Gateway: The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure. The AWS documentation states that; "You can think of a file gateway as a file system mount on S3."
   * Amazon Elastic File System (EFS) is a mountable file storage service for EC2, but has no connection to S3 which is an object storage service.
@@ -1231,6 +1277,15 @@
   * CloudTrail watches API requests
   * AWS Config records the state of AWS environment 
 
-# Other Exam Topics
-  * To allow one AWS account to access and manage resources in another AWS account -> configure aws cross account access
-  * Where would you store confidential information (credentials, license codes) for AWS resources? -> AWS Systems Manager Parameter Store (as parameter values)
+# Section12 Other Exam Topics & Tips
+* To allow one AWS account to access and manage resources in another AWS account -> configure aws cross account access
+* Where would you store confidential information (credentials, license codes) for AWS resources? -> AWS Systems Manager Parameter Store (as parameter values)
+* AWS CLI Pagination
+  * When you run cli command you can control the number of items displayed as a command output.
+  * be default: page size = 1000
+  * too large page size can result in time-out error -> use page-size or max-items
+    ```
+    aws s3api list-objects --bucket myBucket --page-size 120 (return all results in 120size pages)
+    aws s3api list-objects --bucket myBucket --max-items 120 (return first 120 items and that's it)
+    ```
+
