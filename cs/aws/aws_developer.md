@@ -715,8 +715,11 @@
     * goto AWS Lambda and see lambda functions that this job created
 * X-Ray
   * X-ray collects data on requests that application serves and allow users to view them.
+  * X-ray vs CloudTrail
+    * X-ray is a troubleshooting tool, recording everything possible
+    * CloudWatch is a API logger
   * Architecture
-    * X-Ray SDK -> X-Ray Daemon -> X-Ray API -> X-Ray Console
+    * EC2 -> X-Ray SDK & X-Ray Daemon -> X-Ray Daemon -> X-Ray API -> X-Ray Console
   * X-ray SDK provides
     * interceptors to trace HTTP requests
     * client handlers to instrument AWS SDK clients
@@ -1000,6 +1003,7 @@
 * Elastic Beanstalk
   * Deployment & Scaling Web service.
   * You can select EC2 of your choice
+  * You can also deploy docker image as well. (not only EC2)
   * Supports Java, php, Python, Ruby, Go, Docker, .Net, Node.js / Tomcat, Passenger, Puma, IIS
   * You can create an app with source code zip file. (this is saved to s3 bucket)
   * Deployment policy (Updating EBS)
