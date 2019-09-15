@@ -45,6 +45,12 @@
 * EC2 101
   * EC2 = ECC = Elastic Cloud Computing = Computing Service in Cloud
   * Pricing
+    ```
+    onDemand=ShortTime
+    reserved=Regular
+    Spot=FlexibleTime
+    DedicatedHost=RegionSpecific
+    ```
     * on demand: price by time -> good for short-term need (short-term also means specific short time)
     * reserved: capacity reservation -> good for regular-basis need
     * spot: capacity bidding -> good for flexible-time need (start time & end time), good for temporary additional need
