@@ -63,7 +63,7 @@
   RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 08 15 15 08 18 08 (done) 20 08 23 | 08 08 08 *26*
   
   WEIGHT
-  - usual: 65kg (64kg ~ 66kg)
+  - usual: 66kg (65kg ~ 67kg)
   - fight: 64kg (--2week--> 65kg --watercut--> 64kg)
   ```
   
