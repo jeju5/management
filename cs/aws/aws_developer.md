@@ -58,19 +58,8 @@
     * dedicated host: physical EC2 server -> good for region-specific regulations
   * Instance Type (optimized for)
     ```
-    "MONEY-HONDA-GOLF-SPECIALFORCE"
-   
-    ATM           C|RX       PGF       HID
-    Money         Honda      Golf   SpecialForce
-    General  Compute|Memory  GPU    Storage
-    
-    * GPU = accelerated
+    ATM'General' --- C'Compute' --- RX'Memory' --- PGF'Accelerated' --- HID'Storage'
     ```
-    * General: A T M
-    * Compute: C
-    * Memory: R X(extreme)
-    * Accelerated: P G F
-    * Storage: H I D
   * EBS = elastic block store
     * Volumes that can be attached to EC2
     * aws instance is placed at availability zone. (any instance like db, ec2, ...)
@@ -79,6 +68,11 @@
       * Availability Zones < Region (ex. US-east-1; default regions)
     * If you want to encrypt data, you have to configure encryption when creating EBS Volume
     * Types
+      ```
+      SSD: 'GP2' < 16000IOPS < 'IO1'
+      HDD: 'SC1'(fileserver) < OPtimized < 'ST1'(datawarehousing)   (can't be boot volume)
+      Magnetic: 'legacy'
+      ```
       * SSD
         * GP2 < 16000 < IO1
         * General Purpose SSD = GP2 (General): 3IOPS/GB, max 16,000 IOPS (IOPS = input/output operations per second)
@@ -120,11 +114,11 @@
         * upon launching an instance you will be prompted to "Select an existing key pair or create a new key pair"
         * you will need public key and private key
           * public/private key
-            * symmetric key encryption
+            * symmetric key encryption (encrypt/decrypt with the same key)
               ```
               PLAIN-TEXT ---encrypt with key1---> CIPHER-TEXT ---decrypt with key1---> PLAIN-TEXT
               ```
-            * asymmetrical key encryption
+            * asymmetrical key encryption (encrypt/decrypt with the differnt keys; decryption key is private key)
               ```
               PLAIN-TEXT ---encrypt with key1---> CIPHER-TEXT ---decrypt with key2---> PLAIN-TEXT
 
@@ -160,24 +154,22 @@
     * load balancer 101
       ```
       <OSI MODEL>
-      LAYER7: Application
+      LAYER7: Application --> layer7 load balancing: operates at Application layer
       LAYER6
       LAYER5
-      LAYER4: Transport
+      LAYER4: Transport  --> layer4 load balancing: operates at Transport(Network) layer
       LAYER3
       LAYER2
       LAYER1
       ```
-      * layer4 load balancing: operates at Transport layer
-      * layer7 load balancing: operates at Application layer
       * Types
-        * Application Load Balancer: HTTP, HTTPS. works within the application. incoming app traffic control
-        * Network Load Balancer: TCP works at layer-4, incoming network traffic controls
+        * Application Load Balancer: HTTP/HTTPS. works within the application. incoming app traffic control
+        * Network Load Balancer: TCP/SSL. incoming network traffic controls
         * Classic Load Balancer: HTTP, HTTPS, TCP, SSL. doesn't look at the request. single port mapping
       * when your load balancer fails, it throws 504 error (gateway timeout)
       * x-forwarded-for header
-        * Public IP makes a request -> DNS -> Load Balancer -> Application Server
-        * Application Server will get public ip as "x-forwarded-for header"
+        * Requester (Public IP) -> DNS -> Load Balancer -> Application Server
+        * Application Server will get Requester (public ip) as "x-forwarded-for header"
   * Route53 Lab
     * Route53 is AWS DNS service. It maps the request to EC2, S3 or load balancer
     * Services -> Route 53 -> DNS management 'Get Started Now'
@@ -234,7 +226,7 @@
       * give least privilege to a user.
       * create groups and assign to user(s) properly.
       * don't use a single access key. assign keys to different roles/users/groups.
-      * when a developer leaves a group -> delete it and create a new one. (don't reuse it)
+      * when a developer leaves a group -> delete the key and create a new key. (don't reuse it)
   * RoleBased EC2
     * Create a S3 bucket
     * Create a user that has no access
@@ -260,18 +252,22 @@
         stop or terminate instances.
     
 * RDS 101: AWS DB Services
-  * SQL Server, MySQL...(OL"T"P = Online Transaction Processing = Receieves the request and handles query reqeust. ex) ATM)
-  * RedShift (OL"A"P = Online Analytics Processing = Analyzes Data and provides the data. ex) Datawarehousing)
+  * OLTP (OL"T"P = Online Transaction Processing)
+    * SQL Server, MySQL...
+    * Receieves the request and handles query reqeust. ex) ATM)
+  * OLAP (OL"A"P = Online Analytics Processing)
+    * RedShift
+    * Analyzes Data and provides the data. ex) Datawarehousing)
   * DynamoDB (NoSQL)
   * ElastiCache caches data in in-memory database, and it supports Memcached & Redis.
-* RDS LAB
+* AWS RDS(Relational Database) LAB
   * AWS UI -> RDS -> Launch DB
     * Select MySQL
     * Create DB (set username, password, hostname and dbname as acloudguru)
     * click RDS instance you created. copy public endpoint (acloudguru.cn4wzd2dzaem.us-east-2.rds.amazonaws.com)
   * AWS UI -> EC2 -> Launch EC2
     * keep everything as default
-    * Configure User Details
+    * configure User Details
       * Place shell scripts for advanced details section (as Text). This script will be executed during the launch.
         ```
         #!/bin/bash
@@ -298,18 +294,17 @@
       * select rds-lab-wizard (Don't confuse with Security Group that EC2 uses. This is Security Group that RDS uses.)
         * this is used by RDS instance by default. (go check RDS -> instance -> Security)
         * click -> inbound -> edit
-          * add type: MySQL, port: 3306, source: myWebDMZ (type this it will give back a source
+          * add type: MySQL, port: 3306, source: myWebDMZ (type this it will give back a source)
     * What will happen (TEST)
       * {ipaddressofEC2}/connect.php --HTTP-'myWebDMZ'--> [EC2] --'rds-lab-wizard'--> [RDS]
 * BackUps
-  * Automatic Backup
-  * Manual DB Snapshot
+  * composed of 'Automatic Backup' and 'Manual DB Snapshot' (backup=entire copy of db, snapshot=readonly copy of db at certain point)
   * AWS Console -> RDS
     * Select RDS instance -> check actions 'Restore to point in time, Take Snapshots ...'
     * Create a snapshot.
     * ON the left, click Snapshots. You will see previously taken snapshots.
     * Select the snapshot you created. Click 'Copy Snapshot'
-* Encryption
+* RDS Encryption
   * Done via AWS Key management (KMS)
   * If encrpyted, anything related to it (data, read replica, backup and snapshots) is encrypted.
 * Multi-AZ (AZ = Availability Zone)
@@ -343,21 +338,32 @@
     * allows you to upload files
     * block storage is a storage that holds data using raw volumes
     * unavailable for OS, DB, Block
-  * unlimited
+  * unlimited total storage
   * each file can be 0-5TB
   * files are stores in bucket (similart to folder)
   * s3 bucket name should be named universially unique. (globally unique)
   * HTTP 200 Code if upload was successful
   * Data Consistency Model
     * Create -> Read after Write Consisteny -> New file is immediately accessible.
-    * Update/Delete -> Eventual Consistency -> Delete or overwriting is not immediatley applied. (takes time to propagate)
+    * Update/Delete -> Eventual Consistency -> Delete or update is not immediatley applied. (takes time to propagate)
   * Object consists of (5core/4subresources)
-    * Key: File name
-    * Value: File data (key/value model)
-    * VersionId: versioning information
-    * Metadata: user defined data about data
-    * Subresources: bucket specific configuration data
-      * (4): bucket policy, access control list, CORS(cross origin resource sharing), transfer accelaraion
+    ```
+    - 1.Key
+    - 2.Value: 
+    - 3.VersionId
+    - 4.Metadata
+    - 5.Subresources
+      - 5-1.bucket policy
+      - 5-2.ACL(access control list: privilege & access configuration)
+      - 5-3.CORS(cross origin resource sharing)
+      - 5-4.transfer accelaration
+        
+    Key: File name
+    Value: File data (key/value model)
+    VersionId: versioning information
+    Metadata: user defined data about data
+    Subresources: bucket specific configuration data
+    ```
   * Tiers
     * S3 Standard
       * nine9 durability : 99.999999999% (unlikely to loss data)   # but data will be there anyway.
@@ -372,7 +378,7 @@
       * 99.99% availibility and durability to provide one-year storage.
       * good for data that can be easiliy regenerated if lost.
     * Glacier
-      * Very cheap, Verp slow. Works for very infrequently accessed data (historic archive)
+      * Very cheap, Verp slow. Works for very infrequently accessed data (proper for historic archive)
     * S3 Intelligent Tiering
       * same availability and durability as Standard S3.
       * good for unknown access patterns.
@@ -417,7 +423,7 @@
     * SSL/TLS
     * encrypts data in network
   * S3 Encryption "at Rest"
-    * SSE (Server Side Encryption)
+    * SSE (Server Side Encryption) via 'SSE-S3/SSE-KMS/SSE-C'
       * SSE-S3
         * S3 Managed Key
         * x-amz-server-side-encryption: AES256
@@ -475,7 +481,7 @@
 * CDN (content delivery network)
   * web service that speeds up web content delivery based on geographic location of a user.
   * edge location handles web requests from nearby locations instead of directly hitting origin
-    * edge location (!= AWS Region) (!= AZ)
+    * edge location (!= AWS Region) (!= AZ) (=nearby caching location)
       * geographically dispersed data center that caches web contents
       * you can also write contents you want inside edge location
     * origin
@@ -519,7 +525,7 @@
    * S3 performance update
      * 3500 put/sec
      * 5500 get/sec
-     * AWS updated its bucket performance. you don't need to randomize object key prefix to enhance s3 performance.
+     * AWS updated its bucket performance. and you don't need to randomize object key prefix to enhance s3 performance.
    * S3 101 Summary
      * s3 is object based
      * unlimited storage but each file should be 0byte - 5TB
@@ -528,8 +534,7 @@
      * universal naming
      * put(create): read after write consistency -> immediate
      * put(update) or delete: eventual consistency -> takes time
-     * don't use bucket url -> use s3 website url (url starts as https://s3-~~~~~)
-
+     * don't use bucket url -> use internal s3 website url (url starts as https://s3-~~~~~ since s3 is aws service in public sector)
 
 # SECTION5: Serverless Computing
 * AWS Lambda
@@ -583,14 +588,14 @@
     restrict the types of allowed requests.
     When the browser is told what origins are allowed it will block future requests from disallowed origins.
     ```
-  * you can log results to Cloud Watch
+  * you can log results to CloudWatch
   * you can track usage by api key
   * you can maintain multiple versions
   * API Gateway supports Swagger Import, which creates an API based on the documentation
   * you can update existing api endpoint with overwrite/merge.
   * AWS API Gateway capacity
     * 10,000 requests per second
-    *  5,000 requests concurrent across all APIs with in a single account
+    *  5,000 concurrent requests (across all APIs with in a single account)
     * if you reach the capacity you will get 429 Too Many Reqeusts response
 * Build a serverless website
   * S3
@@ -704,8 +709,8 @@
       * choose a template 'fact skill'
       * in dashboard paste lambda function arn into default region section
       * click save endpoint. this will host Alexa to this lambda endpoint.
-* Step Function
-  * allows visualization of workflow
+* AWS Step Function
+  * allows visualization of workflow & status
   * Amazon States Language is the language that builds this step function (it is JSON-based)
   * it logs state of each step
   * LAB
@@ -720,13 +725,13 @@
     * goto AWS UI -> Step Function and see how this job is being executed.
     * goto AWS Lambda and see lambda functions that this job created
 * X-Ray
-  * X-ray collects data on requests that application serves and allow users to view them.
-  * X-ray vs CloudTrail
+  * X-Ray collects data on requests that application serves and allow users to view them.
+  * X-Ray vs CloudTrail
     * X-ray is a troubleshooting tool, recording everything possible
     * CloudWatch is a API logger
   * Architecture
     * EC2 -> X-Ray SDK & X-Ray Daemon -> X-Ray Daemon -> X-Ray API -> X-Ray Console
-  * X-ray SDK provides
+  * X-Ray SDK provides
     * interceptors to trace HTTP requests
     * client handlers to instrument AWS SDK clients
     * HTTP client to call internal/external HTTP web services
@@ -766,7 +771,8 @@
     * composite key: combination of partition key and sort key -> each item has its unique "partition key with sort key".
   * DynamoDB access control
     * authentication and access control is managed by AWS IAM
-    * ex) you can add a condition to IAM policy that DynamoDB uses to control access to certain data. (dynamodb:LeadingKeys)
+    * ex) how to make certain user can view only its data
+      * add userId in dynamodb:LeadingKeys where you maintain db with its userId being partitionKey (leadingKey=partitionKey)
       ```
       "Condition": {
         "ForAllValues:StringEquals": {
