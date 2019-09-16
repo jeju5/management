@@ -61,8 +61,8 @@ Flow5: cro jab - cro jab cro - cro jab cro jab
 
 Flow6: jab bab - jab bab cro - jab bab cro lhook
 Flow7: jab bro - jab bro lhook - jab bro lhook cro
-Flow8: bro jab - bro jab cro - bro jab cro bab
-Flow9: jab lbody - jab lbody lbody - jab lbody lupper cro
+Flow8: jab rbody - jab rbody lbody - jab rbody lbody lhook
+Flow9: jab lbody - jab lbody lupper - jab lbody lupper cro
 Flow10: jab rupper - jab rupper lhook - jab rupper lhook rbody
 ```
 
