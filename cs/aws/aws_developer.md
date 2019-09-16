@@ -965,10 +965,21 @@
     * aws kms enable-key-rotation   take a key and rotate it every year
   * Envelope encryption
     ```
-    Customer Master Key -> Envelope Key (data key) -> Data
+                                          <Envelope>
+    Data --Plain DataKey--------------> Encrypted Data
+               |
+               |
+               --Customer Master Key--> Encrypted DataKey
+    
+    1. DataKey encrypts Data
+    2. CMK encrypts DataKey
+    3. Encrypted Data and Encrypted DataKey is enveloped
     ```
-    * CMK decrypts the data key
-    * Envelop key decrypts the data
+  * Envelope decryption
+    ```
+    1. CMK decrypts Encrypted DataKey
+    2. Plain DataKey decrypts Encrypted Data
+    ```
 
 # SECTION8. Other Services
 * SQS (Simple Queue Service)
