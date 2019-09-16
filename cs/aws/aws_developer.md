@@ -1072,7 +1072,7 @@
     * One consumer instance can handle multiple shards using multiple processors.
     * Best Practice: AutoScaling Group
 * AWS Storages
-  * AWS Storage Gateway: The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure. The AWS documentation states that; "You can think of a file gateway as a file system mount on S3." (=File system on S3)
+  * AWS Storage Gateway: The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure. The AWS documentation states that; "You can think of a file gateway as a file system mount on S3." (=File system on S3) (=Hybrid Storage that enables on-premise app to use AWS Storage)
   * Amazon Elastic File System (EFS) is a mountable file storage service for EC2, but has no connection to S3 which is an object storage service. (=Object Storage on EC2)
   * Amazon Elastic Block Store (EBS) is a block level storage service for use with Amazon EC2 and again has no connection to S3. (=Block Storage on EC2)
 
@@ -1313,4 +1313,6 @@
     aws s3api list-objects --bucket myBucket --page-size 120 (return all results in 120size pages)
     aws s3api list-objects --bucket myBucket --max-items 120 (return first 120 items and that's it)
     ```
-
+* Default AWS SDK Region = US-EAST-1
+* Your mission-critical web application needs to store its session state so that it can be accessed quickly and is highly available. Which service should you use? => session stae => object data
+* You can select a specific Availability Zone in which to place your DynamoDB Table.
