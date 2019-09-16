@@ -1119,6 +1119,7 @@
     * you can check build logs in CodeBuild console. full logs in CloudWatch
 * AWS CodeDeploy
   * Compatiable with other management tools: AWS CodePipeline, Jenkins, Puppet, and ... etc.
+  * CodeDeploy vs ElasticBeanStalk. (ElasticBeanStalk is more of bigger end-to-end delivery service where code deploy is deployment specific service)
   * Two Deployment Options
     * In-Place(Rolling) Deployment
       * Rolling Update
@@ -1140,7 +1141,12 @@
       1. version: reserved for future use (currently 0.0 is allowed only)
       2. resources: properties(name, alias, currentVersion, TargetVersion) of Lambda to deploy
       3. hooks(Lambda): Lambda to run during deployment. You can specify point of time to execute each Lambda.
-         * new Lambda Created -> BeforeAllowTraffic -> trafficRerouted to new Lambda -> AfterAllowTraffic
+         ```
+         new Lambda Created
+         BeforeAllowTraffic
+         AllowTraffic         (=trafficRerouted to new Lambda)
+         AfterAllowTraffic
+         ```
          * BeforeAllowTraffic: point of time before traffic is routed to newly deployed Lambda. (validate Lambda is deployed correctly)
          * AfterAllowTraffic: point of time after traffic is routed to newly deployed Lambda. (validate Lambda is functioning correctly)
     * For EC2/OnPremises Deployment: three sections required (version, resources and hooks). Can be written in YAML (not JSON)
@@ -1157,9 +1163,11 @@
       2. os: OS you are using
       3. files: location of file to be copied from and to (source & destination)
       4. hooks: Lifecycle Hooks to run during deployment. You can specify point of time to execute each Script.
+         ```
          * BeforeBlockTraffic: Run tasks on instances before they are deregistered from a load balancer
          * BlockTraffic: Deregister instances from a load balancer
          * AfterBlockTraffic: Run tasks on instances after they are deregistered from a load balancer
+         
          * ApplicationStop: stop app to prepare for new version deployment 
          * DownloadBundle: copy app revision files to temp location
          * BeforeInstall: before Install
@@ -1167,9 +1175,11 @@
          * AfterInstall: after Install
          * ApplicationStart: start app for new version deployment
          * ValidateService: after app is started
+         
          * BeforeAllowTraffic: Run tasks on instances before they are egistered from a load balancer
          * AllowTraffic: register instances from a load balancer
          * AfterAllowTraffic: Run tasks on instances after they are registered from a load balancer
+         ```
          ```
          example
          
@@ -1197,22 +1207,22 @@
   * CloudFormation template describes endstate of infrastructure you want to provision.
   * You upload template to CloudFormation using S3
   * Resulting resource is called "CloudFormation Stack".
-  * If deployment fails (part of deployment), it rolls back the entire stack.
+  * If deployment fails (part of deployment), it rolls back the entire stack. (default)
   * CloudFormation Template (sections)
     * Parameters: input custom values (ex: env type)
     * Conditions: value based on condition (ex: create some resources based on input)
     * Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation)
-    * Mappings: custom mappings (ex: use different AMI for different regions; AMI is an amazon VM image)
+    * Mappings: custom mappings of key to different values (ex: use different key-values for different regions; AMI is an amazon VM image)
     * Transforms: reference code in S3 (ex: include template code snippet from outside into this template. use S3)
-    * Outputs: declare output values that you can import into different stacks.
+    * Outputs: declare output values that you can import into different stacks. (create cross-stack references)
   * AWS SAM (Serverless Application Model)
     * SAM is an extension for CloudFormation to deploy serverless apps
     * SAM CLI commands
-      * sam package: package up your deployment packages and upload it to S3
+      * sam package: "to S3" package up your deployment packages and upload it to S3
         ```
         sam package --template-file ./cloudFormationTemplate.yml --output-template-file samTemplate.yml --s3-bucket bucketname
         ```
-      * sam deploy: deploy serverless app with package you created with sam package. (deploys with CloudFormation
+      * sam deploy: "to World" deploy serverless app with package you created with sam package. (deploys with CloudFormation
         ```
         sam deploy --template-file ./samTemplate.yml --stack-name serverlessStack --capabilities CAPABILITY_IAM
 
@@ -1264,14 +1274,11 @@
     * In general, AWS Managed Policies or Customer Managed Policies are recommended.
     * Userful when permissions in a policy is strictly limited to this single user.
 * AssumeRoleWithWebIdentity
-  * API provided by STS (Security Token Service)
-  * Returns temp credentials for users authenticated by WebIdentityProvider.
-    * Returns AssumedRoleUser ARN and AssumedRole Id which temporary refers to temporary credentials (not IAM role/user)
+  * API provided by STS (Security Token Service) that returns temp credential to be used in AWS Resources
+    * Returns AssumedRoleUser (ARN & Id) which uniquely tied to temporary credentials (not IAM role/user)
   * Cognito uses STS to retrieve temp credentials for WebIndentityProvider authenticated users.
     ```
-    1. User <--> WebIdentityProvider
-    2.      <--> STS
-    3.      <--> AWS Resources
+    1. WebIdentityProvider --> AssumeRoleWithWebIdentity --> STS --> AWS Resources
     ```
 
 # SECTION11. CloudWatch
