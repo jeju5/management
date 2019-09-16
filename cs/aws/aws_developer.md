@@ -562,6 +562,38 @@
       * private subnet id
       * security group id
       * then Lambda sets up ENIs
+  * Upload Code
+    * use Cloudfront Template
+      ```
+      {
+        "Type" : "AWS::Lambda::Function",
+        "Properties" : {
+            "Code" : {
+              "S3Bucket" : String,
+              "S3Key" : String,
+              "S3ObjectVersion" : String,
+              "ZipFile" : String
+            },
+            "DeadLetterConfig" : DeadLetterConfig,
+            "Description" : String,
+            "Environment" : Environment,
+            "FunctionName" : String,
+            "Handler" : String,
+            "KmsKeyArn" : String,
+            "Layers" : [ String, ... ],
+            "MemorySize" : Integer,
+            "ReservedConcurrentExecutions" : Integer,
+            "Role" : String,
+            "Runtime" : String,
+            "Tags" : [ Tag, ... ],
+            "Timeout" : Integer,
+            "TracingConfig" : TracingConfig,
+            "VpcConfig" : VpcConfig
+          }
+      }
+      ```
+    * upload zip via LambdaConsole
+    * paste code in LambdaIDE
 * API Gateway
   * API = application programming interface = set of features that utilize an application.
     * REST API uses JSON
@@ -735,6 +767,20 @@
     * interceptors to trace HTTP requests
     * client handlers to instrument AWS SDK clients
     * HTTP client to call internal/external HTTP web services
+  * Works with the following services (not S3)
+    ```
+    API Gateway
+    App Mesh
+    CloudTrail
+    AWS Config
+    Amazon EC2
+    Elastic Beanstalk
+    Elastic Load Balancing
+    Lambda
+    Amazon SNS
+    Amazon SQS
+    Working with Go
+    ```
   * LAB
     * AWS UI -> BeanStalk
       * ApplicationName: scoreKeep, Code: Java
@@ -1224,7 +1270,7 @@
     * Conditions: value based on condition (ex: create some resources based on input)
     * Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation)
     * Mappings: custom mappings of key to different values (ex: use different key-values for different regions; AMI is an amazon VM image)
-    * Transforms: =transform code in s3 (ex: include template code snippet from outside into this template. use S3)
+    * Transforms: =transform code in s3 or use serverless(ex: include template code snippet from outside into this template. use S3)
     * Outputs: =reusable output values (declare output values that you can import into different stacks; cross-reference)
   * AWS SAM (Serverless Application Model)
     * SAM is an extension for CloudFormation to deploy serverless apps
@@ -1239,10 +1285,17 @@
 
         # capabilities: CAPABILITY_IAM grants permission for sam agent to create/deploy this app.
         ```
-      * you still need CloudFormationTemplate (AWSTemplateFormat), and you put AWS::Serverless::Function as Resources Type;
+      * you still need CloudFormationTemplate (AWSTemplateFormat). Look at Transform and Resources.Type
         ```
+        AWSTemplateFormatVersion: '2010-09-09'
+        Transform: 'AWS::Serverless-2016-10-31'
         Resources:
-         Type: AWS::CloudFormation::Stack
+          MyFunction:
+            Type: 'AWS::Serverless::Function'
+            Properties:
+              Handler: index.handler
+              Runtime: nodejs6.10
+              CodeUri: 's3://my-bucket/function.zip'
         ```
   * CloudFormation Nested Stacks
     * Nested Stacks allow re-use of CloudFormation code.
@@ -1252,6 +1305,9 @@
       Resources:
        Type: AWS::CloudFormation::Stack
       ```
+  * CloudFormation & Protection
+    * Stack Termination Protection provides a low friction mechanism to quickly protect stacks that contain critical resources. (protects accidental protection)
+    * Rollback Triggers allow you to quickly revert infrastructure changes that are having a negative impact to the performance of your applications. (roll back = deleting entire 'new' stack)
 # SECTION10. Advanced IAM
 * Web Identity Federation
   * Concept of granting permission to users who are authorized/authenticated through web identity provider. (Google/Facebook/Amazon...etc). Successful authentication from web identity provider is followed by getting an authentication code which can be traded for other credentials.
@@ -1359,3 +1415,7 @@
 * Ec2 Storage
   * EBS = persistent = durable = data not lost when EC2 stopped
   * Instance Storage= ephemeral = volatile = data lost when With EC2 stopped.
+* Security
+  * AWS Shield: managed Distributed Denial of Service (DDoS) protection service (layer3, layer4)
+  * AWS WAF(Web Application Firewall): Firewall that helps protect your web applications from common web exploits (ex. SQL injection, IP attack, CrossSiteScripting)
+  * Amazon Macie: Security service that uses machine learning to automatically discover, classify, and protect sensitive data in AWS.
