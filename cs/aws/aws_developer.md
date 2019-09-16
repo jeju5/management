@@ -1072,9 +1072,9 @@
     * One consumer instance can handle multiple shards using multiple processors.
     * Best Practice: AutoScaling Group
 * AWS Storages
-  * AWS Sotrage Gateway: The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure. The AWS documentation states that; "You can think of a file gateway as a file system mount on S3."
-  * Amazon Elastic File System (EFS) is a mountable file storage service for EC2, but has no connection to S3 which is an object storage service.
-  * Amazon Elastic Block Store (EBS) is a block level storage service for use with Amazon EC2 and again has no connection to S3.
+  * AWS Storage Gateway: The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure. The AWS documentation states that; "You can think of a file gateway as a file system mount on S3." (=File system on S3)
+  * Amazon Elastic File System (EFS) is a mountable file storage service for EC2, but has no connection to S3 which is an object storage service. (=Object Storage on EC2)
+  * Amazon Elastic Block Store (EBS) is a block level storage service for use with Amazon EC2 and again has no connection to S3. (=Block Storage on EC2)
 
 # SECTION9. Developer Theroies
 * CI/CD
