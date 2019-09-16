@@ -813,8 +813,8 @@
     * each item is made of key/value pairs
   * Attribute: similar to column in table
   * DynamoDB stores/retrieves data based on a primary key
-    * partition key: unique attribute -> each item has its unique partition key
-    * composite key: combination of partition key and sort key -> each item has its unique "partition key with sort key".
+    * partition key: unique attribute -> each item has its unique partition key (note that partition key also is an attribute)
+    * composite key: combination of partition key and sort key -> each item has its unique "partition key with sort key". (2attribute)
   * DynamoDB access control
     * authentication and access control is managed by AWS IAM
     * ex) how to make certain user can view only its data
@@ -1004,6 +1004,7 @@
 * CMK (customer master key)
   * you can set up: Alias, Descryption, Created Date, Key Material(KMS default/External, Tags, Administrative Permission, Usage Permission, Policy
   * can never export CMK out of KMS
+  * KMS creates CMKs and never export them un-encrypted
   * API calls
     * aws kms encrypt     take your plain text -> create it into ecrypted file (decrypted -> encrypted)
     * aws kms decrypt     take your encrypted text -> create it into plain text (encrypted -> decrypted)
@@ -1371,7 +1372,8 @@
 
 # Section12 Other Exam Topics & Tips
 * To allow one AWS account to access and manage resources in another AWS account -> configure aws cross account access
-* Where would you store confidential information (credentials, license codes) for AWS resources? -> AWS Systems Manager Parameter Store (as parameter values)
+* AWS Systems Manager Parameter Store (SSM)
+  * Where would you store confidential information (credentials, license codes) for AWS resources? -> AWS Systems Manager Parameter Store (as parameter values)
 * AWS CLI Pagination
   * When you run cli command you can control the number of items displayed as a command output.
   * be default: page size = 1000
@@ -1419,3 +1421,24 @@
   * AWS Shield: managed Distributed Denial of Service (DDoS) protection service (layer3, layer4)
   * AWS WAF(Web Application Firewall): Firewall that helps protect your web applications from common web exploits (ex. SQL injection, IP attack, CrossSiteScripting)
   * Amazon Macie: Security service that uses machine learning to automatically discover, classify, and protect sensitive data in AWS.
+  
+* AWS API
+  * Use Usage Plans with API Keys
+    * Usage Plan: who can access one or more deployed API stages and methods
+    * API keys: keys that grant access to your API
+  * API Gateway Lambda Authorizers
+    * A Lambda authorizer (formerly known as a custom authorizer) is an API Gateway feature that uses a Lambda function to control access to your API
+    
+* EB vs ECS (ElasticBeanStalk vs ElasticContainerService)
+  * Elastic Beanstalk (multi-container) is an abstraction layer on top of ECS (Elastic Container Service) with some bootstrapped features and some limitations
+  * EB is easier, ECS is more-control
+* Cloudfront protocol: HTTP/HTTPS/RTMP (UDP not supported -> AWS Global Accelerator supports UDP)
+* AWS Api Gateway has Mapping Template
+  * API Gateway lets you use mapping templates to map the payload from a method request to the corresponding integration request and from an integration response to the corresponding method response.
+
+* CloudFormation & Find In Map
+```
+{ "Fn::FindInMap" : [ "MapName", "TopLevelKey", "SecondLevelKey"] }
+
+!FindInMap [ MapName, TopLevelKey, SecondLevelKey ]
+```
