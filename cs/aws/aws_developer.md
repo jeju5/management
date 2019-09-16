@@ -1345,4 +1345,6 @@
   * path-style URL (http://s3-aws-region.amazonaws.com/bucketName)
 * S3 hosting static website URL
   * http://bucketName.s3-website-us-west-2.amazonaws.com/
-
+* Ec2 Storage
+  * EBS = persistent = durable = data not lost when EC2 stopped
+  * Instance Storage= ephemeral = volatile = data lost when With EC2 stopped.
