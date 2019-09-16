@@ -1026,9 +1026,11 @@
       * deploys the new version in batches. (say you have 10, you update a batch of instances (say 3) then move on)
       * Update Fail -> To roll back, perform rolling update.
     * Rolling with Additional Batch Policy
+      * Create new batch of instances -> deploy -> Create mnew batch of instances -> deploy
       * Maintains full capacity during the deployment. (Performance Sensitive, Suitable for no-downtime app)
       * Update Fail -> To roll back, perform rolling update.
     * Immutable Deployment
+      * Create whole new instances -> deploy -> terminate old versions
       * Maintains full capacity during the deployment.
       * Creats a fresh group of instances in their autoscaling group -> Health Check Pass -> Move to new group -> Terminate old group
       * Update Fail -> To roll back, delete new instance and autoscaling group.
