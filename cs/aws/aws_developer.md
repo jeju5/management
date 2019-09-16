@@ -1224,8 +1224,8 @@
     * Conditions: value based on condition (ex: create some resources based on input)
     * Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation)
     * Mappings: custom mappings of key to different values (ex: use different key-values for different regions; AMI is an amazon VM image)
-    * Transforms: reference code in S3 (ex: include template code snippet from outside into this template. use S3)
-    * Outputs: declare output values that you can import into different stacks. (create cross-stack references)
+    * Transforms: =transform code in s3 (ex: include template code snippet from outside into this template. use S3)
+    * Outputs: =reusable output values (declare output values that you can import into different stacks; cross-reference)
   * AWS SAM (Serverless Application Model)
     * SAM is an extension for CloudFormation to deploy serverless apps
     * SAM CLI commands
