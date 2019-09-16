@@ -1315,4 +1315,34 @@
     ```
 * Default AWS SDK Region = US-EAST-1
 * Your mission-critical web application needs to store its session state so that it can be accessed quickly and is highly available. Which service should you use? => session stae => object data
-* You can select a specific Availability Zone in which to place your DynamoDB Table.
+* Read-After-Write Consistency = Strongly Eventual Consistency
+* Application Session State storage -> DynamoDB & Elasticache (DAX is a caching service)
+* EBS encryption -> Do when creating one
+* DynamoDB Table -> Region is selectable, AZ is not-selectable
+* EC2 link-local address
+  * iP address(169.254.169.254) only valid inside from ec2
+  * http://169.254.169.254/latest/meta-data/ is where you get meta-data
+* EC2 AWS::EC2::PlacementGroup
+  * specify ec2 deployment group
+  ```
+  "PlacementGroup" : {
+     "Type" : "AWS::EC2::PlacementGroup",
+     "Properties" : {
+              "Strategy" : "cluster"
+     }
+  }
+  ```
+  * types
+    * cluster: packs instances close together inside an Availability Zone
+    * spread: small group of instances across distinct underlying hardware to reduce correlated failures.
+    * partition: isolated partition (spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions.)
+* S3 URL
+  ```
+  host: bucket.s3-region.amazonaws.com
+  path: s3-region.amazonaws.com/bucket
+  ```
+  * virtual-hosted–style URL (http://bucketName.s3-aws-region.amazonaws.com or http://bucketName.s3.amazonaws.com (old) )
+  * path-style URL (http://s3-aws-region.amazonaws.com/bucketName)
+* S3 hosting static website URL
+  * http://bucketName.s3-website-us-west-2.amazonaws.com/
+
