@@ -402,7 +402,7 @@
     * Log: you can log all request to bucket.
     * Tag: you can set up taggings to track usage.
     * Object level logging: via CloudTrail
-    * Encryption: AES256(256bit) / AWSKMS(key management system) (these are server-side encryption)
+    * Encryption: AES256(256bit)-default / AWSKMS(key management system) (these are server-side encryption)
     * Metrics: via CloudWatch (AWS metrics sercice)
     * Public Access: you can configure public accessibility.
       * by default: it is completly "private" and S3 Log Delivery group has no write access
