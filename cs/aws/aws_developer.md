@@ -150,7 +150,7 @@
        ```
      * access IP address of your VM instance from a local
        * IPv4 Public IP address can be found from AWS Instances pane
-  * Load Balancer
+  * Load Balancer (ALB = Amazon Load Balancer)
     * load balancer 101
       ```
       <OSI MODEL>
@@ -1519,3 +1519,16 @@
   ```
   ex)  --region us-east-2
   ```
+
+* S3 bucket is private by default.
+  * to allow access you can either allow users manually in bucket policy or giving away pre-signed URL
+  * A presigned URL gives you access to the object identified in the URL
+  * advantage on presigned URL is that users outside of AWS can gain access to this object.
+  
+* speed up pipeline -> do parallel tasks (there is no caching in pipeline tasks)
+
+* When there is a need for debugging SQS msg -> use SQS DLQ(dead letter queue) to isolate debugging msg.
+
+
+4-2 test revisitlist
+
