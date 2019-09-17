@@ -760,7 +760,7 @@
   * X-Ray collects data on requests that application serves and allow users to view them.
   * X-Ray vs CloudTrail
     * X-ray is a troubleshooting tool, recording everything possible
-    * CloudWatch is a API logger
+    * CloudTrail is a API logger
   * Architecture
     * EC2 -> X-Ray SDK & X-Ray Daemon -> X-Ray Daemon -> X-Ray API -> X-Ray Console
   * X-Ray SDK provides
@@ -1274,7 +1274,9 @@
     * Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation)
     * Mappings: custom mappings of key to different values (ex: use different key-values for different regions; AMI is an amazon VM image)
     * Transforms: =transform code in s3 or use serverless(ex: include template code snippet from outside into this template. use S3)
-    * Outputs: =reusable output values (declare output values that you can import into different stacks; cross-reference)
+    * Outputs: = cross-stack reference
+      * For each AWS account, Export names must be unique within a region. (not across the global)
+      * whatever is Export name can be retrieved with Fn::ImportValue in different stack.
   * AWS SAM (Serverless Application Model)
     * SAM is an extension for CloudFormation to deploy serverless apps
     * SAM CLI commands
@@ -1348,7 +1350,7 @@
     * Returns AssumedRoleUser (ARN & Id) which uniquely tied to temporary credentials (not IAM role/user)
   * Cognito uses STS to retrieve temp credentials for WebIndentityProvider authenticated users.
     ```
-    1. WebIdentityProvider --> AssumeRoleWithWebIdentity --> STS --> AWS Resources
+    1. WebIdentityProvxider --> AssumeRoleWithWebIdentity --> STS --> AWS Resources
     ```
 
 # SECTION11. CloudWatch
@@ -1368,8 +1370,8 @@
   * You can retrieve logs of terminated AWS resources.
   * You can set up alert when CloudWatch monitors the conditions you are looking for
 * CloudWatch vs CloudTrail vs AWS Config
-  * CloudWatch watches performance
-  * CloudTrail watches API requests
+  * CloudWatch watches performance (health, operational status)
+  * CloudTrail watches API requests (API logs)
   * AWS Config records the state of AWS environment 
 
 # Section12 Other Exam Topics & Tips
@@ -1426,23 +1428,36 @@
   
 * AWS API
   * Use Usage Plans with API Keys
-    * Usage Plan: who can access one or more deployed API stages and methods
-    * API keys: keys that grant access to your API
+    * Usage Plan: manage who can access one or more deployed API stages and methods
+    * API keys: keys that grant access to the API (should be unique, can be associated with more than 1 usage plan, but only one usage plan in a single stage)
   * API Gateway Lambda Authorizers
     * A Lambda authorizer (formerly known as a custom authorizer) is an API Gateway feature that uses a Lambda function to control access to your API
     
 * EB vs ECS (ElasticBeanStalk vs ElasticContainerService)
   * Elastic Beanstalk (multi-container) is an abstraction layer on top of ECS (Elastic Container Service) with some bootstrapped features and some limitations
   * EB is easier, ECS is more-control
-* Cloudfront protocol: HTTP/HTTPS/RTMP (UDP not supported -> AWS Global Accelerator supports UDP)
+* Cloudfront can be distributed for HTTP/HTTPS/RTMP protocols (UDP not supported -> AWS Global Accelerator supports UDP)
 * AWS Api Gateway has Mapping Template
   * API Gateway lets you use mapping templates to map the payload from a method request to the corresponding integration request and from an integration response to the corresponding method response.
 
 * CloudFormation & Find In Map
 ```
 { "Fn::FindInMap" : [ "MapName", "TopLevelKey", "SecondLevelKey"] }
-
 !FindInMap [ MapName, TopLevelKey, SecondLevelKey ]
+
+"Fn::FindInMap" : [ 
+  "RegionMap", 
+  { 
+    "Ref" : "AWS::Region" 
+  }, 
+  "HVM64"
+]
+
+"RegionMap" : {
+  "us-east-1" : { 
+    "HVM64" : "ami-0ff8a91507f77f867", "HVMG2" : "ami-0a584ac55a7631c0c" 
+  },
+}
 ```
 
 * CloudFormation Template
@@ -1458,4 +1473,24 @@
     Fn::Not
     Fn::Or
     ```
-*
+* Classic Load balancing vs Application Load balancing
+  * Classic Load Balance is hard-coded port mapping. No flexibility for multi-task.
+  * Application Load Balancer does dynamic port mapping, allowing multi-tasking.
+
+* When using RDS & ElastiCache for an ElasticBeanStalk application
+  * Elasticache can be defined in .ebextensions (because if given externally then what happens if cache server disappears?)
+  * RDS can be referneced thru environmental variables (because if defined in .ebextensions, lifecycle is coupled to app lifecycle)
+
+* Route53
+  * to do domain mapping -> register Cname in Route53
+  * Routing Policy
+    ```
+    Simple routing policy – Use for a single resource that performs a given function for your domain, for example, a web server that serves content for the example.com website.
+
+    Failover routing policy – (healthy/unhelathy)
+    Geolocation routing policy – (absolute location)
+    Geoproximity routing policy – (nearest)
+    Latency routing policy – (best performance)
+    Weighted routing policy – (proportional)
+    Multivalue answer routing policy – (return multiple domains)
+    ```
