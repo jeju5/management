@@ -1098,7 +1098,7 @@
     * You can have configuration file
       * in YAML/JSON format
       * with .config extension
-      * inside .ebextensions folder (.ebextensions folder in the top-level directory)
+      * inside .ebextensions folder (.ebextensions folder in the top-level directory; path is .ebextensions/{NAME}.config)
   * EBS & RDS
     * you can create RDS database inside EBS (from EBS console). This is good for test env, but since RDS is coupled with EBS it has no flexibility in lifecycle.
     * Ideally in prod. env, decouple RDS from EBS.
@@ -1133,7 +1133,7 @@
     * Best Practice: AutoScaling Group
 * AWS Storages
   * AWS Storage Gateway: The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure. The AWS documentation states that; "You can think of a file gateway as a file system mount on S3." (=File system on S3) (=Hybrid Storage that enables on-premise app to use AWS Storage)
-  * Amazon Elastic File System (EFS) is a mountable file storage service for EC2, but has no connection to S3 which is an object storage service. (=Object Storage on EC2)
+  * Amazon Elastic File System (EFS) is a mountable file storage service for EC2, but has no connection to S3 which is an object storage service. (=Object Storage on EC2) (media processing, big data, analytics...)
   * Amazon Elastic Block Store (EBS) is a block level storage service for use with Amazon EC2 and again has no connection to S3. (=Block Storage on EC2)
 
 # SECTION9. Developer Theroies
@@ -1370,8 +1370,8 @@
   * You can retrieve logs of terminated AWS resources.
   * You can set up alert when CloudWatch monitors the conditions you are looking for
 * CloudWatch vs CloudTrail vs AWS Config
-  * CloudWatch watches performance (health, operational status)
-  * CloudTrail watches API requests (API logs)
+  * CloudWatch is performance monitor tool (health, operational status)
+  * CloudTrail is API logger/debugger tool (API logs)
   * AWS Config records the state of AWS environment 
 
 # Section12 Other Exam Topics & Tips
@@ -1445,19 +1445,19 @@
 { "Fn::FindInMap" : [ "MapName", "TopLevelKey", "SecondLevelKey"] }
 !FindInMap [ MapName, TopLevelKey, SecondLevelKey ]
 
-"Fn::FindInMap" : [ 
-  "RegionMap", 
-  { 
-    "Ref" : "AWS::Region" 
-  }, 
-  "HVM64"
-]
-
 "RegionMap" : {
   "us-east-1" : { 
     "HVM64" : "ami-0ff8a91507f77f867", "HVMG2" : "ami-0a584ac55a7631c0c" 
   },
 }
+
+"Fn::FindInMap" : [ 
+  "RegionMap", 
+  { 
+    "Ref" : "AWS::Region" 
+  }, 
+  "HVM64" 
+]   returns ami-0ff8a91507f77f867
 ```
 
 * CloudFormation Template
@@ -1466,7 +1466,9 @@
   * Condition function returns True/False, determining rest of the part in the section to be continued.
   * AWS intrinsic functions
     ```
-    Fn::Ref       (!Ref is same as Ref:)
+    Fn::Ref       return parameter . (!Ref is same as Fn::Ref:) 
+    Fn::GetAtt    return attribute value in a Resource Section
+    Fn::Sub       substitues string value
     Fn::And
     Fn::Equals
     Fn::If
@@ -1494,3 +1496,26 @@
     Weighted routing policy – (proportional)
     Multivalue answer routing policy – (return multiple domains)
     ```
+    
+* Instead of KMS encryption, you can encrypt in application layer using EncryptionSDK
+
+* Cognito
+  * Authorization in Cognito IdentityPool --JWT--> Handle/Validate JWT Token in Cognito UserPool\
+  
+* CloudFormation & Codepipeline uses its artifact store as S3 (artifact is a file that is created during build process)
+
+* Serverless App types
+  ```
+  AWS::Serverless::Api -> api gateway
+  AWS::Serverless::Application -> application
+  AWS::Serverless::Function -> labmda
+  AWS::Serverless::LayerVersion -> library
+  AWS::Serverless::SimpleTable -> dynamodb
+  ```
+* SQS ChangeMessageVisibility vs Visibility Timeout
+  * when message timeout period is unpredictable, consumer should extend visibility timeout using ChangeMessageVisibility API action.
+  
+* in AWS CLI, passing value as a flag is better than aws configure (when possible)
+  ```
+  ex)  --region us-east-2
+  ```
