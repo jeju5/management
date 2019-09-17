@@ -1442,3 +1442,18 @@
 
 !FindInMap [ MapName, TopLevelKey, SecondLevelKey ]
 ```
+
+* CloudFormation Template
+  * Conditions section is a collection of condition function
+  * You can't define conditions in parameter section. Conditions make use of what's coming from parameter.
+  * Condition function returns True/False, determining rest of the part in the section to be continued.
+  * AWS intrinsic functions
+    ```
+    Fn::Ref       (!Ref is same as Ref:)
+    Fn::And
+    Fn::Equals
+    Fn::If
+    Fn::Not
+    Fn::Or
+    ```
+*
