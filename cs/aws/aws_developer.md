@@ -1004,6 +1004,7 @@
 * CMK (customer master key)
   * you can set up: Alias, Descryption, Created Date, Key Material(KMS default/External, Tags, Administrative Permission, Usage Permission, Policy
   * can never export CMK out of KMS
+  * KMS encrypts/decrpyts data and stores CMK
   * KMS creates CMKs and never export them un-encrypted
   * API calls
     * aws kms encrypt     take your plain text -> create it into ecrypted file (decrypted -> encrypted)
@@ -1082,6 +1083,7 @@
       * Update Fail -> To roll back, perform all at once.
     * Rolling
       * deploys the new version in batches. (say you have 10, you update a batch of instances (say 3) then move on)
+      * it doesn't increase instance numbers
       * Update Fail -> To roll back, perform rolling update.
     * Rolling with Additional Batch Policy
       * Create new batch of instances -> deploy -> Create mnew batch of instances -> deploy
