@@ -557,6 +557,7 @@
     * When you create a new Lambda function. Its version is $LATEST
     * You can create multiple versions and use it with alias to that version
   * You can configure RAM Memory assigned to a Lambda for performance requirement.
+  * environemntal variable size total shouldn't exceed 4kb
   * Access to VPC (Virtual Private Cloud)
     * You can make Lambda to access third party VPC by providing private subnet id and security group id with vpc-config parameter (or in UI)
       ```
@@ -1066,7 +1067,7 @@
   * Retention Period: Message can be kept unread for 1min to 14days.
   * There is a chance that message being read more than once. So use Visibility Timeout
   * Regular Short Poll returns immediately. (even if msg wanted is not queued)
-  * Long Poll returns after a msg is queued. (if not, times out - 20secondsx)
+  * Long Poll returns after a msg is queued. (not retention period stuff. Its wait and return logic) (if not, times out - 20secondsx)
 * SNS (Simple Notification Service)
   * Push Based (no polling)
   * SNS can deliver SMS text message, Emails and HTTP endpoints.
@@ -1421,8 +1422,11 @@
     * RAM Utilization
     * Disk Utilization
   * Granularity (How small can the metric unit be?)
-    * 1min (detailed: minimum)
-    * 5min (standard)
+    * standard resolution
+      * 1min (detailed: minimum)
+      * 5min (standard)
+    * high resolution
+      * 1sec (minimum)
   * Retrievable with API
   * By default logs are store indefinitely. (You can configure this)
   * You can retrieve logs of terminated AWS resources.
@@ -1454,6 +1458,9 @@
   * iP address(169.254.169.254) only valid inside from ec2
   * http://169.254.169.254/latest/meta-data/ is where you get meta-data
     * EC2 metadata is some dynamic values like instance id, hostname ...etc (policy is not here)
+  * Retrieve Instance User Data
+    * To retrieve user data from within a running instance, use the following URI:
+    * http://169.254.169.254/latest/user-data
 * EC2 AWS::EC2::PlacementGroup
   * specify ec2 deployment group
   ```
@@ -1603,3 +1610,4 @@
 
 * CloudFormation templates are uploaded to S3 (by default it creates one in a region, and reuse it for that purpose)
 
+* AWS Fargate is a serverless compute service.
