@@ -39,6 +39,7 @@
     * set of permissions assigned to an entity(ex. EC2)
 * IAM Policy Simulator
   * Test the effect of Policy before committing it.
+* IAM sig4 only means signature 4 signed IAM.
 
 
 # SECTION3: EC2
@@ -247,10 +248,12 @@
       * whenever you use this instance, you will have all permission that this Role has.
       * if you try EC2 with a user that has no access, you will still have some permission to this RoleBasedEC2
     * EXAM TIP
-      * Roles alloow you to not use Keys (Access Keys, Secret Keys)
+      * Roles allow you to not use Keys (Access Keys, Secret Keys)
       * Rolse are preferred (security perspective) because it is easily detached/attached to instances without having to 
         stop or terminate instances.
-    
+  * RoleBased EC2 task
+    * Like you create a Role and assign to an instance, you can create a role and assign to a EC2 task.
+  
 * RDS 101: AWS DB Services
   * OLTP (OL"T"P = Online Transaction Processing)
     * SQL Server, MySQL...
@@ -425,12 +428,13 @@
   * S3 Encryption "at Rest"
     * SSE (Server Side Encryption) via 'SSE-S3/SSE-KMS/SSE-C'
       * SSE-S3
-        * S3 Managed Key
+        * use S3 Managed Key
         * x-amz-server-side-encryption: AES256
       * SSE-KMS
-        * AWS Managed Key (=Key Management Service)
+        * use KMS Managed key
         * x-amz-server-side-encryption: KMS
-      * SSE-C (Customer Managed Key)
+      * SSE-C 
+        * use CMK (Customer Managed Key)
     * CSE (Client Side Encryption)
       * You encryption data on your own (application level)
   * When object is uploaded to S3, PUT method is initiated.
@@ -529,7 +533,7 @@
    * S3 101 Summary
      * s3 is object based
      * unlimited storage but each file should be 0byte - 5TB
-     * single operation can handle 5GB (PUT update -> 5GB is the limit)
+     * single operation can handle 5GB (PUT update -> 5GB is the limit; use multi-part upload if exceeds 5GB)
      * files are stored in bucket
      * universal naming
      * put(create): read after write consistency -> immediate
@@ -552,6 +556,7 @@
   * Lambda Version
     * When you create a new Lambda function. Its version is $LATEST
     * You can create multiple versions and use it with alias to that version
+  * You can configure RAM Memory assigned to a Lambda for performance requirement.
   * Access to VPC (Virtual Private Cloud)
     * You can make Lambda to access third party VPC by providing private subnet id and security group id with vpc-config parameter (or in UI)
       ```
@@ -629,6 +634,8 @@
     * 10,000 requests per second
     *  5,000 concurrent requests (across all APIs with in a single account)
     * if you reach the capacity you will get 429 Too Many Reqeusts response
+  * Stage Variable
+    * think of API stage as environment. You can set up different stage variable to be used in different env.
 * Build a serverless website
   * S3
     * create an S3
@@ -761,6 +768,7 @@
   * X-Ray vs CloudTrail
     * X-ray is a troubleshooting tool, recording everything possible
     * CloudTrail is a API logger
+  * You have to enable 'active tracing' to accept data coming into X-Ray
   * Architecture
     * EC2 -> X-Ray SDK & X-Ray Daemon -> X-Ray Daemon -> X-Ray API -> X-Ray Console
   * X-Ray SDK provides
@@ -982,6 +990,7 @@
   * exponential back off
     * AWS uses exponentialBackOff. This means when request fails AWS retries with progressively longer waits.
     * ExponentialBackOff is not limited to dynamoDB. It is a common feature of AWS SDK.
+    * it is simply a retry logic. AWS will automatically retry if something errors out, exponentially increasing the wait time.
   * BatchGetItem vs GetItem
     * GetItem returns a single item
     * BatchGetItem returns a set of items
@@ -1028,6 +1037,8 @@
     1. CMK decrypts Encrypted DataKey
     2. Plain DataKey decrypts Encrypted Data
     ```
+  * you can upload upto 4KB for KMS encryption.
+    * if it exceeds Envelope encryption with EncryptionSDK is recommended and put encrypted file within the service.
 
 # SECTION8. Other Services
 * SQS (Simple Queue Service)
@@ -1059,7 +1070,7 @@
 * SNS (Simple Notification Service)
   * Push Based (no polling)
   * SNS can deliver SMS text message, Emails and HTTP endpoints.
-  * SNS can trigger Lambda functions.
+  * SNS can target subscribers, lambda, SQS
   * follows pub-sub (publish-subscribe) model where SNS publishes msg and users subscribe to topics. (SNS pushes msg and no further checking on them)
   * When using Amazon SNS, you (as the owner) create a topic and control access to it by defining policies that determine which publishers and subscribers can communicate with the topic.
   * Consumer must subscribe to a topic to receieve notification from SNS.
@@ -1077,7 +1088,7 @@
   * You can also deploy docker image as well. (not only EC2)
   * Supports Java, php, Python, Ruby, Go, Docker, .Net, Node.js / Tomcat, Passenger, Puma, IIS
   * You can create an app with source code zip file. (this is saved to s3 bucket)
-  * Deployment policy (Updating EBS)
+  * Deployment policy (Updating EBS) & Method
     * All at once
       * Deploys the new version to all instances simultaneously/
       * Update Fail -> To roll back, perform all at once.
@@ -1094,6 +1105,8 @@
       * Maintains full capacity during the deployment.
       * Creats a fresh group of instances in their autoscaling group -> Health Check Pass -> Move to new group -> Terminate old group
       * Update Fail -> To roll back, delete new instance and autoscaling group.
+    * Blue/Green
+      * Similar to Immutable Deployment but differnt. It creates a new environment (immutable happens in the same env) and releases there. Then it reroutes to them using DNS.
   * Configuring EBS
     * You can have configuration file
       * in YAML/JSON format
@@ -1121,6 +1134,7 @@
        * Shards have TTL
     2. Kinesis Firehose
        * Producers -> Kinesis Firehose: automated storage and consumption process
+         * sink is how data is packaged for storage. Possible destinations are ElasticSearch, S3, redshift
     3. Kinesis Analytics
        * Producers -> Kinesis Analytics: has availibility for SQL queries.
   * Kinesis Client Library
@@ -1131,6 +1145,9 @@
     * You don't need multiple processors to process one shard. (because its only 1MB ~ 2MB).
     * One consumer instance can handle multiple shards using multiple processors.
     * Best Practice: AutoScaling Group
+  * Kinesis Server Side Encryption
+    * Kinesis automatically encrypts data before it's at rest by using an AWS KMS customer master key (CMK) you specify.
+  * Partition key is used to group data within a stream. Sequence Number is used with partition key (works like a sort key)
 * AWS Storages
   * AWS Storage Gateway: The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure. The AWS documentation states that; "You can think of a file gateway as a file system mount on S3." (=File system on S3) (=Hybrid Storage that enables on-premise app to use AWS Storage)
   * Amazon Elastic File System (EFS) is a mountable file storage service for EC2, but has no connection to S3 which is an object storage service. (=Object Storage on EC2) (media processing, big data, analytics...)
@@ -1158,6 +1175,7 @@
   * AWS Elastic Container Service
     * AWS docker container management platform
     * You can create AWS ECS clusters. (cluster = a group of instances)
+    * "ECS_ENABLE_TASK_IAM_ROLE=true" enables IAM roles for tasks in container
   * AWS Elastic Container Registry
     * AWS docker container registry platform
     * You can create a Repository to hold each docker image
@@ -1168,6 +1186,7 @@
     docker tag ........                                           # tag it
     docker push .......                                           # push it to ECR-repo
     ```
+  * When ECR push/pull to a repo it calls ecr:GetAuthorizationToken to get authorized. (configure IAM)
   * buildspec.yml
     * defines step to take on each build step
     * you can specify ECS/ECR commands in this file to automate everything
@@ -1234,10 +1253,12 @@
          * Install: Codedeploy agent copies the app revision files from temp location to correct location
          * AfterInstall: after Install
          * ApplicationStart: start app for new version deployment
-         * ValidateService: after app is started
+         * ValidateService: after app is started (last deployment lifecycle event where you can do something)
+         
+         --------------------------deployment end--------------------------
          
          * BeforeAllowTraffic: Run tasks on instances before they are egistered from a load balancer
-         * AllowTraffic: register instances from a load balancer
+         * AllowTraffic: register instances from a load balancer (last!last! lifecycle that is reserved for code deploy)
          * AfterAllowTraffic: Run tasks on instances after they are registered from a load balancer
          ```
          ```
@@ -1268,10 +1289,47 @@
   * You upload template to CloudFormation using S3
   * Resulting resource is called "CloudFormation Stack".
   * If deployment fails (part of deployment), it rolls back the entire stack. (default)
+  * When you want to delete an exporting stack, you have to delete the stack that imports the stack.
   * CloudFormation Template (sections)
-    * Parameters: input custom values (ex: env type)
+    ```
+    {
+      "AWSTemplateFormatVersion" : "version date",
+
+      "Description" : "JSON string",
+
+      "Metadata" : {
+        template metadata
+      },
+
+      "Parameters" : {
+        set of parameters
+      },
+
+      "Mappings" : {
+        set of mappings
+      },
+
+      "Conditions" : {
+        set of conditions
+      },
+
+      "Transform" : {
+        set of transforms
+      },
+
+      "Resources" : {
+        set of resources
+      },
+
+      "Outputs" : {
+        set of outputs
+      }
+    }
+    ```
+    * Metadata: information about this template
+    * Parameters: input custom values (ex: env type) (it can't be dependent to each other, they are all independent)
     * Conditions: value based on condition (ex: create some resources based on input)
-    * Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation)
+    * Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation) (the order it defined doesn't matter, they are created in a parallel manner)
     * Mappings: custom mappings of key to different values (ex: use different key-values for different regions; AMI is an amazon VM image)
     * Transforms: =transform code in s3 or use serverless(ex: include template code snippet from outside into this template. use S3)
     * Outputs: = cross-stack reference
@@ -1395,6 +1453,7 @@
 * EC2 link-local address
   * iP address(169.254.169.254) only valid inside from ec2
   * http://169.254.169.254/latest/meta-data/ is where you get meta-data
+    * EC2 metadata is some dynamic values like instance id, hostname ...etc (policy is not here)
 * EC2 AWS::EC2::PlacementGroup
   * specify ec2 deployment group
   ```
@@ -1419,7 +1478,7 @@
 * S3 hosting static website URL
   * http://bucketName.s3-website-us-west-2.amazonaws.com/
 * Ec2 Storage
-  * EBS = persistent = durable = data not lost when EC2 stopped
+  * EBS = persistent = durable = data not lost when EC2 stopped (it is locked with in a AZ; can't be shared to different AZ)
   * Instance Storage= ephemeral = volatile = data lost when With EC2 stopped.
 * Security
   * AWS Shield: managed Distributed Denial of Service (DDoS) protection service (layer3, layer4)
@@ -1474,6 +1533,7 @@
     Fn::If
     Fn::Not
     Fn::Or
+    Fn::Join      joins a string by delimiter
     ```
 * Classic Load balancing vs Application Load balancing
   * Classic Load Balance is hard-coded port mapping. No flexibility for multi-task.
@@ -1515,10 +1575,15 @@
 * SQS ChangeMessageVisibility vs Visibility Timeout
   * when message timeout period is unpredictable, consumer should extend visibility timeout using ChangeMessageVisibility API action.
   
-* in AWS CLI, passing value as a flag is better than aws configure (when possible)
-  ```
-  ex)  --region us-east-2
-  ```
+* AWS CLI
+  * in AWS CLI, passing value as a flag is better than aws configure (when possible)
+    ```
+    ex)  --region us-east-2
+    ```
+  * dry-run lets you test if you have permission to execute something
+    ```
+    --dry-run 
+    ```
 
 * S3 bucket is private by default.
   * to allow access you can either allow users manually in bucket policy or giving away pre-signed URL
@@ -1529,6 +1594,12 @@
 
 * When there is a need for debugging SQS msg -> use SQS DLQ(dead letter queue) to isolate debugging msg.
 
+* Canary Release
+  * When releasing a new API, route slowly to a new version (you can configure percentage of this)
+  
+* Error Cause
+  * Authorization -> IAM Roles and Permission
+  * Timeout -> Security Group Rule (EC2 Security Group Rule != IAM Group)
 
-4-2 test revisitlist
+* CloudFormation templates are uploaded to S3 (by default it creates one in a region, and reuse it for that purpose)
 
