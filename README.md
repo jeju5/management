@@ -74,25 +74,24 @@
 * IN TOTAL  : $4068
               $4068 Concur Salary
 -------------------------------------------------------
-* OUT TOTAL : $2227
+* OUT TOTAL : $2327
               $ 407 Offering: Tithe
               $  80 Offering: Reg
               $1095 Housing : Rent
               $  30 Housing : XcelEnergy
-              $ 120 Spending: Gas
-              $ 400 Spending: Personal (AMEX D)
-              $  30 Spending: Xfinity (AMEX H)
-              $  50 Spending: Tmobile (AMEX H)
-              $  15 Spending: Netflix/Amazon (AMEX H) 
+              $ 120 Spending: Gas (CASH+)
+              $ 500 Spending: Personal (CASH+)
+              $  30 Spending: Xfinity (CASH+)
+              $  50 Spending: Tmobile (CASH+)
+              $  15 Spending: Netflix/Amazon (CASH+)
+# CASH+ monthly estimate: $715
 -------------------------------------------------------
-* OUT OTHER : $  41
+* SAVE EST  : $1700 (1700x12=21600)
 -------------------------------------------------------
-* SAVE EST  : $1800 (1800x12=21600)
--------------------------------------------------------
-* AT THE END OF MONTH
-  * MAKE AMEX D PAYMENT ($100)
-  * MAKE AMEX H PAYMENT ($400)
-  * TRANSFER DEPOSIT TO SAVING
+* LAST DAY OF EACH MONTH
+  1. DEPOSIT MARCUS ($1500+)
+  2. PAY CASH+
+  3. SATISFY 2000/3000
               
 <OTHERS>
   - OUT: Auto Insurance
