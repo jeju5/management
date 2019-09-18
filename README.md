@@ -9,6 +9,7 @@
 * H1B interview scheduling
 * Udemy AWS Practice Exams https://www.udemy.com/aws-certified-developer-associate-practice-tests-dva-c01/
 * Boxing at Minneapolis Boxing Club
+* Tennis InnerCity
 
 # DAILY
   ```
@@ -30,7 +31,7 @@
   ------------------------
   0500       물/꿀물
   ------------------------
-  1200       요거트 & 치킨볶음
+  1200       요거트 & 치킨
   0100       피넛
   0200       아몬드
   ------------------------
