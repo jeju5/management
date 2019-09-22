@@ -1413,5 +1413,7 @@
 * Error Cause
   * Authorization -> IAM Roles and Permission
   * Timeout -> Security Group Rule (EC2 Security Group Rule != IAM Group)
+  
+* Security Group acts as a firewall. It is a service for EC2 & RDS.
 
 * AWS Fargate is a serverless compute service.
