@@ -219,6 +219,9 @@
     * x-forwarded-for header
       * Requester (Public IP) -> DNS -> Load Balancer -> Application Server
       * Application Server will get Requester address (public origin ip) as "x-forwarded-for header"
+* Session Stickiness (=session affinity)
+  * This ensures that all requests from the user during the session are sent to the same instance.
+  * By default, a Classic Load Balancer routes each request independently to the registered instance with the smallest load. You can enable session stickiness to make your service bind a request and an instance.
   
 
 # Route53
@@ -609,6 +612,7 @@
 * Lambda & Fails
   * synchronous invocation fails -> you will get an error
   * async invocation fails -> retries two more times -> if retry fails, log msg to DLQ (if configured)
+  * you can't set up sync/async invocation per lambda on event based trigger. It depends on 
 
 * API Gateway
   * API = application programming interface = set of features that utilize an application.
@@ -659,6 +663,8 @@
 * AWS Api Gateway has Mapping Template
   * API Gateway lets you use mapping templates to map the payload from a method request to the corresponding integration request and from an integration response to the corresponding method response.  
 
+* Api Gateway Caching
+  * you can enable caching with TTL to mitigate loads.
 
 * AWS Step Function
   * allows visualization of workflow & status
@@ -808,9 +814,7 @@
   * only accessible thru dedicated dynamodb api endpoint.
   * can be used as a datasource for Lambda function
   * capture a time-ordered sequence of all the activity which occurs on your DynamoDB table – e.g. insert, update, delete.
-* provisionedthroughputexceededexception
-  * exception that dynamodb table throws when requests exceed your provision configuration.
-  * if you use AWS SDK, it will automatically retry when exception is thrown.
+
 * AWS Exponential back off
   * AWS SDK has exponentialBackOff. This means when request fails AWS retries with progressively longer waits.
   * ExponentialBackOff is not limited to dynamoDB. It is AWS SDK feature.
@@ -821,7 +825,14 @@
   * BatchGetItem returns a set of items
 * Creating DynamoDB Table
   * Region is selectable, AZ is not-selectable
-
+* Provision
+  * WCU = write capacity unit.
+    * The WCU you provisioned is per table. Not shared across tables.
+  * ProvisionedThroughputExceededException
+    * exception that dynamodb table throws when requests exceed your provision configuration.
+    * if you use AWS SDK, it will automatically retry when exception is thrown.
+  * Hot partition
+    * When data access is imbalanced, a 'hot' partition can receive such a higher volume of read and write traffic compared to other partitions.
 
 
 # AWS Elasticache
@@ -938,6 +949,7 @@
 * You can encrypt message using KMS  
 * When there is a need for debugging SQS msg -> use SQS DLQ(dead letter queue) to isolate debugging msg.
 * SQS scales automatically.
+* To Delete a message, use 'PurgeQueue'
 
   
 * AWS SNS (Simple Notification Service)
@@ -1024,6 +1036,7 @@
          * sink is how data is packaged for storage. Possible destinations are ElasticSearch, S3, redshift
     3. Kinesis Analytics
        * Producers -> Kinesis Analytics: has availibility for SQL queries.
+       * process realtime data with SQL
   * Kinesis Client Library
     * A library running on consumer side at processor(ex. EC2) instance level.
     * It creates a record processor for a shard.
@@ -1340,6 +1353,11 @@
   * AWS Config records the state of AWS environment 
 * In CloudWatch, you can create a cron event to regularly trigger something like backing up a DB.
 
+* CloudWatch Alarm
+  * Regular: multiple of 1min
+  * High Resolution: 10sec/30sec
+  * note that this is not metric granularity (different)
+  
 
 # Other Topics & Tips
 * To allow one AWS account to access and manage resources in another AWS account
