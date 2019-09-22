@@ -605,6 +605,10 @@
 * Exam Tips
   * Lambda Scales out, not scales up (this means you have flexibility on number of concurrent lambda services running at the same time)
   * Lambda can work globally (ex. backup S3 bucket A to S3 bucket B)
+  
+* Lambda & Fails
+  * synchronous invocation fails -> you will get an error
+  * async invocation fails -> retries two more times -> if retry fails, log msg to DLQ (if configured)
 
 * API Gateway
   * API = application programming interface = set of features that utilize an application.
@@ -933,6 +937,7 @@
 
 * You can encrypt message using KMS  
 * When there is a need for debugging SQS msg -> use SQS DLQ(dead letter queue) to isolate debugging msg.
+* SQS scales automatically.
 
   
 * AWS SNS (Simple Notification Service)
