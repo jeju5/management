@@ -57,7 +57,8 @@
     * You can't user this policy to different users/groups/roles.
     * In general, AWS Managed Policies or Customer Managed Policies are recommended.
     * Userful when permissions in a policy is strictly limited to this single user.
-    
+* explicit permission/deny overrides general ones.
+  * ex. policy1 allows user1 & policy2 explicitly denies user1 ==> deny user1
 
 
 # EC2
@@ -613,6 +614,8 @@
   * synchronous invocation fails -> you will get an error
   * async invocation fails -> retries two more times -> if retry fails, log msg to DLQ (if configured)
   * you can't set up sync/async invocation per lambda on event based trigger. It depends on 
+
+* To enable 'reusing variables & singletons', Limit re-initialization of those on every invocation. You can Move the client initialization out of your function handler
 
 * API Gateway
   * API = application programming interface = set of features that utilize an application.
@@ -1435,3 +1438,6 @@
 * Security Group acts as a firewall. It is a service for EC2 & RDS.
 
 * AWS Fargate is a serverless compute service.
+
+* In General, anything comes out of encrypted AWS DB is encrypted.
+  * ex) encrypted RDS -> encrypted snapshot
