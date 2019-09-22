@@ -808,9 +808,10 @@
   * exception that dynamodb table throws when requests exceed your provision configuration.
   * if you use AWS SDK, it will automatically retry when exception is thrown.
 * AWS Exponential back off
-  * AWS uses exponentialBackOff. This means when request fails AWS retries with progressively longer waits.
-  * ExponentialBackOff is not limited to dynamoDB. It is a common feature of AWS SDK.
+  * AWS SDK has exponentialBackOff. This means when request fails AWS retries with progressively longer waits.
+  * ExponentialBackOff is not limited to dynamoDB. It is AWS SDK feature.
   * it is simply a retry logic. AWS will automatically retry if something errors out, exponentially increasing the wait time.
+  * you will have to configure it to use it.
 * BatchGetItem vs GetItem
   * GetItem returns a single item
   * BatchGetItem returns a set of items
@@ -919,8 +920,6 @@
   * Managing large message
     * make SQS talk to S3
       * use "Amazon SQS Extended Client Library" (Java) -> make SQS talk to S3
-      * use AWS Java SDK -> S3 API utilization (Can't use regular SQS API)
-      * upload large message in s3
   * Visibility Timeout
     * amount of time that the message is invisible in the SQS queue after being read.
     * Default: 30sec, Max: 12Hours
@@ -932,7 +931,7 @@
       * visibility time out: ttl of read msg vs retention period: ttl of unread msg
   * There is a chance that message being read more than once. So use Visibility Timeout
 
-  
+* You can encrypt message using KMS  
 * When there is a need for debugging SQS msg -> use SQS DLQ(dead letter queue) to isolate debugging msg.
 
   
