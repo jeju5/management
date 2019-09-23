@@ -140,6 +140,8 @@
 
 * EC2 AutoScaling Group
   * service that maintains stable performance by scaling up/down number of instances on demand
+  * The desired capacity, maximum capacity should be handled manually.
+  * if not manually adjusted, Auto Scaling group maintains this number of running instances even if an instance becomes unhealthy.
 
 * RoleBased EC2
   * Create a S3 bucket
@@ -417,12 +419,14 @@
     * good for unknown access patterns.
     * It has two tiers (frequent/infrequent) and it automatically moves your data to cost-effective tier.
     * no retrieval fee but has very small monthly maintenance fee.
+    
 * Charges
   * Storage (per GB)
   * Requests (Get, Put, Copy)
   * Storage Management (Analytics, Tagging)
   * Data Management (Data transfer out of S3; if data is transferred into S3, its free)
   * Transfer Acceleration (Use of Cloudfront CDN)
+  
 * S3 Security
   * Bucket is private by default (only owner has access)
   * You can set up
@@ -438,15 +442,24 @@
   * S3 Encryption "at Rest"
     * "SSE (Server Side Encryption) via SSE-C/S3/KMS"
     * SSE-C
-      * use CMK (Customer Managed Key)
+      * encryption key: you manage (Client Managed Keys)
+      * encryption: s3 manage
+      * HTTPS is mandatory (HTTP rejected)
     * SSE-S3
-      * use S3 Managed Key
+      * encryption key: s3 manage 
+      * encryption: s3 manage (S3 Managed Keys)
       * "x-amz-server-side-encryption": "AES256"
+      * supports HTTP/HTTPS
     * SSE-KMS
-      * use KMS Managed key
+      * encryption key: KMS manage  (S3 Managed Keys)
+      * encryption: s3 manage
+      * option to use envelope key, audit trail and create/manage encryption keys yourself.
       * "x-amz-server-side-encryption": "aws:kms"
+      * supports HTTP/HTTPS
+      
+* Enforcing Encryption
   * When object is uploaded to S3, PUT method is initiated.
-  * If you want to enforce encryption, deny all PUT without x-amz-server-side-encryption expectation.
+  * If you want to enforce encryption, deny all PUT without "x-amz-server-side-encryption" expectation.
 
 * S3 CORS (Cross Origin Resource Sharing)
   * create a public bucket (bucketA)
@@ -494,6 +507,12 @@
     * A presigned URL gives you access to the object identified in the URL (presigned URL is targeting an object)
     * advantage on presigned URL is that users outside of AWS can gain access to this object.
 
+* S3 Versioning
+  * Any unversioned file before versioning will have null version
+  * overwrite increases version
+  * delete is recoverable operation
+    * when you delete an object, Amazon S3 inserts a delete marker, which becomes the current object version and you can restore the previous version
+  * versioning applies to all object within the bucket. (can't specify folder/object to version)
 
 * Other AWS Storages Services
   * AWS Storage Gateway
@@ -684,6 +703,14 @@
     * click Jobs and see batch job is generated
     * goto AWS UI -> Step Function and see how this job is being executed.
     * goto AWS Lambda and see lambda functions that this job created
+    
+* Amazon Simple Work Flow
+  * similar to Step Function but more complex
+    * SF: user don't have to maintain infrastructure
+    * SWF: user have to maintain infrastructure
+  * Fully-managed state tracker and task coordinator in the Cloud.
+  * SWF is task-oriented API.
+  * SWF ensures that task is assigned only once. (unlike SQS)
 
 * X-Ray
   * X-Ray collects data on requests that application serves and allow users to view them.
@@ -800,19 +827,22 @@
   * write thru caching service: data is written in cache & back-end datastore.
   * suitable for eventual read consistency. (not suitable for strongly eventual read consistency)
   * no benefit for write intensive app. (doesn't help write operation)
+  
 * DynamoDB Transaction
     * ACID transaction
       * atomic: each transaction is treated as a single unit
       * consistent: no data corruption
       * isolated: doesn't affect other data
-      * durable: when transaction is committed, data stays as committed (even when datacenter powerloss, for example)
+      * durable: when transaction is committed, data stays as committed (even when datacenter powerloss, for example
+      
 * DynamoDB TTL
   * you can set up TTL for dynamoDB tables so that you don't keep irrelevant data.
   * TTL is expressed as epoch time(unix time stamp expression)
   * Console -> DynamoDB -> select table -> action: manage TTL
     * you can run preview TTL to see what happens afterward.
+    
 * DynamoDB Streams
-  * time ordered stream of item-level modification(insert/update/delete)
+  * "time ordered stream of item-level modification" (insert/update/delete)
   * logs are stored encrypted and for 24hrs.
   * only accessible thru dedicated dynamodb api endpoint.
   * can be used as a datasource for Lambda function
@@ -837,6 +867,7 @@
   * Hot partition
     * When data access is imbalanced, a 'hot' partition can receive such a higher volume of read and write traffic compared to other partitions.
 
+* If you want to delete entire records within the table, just 'DeleteTable' and recreate it.
 
 # AWS Elasticache
 * Elisticache
@@ -929,7 +960,7 @@
       * 0 --> [0000] --> 0
   * SQS Delay Queue
     * "mask message for a while" queue
-    * default is 0, maximum is 900 seconds
+    * default is 0, maximum is 900 seconds -> configured by 'DelaySeconds' parameter
     * setting delay queue doens't affect existing msg in Standard Queue (only new msg).
     * setting delay queue affects existing msg in FIFO Queue.
   * SQS Long Poll
@@ -1049,12 +1080,14 @@
     * You don't need multiple processors to process one shard. (because its only 1MB ~ 2MB).
     * One consumer instance can handle multiple shards using multiple processors.
     * Best Practice: AutoScaling Group
+  
   * Kinesis Server Side Encryption
     * Kinesis automatically encrypts data before it's at rest by using an AWS KMS customer master key (CMK) you specify. (data at rest simply means data is written for storage)
-  * Partition key is used to group data within a stream.
-  * Sequence Number is used with partition key (works like a sort key)
-
-
+  
+  * Kinesis DataStream
+    * Partition key is used to group data within a stream.
+      * when partition keys are not distributed well enough, data distribution across shards will be skewed causing ProvisionedThroughputExceededException.
+    * Sequence Number is used with partition key (works like a sort key)
 
 # SECTION9. Developer Theroies
 * CI/CD
@@ -1073,6 +1106,8 @@
 * AWS CodeCommit
   * Based on Git
   * Tracks and maintains commit history.
+  * Data in AWS CodeCommit repositories is encrypted in transit and at rest automatically by default.
+  
 * AWS CodeBuild
   * compiles and tests your code. (CodeCommit -> CodeBuild -> build Docker Image)
   * BUILDSPEC (buildspec.yaml)
@@ -1089,6 +1124,9 @@
     * AWS docker container management platform
     * You can create AWS ECS clusters. (cluster = a group of instances)
     * "ECS_ENABLE_TASK_IAM_ROLE=true" enables IAM roles for tasks in container
+    ```
+    aws ecs create-service --cluster MyCluster ... etc
+    ```
   * AWS Elastic Container Registry
     * AWS docker container registry platform
     * You can create a Repository to hold each docker image
@@ -1155,7 +1193,7 @@
         3. files: location of file to be copied from and to (source & destination)
         4. hooks: Lifecycle Hooks to run during deployment. You can specify point of time to execute each Script.
           ```
-          block.stop.download.install.start.validate.allow
+          7: blocktraffic.applicationstop.downloadbundle.install.applicationstart.validateservice.allowtraffic
           
           * BeforeBlockTraffic: Run tasks on instances before they are deregistered from a load balancer
           * BlockTraffic: Deregister instances from a load balancer
@@ -1334,6 +1372,11 @@
     1. WebIdentityProvxider --> AssumeRoleWithWebIdentity --> STS --> AWS Resources
     ```
 
+* AWS STS (security token service)
+  * STS allows you to request temporary AWS credentials
+  * assume-role-with-web-identity: Returns a set of temporary security credentials for users who have been authenticated
+  * decode-authorization-message: Decodes additional information about the authorization status of a request from an encoded message
+
 
 
 # CloudWatch
@@ -1454,11 +1497,6 @@
 * Elastic IP
   * IPv4 address designed for dynamic cloud computing.
   * With an Elastic IP address, you can mask the failure of an instance by rapidly remapping the address to another instance in your account.
-
-* Amazon SWF
-  * Fully-managed state tracker and task coordinator in the Cloud.
-  * SWF is task-oriented API.
-  * SWF ensures that task is assigned only once. (unlike SQS)
 
 * AWS Glue
   * data extract & load for analytics
