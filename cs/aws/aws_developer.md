@@ -441,10 +441,10 @@
       * use CMK (Customer Managed Key)
     * SSE-S3
       * use S3 Managed Key
-      * x-amz-server-side-encryption: AES256
+      * "x-amz-server-side-encryption": "AES256"
     * SSE-KMS
       * use KMS Managed key
-      * x-amz-server-side-encryption: KMS      
+      * "x-amz-server-side-encryption": "aws:kms"
   * When object is uploaded to S3, PUT method is initiated.
   * If you want to enforce encryption, deny all PUT without x-amz-server-side-encryption expectation.
 
