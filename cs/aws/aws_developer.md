@@ -187,11 +187,20 @@
     * partition: isolated partition (spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions.)
 
 * Ec2 Storage
-  * EBS
-    * persistent = durable = data not lost when EC2 stopped
-    * it is locked with in a AZ; can't be shared to different AZ
   * Instance Storage
     * ephemeral = volatile = data lost when With EC2 stopped.
+  * Amazon Elastic Block Store (EBS)
+    * Block Storage for EC2 (ec2 only)
+    * EBS encryption -> Do when creating one
+    * persistent = durable = data not lost when EC2 stopped
+    * it is locked with in a AZ; can't be shared to different AZ
+  * Amazon Elastic File System (EFS)
+    * Object storage for EC2 (and other aws services; not public)
+    * faster than s3
+    * designed to be shared across multiple instances
+
+* EC2 User Data
+  * when you want to define automated tasks give it to instance thru EC2 User Data when creating instance.
 
 
 
@@ -218,6 +227,14 @@
         * single port mapping
         * hard-coded port mapping. No flexibility for multi-task.
         * HTTP, HTTPS, TCP, SSL. doesn't look at the request.
+        * Health Check
+          * You can make load balanceer ping health check for their availability.
+          * InService (means healthy), OutofService (means unhealthy)
+          * If enabled, The load balancer performs health checks on all registered instances, whether the instance is in a healthy state or an unhealthy state.
+        * When creating Classic Load Balancer facing Internet, always resolve DNS name and use it. Never use IP address because it may change.
+        * path based routing is based on hostname & url-path. (URL = hostname:port/path)
+
+The load balancer routes requests only to the healthy instances. When the load balancer determines that an instance is unhealthy, it stops routing requests to that instance
     * when your load balancer fails, it throws 504 error (Gateway timeout)
     * x-forwarded-for header
       * Requester (Public IP) -> DNS -> Load Balancer -> Application Server
@@ -518,14 +535,6 @@
   * AWS Storage Gateway
     * "Hybrid File gateway as a file system mount on S3." (Hybrid: onPremise Service + AWS Storage)
     * The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure.
-  * Amazon Elastic Block Store (EBS)
-    * Block Storage for EC2 (ec2 only)
-    * EBS encryption -> Do when creating one
-  * Amazon Elastic File System (EFS)
-    * Object storage for EC2 (and other aws services; not public)
-    *  faster than s3
-
-
 
 
 # AWS CloudFront (content delivery network)
@@ -541,9 +550,10 @@
   * origin
     * origin of all files that CDN will distribute
 * you can configure regional restrictions on CDN (block japan  & russia for example)
-* Cloudfront can be distributed for HTTP/HTTPS/RTMP protocols (UDP not supported -> AWS Global Accelerator supports UDP)
-
-
+* Cloudfront & Protocols
+  * can be distributed for HTTP/HTTPS/RTMP protocols (UDP not supported -> AWS Global Accelerator supports UDP)
+  * You can use HTTPS for inbound/outbound
+    * user <--HTTPS--> CloudFront <--HTTPS--> Origin
 
 # Serverless Computing
 * AWS Lambda
@@ -605,6 +615,17 @@
       ```
     * upload zip via LambdaConsole
     * paste code in LambdaIDE
+
+* Cloudformation & CLI
+  * cloudformation package: uploads loacl sourcecodes/artifacts for to be built. returns the copy of template or s3bucket address that stores it.
+    ```
+    aws cloudformation package --template-file /path_to_template/template.json --s3-bucket bucket-name --output-template-file packaged-template.json
+    ```
+  * cloudformation deploy: builds resource specified by template
+    ```
+    aws cloudformation deploy --template-file /path_to_template/template.json --stack-name my-new-stack --parameter-overrides Key1=Value1 Key2=Value2 --tags Key1=Value1 Key2=Value2
+    ```
+
 
 * Lambda Version Control
   * each version of lambda function will have a unique ARN
@@ -687,6 +708,10 @@
 
 * Api Gateway Caching
   * you can enable caching with TTL to mitigate loads.
+  * caching control values are passed as Header param
+    ```
+    disable caching --> Header "Cache-Control: max-age=0"
+    ```
 
 * AWS Step Function
   * allows visualization of workflow & status
@@ -1047,6 +1072,9 @@
         1. add additional Security Group to auto scaling group.
         2. provide DB connection credential in EBS. (with config file)
 
+* Elastic Beanstalk prod/test env
+  * always create a seperate/independent env for each purpose
+  * don't share prod resources with test
 
 
 # AWS Kinesis
@@ -1132,10 +1160,15 @@
     * You can create a Repository to hold each docker image
     * ECR repo is different from CodeCommit repo. You can run following command in local {myCodeCommitRepo} with Dockerfile to push docker image to AWS ECR repo. You can find push commands in AWS console
     ```
+    # how to push
     aws ecr get-login --no-include-email --region eu-central-1    # do ecr login
     docker build -t {myECR-RepoName} .                            # build tag-able docker image
     docker tag ........                                           # tag it
     docker push .......                                           # push it to ECR-repo
+    
+    # how to pull
+    aws ecr get-login --no-include-email --region eu-central-1          # do ecr login
+    docker pull 1234567890.dkr.ecr.eu-west-1.amazonaws.com/demo:latest  # pull from ECR-repo
     ```
     * When ECR push/pull to a repo it calls ecr:GetAuthorizationToken to get authorized. (configure IAM)
   * codebuild caching can be done in s3
@@ -1154,11 +1187,14 @@
       * Blue is active(current) version instances
       * Green is new version instances
       * No Performance Down Issue
-    * Terms
-      * Deployment Group: A set of EC2 instances or Lambda functions where you will deploy new software.
-      * AppSpec File: A document that defines actions AWS CodeDeploy will execute
-  * CodeDeploy agent is a program that runs code deploy tasks in terminal
+
+  * Deployment Group
+    * A set of EC2 instances or Lambda functions where you will deploy new software.
+  * CodeDeploy agent
+    * program that runs code deploy tasks in terminal
+  
   * You can store revision codes in S3.
+  
   * AppSpecFile (appspec.yaml)
     * Defines parameters used for CodeDeploy.
     1. For Lambda Deployment
@@ -1412,6 +1448,9 @@
   * Alarm vs Event
     * alarm is based on metric you are watching
     * event is to handle when something happens
+    
+* CloudWatch Log Export
+  * You can export cloudwatch log data to S3 bucket.
   
 
 # Other Topics & Tips
@@ -1420,6 +1459,10 @@
   
 * AWS Systems Manager Parameter Store (SSM)
   * Where would you store confidential information (credentials, license codes) for AWS resources? -> AWS Systems Manager Parameter Store (as parameter values)
+  * SecureString
+    * you can create SecureString parameters
+    * plainText as parameterName, KMS encryptedValue as parameterValue
+    * SSM uses AWS KMS to encrypt and decrypt the parameter values of Secure String parameters.
 
 * Default AWS SDK Region = US-EAST-1
 
