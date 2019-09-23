@@ -1099,6 +1099,8 @@
     docker push .......                                           # push it to ECR-repo
     ```
     * When ECR push/pull to a repo it calls ecr:GetAuthorizationToken to get authorized. (configure IAM)
+  * codebuild caching can be done in s3
+    * in buildspec, set up cache: section
 
 * AWS CodeDeploy
   * Compatiable with other management tools: AWS CodePipeline, Jenkins, Puppet, and ... etc.
@@ -1443,3 +1445,7 @@
 
 * In General, anything comes out of encrypted AWS DB is encrypted.
   * ex) encrypted RDS -> encrypted snapshot
+  
+* Elastic IP
+  * IPv4 address designed for dynamic cloud computing.
+  * With an Elastic IP address, you can mask the failure of an instance by rapidly remapping the address to another instance in your account.
