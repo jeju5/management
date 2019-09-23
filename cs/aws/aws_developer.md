@@ -1459,3 +1459,6 @@
   * Fully-managed state tracker and task coordinator in the Cloud.
   * SWF is task-oriented API.
   * SWF ensures that task is assigned only once. (unlike SQS)
+
+* AWS Glue
+  * data extract & load for analytics
