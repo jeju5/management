@@ -918,6 +918,7 @@
   * message queue management system
   * message is a job message that tells a service to execute some tasks
   * SQS is a pull(=poll) based system (for example EC2 instance will have to pull message from SQS)
+  * you can retrieve 1~10 msg at one time
   * SQS allows you to decouple components of an app so they run independently.
   * Message maximum 256KB text in any format.
   * Queue Types
@@ -1453,3 +1454,8 @@
 * Elastic IP
   * IPv4 address designed for dynamic cloud computing.
   * With an Elastic IP address, you can mask the failure of an instance by rapidly remapping the address to another instance in your account.
+
+* Amazon SWF
+  * Fully-managed state tracker and task coordinator in the Cloud.
+  * SWF is task-oriented API.
+  * SWF ensures that task is assigned only once. (unlike SQS)
