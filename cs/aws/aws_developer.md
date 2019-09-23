@@ -1152,6 +1152,8 @@
         3. files: location of file to be copied from and to (source & destination)
         4. hooks: Lifecycle Hooks to run during deployment. You can specify point of time to execute each Script.
           ```
+          block.stop.download.install.start.validate.allow
+          
           * BeforeBlockTraffic: Run tasks on instances before they are deregistered from a load balancer
           * BlockTraffic: Deregister instances from a load balancer
           * AfterBlockTraffic: Run tasks on instances after they are deregistered from a load balancer
