@@ -1357,13 +1357,17 @@
 * CloudWatch vs CloudTrail vs AWS Config
   * CloudWatch is performance monitor tool (health, operational status)
   * CloudTrail is API logger/debugger tool (API logs)
-  * AWS Config records the state of AWS environment 
+  * AWS Config records the state of AWS environment
+  
 * In CloudWatch, you can create a cron event to regularly trigger something like backing up a DB.
 
 * CloudWatch Alarm
   * Regular: multiple of 1min
   * High Resolution: 10sec/30sec
   * note that this is not metric granularity (different)
+  * Alarm vs Event
+    * alarm is based on metric you are watching
+    * event is to handle when something happens
   
 
 # Other Topics & Tips
