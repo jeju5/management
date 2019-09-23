@@ -954,7 +954,7 @@
 * When there is a need for debugging SQS msg -> use SQS DLQ(dead letter queue) to isolate debugging msg.
 * SQS scales automatically.
 * To Delete a message, use 'PurgeQueue'
-
+* SQS msg limit is 1KB - 256KB(max)
   
 * AWS SNS (Simple Notification Service)
   * Push Based (no polling)
