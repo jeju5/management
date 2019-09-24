@@ -204,6 +204,7 @@
     * designed to be shared across multiple instances (shared across AZ)
 
 * EC2 User Data
+  * set of custom commands to execute when creating EC2 instance
   * when you want to define automated tasks give it to instance thru EC2 User Data when creating instance.
 
 
