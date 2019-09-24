@@ -172,7 +172,7 @@
     * To retrieve user data from within a running instance, use the following URI:
     * http://169.254.169.254/latest/user-data
 
-* with CloudFormation Template (EC2 AWS::EC2::PlacementGroup)
+* EC2 Placement in CloudFormation Template
   * specify ec2 deployment group
   ```
   "PlacementGroup" : {
@@ -183,9 +183,12 @@
   }
   ```
   * types
-    * cluster: packs instances close together inside an Availability Zone
-    * spread: small group of instances across distinct underlying hardware to reduce correlated failures.
-    * partition: isolated partition (spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions.)
+    * cluster
+      * with in AZ
+    * spread
+      * with in hardware (reduce correlated failures)
+    * partition
+      * with in logical group (one is seperate from the other)
 
 * Ec2 Storage
   * Instance Storage
