@@ -201,7 +201,7 @@
   * Amazon Elastic File System (EFS)
     * Object storage for EC2 (and other aws services; not public)
     * faster than s3
-    * designed to be shared across multiple instances
+    * designed to be shared across multiple instances (shared across AZ)
 
 * EC2 User Data
   * when you want to define automated tasks give it to instance thru EC2 User Data when creating instance.
