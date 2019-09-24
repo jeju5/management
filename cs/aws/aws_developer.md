@@ -233,12 +233,16 @@
           * If enabled, The load balancer performs health checks on all registered instances, whether the instance is in a healthy state or an unhealthy state.
         * When creating Classic Load Balancer facing Internet, always resolve DNS name and use it. Never use IP address because it may change.
         * path based routing is based on hostname & url-path. (URL = hostname:port/path)
+* ports
+  * default HTTP port: 80
+  * default HTTPS port: 443
 
-The load balancer routes requests only to the healthy instances. When the load balancer determines that an instance is unhealthy, it stops routing requests to that instance
-    * when your load balancer fails, it throws 504 error (Gateway timeout)
-    * x-forwarded-for header
-      * Requester (Public IP) -> DNS -> Load Balancer -> Application Server
-      * Application Server will get Requester address (public origin ip) as "x-forwarded-for header"
+* The load balancer routes requests only to the healthy instances.
+  * When the load balancer determines that an instance is unhealthy, it stops routing requests to that instance
+* when your load balancer fails, it throws 504 error (Gateway timeout)
+* x-forwarded-for header
+  * Requester (Public IP) -> DNS -> Load Balancer -> Application Server
+  * Application Server will get Requester address (public origin ip) as "x-forwarded-for header"
 * Session Stickiness (=session affinity)
   * This ensures that all requests from the user during the session are sent to the same instance.
   * By default, a Classic Load Balancer routes each request independently to the registered instance with the smallest load. You can enable session stickiness to make your service bind a request and an instance.
@@ -801,6 +805,18 @@ The load balancer routes requests only to the healthy instances. When the load b
 * X-Ray on multiple accounts
   * create an IAM role that has access on multiple accounts.
   * configure x-ray daemon to use this IAM role
+  
+* X-Ray Daemon
+  * AWS_XRAY_DAEMON_ADDRES
+    * host and port of the X-Ray daemon listener. (128.0.0.1:2000 by default)
+    * By default, the SDK uses 127.0.0.1:2000 for both trace data (UDP) and sampling (TCP).
+    * Use this variable if you have configured the daemon to listen on a different port or if it is running on a different host.
+  * AWS_XRAY_TRACING_NAME
+    * service name for segments
+  * AWS_XRAY_DEBUG_MODE
+    * Set to TRUE to configure the SDK to output logs to the console, instead of configuring a logger.
+
+
 
 # DYNAMO DB
 * Intro
@@ -1645,3 +1661,6 @@ The load balancer routes requests only to the healthy instances. When the load b
 
 * AWS ACM
   * AWS Certificate Manger
+
+* AWS CodeStar
+  * Quick CICD management tool like codepipeline (light version of code pipeline)
