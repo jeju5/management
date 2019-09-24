@@ -92,6 +92,7 @@
       * GP2 < 16000 < IO1
       * General Purpose SSD = GP2 (General): 3IOPS/GB, max 16,000 IOPS (IOPS = input/output operations per second)
       * Provisioned IOPS SSD = IO1 (Intensive): proper for more than 16,000 IOPS
+      * can be a boot volume
     * HDD
       * SC1 < Optimized < ST1 (op"T"imized)
       * Cold HHD = SC1
