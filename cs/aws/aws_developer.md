@@ -204,7 +204,6 @@
     * designed to be shared across multiple instances (shared across AZ)
 
 * EC2 User Data
-  * set of custom commands to execute when creating EC2 instance
   * when you want to define automated tasks give it to instance thru EC2 User Data when creating instance.
 
 
@@ -235,7 +234,7 @@
         * Health Check
           * You can make load balanceer ping health check for their availability.
           * InService (means healthy), OutofService (means unhealthy)
-          * If enabled, The load balancer performs health checks on all registered instances, whether the instance is in a healthy state or an unhealthy state.
+          * If Health Check enabled, The load balancer performs health checks on all registered instances, whether the instance is in a healthy state or an unhealthy state.
         * When creating Classic Load Balancer facing Internet, always resolve DNS name and use it. Never use IP address because it may change.
         * path based routing is based on hostname & url-path. (URL = hostname:port/path)
 * ports
