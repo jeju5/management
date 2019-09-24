@@ -672,6 +672,11 @@ The load balancer routes requests only to the healthy instances. When the load b
   
 * Lambda Good Practice
   * To enable 'reusing variables & singletons', Limit re-initialization of those on every invocation. You can Move the client initialization out of your function handler
+  
+* Temporary File
+  * Best way to store temporary files created by Lambda function is to put it under /tmp (512MB capacity)
+
+
 
 * AWS Lambda Deployment Package in Node.js
   * A deployment package is a ZIP archive that contains your function code and dependencies
@@ -793,6 +798,10 @@ The load balancer routes requests only to the healthy instances. When the load b
   * Fargate is  serverless ComputeEngine for ECS.
   * when you are using EC2, you run X-Ray agent on EC2. However, when you use it with Fargate, you run it on a sidecar container.
 
+* X-Ray on multiple accounts
+  * create an IAM role that has access on multiple accounts.
+  * configure x-ray daemon to use this IAM role
+
 # DYNAMO DB
 * Intro
   * DYNAMO DB is AWS NO SQL DB.
@@ -832,12 +841,14 @@ The load balancer routes requests only to the healthy instances. When the load b
   ```
 * Index
   * DynamoDB Index is a data structure that helps you perform fast queries. There are two types of DynamoDB Index,.
-  * Local Secondary Index
+  * Local Secondary Index (LSI)
     * index you can only create when you are creating a table. it can't be modified/added/removed.
     * has same partition key(unique key) as table, but different sort key.
-  * Global Secondary Index
+    * LSI uses same RCU & WCU as the table.
+  * Global Secondary Index (GSI)
     * index you can create when you create table or add later on
     * different partition key and sort key as table
+    * even when table's provision is enough, table can suffer throttling when GSI's resource is not enough.
 * Query
   * fins item in a table based on Primary Key or distinct value you are searching for.
   * you can use ProjectionExpression to return only wanted attributes from the query.
@@ -936,6 +947,7 @@ The load balancer routes requests only to the healthy instances. When the load b
       * supports multi-AZ
   * Two caching strategies
     * lazy-loading
+      * "write when requested - some stale & ttl"
       ```
       * when data is requested -> data is available in cache   -> return data from cache
                                   data is unavailable in cache -> return null -> get data from datastore and write it in the cache
@@ -950,6 +962,7 @@ The load balancer routes requests only to the healthy instances. When the load b
         * stale data: data is only updated when there is a cache miss. this means data can be outdated
           * TTL adjustment can help avoid stale data problem 
     * write-through:
+      * "write when written - no stale"
       * add/update data into cache whenever data is written(add/update) to the datastore.
       * advantage
         * data never stale.
@@ -1010,6 +1023,11 @@ The load balancer routes requests only to the healthy instances. When the load b
     * FIFO
       * First In First Out
       * 0 --> [0000] --> 0
+      * MessageGroupId
+        * tag that specifies that a message belongs to a specific message group. (you can use it for ordering)
+      * MessageDeduplicationId
+        * token used for deduplication of sent messages.
+        * when msg with MessageDeduplicationId is delivered -> msg with the same id won't be delivered for 5min deduplication interval.
   * SQS Delay Queue
     * "mask message for a while" queue
     * default is 0, maximum is 900 seconds -> configured by 'DelaySeconds' parameter
@@ -1624,3 +1642,6 @@ The load balancer routes requests only to the healthy instances. When the load b
 
 * AWS Glue
   * data extract & load for analytics
+
+* AWS ACM
+  * AWS Certificate Manger
