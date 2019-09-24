@@ -535,6 +535,17 @@ The load balancer routes requests only to the healthy instances. When the load b
   * AWS Storage Gateway
     * "Hybrid File gateway as a file system mount on S3." (Hybrid: onPremise Service + AWS Storage)
     * The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure.
+    
+* S3 Select
+  * Retrieve only a subset of data from an object by using simple SQL expressions.
+  * By using S3 Select to retrieve only the data needed by your application -> performance increase (upto x4)
+
+* S3 Inventory
+  * storage management tool -> audit, report on encryption, report on replication  
+  
+* S3 Analytics
+  * Analyze storage access patterns to help you decide when to transition the right data to the right storage class.
+
 
 
 # AWS CloudFront (content delivery network)
@@ -626,7 +637,6 @@ The load balancer routes requests only to the healthy instances. When the load b
     aws cloudformation deploy --template-file /path_to_template/template.json --stack-name my-new-stack --parameter-overrides Key1=Value1 Key2=Value2 --tags Key1=Value1 Key2=Value2
     ```
 
-
 * Lambda Version Control
   * each version of lambda function will have a unique ARN
   * $LATEST is the latest version value of lambda function
@@ -655,7 +665,19 @@ The load balancer routes requests only to the healthy instances. When the load b
   * async invocation fails -> retries two more times -> if retry fails, log msg to DLQ (if configured)
   * you can't set up sync/async invocation per lambda on event based trigger. It depends on 
 
-* To enable 'reusing variables & singletons', Limit re-initialization of those on every invocation. You can Move the client initialization out of your function handler
+* Lambda@Edge
+  * Amazon CloudFront feature that lets you run code (geolocationally) closer to users of your application
+  * improves performance and latency.
+  * With Lambda@Edge, you don't have to provision or manage infrastructure in multiple locations around the world.
+  
+* Lambda Good Practice
+  * To enable 'reusing variables & singletons', Limit re-initialization of those on every invocation. You can Move the client initialization out of your function handler
+
+* AWS Lambda Deployment Package in Node.js
+  * A deployment package is a ZIP archive that contains your function code and dependencies
+  * You put function source code and dependencies in one zip file and upload it for use.
+  * If the deployment package is larger than 50 MB, you must use Amazon S3.
+  
 
 * API Gateway
   * API = application programming interface = set of features that utilize an application.
@@ -763,8 +785,13 @@ The load balancer routes requests only to the healthy instances. When the load b
     Amazon SQS
     Working with Go
     ```
-
-
+  * Concepts
+    * Segment: Data Details about the request that is sent by Computing resources.
+    * Annotations: indexed key-value pairs for filter expressions. 
+    * Metadata: unindexed key-value pairs with data not for searching traces.
+* X-Ray & Fargate
+  * Fargate is  serverless ComputeEngine for ECS.
+  * when you are using EC2, you run X-Ray agent on EC2. However, when you use it with Fargate, you run it on a sidecar container.
 
 # DYNAMO DB
 * Intro
@@ -1011,6 +1038,9 @@ The load balancer routes requests only to the healthy instances. When the load b
 * SQS scales automatically.
 * To Delete a message, use 'PurgeQueue'
 * SQS msg limit is 1KB - 256KB(max)
+
+* SQS Dead Letter Queue (DLQ)
+  * this is where undelivered msg eventually goes. You can debug or analyze issues here.
   
 * AWS SNS (Simple Notification Service)
   * Push Based (no polling)
@@ -1064,6 +1094,7 @@ The load balancer routes requests only to the healthy instances. When the load b
       * with .config extension
       * inside .ebextensions folder
       * .ebextensions folder in the top-level directory; (path: .ebextensions/{NAME}.config)
+        * you can set up https here.
   * EB & RDS
     * you can create RDS database inside EB (from EB console).
     * This is good for test env, but since RDS is coupled with EBS it has no flexibility in lifecycle.
@@ -1075,7 +1106,25 @@ The load balancer routes requests only to the healthy instances. When the load b
 * Elastic Beanstalk prod/test env
   * always create a seperate/independent env for each purpose
   * don't share prod resources with test
+  
+* Use a Lifecycle Policy
+  * Every time you upload new app version, EB increments its version and stores previous versions.
+  * You can avoid reaching version storage limits by 'Lifecycle Policy'
+  * It tells EB to delete version(s) when total count of versions exceeds setting.
+  * Deletes up to 100 versions each time the lifecycle policy is applied. Elastic Beanstalk deletes old versions after creating the new version, and does not count the new version towards the maximum number of versions defined in the policy.
+  
+* Docker Platform
+  * need to run multiple docker containers on each instance --> docker multi-container platform (doesn't have proxy)
+  * need to run a single docker containers on each instance --> docker single-container platform (has nginx proxy)
+  * need to customize image in several ways --> custom platform
 
+* Worker Environment
+  * Worker Environment is an environment that is decoupled from front-end application functionality.
+  * It is useful when what you are trying to do takes a long time to complete or may compromise performance of app.
+  * usage
+    * set up cron.yaml to run cron tasks.
+    * The Worker Environment SQS Daemon to do SQS tasks
+    * use it with Dead Letter Queues
 
 # AWS Kinesis
 * Kinesis
@@ -1100,10 +1149,12 @@ The load balancer routes requests only to the healthy instances. When the load b
     3. Kinesis Analytics
        * Producers -> Kinesis Analytics: has availibility for SQL queries.
        * process realtime data with SQL
-  * Kinesis Client Library
+  * Kinesis Client Library (KCL)
     * A library running on consumer side at processor(ex. EC2) instance level.
     * It creates a record processor for a shard.
     * When shard number increases, KCL increases record processor number.
+      * maximum number of processors (= KCL instance)
+        * is the maximum number of shard possible
     * LoadBalances between multiple consumers (processors number if equally distributed to consumer instances)
     * You don't need multiple processors to process one shard. (because its only 1MB ~ 2MB).
     * One consumer instance can handle multiple shards using multiple processors.
@@ -1155,6 +1206,7 @@ The load balancer routes requests only to the healthy instances. When the load b
     ```
     aws ecs create-service --cluster MyCluster ... etc
     ```
+    
   * AWS Elastic Container Registry
     * AWS docker container registry platform
     * You can create a Repository to hold each docker image
@@ -1365,6 +1417,35 @@ The load balancer routes requests only to the healthy instances. When the load b
       AWS::Serverless::LayerVersion -> library
       AWS::Serverless::SimpleTable  -> dynamodb
   ```
+  
+  * Creating a Lambda Function (Example)
+    * How to creat3e
+      * Option 1) upload all the code as a zip to S3 and refer the object in AWS::Lambda::Function block.
+        ```
+        "AMIIDLookup": {
+          "Type": "AWS::Lambda::Function",
+          "Properties": {
+              "Handler": "index.handler",
+              "Role": {
+                  "Fn::GetAtt": [
+                      "LambdaExecutionRole",
+                      "Arn"
+                  ]
+              },
+              "Code": {
+                  "S3Bucket": "lambda-functions",
+                  "S3Key": "amilookup.zip"
+              },
+              "Runtime": "nodejs8.10",
+              "Timeout": 25,
+              "TracingConfig": {
+                  "Mode": "Active"
+              }
+          }
+        }
+        ```
+      * Option 2) wite the code inline for Node.js and Python as long as there are no dependencies for your code.
+  
   * CloudFormation Nested Stacks
     * Nested Stacks allow re-use of CloudFormation code.
     * Allows you to reuse pieces of CloudFormation code in multiple templates, for common use cases like provisioning a load balancer or web server?
