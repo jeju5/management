@@ -1492,8 +1492,10 @@
        Type: AWS::CloudFormation::Stack
       ```
   * CloudFormation & Protection
-    * Stack Termination Protection provides a low friction mechanism to quickly protect stacks that contain critical resources. (protects accidental protection)
-    * Rollback Triggers allow you to quickly revert infrastructure changes that are having a negative impact to the performance of your applications. (roll back = deleting entire 'new' stack)
+    * Stack Termination Protection
+      * protects accidental termination
+    * Rollback Trigger
+      * quickly roll back by deleting the whole 'new' stack
 
 
 
