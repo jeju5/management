@@ -788,9 +788,10 @@
     Working with Go
     ```
   * Concepts
-    * Segment: Data Details about the request that is sent by Computing resources.
-    * Annotations: indexed key-value pairs for filter expressions. 
-    * Metadata: unindexed key-value pairs with data not for searching traces.
+    * X-Ray Segment: Request Data sent from "Compute Resource"
+    * X-Ray Annotations: indexed key-value pairs for filter expressions. 
+    * X-Ray Metadata: unindexed key-value pairs (not for trace searching)
+    
 * X-Ray & Fargate
   * Fargate is  serverless ComputeEngine for ECS.
   * when you are using EC2, you run X-Ray agent on EC2. However, when you use it with Fargate, you run it on a sidecar container.
