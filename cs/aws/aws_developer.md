@@ -1185,6 +1185,7 @@
        * Data streams with Java/SQL
        
   * Kinesis Client Library (KCL)
+    * "shard handler on consumer side"
     * A library running on consumer side at processor(ex. EC2) instance level.
     * It creates a record processor for a shard.
     * When shard number increases, KCL increases record processor number.
