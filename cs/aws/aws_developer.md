@@ -384,11 +384,11 @@
   * single operation can handle 5GB (PUT update -> 5GB is the limit; use multi-part upload if exceeds 5GB)
   * files are stored in bucket
     * Data Consistency Model
-    * Create -> Read after Write Consisteny -> New file is immediately accessible.
-    * Update/Delete -> Eventual Consistency -> Delete or update is not immediatley applied. (takes time to propagate)
-    * put(create): read after write consistency -> immediate
-    * put(update) or delete: eventual consistency -> takes time
-  * files are stores in bucket (similart to a folder)
+      ```
+      PUT-Create          -> strongly consistent (read-after-write) = immediate
+      PUT-Update & Delete -> eventual consistent = takes time
+      ```
+  * files are stored in bucket (similart to a folder)
   * s3 bucket name should be named universially unique. (globally unique)
   * HTTP 200 Code if upload was successful
 
