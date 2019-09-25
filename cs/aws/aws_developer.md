@@ -968,7 +968,7 @@
       
   * Two caching strategies
     * lazy-loading
-      * "write when requested - some stale & ttl"
+      * "cache when requested - some stale & ttl"
       ```
       * when data is requested -> data is available in cache   -> return data from cache
                                   data is unavailable in cache -> return null -> get data from datastore and write it in the cache
@@ -983,7 +983,7 @@
         * stale data: data is only updated when there is a cache miss. this means data can be outdated
           * TTL adjustment can help avoid stale data problem 
     * write-through:
-      * "write when written - no stale"
+      * "cache when written - no stale"
       * add/update data into cache whenever data is written(add/update) to the datastore.
       * advantage
         * data never stale.
