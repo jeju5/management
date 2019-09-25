@@ -1416,8 +1416,8 @@
       * Condition function returns True/False, determining rest of the part in the section to be continued.
     * Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation) (the order it defined doesn't matter, they are created in a parallel manner)
     * Mappings: custom mappings of key to different values (ex: use different key-values for different regions; AMI is an amazon VM image)
-    * Transforms: =transform code in s3 or use serverless(ex: include template code snippet from outside into this template. use S3)
-    * Outputs: = cross-stack reference
+    * Transforms: outside reference from s3
+    * Outputs: export for cross-stack reference
       * For each AWS account, Export names must be unique within a region. (not across the global)
       * whatever is Export name can be retrieved with Fn::ImportValue in different stack.
     * CloudFormation templates are uploaded to S3 (by default it creates one in a region, and reuse it for that purpose)
