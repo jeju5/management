@@ -737,8 +737,8 @@
       * key for authorization.
       * keys that grant access to the API (should be unique, can be associated with more than 1 usage plan, but only one usage plan in a single stage)
 
-  * API Gateway Lambda Authorizers
-    * A Lambda authorizer (formerly known as a custom authorizer) is an API Gateway feature that uses a Lambda function to control access to your API
+  * Lambda Authorizers
+    * API Gateway feature of control acess from Labmda to API
 
 * AWS Api Gateway has Mapping Template
   * API Gateway lets you use mapping templates to map the payload from a method request to the corresponding integration request and from an integration response to the corresponding method response.  
