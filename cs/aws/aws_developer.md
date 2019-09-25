@@ -1454,7 +1454,6 @@
       AWS::Serverless::Function     -> labmda
       AWS::Serverless::LayerVersion -> library
       AWS::Serverless::SimpleTable  -> dynamodb
-  ```
   
   * Creating a Lambda Function (Example)
     * How to creat3e
