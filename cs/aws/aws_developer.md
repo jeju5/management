@@ -1170,20 +1170,20 @@
       * WRITE: 1000write/sec, 1MB/sec
     * As data size increases, you increase the number of shards (re-sharding)
   * Streaming data = small chunks of data that is sent from a web service.
+  * Kinesis Streams consists of shards
+  * Shards have TTL
+
   * Kinesis Types
-    1. Kinesis Streams
-       * Two Types
-          * Data Stream
-          * Video Stream
-       * Producers -> Kinesis Streams: stored as shards -> Consumers
-       * Kinesis Streams consts of shards
-       * Shards have TTL
-    2. Kinesis Firehose
-       * Producers -> Kinesis Firehose: automated storage and consumption process
-         * sink is how data is packaged for storage. Possible destinations are ElasticSearch, S3, redshift
-    3. Kinesis Analytics
-       * Producers -> Kinesis Analytics: has availibility for SQL queries.
-       * process realtime data with SQL
+    1. Kinesis Data Streams
+       * General Data streaming
+    2. Kinesis Video Streams
+       * General Video streaming
+    3. Kinesis Firehose
+       * Data streams into AWS storage service and analyze it.
+       * sink: how data packaged for AWS storage service.
+    4. Kinesis Analytics
+       * Data streams with Java/SQL
+       
   * Kinesis Client Library (KCL)
     * A library running on consumer side at processor(ex. EC2) instance level.
     * It creates a record processor for a shard.
