@@ -751,28 +751,15 @@
     ```
 
 * AWS Step Function
-  * allows visualization of workflow & status
-  * Amazon States Language is the language that builds this step function (it is JSON-based)
-  * it logs state of each step
-  * LAB
-    * goto AWS UI -> Step Function
-    * click get Started
-    * click sample project (this visualizes sample Batch jobs that AWS provides as an example)
-    * click job status poller
-    * click create Resources
-    * enter an execution name and click start execution
-    * goto AWS UI -> Batch
-    * click Jobs and see batch job is generated
-    * goto AWS UI -> Step Function and see how this job is being executed.
-    * goto AWS Lambda and see lambda functions that this job created
+  * visualization and logging of workflow & status
+  * uses JSON-based Amazon States Language
     
 * Amazon Simple Work Flow
-  * similar to Step Function but more complex
+  * complex version of Step Fuinction + task assignment
     * SF: user don't have to maintain infrastructure
     * SWF: user have to maintain infrastructure
-  * Fully-managed state tracker and task coordinator in the Cloud.
-  * SWF is task-oriented API.
-  * SWF ensures that task is assigned only once. (unlike SQS)
+  * task-oriented API.
+  * ensures that task is assigned only once. (unlike SQS)
 
 * X-Ray
   * X-Ray collects data on requests that application serves and allow users to view them.
