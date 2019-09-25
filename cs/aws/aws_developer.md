@@ -731,10 +731,10 @@
 
   * Use Usage Plans with API Keys
     * Usage Plan
-      * who can 'usage' this?
+      * who is accessible?
       * manage who can access one or more deployed API stages and methods.
     * API keys
-      * get permission for 'usage'
+      * key for authorization.
       * keys that grant access to the API (should be unique, can be associated with more than 1 usage plan, but only one usage plan in a single stage)
 
   * API Gateway Lambda Authorizers
