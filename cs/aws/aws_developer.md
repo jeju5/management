@@ -411,10 +411,13 @@
     Subresources: bucket specific configuration data
     ```
 * S3 URL
-  * virtual-hosted–style URL (use it for static hosting.)
+  * hosted–style
+    * for static hosting
+    * "starts with bucket" -> "bucket s3 region amazonaws/com"
     * http://bucketName.s3-aws-region.amazonaws.com
     * http://bucketName.s3-website.region.amazonaws.com (memorize this)
   * path-style URL
+    * "ends with bucket"
     * http://s3-aws-region.amazonaws.com/bucketName
     
 * Tiers
