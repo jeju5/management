@@ -604,7 +604,9 @@
       * security group id
       * then Lambda sets up ENIs
   * Upload Code
-    * use Cloudformation Template
+    * paste code in LambdaIDE
+    * upload zip in Lambda Console
+    * use Cloudformation & S3
       ```
       {
         "Type" : "AWS::Lambda::Function",
@@ -633,8 +635,6 @@
           }
       }
       ```
-    * upload zip via LambdaConsole
-    * paste code in LambdaIDE
 
 * Cloudformation & CLI
   * cloudformation package: uploads loacl sourcecodes/artifacts for to be built. returns the copy of template or s3bucket address that stores it.
