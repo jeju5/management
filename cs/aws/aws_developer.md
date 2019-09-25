@@ -1121,9 +1121,7 @@
       * Maintains full capacity during the deployment.
       * Creats a fresh group of instances in their autoscaling group -> Health Check Pass -> Move to new group -> Terminate old group
       * Update Fail -> To roll back, delete new instance and autoscaling group.
-    * Blue/Green
-      * Similar to Immutable Deployment but differnt.
-      * It creates a new environment (immutable happens in the same env) and releases there. Then it reroutes to them using DNS.
+      
   * Configuring EBS
     * You can have configuration file
       * in YAML/JSON format
@@ -1131,6 +1129,7 @@
       * inside .ebextensions folder
       * .ebextensions folder in the top-level directory; (path: .ebextensions/{NAME}.config)
         * you can set up https here.
+        
   * EB & RDS
     * you can create RDS database inside EB (from EB console).
     * This is good for test env, but since RDS is coupled with EBS it has no flexibility in lifecycle.
