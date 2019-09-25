@@ -172,8 +172,12 @@
     * To retrieve user data from within a running instance, use the following URI:
     * http://169.254.169.254/latest/user-data
 
-* EC2 Placement in CloudFormation Template
-  * specify ec2 deployment group
+* EC2 Placement Group
+  * "CSP"
+    * Cluster: within AZ
+    * Spread: within Hardware (reduce correlated failures)
+    * Partition: within Logical Group
+  * EC2 Placement Group in Cloudformation
   ```
   "PlacementGroup" : {
      "Type" : "AWS::EC2::PlacementGroup",
@@ -182,13 +186,6 @@
      }
   }
   ```
-  * types
-    * cluster
-      * with in AZ
-    * spread
-      * with in hardware (reduce correlated failures)
-    * partition
-      * with in logical group (one is seperate from the other)
 
 * Ec2 Storage
   * Instance Storage
