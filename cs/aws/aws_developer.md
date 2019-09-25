@@ -586,7 +586,8 @@
     * There is a concurret execution limit for Lambda
     * default is 1000 execution per region (you can increase this limit)
     * HTTP 429 TOO MANY REQUESTS error
-    * Reserved Concurrency guarantees number of execution sets for critical Lambda function (this also have a limit)
+    * Reserved Concurrency
+      * reserved number of execution set for critical lambda functions (this also have a limit)
   * Lambda Version
     * When you create a new Lambda function. Its version is $LATEST
     * You can create multiple versions and use it with alias to that version
