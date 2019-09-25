@@ -637,11 +637,11 @@
       ```
 
 * Cloudformation & CLI
-  * cloudformation package: uploads loacl sourcecodes/artifacts for to be built. returns the copy of template or s3bucket address that stores it.
+  * cloudformation package: upload template on cloud
     ```
     aws cloudformation package --template-file /path_to_template/template.json --s3-bucket bucket-name --output-template-file packaged-template.json
     ```
-  * cloudformation deploy: builds resource specified by template
+  * cloudformation deploy: build template on cloud
     ```
     aws cloudformation deploy --template-file /path_to_template/template.json --stack-name my-new-stack --parameter-overrides Key1=Value1 Key2=Value2 --tags Key1=Value1 Key2=Value2
     ```
