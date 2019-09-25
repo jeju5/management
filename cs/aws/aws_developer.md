@@ -1277,7 +1277,9 @@
       * No Performance Down Issue
 
   * Deployment Group
+    * "deployment destination"
     * A set of EC2 instances or Lambda functions where you will deploy new software.
+    
   * CodeDeploy agent
     * program that runs code deploy tasks in terminal
   
