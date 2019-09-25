@@ -1050,26 +1050,23 @@
         * token used for deduplication of sent messages.
         * when msg with MessageDeduplicationId is delivered -> msg with the same id won't be delivered for 5min deduplication interval.
   * SQS Delay Queue
-    * "mask message for a while" queue
+    * "hide after queued"
     * default is 0, maximum is 900 seconds -> configured by 'DelaySeconds' parameter
     * setting delay queue doens't affect existing msg in Standard Queue (only new msg).
     * setting delay queue affects existing msg in FIFO Queue.
   * SQS Long Poll
-    * "return when available" queue (returns after a msg is queued.)
+    * "deliver when available"
     * not retention period stuff.
     * Regular Short Poll returns immediately. (even if msg wanted is not queued)
   * Managing large message
     * make SQS talk to S3
       * use "Amazon SQS Extended Client Library" (Java) -> make SQS talk to S3
   * Visibility Timeout
-    * amount of time that the message is invisible in the SQS queue after being read.
-    * Default: 30sec, Max: 12Hours
+    * read message keeping time (30sec ~ 12hrs)
     * SQS ChangeMessageVisibility (API)
       * when message timeout period is unpredictable, consumer can extend visibility timeout using ChangeMessageVisibility API action on its own.
   * Retention Period
-    * Message can be kept unread for 1min to 14days.
-    * confusion?
-      * visibility time out: ttl of read msg vs retention period: ttl of unread msg
+    * unread message keeping time (1min ~ 14days)
   * There is a chance that message being read more than once. So use Visibility Timeout
 
 * You can encrypt message using KMS  
