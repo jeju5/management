@@ -959,14 +959,13 @@
   * in-memory cache in the cloud
   * good if your app is read-heavy and not frequently changing
   * frequently-access data is stored in in-memory for low-latency access
+  
   * Two options
     * Memcached
-      * multi-threaded
-      * no multi-AZ
+      * simple data, multi-thread, no multi-AZ
     * Redis
-      * open-source
-      * supports more complex data.
-      * supports multi-AZ
+      * complex data, single-thread, multi-AZ
+      
   * Two caching strategies
     * lazy-loading
       * "write when requested - some stale & ttl"
