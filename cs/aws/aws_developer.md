@@ -850,29 +850,37 @@
   aws dynamodb get-item --table-name ProductCatalog --region eu-west-2  --key '{"Id":{"N":"205"}}'
   ```
 * Index
-  * DynamoDB Index is a data structure that helps you perform fast queries. There are two types of DynamoDB Index,.
+  * data structure for fast queries.
   * Local Secondary Index (LSI)
     * index you can only create when you are creating a table. it can't be modified/added/removed.
-    * has same partition key(unique key) as table, but different sort key.
+    * same partition key(unique key) as table
+    * different sort key as table.
     * LSI uses same RCU & WCU as the table.
   * Global Secondary Index (GSI)
     * index you can create when you create table or add later on
-    * different partition key and sort key as table
+    * different partition key as table
+    * different sort key as table
     * even when table's provision is enough, table can suffer throttling when GSI's resource is not enough.
+
 * Query
-  * fins item in a table based on Primary Key or distinct value you are searching for.
-  * you can use ProjectionExpression to return only wanted attributes from the query.
+  * find item in a table based on Primary Key or distinct value you are searching for.
   * results are by default sorted by sort key
-  * ScanIndexForwardParameter = false --> reverses the order of query result.
-  * By default it is Eventually Consistent. you can make it strongly consistent by explicitly setting it so.
+  * ProjectionExpression
+    * return only wanted attributes
+  * ScanIndexForwardParameter
+    * set to false --> reverses the order of query result.
+  * Eventually Consistent.  (default)
+    * you can make it strongly consistent by explicitly setting it so.
     * Eventual consistency: all access to the data are weakly guaranteed to return the same data.
     * Strongly Eventual consistency: all access to the data are guaranteed to return the same data.
       * Read-After-Write Consistency = Strongly Eventual Consistency
 * Scan
   * examines all data in the table. you can filter results by attributes.
+  
 * Query or Scan?
   * Query is more efficient
   * Scan takes all data and filter it from there, this requires unwanted additional steps (SCAN takes longer operation time)
+  
 * Performance Improvement
   * set smaller page size. (fewer read operation)
   * isolate scan operations to specific tables
@@ -880,6 +888,7 @@
     * by default scan uses sequential scan. it retrieves 1mb then increments additional 1mb sequentially.
   * avoid scan.
   * you can use ProjectionExpression to return only wanted attributes from the query.
+  
 * DynamoDB Capacity Units
   * provisioned capacity
     * when you create table you can specify read/write capacity units (1-4-8)
@@ -893,6 +902,7 @@
     * it automatically scales up/down based on the activity of your application
   * provisioned or on-demand?
     * unpredictable, unknown -> on-demand. otherwise, provisioned.
+    
 * DAX (DynamoDB Accelerator)
   * DAX in-memory write-through cache optimized for DynamoDB. (Elisticache is not optimized for DynamoDB)
   * clusted & in-memory cache for dynamodb
