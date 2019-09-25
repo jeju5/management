@@ -557,9 +557,10 @@
 
 
 # AWS CloudFront (content delivery network)
-* CloudFront is Amazaon Web Service CDN(Content Delivery Network). It is optimized to work with other AWS services.
-  * RTMP: media streaming CDN
-  * Web Distribution: web site CDN (HTTP/HTTPS)
+* CloudFront is Amazaon Web Service CDN(Content Delivery Network).
+  * It is optimized to work with other AWS services.
+  * Supports Web(HTTP/HTTPS) & Media (RTMP)
+  * Doesn't support UDP. AWS Global Accelerator supports UDP
 * CDN basics  (in general)
   * web service that speeds up web content delivery based on geographic location of a user.
   * edge location handles web requests from nearby locations instead of directly hitting origin
@@ -570,9 +571,8 @@
     * origin of all files that CDN will distribute
 * you can configure regional restrictions on CDN (block japan  & russia for example)
 * Cloudfront & Protocols
-  * can be distributed for HTTP/HTTPS/RTMP protocols (UDP not supported -> AWS Global Accelerator supports UDP)
   * You can use HTTPS for inbound/outbound
-    * user <--HTTPS--> CloudFront <--HTTPS--> Origin
+    * user <--HTTPS--> Edge Location : CloudFront <--HTTPS--> Origin
 
 # Serverless Computing
 * AWS Lambda
