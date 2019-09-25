@@ -1544,12 +1544,6 @@
   * Custom metric
     * RAM Utilization
     * Disk Utilization
-  * Granularity (How small can the metric unit be?)
-    * standard resolution
-      * 1min (detailed: minimum)
-      * 5min (standard)
-    * high resolution
-      * 1sec (minimum)
   * Retrievable with API
   * By default logs are store indefinitely. (You can configure this)
   * You can retrieve logs of terminated AWS resources.
@@ -1561,10 +1555,12 @@
   
 * In CloudWatch, you can create a cron event to regularly trigger something like backing up a DB.
 
-* CloudWatch Alarm
-  * Regular: multiple of 1min
-  * High Resolution: 10sec/30sec
-  * note that this is not metric granularity (different)
+* Granularity (How small can the metric unit be?)
+  * Cloudwatch monitor
+    * 1sec (high resolution) - 1min (standard detailed) - 5min (standard default)
+  * CloudWatch alarm
+    * 10sec/30sec (high resolution) - multiples of 1min (regular)
+    
   * Alarm vs Event
     * alarm is based on metric you are watching
     * event is to handle when something happens
