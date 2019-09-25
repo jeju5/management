@@ -680,7 +680,8 @@
   * With Lambda@Edge, you don't have to provision or manage infrastructure in multiple locations around the world.
   
 * Lambda Good Practice
-  * To enable 'reusing variables & singletons', Limit re-initialization of those on every invocation. You can Move the client initialization out of your function handler
+  * avoid initialization on every invocation.
+  * move those outside of labmda.
   
 * Temporary File
   * Best way to store temporary files created by Lambda function is to put it under /tmp (512MB capacity)
