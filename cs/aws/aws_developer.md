@@ -542,14 +542,17 @@
     * The Storage Gateway service is primarily used for attaching infrastructure located in a Data center to the AWS Storage infrastructure.
     
 * S3 Select
-  * Retrieve only a subset of data from an object by using simple SQL expressions.
-  * By using S3 Select to retrieve only the data needed by your application -> performance increase (upto x4)
+  * retrieve data subset by simple SQL expression
+  * By using S3 Select to retrieve only the data needed by your application
+  * ierformance increase (upto x4)
 
 * S3 Inventory
-  * storage management tool -> audit, report on encryption, report on replication  
+  * storage management tool
+  * audit report, encryption report, replication report.
   
 * S3 Analytics
-  * Analyze storage access patterns to help you decide when to transition the right data to the right storage class.
+  * Analyze storage access patterns
+  * help you decide right storage class
 
 
 
