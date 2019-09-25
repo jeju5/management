@@ -270,15 +270,9 @@
     * Registered Domain -> Register Domain
       * buy a domain or register an existing one you own
   * Hosted Zones
-    * Hosted Zone = container that holds information about how you will handle traffic on your domain
-    * select the domain you registered
-    * create record set
-    * select Alias(the load balancer you created); allows DNS to map AWS service you created
-    * select Application Load balancer for our use (flexible and general)
-    * configure name, listeners(protocol(HTTP/HTTPS) and port) and zones(region)
-    * configure security group
-    * configure routing (DNS Name --mapping--> App Server); you can route a request to Instance, IP, Lambda function
-    * select EC2 Instance you created
+    * Hosted Zone = container that holds routing configuration data
+    * configure routing (DNS Name --mapping--> App Server)
+    * you can route a request to Instance, IP, Lambda function
     * configure health check
   * TEST
     * make a request to the domain you registerd --> DNS server --> load balancer --> EC2
