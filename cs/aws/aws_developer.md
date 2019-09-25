@@ -904,12 +904,14 @@
     * unpredictable, unknown -> on-demand. otherwise, provisioned.
     
 * DAX (DynamoDB Accelerator)
-  * DAX in-memory write-through cache optimized for DynamoDB. (Elisticache is not optimized for DynamoDB)
+  * DAX in-memory cache optimized for DynamoDB. (Elisticache is not optimized for DynamoDB)
   * clusted & in-memory cache for dynamodb
   * delivers upto 10X read performance
   * write thru caching service: data is written in cache & back-end datastore.
-  * suitable for eventual read consistency. (not suitable for strongly eventual read consistency)
-  * no benefit for write intensive app. (doesn't help write operation)
+  * DAX Usage
+    * suitable for eventual consistency read.
+    * not suitable for strongly eventual consistency read.
+    * not suitable for write intensive.
   
 * DynamoDB Transaction
     * ACID transaction
