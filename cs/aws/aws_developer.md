@@ -720,7 +720,11 @@
 
 * Lambda scales automatically (do nothing)
 
-
+* Lambda & InvocationType
+  * Invocation Type is something that triggers Lambda function and there are 3types
+    * RequestResponse(default): sync invocation. rseponse is response data.
+    * Event: async invocation. make use of DLQ(if configured). response only has response code.
+    * DryRun: no actual run, just validate user/role permission on this invocation.
 
 * API Gateway
   * API = application programming interface = set of features that utilize an application.
@@ -1115,16 +1119,20 @@
     * "deliver when available"
     * not retention period stuff.
     * Regular Short Poll returns immediately. (even if msg wanted is not queued)
+    * when your app takes longer time to generate msg and customer has to wait ->  use Long Poll
+  * Visibility Timeout
+    * "keep after read"
+    * read message keeping time (30sec ~ 12hrs)
+    * When you want to prevent msg being read more than once. -> use Visibility Timeout
+    * SQS ChangeMessageVisibility (API)
+      * when message processing time is unpredictable (on client side), consumer can extend visibility timeout using ChangeMessageVisibility API action on its own.
+
+  * Retention Period
+    * "keep unread"
+    * unread message keeping time (1min ~ 14days)
   * Managing large message
     * make SQS talk to S3
       * use "Amazon SQS Extended Client Library" (Java) -> make SQS talk to S3
-  * Visibility Timeout
-    * read message keeping time (30sec ~ 12hrs)
-    * SQS ChangeMessageVisibility (API)
-      * when message timeout period is unpredictable, consumer can extend visibility timeout using ChangeMessageVisibility API action on its own.
-  * Retention Period
-    * unread message keeping time (1min ~ 14days)
-  * There is a chance that message being read more than once. So use Visibility Timeout
 
 * You can encrypt message using KMS  
 * When there is a need for debugging SQS msg -> use SQS DLQ(dead letter queue) to isolate debugging msg.
