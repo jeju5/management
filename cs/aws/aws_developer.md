@@ -1296,7 +1296,7 @@
 * AWS CodeDeploy & Lambda
   * CodeDeploy provides three options for Lambda deployment
     * Canary: Traffic is shifted in two increments. (gradual)
-      * ex) Canary10Percent10Minutes -> +3% at 4mins & +6% at 10min (for example)
+      * ex) Canary10Percent10Minutes -> +10% at the beginning ---+90% gradually--> done at 10min
     * Linear: Traffic is shifted in equal increments.
       * ex) Linear10PercentEvery10Minutes -> +10% at 10min -> +20% at 20min -> ...
     * All-at-once: All traffic is shifted from the original Lambda function to the updated Lambda function version at once.
