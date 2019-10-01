@@ -172,11 +172,12 @@
     * To retrieve user data from within a running instance, use the following URI:
     * http://169.254.169.254/latest/user-data
 
-* EC2 Placement Group
-  * "CSP"
-    * Cluster: within AZ
-    * Spread: within Hardware (reduce correlated failures)
-    * Partition: within Logical Group
+* EC2 Placement Group "SCP"
+  * how will you place instances?
+  * spread: within Hardware (reduce correlated failures)
+  * cluster: within AZ
+
+  * partition: within Logical Group
   * EC2 Placement Group in Cloudformation
   ```
   "PlacementGroup" : {
@@ -186,8 +187,14 @@
      }
   }
   ```
-
-* Ec2 Storage
+  
+* EC2 Task Placement Strategy "SBR"
+  * how will you assign tasks to instances?
+  * spread: place tasks evenly
+  * binpack: place tasks based on cpu & memory (this minimizes the number of instances in use)
+  * random: place task randomly
+  
+* EC2 Storage
   * Instance Storage
     * ephemeral = volatile = data lost when With EC2 stopped.
   * Amazon Elastic Block Store (EBS)
@@ -595,48 +602,61 @@
     * You can create multiple versions and use it with alias to that version
   * You can configure RAM Memory assigned to a Lambda for performance requirement.
   * environemntal variable size total shouldn't exceed 4kb
-  * Access to VPC (Virtual Private Cloud)
-    * You can make Lambda to access third party VPC by providing private subnet id and security group id with vpc-config parameter (or in UI)
-      ```
-      aws lambda update-function-configuration \
-      --function-name myFunction \
-      --vpc-config SubnetIds=subnet=1122aa,SecuritGroupIds=sg-12321
-      ```
-      * private subnet id
-      * security group id
-      * then Lambda sets up ENIs
-  * Upload Code
-    * paste code in LambdaIDE
-    * upload zip in Lambda Console
-    * use Cloudformation & S3
-      ```
-      {
-        "Type" : "AWS::Lambda::Function",
-        "Properties" : {
-            "Code" : {
-              "S3Bucket" : String,
-              "S3Key" : String,
-              "S3ObjectVersion" : String,
-              "ZipFile" : String
-            },
-            "DeadLetterConfig" : DeadLetterConfig,
-            "Description" : String,
-            "Environment" : Environment,
-            "FunctionName" : String,
-            "Handler" : String,
-            "KmsKeyArn" : String,
-            "Layers" : [ String, ... ],
-            "MemorySize" : Integer,
-            "ReservedConcurrentExecutions" : Integer,
-            "Role" : String,
-            "Runtime" : String,
-            "Tags" : [ Tag, ... ],
-            "Timeout" : Integer,
-            "TracingConfig" : TracingConfig,
-            "VpcConfig" : VpcConfig
-          }
-      }
-      ```
+  
+* Access to VPC (Virtual Private Cloud)
+  * terms
+    * VPC: Virtual Private Cloud
+    * ENI: Elastic Network Interfaces (an interface you can attach to an instance in VPC)
+    * EIP: Elastic IP address
+    * NAT: Network Address Translation
+      * instance in public subnet in VPC that enables an outbound call from private subnet in VPC to outside and prevents inbound call from outside into private subnet
+    * subnet: All devices whose IP addresses have the same prefix. (partion of same ip network)
+  * AWS Lambda uses the VPC information you provide to set up ENIs that allow your Lambda function to access VPC resources.
+  * You can do so by providing private subnet id and security group id with vpc-config parameter (or in UI)
+  * Each ENI is assigned a private IP address from the IP address range within the subnets you specify but is not assigned any public IP addresses.
+    ```
+    aws lambda update-function-configuration \
+    --function-name myFunction \
+    --vpc-config SubnetIds=subnet=1122aa,SecuritGroupIds=sg-12321
+    ```
+    * private subnet id
+    * security group id
+    * then Lambda sets up ENIs automatically
+  * If Lambda in VPC needs outbound calls
+    * set up NAT (add NAT Gateway) & use security group that works.
+
+* Upload Code
+  * paste code in LambdaIDE
+  * upload zip in Lambda Console
+  * use Cloudformation & S3
+    ```
+    {
+      "Type" : "AWS::Lambda::Function",
+      "Properties" : {
+          "Code" : {
+            "S3Bucket" : String,
+            "S3Key" : String,
+            "S3ObjectVersion" : String,
+            "ZipFile" : String
+          },
+          "DeadLetterConfig" : DeadLetterConfig,
+          "Description" : String,
+          "Environment" : Environment,
+          "FunctionName" : String,
+          "Handler" : String,
+          "KmsKeyArn" : String,
+          "Layers" : [ String, ... ],
+          "MemorySize" : Integer,
+          "ReservedConcurrentExecutions" : Integer,
+          "Role" : String,
+          "Runtime" : String,
+          "Tags" : [ Tag, ... ],
+          "Timeout" : Integer,
+          "TracingConfig" : TracingConfig,
+          "VpcConfig" : VpcConfig
+        }
+    }
+    ```
 
 * Cloudformation & CLI
   * cloudformation package: upload template on cloud
