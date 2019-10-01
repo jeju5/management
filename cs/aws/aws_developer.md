@@ -898,20 +898,23 @@
     * Eventual consistency: all access to the data are weakly guaranteed to return the same data.
     * Strongly Eventual consistency: all access to the data are guaranteed to return the same data.
       * Read-After-Write Consistency = Strongly Eventual Consistency
+
 * Scan
-  * examines all data in the table. you can filter results by attributes.
-  
+  * examines all data in the table.
+  * you can filter results by attributes.
+ 
 * Query or Scan?
   * Query is more efficient
   * Scan takes all data and filter it from there, this requires unwanted additional steps (SCAN takes longer operation time)
   
 * Performance Improvement
-  * set smaller page size. (fewer read operation)
+  * set smaller page size. (fewer read operation; this approach improves for query&scan)
   * isolate scan operations to specific tables
   * try parallel scan
     * by default scan uses sequential scan. it retrieves 1mb then increments additional 1mb sequentially.
   * avoid scan.
   * you can use ProjectionExpression to return only wanted attributes from the query.
+  * DAX improves read performance, but in general, caching increases costs.
   
 * DynamoDB Capacity Units
   * provisioned capacity
@@ -957,6 +960,14 @@
   * can be used as a datasource for Lambda function
   * capture a time-ordered sequence of all the activity which occurs on your DynamoDB table – e.g. insert, update, delete.
 
+* DynamoDB Streams & StreamSpecification configuration
+  * StreamEnabled: boolean
+  * StreamViewType
+    * KEYS_ONLY: keys of the modified item
+    * NWE_IMAGE: item after modified
+    * OLD_IMAGE: item before modified
+    * NEW_AND_OLD_IMAGES: item before and after modified
+
 * AWS Exponential back off
   * AWS SDK has exponentialBackOff. This means when request fails AWS retries with progressively longer waits.
   * ExponentialBackOff is not limited to dynamoDB. It is AWS SDK feature.
@@ -986,7 +997,7 @@
   
   * Two options
     * Memcached
-      * simple data, multi-thread, no multi-AZ
+      * simple data, multi-thread, no multi-AZ ("mem"o is simple)
     * Redis
       * complex data, single-thread, multi-AZ
       
@@ -1603,6 +1614,12 @@
     
 * CloudWatch Log Export
   * You can export cloudwatch log data to S3 bucket.
+  
+* CloudWatch Metrics
+  * Count: count of API calls.
+  * IntegrationLatency: responsiveness of the backend.
+  * Latency: responsiveness of overall API calls.
+  * CacheHitCount and CacheMissCount: cache hit/miss count.
   
 
 # Other Topics & Tips
