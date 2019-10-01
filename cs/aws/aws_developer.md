@@ -622,8 +622,12 @@
     * private subnet id
     * security group id
     * then Lambda sets up ENIs automatically
-  * If Lambda in VPC needs outbound calls
-    * set up NAT (add NAT Gateway) & use security group that works.
+
+  * Creating and Attaching IAM role approach doesn't work on VPC environment. IAM role is only for AWS resources.
+  * If Resource in VPC needs outbound calls
+    * Set up NAT (add NAT Gateway) & use security group that works.
+    * Alternatively, you can create VPC endpoint.
+   
 
 * Upload Code
   * paste code in LambdaIDE
@@ -773,6 +777,13 @@
     ```
     disable caching --> Header "Cache-Control: max-age=0"
     ```
+* API Gateway Integration Types
+  * AWS: expose Lambda action with custom data mapping, request and response.
+  * AWS_PROXY: expose Lambda action without custom data mapping, request and response.
+  * HTTP: expose http endpoint(EC2) with custom data mapping, request and response.
+  * HTTP_PROXY: expose http endpoint(EC2) without custom data mapping, request and response.
+  * MOCK: return response without hitting backend.
+
 
 * AWS Step Function
   * visualization and logging of workflow & status
@@ -1062,6 +1073,17 @@
     ```
   * you can upload upto 4KB for KMS encryption.
     * if it exceeds Envelope encryption with EncryptionSDK is recommended and put encrypted file within the service.
+    
+* KMS endpoints
+  * Encrypting Key
+    * GenerateDataKeyWithoutPlaintext: return CMK encrypted dataKey
+    * GenerateDataKey: return unencrpyted dataKey & CMK encrypted dataKey
+  * Encrypting general text
+    * Encrypt
+  * when using these endpoints above you provide KeyId specifying encrypting key.    
+  * Decrypt: decrypt keys or general text.
+  * GenerateRandom: generate random byte string
+  
 
 
 
