@@ -455,6 +455,7 @@
       * applied at bucket and all objects
       * ACL is attached to a bucket like bucket policty. AWS recommends the use of bucket policy
     * you configure buckets to log every access and request
+    
 * S3 Encryption
   * S3 Encryption "in Transit"
     * SSL/TLS or Client Side Encryption(You encryption data on your own (application level))
@@ -475,6 +476,8 @@
       * option to use envelope key, audit trail and create/manage encryption keys yourself.
       * "x-amz-server-side-encryption": "aws:kms"
       * supports HTTP/HTTPS
+      * you can specify specific encryption key with  "x-amz-server-side-encryption-aws-kms-key-id" header.
+      * if you use "x-amz-server-side-encryption": "aws:kms" but not "x-amz-server-side-encryption-aws-kms-key-id", then AWS uses default KMS key
       
 * Enforcing Encryption
   * When object is uploaded to S3, PUT method is initiated.
@@ -551,6 +554,8 @@
   * Analyze storage access patterns
   * help you decide right storage class
 
+* S3 PutObject vs PostObject
+  * Put is more suitable for most cases. (PostObject is used in browser upload scenario)
 
 
 # AWS CloudFront (content delivery network)
@@ -680,16 +685,18 @@
   * avoid initialization on every invocation.
   * move those outside of labmda.
   
-* Temporary File
+* /tmp directory
   * Best way to store temporary files created by Lambda function is to put it under /tmp (512MB capacity)
-
-
+  * If Lambda function has to download something everytime executed, just store it in the /tmp of the execution context.
 
 * AWS Lambda Deployment Package in Node.js
   * A deployment package is a ZIP archive that contains your function code and dependencies
   * You put function source code and dependencies in one zip file and upload it for use.
   * If the deployment package is larger than 50 MB, you must use Amazon S3.
-  
+
+* Lambda scales automatically (do nothing)
+
+
 
 * API Gateway
   * API = application programming interface = set of features that utilize an application.
@@ -1262,98 +1269,110 @@
 * AWS CodeDeploy
   * Compatiable with other management tools: AWS CodePipeline, Jenkins, Puppet, and ... etc.
   * CodeDeploy vs ElasticBeanStalk. (ElasticBeanStalk is more of bigger end-to-end delivery service where code deploy is deployment specific service)
-  * Two Deployment Options
+
+* Deployment Group
+  * "deployment destination"
+  * A set of EC2 instances or Lambda functions where you will deploy new software.
+
+* CodeDeploy agent
+  * program that runs code deploy tasks in terminal
+
+* You can store revision codes in S3.
+
+* AWS CodeDeploy & EC2/OnPremise
+  * CodeDeployDefault.AllAtOnce: Deploys up to all instances at a time (as many as possible).
+  * CodeDeployDefault.HalfAtATime: Deploys to up to half of the instances at a time.
+  * CodeDeployDefault.OneAtATime: Deploys the application revision to only one instance at a time.
+  * AllAtOnce, HalfAtATime, OneAtATime options are then provided with following two options
     * In-Place(Rolling) Deployment
       * Rolling Update
       * Each instance stops an app when doing an upgrade installation.
-      * Only Ec2 and On-premise (Not Lambda)
-      * To roll back, you have to re-deploy older version.
     * Blue/Green Deployment
-      * Blue is active(current) version instances
-      * Green is new version instances
-      * No Performance Down Issue
+      * Create a new instance and swap it.
+      * Blue is active(current) version instances.
+      * Green is new version instances.
+      * No Performance Down.
 
-  * Deployment Group
-    * "deployment destination"
-    * A set of EC2 instances or Lambda functions where you will deploy new software.
+* AWS CodeDeploy & Lambda
+  * CodeDeploy provides three options for Lambda deployment
+    * Canary: Traffic is shifted in two increments.
+      * ex) Canary10Percent10Minutes -> +3% at 4mins & +6% at 10min (for example)
+    * Linear: Traffic is shifted in equal increments.
+      * ex) Linear10PercentEvery10Minutes -> +10% at 10min -> +20% at 20min -> ...
+    * All-at-once: All traffic is shifted from the original Lambda function to the updated Lambda function version at once.
     
-  * CodeDeploy agent
-    * program that runs code deploy tasks in terminal
-  
-  * You can store revision codes in S3.
-  
-  * AppSpecFile (appspec.yaml)
-    * Defines parameters used for CodeDeploy.
-    1. For Lambda Deployment
-      * Lambda appspec can be written in YAML or JSON
-      * three sections required (version, resources and hooks).
-        1. version: reserved for future use (currently 0.0 is allowed only)
-        2. resources: properties(name, alias, currentVersion, TargetVersion) of Lambda to deploy
-        3. hooks (=Lambda Operations)
-            * Lambda to run during deployment. You can specify point of time to execute each Lambda.
-              ```
-              new Lambda Created
-              BeforeAllowTraffic
-              AllowTraffic         (=trafficRerouted to new Lambda)
-              AfterAllowTraffic
-              ```
-              * BeforeAllowTraffic: point of time before traffic is routed to newly deployed Lambda. (validate Lambda is deployed correctly)
-              * AfterAllowTraffic: point of time after traffic is routed to newly deployed Lambda. (validate Lambda is functioning correctly)
-    2. For EC2/OnPremises Deployment
-      * EC2/OnPremise appspec can be only written in YAML (not JSON)
+* AppSpecFile (appspec.yaml)
+  * Defines parameters used for CodeDeploy.
+  1. For Lambda Deployment
+    * Lambda appspec can be written in YAML or JSON
+    * three sections required (version, resources and hooks).
+      1. version: reserved for future use (currently 0.0 is allowed only)
+      2. resources: properties(name, alias, currentVersion, TargetVersion) of Lambda to deploy
+      3. hooks (=Lambda Operations)
+          * Lambda to run during deployment. You can specify point of time to execute each Lambda.
+            ```
+            new Lambda Created
+            BeforeAllowTraffic
+            AllowTraffic         (=trafficRerouted to new Lambda)
+            AfterAllowTraffic
+            ```
+            * BeforeAllowTraffic: point of time before traffic is routed to newly deployed Lambda. (validate Lambda is deployed correctly)
+            * AfterAllowTraffic: point of time after traffic is routed to newly deployed Lambda. (validate Lambda is functioning correctly)
+  2. For EC2/OnPremises Deployment
+    * EC2/OnPremise appspec can be only written in YAML (not JSON)
+      ```
+      appsepc.yml should be in in the root directory of app for EC2/OnPremises Deployment.
+
+      Typical Setup:
+        appspec.yml
+        /scripts
+        /config
+        /src
+      ```
+    * three sections required (version, resources and hooks).
+      1. version: reserved for future use (currently 0.0 is allowed only)
+      2. os: OS you are using
+      3. files: location of file to be copied from and to (source & destination)
+      4. hooks: Lifecycle Hooks to run during deployment. You can specify point of time to execute each Script.
         ```
-        appsepc.yml should be in in the root directory of app for EC2/OnPremises Deployment.
-        
-        Typical Setup:
-          appspec.yml
-          /scripts
-          /config
-          /src
+        7: blocktraffic.applicationstop.downloadbundle.install.applicationstart.validateservice.allowtraffic
+
+        * BeforeBlockTraffic: Run tasks on instances before they are deregistered from a load balancer
+        * BlockTraffic: Deregister instances from a load balancer
+        * AfterBlockTraffic: Run tasks on instances after they are deregistered from a load balancer
+
+        * ApplicationStop: stop app to prepare for new version deployment 
+        * DownloadBundle: copy app revision files to temp location
+        * BeforeInstall: before Install
+        * Install: Codedeploy agent copies the app revision files from temp location to correct location
+        * AfterInstall: after Install
+        * ApplicationStart: start app for new version deployment
+        * ValidateService: after app is started (last deployment lifecycle event where you can do something)
+
+        --------------------------deployment end--------------------------
+
+        * BeforeAllowTraffic: Run tasks on instances before they are egistered from a load balancer
+        * AllowTraffic: register instances from a load balancer (last!last! lifecycle that is reserved for code deploy)
+        * AfterAllowTraffic: Run tasks on instances after they are registered from a load balancer
         ```
-      * three sections required (version, resources and hooks).
-        1. version: reserved for future use (currently 0.0 is allowed only)
-        2. os: OS you are using
-        3. files: location of file to be copied from and to (source & destination)
-        4. hooks: Lifecycle Hooks to run during deployment. You can specify point of time to execute each Script.
-          ```
-          7: blocktraffic.applicationstop.downloadbundle.install.applicationstart.validateservice.allowtraffic
-          
-          * BeforeBlockTraffic: Run tasks on instances before they are deregistered from a load balancer
-          * BlockTraffic: Deregister instances from a load balancer
-          * AfterBlockTraffic: Run tasks on instances after they are deregistered from a load balancer
-          
-          * ApplicationStop: stop app to prepare for new version deployment 
-          * DownloadBundle: copy app revision files to temp location
-          * BeforeInstall: before Install
-          * Install: Codedeploy agent copies the app revision files from temp location to correct location
-          * AfterInstall: after Install
-          * ApplicationStart: start app for new version deployment
-          * ValidateService: after app is started (last deployment lifecycle event where you can do something)
-          
-          --------------------------deployment end--------------------------
-          
-          * BeforeAllowTraffic: Run tasks on instances before they are egistered from a load balancer
-          * AllowTraffic: register instances from a load balancer (last!last! lifecycle that is reserved for code deploy)
-          * AfterAllowTraffic: Run tasks on instances after they are registered from a load balancer
-          ```
-          ```
-          example
-          
-          hooks: 
-            BeforeInstall:
-            - location: scripts/unzipResource.sh
-            - location: scripts/unzipData.sh
-            AfterInstall:
-            - location: scripts/runTests.sh
-              timeout: 180
-            ApplicationStart:
-            - location: scripts/runUnitTests.sh
-              timeout: 1800  
-            ValidateService:
-            - location: scripts/runIntegrationTests.sh
-              timeout: 1800
-              runas: deployUser
-          ```
+        ```
+        example
+
+        hooks: 
+          BeforeInstall:
+          - location: scripts/unzipResource.sh
+          - location: scripts/unzipData.sh
+          AfterInstall:
+          - location: scripts/runTests.sh
+            timeout: 180
+          ApplicationStart:
+          - location: scripts/runUnitTests.sh
+            timeout: 1800  
+          ValidateService:
+          - location: scripts/runIntegrationTests.sh
+            timeout: 1800
+            runas: deployUser
+        ```
 
 * AWS CodePipeline
   * overall build/deploy management tool
