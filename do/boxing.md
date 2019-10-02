@@ -56,13 +56,13 @@
 Flow1: jab jab - jab jab cro - jab jab cro lhook
 Flow2: jab cro - jab cro jab - jab cro jab cro
 Flow3: jab cro - jab cro lhook - jab cro lhook rhook
-Flow4: cro cro - cro cro lhook - cro cro lhook rhook
+Flow4: cro cro - cro cro lhook - cro cro lhook rupper
 Flow5: cro jab - cro jab cro - cro jab cro jab 
 
 Flow6: jab bab - jab bab cro - jab bab cro lhook
 Flow7: jab bro - jab bro lhook - jab bro lhook cro
-Flow8: jab rbody - jab rbody lbody - jab rbody lbody lhook
-Flow9: jab lbody - jab lbody lupper - jab lbody lupper cro
+Flow8: jab lbody - jab lbody lupper - jab lbody lupper cro
+Flow9: jab rbody - jab rbody lbody - jab rbody lbody lhook
 Flow10: jab rupper - jab rupper lhook - jab rupper lhook rbody
 ```
 
