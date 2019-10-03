@@ -1641,7 +1641,7 @@
 
 * Granularity (How small can the metric unit be?)
   * Cloudwatch monitor
-    * 1sec (high resolution) - 1min (standard detailed) - 5min (standard default)
+    * 1/5/10/30/60 sec (high resolution) - 1min (standard detailed) - 5min (standard default)
   * CloudWatch alarm
     * 10sec/30sec (high resolution) - multiples of 1min (regular)
     
