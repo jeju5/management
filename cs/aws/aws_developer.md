@@ -1213,6 +1213,7 @@
       * inside .ebextensions folder
       * .ebextensions folder in the top-level directory; (path: .ebextensions/{NAME}.config)
         * you can set up https here.
+        * you can set up x-ray daemon here.
         
   * EB & RDS
     * you can create RDS database inside EB (from EB console).
