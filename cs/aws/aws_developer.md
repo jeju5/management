@@ -59,6 +59,10 @@
     * Userful when permissions in a policy is strictly limited to this single user.
 * explicit permission/deny overrides general ones.
   * ex. policy1 allows user1 & policy2 explicitly denies user1 ==> deny user1
+  
+* IAM Role & Permissions
+  * IAM Role based approach is the best practice when you need permissions on AWS Resources.
+  * When working with onPremise Resources, you can also store IAM credentials in '~/.aws/credentials' of onPremise instance to gain access to the IAM Role you want to use.
 
 
 # EC2
