@@ -368,17 +368,7 @@
 * AWS DynamoDB
   * NoSQL
 
-* AWS ElastiCache
-  * web cloud service that caches data in in-memory db to enhance performance. (low-latency access)
-  * Memcached --Complexity--> Redis
-  * supports Redis and Memcached. Both are in-memory DB
-    * ElastiCache for Memcached
-      * simple & pure caching
-    * ElastiCache for Redis
-      * advanced & complex caching
-      * advanced data type (list, set, hash...)
-      * sorting & ranking
-      * data persistency: how likely is the data will remain safe? higher data persitency means safer the data is.
+
     
 
 
@@ -586,9 +576,13 @@
   * origin
     * origin of all files that CDN will distribute
 * you can configure regional restrictions on CDN (block japan  & russia for example)
-* Cloudfront & Protocols
+
+* Cloudfront & SSL 
   * You can use HTTPS for inbound/outbound
-    * user <--HTTPS--> Edge Location : CloudFront <--HTTPS--> Origin
+    * Viewer <--HTTPS(A)--> Edge Location : CloudFront <--HTTPS(B)--> Origin
+    * to enable HTTPS(A): set HTTPS in "Origin Protocol Policy"
+    * to enable HTTPS(B): set HTTPS in "Viewer Protocol Policy"
+   
 
 # Serverless Computing
 * AWS Lambda
@@ -1033,7 +1027,7 @@
     * Memcached
       * simple data, multi-thread, no multi-AZ ("mem"o is simple)
     * Redis
-      * complex data, single-thread, multi-AZ
+      * complex data, single-thread, multi-AZ (Redis is better than Memcached in all ways except 'multi-threading')
       
   * Two caching strategies
     * lazy-loading
