@@ -580,9 +580,9 @@
 * Cloudfront & SSL 
   * You can use HTTPS for inbound/outbound
     * Viewer <--HTTPS(A)--> Edge Location : CloudFront <--HTTPS(B)--> Origin
-    * to enable HTTPS(A): set HTTPS in "Origin Protocol Policy"
-    * to enable HTTPS(B): set HTTPS in "Viewer Protocol Policy"
-   
+    * to enable HTTPS(A): set HTTPS in "Viewer Protocol Policy"
+    * to enable HTTPS(B): set HTTPS in "Origin Protocol Policy"
+    
 
 # Serverless Computing
 * AWS Lambda
