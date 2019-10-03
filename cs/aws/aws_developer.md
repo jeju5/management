@@ -353,6 +353,9 @@
       * Instance Actions -> Create read replica
       * configure settings (you can enable multi-AZ here)
     * Read replicas can be promoted to a primary DB if you want. (This breaks replications)
+    
+* AWS RDS Troubleshoot
+  * You can enable logs: error log, slow query log(query that takes long time)
 
 * AWS Redshift
   * OLAP (OL"A"P = Online Analytics Processing)
@@ -1307,6 +1310,10 @@
     ```
     aws ecs create-service --cluster MyCluster ... etc
     ```
+    * ECS service scheduler
+    * ECS task definition
+      * You can configure port mapping for your container
+    * container agent: connect containers cluster
     
   * AWS Elastic Container Registry
     * AWS docker container registry platform
