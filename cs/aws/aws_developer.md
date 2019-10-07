@@ -1545,11 +1545,11 @@
         ```
     * Serverless App types
       ```
-      AWS::Serverless::Api          -> api gateway
+      AWS::Serverless::Api          -> api gateway resource
       AWS::Serverless::Application  -> application
       AWS::Serverless::Function     -> labmda
-      AWS::Serverless::LayerVersion -> library
-      AWS::Serverless::SimpleTable  -> dynamodb
+      AWS::Serverless::LayerVersion -> lambda layer version (library or runtime code)
+      AWS::Serverless::SimpleTable  -> dynamoDB
   
   * Creating a Lambda Function (Example)
     * How to creat3e
