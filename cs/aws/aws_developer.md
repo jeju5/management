@@ -1518,7 +1518,8 @@
     * CloudFormation templates are uploaded to S3 (by default it creates one in a region, and reuse it for that purpose)
 
   * AWS SAM (Serverless Application Model)
-    * SAM is an extension for CloudFormation to deploy serverless apps
+    * AWS SAM CLI lets you locally build, test, and debug serverless applications
+    * SAM template is an extension of CloudFormation template
     * SAM CLI commands
       * sam package: "to S3" package up your deployment packages and upload it to S3
         ```
