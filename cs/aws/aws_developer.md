@@ -1696,6 +1696,9 @@
     * you can create SecureString parameters
     * plainText as parameterName, KMS encryptedValue as parameterValue
     * SSM uses AWS KMS to encrypt and decrypt the parameter values of Secure String parameters.
+    
+* AWS Secrets Manager
+  * AWS Secrets Managers stores your confidential information. It is similar to SSM but has more ability such as 'secrets rotation' & 'password generation'.
 
 * Default AWS SDK Region = US-EAST-1
 
