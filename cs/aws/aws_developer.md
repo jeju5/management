@@ -593,8 +593,13 @@
   * AWS X-ray debugs AWS Lambda
   * Lambda can work globally
   * Lambda Concurrent Execution
+    ```
+    concurrent executions = (requests per time) x (time per request )
+    
+    ex) 50 request/sec * 100 sec/request = 5000 concurrent executions
+    ```
     * There is a concurret execution limit for Lambda
-    * default is 1000 execution per region (you can increase this limit)
+    * default is 1000 execution per region (you can increase this limit by making a request to AWS)
     * HTTP 429 TOO MANY REQUESTS error
     * Reserved Concurrency
       * reserved number of execution set for critical lambda functions (this also have a limit)
@@ -628,7 +633,10 @@
   * If Resource in VPC needs outbound calls
     * Set up NAT (add NAT Gateway) & use security group that works.
     * Alternatively, you can create VPC endpoint.
-   
+
+
+* AWS VPC Flow Logs
+  * VPC Flow Logs captures IP traffic from/to VPC as logs.
 
 * Upload Code
   * paste code in LambdaIDE
@@ -726,6 +734,12 @@
     * RequestResponse(default): sync invocation. rseponse is response data.
     * Event: async invocation. make use of DLQ(if configured). response only has response code.
     * DryRun: no actual run, just validate user/role permission on this invocation.
+
+* Lambda & API Gateway
+  ```
+  request -> Lambda --response should be certain format--> API GATEWAY
+  ```
+  * Labmda should pass the response with required data in JSON format to API Gateway. If this format is wrong or not in JSON, API Gateway will throw 502 BAD GATEWAY error
 
 * API Gateway
   * API = application programming interface = set of features that utilize an application.
@@ -828,8 +842,11 @@
     ```
   * Concepts
     * X-Ray Segment: Request Data sent from "Compute Resource"
-    * X-Ray Annotations: indexed key-value pairs for filter expressions. 
-    * X-Ray Metadata: unindexed key-value pairs (not for trace searching)
+      * AWS X-Ray Segment Documents
+        * configuration of segment handled by X-Ray
+        * you can add custom attributes in this document
+    * X-Ray Annotations: indexed key-value pairs -> to filter expressions. 
+    * X-Ray Metadata: unindexed key-value pairs -> not for trace searching
     
 * X-Ray & Fargate
   * Fargate is  serverless ComputeEngine for ECS.
@@ -1511,7 +1528,7 @@
       * Condition function returns True/False, determining rest of the part in the section to be continued.
     * Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation) (the order it defined doesn't matter, they are created in a parallel manner)
     * Mappings: custom mappings of key to different values (ex: use different key-values for different regions; AMI is an amazon VM image)
-    * Transforms: outside reference from s3
+    * Transforms: version of AWS SAM or outside reference from s3(when used with AWS::Include)
     * Outputs: export for cross-stack reference
       * For each AWS account, Export names must be unique within a region. (not across the global)
       * whatever is Export name can be retrieved with Fn::ImportValue in different stack.
