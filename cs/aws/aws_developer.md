@@ -1111,10 +1111,10 @@ uses default KMS key
                |
                2
                |
-               --Customer Master Key--> Encrypted DataKey
+               --Customer Master Key(plain text)--> Encrypted DataKey
     
     1. DataKey encrypts Data
-    2. CMK encrypts DataKey
+    2. CMK(plain text) encrypts DataKey
     3. Encrypted Data and Encrypted DataKey is enveloped
     ```
   * Envelope decryption
