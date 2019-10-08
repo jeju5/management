@@ -784,8 +784,10 @@
       * key for authorization.
       * keys that grant access to the API (should be unique, can be associated with more than 1 usage plan, but only one usage plan in a single stage)
 
-  * Lambda Authorizers
-    * API Gateway feature of control acess from Labmda to API
+* Lambda Authorizers
+  * API Gateway feature of acess control from Labmda to API
+  * token-based Lambda authorizer (TOKEN authorizer): receives the caller's identity in a bearer token(JWT, OAUTH)
+  * request parameter-based Lambda authorizer (REQUEST authorizer): receives the caller's identity in a combination of parameters( headers, query string parameters, stageVariables, and $context variables)
 
 * AWS Api Gateway has Mapping Template
   * API Gateway lets you use mapping templates to map the payload from a method request to the corresponding integration request and from an integration response to the corresponding method response.  
@@ -879,7 +881,10 @@
     * AWS_XRAY_CONTEXT_MISSING: When tracing header is missing, this variable is set to determine behavior.
     * AWS_XRAY_DAEMON_ADDRESS: IP address of X-Ray daemon
 
-
+* X-Ray APIs
+  * GetTraceSummaries: Get IDs and annotations for traces available for a specified time frame 
+  * BatchGetTraces: Get a list of traces specified by ID
+  * GetGroup: Get group resource details
 
 # DYNAMO DB
 * Intro
@@ -1371,25 +1376,31 @@
   * A set of EC2 instances or Lambda functions where you will deploy new software.
 
 * CodeDeploy agent
-  * program that runs code deploy tasks in terminal
+  * program that runs code deploy tasks for EC2 instances.
+  * it is required for EC2 deployment and it actually is installed in EC2 instance.
+  * it runs on HTTPS (443) (information: in general AWS resources port80 is for HTTP, port443 is for HTTPS)
 
 * You can store revision codes in S3.
 
-* AWS CodeDeploy & EC2/OnPremise
-  * CodeDeployDefault.AllAtOnce: Deploys up to all instances at a time (as many as possible).
-  * CodeDeployDefault.HalfAtATime: Deploys to up to half of the instances at a time.
-  * CodeDeployDefault.OneAtATime: Deploys the application revision to only one instance at a time.
-  * AllAtOnce, HalfAtATime, OneAtATime options are then provided with following two options
-    * In-Place(Rolling) Deployment
-      * Rolling Update
-      * Each instance stops an app when doing an upgrade installation.
-    * Blue/Green Deployment
-      * Create a new instance and swap it.
-      * Blue is active(current) version instances.
-      * Green is new version instances.
-      * No Performance Down.
+* CodeDeploy Deployment Types
+  * In-Place(Rolling) Deployment
+    * Applicable to EC2/OnPremise (not applicable to ECS/Lambda)
+    * Rolling Update
+    * Each instance stops an app when doing an upgrade installation.
+  * Blue/Green Deployment
+    * Applicable to EC2/OnPremise/ECS/Lambda
+    * Enviroment swapping (blue env -> green env), which is a difference between immutable (no env swap)    
+    * Blue is active(current) version instances.
+    * Green is new version instances.
+    * No Performance Down.
 
-* AWS CodeDeploy & Lambda
+
+* CodeDeploy Deployment configuratrion for EC2/OnPremise
+  * AllAtOnce: Deploys up to all instances at a time (as many as possible).
+  * HalfAtATime: Deploys to up to half of the instances at a time.
+  * OneAtATime: Deploys the application revision to only one instance at a time.
+
+* CodeDeploy Deployment configuratrion for Lambda
   * CodeDeploy provides three options for Lambda deployment
     * Canary: Traffic is shifted in two increments. (gradual)
       * ex) Canary10Percent10Minutes -> +10% at the beginning ---+90% gradually--> done at 10min
@@ -1643,8 +1654,16 @@
 
 * AWS STS (security token service)
   * STS allows you to request temporary AWS credentials
-  * assume-role-with-web-identity: Returns a set of temporary security credentials for users who have been authenticated
+  
   * decode-authorization-message: Decodes additional information about the authorization status of a request from an encoded message
+
+* AWS STS APIs
+  * AssumeRole
+    * pass ARN of the role 
+    * creates a new session with temporary credentials with permissions that role has (having the same policy)
+  * assume-role-with-web-identity
+    * Returns a set of temporary credentials for users who have been authenticated via public websites (ex.google)
+  
 
 
 
