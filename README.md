@@ -1,4 +1,4 @@
-# DAILY
+# DAILY TASK
   ```
      TIME     TASK
   ------------------------
@@ -13,6 +13,8 @@
   0800 0830  정리 성경 취침     
   ------------------------
   ```
+  
+  # DAILY MEAL
   ```
      TIME     MEAL
   ------------------------
@@ -35,20 +37,22 @@
   * 감량식: 1계란, 7방울토마토 (0100, 0200, 0600 대체)
   ```
 
-# MOVE
+# DAILY MOVE
   ```
        기상   아침    오후
-  MON: PULL  RUN3+  BOXING
-  TUE: DIP   RUN3+  BOXING
-  WED: SIT   RUN3+  BOXING
-  THU: PULL  RUN3+  BOXING
-  FRI: DIP   RUN9+
+  MON: PULL  RUN5  BOXING
+  TUE: DIP   RUN5  BOXING
+  WED: SIT   RUN5  BOXING
+  THU: CURL  RUN5  BOXING
+  FRI: PUSH   RUN5
   SAT: SIT
   SUN: 휴식
   
   PULL          : 5x8
   DIP           : 5x5
-  PUSH/CHIN/SIT : 80
+  PUSH          : 200
+  CURL          : 100
+  SIT           : 200
   RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 08 15 15 08 18 08 (done) 20 08 23 | 08 08 08 *26*
   
   WEIGHT
