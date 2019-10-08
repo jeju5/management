@@ -1,16 +1,3 @@
-# Task
-* Watch 황혼의 사무라이 (The Twilight Samurai)
-* Sumamrize Lord's Prayer Study Material
-* UDEMY: Modern React with Redux
-* UDEMY: Node with React
-* UDEMY: GraphQL with React
-
-* Mankato Marathon (Oct.19)
-* H1B interview scheduling
-* Udemy AWS Practice Exams https://www.udemy.com/aws-certified-developer-associate-practice-tests-dva-c01/
-* Boxing at Minneapolis Boxing Club
-* Tennis InnerCity
-
 # DAILY
   ```
      TIME     TASK
@@ -68,6 +55,19 @@
   - usual: 66kg (65kg ~ 67kg)
   - fight: 64kg (--2week--> 65kg --watercut--> 64kg)
   ```
+
+# Task
+* Watch 황혼의 사무라이 (The Twilight Samurai)
+* Sumamrize Lord's Prayer Study Material
+* UDEMY: Modern React with Redux
+* UDEMY: Node with React
+* UDEMY: GraphQL with React
+
+* Mankato Marathon (Oct.19)
+* H1B interview scheduling
+* Udemy AWS Practice Exams https://www.udemy.com/aws-certified-developer-associate-practice-tests-dva-c01/
+* Boxing at Minneapolis Boxing Club
+* Tennis InnerCity
   
 # MONEY
 ```
