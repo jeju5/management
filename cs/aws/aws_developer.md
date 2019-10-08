@@ -469,19 +469,31 @@
       * encryption key: you manage (Client Managed Keys)
       * encryption: s3 manage
       * HTTPS is mandatory (HTTP rejected)
+      * client must provide encryption key info as following headers
+        ```
+        * x-amz-server-side-encryption-customer-algorithm: AES256 (this is how you will encrypt)
+        * x-amz-server-side-encryption-customer-key: encoded encryption key
+        * x-amz-server-side-encryption-customer-key-MD5: encoded MD5 digest of encryption key
+        ```
     * SSE-S3
       * encryption key: s3 manage 
       * encryption: s3 manage (S3 Managed Keys)
-      * "x-amz-server-side-encryption": "AES256"
       * supports HTTP/HTTPS
+      ```
+      * "x-amz-server-side-encryption": "AES256"
+      ```
     * SSE-KMS
       * encryption key: KMS manage  (S3 Managed Keys)
       * encryption: s3 manage
       * option to use envelope key, audit trail and create/manage encryption keys yourself.
-      * "x-amz-server-side-encryption": "aws:kms"
+
       * supports HTTP/HTTPS
-      * you can specify specific encryption key with  "x-amz-server-side-encryption-aws-kms-key-id" header.
-      * if you use "x-amz-server-side-encryption": "aws:kms" but not "x-amz-server-side-encryption-aws-kms-key-id", then AWS uses default KMS key
+      ```
+      * "x-amz-server-side-encryption": "aws:kms"
+      * "x-amz-server-side-encryption-aws-kms-key-id": you can specify specific encryption key.
+         if you use "x-amz-server-side-encryption": "aws:kms" but not "x-amz-server-side-encryption-aws-kms-key-id", then AWS 
+      ```
+uses default KMS key
       
 * Enforcing Encryption
   * When object is uploaded to S3, PUT method is initiated.
