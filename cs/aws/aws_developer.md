@@ -64,6 +64,8 @@
   * IAM Role based approach is the best practice when you need permissions on AWS Resources.
   * When working with onPremise Resources, you can also store IAM credentials in '~/.aws/credentials' of onPremise instance to gain access to the IAM Role you want to use.
 
+* To allow one AWS account to access and manage resources in another AWS account
+  * configure aws cross account access
 
 # EC2
 * EC2 101
@@ -741,6 +743,10 @@ uses default KMS key
 
 * Lambda scales automatically (do nothing)
 
+* Lambda Layer
+  * Lambda layer is a library code that can be used for your Lambda function.
+  * each lambda function can have upto five layers and total unzipped can't exceed 250MB.
+
 * Lambda & InvocationType
   * Invocation Type is something that triggers Lambda function and there are 3types
     * RequestResponse(default): sync invocation. rseponse is response data.
@@ -811,12 +817,13 @@ uses default KMS key
     disable caching --> Header "Cache-Control: max-age=0"
     ```
 * API Gateway Integration Types
-  * AWS: expose Lambda action with custom data mapping, request and response.
-  * AWS_PROXY: expose Lambda action without custom data mapping, request and response.
-  * HTTP: expose http endpoint(EC2) with custom data mapping, request and response.
-  * HTTP_PROXY: expose http endpoint(EC2) without custom data mapping, request and response.
+  * API Gateway Lambda Integration
+    * AWS: with custom mapping            (mapping: data mapping, request mapping, response mappingP
+    * AWS_PROXY: without custom mapping   (proxy is non-custom mapping)
+  * API Gateway EC2 Integration
+    * HTTP: with custom mapping
+    * HTTP_PROXY: without custom mapping
   * MOCK: return response without hitting backend.
-
 
 * AWS Step Function
   * visualization and logging of workflow & status
@@ -859,8 +866,10 @@ uses default KMS key
       * AWS X-Ray Segment Documents
         * configuration of segment handled by X-Ray
         * you can add custom attributes in this document
-    * X-Ray Annotations: indexed key-value pairs -> to filter expressions. 
-    * X-Ray Metadata: unindexed key-value pairs -> not for trace searching
+    * X-Ray Subsegment: Additional data (for example downstream calls)
+    * Segment/Subsegment can have annotations and metadata inside
+      * X-Ray Annotations: indexed key-value pairs -> to filter expressions. 
+      * X-Ray Metadata: unindexed key-value pairs -> not for trace searching
     
 * X-Ray & Fargate
   * Fargate is  serverless ComputeEngine for ECS.
@@ -1043,13 +1052,29 @@ uses default KMS key
 * Provision
   * WCU = write capacity unit.
     * The WCU you provisioned is per table. Not shared across tables.
+  * Hot partition
+    * When data access is imbalanced, a 'hot' partition can receive such a higher volume of read and write traffic compared to other partitions.
+    
+* Exceptions
   * ProvisionedThroughputExceededException
     * exception that dynamodb table throws when requests exceed your provision configuration.
     * if you use AWS SDK, it will automatically retry when exception is thrown.
-  * Hot partition
-    * When data access is imbalanced, a 'hot' partition can receive such a higher volume of read and write traffic compared to other partitions.
+  * RequestLimitExceeded
+    * request exceeds account capacity
+  * ThrottlingException
+    * request rate exceeds capacity
 
 * If you want to delete entire records within the table, just 'DeleteTable' and recreate it.
+
+* Locking
+  * Optimistic Locking
+    * lock item with version number
+    * client side item for update/delete is the same as dynamo db side. (protects overwrites)
+  * Pessimistic Locking
+    * lock item until you finish it
+    * causes performance issue
+    * suitable for transactional db
+  * Overly Optimistic Locking
 
 # AWS Elasticache
 * Elisticache
@@ -1735,9 +1760,6 @@ uses default KMS key
   
 
 # Other Topics & Tips
-* To allow one AWS account to access and manage resources in another AWS account
-  * configure aws cross account access
-  
 * AWS Systems Manager Parameter Store (SSM)
   * Where would you store confidential information (credentials, license codes) for AWS resources? -> AWS Systems Manager Parameter Store (as parameter values)
   * SecureString
