@@ -1,7 +1,9 @@
 ########################## INSTRUCTION #########################
 # create admin account and user account.
 # only admin account has permission to write hosts file.
-# copy/paste this content into c:\windows\system32\drivers\etc\hosts
+# copy/paste this content into 
+# windows  c:\windows\system32\drivers\etc\hosts
+# mac      /etc/hosts
 
 ########################## BIG DOMAINS #########################
 127.0.0.1 www.translate.google.com
