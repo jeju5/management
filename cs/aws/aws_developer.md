@@ -208,6 +208,7 @@
     * EBS encryption -> Do when creating one
     * persistent = durable = data not lost when EC2 stopped
     * it is locked with in a AZ; can't be shared to different AZ
+    * new volumes are raw block storage, and needs file system to be used.
   * Amazon Elastic File System (EFS)
     * Object storage for EC2 (and other aws services; not public)
     * faster than s3
@@ -870,11 +871,15 @@ uses default KMS key
     Working with Go
     ```
   * Concepts
-    * X-Ray Segment: Request Data sent from "Compute Resource"
+    * X-Ray Segment
+      * Request Data sent from "Compute Resource"
       * AWS X-Ray Segment Documents
         * configuration of segment handled by X-Ray
         * you can add custom attributes in this document
-    * X-Ray Subsegment: Additional data (for example downstream calls)
+    * X-Ray Subsegment
+      * Additional data
+      * subsegment fields
+        * namespace: aws(aws sdk calls) / remote (other downstream calls)
     * Segment/Subsegment can have annotations and metadata inside
       * X-Ray Annotations: indexed key-value pairs -> to filter expressions. 
       * X-Ray Metadata: unindexed key-value pairs -> not for trace searching
@@ -926,6 +931,16 @@ uses default KMS key
     = 50 + 5
     = 55 req/sec
     ```
+    
+* X-Ray set up
+  * on EC2
+    * you can manually install it
+  * on EB
+    * put xray-daemon.config under .ebextensions
+  * on ECS
+    * create a docker image that runs X-Ray daemon -> deploy to ECS cluster
+    * X-Ray daemon listens on port 2000 (so allow UDP on port 2000)
+  
 
 
 # DYNAMO DB
@@ -1268,6 +1283,15 @@ uses default KMS key
   * You can also deploy docker image as well. (not only EC2)
   * Supports Java, php, Python, Ruby, Go, Docker, .Net, Node.js / Tomcat, Passenger, Puma, IIS
   * You can create an app with source code zip file. (this is saved to s3 bucket)
+  
+  * Deployment command
+    ```
+    EB only supports zip or war file format for deployment.
+    
+    eb deploy
+    ```
+    
+    
   * Deployment policy
     * All at once
       * Deploys the new version to all instances simultaneously/
@@ -1657,7 +1681,7 @@ uses default KMS key
       AWS::Serverless::SimpleTable  -> dynamoDB
   
   * Creating a Lambda Function (Example)
-    * How to creat3e
+    * How to create
       * Option 1) upload all the code as a zip to S3 and refer the object in AWS::Lambda::Function block.
         ```
         "AMIIDLookup": {
@@ -1682,7 +1706,20 @@ uses default KMS key
           }
         }
         ```
-      * Option 2) wite the code inline for Node.js and Python as long as there are no dependencies for your code.
+      * Option 2) wite the code inline for Node.js and Python as long as there are no dependencies for your code. if you choose to use 'ZipFile' option. Put the code as inline and cloudformation will zip it and put it in deployment package.
+        ```
+        mastertestingLambdaDataDigestor:
+          Properties:
+            Code:
+              ZipFile: >
+                def handler(event, context):
+                  pass
+            FunctionName: mastertesting_Kinesis2DynamoDB_Datapipeline
+            Handler: handler.kinesis_to_dynamodb
+            Role: SOMEROLE
+            Runtime: python3.6
+          Type: AWS::Lambda::Function
+        ```
   
   * CloudFormation Nested Stacks
     * Nested Stacks allow re-use of CloudFormation code.
