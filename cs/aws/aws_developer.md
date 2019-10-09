@@ -807,6 +807,14 @@ uses default KMS key
   * token-based Lambda authorizer (TOKEN authorizer): receives the caller's identity in a bearer token(JWT, OAUTH)
   * request parameter-based Lambda authorizer (REQUEST authorizer): receives the caller's identity in a combination of parameters( headers, query string parameters, stageVariables, and $context variables)
 
+* Lambda & Concurrency
+  * account concurrenct execution limit: concurrecy capacity with in an account
+  * reserve concurrency: concurrency capacity can be reserved for a lambda function
+  * unreserved concurrency: whatever is left over from reserved concurrency is unreserved concurrency. (minimum 100 required)
+  * note that reserve concurrency can't exceed to the point that any unreserved concurrency shouldn't go below 100
+
+
+
 * AWS Api Gateway has Mapping Template
   * API Gateway lets you use mapping templates to map the payload from a method request to the corresponding integration request and from an integration response to the corresponding method response.  
 
@@ -906,6 +914,19 @@ uses default KMS key
   * GetTraceSummaries: Get IDs and annotations for traces available for a specified time frame 
   * BatchGetTraces: Get a list of traces specified by ID
   * GetGroup: Get group resource details
+  
+* X-Ray sampling size
+  * sampling per second = reservoir size + ( (incoming requests per second - reservoir size) * fixed rate)
+    ```
+    reservor size: 50
+    fixed rate: 10%
+    request per second : 100
+    
+    50 + (100-50) * 0.10
+    = 50 + 5
+    = 55 req/sec
+    ```
+
 
 # DYNAMO DB
 * Intro
@@ -1028,7 +1049,8 @@ uses default KMS key
   * "time ordered stream of item-level modification" (insert/update/delete)
   * logs are stored encrypted and for 24hrs.
   * only accessible thru dedicated dynamodb api endpoint.
-  * can be used as a datasource for Lambda function
+  * can be used as a trigger for Lambda function
+  * Kinesis Adapter is more suitable for handling these streams (than Lambda)
   * capture a time-ordered sequence of all the activity which occurs on your DynamoDB table – e.g. insert, update, delete.
 
 * DynamoDB Streams & StreamSpecification configuration
@@ -1038,6 +1060,9 @@ uses default KMS key
     * NWE_IMAGE: item after modified
     * OLD_IMAGE: item before modified
     * NEW_AND_OLD_IMAGES: item before and after modified
+    
+* DynamoDB atomic counters
+  * a counter that increments without having any interference to other write requests. (simple)
 
 * AWS Exponential back off
   * AWS SDK has exponentialBackOff. This means when request fails AWS retries with progressively longer waits.
@@ -1183,15 +1208,17 @@ uses default KMS key
         * token used for deduplication of sent messages.
         * when msg with MessageDeduplicationId is delivered -> msg with the same id won't be delivered for 5min deduplication interval.
   * SQS Delay Queue
-    * "hide after queued"
+    * "hide when queued"
     * default is 0, maximum is 900 seconds -> configured by 'DelaySeconds' parameter
     * setting delay queue doens't affect existing msg in Standard Queue (only new msg).
     * setting delay queue affects existing msg in FIFO Queue.
+
   * SQS Long Poll
     * "deliver when available"
     * not retention period stuff.
     * Regular Short Poll returns immediately. (even if msg wanted is not queued)
     * when your app takes longer time to generate msg and customer has to wait ->  use Long Poll
+
   * Visibility Timeout
     * "keep after read"
     * read message keeping time (30sec ~ 12hrs)
@@ -1200,7 +1227,7 @@ uses default KMS key
       * when message processing time is unpredictable (on client side), consumer can extend visibility timeout using ChangeMessageVisibility API action on its own.
 
   * Retention Period
-    * "keep unread"
+    * "keep read/unread"
     * unread message keeping time (1min ~ 14days)
   * Managing large message
     * make SQS talk to S3
@@ -1341,6 +1368,18 @@ uses default KMS key
     * Partition key is used to group data within a stream.
       * when partition keys are not distributed well enough, data distribution across shards will be skewed causing ProvisionedThroughputExceededException.
     * Sequence Number is used with partition key (works like a sort key)
+    
+  * Kinesis Resharding
+    * Kinesis resharding a sharding strategy for efficiency and cost.
+    * Shard: partition of data (Shard is in stream.)
+    * Stream: its capacity is measured by number of shard inside. (stream capacity = how many shards?)
+    * cold shard: shard that receieves less data. It needs merge. merge decreases stream capacity (=cost)
+    * hot shard: shard that receieves more data. It needs split. split increases stream capacity (=cost)  
+    
+   * Kinesis Retention Period
+     * Kinesis data stream stores records from 24 hours by default, up to 168 hours.
+    
+    
 
 # SECTION9. Developer Theroies
 * CI/CD
@@ -1416,6 +1455,7 @@ uses default KMS key
   * program that runs code deploy tasks for EC2 instances.
   * it is required for EC2 deployment and it actually is installed in EC2 instance.
   * it runs on HTTPS (443) (information: in general AWS resources port80 is for HTTP, port443 is for HTTPS)
+  * note that 443 is longer than 80 (https is longer than 80)
 
 * You can store revision codes in S3.
 
