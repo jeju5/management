@@ -212,124 +212,124 @@
 216.239.38.120	www.google.vu # force safe search
 216.239.38.120	www.google.ws # force safe search
 
-0.0.0.0	host.youtube.com
-0.0.0.0	mx.youtube.com
-0.0.0.0	admin.youtube.com
-0.0.0.0	devel.youtube.com
-0.0.0.0	stats.youtube.com
-0.0.0.0	http.youtube.com
-0.0.0.0	mx0.youtube.com
-0.0.0.0	administration.youtube.com
-0.0.0.0	development.youtube.com
-0.0.0.0	svn.youtube.com
-0.0.0.0	id.youtube.com
-0.0.0.0	mx1.youtube.com
-0.0.0.0	ads.youtube.com
-0.0.0.0	devsql.youtube.com
-0.0.0.0	syslog.youtube.com
-0.0.0.0	adserver.youtube.com
-0.0.0.0	images.youtube.com
-0.0.0.0	mysql.youtube.com
-0.0.0.0	devtest.youtube.com
-0.0.0.0	info.youtube.com
-0.0.0.0	news.youtube.com
-0.0.0.0	alerts.youtube.com
-0.0.0.0	dhcp.youtube.com
-0.0.0.0	test1.youtube.com
-0.0.0.0	internal.youtube.com
-0.0.0.0	noc.youtube.com
-0.0.0.0	alpha.youtube.com
-0.0.0.0	direct.youtube.com
-0.0.0.0	test2.youtube.com
-0.0.0.0	internet.youtube.com
-0.0.0.0	ns.youtube.com
-0.0.0.0	ap.youtube.com
-0.0.0.0	dmz.youtube.com
-0.0.0.0	testing.youtube.com
-0.0.0.0	intra.youtube.com
-0.0.0.0	ns0.youtube.com
-0.0.0.0	apache.youtube.com
-0.0.0.0	dns.youtube.com
-0.0.0.0	upload.youtube.com
-0.0.0.0	intranet.youtube.com
-0.0.0.0	ns1.youtube.com
-0.0.0.0	app.youtube.com
-0.0.0.0	dns0.youtube.com
-0.0.0.0	vm.youtube.com
-0.0.0.0	ipv6.youtube.com
-0.0.0.0	ns2.youtube.com
-0.0.0.0	apps.youtube.com
-0.0.0.0	dns1.youtube.com
-0.0.0.0	vnc.youtube.com
-0.0.0.0	lab.youtube.com
-0.0.0.0	ns3.youtube.com
-0.0.0.0	appserver.youtube.com
-0.0.0.0	dns2.youtube.com
-0.0.0.0	ldap.youtube.com
-0.0.0.0	aptest.youtube.com
-0.0.0.0	download.youtube.com
-0.0.0.0	vpn.youtube.com
-0.0.0.0	linux.youtube.com
-0.0.0.0	ops.youtube.com
-0.0.0.0	auth.youtube.com
-0.0.0.0	en.youtube.com
-0.0.0.0	web.youtube.com
-0.0.0.0	local.youtube.com
-0.0.0.0	oracle.youtube.com
-0.0.0.0	backup.youtube.com
-0.0.0.0	erp.youtube.com
-0.0.0.0	web2test.youtube.com
-0.0.0.0	log.youtube.com
-0.0.0.0	owa.youtube.com
-0.0.0.0	beta.youtube.com
-0.0.0.0	eshop.youtube.com
-0.0.0.0	whois.youtube.com
-0.0.0.0	pbx.youtube.com
-0.0.0.0	blog.youtube.com
-0.0.0.0	exchange.youtube.com
-0.0.0.0	wiki.youtube.com
-0.0.0.0	www.youtube.com
-0.0.0.0	s3.youtube.com
-0.0.0.0	f5.youtube.com
-0.0.0.0	secure.youtube.com
-0.0.0.0	chat.youtube.com
-0.0.0.0	fileserver.youtube.com
-0.0.0.0	www2.youtube.com
-0.0.0.0	server.youtube.com
-0.0.0.0	citrix.youtube.com
-0.0.0.0	firewall.youtube.com
-0.0.0.0	xml.youtube.com
-0.0.0.0	main.youtube.com
-0.0.0.0	shop.youtube.com
-0.0.0.0	cms.youtube.com
-0.0.0.0	forum.youtube.com
-0.0.0.0	manage.youtube.com
-0.0.0.0	sip.youtube.com
-0.0.0.0	corp.youtube.com
-0.0.0.0	mgmt.youtube.com
-0.0.0.0	crs.youtube.com
-0.0.0.0	mirror.youtube.com
-0.0.0.0	sql.youtube.com
-0.0.0.0	cvs.youtube.com
-0.0.0.0	git.youtube.com
-0.0.0.0	mobile.youtube.com
-0.0.0.0	squid.youtube.com
-0.0.0.0	database.youtube.com
-0.0.0.0	gw.youtube.com
-0.0.0.0	help.youtube.com
-0.0.0.0	monitor.youtube.com
-0.0.0.0	ssh.youtube.com
-0.0.0.0	db.youtube.com
-0.0.0.0	mssql.youtube.com
-0.0.0.0	ssl.youtube.com
-0.0.0.0	demo.youtube.com
-0.0.0.0	helpdesk.youtube.com
-0.0.0.0	mta.youtube.com
-0.0.0.0	dev.youtube.com
-0.0.0.0	home.youtube.com
-127.0.0.1 youtube.com
-127.0.0.1 www.youtube.com
-127.0.0.1 208.65.153.251
+# 0.0.0.0	host.youtube.com
+# 0.0.0.0	mx.youtube.com
+# 0.0.0.0	admin.youtube.com
+# 0.0.0.0	devel.youtube.com
+# 0.0.0.0	stats.youtube.com
+# 0.0.0.0	http.youtube.com
+# 0.0.0.0	mx0.youtube.com
+# 0.0.0.0	administration.youtube.com
+# 0.0.0.0	development.youtube.com
+# 0.0.0.0	svn.youtube.com
+# 0.0.0.0	id.youtube.com
+# 0.0.0.0	mx1.youtube.com
+# 0.0.0.0	ads.youtube.com
+# 0.0.0.0	devsql.youtube.com
+# 0.0.0.0	syslog.youtube.com
+# 0.0.0.0	adserver.youtube.com
+# 0.0.0.0	images.youtube.com
+# 0.0.0.0	mysql.youtube.com
+# 0.0.0.0	devtest.youtube.com
+# 0.0.0.0	info.youtube.com
+# 0.0.0.0	news.youtube.com
+# 0.0.0.0	alerts.youtube.com
+# 0.0.0.0	dhcp.youtube.com
+# 0.0.0.0	test1.youtube.com
+# 0.0.0.0	internal.youtube.com
+# 0.0.0.0	noc.youtube.com
+# 0.0.0.0	alpha.youtube.com
+# 0.0.0.0	direct.youtube.com
+# 0.0.0.0	test2.youtube.com
+# 0.0.0.0	internet.youtube.com
+# 0.0.0.0	ns.youtube.com
+# 0.0.0.0	ap.youtube.com
+# 0.0.0.0	dmz.youtube.com
+# 0.0.0.0	testing.youtube.com
+# 0.0.0.0	intra.youtube.com
+# 0.0.0.0	ns0.youtube.com
+# 0.0.0.0	apache.youtube.com
+# 0.0.0.0	dns.youtube.com
+# 0.0.0.0	upload.youtube.com
+# 0.0.0.0	intranet.youtube.com
+# 0.0.0.0	ns1.youtube.com
+# 0.0.0.0	app.youtube.com
+# 0.0.0.0	dns0.youtube.com
+# 0.0.0.0	vm.youtube.com
+# 0.0.0.0	ipv6.youtube.com
+# 0.0.0.0	ns2.youtube.com
+# 0.0.0.0	apps.youtube.com
+# 0.0.0.0	dns1.youtube.com
+# 0.0.0.0	vnc.youtube.com
+# 0.0.0.0	lab.youtube.com
+# 0.0.0.0	ns3.youtube.com
+# 0.0.0.0	appserver.youtube.com
+# 0.0.0.0	dns2.youtube.com
+# 0.0.0.0	ldap.youtube.com
+# 0.0.0.0	aptest.youtube.com
+# 0.0.0.0	download.youtube.com
+# 0.0.0.0	vpn.youtube.com
+# 0.0.0.0	linux.youtube.com
+# 0.0.0.0	ops.youtube.com
+# 0.0.0.0	auth.youtube.com
+# 0.0.0.0	en.youtube.com
+# 0.0.0.0	web.youtube.com
+# 0.0.0.0	local.youtube.com
+# 0.0.0.0	oracle.youtube.com
+# 0.0.0.0	backup.youtube.com
+# 0.0.0.0	erp.youtube.com
+# 0.0.0.0	web2test.youtube.com
+# 0.0.0.0	log.youtube.com
+# 0.0.0.0	owa.youtube.com
+# 0.0.0.0	beta.youtube.com
+# 0.0.0.0	eshop.youtube.com
+# 0.0.0.0	whois.youtube.com
+# 0.0.0.0	pbx.youtube.com
+# 0.0.0.0	blog.youtube.com
+# 0.0.0.0	exchange.youtube.com
+# 0.0.0.0	wiki.youtube.com
+# 0.0.0.0	www.youtube.com
+# 0.0.0.0	s3.youtube.com
+# 0.0.0.0	f5.youtube.com
+# 0.0.0.0	secure.youtube.com
+# 0.0.0.0	chat.youtube.com
+# 0.0.0.0	fileserver.youtube.com
+# 0.0.0.0	www2.youtube.com
+# 0.0.0.0	server.youtube.com
+# 0.0.0.0	citrix.youtube.com
+# 0.0.0.0	firewall.youtube.com
+# 0.0.0.0	xml.youtube.com
+# 0.0.0.0	main.youtube.com
+# 0.0.0.0	shop.youtube.com
+# 0.0.0.0	cms.youtube.com
+# 0.0.0.0	forum.youtube.com
+# 0.0.0.0	manage.youtube.com
+# 0.0.0.0	sip.youtube.com
+# 0.0.0.0	corp.youtube.com
+# 0.0.0.0	mgmt.youtube.com
+# 0.0.0.0	crs.youtube.com
+# 0.0.0.0	mirror.youtube.com
+# 0.0.0.0	sql.youtube.com
+# 0.0.0.0	cvs.youtube.com
+# 0.0.0.0	git.youtube.com
+# 0.0.0.0	mobile.youtube.com
+# 0.0.0.0	squid.youtube.com
+# 0.0.0.0	database.youtube.com
+# 0.0.0.0	gw.youtube.com
+# 0.0.0.0	help.youtube.com
+# 0.0.0.0	monitor.youtube.com
+# 0.0.0.0	ssh.youtube.com
+# 0.0.0.0	db.youtube.com
+# 0.0.0.0	mssql.youtube.com
+# 0.0.0.0	ssl.youtube.com
+# 0.0.0.0	demo.youtube.com
+# 0.0.0.0	helpdesk.youtube.com
+# 0.0.0.0	mta.youtube.com
+# 0.0.0.0	dev.youtube.com
+# 0.0.0.0	home.youtube.com
+# 127.0.0.1 youtube.com
+# 127.0.0.1 www.youtube.com
+# 127.0.0.1 208.65.153.251
 # 216.239.38.120  www.youtube.com    #restricted search
 
 127.0.0.1 msn.com
@@ -337,69 +337,74 @@
 127.0.0.1 bing.com
 127.0.0.1 www.bing.com
 
-127.0.0.1 naver.com
-127.0.0.1 www.naver.com
-127.0.0.1 tv.naver.com
-127.0.0.1 m.naver.com
-127.0.0.1 mail.naver.com
-127.0.0.1 news.naver.com
-127.0.0.1 blog.naver.com
-127.0.0.1 shopping.naver.com
-127.0.0.1 entertainment.naver.com
-127.0.0.1 entertain.naver.com
-127.0.0.1 m.blog.naver.com
-127.0.0.1 search.naver.com
-127.0.0.1 http://m.news.naver.com
-127.0.0.1 m.search.naver.com
-127.0.0.1 m.sports.naver.com
+# 127.0.0.1 naver.com
+# 127.0.0.1 www.naver.com
+# 127.0.0.1 tv.naver.com
+# 127.0.0.1 m.naver.com
+# 127.0.0.1 mail.naver.com
+# 127.0.0.1 news.naver.com
+# 127.0.0.1 blog.naver.com
+# 127.0.0.1 shopping.naver.com
+# 127.0.0.1 entertainment.naver.com
+# 127.0.0.1 entertain.naver.com
+# 127.0.0.1 m.blog.naver.com
+# 127.0.0.1 search.naver.com
+# 127.0.0.1 http://m.news.naver.com
+# 127.0.0.1 m.search.naver.com
+# 127.0.0.1 m.sports.naver.com
 
-127.0.0.1 search.daum.net
-127.0.0.1 shopping.daum.net
+# 127.0.0.1 search.daum.net
+# 127.0.0.1 shopping.daum.net
 
-#127.0.0.1 www.amazon.com
-#127.0.0.1 amazon.com
-127.0.0.1 s3-iad-2.cf.dash.row.aiv-cdn.net
-127.0.0.1 s3.ll.dash.row.aiv-cdn.net
-127.0.0.1 s3-dub-2.cf.dash.row.aiv-cdn.net
-127.0.0.1 13s3.lvlt.dash.row.aiv-cdn.net
-127.0.0.1 https-117-121-250-225.sin.llnw.net
-127.0.0.1 s3.ll.hls.us.aiv-cdn.net
-127.0.0.1 16s3.lvlt.dash.row.aiv-cdn.net
-127.0.0.1 231s3.ll.dash.us.aiv-cdn.net
-127.0.0.1 233s3.ll.dash.us.aiv-cdn.net
-127.0.0.1 6s3.lvlt.smooth.us.aiv-cdn.net
-127.0.0.1 894s3.ll.dash.us.aiv-cdn.net
-127.0.0.1 8s3.lvlt.dash.us.aiv-cdn.net
-127.0.0.1 cds1244.lon.llnw.net
-127.0.0.1 cds135.nrt.llnw.net
-127.0.0.1 cds209.nrt.llnw.net
-127.0.0.1 https-178-79-238-56.mrs.llnw.net
-127.0.0.1 js-assets.aiv-cdn.net
-127.0.0.1 pop-iad-2.cf.dash.row.aiv-cdn.net
-127.0.0.1 s3-iad-2.cf.dash.row.aiv-cdn.net
-127.0.0.1 s3-iad-ww.cf.videorolls.row.aiv-cdn.net
-127.0.0.1 s3-sin-ww.cf.dash.row.aiv-cdn.net
-127.0.0.1 s3.ll.dash.row.aiv-cdn.net
+# 127.0.0.1 www.amazon.com
+# 127.0.0.1 amazon.com
+# 127.0.0.1 s3-iad-2.cf.dash.row.aiv-cdn.net
+# 127.0.0.1 s3.ll.dash.row.aiv-cdn.net
+# 127.0.0.1 s3-dub-2.cf.dash.row.aiv-cdn.net
+# 127.0.0.1 13s3.lvlt.dash.row.aiv-cdn.net
+# 127.0.0.1 https-117-121-250-225.sin.llnw.net
+# 127.0.0.1 s3.ll.hls.us.aiv-cdn.net
+# 127.0.0.1 16s3.lvlt.dash.row.aiv-cdn.net
+# 127.0.0.1 231s3.ll.dash.us.aiv-cdn.net
+# 127.0.0.1 233s3.ll.dash.us.aiv-cdn.net
+# 127.0.0.1 6s3.lvlt.smooth.us.aiv-cdn.net
+# 127.0.0.1 894s3.ll.dash.us.aiv-cdn.net
+# 127.0.0.1 8s3.lvlt.dash.us.aiv-cdn.net
+# 127.0.0.1 cds1244.lon.llnw.net
+# 127.0.0.1 cds135.nrt.llnw.net
+# 127.0.0.1 cds209.nrt.llnw.net
+# 127.0.0.1 https-178-79-238-56.mrs.llnw.net
+# 127.0.0.1 js-assets.aiv-cdn.net
+# 127.0.0.1 pop-iad-2.cf.dash.row.aiv-cdn.net
+# 127.0.0.1 s3-iad-2.cf.dash.row.aiv-cdn.net
+# 127.0.0.1 s3-iad-ww.cf.videorolls.row.aiv-cdn.net
+# 127.0.0.1 s3-sin-ww.cf.dash.row.aiv-cdn.net
+# 127.0.0.1 s3.ll.dash.row.aiv-cdn.net
 
-127.0.0.1 yahoo.com
-127.0.0.1 www.yahoo.com
-127.0.0.1 yahoo.co.jp
-127.0.0.1 www.yahoo.co.jp
-127.0.0.1 overview.mail.yahoo.com
-127.0.0.1 login.yahoo.com
-127.0.0.1 mail.yahoo.com
+# 127.0.0.1 yahoo.com
+# 127.0.0.1 www.yahoo.com
+# 127.0.0.1 yahoo.co.jp
+# 127.0.0.1 www.yahoo.co.jp
+# 127.0.0.1 overview.mail.yahoo.com
+# 127.0.0.1 login.yahoo.com
+# 127.0.0.1 mail.yahoo.com
 
-127.0.0.1 daum.net
-127.0.0.1 www.daum.net
-127.0.0.1 blog.daum.net
-127.0.0.1 nate.com
-127.0.0.1 www.nate.com
-127.0.0.1 tistory.com
-127.0.0.1 www.tistory.com
-127.0.0.1 ebay.com
-127.0.0.1 www.ebay.com
+# 127.0.0.1 daum.net
+# 127.0.0.1 www.daum.net
+# 127.0.0.1 blog.daum.net
+# 127.0.0.1 nate.com
+# 127.0.0.1 www.nate.com
+# 127.0.0.1 tistory.com
+# 127.0.0.1 www.tistory.com
+# 127.0.0.1 ebay.com
+# 127.0.0.1 www.ebay.com
 
-########################## DISTRACTION #########################
+########################## OK DISTRACTION #########################
+# 127.0.0.1 workingus.com
+# 127.0.0.1 www.workingus.com
+# 127.0.0.1 spotvnews.co.kr
+# 127.0.0.1 www.spotvnews.co.kr
+
 127.0.0.1 jwpltx.comm
 127.0.0.1 gdriveplayer.us
 127.0.0.1 godgall.com
@@ -415,8 +420,6 @@
 127.0.0.1 www.hankookilbo.com
 127.0.0.1 yonhapnews.co.kr
 127.0.0.1 www.yonhapnews.co.kr
-127.0.0.1 spotvnews.co.kr
-127.0.0.1 www.spotvnews.co.kr
 127.0.0.1 bobaedream.co.kr
 127.0.0.1 www.bobaedream.co.kr
 127.0.0.1 gloria.tv
@@ -466,8 +469,7 @@
 127.0.0.1 namu.wiki
 127.0.0.1 gohackers.com
 127.0.0.1 www.gohackers.com
-127.0.0.1 workingus.com
-127.0.0.1 www.workingus.com
+
 127.0.0.1 vidzi.cc
 127.0.0.1 vidto.me
 127.0.0.1 thevideo.me
@@ -693,7 +695,7 @@
 127.0.0.1 instiz.net
 127.0.0.1 www.instiz.net
 
-########################## PORNOGRAPHY #########################
+########################## HARMFUL DISTRACTION #########################
 127.0.0.1 javhay.net
 127.0.0.1 www.javhay.net
 127.0.0.1 javcl.com
@@ -6981,41 +6983,41 @@
 
 # unchecky_begin
 # These rules were added by the Unchecky program in order to block advertising software modules
-0.0.0.0 0.0.0.0 # fix for traceroute and netstat display anomaly
-0.0.0.0 media.opencandy.com
-0.0.0.0 cdn.opencandy.com
-0.0.0.0 tracking.opencandy.com
-0.0.0.0 api.opencandy.com
-0.0.0.0 api.recommendedsw.com
-0.0.0.0 rp.yefeneri2.com
-0.0.0.0 os.yefeneri2.com
-0.0.0.0 os2.yefeneri2.com
-0.0.0.0 installer.betterinstaller.com
-0.0.0.0 installer.filebulldog.com
-0.0.0.0 d3oxtn1x3b8d7i.cloudfront.net
-0.0.0.0 inno.bisrv.com
-0.0.0.0 nsis.bisrv.com
-0.0.0.0 cdn.file2desktop.com
-0.0.0.0 cdn.goateastcach.us
-0.0.0.0 cdn.guttastatdk.us
-0.0.0.0 cdn.inskinmedia.com
-0.0.0.0 cdn.insta.oibundles2.com
-0.0.0.0 cdn.insta.playbryte.com
-0.0.0.0 cdn.llogetfastcach.us
-0.0.0.0 cdn.montiera.com
-0.0.0.0 cdn.msdwnld.com
-0.0.0.0 cdn.mypcbackup.com
-0.0.0.0 cdn.ppdownload.com
-0.0.0.0 cdn.riceateastcach.us
-0.0.0.0 cdn.shyapotato.us
-0.0.0.0 cdn.solimba.com
-0.0.0.0 cdn.tuto4pc.com
-0.0.0.0 cdn.appround.biz
-0.0.0.0 cdn.bigspeedpro.com
-0.0.0.0 cdn.bispd.com
-0.0.0.0 cdn.bisrv.com
-0.0.0.0 cdn.cdndp.com
-0.0.0.0 cdn.download.sweetpacks.com
-0.0.0.0 cdn.dpdownload.com
-0.0.0.0 cdn.visualbee.net
+# 0.0.0.0 # 0.0.0.0 # fix for traceroute and netstat display anomaly
+# 0.0.0.0 media.opencandy.com
+# 0.0.0.0 cdn.opencandy.com
+# 0.0.0.0 tracking.opencandy.com
+# 0.0.0.0 api.opencandy.com
+# 0.0.0.0 api.recommendedsw.com
+# 0.0.0.0 rp.yefeneri2.com
+# 0.0.0.0 os.yefeneri2.com
+# 0.0.0.0 os2.yefeneri2.com
+# 0.0.0.0 installer.betterinstaller.com
+# 0.0.0.0 installer.filebulldog.com
+# 0.0.0.0 d3oxtn1x3b8d7i.cloudfront.net
+# 0.0.0.0 inno.bisrv.com
+# 0.0.0.0 nsis.bisrv.com
+# 0.0.0.0 cdn.file2desktop.com
+# 0.0.0.0 cdn.goateastcach.us
+# 0.0.0.0 cdn.guttastatdk.us
+# 0.0.0.0 cdn.inskinmedia.com
+# 0.0.0.0 cdn.insta.oibundles2.com
+# 0.0.0.0 cdn.insta.playbryte.com
+# 0.0.0.0 cdn.llogetfastcach.us
+# 0.0.0.0 cdn.montiera.com
+# 0.0.0.0 cdn.msdwnld.com
+# 0.0.0.0 cdn.mypcbackup.com
+# 0.0.0.0 cdn.ppdownload.com
+# 0.0.0.0 cdn.riceateastcach.us
+# 0.0.0.0 cdn.shyapotato.us
+# 0.0.0.0 cdn.solimba.com
+# 0.0.0.0 cdn.tuto4pc.com
+# 0.0.0.0 cdn.appround.biz
+# 0.0.0.0 cdn.bigspeedpro.com
+# 0.0.0.0 cdn.bispd.com
+# 0.0.0.0 cdn.bisrv.com
+# 0.0.0.0 cdn.cdndp.com
+# 0.0.0.0 cdn.download.sweetpacks.com
+# 0.0.0.0 cdn.dpdownload.com
+# 0.0.0.0 cdn.visualbee.net
 # unchecky_end
