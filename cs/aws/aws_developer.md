@@ -1150,6 +1150,9 @@ uses default KMS key
     * BatchGetItem = 5*GetItem
     * BatchWriteItem = 2*PutItem + 4*DeleteItem
 
+* Automatic Scale
+  * DynamoDB, Lambda, SQS scales automatically.
+
 # AWS Elasticache
 * Elisticache
   * in-memory cache in the cloud
