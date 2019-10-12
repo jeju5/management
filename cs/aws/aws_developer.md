@@ -531,6 +531,24 @@ uses default KMS key
     * go to CORS configuration
     * add url of bucketA to AllowedOrigin
   * by default bucket has no access to different bucket -> you can configure with CORS policy
+  * CORS configuration example
+    * CORS configuration configures preflight OPTION request.
+    ```
+    <?xml version="1.0" encoding="UTF-8"?>
+    <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+     <CORSRule>
+      <AllowedOrigin>https://tutorialsdojo.com</AllowedOrigin>  # AllowedOrigin: allowed CORS origin
+      <AllowedMethod>GET</AllowedMethod>                        # AllowedMethod: allowed CORS request method types
+      <AllowedMethod>PUT</AllowedMethod>
+      <AllowedMethod>POST</AllowedMethod>
+      <AllowedMethod>DELETE</AllowedMethod>
+      <AllowedHeader>*</AllowedHeader>                          # AllowedHeader: Headers allowed in preflight request
+      <ExposeHeader>ETag</ExposeHeader>                         # ExposeHeader: Headers that customers are able to access
+      <ExposeHeader>x-amz-meta-custom-header</ExposeHeader>
+      <MaxAgeSeconds>3600</MaxAgeSeconds>
+     </CORSRule>
+    </CORSConfiguration>
+    ```
 
 * S3 optimization
     * S3 optimization is based on workload you are running
@@ -1068,6 +1086,7 @@ uses default KMS key
   * logs are stored encrypted and for 24hrs.
   * only accessible thru dedicated dynamodb api endpoint.
   * can be used as a trigger for Lambda function
+    * Lambda trigger source: DynamoDB Stream, Cloudwatch event (DynamoDB Stream is suitable when new data is inserted/updated)
   * Kinesis Adapter is more suitable for handling these streams (than Lambda)
   * capture a time-ordered sequence of all the activity which occurs on your DynamoDB table – e.g. insert, update, delete.
 
@@ -1918,8 +1937,6 @@ uses default KMS key
   
 * Security Group acts as a firewall. It is a service for EC2 & RDS.
 
-* AWS Fargate is a serverless compute service.
-
 * In General, anything comes out of encrypted AWS DB is encrypted.
   * ex) encrypted RDS -> encrypted snapshot
   
@@ -1935,3 +1952,12 @@ uses default KMS key
 
 * AWS CodeStar
   * Quick CICD management tool like codepipeline (light version of code pipeline)
+
+* AWS QuickSight
+  * ML based data analysis & visualization.
+  
+* AWS Athena
+  * AWS data query service
+  
+* AWS Fargate
+  * serverless compute service.
