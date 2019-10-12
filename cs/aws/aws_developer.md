@@ -1137,6 +1137,11 @@ uses default KMS key
     * causes performance issue
     * suitable for transactional db
   * Overly Optimistic Locking
+  
+* DynamoDB Batch Operations
+  * Using dyanmoDB BatchGetItem, BatchWriteItem can save resources on redundant operations.
+    * BatchGetItem = 5*GetItem
+    * BatchWriteItem = 2*PutItem + 4*DeleteItem
 
 # AWS Elasticache
 * Elisticache
