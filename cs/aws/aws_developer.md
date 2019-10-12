@@ -347,6 +347,12 @@
     ```
     --dry-run 
     ```
+    
+* AWS sign in URL
+  ```
+  https://AWS_ID.signin.aws.amazon.com/console/
+  https://AWS_ID_ALIAS.signin.aws.amazon.com/console/    # if you create Alias for AWS ID
+  ```
 
   
 # AWS & DB
@@ -493,24 +499,27 @@
     * "SSE (Server Side Encryption) via SSE-C/S3/KMS"
     * SSE-C
       * encryption key: you manage (Client Managed Keys)
-      * encryption: s3 manage
+      * encryption/decryption: s3 manage
       * HTTPS is mandatory (HTTP rejected)
       * client must provide encryption key info as following headers
         ```
         * x-amz-server-side-encryption-customer-algorithm: AES256 (this is how you will encrypt)
         * x-amz-server-side-encryption-customer-key: encoded encryption key
         * x-amz-server-side-encryption-customer-key-MD5: encoded MD5 digest of encryption key
-        ```
+              ```
+      * HMAC (hash-based message authentication code).)
+        * When you use SSE-C, then the client key you provided is stored in salted HMAC
+        * However, this HMAC can't be used for decryption/encryption. If you lose the key you lose the data.
     * SSE-S3
       * encryption key: s3 manage 
-      * encryption: s3 manage (S3 Managed Keys)
+      * encryption/decryption: s3 manage (S3 Managed Keys)
       * supports HTTP/HTTPS
       ```
       * "x-amz-server-side-encryption": "AES256"
       ```
     * SSE-KMS
       * encryption key: KMS manage  (S3 Managed Keys)
-      * encryption: s3 manage
+      * encryption/decryption: s3 manage
       * option to use envelope key, audit trail and create/manage encryption keys yourself.
 
       * supports HTTP/HTTPS
@@ -638,6 +647,9 @@ uses default KMS key
     * Viewer <--HTTPS(A)--> Edge Location : CloudFront <--HTTPS(B)--> Origin
     * to enable HTTPS(A): set HTTPS in "Viewer Protocol Policy"
     * to enable HTTPS(B): set HTTPS in "Origin Protocol Policy"
+  * 504 Error (Gateway time out)
+    * set up primary origin and second origin for Cloudfront to automatically switch.
+    * use Labmda@Edge
     
 
 # Serverless Computing
@@ -1156,10 +1168,10 @@ uses default KMS key
 
 * Locking
   * Optimistic Locking
-    * lock item with version number
+    * "Be optimistic" that client/db is the same -> lock item with version number only
     * client side item for update/delete is the same as dynamo db side. (protects overwrites)
   * Pessimistic Locking
-    * lock item until you finish it
+    * "Be pessimistic" that client/db is the same -> lock the entire item until you finish it
     * causes performance issue
     * suitable for transactional db
   * Overly Optimistic Locking
@@ -1178,7 +1190,11 @@ uses default KMS key
     * ReturnConsumedCapacity.TOTAL — total number of WCU consumed
     * ReturnConsumedCapacity.INDEXES — returns the total number of write capacity units consumed, with subtotals for the table and any secondary indexes that were affected by the operation.
 
-
+* DynamoDB & throttling solution
+  * SOLUTION1: implement error retries & exponential back off
+  * SOLUTION2: spread workload (ex) technique: write sharding = distribute write operation across)
+  * SOLUTION3: use DAX
+  * SOLUTION4: increase RCU & WCU
 
 
 # AWS Elasticache
@@ -1265,8 +1281,6 @@ uses default KMS key
   
   * Decrypt: decrypt keys or general text.
   * GenerateRandom: generate random byte string
-  
-
 
 
 # Notification Services
@@ -1862,10 +1876,11 @@ uses default KMS key
   * You can retrieve logs of terminated AWS resources.
   * You can set up alert when CloudWatch monitors the conditions you are looking for
   
-* CloudWatch vs CloudTrail vs AWS Config
+* CloudWatch vs CloudTrail vs AWS Config vs AWS X-Ray
   * CloudWatch is performance monitor tool (health, operational status)
   * CloudTrail is API logger/debugger tool (API logs)
   * AWS Config is aws resource configuration monitor tool
+  * AWS X-Ray is trouble shooting tool (not monitoring/tracking)
   
 * In CloudWatch, you can create a cron event to regularly trigger something like backing up a DB.
 
