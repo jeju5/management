@@ -200,6 +200,15 @@
   * binpack: place tasks based on cpu & memory (this minimizes the number of instances in use)
   * random: place task randomly
   
+* EC2 Task Group
+  * set of related EC2 tasks
+  
+* EC2 Task Placement Constraint
+  * Constraint(rule) that is used during task placement.
+  
+* EC2 Cluster Query Language
+  * Expressions that enable you to group container instances. (by attributes like Availability Zone, instance type, or custom metadata)
+  
 * EC2 Storage
   * Instance Storage
     * ephemeral = volatile = data lost when With EC2 stopped.
