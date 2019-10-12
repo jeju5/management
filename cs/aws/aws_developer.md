@@ -111,6 +111,10 @@
     * Magnetic
       * legacy service
       * lowest cost among all
+
+* EBS detachement
+  * "STOP UNMOUNT DETACH" (STOP: if EBS is root volume, stop the instance first)   
+       
 * EC2 Security Group
   * define allowed inbound/outbound
   * types: ssh, rdp, http...
@@ -639,7 +643,6 @@ uses default KMS key
 # Serverless Computing
 * AWS Lambda
   * Lambda is abstract layer of 'Data Center + Hardware + Assembly Code + High Level Languages + OS + Application Layer)
-  * Language Support: Node.js Java Python C# Go
   * first 1million requests are free. 20cents per 1million requests after.
   * lambda scales out automatically (not scale up)
   * AWS X-ray debugs AWS Lambda
@@ -655,11 +658,18 @@ uses default KMS key
     * HTTP 429 TOO MANY REQUESTS error
     * Reserved Concurrency
       * reserved number of execution set for critical lambda functions (this also have a limit)
+      
   * Lambda Version
     * When you create a new Lambda function. Its version is $LATEST
     * You can create multiple versions and use it with alias to that version
   * You can configure RAM Memory assigned to a Lambda for performance requirement.
   * environemntal variable size total shouldn't exceed 4kb
+  
+* Lambda Language Supports
+  * Node.js Java Python C# Go
+  * Doesn't support C++
+  * what if you want to use language that is not supported by Lambda? -> use "AWS Lambda Custom Runtime"
+    * create a layer that uses "AWS Lambda Custom Runtime"
   
 * Access to VPC (Virtual Private Cloud)
   * terms
@@ -1161,6 +1171,15 @@ uses default KMS key
 
 * Automatic Scale
   * DynamoDB, Lambda, SQS scales automatically.
+  
+* DynamoDB & ReturnConsumedCapacity
+  * ReturnConsumedCapacity (NONE < TOTAL < INDEXES)
+    * ReturnConsumedCapacity.NONE — no write capacity details are returned. (This is the default.)
+    * ReturnConsumedCapacity.TOTAL — total number of WCU consumed
+    * ReturnConsumedCapacity.INDEXES — returns the total number of write capacity units consumed, with subtotals for the table and any secondary indexes that were affected by the operation.
+
+
+
 
 # AWS Elasticache
 * Elisticache
@@ -1533,11 +1552,11 @@ uses default KMS key
 
 * CodeDeploy Deployment Types
   * In-Place(Rolling) Deployment
-    * Applicable to EC2/OnPremise (not applicable to ECS/Lambda)
+    * Applicable to: EC2, OnPremise
     * Rolling Update
     * Each instance stops an app when doing an upgrade installation.
   * Blue/Green Deployment
-    * Applicable to EC2/OnPremise/ECS/Lambda
+    * Applicable to: EC2, OnPremise, ECS, Lambda
     * Enviroment swapping (blue env -> green env), which is a difference between immutable (no env swap)    
     * Blue is active(current) version instances.
     * Green is new version instances.
@@ -1885,15 +1904,21 @@ uses default KMS key
   
 
 # Other Topics & Tips
-* AWS Systems Manager Parameter Store (SSM)
-  * Where would you store confidential information (credentials, license codes) for AWS resources? -> AWS Systems Manager Parameter Store (as parameter values)
-  * SecureString
-    * you can create SecureString parameters
-    * plainText as parameterName, KMS encryptedValue as parameterValue
-    * SSM uses AWS KMS to encrypt and decrypt the parameter values of Secure String parameters.
-    
+* AWS Systems Manager (SSM)
+  * Parameter Store
+    * Where would you store confidential information (credentials, license codes) for AWS resources? Parameter Store
+    * SecureString
+      * you can create SecureString parameters
+      * plainText as parameterName, KMS encryptedValue as parameterValue
+      * SSM uses AWS KMS to encrypt and decrypt the parameter values of Secure String parameters.
+  * State Manager
+    * Automates AWS EC2 state keeping process
+
 * AWS Secrets Manager
   * AWS Secrets Managers stores your confidential information. It is similar to SSM but has more ability such as 'secrets rotation' & 'password generation'.
+
+* AWS Service Catalog
+  * creates and manages IT catalogs
 
 * Default AWS SDK Region = US-EAST-1
 
