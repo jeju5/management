@@ -1428,7 +1428,7 @@ uses default KMS key
     * Kinesis automatically encrypts data before it's at rest by using an AWS KMS customer master key (CMK) you specify. (data at rest simply means data is written for storage)
   
   * Kinesis DataStream
-    * Partition key is used to group data within a stream.
+    * Partition key is unique. It is used to group data within a stream.
       * when partition keys are not distributed well enough, data distribution across shards will be skewed causing ProvisionedThroughputExceededException.
     * Sequence Number is used with partition key (works like a sort key)
     
