@@ -1226,11 +1226,12 @@ uses default KMS key
     
 * KMS endpoints
   * Encrypting Key
-    * GenerateDataKeyWithoutPlaintext: return CMK encrypted dataKey
     * GenerateDataKey: return unencrpyted dataKey & CMK encrypted dataKey
+    * GenerateDataKeyWithoutPlaintext: return CMK encrypted dataKey
   * Encrypting general text
     * Encrypt
   * when using these endpoints above you provide KeyId specifying encrypting key.    
+  
   * Decrypt: decrypt keys or general text.
   * GenerateRandom: generate random byte string
   
