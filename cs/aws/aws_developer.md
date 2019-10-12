@@ -452,7 +452,10 @@
   * Storage Management (Analytics, Tagging)
   * Data Management (Data transfer out of S3; if data is transferred into S3, its free)
   * Transfer Acceleration (Use of Cloudfront CDN)
-  
+
+* S3 Transfer Acceleration
+  * accelerates file transfer using Cloudfront
+
 * S3 Security
   * Bucket is private by default (only owner has access)
   * You can set up
