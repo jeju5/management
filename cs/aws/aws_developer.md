@@ -1294,6 +1294,7 @@ uses default KMS key
 
 * SQS Dead Letter Queue (DLQ)
   * this is where undelivered msg eventually goes. You can debug or analyze issues here.
+  * to implement DLQ in Lambda: specify SQS arn in Lambda's DeadLetterConfig
   
 * AWS SNS (Simple Notification Service)
   * Push Based (no polling)
