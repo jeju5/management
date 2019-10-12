@@ -1551,9 +1551,9 @@ uses default KMS key
 * You can store revision codes in S3.
 
 * CodeDeploy Deployment Types
-  * In-Place(Rolling) Deployment
+  * In-Place Deployment
     * Applicable to: EC2, OnPremise
-    * Rolling Update
+    * works like Rolling Update (Rolling is a Deployment Type in ElasticBeanstalk)
     * Each instance stops an app when doing an upgrade installation.
   * Blue/Green Deployment
     * Applicable to: EC2, OnPremise, ECS, Lambda
