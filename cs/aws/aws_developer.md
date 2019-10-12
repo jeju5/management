@@ -453,6 +453,13 @@
   * Data Management (Data transfer out of S3; if data is transferred into S3, its free)
   * Transfer Acceleration (Use of Cloudfront CDN)
 
+* S3 Multipart upload
+  * S3 single operation can upload upto 5GB.
+  * using S3 multipart upload, you can upload upto 5TB.
+  * AWS CLI automatically attempts to multipart upload if file is too large.
+  * you need kms:encrypt/decrypt/reencrypt/GenerateDataKey/DescribeKey permissions for multipart upload
+ 
+
 * S3 Transfer Acceleration
   * accelerates file transfer using Cloudfront
 
