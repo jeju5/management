@@ -7,9 +7,9 @@
   0630 0800  오전자유
   ------------------------
   0800 1200  오전일과
-  1200 0400  오후일과        # 블루케일, 에그사토, 치킨쌀밥
+  1200 0400  오후일과        # 블루케일, 후무스랩, 토마토랩
   ------------------------
-  0400 0730  오후자유        # 블루케일, 치킨타코, 영양보충
+  0400 0730  오후자유        # 블루케일, 고기쌀밥, 영양보충
   0730 0800  정리 성경 취침     
   ------------------------
   ```
@@ -21,32 +21,33 @@
   0500       요거트, 아몬드
   ------------------------
   1200       블루케일
-  0100       에그사토
-  0200       치킨쌀밥
+  0100       후무스랩
+  0200       토마토랩
   ------------------------
   0500       블루케일
-  0600       치킨타코
+  0600       고기쌀밥
   0700       영양보충
   ------------------------
   * 요거트: YQ
   * 블루케일: 블루베리, 케일
-  * 에그마토: 에그, 사우어크라우트, 토마토소스
-  * 치킨쌀밥: 치킨, 양파, 피망, 흰쌀
-  * 치킨타코: 치킨, 달걀, 양파, 사우어크라우트 & 싸우전아일랜드, 또띠아, 토마토소스, 후무스
+  * 후무스랩: 치킨, 사우어크라우트, 후무스소스, 또띠아
+  * 토마토랩: 치킨, 사우어크라우트, 토마토소스, 또띠아
+  * 고기쌀밥: 고기, 양파, 피망, 흰쌀
   * 영양보충: 커큐민, 비타민
-  * NO SODA. NO CAFFEINE. NO DAIRY
-  * 감량식: 1계란, 7방울토마토 (0100, 0200, 0600 대체)
+
+  * 감량식: 쌀밥/또띠아 없이 식사
+  * NO SODA. NO CAFFEINE.
   ```
 
 # DAILY MOVE
   ```
        기상   아침    오후
-  MON: PULL  RUN5  BOXING
+  MON: PULL
   TUE: DIP   RUN5  BOXING
   WED: SIT   RUN5  BOXING
   THU: CURL  RUN5  BOXING
-  FRI: PUSH   RUN5
-  SAT: SIT
+  FRI: PUSH  RUN5  BOXING
+  SAT: SIT   RUN10+
   SUN: 휴식
   
   PULL          : 5x8
@@ -57,8 +58,7 @@
   RUN 9+        : 05 08 08 10 05 10 10 10 08 13 13 08 15 15 08 18 08 (done) 20 08 23 | 08 08 08 *26*
   
   WEIGHT
-  - usual: 66kg (65kg ~ 67kg)
-  - fight: 64kg (--2week--> 65kg --watercut--> 64kg)
+  - usual: 65kg (64kg ~ 66kg)
   ```
 
 # Task
@@ -67,12 +67,6 @@
 * UDEMY: Modern React with Redux
 * UDEMY: Node with React
 * UDEMY: GraphQL with React
-
-* Mankato Marathon (Oct.19)
-* H1B interview scheduling
-* Udemy AWS Practice Exams https://www.udemy.com/aws-certified-developer-associate-practice-tests-dva-c01/
-* Boxing at Minneapolis Boxing Club
-* Tennis InnerCity
   
 # MONEY
 ```
