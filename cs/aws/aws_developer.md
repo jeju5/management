@@ -67,6 +67,12 @@
 * To allow one AWS account to access and manage resources in another AWS account
   * configure aws cross account access
 
+* root user access key
+  * it is recommended to delete root-user-access-key. (if you don't have it, don't create it if you really need it)
+
+* Instance Profile
+  * Instance profile is a container for an IAM role that you can use to pass role information to an EC2 instance when the instance starts.
+
 # EC2
 * EC2 101
   * EC2 = ECC = Elastic Cloud Computing = Computing Service in Cloud
@@ -198,11 +204,24 @@
   }
   ```
   
-* EC2 Task Placement Strategy "SBR"
+* EC2 Task Placement Strategy
   * how will you assign tasks to instances?
-  * spread: place tasks evenly
-  * binpack: place tasks based on cpu & memory (this minimizes the number of instances in use)
-  * random: place task randomly
+  * field
+    * instanceId or custom (like availibility zone, cpu, memory ... etc)
+  * type ("SBR TYPE")
+    * spread: place tasks evenly
+    * binpack: place tasks based on cpu & memory (this minimizes the number of instances in use)
+    * random: place task randomly
+      * but still honrs explicit/implicit constraints you specified
+      * and makes sure that instances assigned have enough resources
+  ```
+  "placementStrategy" : [
+    {
+      "field": "attribute:ecs.availability-zone",
+      "type": "spread"
+    }
+  ]
+  ```
   
 * EC2 Task Group
   * set of related EC2 tasks
@@ -267,6 +286,8 @@
 
 * The load balancer routes requests only to the healthy instances.
   * When the load balancer determines that an instance is unhealthy, it stops routing requests to that instance
+  * health check and routing is done automatically (so do nothing)
+
 * when your load balancer fails, it throws 504 error (Gateway timeout)
 * x-forwarded-for header
   * Requester (Public IP) -> DNS -> Load Balancer -> Application Server
@@ -338,6 +359,9 @@
       aws s3api list-objects --bucket myBucket --max-items 120 (return first 120 items and that's it)
       ```
 
+  * AWS CLI & profiles
+    * you can use 
+
   * in AWS CLI, passing value as a flag is better than aws configure (when possible)
     ```
     ex)  --region us-east-2
@@ -379,9 +403,18 @@
       * Instance Actions -> Create read replica
       * configure settings (you can enable multi-AZ here)
     * Read replicas can be promoted to a primary DB if you want. (This breaks replications)
+
+* RDS enhanced monitoring
+  * you can enable enhanced monitoring to monitor CPU & memory usage. (CPU% & MEM%)
     
 * AWS RDS Troubleshoot
   * You can enable logs: error log, slow query log(query that takes long time)
+
+* AWS RDS & TDE
+  * AWS RDS supports TDE(transparent data encryption) for MS SQL Server.
+  * This feature automatically
+    * encrypts data before it is written.
+    * decrypts data after it is read.
 
 * AWS Redshift
   * OLAP (OL"A"P = Online Analytics Processing)
@@ -454,16 +487,20 @@
   * S3 One Zone IA
     * nine9 & 99.5
     * same as S3 -IA, but is stored in a single AZ
-  * Reduced Redundancy Storage
-    * 99.99% availibility and durability to provide one-year storage.
-    * good for data that can be easiliy regenerated if lost.
-  * Glacier
-    * Very cheap, Verp slow. Works for very infrequently accessed data (proper for historic archive)
   * S3 Intelligent Tiering
     * same availability and durability as Standard S3.
     * good for unknown access patterns.
     * It has two tiers (frequent/infrequent) and it automatically moves your data to cost-effective tier.
     * no retrieval fee but has very small monthly maintenance fee.
+  * Reduced Redundancy Storage
+    * 99.99% availibility and durability to provide one-year storage.
+    * good for data that can be easiliy regenerated if lost.
+  * Glacier
+    * Very cheap, Verp slow. Works for very infrequently accessed data (proper for historic archive)
+    * Retrieval Options
+      * Bulk retrieval: 5-12hours, large amt, cheapest
+      * Standard retrieval: 3-5hours
+      * Expedited retrieval: 1-5mins
     
 * Charges
   * Storage (per GB)
@@ -496,39 +533,41 @@
   * S3 Encryption "in Transit"
     * SSL/TLS or Client Side Encryption(You encryption data on your own (application level))
   * S3 Encryption "at Rest"
-    * "SSE (Server Side Encryption) via SSE-C/S3/KMS"
-    * SSE-C
-      * encryption key: you manage (Client Managed Keys)
-      * encryption/decryption: s3 manage
-      * HTTPS is mandatory (HTTP rejected)
-      * client must provide encryption key info as following headers
+    * Client Side
+      * done by client
+    * Server SIde
+      * "SSE (Server Side Encryption) via SSE-C/S3/KMS"
+      * SSE-C
+        * encryption key: you manage (Client Managed Keys)
+        * encryption/decryption: s3 manage
+        * HTTPS is mandatory (HTTP rejected)
+        * client must provide encryption key info as following headers
+          ```
+          * x-amz-server-side-encryption-customer-algorithm: AES256 (this is how you will encrypt)
+          * x-amz-server-side-encryption-customer-key: encoded encryption key
+          * x-amz-server-side-encryption-customer-key-MD5: encoded MD5 digest of encryption key
+                ```
+        * HMAC (hash-based message authentication code).)
+          * When you use SSE-C, then the client key you provided is stored in salted HMAC
+          * However, this HMAC can't be used for decryption/encryption. If you lose the key you lose the data.
+      * SSE-S3
+        * encryption key: s3 manage 
+        * encryption/decryption: s3 manage (S3 Managed Keys)
+        * supports HTTP/HTTPS
         ```
-        * x-amz-server-side-encryption-customer-algorithm: AES256 (this is how you will encrypt)
-        * x-amz-server-side-encryption-customer-key: encoded encryption key
-        * x-amz-server-side-encryption-customer-key-MD5: encoded MD5 digest of encryption key
-              ```
-      * HMAC (hash-based message authentication code).)
-        * When you use SSE-C, then the client key you provided is stored in salted HMAC
-        * However, this HMAC can't be used for decryption/encryption. If you lose the key you lose the data.
-    * SSE-S3
-      * encryption key: s3 manage 
-      * encryption/decryption: s3 manage (S3 Managed Keys)
-      * supports HTTP/HTTPS
-      ```
-      * "x-amz-server-side-encryption": "AES256"
-      ```
-    * SSE-KMS
-      * encryption key: KMS manage  (S3 Managed Keys)
-      * encryption/decryption: s3 manage
-      * option to use envelope key, audit trail and create/manage encryption keys yourself.
+        * "x-amz-server-side-encryption": "AES256"
+        ```
+      * SSE-KMS
+        * encryption key: KMS manage  (S3 Managed Keys)
+        * encryption/decryption: s3 manage
+        * option to use envelope key, audit trail and create/manage encryption keys yourself.
 
-      * supports HTTP/HTTPS
-      ```
-      * "x-amz-server-side-encryption": "aws:kms"
-      * "x-amz-server-side-encryption-aws-kms-key-id": you can specify specific encryption key.
-         if you use "x-amz-server-side-encryption": "aws:kms" but not "x-amz-server-side-encryption-aws-kms-key-id", then AWS 
-      ```
-uses default KMS key
+        * supports HTTP/HTTPS
+        ```
+        * "x-amz-server-side-encryption": "aws:kms"
+        * "x-amz-server-side-encryption-aws-kms-key-id": you can specify specific encryption key.
+          if you use "x-amz-server-side-encryption": "aws:kms" but not "x-amz-server-side-encryption-aws-kms-key-id", then AWS uses default KMS key
+        ```
       
 * Enforcing Encryption
   * When object is uploaded to S3, PUT method is initiated.
@@ -578,6 +617,11 @@ uses default KMS key
      </CORSRule>
     </CORSConfiguration>
     ```
+
+* S3 CRR (Cross-Region Replication)
+  * feature of auto/async copying of objects across buckets in different AWS regions.
+  * you neeed to enable versioning in bucket
+  * you need to specify source & destination in different region
 
 * S3 optimization
     * S3 optimization is based on workload you are running
@@ -682,6 +726,10 @@ uses default KMS key
   * Doesn't support C++
   * what if you want to use language that is not supported by Lambda? -> use "AWS Lambda Custom Runtime"
     * create a layer that uses "AWS Lambda Custom Runtime"
+
+* Lambda Runtime
+  * Runtime is a program that runs a Lambda function's handler method when the function is invoked.
+  * you can include runtime codes in an excutable file named 'bootstrap' in deployment package of lambda function.
   
 * Access to VPC (Virtual Private Cloud)
   * terms
@@ -864,16 +912,18 @@ uses default KMS key
 
 * Lambda Authorizers
   * API Gateway feature of acess control from Labmda to API
-  * token-based Lambda authorizer (TOKEN authorizer): receives the caller's identity in a bearer token(JWT, OAUTH)
-  * request parameter-based Lambda authorizer (REQUEST authorizer): receives the caller's identity in a combination of parameters( headers, query string parameters, stageVariables, and $context variables)
+  * Types
+    * TOKEN authorizer = token-based = receives the caller's identity in a token (JWT, OAUTH)
+    * REQUEST authorizer = request parameter-based = receives the caller's identity in a combination of parameters (headers, query string parameters, stageVariables, and $context variables)
 
 * Lambda & Concurrency
   * account concurrenct execution limit: concurrecy capacity with in an account
   * reserve concurrency: concurrency capacity can be reserved for a lambda function
-  * unreserved concurrency: whatever is left over from reserved concurrency is unreserved concurrency. (minimum 100 required)
-  * note that reserve concurrency can't exceed to the point that any unreserved concurrency shouldn't go below 100
+  * unreserved concurrency: whatever is left over from reserved concurrency is unreserved concurrency. (minimum 100 required; and this is combined minimum, that is not minimum per lambda)
+  * note that reserve concurrency can't exceed to the point that any unreserved concurrency shouldn't go below 100 (100 combined across all left over lambdas)
 
-
+* Lambda & Recursive Call
+  * doesn't cause abrupt termination. It will cause massive increase in volume and cost
 
 * AWS Api Gateway has Mapping Template
   * API Gateway lets you use mapping templates to map the payload from a method request to the corresponding integration request and from an integration response to the corresponding method response.  
@@ -886,23 +936,29 @@ uses default KMS key
     ```
 * API Gateway Integration Types
   * API Gateway Lambda Integration
-    * AWS: with custom mapping            (mapping: data mapping, request mapping, response mappingP
+    * AWS: with custom mapping            (non-proxy is custom mapping; data mapping, request mapping, response mapping)
     * AWS_PROXY: without custom mapping   (proxy is non-custom mapping)
   * API Gateway EC2 Integration
     * HTTP: with custom mapping
     * HTTP_PROXY: without custom mapping
   * MOCK: return response without hitting backend.
 
-* AWS Step Function
-  * visualization and logging of workflow & status
+* API Gateway & HTTPS
+  * API Gateway only uses HTTPS connection (no HTTP, FTP, Websocket)
+
+* AWS Step Function (SF)
+  * workflow logging/visualization (light, no-infrastructure)
   * uses JSON-based Amazon States Language
     
-* Amazon Simple Work Flow
-  * complex version of Step Fuinction + task assignment
-    * SF: user don't have to maintain infrastructure
-    * SWF: user have to maintain infrastructure
+* Amazon Simple Work Flow (SWF)
+  * workflow logging/visualization (heavy, full-stack, infrastructure)
   * task-oriented API.
   * ensures that task is assigned only once. (unlike SQS)
+  * concepts
+    * marker: record execution history
+    * signal: inject information into execution
+    * timer: calculate time elapses for notification
+    * tags: categorize execution
 
 * X-Ray
   * X-Ray collects data on requests that application serves and allow users to view them.
@@ -929,19 +985,21 @@ uses default KMS key
     Amazon SQS
     Working with Go
     ```
-  * Concepts
-    * X-Ray Segment
-      * Request Data sent from "Compute Resource"
-      * AWS X-Ray Segment Documents
-        * configuration of segment handled by X-Ray
-        * you can add custom attributes in this document
-    * X-Ray Subsegment
-      * Additional data
-      * subsegment fields
-        * namespace: aws(aws sdk calls) / remote (other downstream calls)
-    * Segment/Subsegment can have annotations and metadata inside
-      * X-Ray Annotations: indexed key-value pairs -> to filter expressions. 
-      * X-Ray Metadata: unindexed key-value pairs -> not for trace searching
+
+* AWS X-Ray Segment Documents
+  * JSON that describes what your app does to handle request
+    * configuration of segment handled by X-Ray
+    * you can add custom attributes in this document
+  * X-Ray Subsegment
+    * Additional data
+    * subsegment fields
+      * namespace: aws(aws sdk calls) / remote (other downstream calls)
+  * Segment/Subsegment can have annotations and metadata inside
+    * (trace) X-Ray Annotations: indexed key-value pairs -> to filter expressions. 
+    * (non-trace) X-Ray Metadata: unindexed key-value pairs -> not for trace searching
+  * Sending segment documents to X-Ray
+    * send directly to X-Ray-API by PutTraceSegments API
+    * send to X-Ray daemon that buffer & upload in batches to X-Ray-API
     
 * X-Ray & Fargate
   * Fargate is  serverless ComputeEngine for ECS.
@@ -978,6 +1036,8 @@ uses default KMS key
   * GetTraceSummaries: Get IDs and annotations for traces available for a specified time frame 
   * BatchGetTraces: Get a list of traces specified by ID
   * GetGroup: Get group resource details
+  * Steps to filter out trace you want
+    * GetTraceSummaries -> get IDs --> BatchGetTraces
   
 * X-Ray sampling size
   * sampling per second = reservoir size + ( (incoming requests per second - reservoir size) * fixed rate)
@@ -993,7 +1053,7 @@ uses default KMS key
     
 * X-Ray set up
   * on EC2
-    * you can manually install it
+    * you can manually install it (or by running automated scripts)
   * on EB
     * put xray-daemon.config under .ebextensions
   * on ECS
@@ -1036,7 +1096,7 @@ uses default KMS key
       ```
 * CLI
   ```
-  #Command to query Dynamodb from EC2 command line
+  # Command to query Dynamodb from EC2 command line
   aws dynamodb get-item --table-name ProductCatalog --region eu-west-2  --key '{"Id":{"N":"205"}}'
   ```
 * Index
@@ -1048,9 +1108,11 @@ uses default KMS key
     * LSI uses same RCU & WCU as the table.
   * Global Secondary Index (GSI)
     * index you can create when you create table or add later on
+    * query on Global Secondary Index only supports eventual consistency (no strong-consistency)
     * different partition key as table
     * different sort key as table
     * even when table's provision is enough, table can suffer throttling when GSI's resource is not enough.
+      * make sure that [TABLE's WCU/RCU] <= [GSI's WCU/RCU]
 
 * Query
   * find item in a table based on Primary Key or distinct value you are searching for.
@@ -1083,12 +1145,23 @@ uses default KMS key
   * DAX improves read performance, but in general, caching increases costs.
   
 * DynamoDB Capacity Units
-  * provisioned capacity
-    * when you create table you can specify read/write capacity units (1-4-8)
+  * regular capacity: 1-4-8
     ```
     * 1 write capacity unit = 1KB write/sec
     * 1 read capacity unit  = 4KB strongly consistent read/sec
                             = 8KB eventually consistent read/sec
+    ```
+    ```
+    # calculation rule
+      "AVG-UNIT-SIZE ÷ 1-4-8 x OPERATION PER SECOND"
+      - get [avg-unit-size] (in multiples of 1-4)
+      - get [unit-per-item] (avg-unit-size ÷ 1-4-8)
+      - do  [unit-per-item] x [operation-per-second]
+
+    ```
+  * transactional capacity: simply multiply x2 of regular capacity needed.
+    ```
+    ex) if you want ~~~ trasactional capacity: calculate ~~~ regular capacity required and multiply 2.
     ```
   * on-demand capacity
     * you don't need to specify requirements
@@ -1127,6 +1200,11 @@ uses default KMS key
     * Lambda trigger source: DynamoDB Stream, Cloudwatch event (DynamoDB Stream is suitable when new data is inserted/updated)
   * Kinesis Adapter is more suitable for handling these streams (than Lambda)
   * capture a time-ordered sequence of all the activity which occurs on your DynamoDB table – e.g. insert, update, delete.
+
+* DynamoDB Stream & Lambda Integration
+  * In Lambda: Create a trigger in Lambda
+  * To Lambda: Assign AWSLambdaDynamoDBExecutionRole to Lambda (execution role)
+  * all things are done in Lambda side.
 
 * DynamoDB Streams & StreamSpecification configuration
   * StreamEnabled: boolean
@@ -1170,6 +1248,10 @@ uses default KMS key
   * Optimistic Locking
     * "Be optimistic" that client/db is the same -> lock item with version number only
     * client side item for update/delete is the same as dynamo db side. (protects overwrites)
+    * you have to configure verion number
+      * each item gets a version number as an attribute
+      * when version mismatches that means someone already has updated it, causing update failure on mismatch
+    * transactional operation doesn't support optimistic locking
   * Pessimistic Locking
     * "Be pessimistic" that client/db is the same -> lock the entire item until you finish it
     * causes performance issue
@@ -1186,9 +1268,12 @@ uses default KMS key
   
 * DynamoDB & ReturnConsumedCapacity
   * ReturnConsumedCapacity (NONE < TOTAL < INDEXES)
-    * ReturnConsumedCapacity.NONE — no write capacity details are returned. (This is the default.)
-    * ReturnConsumedCapacity.TOTAL — total number of WCU consumed
-    * ReturnConsumedCapacity.INDEXES — returns the total number of write capacity units consumed, with subtotals for the table and any secondary indexes that were affected by the operation.
+    * ReturnConsumedCapacity.NONE
+      * nothing (default)
+    * ReturnConsumedCapacity.TOTAL
+      * total-WCU-consumed
+    * ReturnConsumedCapacity.INDEXES
+      * total-WCU-consumed & subtotal-WCU-consumed in table & secondary index
 
 * DynamoDB & throttling solution
   * SOLUTION1: implement error retries & exponential back off
@@ -1270,6 +1355,15 @@ uses default KMS key
     ```
   * you can upload upto 4KB for KMS encryption.
     * if it exceeds Envelope encryption with EncryptionSDK is recommended and put encrypted file within the service.
+
+* Encryption in local
+  1. use GenerateDataKey -> get a data key. (returns encrypted(CiphertextBlob) & plaintext)
+  2. Use plaintext-data-key -> encrypt data locally -> erase the plaintext-data-key from memory. (always erase plaintext-data-key when not in use)
+  3. Store the-encrypted-data-key with locally encrypted data.
+
+* Decryption in local
+  1. use Decrypt to decrypt the encrypted data key -> get a data key. (returns plaintext)
+  2. Use the plaintext-data-key -> decrypt data locally -> then erase the plaintext data key from memory.
     
 * KMS endpoints
   * Encrypting Key
@@ -1294,6 +1388,7 @@ uses default KMS key
   * Queue Types
     * Standard
       * No order in message
+      * Standard Queue doesn't support ordering nor deduplication
     * FIFO
       * First In First Out
       * 0 --> [0000] --> 0
@@ -1302,22 +1397,29 @@ uses default KMS key
       * MessageDeduplicationId
         * token used for deduplication of sent messages.
         * when msg with MessageDeduplicationId is delivered -> msg with the same id won't be delivered for 5min deduplication interval.
+        * to do deduplication do one of the following:
+          * Enable content-based deduplication. 
+          * Explicitly provide the message deduplication ID (or view the sequence number) for the message.
+
+
   * SQS Delay Queue
-    * "hide when queued"
+    * "delay by hiding"
+      * delay after queued
     * default is 0, maximum is 900 seconds -> configured by 'DelaySeconds' parameter
     * setting delay queue doens't affect existing msg in Standard Queue (only new msg).
     * setting delay queue affects existing msg in FIFO Queue.
 
   * SQS Long Poll
-    * "deliver when available"
+    * "longing for message"
+      * deliver when available
     * not retention period stuff.
     * Regular Short Poll returns immediately. (even if msg wanted is not queued)
     * when your app takes longer time to generate msg and customer has to wait ->  use Long Poll
 
   * Visibility Timeout
-    * "keep after read"
+    * "visible after read"
     * read message keeping time (30sec ~ 12hrs)
-    * When you want to prevent msg being read more than once. -> use Visibility Timeout
+    * When you want to prevent msg being read more than once. -> minimize Visibility Timeout
     * SQS ChangeMessageVisibility (API)
       * when message processing time is unpredictable (on client side), consumer can extend visibility timeout using ChangeMessageVisibility API action on its own.
 
@@ -1390,6 +1492,8 @@ uses default KMS key
       * Maintains full capacity during the deployment.
       * Creats a fresh group of instances in their autoscaling group -> Health Check Pass -> Move to new group -> Terminate old group
       * Update Fail -> To roll back, delete new instance and autoscaling group.
+
+    * EB performs in-place deployment by default but you can also do blue/green
       
   * Configuring EBS
     * You can have configuration file
@@ -1442,6 +1546,8 @@ uses default KMS key
   * Streaming data = small chunks of data that is sent from a web service.
   * Kinesis Streams consists of shards
   * Shards have TTL
+
+  * Whenever there is a need for real-time data service, Kinesis is the answer (highly scalabe)
 
   * Kinesis Types
     1. Kinesis Data Streams
@@ -1504,6 +1610,9 @@ uses default KMS key
   * Based on Git
   * Tracks and maintains commit history.
   * Data in AWS CodeCommit repositories is encrypted in transit and at rest automatically by default.
+  * You can either connect using HTTPS or SSH
+    * HTTPS: using Git or IAM credentials (IAM recommended)
+    * SSH: Generate SSH Keys (store private in local, upload public in code commit server)
   
 * AWS CodeBuild
   * compiles and tests your code. (CodeCommit -> CodeBuild -> build Docker Image)
@@ -1721,15 +1830,21 @@ uses default KMS key
       * Condition function returns True/False, determining rest of the part in the section to be continued.
     * Resources: the only mandatory section, defining AWS resources to create (ex: aws resource you want to deploy(create) with this cloudformation) (the order it defined doesn't matter, they are created in a parallel manner)
     * Mappings: custom mappings of key to different values (ex: use different key-values for different regions; AMI is an amazon VM image)
-    * Transforms: version of AWS SAM or outside reference from s3(when used with AWS::Include)
+    * Transforms
+      * AWS SAM version
+      * external reference to S3 (when used with AWS::Include)
     * Outputs: export for cross-stack reference
       * For each AWS account, Export names must be unique within a region. (not across the global)
       * whatever is Export name can be retrieved with Fn::ImportValue in different stack.
     * CloudFormation templates are uploaded to S3 (by default it creates one in a region, and reuse it for that purpose)
 
+* Cloud Formation & StackSets
+  * Feature of applying create, update, or delete stacks across multiple accounts and regions with a single operation
+
   * AWS SAM (Serverless Application Model)
     * AWS SAM CLI lets you locally build, test, and debug serverless applications
     * SAM template is an extension of CloudFormation template
+      * When there are need for serverless approach and you were given two options SAM vs CFN: SAM is closer to answer (even though CFN can deploy serverless apps)
     * SAM CLI commands
       * sam package: "to S3" package up your deployment packages and upload it to S3
         ```
@@ -1816,6 +1931,13 @@ uses default KMS key
     * Rollback Trigger
       * quickly roll back by deleting the whole 'new' stack
 
+* CFN & CLI commands
+  ```
+  cfn-init: install, create and start
+  cfn-signal: synchronize other resources in the stack
+  cfn-get-metadata: retrieve metadata
+  cfn-hup: check for updates (helper-update)
+  ```
 
 
 # AWS Cognito
@@ -1846,6 +1968,11 @@ uses default KMS key
     ```
     1. WebIdentityProvxider --> AssumeRoleWithWebIdentity --> STS --> AWS Resources
     ```
+
+* AWS Cognito Sync vs AWS AppSync
+  * AWS AppSync is stronger.
+  * AWS AppSync: allows multiple users syncchronization in real time on shared data
+  * AWS Cognito Sync: doesn't have multiple user sync feature
 
 * AWS STS (security token service)
   * STS allows you to request temporary AWS credentials
@@ -1890,6 +2017,8 @@ uses default KMS key
   * CloudWatch alarm
     * 10sec/30sec (high resolution) - multiples of 1min (regular)
 
+* detailed monitoring is about granularity (1min), it doensn't extend metrics you are watching.
+
 * Cloudwatch Alarm
   * state
     * OK: metric/expression is within defined threshold
@@ -1920,17 +2049,18 @@ uses default KMS key
 
 # Other Topics & Tips
 * AWS Systems Manager (SSM)
-  * Parameter Store
+  * AWS Parameter Store
     * Where would you store confidential information (credentials, license codes) for AWS resources? Parameter Store
     * SecureString
       * you can create SecureString parameters
       * plainText as parameterName, KMS encryptedValue as parameterValue
       * SSM uses AWS KMS to encrypt and decrypt the parameter values of Secure String parameters.
-  * State Manager
+  * AWS State Manager
     * Automates AWS EC2 state keeping process
 
 * AWS Secrets Manager
-  * AWS Secrets Managers stores your confidential information. It is similar to SSM but has more ability such as 'secrets rotation' & 'password generation'.
+  * AWS Secrets Managers stores your confidential information.
+  * It is similar to SSM but has more ability such as 'secrets rotation' & 'password generation'.
 
 * AWS Service Catalog
   * creates and manages IT catalogs
@@ -2015,6 +2145,9 @@ uses default KMS key
 
 * AWS ACM
   * AWS Certificate Manger
+  * import/manage/provide SSL/TLS certificates
+    * AWS Certificate Manager (if it is in a supported region)
+    * AWS IAM Certificate Store (if it is not in a supported region)
 
 * AWS CodeStar
   * Quick CICD management tool like codepipeline (light version of code pipeline)
@@ -2027,3 +2160,14 @@ uses default KMS key
   
 * AWS Fargate
   * serverless compute service.
+
+* When there is data abuse
+  * blocking IP address is not a solution. Abuser can easily change IP address.
+
+* AWS Inspector
+  * EC2 troubleshooter tool
+
+* AWS Billing
+  * Consolidated Billing: proper for multiple account billing
+  * AWS Cost and Usage: proper for estimation, usage types and operation (single account)
+  * Detailed Billing: will be deprecated
