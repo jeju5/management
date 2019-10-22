@@ -42,7 +42,7 @@
 # DAILY MOVE
   ```
         기상   아침    오후
-  MON: PULL
+  MON: PULL  RUN5  BOXING
   TUE: DIP   RUN5  BOXING
   WED: SIT   RUN5  BOXING
   THU: CURL  RUN5  BOXING
