@@ -73,6 +73,9 @@
 * Instance Profile
   * Instance profile is a container for an IAM role that you can use to pass role information to an EC2 instance when the instance starts.
 
+* Container Instance IAM Role: IAM role that can be only used in EC2
+* Service-Linked IAM Role: IAM role that is linked to AWS Service (this has all permission for one service to call another service)
+
 # EC2
 * EC2 101
   * EC2 = ECC = Elastic Cloud Computing = Computing Service in Cloud
@@ -337,6 +340,7 @@
     * you will be prompted for more information
     * enter access key id & secret access id. (from 'create a user' step)
     * enter nothing for region and output format -> sets as a default
+
   * create txt file and copy into s3
     ```
     aws s3 ls                                  # you will see s3 bucket list
@@ -359,8 +363,8 @@
       aws s3api list-objects --bucket myBucket --max-items 120 (return first 120 items and that's it)
       ```
 
-  * AWS CLI & profiles
-    * you can use 
+  * CLI & IAM Configuration
+    * You changed IAM role but doesn't work? -> check IAM configuration in CLI (it might be using old IAM role configured in AWS CLI setting)
 
   * in AWS CLI, passing value as a flag is better than aws configure (when possible)
     ```
@@ -409,6 +413,8 @@
     
 * AWS RDS Troubleshoot
   * You can enable logs: error log, slow query log(query that takes long time)
+
+* RDS doesn't scale automatically
 
 * AWS RDS & TDE
   * AWS RDS supports TDE(transparent data encryption) for MS SQL Server.
@@ -546,7 +552,12 @@
           * x-amz-server-side-encryption-customer-algorithm: AES256 (this is how you will encrypt)
           * x-amz-server-side-encryption-customer-key: encoded encryption key
           * x-amz-server-side-encryption-customer-key-MD5: encoded MD5 digest of encryption key
-                ```
+          ```
+        * SSE-C also uses AES256 but the header is different
+          ```
+          SSE-S3  =>  "s3:x-amz-server-side-encryption": "AES256"
+          SSE-C   =>  "x-amz-server-size-encryption-customer-algorithm" : "AES256"
+          ```
         * HMAC (hash-based message authentication code).)
           * When you use SSE-C, then the client key you provided is stored in salted HMAC
           * However, this HMAC can't be used for decryption/encryption. If you lose the key you lose the data.
@@ -704,11 +715,15 @@
   * AWS X-ray debugs AWS Lambda
   * Lambda can work globally
   * Lambda Concurrent Execution
-    ```
-    concurrent executions = (requests per time) x (time per request )
-    
-    ex) 50 request/sec * 100 sec/request = 5000 concurrent executions
-    ```
+    * push based (ex: API Gateway Integration, S3 Events integration)
+      ```
+      concurrent executions = (requests per time) x (time per request )
+      ex) 50 request/sec * 100 sec/request = 5000 concurrent executions
+      ```
+    * pull based (ex: Kinesis Integration)
+      ```
+      concurrent execution = number of shards
+      ```
     * There is a concurret execution limit for Lambda
     * default is 1000 execution per region (you can increase this limit by making a request to AWS)
     * HTTP 429 TOO MANY REQUESTS error
@@ -1195,6 +1210,7 @@
 * DynamoDB Streams
   * "time ordered stream of item-level modification" (insert/update/delete)
   * logs are stored encrypted and for 24hrs.
+  * if you don't handle the stream data within 24hrs the data is gone
   * only accessible thru dedicated dynamodb api endpoint.
   * can be used as a trigger for Lambda function
     * Lambda trigger source: DynamoDB Stream, Cloudwatch event (DynamoDB Stream is suitable when new data is inserted/updated)
@@ -1376,6 +1392,8 @@
   * Decrypt: decrypt keys or general text.
   * GenerateRandom: generate random byte string
 
+* KMS doesn't use asymmetric encryption algorithm
+
 
 # Notification Services
 * AWS SQS (Simple Queue Service)
@@ -1419,6 +1437,7 @@
   * Visibility Timeout
     * "visible after read"
     * read message keeping time (30sec ~ 12hrs)
+    * during the timeout the msg can't be read nor deleted (protected)
     * When you want to prevent msg being read more than once. -> minimize Visibility Timeout
     * SQS ChangeMessageVisibility (API)
       * when message processing time is unpredictable (on client side), consumer can extend visibility timeout using ChangeMessageVisibility API action on its own.
@@ -1515,6 +1534,16 @@
 * Elastic Beanstalk prod/test env
   * always create a seperate/independent env for each purpose
   * don't share prod resources with test
+
+* Elastic Beanstalk & env.yaml
+  * env.yaml stores environment values
+
+* Elastic Beanstalk & RDS Decoupling
+  1. create RDS DB outside
+  2. remove security group rule for present DB (blue)
+  3. add security group rule for new DB (green)
+  4. use blue/green deployment
+  
   
 * Use a Lifecycle Policy
   * Every time you upload new app version, EB increments its version and stores previous versions.
@@ -1961,6 +1990,7 @@
   WebIdentityProvider -> User Pool -> Identity Pool -> AWS Resources
   ```
   * AWS SNS is used to send silent notification to associated devices when user data is updated.
+
 * AssumeRoleWithWebIdentity
   * API provided by STS (Security Token Service) that returns temp credential to be used in AWS Resources
     * Returns AssumedRoleUser (ARN & Id) which uniquely tied to temporary credentials (not IAM role/user)
@@ -1977,14 +2007,13 @@
 * AWS STS (security token service)
   * STS allows you to request temporary AWS credentials
   
-  * decode-authorization-message: Decodes additional information about the authorization status of a request from an encoded message
-
 * AWS STS APIs
+  * GetSessionToken
+    * return temp credentials for AWS account or IAM user
   * AssumeRole
-    * pass ARN of the role 
-    * creates a new session with temporary credentials with permissions that role has (having the same policy)
-  * assume-role-with-web-identity
-    * Returns a set of temporary credentials for users who have been authenticated via public websites (ex.google)
+    * returns temp credentials to AWS resource that is infrequently used. (pass ARN of the role in request)
+  * AssumeRoleWithWebIdentity
+    * Returns a set of temporary credentials for authenticated users (via 3rd party web)
   
 
 
@@ -2171,3 +2200,20 @@
   * Consolidated Billing: proper for multiple account billing
   * AWS Cost and Usage: proper for estimation, usage types and operation (single account)
   * Detailed Billing: will be deprecated
+
+* AWS CloudHSM(hardware security model)
+  * stores cryptographic keys
+  * uses symmetric/asymmetric encryption algorithm (KMS doesn't do asymmetric)
+
+* Error codes
+  * 403 Forbidden (authentication error)
+  * 429 Too Many Request (throttling error)
+  * 502 Bad Gateway (general API Gateway error: for example Lambda passes non-JSON result to API Gateway)
+  * 504 Gateway Timeout
+    * INTEGRATION_TIMEOUT: executed more than 29secs (ex: if lambda takes 27~35secs to complete)
+    * INTEGRATION_FAILURE: integration failed somewhere (ex: lambda throws exception and integration fails all the time)
+
+* AWS Route Table
+  * table that contains subnet configuration,
+  * one subnet can only be associated with one route table. (one subnet can read one route table)
+  * one route table can be associated with multiple subnets. (one route table can be pointed from multiple subnets)
