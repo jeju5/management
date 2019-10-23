@@ -1956,8 +1956,10 @@
       ```
   * CloudFormation & Protection
     * Stack Termination Protection
+      * = accidental termination
       * protects accidental termination
     * Rollback Trigger
+      * = CFN delete
       * quickly roll back by deleting the whole 'new' stack
 
 * CFN & CLI commands
