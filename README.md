@@ -1,39 +1,29 @@
-# DAILY TASK
+# DAILY SCHEDULE
   ```
      TIME     TASK
   ------------------------
-  0430 0530  기상 샤워 운동   # 요거트, 아몬드
+  0430 0530  기상 샤워 운동   # 0500 요거트, 아몬드
   0530 0630  예배
   0630 0800  오전자유
   ------------------------
   0800 1200  오전일과
-  1200 0400  오후일과        # 블루케일, 사우어크라우트 샐러드, 치킨쌀밥
+  1200 0400  오후일과        # 1200 블루케일, 0100 사우어크라우트 샐러드, 0200 치킨쌀밥
   ------------------------
-  0400 0730  오후자유        # 블루케일, 치킨타코, 영양보충
+  0400 0730  오후자유        # 0500 블루케일, 0600 치킨타코, 0700 영양보충
   0730 0800  정리 성경 취침     
   ------------------------
   ```
   
-  # DAILY MEAL
-  ```
-     TIME     MEAL
-  ------------------------
-  0500       요거트, 아몬드
-  ------------------------
-  1200       블루케일
-  0100       사우어크라우트 샐러드
-  0200       고기쌀밥
-  ------------------------
-  0500       블루케일
-  0600       치킨타코
-  0700       영양보충
-  ------------------------
-  * 영양보충: 커큐민, 비타민
+# Task
+* Watch 황혼의 사무라이 (The Twilight Samurai)
+* Sumamrize Lord's Prayer Study Material
+* UDEMY: Modern React with Redux
+* UDEMY: Node with React
+* UDEMY: GraphQL with React
+* Swimming
+* Tennis
 
-  * NO SODA. NO CAFFEINE.
-  ```
-
-# DAILY MOVE
+# DAILY WORKOUTS
   ```
         기상   아침    오후
   MON: PULL  RUN5  BOXING
@@ -54,13 +44,6 @@
   WEIGHT
   - usual: 65kg (64kg ~ 66kg)
   ```
-
-# Task
-* Watch 황혼의 사무라이 (The Twilight Samurai)
-* Sumamrize Lord's Prayer Study Material
-* UDEMY: Modern React with Redux
-* UDEMY: Node with React
-* UDEMY: GraphQL with React
   
 # MONEY
 ```
