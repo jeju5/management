@@ -1,4 +1,4 @@
-# DAILY SCHEDULE
+# SCHEDULE
   ```
      TIME     TASK
   ------------------------
