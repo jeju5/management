@@ -13,17 +13,8 @@
   0730 0800  정리 성경 취침
   ------------------------
   ```
-  
-# Task
-* Watch 황혼의 사무라이 (The Twilight Samurai)
-* Sumamrize Lord's Prayer Study Material
-* UDEMY: Modern React with Redux
-* UDEMY: Node with React
-* UDEMY: GraphQL with React
-* Swimming
-* Tennis
 
-# DAILY WORKOUTS
+# WORKOUTS
   ```
         기상   아침    오후
   MON: PULL  RUN5  BOXING
@@ -44,7 +35,16 @@
   WEIGHT
   - usual: 65kg (64kg ~ 66kg)
   ```
-  
+ 
+# Task
+* Watch 황혼의 사무라이 (The Twilight Samurai)
+* Sumamrize Lord's Prayer Study Material
+* UDEMY: Modern React with Redux
+* UDEMY: Node with React
+* UDEMY: GraphQL with React
+* Swimming
+* Tennis
+ 
 # MONEY
 ```
 <MONTHLY STAT>
