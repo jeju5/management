@@ -36,14 +36,32 @@
   - usual: 65kg (64kg ~ 66kg)
   ```
  
-# Task
-* Watch 황혼의 사무라이 (The Twilight Samurai)
-* Sumamrize Lord's Prayer Study Material
-* UDEMY: Modern React with Redux
-* UDEMY: Node with React
-* UDEMY: GraphQL with React
-* Swimming
-* Tennis
+# GOAL
+```
+* 주일학교
+  * Sumamrize Lord's Prayer Study Material
+
+* CS
+  * Discrete Mathematics
+  * Algorithm & Data Structure (Java)
+  * Elements of Programming (Java)
+  * Leet Code
+ 
+* Math 
+  * Calculus (Stewart)
+  * Linear Algebra
+
+* Tech
+  * UDEMY: Modern React with Redux
+  * UDEMY: Node with React
+  * UDEMY: GraphQL with React
+
+* Athletic
+  * Running - marathon sub4
+  * Boxing - 1match 64kg
+  * Tennis - 2.5
+  * Swimming
+```
  
 # MONEY
 ```
