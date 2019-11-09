@@ -14,7 +14,7 @@
   ------------------------
   ```
 
-# WORKOUTS
+# WORKOUT
   ```
         기상   아침    오후
   MON: PULL  RUN5  BOXING
