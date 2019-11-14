@@ -58,6 +58,7 @@
 * Athletic
   * Running - marathon sub4
   * Boxing - 1match 64kg
+  * Planche
   * Tennis - 2.5
   * Swimming
 ```
