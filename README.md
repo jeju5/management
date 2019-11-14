@@ -65,41 +65,29 @@
  
 # MONEY
 ```
-<MONTHLY STAT>
--------------------------------------------------------
-* IN TOTAL  : $4068
-              $4068 Concur Salary
--------------------------------------------------------
-* OUT TOTAL : $2327
-              $ 407 Offering: Tithe
-              $  80 Offering: Reg
-              $1095 Housing : Rent
-              $  30 Housing : XcelEnergy
-              $ 120 Spending: Gas (CASH+)
-              $ 500 Spending: Personal (CASH+)
-              $  30 Spending: Xfinity (CASH+)
-              $  50 Spending: Tmobile (CASH+)
-              $  15 Spending: Netflix/Amazon (CASH+)
-# CASH+ monthly estimate: $715
--------------------------------------------------------
-* SAVE EST  : $1700 (1700x12=21600)
--------------------------------------------------------
-* LAST DAY OF EACH MONTH
-  1. DEPOSIT MARCUS ($1500+)
-  2. PAY CASH+
-  3. SATISFY 2000/3000
+* Monthly
+  + $4172  Salary
+  - $417   Tithe
+  - $80    Offering
+  - $1095  Rent
+  - $30    XcelEnergy
+  - $30    Xfinity
+  - $45    Tmobile
+  - $120   Gas
+  - $350   Personal
+  ---------------------
+  + $2000  Saving
+ 
+* Last Day of Month
+  1. PAY CREDIT CARD
+  2. SATISFY 2000/2000
+  3. DEPOSIT MARCUS ($2000)
               
 <OTHERS>
   - OUT: Auto Insurance
-  - OUT: Auto Maintenance
+  - OUT: Auto Maintenance  
   - OUT: Renters Insurance
-  - IN : SAP Share
+  - IN : SAP Stock
   - IN : 401K
   - IN : HSA
-
-<MANAGE>
-* daily   : keep  $2000 (U.S. BANK Checking)
-* monthly : keep  $3000 (U.S. BANK Saving)
-* fund1   : save        (Marcus Saving)
-* fund2   : 401K, Stock (forget about it)
 ```
