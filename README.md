@@ -34,10 +34,10 @@
   * Sumamrize Lord's Prayer Study Material
 
 * CS
-  * Discrete Mathematics
   * Algorithm & Data Structure (Java)
   * Elements of Programming (Java)
   * Leet Code
+  * Discrete Mathematics
  
 * Math 
   * Calculus (Stewart)
@@ -50,7 +50,6 @@
 
 * Athletic
   * Running - marathon sub4
-  * Swimming - Crawl 1000m
   * Boxing - 1match 64kg
   * Tennis - 2.0
   * Planche
