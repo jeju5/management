@@ -25,7 +25,7 @@
  
  * PULL(5x8)  * CURL(150)
  * DIPS(5x5)  * PUSH(150)
-              * SITUP(200)
+               * SITUP(200)
   ```
  
 # GOAL
