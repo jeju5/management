@@ -18,7 +18,7 @@
 
 # WORKOUT
   ```
-        MON     TUE     WED     THU     FRI     SAT     SUN
+       MON     TUE     WED     THU     FRI     SAT     SUN
  기상  PULL    DIPS    SITUP   CURL    PUSH    SITUP
  오전  RUN5    RUN5    RUN5    RUN5    RUN5    L&S
  오후  BOXING  BOXING  BOXING  BOXING  BOXING
