@@ -18,15 +18,11 @@
 
 # WORKOUT
   ```
-       MON     TUE     WED     THU     FRI     SAT     SUN
- 기상  PULL    DIPS    SITUP   CURL    PUSH    SITUP    휴식
- 오전  RUN5    RUN5    RUN5    RUN5    RUN5             휴식
+       MON        TUE        WED       THU       FRI       SAT       SUN
+ 기상  PULL(5x8)  DIPS(5x5)  SIT(200)  CURL(150) PUSH(150) SIT(200)   휴식
+ 오전  RUN5    RUN5    RUN5    RUN5    RUN5    HARD     휴식
  오후  BOXING  BOXING  BOXING  BOXING  BOXING
- 
- * PULL(5x8)  * CURL(150)
- * DIPS(5x5)  * PUSH(150)
-               * SITUP(200)
-  ```
+ ```
  
 # GOAL
 ```
