@@ -22,7 +22,7 @@
  기상  PULL    DIPS    SITUP   CURL    PUSH    SITUP
  오전  RUN5    RUN5    RUN5    RUN5    RUN5    L&S
  오후  BOXING  BOXING  BOXING  BOXING  BOXING
-  
+ 
  * PULL(5x8)  * CURL(150)
  * DIPS(5x5)  * PUSH(150)
               * SITUP(200)
