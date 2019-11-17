@@ -1,6 +1,6 @@
 # Boxing
 
-## Term
+## TERM
 ```
 * Direction
     LEAD        LEAD
@@ -22,7 +22,7 @@
   COVER : block, shoulder, full
 ```
 
-## Training
+## TRAINING
 * 5R move/ladder/rope
 * 10R hands
 * 10R gloves
@@ -43,7 +43,7 @@
    * SNATCH  : (frontL, frontR, backL, backR, sideL, sideR)
 ```
 
-## BASIC-TEN-FLOW
+## BASIC-TENS
 ```
 Flow1: jab jab - jab jab cro - jab jab cro lhook
 Flow2: jab cro - jab cro jab - jab cro jab cro
