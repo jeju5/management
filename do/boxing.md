@@ -48,16 +48,18 @@
 Flow1: jab jab - jab jab cro - jab jab cro lhook
 Flow2: jab cro - jab cro jab - jab cro jab cro
 Flow3: jab cro - jab cro lhook - jab cro lhook rhook
+
 Flow4: cro cro - cro cro lhook - cro cro lhook rupper
 Flow5: cro jab - cro jab cro - cro jab cro jab 
+FLOW6: cro bab - cro bab rupper - cro bab rupper lhook
 
-Flow6: jab bab - jab bab cro - jab bab cro lhook
-Flow7: jab bro - jab bro lhook - jab bro lhook cro
-Flow8: jab lbody - jab lbody lupper - jab lbody lupper cro
-Flow9: jab rbody - jab rbody lbody - jab rbody lbody lhook
-Flow10: jab rupper - jab rupper lhook - jab rupper lhook rbody
+Flow7: jab bab - jab bab cro - jab bab cro lhook
+Flow8: jab bro - jab bro lhook - jab bro lhook cro
+Flow9: jab lbody - jab lbody lupper - jab lbody lupper cro
 
-* end with jab-cro-back&jab
+Flow10: jab lhook - jab lhook lbody - jab lhook lbody lupper
+
+* finish with jab-cro
 ```
 
 ## 10X10
