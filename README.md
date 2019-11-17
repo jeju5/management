@@ -30,7 +30,17 @@
   * Sumamrize Lord's Prayer Study Material
 
 * CS
-  * Algorithm & Data Structure (Java)
+  * Data Structure (Java)
+    1. Array
+    2. Linked List
+    3. Stack
+    4. Queue
+    5. Binary Tree
+    6. Binary Search Tree
+    7. Binary Heap
+    9. Hashing
+  * Algorithm
+    
   * Elements of Programming (Java)
   * Leet Code
   * Discrete Mathematics
