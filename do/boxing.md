@@ -57,7 +57,7 @@ Flow7: jab bab - jab bab cro - jab bab cro lhook
 Flow8: jab bro - jab bro lhook - jab bro lhook cro
 Flow9: jab lbody - jab lbody lupper - jab lbody lupper cro
 
-Flow10: jab lhook - jab lhook lbody - jab lhook lbody lupper
+Flow10: lupper jab - lupper jab cro - lupper jab cro lhook
 
 * finish with jab-cro
 ```
