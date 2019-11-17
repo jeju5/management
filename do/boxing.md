@@ -8,7 +8,7 @@
     REAR        REAR
  <orthodox>  <southpaw>
   
-* Offense
+* PUNCH
   jab      cro      jab
   bab      bro      bab
   lhook    rhook    lhook
@@ -16,12 +16,10 @@
   lbody    rbody    lbody
   <LEAD>   <REAR>   <LEAD>
   
-* Defense
-  FOOT  : step, pivot, drift
+* MOVE
+  FOOT  : step, pivot, glide, switch, twitch
   EVADE : slip, roll, sway
   COVER : block, shoulder, full
-  
-  (+switch)
 ```
 
 ## Training
@@ -30,28 +28,22 @@
 * 10R gloves
 * 5R speed
 
-## MOVE
-* step (↑→↓←)
-* pivot
-* drift
-* slip
-* roll
+## WARM-UP
+```
+1. MOVE
+   step, pivot, glide, switch, twitch | slip, roll, sway
 
-## ROPE
-* FOOT    : toe, mid, hill
-* FEET    : L, R, LR
-* LEG     : left, kick, right
-* KNEE    : L, R, LR
-* COMBO   : idle & X/Double/DoubleX
+2. ROPE
+   TOE -> MID -> HILL -> KICK -> KNEE-> CROSS -> DOUBLE -> DOUBLE-CROSS
+   
+3. LADDER
+   * JUMBLE  : (inL, inR, outL, outR)
+   * RUMBLE  : (frontL, frontR, sideL, sideR, danceL, danceR)
+   * SKATE   : (2,3,4,5)
+   * SNATCH  : (frontL, frontR, backL, backR, sideL, sideR)
+```
 
-## LADDER
-* HOP     : hop-single, hop-cross, hop-switchL, hop-switchR
-* RUMBLE  : rumble-L, rumble-R, rumble-Side, rumble-Dance
-* JUMBLE  : jumble-L-in, jumble-R-in, jumble-L-out, jumble-R-out
-* SKATE   : skate-2, skate-3, skate-4, skate-5
-* SNATCH  : snatch-side-L, snatch-side-R, snatch-forward-L, snatch-forward-R
-
-## BASIC TEN FLOWS
+## BASIC-TEN-FLOW
 ```
 Flow1: jab jab - jab jab cro - jab jab cro lhook
 Flow2: jab cro - jab cro jab - jab cro jab cro
