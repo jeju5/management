@@ -149,8 +149,8 @@
 * EBS detachement "(STOP)->(UNMOUNT)->DETACH" (S)(U)D
   * STOP -> Detach (OS volume)
   * Unmount -> Detach (otherwise)
-    * stop if EBS is root(boot) volume
-    * unmount if instance is running
+    * stop if EBS is root(boot) volume; stop os
+    * unmount if instance is running; unmount running
        
 * EC2 Security Group
   * define allowed inbound/outbound
@@ -244,7 +244,7 @@
     * instanceId or custom (like availibility zone, cpu, memory ... etc)
 
   * type ("SBR TYPE")
-    * spread: place tasks evenly
+    * spread: place tasks spread-evenly
     * binpack: place tasks based on cpu & memory (this minimizes the number of instances in use)
     * random: place task randomly
       * but still honrs explicit/implicit constraints you specified
@@ -272,12 +272,14 @@
 * EC2 Storage
   * Instance Storage
     * ephemeral = volatile = data lost when With EC2 stopped.
+
   * Amazon Elastic Block Store (EBS)
     * Block Storage for EC2 (ec2 only)
     * EBS encryption -> Do when creating one
     * persistent = durable = data not lost when EC2 stopped
     * it is locked with in a AZ; can't be shared to different AZ (this is general rule of thumb in AWS; AZ-lock)
     * new volumes are raw block storage, and needs file system to be used.
+
   * Amazon Elastic File System (EFS)
     * Object storage for EC2 (and other aws services; not public)
     * faster than s3
@@ -322,9 +324,11 @@
       * Network Load Balancer
         * supports TCP/SSL ★
         * incoming network traffic controls (layer4)
+
       * Classic Load Balancer
         * single port mapping
-        * hard-coded port mapping. No flexibility for multi-task.
+        * hard-coded port mapping.
+        * No flexibility for multi-task.
         * HTTP, HTTPS, TCP, SSL. doesn't look at the request.
         * Health Check
           * You can make load balanceer ping health check for their availability.
@@ -371,10 +375,11 @@
     * Registered Domain -> Register Domain
       * buy a domain or register an existing one you own
   * Hosted Zones
-    * Hosted Zone = container that holds routing configuration data
+    * Hosted Zone = container that holds routing configuration data ★
     * configure routing (DNS Name --mapping--> App Server)
     * you can route a request to Instance, IP, Lambda function
     * configure health check
+
   * TEST
     * make a request to the domain you registerd --> DNS server --> load balancer --> EC2
 
@@ -610,9 +615,11 @@
 * S3 Encryption
   * S3 Encryption "in Transit"
     * SSL/TLS or Client Side Encryption(You encryption data on your own (application level))
+  
   * S3 Encryption "at Rest"
     * Client Side
       * done by client
+
     * Server SIde
       * "SSE (Server Side Encryption) via SSE-C/S3/KMS"
       * SSE-C
@@ -712,7 +719,7 @@
 
 * S3 CRR (Cross-Region Replication) ★
   * feature of auto/async copying of objects across buckets in different AWS regions.
-  * you neeed to enable versioning in bucket ★ (CRR needs versioning)
+  * you neeed to enable versioning in bucket ★ (CRR needs versioning enabled)
   * you need to specify source & destination in different region
   * DynamoDB doesn't have CRR
     * If you want to sync DynamoDB tables in different regions. You can use DynamoDB stream. When new change made -> stream it -> update other table.
@@ -1151,9 +1158,15 @@
       * namespace: aws(aws sdk calls)
       * remote (other downstream calls)
 
-  * Segment/Subsegment can have annotations and metadata inside
-    * (trace) X-Ray Annotations: indexed key-value pairs -> to filter expressions. 
-    * (non-trace but store) X-Ray Metadata: unindexed key-value pairs -> not for trace searching ★
+  * Segment/Subsegment can have annotations and metadata inside ★
+    * X-Ray Annotations
+      * trace & filter
+      * indexed key-value pairs
+    * X-Ray Metadata
+      * non-trace & non-filter
+      * store
+      * unindexed key-value pairs
+
   * Sending segment documents to X-Ray
     * send directly to X-Ray-API by PutTraceSegments API
     * send to X-Ray daemon that buffer & upload in batches to X-Ray-API
@@ -1177,7 +1190,6 @@
 
 * Configure X-RAY SDK for Node.js & variables	★
   * address, tracename, debugmode
-
   * AWS_XRAY_DAEMON_ADDRESS
     * IP address of X-Ray daemon
     * host and port of the X-Ray daemon listener. (128.0.0.1:2000 by default; both tracing and sampling)
@@ -1190,7 +1202,6 @@
     
 * Configure X-RAY SDK for Lambda & variables ★
   * address, traceid, contextmissing
-
   * AWS_XRAY_DAEMON_ADDRESS 
     * IP address of X-Ray daemon
   * _X_AMZN_TRACE_ID
@@ -1277,15 +1288,15 @@
     * same partition key(unique key) as table
     * different sort key as table.
     * LSI uses same RCU & WCU as the table.
-    * LSI supports both eventual consistency & strong consistency
+    * LSI supports both eventual consistency & strong consistency ★
 
   * Global Secondary Index (GSI)
     * index you can create when you create table or add later on
-    * query on Global Secondary Index only supports eventual consistency (no strong-consistency)
+    * query on Global Secondary Index only supports eventual consistency (no strong-consistency) ★
     * different partition key then table
     * different sort key then table
 
-    * even when table's provision is enough, table can suffer throttling when GSI's resource is not enough.
+    * even when table's provision is enough, table can suffer throttling when GSI's resource is not enough. ★
       * make sure that [GSI's WCU/RCU] >= [TABLE's WCU/RCU]
 
 * Query
@@ -1445,7 +1456,7 @@
     * BatchGetItem = 5*GetItem
     * BatchWriteItem = 2*PutItem + 4*DeleteItem
   
-* DynamoDB & ReturnConsumedCapacity
+* DynamoDB & ReturnConsumedCapacity ★
   * ReturnConsumedCapacity (NONE < TOTAL < INDEXES)
     * ReturnConsumedCapacity.NONE
       * nothing (default)
