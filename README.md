@@ -77,9 +77,10 @@
   + $2000  Saving
  
 * Last Day of Month
-  1. PAY CREDIT CARD
-  2. SATISFY 2000/2000
-  3. DEPOSIT MARCUS ($2000)
+  1. CREDIT      : pay credit card
+  2. CHECKING    : satisfy $2000 (us bank)
+  3. SAVING      : satisfy $2000 (us bank)
+  3. HIGH SAVING : deposit $2000 (marcus)
               
 <OTHERS>
   - OUT: Auto Insurance
