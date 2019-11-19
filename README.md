@@ -35,10 +35,10 @@
   * Basic Algorithms
   * Elements of Programming in Java
   * LeetCode
-  * Discrete Mathematics
- 
-* Math 
+
+* Math
   * Calculus (Stewart)
+  * Discrete Mathematics
   * Linear Algebra
 
 * Tech
