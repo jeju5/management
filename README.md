@@ -21,7 +21,7 @@
 # WORKOUT
   ```
   MON        TUE        WED        THU        FRI        SAT        SUN
-  PULL(5x8)  DIPS(5x5)  CURL(150)  SIT(200)   PUSH(150)  SIT(200)   휴식
+  PULL(5x8)  DIPS(5x5)  CURL(150)  SIT(200)   PUSH(200)  SIT(200)   휴식
   RUN5       RUN5       RUN5       RUN5       RUN5       RUN10+     휴식
   BOXING     BOXING     BOXING     BOXING     BOXING                휴식
   ```
