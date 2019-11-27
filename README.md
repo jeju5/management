@@ -25,7 +25,7 @@
   RUN5       RUN5       RUN5       RUN5       RUN5       RUN10+     휴식
   BOXING     BOXING     BOXING     BOXING     BOXING                휴식
   
-  PULL(100), PUSH(300), SIT(500), SQUAT(1500)
+  * RUN10+ alternative: PULL(100), PUSH(300), SIT(500), SQUAT(1500)
   ```
  
 # GOAL
