@@ -31,8 +31,10 @@
  
 # GOAL
 ```
-* 주일학교
-  * Sumamrize Lord's Prayer Study Material
+* English
+  * VOCA Level1: 3000 BASIC
+  * VOCA Level2: 2000 TOEFL (Hackers VOCA)
+  * VOCA Level3: 2000 GRE   (VOCA BIBLE 4.0)
 
 * CS Basics
   * Data Types
@@ -40,6 +42,9 @@
   * Basic Algorithms
   * Elements of Programming in Java
   * LeetCode
+
+* 주일학교
+  * Sumamrize Lord's Prayer Study Material
 
 * Math
   * Calculus (Stewart)
