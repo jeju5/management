@@ -29,8 +29,7 @@
   BOXING     BOXING     BOXING     BOXING     BOXING                휴식
   
   * INTENSE
-    - RUN 10+
-    - MAX-INCLINE 20MINS (1min-run+1min-rest)x10set
+    - RUN 13+
     - PULL(100+), PUSH(300+), SIT(500+), SQUAT(1500+)
   ```
  
