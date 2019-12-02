@@ -1,4 +1,4 @@
-# SCHEDULE
+# TIME
   ```
      TIME     TASK
   ------------------------
@@ -19,7 +19,7 @@
   * 식사간에 공복 반드시 유지하기
   ```
 
-# WORKOUT
+# MOVE
   ```
   MON        TUE        WED        THU        FRI        SAT        SUN
   PULL(5x8)  DIPS(5x5)  CURL(150)  SIT(200)   PUSH(200)  SIT(200)   휴식
