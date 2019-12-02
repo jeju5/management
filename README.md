@@ -25,10 +25,13 @@
   ```
   MON        TUE        WED        THU        FRI        SAT        SUN
   PULL(5x8)  DIPS(5x5)  CURL(150)  SIT(200)   PUSH(200)  SIT(200)   휴식
-  RUN5       RUN5       RUN5       RUN5       RUN5       LSM        휴식
+  RUN5       RUN5       RUN5       RUN5       RUN5       INTENSE    휴식
   BOXING     BOXING     BOXING     BOXING     BOXING                휴식
   
-  * LSW(Long Steady Movement): RUN(10+), PULL(100+), PUSH(300+), SIT(500+), SQUAT(2000+)
+  * INTENSE
+    - RUN 10+
+    - MAX-INCLINE 20MINS (1min-run+1min-rest)x10set
+    - PULL(100+), PUSH(300+), SIT(500+), SQUAT(1500+)
   ```
  
 # GOAL
