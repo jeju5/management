@@ -1,8 +1,8 @@
 package ch2_data_structures;
 
-import java.util.Arrays;
+import static org.junit.Assert.assertEquals;
 
-public class DoublyLinkedList {
+public class List_LinkedList implements List {
 
     // Node class
     private class Node {
@@ -13,28 +13,29 @@ public class DoublyLinkedList {
         // arg constructor
         public Node(String string) {
             this.data = string;
-            this.next = null;
-        }
-
-        // arg constructor
-        public Node(String string, Node nextNode) {
-            this.data = string;
-            this.next = nextNode;
         }
     }
 
     // class variable
     private Node head;
-    private int size;
+    private int size = 0;
 
     // no-arg constructor
-    public DoublyLinkedList() {
+    public List_LinkedList() {
         head = null;
         size = 0;
     }
 
+    // add in the front
+    public void addFirst(String string) {
+        Node node = new Node(string);
+        node.next = head;
+        head = node;
+        size++;
+    }
+
     // add in the end
-    public void add(String string) {
+    public void addLast(String string) {
         Node node = new Node(string);
 
         if (head == null) {
@@ -50,7 +51,7 @@ public class DoublyLinkedList {
     }
 
     // add in the index
-    public void add(int index, String string) {
+    public void addAt(int index, String string) {
         Node nodeAtIndexMinusOne;
         Node nodeAtIndex;
         Node nodeToInsert = new Node(string);
@@ -65,14 +66,15 @@ public class DoublyLinkedList {
             nodeAtIndexMinusOne.next = nodeToInsert;
             nodeToInsert.next = nodeAtIndex;
         }
-
         size++;
     }
 
+    // get string at index
     public String get(int index) {
         return getNode(index).data;
     }
 
+    // get node at index
     public Node getNode(int index) {
         Node node = head;
         for (int i=0; i<index; i++) {
@@ -81,7 +83,7 @@ public class DoublyLinkedList {
         return node;
     }
 
-    // get index of the element
+    // get index of the node with the string
     public int getIndex(String string) {
         Node node = head;
         for (int i=0; node != null; i++) {
@@ -94,13 +96,18 @@ public class DoublyLinkedList {
         return -1;
     }
 
+    public boolean contains(String string) {
+        return getIndex(string) != -1;
+    }
+
+    // set string at index
     public void set(int index, String string) {
         Node node = getNode(index);
         node.data = string;
     }
 
+    // remove node at index
     public void remove(int index) {
-
         if (-1 < index) {
             if (index == 0) {
                 // remove head
@@ -112,15 +119,14 @@ public class DoublyLinkedList {
             }
             size--;
         }
-
     }
 
+    // remove node with string
     public void remove(String string) {
         int indexOfNodeToDelete = getIndex(string);
         remove(indexOfNodeToDelete);
     }
 
-    // return as an array
     public String[] toArray() {
         String[] array = new String[size];
         Node node = head;
@@ -129,38 +135,51 @@ public class DoublyLinkedList {
             array[i] = node.data;
             node = node.next;
         }
-
         return array;
     }
 
+    public String toArrayString() {
+        String[] array = toArray();
+        String string = "[";
+
+        for (int i=0; i<size-1; i++) {
+            string += array[i] + ", ";
+        }
+        string += array[size-1] + "]";
+        return string;
+    }
+
+    public String toOverviewString() {
+        String[] array = toArray();
+        return toArrayString() + " size=" + size +  " length=" + array.length;
+    }
+
     public static void main(String[] args) {
-        DoublyLinkedList linkedList = new DoublyLinkedList();
-        linkedList.add("0A");
-        linkedList.add("1B");
-        linkedList.add("2C");
-        System.out.println(Arrays.toString(linkedList.toArray()));
+        List_LinkedList testList = new List_LinkedList();
 
-        System.out.println(linkedList.getIndex("1231"));
-        System.out.println(linkedList.getIndex("2C"));
-        System.out.println(linkedList.get(0));
-        System.out.println(linkedList.get(1));
-        System.out.println(linkedList.get(2));
+        testList.addLast("0");
+        testList.addLast("1");
+        testList.addLast("2");
+        testList.addFirst("addFirst");
+        System.out.println(testList.toOverviewString());
+        assertEquals("[addFirst, 0, 1, 2] size=4 length=4", testList.toOverviewString());
 
-        linkedList.add(1, "1ADDED");
-        System.out.println(Arrays.toString(linkedList.toArray()));
-        linkedList.add(3, "3ADDED");
-        System.out.println(Arrays.toString(linkedList.toArray()));
+        testList.remove(2);
+        testList.addLast("ASDJ");
+        testList.addLast("DFJE");
+        System.out.println(testList.toOverviewString());
+        assertEquals("[addFirst, 0, 2, ASDJ, DFJE] size=5 length=5", testList.toOverviewString());
 
-        linkedList.set(2,"0UPDATED");
-        linkedList.add("3KKK");
-        System.out.println(Arrays.toString(linkedList.toArray()));
+        testList.remove("ASDJ");
+        testList.addAt(1,"addAtIndex1");
+        testList.set(2, "setIndex1");
+        System.out.println(testList.toOverviewString());
+        assertEquals(testList.getIndex("addIndex1"), -1);
+        assertEquals(testList.getIndex("setIndex1"), 2);
+        assertEquals(testList.contains("addIndex"), false);
+        assertEquals(testList.contains("setIndex1"), true);
+        assertEquals("[addFirst, addAtIndex1, setIndex1, 2, DFJE] size=5 length=5", testList.toOverviewString());
 
-        linkedList.remove(5);
-        linkedList.remove(4);
-        System.out.println(Arrays.toString(linkedList.toArray()));
-
-        linkedList.remove("0A");
-        linkedList.remove("0B");
-        System.out.println(Arrays.toString(linkedList.toArray()));
+        System.out.println("\nall tests are passed!");
     }
 }

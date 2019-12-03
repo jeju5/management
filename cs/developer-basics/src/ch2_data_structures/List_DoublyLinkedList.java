@@ -1,8 +1,8 @@
 package ch2_data_structures;
 
-import java.util.Arrays;
+import static org.junit.Assert.assertEquals;
 
-public class CircularLinkedList {
+public class List_DoublyLinkedList implements List{
 
     // Node class
     private class Node {
@@ -20,10 +20,10 @@ public class CircularLinkedList {
     // class variable
     private Node head;
     private Node tail;
-    private int size;
+    private int size = 0;
 
     // no-arg constructor
-    public CircularLinkedList() {
+    public List_DoublyLinkedList() {
         head = null;
         size = 0;
     }
@@ -69,8 +69,8 @@ public class CircularLinkedList {
 
             nodeToInsert.next = nodeAtIndex;
             nodeAtIndex.prev = nodeToInsert;
+            size++;
         }
-        size++;
     }
 
     // get String at index
@@ -100,6 +100,10 @@ public class CircularLinkedList {
         return -1;
     }
 
+    public boolean contains(String string) {
+        return getIndex(string) != -1;
+    }
+
     // set string at index
     public void set(int index, String string) {
         Node node = getNode(index);
@@ -115,10 +119,9 @@ public class CircularLinkedList {
                 head.prev = null;
             } else {
                 // remove non-head
-                Node nodeBeforeNodeToDelete = getNode(index-1);
-                nodeBeforeNodeToDelete.next = nodeBeforeNodeToDelete.next.next;
-                nodeBeforeNodeToDelete.next.prev = nodeBeforeNodeToDelete;
-
+                Node nodeToRemove = getNode(index);
+                nodeToRemove.prev.next = nodeToRemove.next;
+                nodeToRemove.next.prev = nodeToRemove.prev;
             }
             size--;
         }
@@ -129,7 +132,6 @@ public class CircularLinkedList {
         int indexOfNodeToDelete = getIndex(string);
         remove(indexOfNodeToDelete);
     }
-
 
     // return as an array
     public String[] toArray() {
@@ -144,55 +146,77 @@ public class CircularLinkedList {
         return array;
     }
 
-    public void printForward() {
-        Node currentNode = head;
-        System.out.print("PrintForward: ");
-        while (currentNode != null) {
-            System.out.print(currentNode.data + " ");
-            currentNode = currentNode.next;
+    public String toArrayString() {
+        String[] array = toArray();
+        String string = "[";
+
+        for (int i=0; i<size-1; i++) {
+            string += array[i] + ", ";
         }
+        string += array[size-1] + "]";
+        return string;
     }
 
-    public void printBackward() {
+    public String toOverviewString() {
+        String[] array = toArray();
+        return toArrayString() + " size=" + size +  " length=" + array.length;
+    }
+
+    public String toStringForward() {
+        String string = "TO ARRAY-STRING FORWARD: [";
+
+        Node currentNode = head;
+        while (currentNode.next != null) {
+            string += currentNode.data + ">>";
+            currentNode = currentNode.next;
+        }
+        string += currentNode.data + "]";
+        return string;
+    }
+
+    public String toStringBackward() {
+        String string = "TO ARRAY-STRING BACKWARD: [";
+
         Node currentNode = getNode(size-1);
-        System.out.print("PrintBackward: ");
-        while (currentNode != null) {
-            System.out.print(currentNode.data + " ");
+        while (!currentNode.equals(head)) {
+            string += currentNode.data + "<<";
             currentNode = currentNode.prev;
         }
+        string += currentNode.data + "]";
+        return string;
     }
 
     public static void main(String[] args) {
-        CircularLinkedList linkedList = new CircularLinkedList();
-        linkedList.addLast("Tail1");
-        linkedList.addLast("Tail2");
-        linkedList.addLast("Tail3");
-        linkedList.addFirst("Head1");
-        linkedList.addLast("Tail4");
-        linkedList.addFirst("Head2");
-        System.out.println(Arrays.toString(linkedList.toArray()));
+        List_DoublyLinkedList testList = new List_DoublyLinkedList();
 
-        System.out.println(linkedList.getIndex("1231"));
-        System.out.println(linkedList.getIndex("Head1"));
-        System.out.println(linkedList.getIndex("Head1123"));
-        System.out.println(linkedList.get(0));
-        System.out.println(linkedList.get(1));
-        System.out.println(linkedList.get(2));
+        testList.addLast("0");
+        testList.addLast("1");
+        testList.addLast("2");
+        testList.addFirst("addFirst");
+        System.out.println(testList.toOverviewString());
+        assertEquals("[addFirst, 0, 1, 2] size=4 length=4", testList.toOverviewString());
 
-        linkedList.set(2,"0UPDATED");
-        linkedList.addLast("3KKK");
-        System.out.println(Arrays.toString(linkedList.toArray()));
+        testList.remove(2);
+        testList.addLast("ASDJ");
+        testList.addLast("DFJE");
+        System.out.println(testList.toOverviewString());
+        assertEquals("[addFirst, 0, 2, ASDJ, DFJE] size=5 length=5", testList.toOverviewString());
 
-        linkedList.remove(5);
-        linkedList.remove(4);
-        System.out.println(Arrays.toString(linkedList.toArray()));
+        testList.remove("ASDJ");
+        testList.addAt(1,"addAtIndex1");
+        testList.set(2, "setIndex1");
+        System.out.println(testList.toOverviewString());
+        assertEquals(testList.getIndex("addIndex1"), -1);
+        assertEquals(testList.getIndex("setIndex1"), 2);
+        assertEquals(testList.contains("addIndex"), false);
+        assertEquals(testList.contains("setIndex1"), true);
+        assertEquals("[addFirst, addAtIndex1, setIndex1, 2, DFJE] size=5 length=5", testList.toOverviewString());
 
-        linkedList.remove("0A");
-        linkedList.remove("0B");
-        System.out.println(Arrays.toString(linkedList.toArray()));
+        System.out.println(testList.toStringForward());
+        assertEquals("TO ARRAY-STRING FORWARD: [addFirst>>addAtIndex1>>setIndex1>>2>>DFJE]", testList.toStringForward());
+        System.out.println(testList.toStringBackward());
+        assertEquals("TO ARRAY-STRING BACKWARD: [DFJE<<2<<setIndex1<<addAtIndex1<<addFirst]", testList.toStringBackward());
 
-        linkedList.printForward();
-        System.out.println();
-        linkedList.printBackward();
+        System.out.println("\nall tests are passed!");
     }
 }

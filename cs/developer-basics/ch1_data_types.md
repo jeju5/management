@@ -63,12 +63,12 @@
         ```
 
 ## Array
-* Array, List, data_structures.ArrayList and data_structures.LinkedList?
+* Array, List, ch2_data_structures.List_ArrayList and ch2_data_structures.List_LinkedList?
     ```
     Array     : Array is an object that represents indexed collection of same-kind items.
     List      : List is an interface that represents indexed collection of items.
-    data_structures.ArrayList : data_structures.ArrayList is an implementation of List using dynamic array concept.
-    data_structures.LinkedList: data_structures.LinkedList is an implementation of List using chained node concept.
+    ch2_data_structures.List_ArrayList : ch2_data_structures.List_ArrayList is an implementation of List using dynamic array concept.
+    ch2_data_structures.List_LinkedList: ch2_data_structures.List_LinkedList is an implementation of List using chained node concept.
     ```
 
 * Java Array
@@ -81,12 +81,3 @@
     ```
     int arr[][]=new int[5][5]; // 5x5 integer array
     ``` 
-
-* Big-O
-    ```
-    * Access: O(1)
-    * Search: O(n)     # sequential search
-              O(log n) # binary search on sorted array
-    * Insert: O(n)     # worst case is insertion on array[0]
-    * Delete: O(n)     # worst case is deletion on array[0]
-    ```

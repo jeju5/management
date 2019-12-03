@@ -15,7 +15,7 @@
 
 * for loop
 ```
-- loop is executed if the middle condition is true.
+- loop is executed until the second condition meets.
 
 for (int i=0; i<array.length; i++)
 - loops 0 --> length-1
@@ -26,8 +26,13 @@ for (int i=array.length-1; -1<i; i++)
 
 * array shifting
 ```
-make i as a target so that each loop in 'for (int i=0; ~~~)' assings 'elements[i]=something'
+make i as a shifting-target
+then each loop in 'for (int i=0; ~~~)' will assign 'elements[i]=something'
 ```
+
+* java allows an array of length zero
+
+* @TOSTUDY
 * casting
-    * checked casting
-    * unchecked casting
+    * checked casting?
+    * unchecked casting?
