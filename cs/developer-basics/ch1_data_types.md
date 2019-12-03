@@ -1,4 +1,4 @@
-# Data Types
+# CH1. Data Types
 
 ## Primitive Types
 * Java has 8 predefined primitive types.
@@ -63,12 +63,12 @@
         ```
 
 ## Array
-* Array, List, ArrayList and LinkedList?
+* Array, List, data_structures.ArrayList and data_structures.LinkedList?
     ```
     Array     : Array is an object that represents indexed collection of same-kind items.
     List      : List is an interface that represents indexed collection of items.
-    ArrayList : ArrayList is an implementation of List using dynamic array concept.
-    LinkedList: LinkedList is an implementation of List using chained node concept.
+    data_structures.ArrayList : data_structures.ArrayList is an implementation of List using dynamic array concept.
+    data_structures.LinkedList: data_structures.LinkedList is an implementation of List using chained node concept.
     ```
 
 * Java Array
