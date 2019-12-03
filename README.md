@@ -25,11 +25,12 @@
   ```
   MON        TUE        WED        THU        FRI        SAT        SUN
   PULL(5x8)  DIPS(5x5)  CURL(150)  SIT(200)   PUSH(200)  SIT(200)   휴식
-  RUN5       RUN5       RUN5       RUN5       RUN5       INTENSE    휴식
+  RUN5       RUN5       RUN5       RUN5       RUN5       HARD       휴식
   BOXING     BOXING     BOXING     BOXING     BOXING                휴식
   
-  * INTENSE
+  * HARD
     - RUN 13+
+    - INTERVAL: INCLINED TREADMILL RUN (1min+1min)x15set
     - PULL(100+), PUSH(300+), SIT(500+), SQUAT(1500+)
   ```
  
