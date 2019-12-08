@@ -28,10 +28,7 @@
   RUN5       RUN5       RUN5       RUN5       RUN5       HARD       휴식
   BOXING     BOXING     BOXING     BOXING     BOXING                휴식
   
-  * HARD
-    - RUN 13+
-    - INTERVAL: INCLINED TREADMILL RUN (1min+1min)x15set
-    - PULL(100+), PUSH(300+), SIT(500+), SQUAT(1500+)
+  * HARD: Run10+ / Squat2600 / Interval20min
   ```
  
 # GOAL
