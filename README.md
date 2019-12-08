@@ -47,6 +47,9 @@
 
 * 주일학교
   * Sumamrize Lord's Prayer Study Material
+  
+* 12/08
+  * 1독
 
 * Math
   * Calculus (Stewart)
