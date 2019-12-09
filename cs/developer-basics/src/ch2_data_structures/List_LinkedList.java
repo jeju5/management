@@ -13,12 +13,13 @@ public class List_LinkedList implements List {
         // arg constructor
         public Node(String string) {
             this.data = string;
+            this.next = null;
         }
     }
 
     // class variable
     private Node head;
-    private int size = 0;
+    private int size;
 
     // no-arg constructor
     public List_LinkedList() {

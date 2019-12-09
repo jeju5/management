@@ -20,11 +20,11 @@ public class List_CircularLinkedList {
     // class variable
     private Node head;
     private Node tail;
-    private int size = 0;
+    private int size;
 
     // no-arg constructor
     public List_CircularLinkedList() {
-        head = null;
+        head = tail = null;
         size = 0;
     }
 

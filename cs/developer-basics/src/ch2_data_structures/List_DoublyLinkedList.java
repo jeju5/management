@@ -14,17 +14,18 @@ public class List_DoublyLinkedList implements List{
         // arg constructor
         public Node(String string) {
             this.data = string;
+            prev = next = null;
         }
     }
 
     // class variable
     private Node head;
     private Node tail;
-    private int size = 0;
+    private int size;
 
     // no-arg constructor
     public List_DoublyLinkedList() {
-        head = null;
+        head = tail = null;
         size = 0;
     }
 

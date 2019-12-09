@@ -44,11 +44,13 @@
 
 ``` 
 
-## 2. Stack and Queue
+## 2. Stack
 * Stack
 ```
 
 ```
+
+# 3. Queue
 * Queue
 ```
 
@@ -59,7 +61,7 @@
 ```
 
 
-## 3. Tree
+## 4. Tree
 * Binary Tree
 ```
 
@@ -93,7 +95,7 @@
 
 ```
 
-## Hash
+## 5. Hash
 * HashTable
 ```
 ```

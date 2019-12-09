@@ -32,6 +32,14 @@ then each loop in 'for (int i=0; ~~~)' will assign 'elements[i]=something'
 
 * java allows an array of length zero
 
+
+* compareTo
+```
+* left.compareTo(right) < 0   means left < right
+* left.compareTo(right) == 0  means left == right
+* left.compareTo(right) > 0   means left > right 
+```
+
 * @TOSTUDY
 * casting
     * checked casting?

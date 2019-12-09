@@ -22,5 +22,4 @@ public interface List {
     public String[] toArray();
     public String toArrayString();
     public String toOverviewString();
-
 }

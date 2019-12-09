@@ -13,8 +13,13 @@ public class Queue_QueueUsingLinkedList implements Queue {
         }
     }
 
-    private int size = 0;
+    private int size;
     private Node head;
+
+    public Queue_QueueUsingLinkedList() {
+        size = 0;
+        head = null;
+    }
 
     // "add to the last"
     public void enqueue(String string) {

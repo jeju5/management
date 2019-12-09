@@ -5,7 +5,12 @@ import static org.junit.Assert.assertEquals;
 public class Queue_QueueUsingArray implements Queue {
 
     private String[] array;
-    private int size = 0;
+    private int size;
+
+    public Queue_QueueUsingArray() {
+        array = null;
+        size = 0;
+    }
 
     // "add to the last"
     public void enqueue(String string) {

@@ -6,11 +6,12 @@ import static org.junit.Assert.assertEquals;
 
 public class List_ArrayList implements List {
     // class variable
-    private int size = 0;   // size is the actual number of elements
+    private int size;       // size is the actual number of elements
     private String array[]; // array.length is the number of memory locations possible
 
     // no-arg constructor
     public List_ArrayList() {
+        size = 0;
         array = new String[0];
     }
 
