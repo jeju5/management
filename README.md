@@ -28,7 +28,7 @@
   RUN3       RUN3       RUN3       RUN3       RUN3       HARD       휴식
   SPORTS     SPORTS     SPORTS     SPORTS     SPORTS                휴식
   
-  * HARD: Run10+ / Squat2600 / Interval20min
+  * HARD: Run10+/Cindy/YASSO800/Squat2600
   ```
  
 # GOAL
