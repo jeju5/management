@@ -30,6 +30,38 @@
   
   * HARD: Run10+/Cindy/YASSO800/Squat1300
   ```
+  
+# 2020
+  ```
+  * Jan
+    * Netflix The Office Review (Season 1,2,3)
+    * Basic Data Structure & Algorithm
+    * 흔들리는 꽃
+    * 63kg -> Keep 64kg
+    * Tennis Start
+  * Feb
+    * Netflix: The Office Review (Season 4,5,6,7)
+    * LeetCode Begins (Easy)
+    * Marathon Training Begins
+    * Tennis
+  * Mar
+    * Tennis
+  * Apr
+    * Run Outdoor
+    * Tennis
+  * May
+    * Tennis
+  * Jun
+    * Grandma's Marathon (Goal: sub-4:00)
+    * Tennis
+  * Jul
+  * Aug
+  * Sep
+  * Oct
+  * Nov
+  * Dev
+    * Honolulu Marathon (Goal: sub-4:00)
+  ```
  
 # GOAL
 ```
