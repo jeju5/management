@@ -23,10 +23,9 @@
   ```
   MON        TUE        WED        THU        FRI        SAT        SUN
   PULL(5x8)  DIPS(5x5)  SIT(200)   CURL(200)  PUSH(200)  330        휴식
-  RUN4       RUN4       RUN4       RUN4       RUN4       HARD       휴식
+  RUN4       RUN4       RUN4       RUN4       RUN4       RUN10+     휴식
   SPORTS     SPORTS     SPORTS     SPORTS     SPORTS                휴식
   
-  * HARD: Run10+/Cindy/Squat1300
   ```
   
  
