@@ -17,51 +17,18 @@
   
   * 저녁약속은 5시에 잡고 7시에 끝내고 들어오기
   * 식사간에 공복 반드시 유지하기
-  * 자유시간에 할만한것
-    - 기타, 독서, Netflix, 영단어, CS, 풀업
   ```
 
 # MOVE
   ```
   MON        TUE        WED        THU        FRI        SAT        SUN
-  PULL(5x8)  DIPS(5x5)  CURL(200)  SIT(200)   PUSH(200)  SIT(200)   휴식
-  RUN3       RUN3       RUN3       RUN3       RUN3       HARD       휴식
+  PULL(5x8)  DIPS(5x5)  SIT(200)   CURL(200)  PUSH(200)  330        휴식
+  RUN4       RUN4       RUN4       RUN4       RUN4       HARD       휴식
   SPORTS     SPORTS     SPORTS     SPORTS     SPORTS                휴식
   
-  * HARD: Run10+/Cindy/YASSO800/Squat1300
+  * HARD: Run10+/Cindy/Squat1300
   ```
   
-# 2020
-  ```
-  * Jan
-    * Netflix The Office Review (Season 1,2,3)
-    * Basic Data Structure & Algorithm
-    * 흔들리는 꽃
-    * 63kg -> Keep 64kg
-    * Tennis Start
-  * Feb
-    * Netflix: The Office Review (Season 4,5,6,7)
-    * LeetCode Begins (Easy)
-    * Marathon Training Begins
-    * Tennis
-  * Mar
-    * Tennis
-  * Apr
-    * Run Outdoor
-    * Tennis
-  * May
-    * Tennis
-  * Jun
-    * Grandma's Marathon (Goal: sub-4:00)
-    * Tennis
-  * Jul
-  * Aug
-  * Sep
-  * Oct
-  * Nov
-  * Dev
-    * Honolulu Marathon (Goal: sub-4:00)
-  ```
  
 # GOAL
 ```
@@ -98,10 +65,6 @@
   * Boxing - 1match 64kg
   * Tennis - 2.0
   * Planche
-  
-* 12월 재정계획
-  * 417(마커스)+2086(12-2주급)+1090(잔액)-417(12월 십일조)-1095(렌트)-203(MN)-1500(12카드) = $378
-  
 ```
  
 # MONEY
