@@ -2,6 +2,7 @@
 * demarcation 경계, 경계선
 * garner 지지를 얻다
 * deem 여기다 (deem it appropriate 적절한 것으로 여기다)
+* effects 소지품
 * flan 플랜파이 
 * pimp 매춘중계인
 * in that S V S가 V하므로
