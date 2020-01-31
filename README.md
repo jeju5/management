@@ -22,7 +22,7 @@
 # MOVE
   ```
   SUN        MON        TUE       |  WED        THU        FRI       |  SAT
-  SIT(200)   PULL(50)   DIPS(50)  |  SIT(200)   CURL(200)  PUSH(200) |  320
+  PULL(50)   DIPS(50)   SIT(200)  |  CURL(200)  PUSH(200)  SIT(200)  |  320
   휴식        RUN4       RUN4      |  RUN4       RUN4       RUN4      |  RUN10+
   휴식        SPORTS     SPORTS    |  SPORTS     SPORTS     SPORTS    |   
   
