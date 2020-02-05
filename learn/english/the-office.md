@@ -10,7 +10,7 @@
 * apiece 하나에
 * morale [모랄] 사기 (전쟁터에서 그런 사기)
 
-# The Office S01E02 / REP:2
+# The Office S01E02 / REP:3
 * mandate 위임, 명령 / 위임하다, 명령하다
 * beat me to the punch 선수치다
 * retaliate 보복하다
@@ -21,8 +21,11 @@
 * enact 법을 제정하다, 상연하다
 * reenact 다시 법을 제정하다, 재현하다
 * wish A harm A에게 해를 가하다
+* throw off 떨쳐버리다
 * cop a squat 앉다 
 * inadvertent 고의가 아닌
+* pun 말장난
+* no pun intended 말장난하는게 아니다
 
 # The Office S01E03 / REP:2
 * orifice [오리피스] 구멍
