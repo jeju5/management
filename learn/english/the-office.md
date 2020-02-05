@@ -17,7 +17,7 @@
 * defer to A A를 따르다 (defer 연기하다)
 * reenact 재재정하다, 재현하다
 * cop a squat 앉다 
-* inadvertent 의가 아닌
+* inadvertent 고의가 아닌
 
 # The Office S01E03 / REP:2
 * orifice [오리피스] 구멍
