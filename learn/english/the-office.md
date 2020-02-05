@@ -18,7 +18,9 @@
 * steer away from A A를 피하다
 * ground rule 기본규칙
 * defer to A A를 따르다 (defer 연기하다)
-* reenact 재재정하다, 재현하다
+* enact 법을 제정하다, 상연하다
+* reenact 다시 법을 제정하다, 재현하다
+* wish A harm A에게 해를 가하다
 * cop a squat 앉다 
 * inadvertent 고의가 아닌
 
