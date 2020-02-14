@@ -466,9 +466,9 @@
 127.0.0.1 blogspot.com
 127.0.0.1 www.blogspot.com
 127.0.0.1 www.blogger.com
-127.0.0.1 namu.wiki
-127.0.0.1 gohackers.com
-127.0.0.1 www.gohackers.com
+# 127.0.0.1 namu.wiki
+# 127.0.0.1 gohackers.com
+# 127.0.0.1 www.gohackers.com
 
 127.0.0.1 vidzi.cc
 127.0.0.1 vidto.me
@@ -597,8 +597,8 @@
 127.0.0.1 bet40.co
 127.0.0.1 blizzard.com
 127.0.0.1 dailymotion.com
-127.0.0.1 flickr.com
-127.0.0.1 gall.dcinside.com
+# 127.0.0.1 flickr.com
+# 127.0.0.1 gall.dcinside.com
 127.0.0.1 ggulbam60.com
 127.0.0.1 girl7942.com
 127.0.0.1 gkfkgkfkrnrnrn.blogspot.com
@@ -611,8 +611,8 @@
 127.0.0.1 totocheat.net
 127.0.0.1 yatong1.com
 127.0.0.1 youmaker.com
-127.0.0.1 clien.net
-127.0.0.1 www.clien.net
+# 127.0.0.1 clien.net
+# 127.0.0.1 www.clien.net
 127.0.0.1 nojehan.club
 127.0.0.1 voirfilms.ws
 127.0.0.1 www.voirfilms.ws
