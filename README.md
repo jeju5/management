@@ -20,11 +20,11 @@
 JAN: 
 FEB: CS Basic Structure Impl, TheOffice Season1-2, TennisStep1, 66kg
 MAR: CS Basic Algorithm 1/3, TheOffice Season3-5, TennisStep2 (SAT), 64kg
-APR: CS Basic Algorithm 2/3, TheOffice Season6-7, TennisCamp
-MAY: CS Basic Algorithm 3/3,
-JUN: CS LeetCode Begins, Grandma's Marathon
-JUL:
-AUG:
+APR: CS Basic Algorithm 2/3, TheOffice Season6-7, TennisCamp(TUE/THU)
+MAY: CS Basic Algorithm 3/3                     , TennisCamp(TUE/THU)
+JUN: CS LeetCode Begins, Grandma's Marathon     , TennisCamp(TUE/THU)
+JUL:                                            , TennisCamp(TUE/THU)
+AUG:                                            , TennisCamp(TUE/THU)
 SEP:
 OCT: Mankato Marathon
 NOV:
