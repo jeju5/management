@@ -1,4 +1,4 @@
-# TIME
+# DAY
   ```
      TIME     TASK
   ------------------------
@@ -14,6 +14,22 @@
   ------------------------
   * 저녁약속은 5시에 잡고 7시에 끝내고 들어오기
   ```
+  
+# YEAR
+```
+JAN: 
+FEB: CS Basic Structure Impl, The Office Season1 , TennisStep1, 66kg, 흔들리는 
+MAR: CS Basic Algorithm 1/3, The Office Season2-4, TennisStep2, 64kg
+APR: CS Basic Algorithm 2/3, The Office Season5-7, TennisStep2, TennisCamp
+MAY: CS Basic Algorithm 3/3
+JUN: CS LeetCode Begins, Grandma's Marathon
+JUL:
+AUG:
+SEP:
+OCT:
+NOV:
+DEC: Honolulu Marathon,
+```
 
 # MOVE
   ```
