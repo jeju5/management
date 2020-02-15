@@ -18,17 +18,17 @@
 # YEAR
 ```
 JAN: 
-FEB: CS Basic Structure Impl, The Office Season1 , TennisStep1, 66kg, 흔들리는 
-MAR: CS Basic Algorithm 1/3, The Office Season2-4, TennisStep2, 64kg
-APR: CS Basic Algorithm 2/3, The Office Season5-7, TennisStep2, TennisCamp
-MAY: CS Basic Algorithm 3/3
+FEB: CS Basic Structure Impl, TheOffice Season1-2, TennisStep1, 66kg
+MAR: CS Basic Algorithm 1/3, TheOffice Season3-5, TennisStep2 (SAT), 64kg
+APR: CS Basic Algorithm 2/3, TheOffice Season6-7, TennisCamp
+MAY: CS Basic Algorithm 3/3,
 JUN: CS LeetCode Begins, Grandma's Marathon
 JUL:
 AUG:
 SEP:
 OCT:
 NOV:
-DEC: Honolulu Marathon,
+DEC: Honolulu Marathon
 ```
 
 # MOVE
