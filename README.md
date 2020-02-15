@@ -26,7 +26,7 @@ JUN: CS LeetCode Begins, Grandma's Marathon
 JUL:
 AUG:
 SEP:
-OCT:
+OCT: Mankato Marathon
 NOV:
 DEC: Honolulu Marathon
 ```
