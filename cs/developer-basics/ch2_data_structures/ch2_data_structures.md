@@ -5,9 +5,7 @@
 
 ## 1. List
 * List
-```
-* List is a collection of ordered data.
-
+    * List is a collection of ordered data.
 * List vs Array
     * List
         * collection of ordered data.
@@ -19,30 +17,15 @@
         * Size: List is an interface with dynamic size, but Array is a fixed-size datatype; []
         * Content: List can hold Reference Type but not Primitive Type. Array can hold both.
         * Type-Safety: List can be non-typesafe, meaning List can contain two different types of data at the same time. However, array is typesafe by default.
-```
-
-**************************************
-
 
 *  Array List
-```
-* ArrayList is an implementation of List using dynamic array concept.
-```
+    * ArrayList is an implementation of List using dynamic array concept.
 
 * Linked List
-```
-* LinkedList is an implementation of List using chained node concept.
-```
+    * LinkedList is an implementation of List using chained node concept.
 
 * Doubly Linked List
-```
-
-```
-
 * Circular Linked List
-```
-
-``` 
 
 ## 2. Stack
 * Stack
