@@ -2,13 +2,13 @@
   ```
      TIME     TASK
   ------------------------
-  0430 0530  기상 운동       # 0500 물 700ml + 케일꿀무침
-  0530 0600  예배           # 0700 녹차/넛츠
-  ------------------------ # 1200 쌀밥정식 (쌀밥, 고기, 마늘, 양파, 아스파라거스)
-  0600 0800  훈련  (2.0H)   
-  0800 0400  일과  (8.0H)   # 0500 물 700ml + 케일꿀무침
-  0400 0800  자유  (4.0H)   # 0500 영양보충
-  ------------------------ # 0500 타코정식 (콘쉘3 & 고기, 마늘, 양파, 사우어크라우트)  
+  0430 0530  기상 운동       
+  0530 0600  예배           
+  ------------------------ 
+  0600 0800  훈련  (2.0H)    # 아침: 블루콜리 + 영양보충
+  0800 0400  일과  (8.0H)    # 점심: 물일리터 + 샌드위치 (빵2 + 계란, 치즈, 딸기잼, 피넛버터)
+  0400 0800  자유  (4.0H)    # 저녁: 블루콜리 + 타코    (쉘2 + 고기, 마늘, 양파, 사우어크라우트) 
+  ------------------------
   0800 0820  성경           
   0820 0830  정리 취침
   ------------------------
@@ -18,13 +18,13 @@
 # YEAR
 ```
 JAN: 
-FEB: CS Basic Structure Impl, TheOffice Season1-2, TennisStep1, hit64keep65
-MAR: CS Basic Algorithm 1/3, TheOffice Season3-5, TennisStep2 (SAT), hit63keep64
-APR: CS Basic Algorithm 2/3, TheOffice Season6-7, TennisCamp(TUE/THU)
-MAY: CS Basic Algorithm 3/3                     , TennisCamp(TUE/THU)
-JUN: CS LeetCode Begins, Grandma's Marathon     , TennisCamp(TUE/THU)
-JUL:                                            , TennisCamp(TUE/THU)
-AUG:                                            , TennisCamp(TUE/THU)
+FEB: 
+MAR: 
+APR: 
+MAY: 
+JUN: 
+JUL: 
+AUG: 
 SEP:
 OCT: Mankato Marathon
 NOV:
