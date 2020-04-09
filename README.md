@@ -4,8 +4,7 @@
   |  SUN    | MON          TUE          WED          THU          FRI          SAT         |
   ------------------------------------------------------------------------------------------
   |  휴식    | PULL(50)     RDIP(50)     CURL(200)    PUSH(200)    PULL(50)     RDIP(50)    |
-  |         | SITU(300)    SITU(300)    SITU(300)    SITU(300)    SITU(300)    SITU(300)   |
-  |         | BIKE(45min)  BIKE(45min)  BIKE(45min)  BIKE(45min)  BIKE(45min)  BIKE(45min) |
+  |         | BIKE(45min)  BIKE(45min)  SITU(500)    BIKE(45min)  BIKE(45min)  SITU(500)   |
   ------------------------------------------------------------------------------------------
   
   
