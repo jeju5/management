@@ -1,3 +1,15 @@
+# MOVE
+  ```
+  -----------------------------------------------------------------------------------------|
+  |  SUN    | MON          TUE          WED          THU          FRI          SAT         |
+  ------------------------------------------------------------------------------------------
+  |  휴식    | PULL(50)     RDIP(50)     CURL(200)    PUSH(200)    PULL(50)     RDIP(50)    |
+  |         | SITUP(500)   SQUAT(500)   SITUP(500)   SQUAT(500)   SITUP(500)   SQUAT(500)  |
+  |         | CALIT(5min)  CALIT(5min)  CALIT(5min)  CALIT(5min)  CALIT(5min)  CALIT(5min) |
+  |         | BIKE(45min)  BIKE(45min)  BIKE(45min)  BIKE(45min)  BIKE(45min)  BIKE(45min) |
+  ------------------------------------------------------------------------------------------
+  ```
+  
 # DAY
   ```
      TIME     TASK
@@ -27,20 +39,7 @@ OCT: Mankato Marathon
 NOV:
 DEC: Honolulu Marathon
 ```
-
-# MOVE
-  ```
-  -----------------------------------------------------------------------------------------|
-  |  SUN    | MON          TUE          WED          THU          FRI          SAT         |
-  ------------------------------------------------------------------------------------------
-  |  휴식    | PULL(50)     RDIP(50)     CURL(200)    PUSH(200)    PULL(50)     RDIP(50)    |
-  |         | SITUP(500)   SQUAT(500)   SITUP(500)   SQUAT(500)   SITUP(500)   SQUAT(500)  |
-  |         | CALIT(5min)  CALIT(5min)  CALIT(5min)  CALIT(5min)  CALIT(5min)  CALIT(5min) |
-  |         | BIKE(45min)  BIKE(45min)  BIKE(45min)  BIKE(45min)  BIKE(45min)  BIKE(45min) |
-  ------------------------------------------------------------------------------------------
-  ```
   
- 
 # GOAL
 ```
 * English
