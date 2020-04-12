@@ -77,25 +77,11 @@ DEC: Honolulu Marathon
 ```
  
 # MONEY
-```
-* Monthly
-  + $4172  Salary
-  - $417   Tithe
-  - $80    Offering
-  - $1095  Rent
-  - $30    XcelEnergy
-  - $30    Xfinity
-  - $45    Tmobile
-  - $120   Gas
-  - $350   Personal
-  ---------------------
-  + $2000  Saving
- 
-* Last Day of Month
-  1. CREDIT      : pay credit card
-  2. CHECKING    : satisfy $2000 (us bank)
-  3. SAVING      : satisfy $2000 (us bank)
-  3. HIGH SAVING : deposit $2000 (marcus)
+``` 
+1. CREDIT      : pay credit card
+2. CHECKING    : satisfy $2000 (us bank)
+3. SAVING      : satisfy $2000 (us bank)
+4. HIGH SAVING : deposit $2000 (marcus)
               
 <OTHERS>
   - OUT: Auto Insurance
