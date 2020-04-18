@@ -38,10 +38,24 @@
   - slip & roll
 ```
 
-## TWELVE COMBOS
+## DEFENSE COMBINATION
 ```
-jabjab                    variation
-1: jab jab cro lhook      (add defense)
+jab/cro         | (lslip/rslip)
+body/upper/hook | (lroll/rroll)
+
+(lslip) | lbody  lupper  lhook   (lroll/rroll)
+(rslip) | cro    rupper  rhook   (lroll/rroll) 
+(lroll) | lbody  lupper  lhook   (lroll/rroll) 
+(rroll) | rbody  rupper  rhook   (lroll/rroll)
+
+(lslip+)| cro    lbody   rhook
+(rslip+)| jab    lhook
+```
+
+## OFFENSE COMBINATION
+```
+jabjab
+1: jab jab cro lhook    *jab jab (lslip+) cro lhook
 2: jab jab lhook cro
 3: jab jab lbody lhook
 
@@ -55,13 +69,31 @@ jablow
 2: jab bro lupper cro
 3: jab lbody lupper cro
 
-cro
-1: cro jab cro jab 
-2: cro lbody lhook cro
-3: cro cro lhook cro
+rear
+1: cro cro jab cro
+2: rhook lhook jab jab 
+3: rupper lhook jab jab
+
+
+jab 
+jab (lslip) jab/lhook/lupper
+jab (rslip) cro/rhook/rupper
+jab (+rslip)
 ```
 
-## DEFENSE TUTORIAL
+
+
+
+
+
+
+
+
+
+
+
+
+## R&D
 * slip
   * lead-slip
     * lead-slip lead-hook
@@ -119,7 +151,6 @@ cro
     * (rear-step)&jab (lead-slip) &bro lead-hook
     * (rear-step)&jab (lead-slip) &cro lead-hook
   
-## SIGNATURE COMBOS
  * Mayweather
    * lead-hook lead-upper lead-hook / cro lead-hook cro lead-block / cro lead-hook cro lead-shoulder / cro lead-hook cro
    rear-slip lead-roll / cro lead-hook cro sway / cro lead-hook cro jab jab jab
