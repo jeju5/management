@@ -38,7 +38,7 @@
   - slip & roll
 ```
 
-## COMBOS
+## TWELVE COMBOS
 ```
 jabjab                    variation
 1: jab jab cro lhook      (add defense)
@@ -60,14 +60,8 @@ cro
 2: cro lbody lhook cro
 3: cro cro lhook cro
 ```
-```
-Hit Hit -> left-step.left-slip.right-guard
-Hit Hit -> right-step.right-slip.left-guard
-```
 
-## DEFENSE 
-* pivot
-
+## DEFENSE TUTORIAL
 * slip
   * lead-slip
     * lead-slip lead-hook
@@ -108,7 +102,7 @@ Hit Hit -> right-step.right-slip.left-guard
      * (rear-roll) cro (rear-roll)
      * (rear-roll) rear-hook (rear-roll)
      * (rear-roll) rear-upper lead-hook (lead-roll)
-
+     
  * pivot
    * lead-pivot
      * (lead-pivot) & jab (lead-slip)
@@ -149,7 +143,3 @@ Hit Hit -> right-step.right-slip.left-guard
    * (lead-slip) (rear-roll) 라이트잽x4ㅡ라이트ㅡ레프트훅
    * rear-hook (rear-cover) lead-hook (lead-cover) 'jab cro'x4 lead-hook (lead-roll) (rear-roll)
    * 'rear-body lead-body'x4 rear-body lead-hook
-
-
-
-(slip-out drift-out)
