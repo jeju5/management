@@ -23,92 +23,47 @@
 ```
 
 ## TRAINING
-* 5R move/ladder/rope
-* 10R hands
-* 10R gloves
+* 5R rope/ladder
+* 10R combos
 * 5R speed
 
 ## WARM-UP
 ```
-1. MOVE
-   step, pivot, glide, switch, twitch | slip, roll, sway
-
-2. ROPE
-   TOE -> MID -> HILL -> KICK -> KNEE-> CROSS -> DOUBLE -> DOUBLE-CROSS
-   
-3. LADDER
-   * JUMBLE  : (inL, inR, outL, outR)
-   * RUMBLE  : (frontL, frontR, sideL, sideR, danceL, danceR)
-   * SKATE   : (2,3,4,5)
-   * SNATCH  : (frontL, frontR, backL, backR, sideL, sideR)
+- ROPE
+- LADDER
+  - single
+  - snatch
+  - slip
+  - roll
+  - slip & roll
 ```
 
-## BASIC-TENS
+## COMBOS
 ```
-Flow1: jab jab - jab jab cro - jab jab cro lhook
-Flow2: jab cro - jab cro jab - jab cro jab cro
-Flow3: jab cro - jab cro lhook - jab cro lhook rhook
+jabjab                    variation
+1: jab jab cro lhook      (add defense)
+2: jab jab lhook cro
+3: jab jab lbody lhook
 
-Flow4: cro cro - cro cro lhook - cro cro lhook rupper
-Flow5: cro jab - cro jab cro - cro jab cro jab 
-FLOW6: cro lbody - cro lbody lhook - cro lbody lhook cro
+jabcro 
+1: jab cro jab cro
+2: jab cro bab cro
+3: jab cro lhook rhook
 
-Flow7: jab bab - jab bab cro - jab bab cro lhook
-Flow8: jab bro - jab bro lhook - jab bro lhook cro
-Flow9: jab lbody - jab lbody lupper - jab lbody lupper cro
+jablow
+1: jab bab cro lhook
+2: jab bro lupper cro
+3: jab lbody lupper cro
 
-Flow10: lupper jab - lupper jab cro - lupper jab cro lhook
-
-* finish with jab-cro
+cro
+1: cro jab cro jab 
+2: cro lbody lhook cro
+3: cro cro lhook cro
 ```
-
-## 10X10
 ```
-jab jab         bab jab         lead-hook jab         lead-upper jab         lead-body jab         cro jab         bro jab         rear-hook jab         rear-upper jab         rear-body jab         
-jab bab         bab bab         lead-hook bab         lead-upper bab         lead-body bab         cro bab         bro bab         rear-hook bab         rear-upper bab         rear-body bab         
-jab lead-hook   bab lead-hook   lead-hook lead-hook   lead-upper lead-hook   lead-body lead-hook   cro lead-hook   bro lead-hook   rear-hook lead-hook   rear-upper lead-hook   rear-body lead-hook   
-jab lead-upper  bab lead-upper  lead-hook lead-upper  lead-upper lead-upper  lead-body lead-upper  cro lead-upper  bro lead-upper  rear-hook lead-upper  rear-upper lead-upper  rear-body lead-upper  
-jab lead-body   bab lead-body   lead-hook lead-body   lead-upper lead-body   lead-body lead-body   cro lead-body   bro lead-body   rear-hook lead-body   rear-upper lead-body   rear-body lead-body   
-jab cro         bab cro         lead-hook cro         lead-upper cro         lead-body cro         cro cro         bro cro         rear-hook cro         rear-upper cro         rear-body cro         
-jab bro         bab bro         lead-hook bro         lead-upper bro         lead-body bro         cro bro         bro bro         rear-hook bro         rear-upper bro         rear-body bro         
-jab rear-hook   bab rear-hook   lead-hook rear-hook   lead-upper rear-hook   lead-body rear-hook   cro rear-hook   bro rear-hook   rear-hook rear-hook   rear-upper rear-hook   rear-body rear-hook   
-jab rear-upper  bab rear-upper  lead-hook rear-upper  lead-upper rear-upper  lead-body rear-upper  cro rear-upper  bro rear-upper  rear-hook rear-upper  rear-upper rear-upper  rear-body rear-upper  
-jab rear-body   bab rear-body   lead-hook rear-body   lead-upper rear-body   lead-body rear-body   cro rear-body   bro rear-body   rear-hook rear-body   rear-upper rear-body   rear-body rear-body   
-
 Hit Hit -> left-step.left-slip.right-guard
 Hit Hit -> right-step.right-slip.left-guard
 ```
-  
-
-## COMBOS
-* jab jab
-  *	jab jab jab cro
-  *	jab jab cro lead-hook
-  *	jab jab bab cro
-  * jab jab bro jab
-  * jab jab lead-body lead-hook
-
-* jab cro
-  *	jab cro jab cro
-  *	jab cro lead-hook rear-hook
-  * jab cro lead-hook bro
-  *	jab cro lead-upper bro
-  *	jab cro lead-body lead-hook
-
-* jab 
-  *	jab rear-upper lead-hook
-  *	jab lead-upper cro lead-hook
-  
-  
-  *	jab lead-body lead-upper cro
-  * jab lead-body lead-upper 
-  *	jab lead-body lead-body lead-hook
-
-* cro
-  * cro jab cro bab
-  *	cro lead-body lead-hook rear-upper
-  *	cro lead-body rear-body lead-hook
-  * cro lead-upper cro lead-hook
 
 ## DEFENSE 
 * pivot
@@ -198,45 +153,3 @@ Hit Hit -> right-step.right-slip.left-guard
 
 
 (slip-out drift-out)
-
-
-## Olympic Medalist Boxers
-* Welter (64-69)
-  ```
-                         avg
-  ---------------------------
-  2000: 178+174+176+172  175
-  2004: 183+163+178+170  173.5
-  2008: 173+174+170+179  174
-  2012: 179+180+174+179  178
-  2016: 178+174+179+180  177.75
-  ---------------------------
-                         175.65
-  ```
-
-* LightWelter (60-64)
-  ```
-                         avg
-  ---------------------------
-  2000: 169+170+174+168 170.25
-  2004: 173+158+180+173 171
-  2008: 165+173+177+184 174.75
-  2012: 177+170+174+171 173
-  2016: 169+184+172+174 174.75
-  ---------------------------
-                        172.75
-  ```
-
-* Light (56-60)
-  ```
-                         avg
-  ---------------------------
-  2000: 165+171+170+170  169
-  2004: 165+178+169+173  171.25
-  2008: 167+175+178+176  174
-  2012: 170+178+164+175  169.25
-  2016: 171+174+173+170  172
-  ---------------------------
-                         171.1                 
-  ```
-* Conclusion: keep 65kg
