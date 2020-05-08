@@ -40,16 +40,27 @@
 
 ## DEFENSE COMBINATION
 ```
+HIT THEN RUN
 jab/cro         | (lslip/rslip)
 body/upper/hook | (lroll/rroll)
 
+RUN THEN HIT
 (lslip) | lbody  lupper  lhook   (lroll/rroll)
 (rslip) | cro    rupper  rhook   (lroll/rroll) 
 (lroll) | lbody  lupper  lhook   (lroll/rroll) 
 (rroll) | rbody  rupper  rhook   (lroll/rroll)
 
+RUN AND HIT
 (lslip+)| cro    lbody   rhook
 (rslip+)| jab    lhook
+
+JAB
+jab (lslip) jab/lhook/lupper
+jab (lslip+) cro
+jab (rslip) cro/rhook/rupper
+jab (+rslip)
+
+PULL
 ```
 
 ## OFFENSE COMBINATION
@@ -61,37 +72,19 @@ jabjab
 
 jabcro 
 1: jab cro jab cro
-2: jab cro bab cro
-3: jab cro lhook rhook
+2: jab cro lhook rhook
+2: jab cro lupper cro
 
 jablow
 1: jab bab cro lhook
 2: jab bro lupper cro
-3: jab lbody lupper cro
+3: jab lbody lbody jab
 
 rear
 1: cro cro jab cro
 2: rhook lhook jab jab 
 3: rupper lhook jab jab
-
-
-jab 
-jab (lslip) jab/lhook/lupper
-jab (rslip) cro/rhook/rupper
-jab (+rslip)
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## R&D
 * slip
