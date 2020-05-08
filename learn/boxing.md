@@ -38,6 +38,13 @@
   - slip & roll
 ```
 
+## MOVE COMBINATION
+```
+FOOT  : step, pivot, slide, switch
+EVADE : slip, roll, pull
+COVER : block, shoulder, full
+```
+
 ## DEFENSE COMBINATION
 ```
 HIT THEN RUN
