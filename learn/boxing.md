@@ -17,8 +17,8 @@
   <LEAD>   <REAR>   <LEAD>
   
 * MOVE
-  FOOT  : step, pivot, glide, switch, twitch
-  EVADE : slip, roll, sway
+  FOOT  : step, pivot, slide, switch
+  EVADE : slip, roll, pull
   COVER : block, shoulder, full
 ```
 
