@@ -450,7 +450,7 @@ class Solution {
     }
 }
 ```
-# Implement strStr()
+#### Implement strStr()
 ```java
 class Solution {
     
@@ -499,8 +499,8 @@ class Solution {
     }
 }
 ```
-* Search Insert Position
-```
+#### Search Insert Position
+```java
 class Solution {
     
     // time: O(log n)
@@ -617,7 +617,7 @@ class Solution {
     }
 }
 ```
-# Maximum Subarray
+#### Maximum Subarray
 ```java
 class Solution {
     
@@ -725,8 +725,8 @@ class Solution {
     }
 }
 ```
-* Length of Last Word
-```
+#### Length of Last Word
+```java
 class Solution {
     
     
