@@ -1,6 +1,5 @@
-# Leet Code
+# Leet Code (Easy)
 
-## Easy
 #### Two Sum
 ```java
 public class Solution {
@@ -57,8 +56,8 @@ class Solution {
      result is bigger than 214748364 OR result is 214748364 and remainder is bigger than 8
 */
 ```
-* Palindrome Number
-```
+#### Palindrome Number
+```java
 class Solution {
     public boolean isPalindrome(int x) {
         if (x < 0) {
@@ -88,8 +87,8 @@ class Solution {
     }
 */
 ```
-* Roman to Integer
-```
+#### Roman to Integer
+```java
 public class Solution {
     
        
@@ -175,8 +174,8 @@ public class Solution {
 5. think about creating a private method instead of HashMap (faster)
 */
 ```
-* Longeset Common Prefix
-```
+#### Longeset Common Prefix
+```java
 class Solution {
     
     // trying without firstStr and add
@@ -231,8 +230,8 @@ class Solution {
     }
 }
 ```
-* Valid Parenthesis
-```
+#### Valid Parenthesis
+```java
 class Solution {
     public boolean isValid(String s) {
         String stack = "";
@@ -296,8 +295,8 @@ class Solution {
    if you go over it throws index range exception
 */
 ```
-* Merge Two Sorted List
-```
+#### Merge Two Sorted List
+```java
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -389,8 +388,8 @@ iteration
    1
 */
 ```
-* Remove Duplicates from Sorted Array
-```
+#### Remove Duplicates from Sorted Array
+```java
 class Solution {
     
     public int removeDuplicates(int[] nums) {        
@@ -433,8 +432,8 @@ class Solution {
     }
 }
 ```
-* Remove Element
-```
+#### Remove Element
+```java
 class Solution {
     public int removeElement(int[] nums, int val) {
         int keepIndex = 0;
@@ -451,8 +450,8 @@ class Solution {
     }
 }
 ```
-* Implement strStr()
-```
+# Implement strStr()
+```java
 class Solution {
     
     public int strStr(String haystack, String needle) {
@@ -534,7 +533,6 @@ class Solution {
 }
 
 /*
-
 1. distance between start,end
     = j-i (becuase "start + distance = end")
    
@@ -581,8 +579,8 @@ class Solution {
          - insert always happens at i (T <= value at i)
 */
 ```
-* Count and Say
-```
+#### Count and Say
+```java
 class Solution {
     // hybrid (recursion + hybrid)
     // time O(n^2) because O(n) for for-loop but is repeated for all recursive calls.
@@ -619,8 +617,8 @@ class Solution {
     }
 }
 ```
-* Maximum Subarray
-```
+# Maximum Subarray
+```java
 class Solution {
     
     /*
@@ -807,8 +805,8 @@ class Solution {
     default int value is 0; (not null)
 */
 ```
-* Plus One
-```
+#### Plus One
+```java
 class Solution {
     
     // elegant solution
@@ -867,8 +865,8 @@ class Solution {
     }
 }
 ```
-* Add Binary
-```
+#### Add Binary
+```java
 class Solution {
     public String addBinary(String a, String b) {
         StringBuffer result = new StringBuffer();
@@ -912,7 +910,6 @@ class Solution {
     }
 }
 
-
 /*
 * loop shorter?
   we have to loop longer string becaue in case of 11 + 1
@@ -931,8 +928,8 @@ class Solution {
   * stringBuilder.toString()
 */
 ```
-* Sqrt(x)
-```
+#### Sqrt(x)
+```java
 class Solution {
     public int mySqrt(int x) {
         if (x==0) {
@@ -1024,8 +1021,8 @@ class Solution {
   * long x = y;  // x is long 10;
 */
 ```
-* Climbing Stairs
-```
+#### Climbing Stairs
+```java
 class Solution {
     
     // Dynamic Programming
@@ -1073,8 +1070,8 @@ class Solution {
   * same concept applies to recursion
 */
 ```
-* Remove Duplicates from Sorted List
-```
+#### Remove Duplicates from Sorted List
+```java
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -1107,8 +1104,8 @@ class Solution {
     }
 }
 ```
-* Merge Sorted Array
-```
+#### Merge Sorted Array
+```java
 class Solution {
     
     public void merge(int[] nums1, int m, int[] nums2, int n) {
@@ -1137,8 +1134,8 @@ class Solution {
   * will it work with 1 element?
 */
 ```
-* Same Tree
-```
+#### Same Tree
+```java
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -1169,8 +1166,8 @@ class Solution {
     }
 }
 ```
-* Symmetric Tree
-```
+#### Symmetric Tree
+```java
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -1260,7 +1257,6 @@ class Solution {
 }
 
 /*
-
 * ((left == null && right != null) || (left != null && right == null))
 can be simplified as (left == null || right == null) with if (left == null && right == null)
 
@@ -1270,11 +1266,10 @@ can be simplified as (left == null || right == null) with if (left == null && ri
   
   - q.add()
   - q.poll()
- 
 */
 ```
-* Maximum Depth of Binary Tree
-```
+#### Maximum Depth of Binary Tree
+```java
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -1377,8 +1372,8 @@ class Solution {
     }
 }
 ```
-* Binary Tree Level Order Traversal II
-```
+#### Binary Tree Level Order Traversal II
+```java
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -1424,8 +1419,6 @@ class Solution {
             
             result.add(0, currentNodes);
         }
-        
-        
         
         return result;
     }
