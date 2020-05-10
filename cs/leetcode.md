@@ -2,7 +2,7 @@
 
 ## Easy
 * Two Sum
-```
+```java
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
         
