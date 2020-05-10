@@ -18,8 +18,8 @@ public class Solution {
     }
 }
 ```
-* Reverse Integer
-```
+#### Reverse Integer
+```java
 class Solution {
     public int reverse(int x) {
         // inputs
