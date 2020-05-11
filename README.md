@@ -5,8 +5,9 @@
   ------------------------------------------------------------------------------------------
   |  휴식    | PULL(50)     RDIP(50)     SITU(400)    CURL(200)    PUSH(200)    SITU(400)   |
   |         |                           NECK(400)                              NECK(400)   |
-  |         | BIKE(45min)  BIKE(45min)  BIKE(15min)  BIKE(45min)  BIKE(45min)  RUN (10+)   |
+  |         | BIKE(45min)  BIKE(45min)  BIKE(15min)  BIKE(45min)  BIKE(45min)  BIKE(15min) |
   ------------------------------------------------------------------------------------------
+  * 13+ mile once+ a week (or 2-hour bike)
   ```
   
 # DAY
