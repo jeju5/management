@@ -1469,3 +1469,42 @@ you will have to pick mid-node
 and add left-nodes and right-nodes as children.
 */
 ```
+### Balanced Binary Tree
+```
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public boolean isBalanced(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        int rootHeight = getHeight(root);
+        int diff = getHeight(root.left) - getHeight(root.right);
+        
+        return (-2 < diff && diff < 2) && isBalanced(root.left) && isBalanced(root.right);
+    }
+    
+    private int getHeight(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        return Math.max(getHeight(root.left), getHeight(root.right)) + 1;
+    }
+}
+/*
+if balanced: left-tree and right-tree diff is < 2 and they are balanced as well;
+*/
+```
