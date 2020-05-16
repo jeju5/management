@@ -1470,7 +1470,7 @@ and add left-nodes and right-nodes as children.
 */
 ```
 ### Balanced Binary Tree
-```
+```java
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
