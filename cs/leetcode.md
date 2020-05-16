@@ -1541,3 +1541,43 @@ class Solution {
     }
 }
 ```
+### Path Sum
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public boolean hasPathSum(TreeNode root, int sum) {
+        if (root == null) {
+            // base: null is not part of path
+            return false;
+        }        
+        
+        // remaining is the sum that children should add up to
+        int remaining = sum - root.val;
+        if (root.left == null && root.right == null) {
+            // base: there is no children
+            if (remaining == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        
+        // step: there is a child
+        return hasPathSum(root.left, remaining) || hasPathSum(root.right, remaining);
+    }
+}
+```
