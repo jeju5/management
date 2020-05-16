@@ -1508,3 +1508,36 @@ class Solution {
 if balanced: left-tree and right-tree diff is < 2 and they are balanced as well;
 */
 ```
+### Minimum Depth of Binary Tree
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public int minDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        
+        int leftMinDepth = minDepth(root.left);
+        int rightMinDepth = minDepth(root.right);
+        
+        return 
+            leftMinDepth == 0 || rightMinDepth == 0 ? 
+            1 + leftMinDepth + rightMinDepth :
+            1 + Math.min(leftMinDepth, rightMinDepth);   
+    }
+}
+```
