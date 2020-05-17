@@ -1617,3 +1617,60 @@ class Solution {
     }
 }
 ```
+### Pascal's Triangle 2
+```java
+class Solution {
+
+    // backward iteration
+    // when forward iteration is blocked(hard), consider backward iteration.
+    public List<Integer> getRow2(int numRows) {
+        List<Integer> result = new ArrayList<Integer>();
+        
+        for (int i = 0; i < numRows+1; i++) {
+            // i-th loop completes i-th row.
+            // i-th row has length: i+1
+            // start by adding 1 to the end.
+            result.add(1);
+            
+            for (int j = i-1; 0 < j; j--) {
+                // iteration will be done from i-1 to 1
+                // i-1 is the second to the last index of i-th row.
+                // and 0 will always remain as 1
+                result.set(j, result.get(j-1) + result.get(j));
+            }
+        }
+        return result;
+    }
+    
+    // forward iteration
+    public List<Integer> getRow(int numRows) {
+        int prev2;
+        int prev1;
+        
+        List<Integer> result = new ArrayList<Integer>();
+        
+        for (int i = 0; i < numRows+1; i++) {
+            // i-th loop completes i-th row.
+            // i-th row has length: i+1
+            // start by adding 1 to the end.
+            result.add(1);
+            prev2 = 0;
+            prev1 = 1;
+            
+            for (int j = 1; j < i+1; j++) {
+                // iteration will be done from 1 to i-1
+                // when j = k, this loop will set elemenet at k-1                
+                int insert = prev2 + prev1;
+                prev2 = result.get(j-1);
+                prev1 = result.get(j);
+                result.set(j-1, insert);
+            }
+        }
+        return result;
+    }
+}
+/*
+requirement
+space: O(rowIndex)
+*/
+```
