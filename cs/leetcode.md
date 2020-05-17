@@ -1581,3 +1581,39 @@ class Solution {
     }
 }
 ```
+### Pascal's Triangle
+```java
+class Solution {
+    
+    // time: O(n^2)
+    public List<List<Integer>> generate(int numRows) {
+        
+        List<List<Integer>> result = new ArrayList<>();
+        
+        if (numRows < 1) {
+            return result;
+        }
+        
+        for (int r = 0; r<numRows; r++) {
+            List<Integer> newRow = new ArrayList<Integer>();
+            
+            if (r == 0) {
+                // first row
+                newRow.add(0, 1);
+            } else {
+                List<Integer> prevRow = result.get(r-1);
+                for (int i = 0; i < r+1; i++) {
+                    // current row's length is r+1
+                    if (i == 0 || i == r) {
+                        newRow.add(i, 1);
+                    } else {
+                        newRow.add(i, prevRow.get(i-1) + prevRow.get(i));
+                    }
+                }                
+            }
+            result.add(r, newRow);
+        }
+        return result;
+    }
+}
+```
