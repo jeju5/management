@@ -1674,3 +1674,51 @@ requirement
 space: O(rowIndex)
 */
 ```
+### Best Time to Buy and Sell Stock
+```java
+class Solution {
+    
+    // brute force
+    // speed: O(n^2)
+    public int maxProfit1(int[] prices) {
+        int result = 0;
+        int profit = 0;
+        
+        for (int i=0; i<prices.length-1; i++) {
+            // i is buy day
+            for (int j=i+1; j<prices.length; j++) {
+                // j is sell day
+                profit = prices[j] - prices[i];
+                
+                if (result < profit) {
+                    result = profit;
+                }
+            }
+        }
+        
+        return result;
+    }
+    
+    // one loop: "It is either buyday or sellday"
+    // when you find a minimum price it is a potential 'buy day'
+    // if it is not a new minimum price, then it is a potential 'sell day'
+    // speed: O(n)
+    public int maxProfit(int[] prices) {
+        if (prices.length == 0) {
+            return 0;
+        }
+        int minPrice = prices[0];
+        int maxProfit = 0;
+        
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] < minPrice) {
+                // update minimum
+                minPrice = prices[i];
+            } else if (prices[i] - minPrice > maxProfit) {
+                maxProfit = prices[i] - minPrice;
+            }
+        }
+        return maxProfit;
+    }
+}
+```
