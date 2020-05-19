@@ -1862,3 +1862,61 @@ class Solution {
 understanding the problem: you can buy & sell multiple times to maximize the profit
 */
 ```
+### Valid Palindrome
+```java
+class Solution {
+    public boolean isPalindrome(String s) {
+        if (s == null) {
+            return false;
+        } else if (s.length() < 2) {
+            return true;
+        }
+        
+        char[] chars = s.toCharArray();
+        
+        int lo = 0;
+        int hi = chars.length-1;
+        
+        while (lo < hi) {
+            if (!Character.isLetterOrDigit(chars[lo])) {
+                // ignore non-alphanumeric lo
+                lo++;
+                continue;
+            } else if (!Character.isLetterOrDigit(chars[hi])) {
+                // ignore non-alphanumeric hi
+                hi--;
+                continue;
+            }
+            
+            if (Character.toLowerCase(chars[lo]) != Character.toLowerCase(chars[hi])) {
+                return false;
+            }
+            lo++;
+            hi--;
+        }
+        return true;
+    }
+}
+
+
+/*
+alphanumeric means alphabet/number
+- string.toCharArray();
+- Character.isLetter('A');
+- Character.isDigit('b');
+- Character.isLetterOrDigit('B');
+
+
+another way to deal with alphanumeric
+- 'a' + 0~25
+- 'A' + 0~25
+- '0' + 0~9
+
+for(int i=0;i<10;i++){
+    charMap[i+'0'] = (char) (1+i);  // numeric
+}
+for(int i=0;i<26;i++){
+    charMap[i+'a'] = charMap[i+'A'] = (char) (11+i);  //alphabetic, ignore cases
+}
+*/
+```
