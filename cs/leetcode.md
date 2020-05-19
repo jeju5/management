@@ -1722,3 +1722,143 @@ class Solution {
     }
 }
 ```
+### Best Time to Buy and Sell Stock 2
+``` java
+class Solution {
+        
+    /*
+     Dynamic Programming
+     maximum profit at day N is either by doing 'hold' or 'sell'
+     - 1. last action was 'sell' until N-1 -> 'hold' to keep the maximum
+     - 2. last action was 'buy'  until N-1 -> 'sell' to update the maximum
+     
+     time: O(n)
+    */
+    public int maxProfit1(int[] prices) {
+        int[] maxProfitLastActionIsSell = new int[prices.length];
+        int[] maxProfitLastActionIsBuy = new int[prices.length];
+        
+        maxProfitLastActionIsSell[0] = 0;            // sell at day1
+        maxProfitLastActionIsBuy[0] = 0 - prices[0]; // buy at day1
+        
+        for (int i=1; i<prices.length; i++){
+            maxProfitLastActionIsSell[i] = Math.max(
+                maxProfitLastActionIsSell[i-1],           // sell was last action
+                maxProfitLastActionIsBuy[i-1] + prices[i] // buy was last action -> sell today
+            );
+            maxProfitLastActionIsBuy[i] = Math.max(
+                maxProfitLastActionIsBuy[i-1],             // buy was last action
+                maxProfitLastActionIsSell[i-1] - prices[i] // sell was last action -> buy today
+            );
+        }
+        
+        return Math.max(
+            maxProfitLastActionIsBuy[prices.length-1],
+            maxProfitLastActionIsSell[prices.length-1]
+        );
+        
+    }
+
+    /*
+    Peak Valley Approach
+    maximum profit is sum of all differences between (local-max - local-min).
+    if there was a price increase add it to profit everytime you find it
+    time: O(n)
+    */
+    public int maxProfit(int[] prices) {
+        int maxProfit = 0;
+        int localMin = prices[0];
+        int localMax = prices[0];
+        
+        
+        for (int i=1; i<prices.length; i++) {
+            if (prices[i-1] < prices[i]) {
+                // price increase
+                localMax = prices[i];
+                
+                if (i == prices.length-1){
+                    // if today is the lastDay, sell
+                    maxProfit += localMax - localMin;
+                }
+                
+                
+            } else {
+                // price decrease
+                if (prices[i-1] == localMax) {
+                    // if yesterday price was localMax, sell
+                    maxProfit += localMax - localMin;
+                }
+
+                // update localMin
+                localMin = prices[i];
+                
+            }
+        }
+        return maxProfit;
+    }
+    
+    /*
+    Advanced Peak Valley Approach
+    maximum profit is sum of all differences between (local-max - local-min).
+    if there was a price increase add it to profit everytime you find it
+    time: O(n)
+    */
+    public int maxProfit2(int[] prices) {
+        int maxProfit = 0;
+        
+        for (int i=1; i<prices.length; i++) {
+            
+            if (prices[i-1] < prices[i]) {
+                maxProfit += prices[i] - prices[i-1];
+            }
+        }
+        return maxProfit;
+    }
+    
+    
+    /*
+    Recursinve Brute Force
+    time: O(n^(2n^2)) = O((n^2)^(n^2)) ... not sure
+    */
+    public int maxProfit3(int[] prices) {
+        return getMax(prices, 0);
+    }
+
+    // brute force helper
+    public int getMax(int prices[], int startDay) {
+        if (prices.length-2 < startDay) {
+            // base: starting at/after the last day, profit is zero.
+            return 0;
+        }
+        int finalMax = 0;
+        
+        for (int buyDay = startDay; buyDay < prices.length-1; buyDay++) {
+            // currentMax is the maximum assuming the buy at buyDay
+            // if this loop ends with currentMax 0 then it means you can't make any profit from buying at buyDay
+            int currentMax = 0;
+            
+            for (int today = buyDay+1; today < prices.length; today++) {
+                
+                if (prices[buyDay] < prices[today]) {
+                    // sell if the price has increased
+                    int maxBySellingToday = (prices[today] - prices[buyDay]) + getMax(prices, today+1);
+                    
+                    if (currentMax < maxBySellingToday) {
+                        // if sell at sellDay maximizes the profit, update the currentMax
+                        currentMax = maxBySellingToday;
+                    }
+                }
+            }
+            if (finalMax < currentMax) {
+                finalMax = currentMax;
+            }
+        }
+        return finalMax;
+    }
+    
+}
+
+/*
+understanding the problem: you can buy & sell multiple times to maximize the profit
+*/
+```
