@@ -212,123 +212,123 @@
 216.239.38.120	www.google.vu # force safe search
 216.239.38.120	www.google.ws # force safe search
 
-# 0.0.0.0	host.youtube.com
-# 0.0.0.0	mx.youtube.com
-# 0.0.0.0	admin.youtube.com
-# 0.0.0.0	devel.youtube.com
-# 0.0.0.0	stats.youtube.com
-# 0.0.0.0	http.youtube.com
-# 0.0.0.0	mx0.youtube.com
-# 0.0.0.0	administration.youtube.com
-# 0.0.0.0	development.youtube.com
-# 0.0.0.0	svn.youtube.com
-# 0.0.0.0	id.youtube.com
-# 0.0.0.0	mx1.youtube.com
-# 0.0.0.0	ads.youtube.com
-# 0.0.0.0	devsql.youtube.com
-# 0.0.0.0	syslog.youtube.com
-# 0.0.0.0	adserver.youtube.com
-# 0.0.0.0	images.youtube.com
-# 0.0.0.0	mysql.youtube.com
-# 0.0.0.0	devtest.youtube.com
-# 0.0.0.0	info.youtube.com
-# 0.0.0.0	news.youtube.com
-# 0.0.0.0	alerts.youtube.com
-# 0.0.0.0	dhcp.youtube.com
-# 0.0.0.0	test1.youtube.com
-# 0.0.0.0	internal.youtube.com
-# 0.0.0.0	noc.youtube.com
-# 0.0.0.0	alpha.youtube.com
-# 0.0.0.0	direct.youtube.com
-# 0.0.0.0	test2.youtube.com
-# 0.0.0.0	internet.youtube.com
-# 0.0.0.0	ns.youtube.com
-# 0.0.0.0	ap.youtube.com
-# 0.0.0.0	dmz.youtube.com
-# 0.0.0.0	testing.youtube.com
-# 0.0.0.0	intra.youtube.com
-# 0.0.0.0	ns0.youtube.com
-# 0.0.0.0	apache.youtube.com
-# 0.0.0.0	dns.youtube.com
-# 0.0.0.0	upload.youtube.com
-# 0.0.0.0	intranet.youtube.com
-# 0.0.0.0	ns1.youtube.com
-# 0.0.0.0	app.youtube.com
-# 0.0.0.0	dns0.youtube.com
-# 0.0.0.0	vm.youtube.com
-# 0.0.0.0	ipv6.youtube.com
-# 0.0.0.0	ns2.youtube.com
-# 0.0.0.0	apps.youtube.com
-# 0.0.0.0	dns1.youtube.com
-# 0.0.0.0	vnc.youtube.com
-# 0.0.0.0	lab.youtube.com
-# 0.0.0.0	ns3.youtube.com
-# 0.0.0.0	appserver.youtube.com
-# 0.0.0.0	dns2.youtube.com
-# 0.0.0.0	ldap.youtube.com
-# 0.0.0.0	aptest.youtube.com
-# 0.0.0.0	download.youtube.com
-# 0.0.0.0	vpn.youtube.com
-# 0.0.0.0	linux.youtube.com
-# 0.0.0.0	ops.youtube.com
-# 0.0.0.0	auth.youtube.com
-# 0.0.0.0	en.youtube.com
-# 0.0.0.0	web.youtube.com
-# 0.0.0.0	local.youtube.com
-# 0.0.0.0	oracle.youtube.com
-# 0.0.0.0	backup.youtube.com
-# 0.0.0.0	erp.youtube.com
-# 0.0.0.0	web2test.youtube.com
-# 0.0.0.0	log.youtube.com
-# 0.0.0.0	owa.youtube.com
-# 0.0.0.0	beta.youtube.com
-# 0.0.0.0	eshop.youtube.com
-# 0.0.0.0	whois.youtube.com
-# 0.0.0.0	pbx.youtube.com
-# 0.0.0.0	blog.youtube.com
-# 0.0.0.0	exchange.youtube.com
-# 0.0.0.0	wiki.youtube.com
-# 0.0.0.0	www.youtube.com
-# 0.0.0.0	s3.youtube.com
-# 0.0.0.0	f5.youtube.com
-# 0.0.0.0	secure.youtube.com
-# 0.0.0.0	chat.youtube.com
-# 0.0.0.0	fileserver.youtube.com
-# 0.0.0.0	www2.youtube.com
-# 0.0.0.0	server.youtube.com
-# 0.0.0.0	citrix.youtube.com
-# 0.0.0.0	firewall.youtube.com
-# 0.0.0.0	xml.youtube.com
-# 0.0.0.0	main.youtube.com
-# 0.0.0.0	shop.youtube.com
-# 0.0.0.0	cms.youtube.com
-# 0.0.0.0	forum.youtube.com
-# 0.0.0.0	manage.youtube.com
-# 0.0.0.0	sip.youtube.com
-# 0.0.0.0	corp.youtube.com
-# 0.0.0.0	mgmt.youtube.com
-# 0.0.0.0	crs.youtube.com
-# 0.0.0.0	mirror.youtube.com
-# 0.0.0.0	sql.youtube.com
-# 0.0.0.0	cvs.youtube.com
-# 0.0.0.0	git.youtube.com
-# 0.0.0.0	mobile.youtube.com
-# 0.0.0.0	squid.youtube.com
-# 0.0.0.0	database.youtube.com
-# 0.0.0.0	gw.youtube.com
-# 0.0.0.0	help.youtube.com
-# 0.0.0.0	monitor.youtube.com
-# 0.0.0.0	ssh.youtube.com
-# 0.0.0.0	db.youtube.com
-# 0.0.0.0	mssql.youtube.com
-# 0.0.0.0	ssl.youtube.com
-# 0.0.0.0	demo.youtube.com
-# 0.0.0.0	helpdesk.youtube.com
-# 0.0.0.0	mta.youtube.com
-# 0.0.0.0	dev.youtube.com
-# 0.0.0.0	home.youtube.com
-# 127.0.0.1 youtube.com
-# 127.0.0.1 www.youtube.com
+ # 127.0.0.1 host.youtube.com
+ # 127.0.0.1 mx.youtube.com
+ # 127.0.0.1 admin.youtube.com
+ # 127.0.0.1 devel.youtube.com
+ # 127.0.0.1 stats.youtube.com
+ # 127.0.0.1 http.youtube.com
+ # 127.0.0.1 mx0.youtube.com
+ # 127.0.0.1 administration.youtube.com
+ # 127.0.0.1 development.youtube.com
+ # 127.0.0.1 svn.youtube.com
+ # 127.0.0.1 id.youtube.com
+ # 127.0.0.1 mx1.youtube.com
+ # 127.0.0.1 ads.youtube.com
+ # 127.0.0.1 devsql.youtube.com
+ # 127.0.0.1 syslog.youtube.com
+ # 127.0.0.1 adserver.youtube.com
+ # 127.0.0.1 images.youtube.com
+ # 127.0.0.1 mysql.youtube.com
+ # 127.0.0.1 devtest.youtube.com
+ # 127.0.0.1 info.youtube.com
+ # 127.0.0.1 news.youtube.com
+ # 127.0.0.1 alerts.youtube.com
+ # 127.0.0.1 dhcp.youtube.com
+ # 127.0.0.1 test1.youtube.com
+ # 127.0.0.1 internal.youtube.com
+ # 127.0.0.1 noc.youtube.com
+ # 127.0.0.1 alpha.youtube.com
+ # 127.0.0.1 direct.youtube.com
+ # 127.0.0.1 test2.youtube.com
+ # 127.0.0.1 internet.youtube.com
+ # 127.0.0.1 ns.youtube.com
+ # 127.0.0.1 ap.youtube.com
+ # 127.0.0.1 dmz.youtube.com
+ # 127.0.0.1 testing.youtube.com
+ # 127.0.0.1 intra.youtube.com
+ # 127.0.0.1 ns0.youtube.com
+ # 127.0.0.1 apache.youtube.com
+ # 127.0.0.1 dns.youtube.com
+ # 127.0.0.1 upload.youtube.com
+ # 127.0.0.1 intranet.youtube.com
+ # 127.0.0.1 ns1.youtube.com
+ # 127.0.0.1 app.youtube.com
+ # 127.0.0.1 dns0.youtube.com
+ # 127.0.0.1 vm.youtube.com
+ # 127.0.0.1 ipv6.youtube.com
+ # 127.0.0.1 ns2.youtube.com
+ # 127.0.0.1 apps.youtube.com
+ # 127.0.0.1 dns1.youtube.com
+ # 127.0.0.1 vnc.youtube.com
+ # 127.0.0.1 lab.youtube.com
+ # 127.0.0.1 ns3.youtube.com
+ # 127.0.0.1 appserver.youtube.com
+ # 127.0.0.1 dns2.youtube.com
+ # 127.0.0.1 ldap.youtube.com
+ # 127.0.0.1 aptest.youtube.com
+ # 127.0.0.1 download.youtube.com
+ # 127.0.0.1 vpn.youtube.com
+ # 127.0.0.1 linux.youtube.com
+ # 127.0.0.1 ops.youtube.com
+ # 127.0.0.1 auth.youtube.com
+ # 127.0.0.1 en.youtube.com
+ # 127.0.0.1 web.youtube.com
+ # 127.0.0.1 local.youtube.com
+ # 127.0.0.1 oracle.youtube.com
+ # 127.0.0.1 backup.youtube.com
+ # 127.0.0.1 erp.youtube.com
+ # 127.0.0.1 web2test.youtube.com
+ # 127.0.0.1 log.youtube.com
+ # 127.0.0.1 owa.youtube.com
+ # 127.0.0.1 beta.youtube.com
+ # 127.0.0.1 eshop.youtube.com
+ # 127.0.0.1 whois.youtube.com
+ # 127.0.0.1 pbx.youtube.com
+ # 127.0.0.1 blog.youtube.com
+ # 127.0.0.1 exchange.youtube.com
+ # 127.0.0.1 wiki.youtube.com
+ # 127.0.0.1 www.youtube.com
+ # 127.0.0.1 s3.youtube.com
+ # 127.0.0.1 f5.youtube.com
+ # 127.0.0.1 secure.youtube.com
+ # 127.0.0.1 chat.youtube.com
+ # 127.0.0.1 fileserver.youtube.com
+ # 127.0.0.1 www2.youtube.com
+ # 127.0.0.1 server.youtube.com
+ # 127.0.0.1 citrix.youtube.com
+ # 127.0.0.1 firewall.youtube.com
+ # 127.0.0.1 xml.youtube.com
+ # 127.0.0.1 main.youtube.com
+ # 127.0.0.1 shop.youtube.com
+ # 127.0.0.1 cms.youtube.com
+ # 127.0.0.1 forum.youtube.com
+ # 127.0.0.1 manage.youtube.com
+ # 127.0.0.1 sip.youtube.com
+ # 127.0.0.1 corp.youtube.com
+ # 127.0.0.1 mgmt.youtube.com
+ # 127.0.0.1 crs.youtube.com
+ # 127.0.0.1 mirror.youtube.com
+ # 127.0.0.1 sql.youtube.com
+ # 127.0.0.1 cvs.youtube.com
+ # 127.0.0.1 git.youtube.com
+ # 127.0.0.1 mobile.youtube.com
+ # 127.0.0.1 squid.youtube.com
+ # 127.0.0.1 database.youtube.com
+ # 127.0.0.1 gw.youtube.com
+ # 127.0.0.1 help.youtube.com
+ # 127.0.0.1 monitor.youtube.com
+ # 127.0.0.1 ssh.youtube.com
+ # 127.0.0.1 db.youtube.com
+ # 127.0.0.1 mssql.youtube.com
+ # 127.0.0.1 ssl.youtube.com
+ # 127.0.0.1 demo.youtube.com
+ # 127.0.0.1 helpdesk.youtube.com
+ # 127.0.0.1 mta.youtube.com
+ # 127.0.0.1 dev.youtube.com
+ # 127.0.0.1 home.youtube.com
+ # 127.0.0.1 youtube.com
+ # 127.0.0.1 www.youtube.com
 # 127.0.0.1 208.65.153.251
 # 216.239.38.120  www.youtube.com    #restricted search
 
@@ -453,8 +453,8 @@
 127.0.0.1 streaming.lemonstream.me
 127.0.0.1 video.lemonstream.me
 127.0.0.1 vole.cse.umn.edu
-127.0.0.1 vimeo.com
-127.0.0.1 www.vimeo.com
+# 127.0.0.1 vimeo.com
+# 127.0.0.1 www.vimeo.com
 127.0.0.1 ilbe.com
 127.0.0.1 www.ilbe.com
 127.0.0.1 hani.co.kr
@@ -624,7 +624,6 @@
 127.0.0.1 www.dogdrip.net
 127.0.0.1 streamango.com
 127.0.0.1 gomovies.tech
-127.0.0.1 openload.co
 127.0.0.1 thevideobee.to
 127.0.0.1 vidtodo.com
 127.0.0.1 vidlox.tv
@@ -814,8 +813,8 @@
 127.0.0.1 vtt.tumblr.com
 127.0.0.1 vt.media.tumblr.com
 127.0.0.1 vtt.media.tumblr.com
-127.0.0.1 openload.cc
-127.0.0.1 www.openload.co
+# 127.0.0.1 openload.cc
+# 127.0.0.1 www.openload.co
 127.0.0.1 gotporn.com
 127.0.0.1 peekvids.com
 127.0.0.1 www.peekvids.com
@@ -964,8 +963,8 @@
 127.0.0.1 clips.twitch.tv
 127.0.0.1 tokkebi.net
 127.0.0.1 www.tokkebi.net
-127.0.0.1 pandora.tv
-127.0.0.1 www.pandora.tv
+# 127.0.0.1 pandora.tv
+# 127.0.0.1 www.pandora.tv
 127.0.0.1 mixcloud.com
 127.0.0.1 www.mixcloud.com
 127.0.0.1 webtoon.world
@@ -1094,8 +1093,19 @@
 127.0.0.1 www.spankwire.com
 127.0.0.1 www.pornhub.com
 127.0.0.1 www.pornhd.com
+127.0.0.1 letfap.com
 127.0.0.1 www.letfap.com
+127.0.0.1 xart.letfap.com
+127.0.0.1 javhihi.com
 127.0.0.1 www.javhihi.com
+127.0.0.1 www1.javhihi.com
+127.0.0.1 javbuz.com
+127.0.0.1 www.javbuz.com
+127.0.0.1 www1.javbuz.com
+127.0.0.1 jav789.com
+127.0.0.1 heyzo.jav789.com
+127.0.0.1 www.heyzo.jav789.com
+127.0.0.1 www.jav789.com
 127.0.0.1 www.javlibrary.com
 127.0.0.1 www.hentakku.net
 127.0.0.1 www.tube8.com
@@ -1106,6 +1116,7 @@
 127.0.0.1 www.bongacams.com
 127.0.0.1 www.xhamster.com
 127.0.0.1 xhamster.com
+127.0.0.1 ww2.xhamster.com
 127.0.0.1 www.livejasmin.com
 127.0.0.1 www.apetube.com
 127.0.0.1 www.porn300.com
@@ -1366,6 +1377,8 @@
 127.0.0.1 ads.lovercash.com
 127.0.0.1 ads.loveshack.org
 127.0.0.1 ads.maleflixxx.tv
+127.0.0.1 playvids.com
+127.0.0.1 www.playvids.com
 127.0.0.1 ads.mofos.com
 127.0.0.1 ads.mucunki.com
 127.0.0.1 ads.myjizztube.com
@@ -1880,6 +1893,8 @@
 127.0.0.1 angelien.isheet.nl
 127.0.0.1 angelife02.skyblog.com
 127.0.0.1 angelika-club.com
+127.0.0.1 cumlouder.com
+127.0.0.1 www.cumlouder.com
 127.0.0.1 www.angelika-club.com
 127.0.0.1 angelika-l.de.nr
 127.0.0.1 angelika.de
@@ -6980,6 +6995,35 @@
 127.0.0.1 javhub.net
 127.0.0.1 watch8x.com
 127.0.0.1 www.javqd.com
+127.0.0.1 hpjav.tv
+127.0.0.1 www.hpjav.tv
+127.0.0.1 fbjav.com
+127.0.0.1 www.fbjav.com
+127.0.0.1 javdoe.tv
+127.0.0.1 www.javdoe.tv
+127.0.0.1 9xxx.net
+127.0.0.1 www.9xxx.net
+127.0.0.1 javhay.net
+127.0.0.1 www.javhay.net
+127.0.0.1 jav.guru
+127.0.0.1 www.jav.guru
+127.0.0.1 javtune.com
+127.0.0.1 www.javtune.com
+127.0.0.1 toonkor.ch
+127.0.0.1 toonkor.ws
+127.0.0.1 webtoonguide.com
+127.0.0.1 www.webtoonguide.com
+127.0.0.1 toptoon.com
+127.0.0.1 funbe37.com
+127.0.0.1 chcomics04.com
+127.0.0.1 javr.club
+127.0.0.1 www.javr.club
+127.0.0.1 porzo.com
+127.0.0.1 www.porzo.com
+127.0.0.1 hotmovs.com
+127.0.0.1 www.hotmovs.com
+127.0.0.1 javtrailers.com
+127.0.0.1 www.javtrailers.com
 
 # unchecky_begin
 # These rules were added by the Unchecky program in order to block advertising software modules
