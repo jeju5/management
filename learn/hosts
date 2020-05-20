@@ -9,7 +9,7 @@
 127.0.0.1 www.translate.google.com
 127.0.0.1 translate.google.com
 127.0.0.1 webcache.googleusercontent.com
-127.0.0.1 play.google.com
+# 127.0.0.1 play.google.com
 216.239.38.120  www.google.com # force safe search
 216.239.38.120	www.google.ac # force safe search
 216.239.38.120	www.google.ad # force safe search
@@ -406,7 +406,7 @@
 # 127.0.0.1 www.spotvnews.co.kr
 
 127.0.0.1 jwpltx.comm
-127.0.0.1 gdriveplayer.us
+# 127.0.0.1 gdriveplayer.us
 127.0.0.1 godgall.com
 127.0.0.1 www.moviewang.net
 # 127.0.0.1 m.search.daum.net
@@ -427,7 +427,7 @@
 127.0.0.1 putlockers.fm
 127.0.0.1 www.justwatch.com
 127.0.0.1 gomovies.to
-127.0.0.1 tubitv.com
+# 127.0.0.1 tubitv.com
 127.0.0.1 gostream.movie
 127.0.0.1 gomovies.sc
 127.0.0.1 gomovies.la
@@ -7024,6 +7024,12 @@
 127.0.0.1 www.hotmovs.com
 127.0.0.1 javtrailers.com
 127.0.0.1 www.javtrailers.com
+127.0.0.1 highporn.net
+127.0.0.1 www.highporn.net
+127.0.0.1 porn555.com
+127.0.0.1 www.porn555.com
+127.0.0.1 javhub.net
+127.0.0.1 www.javhub.net
 
 # unchecky_begin
 # These rules were added by the Unchecky program in order to block advertising software modules
