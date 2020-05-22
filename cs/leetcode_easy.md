@@ -1920,3 +1920,68 @@ for(int i=0;i<26;i++){
 }
 */
 ```
+### Single Number
+```java
+class Solution {
+        
+    /*
+    Solution with hash map
+    - time: O(n)
+    - space: O(n)
+    */
+    public int singleNumber1(int[] nums) {
+        HashMap<Integer, Integer> a = new HashMap<>();
+        
+        for (int i : nums) {
+            a.put(i, a.getOrDefault(i, 0) + 1);
+        }
+        for (int i : nums) {
+            if (a.get(i) == 1) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    
+    /*
+    Solution with math: times 
+    - time: O(n)
+    - space: O(n)
+    */
+    public int singleNumber2(int[] nums) {
+        Set<Integer> s = new HashSet();
+        int sumOfSet = 0;
+        int sumOfNums = 0;
+        
+        for (int i : nums) {
+            
+            if (!s.contains(i)) {
+                s.add(i);
+                sumOfSet += i;
+            }
+            sumOfNums += i;
+        }
+        return 2*sumOfSet - sumOfNums;
+    }
+    
+    /* 
+    Bit XOR manipulation
+    - time: O(n)
+    - space: O(1)
+    
+    1. A XOR A = 0
+    2. 0 XOR A = A
+    3. A XOR B = B XOR A
+    4. A XOR B XOR C XOR A XOR C = (A XOR A) XOR (C XOR C) XOR B = B 
+    */
+    public int singleNumber(int[] nums) {
+        int result = 0;
+        
+        for (int i : nums) {
+            result = result ^ i;
+        }
+        
+        return result;
+    }
+}
+```
