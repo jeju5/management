@@ -47,7 +47,24 @@ COVER : block, shoulder, full
 
 ## DEFENSE COMBINATION
 ```
-jab/cro         | (lslip/rslip)
+50rep: 앞으로 가면서 lslip
+50rep: 앞으로 가면서 rslip
+50rep: 밖으로 가면서 lslip
+50rep: 밖으로 가면서 rslip
+
+50rep: 뒤로 가면서 앞손커버 rslip
+50rep: 뒤로 가면서 뒷손커버 rslip
+50rep: 안으로 가면서 앞손커버 rslip
+50rep: 안으로 가면서 뒷손커버 rslip
+
+
+
+50rep: 잽하고 lslip
+50rep: 잽하고 rslip
+50rep: 크로스하고 lslip
+50rep: 크로스하고 rslip
+jab (lslip/rslip)
+
 body/upper/hook | (lroll/rroll)
 
 (lslip) | lbody  lupper  lhook   (lroll/rroll)
