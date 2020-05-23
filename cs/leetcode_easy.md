@@ -1985,3 +1985,72 @@ class Solution {
     }
 }
 ```
+### Linked List Cycle
+```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+public class Solution {
+    
+    /*
+    Set approach
+    - time: O(n)
+    - space: O(n)
+    - HashSet add is O(1), contains is O(1)
+    */
+    public boolean hasCycle1(ListNode head) {
+        Set<ListNode> s = new HashSet<>();
+        ListNode current = head;
+        
+        while (current != null) {
+            if (s.contains(current)) {
+                return true;
+            } else {
+                s.add(current);
+                current = current.next;
+            }
+        }
+        
+        return false;
+    }
+    
+    /*
+    Two Pointers approach
+    time: O(n)
+    space: O(1)
+    
+    why would they meet eventually?
+    => if there is a cycle, fast pointer is always 'n' nodes behind slow pointer
+       if n == 1, fast pointer will catch slow pointer at next
+       if n == 2, it reduces to n == 1 at next iteration.
+       if n == 3, it reduces to n == 2 at next iteration.
+       if n == 4, it reduces to n == 3 at next iteration.
+       .. 
+       if n == k, it reduces to n == k-1 at next iteration.
+    */
+    public boolean hasCycle(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+        
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (fast == slow) {
+                // cycle exists
+                return true;
+            }
+        }
+        
+        // tail exists: "fast == null || fast.next == null"
+        return false;
+    }
+}
+```
