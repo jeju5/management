@@ -47,33 +47,27 @@ COVER : block, shoulder, full
 
 ## DEFENSE COMBINATION
 ```
-HIT THEN RUN
 jab/cro         | (lslip/rslip)
 body/upper/hook | (lroll/rroll)
 
-RUN THEN HIT
 (lslip) | lbody  lupper  lhook   (lroll/rroll)
 (rslip) | cro    rupper  rhook   (lroll/rroll) 
 (lroll) | lbody  lupper  lhook   (lroll/rroll) 
 (rroll) | rbody  rupper  rhook   (lroll/rroll)
 
-RUN AND HIT
 (lslip+)| cro    lbody   rhook
 (rslip+)| jab    lhook
 
-JAB
 jab (lslip) jab/lhook/lupper
 jab (lslip+) cro
 jab (rslip) cro/rhook/rupper
 jab (+rslip)
-
-PULL
 ```
 
 ## OFFENSE COMBINATION
 ```
 jabjab
-1: jab jab cro lhook    *jab jab (lslip+) cro lhook
+1: jab jab cro lhook
 2: jab jab lhook cro
 3: jab jab lbody lhook
 
@@ -147,9 +141,7 @@ rear
      * (rear-pivot) & rear-hook (rear-roll)
      * (rear-pivot) & rear-body rear-hook (rear-roll)
   
-  * rear-step
-    * (rear-step)&jab (lead-slip) &bro lead-hook
-    * (rear-step)&jab (lead-slip) &cro lead-hook
+
   
  * Mayweather
    * lead-hook lead-upper lead-hook / cro lead-hook cro lead-block / cro lead-hook cro lead-shoulder / cro lead-hook cro
