@@ -61,8 +61,8 @@ COVER : block, shoulder, full
 
 <잽>
 jab하고 lslip
-jab하고 rslip
-jab하며 rslip
+jab하고 앞손커버 rslip
+jab하고 뒷손커버 rslip
 jab하고 pull
 
 <크로스>
@@ -76,7 +76,6 @@ cro하고 pull
 bab하고 백스텝
 bab jab
 bab cro
-bab bro
 
 <브로스>
 bro하며 lslip하고 lupper
@@ -84,7 +83,7 @@ bro하며 lslide하고 rupper
 
 <리드훅>
 lhook하고 lroll
-lhook하고 rroll
+lhook하며 lpivot
 
 <리어훅>
 rhook하고 lroll
@@ -101,24 +100,12 @@ rupper하고 rroll
 rupper하고 앞손커버 rslip
 rupper하고 뒷손커버 rslip
 
-<LBody>
+<리드바디>
 
-<RBody>
 
-body/upper/hook | (lroll/rroll)
+<리어바디>
 
-(lslip) | lbody  lupper  lhook   (lroll/rroll)
-(rslip) | cro    rupper  rhook   (lroll/rroll) 
-(lroll) | lbody  lupper  lhook   (lroll/rroll) 
-(rroll) | rbody  rupper  rhook   (lroll/rroll)
 
-(lslip+)| cro    lbody   rhook
-(rslip+)| jab    lhook
-
-jab (lslip) jab/lhook/lupper
-jab (lslip+) cro
-jab (rslip) cro/rhook/rupper
-jab (+rslip)
 ```
 
 ## OFFENSE COMBINATION
