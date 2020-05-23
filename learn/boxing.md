@@ -95,8 +95,14 @@ lupper하고 jab
 lupper하고 lslip
 lupper하고 뒷손커버 rslip
 
-<RUpper>
+<리어어퍼>
+rupper하고 pull
+rupper하고 rroll
+rupper하고 앞손커버 rslip
+rupper하고 뒷손커버 rslip
+
 <LBody>
+
 <RBody>
 
 body/upper/hook | (lroll/rroll)
