@@ -45,25 +45,50 @@ EVADE : slip, roll, pull
 COVER : block, shoulder, full
 ```
 
-## DEFENSE COMBINATION
+## REPEAT
 ```
-50rep: 앞으로 가면서 lslip
-50rep: 앞으로 가면서 rslip
-50rep: 밖으로 가면서 lslip
-50rep: 밖으로 가면서 rslip
+<앞/밖으로 이동>
+앞으로 가면서 lslip
+앞으로 가면서 rslip
+밖으로 가면서 lslip
+밖으로 가면서 rslip
 
-50rep: 뒤로 가면서 앞손커버 rslip
-50rep: 뒤로 가면서 뒷손커버 rslip
-50rep: 안으로 가면서 앞손커버 rslip
-50rep: 안으로 가면서 뒷손커버 rslip
+<뒤/안으로 이동>
+뒤로 가면서 앞손커버 rslip
+뒤로 가면서 뒷손커버 rslip
+안으로 가면서 앞손커버 rslip
+안으로 가면서 뒷손커버 rslip
+
+<잽>
+jab하고 lslip
+jab하고 rslip
+jab하며 rslip
+jab하고 pull
+
+<크로스>
+cro하고 lslip
+cro하며 lslip
+cro하고 앞손커버 rslip
+cro하고 뒷손커버 rslip
+cro하고 pull
+
+<뱁>
+bab하고 백스텝
+bab하고 jab
+bab하고 cro
+
+<브로스>
+bro하며 lslip하고 lupper
+bro하며 lslide하고 rupper
+
+<Lhook>
 
 
-
-50rep: 잽하고 lslip
-50rep: 잽하고 rslip
-50rep: 크로스하고 lslip
-50rep: 크로스하고 rslip
-jab (lslip/rslip)
+<Rhook>
+<LUpper>
+<RUpper>
+<LBody>
+<RBody>
 
 body/upper/hook | (lroll/rroll)
 
