@@ -74,18 +74,27 @@ cro하고 pull
 
 <뱁>
 bab하고 백스텝
-bab하고 jab
-bab하고 cro
+bab jab
+bab cro
+bab bro
 
 <브로스>
 bro하며 lslip하고 lupper
 bro하며 lslide하고 rupper
 
-<Lhook>
+<리드훅>
+lhook하고 lroll
+lhook하고 rroll
 
+<리어훅>
+rhook하고 lroll
+rhook하고 rroll
 
-<Rhook>
-<LUpper>
+<리드어퍼>
+lupper하고 jab
+lupper하고 lslip
+lupper하고 뒷손커버 rslip
+
 <RUpper>
 <LBody>
 <RBody>
