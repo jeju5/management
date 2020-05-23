@@ -108,7 +108,7 @@ rupper하고 뒷손커버 rslip
 
 ```
 
-## OFFENSE COMBINATION
+## REPEAT OFFENSE
 ```
 jabjab
 1: jab jab cro lhook
