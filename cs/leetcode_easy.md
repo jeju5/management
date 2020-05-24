@@ -2054,3 +2054,95 @@ public class Solution {
     }
 }
 ```
+### Min Stack
+```java
+// Double stacks approach
+class MinStack {
+    private Stack<Integer> lifoStack;
+    private Stack<Integer> minStack;
+
+    /** initialize your data structure here. */
+    public MinStack() {
+        lifoStack = new Stack<>();
+        minStack = new Stack<>();
+    }
+    
+    public void push(int x) {
+        if (minStack.empty() || x <= getMin()) {
+            // when new min is found -> update min & minStack
+            // you will also have to push the duplicate min value
+            // to minStack because popping one doesn't affect the
+            // other value being min
+            minStack.push(x);
+        }
+        // push to lifoStack
+        lifoStack.push(x);
+    }
+    
+    public void pop() {
+        if (lifoStack.pop() == getMin()) {
+            minStack.pop();
+        }
+    }
+    
+    public int top() {
+        return lifoStack.peek();
+    }
+    
+    public int getMin() {
+        return minStack.peek();
+    }
+}
+```
+```java
+// Single stack approach
+class MinStack {
+    private LinkedList<Integer> ds;
+    private int min;
+    private int size;
+
+    /** initialize your data structure here. */
+    public MinStack() {
+        ds = new LinkedList<>();
+        min = Integer.MAX_VALUE;
+        size = 0;
+    }
+    
+    public void push(int x) {
+        if (x <= min) {
+            // when new min is found, push older min before pushing newer min
+            // so when newer min is popped you can get the older min in the second pop
+            // you can't do x < min -> consider duplicate entity becoming min
+            ds.add(0, min);
+            min = x;
+        }
+        ds.add(0, x);
+        size++;
+    }
+    
+    public void pop() {
+        if (0 < size) {
+            int popped = ds.remove();
+            if (min == popped) {
+                min = ds.remove();
+            }
+            
+            size--;
+        }
+    }
+    
+    public int top() {
+        if (0 < size) {
+            return ds.get(0);
+        }
+        return -1;
+    }
+    
+    public int getMin() {
+        if (0 < size) {
+            return min;
+        }
+        return -1;
+    }
+}
+```
