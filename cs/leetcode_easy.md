@@ -2146,3 +2146,65 @@ class MinStack {
     }
 }
 ```
+## Intersection of Two Linked Lists
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+public class Solution {
+
+    
+    // Two Pointers with one loop
+    
+    
+    // Two Pointers with two loops
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        int len1 = 0;
+        int len2 = 0;
+        ListNode ptr1 = headA;
+        ListNode ptr2 = headB;
+
+        while (ptr1 != null || ptr2 != null) {
+            // determine lengths of two lists
+            // ptr1 iterates listA and ptr2 iterates listB
+            if (ptr1 != null) {
+                ptr1 = ptr1.next;
+                len1++;
+            }
+            if (ptr2 != null) {
+                ptr2 = ptr2.next;
+                len2++;
+            }
+        }
+
+        // reset pointers
+        // ptr1 point to longer list's head
+        // ptr2 point to shorter list's head
+        int lenDiff = len1 > len2 ? len1 - len2 : len2 - len1;
+        ptr1 = len1 > len2 ? headA : headB;
+        ptr2 = len1 > len2 ? headB : headA;
+
+        while (ptr1 != null) {
+            
+            if (0 < lenDiff--) {
+                ptr1 = ptr1.next;
+            } else if (ptr1 != ptr2) {
+                ptr1 = ptr1.next;
+                ptr2 = ptr2.next;
+            } else {
+                break;
+            }
+        }
+        
+        return ptr1;
+    }
+}
+```
