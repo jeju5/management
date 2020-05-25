@@ -2162,10 +2162,32 @@ class MinStack {
 public class Solution {
     
     /*
+    Set Approach
+    time: O(m+n)
+    space: O(m)
+    */
+    public ListNode getIntersectionNode1(ListNode headA, ListNode headB) {
+        Set<ListNode> setA = new HashSet<>();
+        
+        while (headA != null) {
+            setA.add(headA);
+            headA = headA.next;
+        }
+        
+        while (headB != null) {
+            if (setA.contains(headB)) {
+                break;
+            }
+            headB = headB.next;
+        }
+        return headB;
+    }
+    
+    /*
     Two Pointers with two loops
     start from nodes where tail meets and do comparisons.
     */
-    public ListNode getIntersectionNode1(ListNode headA, ListNode headB) {
+    public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
         int len1 = 0;
         int len2 = 0;
         ListNode ptr1 = headA;
