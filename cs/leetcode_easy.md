@@ -2160,13 +2160,12 @@ class MinStack {
  * }
  */
 public class Solution {
-
     
-    // Two Pointers with one loop
-    
-    
-    // Two Pointers with two loops
-    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+    /*
+    Two Pointers with two loops
+    start from nodes where tail meets and do comparisons.
+    */
+    public ListNode getIntersectionNode1(ListNode headA, ListNode headB) {
         int len1 = 0;
         int len2 = 0;
         ListNode ptr1 = headA;
@@ -2205,6 +2204,47 @@ public class Solution {
         }
         
         return ptr1;
+    }
+    
+    /*
+    Two Pointers with one loop
+    - let's say listA.length is a and listB.length is b where a <= b
+    - we want to start comparison from
+    - node at index 0     in List A
+    - node at index (b-a) in List B
+    
+    Why this works?
+    ex) two lists A and B with length 'a' and 'b' (a <= b)
+    
+    1. end of listA
+    - ptrA is at 'a-1'
+    - ptrB is at 'a-1' in listB
+    
+    2. at the next loop.
+    - ptrA is at '0' in listB
+    - ptrB is at 'a' in listB
+    
+    3. after 'b-1-a' loops
+    - ptrA is at 'b-1-a' in listB
+    - ptrB is at 'b-1'   in listB
+    
+    4. at the next loop.
+    - ptrA is at 'b-a' in listB
+    - ptrB is at '0' in listA
+    
+    5. after 'a-1' loops
+    - ptrA is at 'b-1' in listB (tail)
+    - ptrB is at 'a-1' in listA (tail)
+    */
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        ListNode ptrA = headA;
+        ListNode ptrB = headB;
+        
+        while (ptrA != ptrB) {
+            ptrA = ptrA == null ? headB : ptrA.next;
+            ptrB = ptrB == null ? headA : ptrB.next;
+        }
+        return ptrA;
     }
 }
 ```
