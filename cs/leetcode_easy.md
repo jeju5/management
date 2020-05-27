@@ -2292,3 +2292,43 @@ class Solution {
     }  
 }
 ```
+### Excel Sheet Column Title
+```java
+class Solution {
+    
+    public String convertToTitle(int n) {
+        String result = "";
+        
+        while (0 < n) {
+            // 1. change 1~26 to 0~25
+            n--;
+            
+            // 2. get the remainder and append it
+            char c = (char) ('A' + n % 26);
+            result = c + result;
+            
+            // 3. reduce the power
+            n = n/26;
+        }
+        
+        return result;
+    }
+}
+
+/*
+ 1 ~ 26 : A  ~ Z
+27 ~ 52 : AA ~ AZ
+53 ~ 78 : BA ~ BZ
+79 ~104 : CA ~ CZ
+
+ex) 28
+28 = 26^1 * 1 + 26^0 * 2
+   =        A          B
+   
+
+StringBuilder()
+insert is O(n)
+append is O(n)
+appending a char in the end and reverse it in the very end -> better efficiency
+*/
+```
