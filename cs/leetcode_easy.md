@@ -2320,27 +2320,29 @@ class Solution {
         
 - Challenge
   As you can see, we face "0 case" at each power of 26. (partial 26-base)
-      -> ?     
+   ?  -> 0     
    1  -> A
    2  -> B
    ...
    26 -> Z
   ----------
-      -> A?
+   ?  -> A0x
    27 -> AA
    28 -> AB
    ...
   ----------
   
 - What is the solution?
-  Let's consider a new mapping with zero (total 26-base).   
+  Let's eliminate "0 case" at every powers to fit in to new mapping
    0  -> A
    1  -> B
    ...
    25 -> Z
-  ----------   
-  Subtract 1 before we do 'division by 26' to consider every '#'
-  For example, given a number 26, subtract 1 and map it to get Z
-  given a number 27, subtract 1 -> 26 -> remainder 0 -> A -> reduce the power -> remainder 1 -> subtract 1 -> 0
+  ----------
+   27 -> AA
+   28 -> AB
+   ...
+  ----------
+  Subtract 1 before we do 'division by 26' to eliminate all "0 case"s
 */
 ```
