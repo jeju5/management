@@ -2272,38 +2272,16 @@ public class Solution {
 ```
 ### Two Sum 2
 ```java
-class Solution {    
-    /*
-    Two Pointers 
-    time: O(n)
-    */
-    public int[] twoSum(int[] numbers, int target) {
-        int lo = 0;
-        int hi = numbers.length-1;
-        
-        while (numbers[lo] + numbers[hi] != target) {
-            if (numbers[lo] + numbers[hi] > target) {
-                hi--;
-            } else {
-                lo++;
-            }
-        }
-        return new int[]{lo+1, hi+1};
-    }  
-}
-```
-### Excel Sheet Column Title
-```java
 class Solution {
     
     public String convertToTitle(int n) {
         String result = "";
         
-        while (0 < n) {
-            // 1. change 1~26 to 0~25
+        while (0 < n) {            
+            // subtract 1 for adjustment
             n--;
-            
-            // 2. get the remainder and append it
+
+            // append it
             char c = (char) ('A' + n % 26);
             result = c + result;
             
@@ -2316,19 +2294,53 @@ class Solution {
 }
 
 /*
- 1 ~ 26 : A  ~ Z
-27 ~ 52 : AA ~ AZ
-53 ~ 78 : BA ~ BZ
-79 ~104 : CA ~ CZ
+- Numbers
+  - 1 ~26 == A ~ Z
+  - 27~52 == AA ~ AZ
+  - 53~72 == BA ~ BZ
+  
+- Base10 -> Base26 conversion?
+  It is not a perfect Base26 conversion because there is no concept of 0 in A~Z case.
+  If it were a perfect Base26, 27 will be interpreted as ZA (26+1).
+  So we can't solve this problem with traditional base conversion concept.
 
-ex) 28
-28 = 26^1 * 1 + 26^0 * 2
-   =        A          B
-   
-
-StringBuilder()
-insert is O(n)
-append is O(n)
-appending a char in the end and reverse it in the very end -> better efficiency
+  ex1) 58 == BF
+  26 | 58
+     -----
+  26 |  2 --> 6 F
+     -----
+        0 --> 2 B
+    
+  ex2) 52 == AZ
+  26 | 52
+     -----
+  26 |  2 --> 0 ?
+     -----
+        0 --> 2 B
+        
+- Challenge
+  As you can see, we face "0 case" at each power of 26. (partial 26-base)
+      -> ?     
+   1  -> A
+   2  -> B
+   ...
+   26 -> Z
+  ----------
+      -> A?
+   27 -> AA
+   28 -> AB
+   ...
+  ----------
+  
+- What is the solution?
+  Let's consider a new mapping with zero (total 26-base).   
+   0  -> A
+   1  -> B
+   ...
+   25 -> Z
+  ----------   
+  Subtract 1 before we do 'division by 26' to consider every '#'
+  For example, given a number 26, subtract 1 and map it to get Z
+  given a number 27, subtract 1 -> 26 -> remainder 0 -> A -> reduce the power -> remainder 1 -> subtract 1 -> 0
 */
 ```
