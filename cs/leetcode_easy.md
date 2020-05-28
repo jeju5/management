@@ -2367,3 +2367,44 @@ class Solution {
   ----------
 */
 ```
+### Majority Element
+```java
+class Solution {
+    public int majorityElement(int[] nums) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int maxKey = nums[0];
+        int maxVal = 1;
+        
+        for (int i : nums) {
+            Integer val = map.get(i);
+            
+            if (val != null) {
+                val++;
+                map.put(i, val);
+                
+                if (maxVal < val) {
+                    maxKey = i;
+                    maxVal = val;
+                }
+            } else {
+                map.put(i, 1);
+            }
+        }
+        
+        return maxKey;
+    }
+}
+
+/*
+HashMap.get() returns null if key doesn't exist.
+
+int a = null; <-- compile error, you can't assign null to int
+
+int b = map.get('k');
+if (b != null) { <-- compile error, you can't compare int to null
+   ...
+}
+
+int type defaults to 0 (not null)
+*/
+```
