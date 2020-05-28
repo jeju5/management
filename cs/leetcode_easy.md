@@ -2355,7 +2355,7 @@ class Solution {
   ----------
   
 - What is the solution?
-  Let's eliminate "0 case" at every powers to fit in to new mapping
+  Let's eliminate "0 case" at every powers to fit in to new mapping by subtracting 1 at every 26s.
    0  -> A
    1  -> B
    ...
@@ -2365,6 +2365,5 @@ class Solution {
    28 -> AB
    ...
   ----------
-  Subtract 1 before we do 'division by 26' to eliminate all "0 case"s
 */
 ```
