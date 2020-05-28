@@ -2270,7 +2270,29 @@ public class Solution {
     }
 }
 ```
-### Two Sum 2
+### Two Sum II - Input array is sorted
+```java
+class Solution {    
+    /*
+    Two Pointers 
+    time: O(n)
+    */
+    public int[] twoSum(int[] numbers, int target) {
+        int lo = 0;
+        int hi = numbers.length-1;
+        
+        while (numbers[lo] + numbers[hi] != target) {
+            if (numbers[lo] + numbers[hi] > target) {
+                hi--;
+            } else {
+                lo++;
+            }
+        }
+        return new int[]{lo+1, hi+1};
+    }  
+}
+```
+### Excel Sheet Column Title
 ```java
 class Solution {
     
