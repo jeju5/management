@@ -2316,6 +2316,7 @@ class Solution {
 }
 
 /*
+refer to 'Excel Sheet Column Number'. This will help you with the thinking process
 - Numbers
   - 1 ~26 == A ~ Z
   - 27~52 == AA ~ AZ
@@ -2406,5 +2407,32 @@ if (b != null) { <-- compile error, you can't compare int to null
 }
 
 int type defaults to 0 (not null)
+*/
+```
+### Excel Sheet Column Number
+```java
+class Solution {
+    
+    public int titleToNumber(String s) {
+        int index = s.length() -1;
+        int power = 1;
+        int result = 0;
+        
+        while (-1 < index) {
+            int value = ((int) s.charAt(index) - 'A') + 1;
+            result += value * power;
+            
+            power *= 26;
+            index--;
+        }
+        
+        return result;
+    }
+}
+
+/*
+A = 1 * A
+AA = 26*A + 1*A
+ZA = 26*Z + 1*Y = 26*26 + 1*25 = 676 + 25
 */
 ```
