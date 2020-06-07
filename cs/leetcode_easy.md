@@ -2436,3 +2436,62 @@ AA = 26*A + 1*A
 ZA = 26*Z + 1*Y = 26*26 + 1*25 = 676 + 25
 */
 ```
+### Factorial Trailing Zeroes
+```java
+class Solution {
+    // 1. By multiplying divisor
+    public int trailingZeroes1(int n) {
+        int divisor = 5;
+        int result = 0;
+        
+        while (divisor <= n) {
+            result += n/divisor;
+            
+            if (Integer.MAX_VALUE/5 < divisor) {
+                // prevent divisor causing overflow;
+                return result;
+            }
+            divisor *= 5;
+            
+        }
+        
+        return result;
+    }
+    
+    // 2. By dividing dividend
+    //    # 26 -> 26/5 + 26/25
+    //    # 26 -> 26/5 + (26/5)/5
+    public int trailingZeroes(int n) {      
+        int result = 0;
+        
+        while (0 < n) {
+            result += n/5;
+            n /= 5;
+        }
+        
+        return result;
+    }
+}
+/*
+counting trailing zero
+= counting '2*5' in the factorial
+
+0! = 1
+1! = 1
+2! = 2 * 1
+3! = 3 * 2 * 1
+4! = 4 * 3 * 2 * 1
+5! = 5 * 4 * 3 * 2 * 1
+6! = 6 * 5 * 4 * 3 * 2
+25! = 25 * 24 * 23 * 22 ... * 1
+
+count 2 is meaning less since there are always more 2 than 5.
+so only count 5.
+let's consider 26!
+26! = 26 * 25 * 24 ... 5 * 4 * 3 * 2 * 1
+
+26 has 25 20 15 10 5 (26/5 = 5)
+and 25 is multiple of 5 (25 = 5*5)
+thus 5+1 trailing zeros.
+*/
+```
