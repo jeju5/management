@@ -123,7 +123,7 @@ jabcro
 jablow
 1: jab bab cro lhook
 2: jab bro lupper cro
-3: jab lbody lbody jab
+3: jab rbody lbody jab
 
 rear
 1: cro cro jab cro
