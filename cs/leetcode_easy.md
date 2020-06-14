@@ -2520,3 +2520,21 @@ SELECT
     )
 AS SecondHighestSalary
 ```
+### Employees Earning More Than Their Managers
+```mysql
+# Write your MySQL query statement below
+
+# Using LEFT OUTER JOIN
+select emp.Name Employee
+from Employee emp
+left outer join Employee mgr on emp.ManagerId = mgr.Id
+where
+    emp.ManagerId IS NOT NULL
+    AND emp.Salary > mgr.Salary
+
+
+# Using INNER JOIN (=JOIN); JOIN is Inner Join
+select emp.Name AS Employee
+FROM Employee AS emp
+JOIN Employee AS mgr ON emp.ManagerId = mgr.Id AND emp.Salary > mgr.Salary
+```
