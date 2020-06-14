@@ -2495,3 +2495,14 @@ and 25 is multiple of 5 (25 = 5*5)
 thus 5+1 trailing zeros.
 */
 ```
+### Combine Two Tables
+``` mysql
+# Write your MySQL query statement below
+
+SELECT p.FirstName,
+    p.LastName,
+    a.City,
+    a.State
+    FROM Person p
+    LEFT OUTER JOIN Address a ON a.PersonId = p.PersonId
+```
