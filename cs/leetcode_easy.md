@@ -2506,3 +2506,17 @@ SELECT p.FirstName,
     FROM Person p
     LEFT OUTER JOIN Address a ON a.PersonId = p.PersonId
 ```
+### Second Highest Salary
+```mysql
+# Write your MySQL query statement below
+SELECT
+    IFNULL(
+        (SELECT DISTINCT Salary as SecondHighestSalary
+         FROM Employee
+         ORDER BY Salary DESC
+         LIMIT 1 OFFSET 1
+        ),
+        NULL
+    )
+AS SecondHighestSalary
+```
