@@ -2537,4 +2537,7 @@ where
 select emp.Name AS Employee
 FROM Employee AS emp
 JOIN Employee AS mgr ON emp.ManagerId = mgr.Id AND emp.Salary > mgr.Salary
+
+# LEFT JOIN : GET (ALL) FROM (LEFT TABLE) AND (CONDITIONAL) FROM (RIGHT TABLE)
+# INNER JOIN: GET (CONDITIONAL) FROM (LEFT TABLE) AND (CONDITIONAL) FROM (RIGHT TABLE)
 ```
