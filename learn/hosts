@@ -6,10 +6,12 @@
 # mac      /etc/hosts
 
 ########################## BIG DOMAINS #########################
+
+# Google
 127.0.0.1 www.translate.google.com
 127.0.0.1 translate.google.com
 127.0.0.1 webcache.googleusercontent.com
-# 127.0.0.1 play.google.com
+127.0.0.1 play.google.com
 216.239.38.120  www.google.com # force safe search
 216.239.38.120	www.google.ac # force safe search
 216.239.38.120	www.google.ad # force safe search
@@ -212,124 +214,125 @@
 216.239.38.120	www.google.vu # force safe search
 216.239.38.120	www.google.ws # force safe search
 
- # 127.0.0.1 host.youtube.com
- # 127.0.0.1 mx.youtube.com
- # 127.0.0.1 admin.youtube.com
- # 127.0.0.1 devel.youtube.com
- # 127.0.0.1 stats.youtube.com
- # 127.0.0.1 http.youtube.com
- # 127.0.0.1 mx0.youtube.com
- # 127.0.0.1 administration.youtube.com
- # 127.0.0.1 development.youtube.com
- # 127.0.0.1 svn.youtube.com
- # 127.0.0.1 id.youtube.com
- # 127.0.0.1 mx1.youtube.com
- # 127.0.0.1 ads.youtube.com
- # 127.0.0.1 devsql.youtube.com
- # 127.0.0.1 syslog.youtube.com
- # 127.0.0.1 adserver.youtube.com
- # 127.0.0.1 images.youtube.com
- # 127.0.0.1 mysql.youtube.com
- # 127.0.0.1 devtest.youtube.com
- # 127.0.0.1 info.youtube.com
- # 127.0.0.1 news.youtube.com
- # 127.0.0.1 alerts.youtube.com
- # 127.0.0.1 dhcp.youtube.com
- # 127.0.0.1 test1.youtube.com
- # 127.0.0.1 internal.youtube.com
- # 127.0.0.1 noc.youtube.com
- # 127.0.0.1 alpha.youtube.com
- # 127.0.0.1 direct.youtube.com
- # 127.0.0.1 test2.youtube.com
- # 127.0.0.1 internet.youtube.com
- # 127.0.0.1 ns.youtube.com
- # 127.0.0.1 ap.youtube.com
- # 127.0.0.1 dmz.youtube.com
- # 127.0.0.1 testing.youtube.com
- # 127.0.0.1 intra.youtube.com
- # 127.0.0.1 ns0.youtube.com
- # 127.0.0.1 apache.youtube.com
- # 127.0.0.1 dns.youtube.com
- # 127.0.0.1 upload.youtube.com
- # 127.0.0.1 intranet.youtube.com
- # 127.0.0.1 ns1.youtube.com
- # 127.0.0.1 app.youtube.com
- # 127.0.0.1 dns0.youtube.com
- # 127.0.0.1 vm.youtube.com
- # 127.0.0.1 ipv6.youtube.com
- # 127.0.0.1 ns2.youtube.com
- # 127.0.0.1 apps.youtube.com
- # 127.0.0.1 dns1.youtube.com
- # 127.0.0.1 vnc.youtube.com
- # 127.0.0.1 lab.youtube.com
- # 127.0.0.1 ns3.youtube.com
- # 127.0.0.1 appserver.youtube.com
- # 127.0.0.1 dns2.youtube.com
- # 127.0.0.1 ldap.youtube.com
- # 127.0.0.1 aptest.youtube.com
- # 127.0.0.1 download.youtube.com
- # 127.0.0.1 vpn.youtube.com
- # 127.0.0.1 linux.youtube.com
- # 127.0.0.1 ops.youtube.com
- # 127.0.0.1 auth.youtube.com
- # 127.0.0.1 en.youtube.com
- # 127.0.0.1 web.youtube.com
- # 127.0.0.1 local.youtube.com
- # 127.0.0.1 oracle.youtube.com
- # 127.0.0.1 backup.youtube.com
- # 127.0.0.1 erp.youtube.com
- # 127.0.0.1 web2test.youtube.com
- # 127.0.0.1 log.youtube.com
- # 127.0.0.1 owa.youtube.com
- # 127.0.0.1 beta.youtube.com
- # 127.0.0.1 eshop.youtube.com
- # 127.0.0.1 whois.youtube.com
- # 127.0.0.1 pbx.youtube.com
- # 127.0.0.1 blog.youtube.com
- # 127.0.0.1 exchange.youtube.com
- # 127.0.0.1 wiki.youtube.com
- # 127.0.0.1 www.youtube.com
- # 127.0.0.1 s3.youtube.com
- # 127.0.0.1 f5.youtube.com
- # 127.0.0.1 secure.youtube.com
- # 127.0.0.1 chat.youtube.com
- # 127.0.0.1 fileserver.youtube.com
- # 127.0.0.1 www2.youtube.com
- # 127.0.0.1 server.youtube.com
- # 127.0.0.1 citrix.youtube.com
- # 127.0.0.1 firewall.youtube.com
- # 127.0.0.1 xml.youtube.com
- # 127.0.0.1 main.youtube.com
- # 127.0.0.1 shop.youtube.com
- # 127.0.0.1 cms.youtube.com
- # 127.0.0.1 forum.youtube.com
- # 127.0.0.1 manage.youtube.com
- # 127.0.0.1 sip.youtube.com
- # 127.0.0.1 corp.youtube.com
- # 127.0.0.1 mgmt.youtube.com
- # 127.0.0.1 crs.youtube.com
- # 127.0.0.1 mirror.youtube.com
- # 127.0.0.1 sql.youtube.com
- # 127.0.0.1 cvs.youtube.com
- # 127.0.0.1 git.youtube.com
- # 127.0.0.1 mobile.youtube.com
- # 127.0.0.1 squid.youtube.com
- # 127.0.0.1 database.youtube.com
- # 127.0.0.1 gw.youtube.com
- # 127.0.0.1 help.youtube.com
- # 127.0.0.1 monitor.youtube.com
- # 127.0.0.1 ssh.youtube.com
- # 127.0.0.1 db.youtube.com
- # 127.0.0.1 mssql.youtube.com
- # 127.0.0.1 ssl.youtube.com
- # 127.0.0.1 demo.youtube.com
- # 127.0.0.1 helpdesk.youtube.com
- # 127.0.0.1 mta.youtube.com
- # 127.0.0.1 dev.youtube.com
- # 127.0.0.1 home.youtube.com
- # 127.0.0.1 youtube.com
- # 127.0.0.1 www.youtube.com
-# 127.0.0.1 208.65.153.251
+# Youtube
+127.0.0.1 host.youtube.com
+127.0.0.1 mx.youtube.com
+127.0.0.1 admin.youtube.com
+127.0.0.1 devel.youtube.com
+127.0.0.1 stats.youtube.com
+127.0.0.1 http.youtube.com
+127.0.0.1 mx0.youtube.com
+127.0.0.1 administration.youtube.com
+127.0.0.1 development.youtube.com
+127.0.0.1 svn.youtube.com
+127.0.0.1 id.youtube.com
+127.0.0.1 mx1.youtube.com
+127.0.0.1 ads.youtube.com
+127.0.0.1 devsql.youtube.com
+127.0.0.1 syslog.youtube.com
+127.0.0.1 adserver.youtube.com
+127.0.0.1 images.youtube.com
+127.0.0.1 mysql.youtube.com
+127.0.0.1 devtest.youtube.com
+127.0.0.1 info.youtube.com
+127.0.0.1 news.youtube.com
+127.0.0.1 alerts.youtube.com
+127.0.0.1 dhcp.youtube.com
+127.0.0.1 test1.youtube.com
+127.0.0.1 internal.youtube.com
+127.0.0.1 noc.youtube.com
+127.0.0.1 alpha.youtube.com
+127.0.0.1 direct.youtube.com
+127.0.0.1 test2.youtube.com
+127.0.0.1 internet.youtube.com
+127.0.0.1 ns.youtube.com
+127.0.0.1 ap.youtube.com
+127.0.0.1 dmz.youtube.com
+127.0.0.1 testing.youtube.com
+127.0.0.1 intra.youtube.com
+127.0.0.1 ns0.youtube.com
+127.0.0.1 apache.youtube.com
+127.0.0.1 dns.youtube.com
+127.0.0.1 upload.youtube.com
+127.0.0.1 intranet.youtube.com
+127.0.0.1 ns1.youtube.com
+127.0.0.1 app.youtube.com
+127.0.0.1 dns0.youtube.com
+127.0.0.1 vm.youtube.com
+127.0.0.1 ipv6.youtube.com
+127.0.0.1 ns2.youtube.com
+127.0.0.1 apps.youtube.com
+127.0.0.1 dns1.youtube.com
+127.0.0.1 vnc.youtube.com
+127.0.0.1 lab.youtube.com
+127.0.0.1 ns3.youtube.com
+127.0.0.1 appserver.youtube.com
+127.0.0.1 dns2.youtube.com
+127.0.0.1 ldap.youtube.com
+127.0.0.1 aptest.youtube.com
+127.0.0.1 download.youtube.com
+127.0.0.1 vpn.youtube.com
+127.0.0.1 linux.youtube.com
+127.0.0.1 ops.youtube.com
+127.0.0.1 auth.youtube.com
+127.0.0.1 en.youtube.com
+127.0.0.1 web.youtube.com
+127.0.0.1 local.youtube.com
+127.0.0.1 oracle.youtube.com
+127.0.0.1 backup.youtube.com
+127.0.0.1 erp.youtube.com
+127.0.0.1 web2test.youtube.com
+127.0.0.1 log.youtube.com
+127.0.0.1 owa.youtube.com
+127.0.0.1 beta.youtube.com
+127.0.0.1 eshop.youtube.com
+127.0.0.1 whois.youtube.com
+127.0.0.1 pbx.youtube.com
+127.0.0.1 blog.youtube.com
+127.0.0.1 exchange.youtube.com
+127.0.0.1 wiki.youtube.com
+127.0.0.1 www.youtube.com
+127.0.0.1 s3.youtube.com
+127.0.0.1 f5.youtube.com
+127.0.0.1 secure.youtube.com
+127.0.0.1 chat.youtube.com
+127.0.0.1 fileserver.youtube.com
+127.0.0.1 www2.youtube.com
+127.0.0.1 server.youtube.com
+127.0.0.1 citrix.youtube.com
+127.0.0.1 firewall.youtube.com
+127.0.0.1 xml.youtube.com
+127.0.0.1 main.youtube.com
+127.0.0.1 shop.youtube.com
+127.0.0.1 cms.youtube.com
+127.0.0.1 forum.youtube.com
+127.0.0.1 manage.youtube.com
+127.0.0.1 sip.youtube.com
+127.0.0.1 corp.youtube.com
+127.0.0.1 mgmt.youtube.com
+127.0.0.1 crs.youtube.com
+127.0.0.1 mirror.youtube.com
+127.0.0.1 sql.youtube.com
+127.0.0.1 cvs.youtube.com
+127.0.0.1 git.youtube.com
+127.0.0.1 mobile.youtube.com
+127.0.0.1 squid.youtube.com
+127.0.0.1 database.youtube.com
+127.0.0.1 gw.youtube.com
+127.0.0.1 help.youtube.com
+127.0.0.1 monitor.youtube.com
+127.0.0.1 ssh.youtube.com
+127.0.0.1 db.youtube.com
+127.0.0.1 mssql.youtube.com
+127.0.0.1 ssl.youtube.com
+127.0.0.1 demo.youtube.com
+127.0.0.1 helpdesk.youtube.com
+127.0.0.1 mta.youtube.com
+127.0.0.1 dev.youtube.com
+127.0.0.1 home.youtube.com
+127.0.0.1 youtube.com
+127.0.0.1 www.youtube.com
+127.0.0.1 208.65.153.251
 # 216.239.38.120  www.youtube.com    #restricted search
 
 127.0.0.1 msn.com
@@ -7030,6 +7033,10 @@
 127.0.0.1 www.porn555.com
 127.0.0.1 javhub.net
 127.0.0.1 www.javhub.net
+127.0.0.1 hdporn92.com
+127.0.0.1 www.hdporn92.com
+127.0.0.1 youcrazyx.com
+127.0.0.1 www.youcrazyx.com
 
 # unchecky_begin
 # These rules were added by the Unchecky program in order to block advertising software modules
