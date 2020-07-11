@@ -2568,3 +2568,20 @@ This only selects a single data(row) that first categorizes a COUNTRY.
 GROUPBY is often used with functions
 */
 ```
+### Customers Who Never Order
+```mysql
+
+SELECT Name AS Customers
+FROM Customers
+LEFT JOIN
+(
+    SELECT CustomerId, count(CustomerId) as cnt
+    FROM Orders
+    GROUP BY CustomerId
+) AS ordersWithCount
+ON Customers.Id = ordersWithCount.CustomerId
+WHERE cnt IS NULL
+
+A = null is incorrect mysql syntax
+A IS NULL is correct mysql syntax
+```
