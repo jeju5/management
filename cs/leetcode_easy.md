@@ -2541,3 +2541,25 @@ JOIN Employee AS mgr ON emp.ManagerId = mgr.Id AND emp.Salary > mgr.Salary
 # LEFT JOIN : GET (ALL) FROM (LEFT TABLE) AND (CONDITIONAL) FROM (RIGHT TABLE)
 # INNER JOIN: GET (CONDITIONAL) FROM (LEFT TABLE) AND (CONDITIONAL) FROM (RIGHT TABLE)
 ```
+### Duplicate Emails
+```mysql
+SELECT Email 
+FROM (
+  SELECT Email, COUNT(Email) as num
+  FROM Person
+  GROUP BY Email
+) as counts
+where counts.num > 1
+
+
+/*
+1. Using Group By only
+
+SELECT *
+FROM STUDENTS
+GROUPBY COUNTRY
+
+This only selects a single data(row) that first categorizes a COUNTRY.
+GROUPBY is often used with functions
+*/
+```
