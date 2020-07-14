@@ -2585,3 +2585,41 @@ WHERE cnt IS NULL
 A = null is incorrect mysql syntax
 A IS NULL is correct mysql syntax
 ```
+### Rotate Array
+```java
+class Solution {
+    
+    
+    // 1. Cyclic Replacement Approach
+    public void rotate(int[] nums, int k) {
+        int replacedCount = 0;
+        int cycleStartIndex = 0;
+        int currentIndex = 0;
+        int newIndex = 0;
+        int insertingValue = nums[0];
+        int holdingValue = 0;
+  
+        while (replacedCount < nums.length) {
+            newIndex = (currentIndex + k) % nums.length;
+
+            // Do shifting
+            holdingValue = nums[newIndex];
+            nums[newIndex] = insertingValue;
+            replacedCount++;
+
+            // Next loop prep
+            insertingValue = holdingValue;
+            currentIndex = newIndex;
+            
+            // Handle a cycle
+            if (currentIndex == cycleStartIndex && replacedCount < nums.length) {
+                cycleStartIndex++;
+                currentIndex = cycleStartIndex;
+                insertingValue = nums[currentIndex];
+            }
+        }
+    }
+    
+    // 2. Reverse Approach
+}
+```
