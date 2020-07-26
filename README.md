@@ -5,7 +5,7 @@
   -------------------------------------------------------------------------------------------
   |  COOK   | CURL(200)    PUSH(200)    SITU(500)   | CURL(200)    PUSH(200)    SITU(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
-  |         | BIKE(45min)  BIKE(45min)  BIKE(15min) | BIKE(45min)  BIKE(45min)  BIKE(15min) |
+  |         | BIKE(45min)  BIKE(45min)  TUBE(500)   | BIKE(45min)  BIKE(45min)  TUBE(500)   |
   -------------------------------------------------------------------------------------------
   * Do TUBE instead of PULL and RDIP
   * 13+ mile once+ a week (or 2-hour bike)
