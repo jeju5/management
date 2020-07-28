@@ -2590,8 +2590,15 @@ A IS NULL is correct mysql syntax
 class Solution {
     
     
-    // 1. Cyclic Replacement Approach
-    public void rotate(int[] nums, int k) {
+    /*
+    Cyclic Replacement Approach
+    - time: O(n)
+    - space: O(1)
+    - How can you be sure if the current index was not part of the previous cycle?
+      - There is a mathematical proof..
+    
+    */
+    public void rotate1(int[] nums, int k) {
         int replacedCount = 0;
         int cycleStartIndex = 0;
         int currentIndex = 0;
@@ -2620,6 +2627,42 @@ class Solution {
         }
     }
     
-    // 2. Reverse Approach
+    /*
+    2. Reverse Approach
+    You can achieve array rotation only with reverse
+    If you rotate an array 'k' times the array
+    - Last 'k' elements will be the First 'k' elements in its original order
+    - First 'n-k' elements will be the Last 'n-k' elements in its original order
+    - If you reverse the whole array, Last 'k' elements will be the First 'k' elements
+      regardless of k. All you have to do is reverse 'k' and 'n-k' subarray.
+    
+                                                 
+    [# # # # # # ... A B]  B is at 'n-1'
+    [... A B ... # # # #]  B is at 'k-1'
+    
+    --- k --- --- n-k ---
+    |       | |         |
+    [ ... A B ... # # # #]
+    
+    Time: O(n)
+    Space: O(1)
+    */
+    public void rotate(int[] nums, int k) {
+        reverse(nums, 0, nums.length-1);
+        reverse(nums, 0, k-1);
+        reverse(nums, k, nums.length-1);
+    }
+    
+    private void reverse(int[] nums, int start, int end) {
+        int swapTemp;
+        
+        while (start < end) {
+            swapTemp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = swapTemp;
+            start++;
+            end--;
+        }
+    }
 }
 ```
