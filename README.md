@@ -3,10 +3,10 @@
   -------------------------------------------------------------------------------------------
   |  SUN    | MON          TUE          WED         | THU          FRI          SAT         |
   -------------------------------------------------------------------------------------------
-  |  COOK   | PULL(50)     RDIP(50)     SITU(500)   | CURL(200)    PUSH(200)    SITU(500)   |
+  |  COOK   | PULL(75)     RDIP(75)     CALF(500)   | PULL(75)     PUSH(250)    CALF(500)   |
+  |         |                           SITU(500)   |                           SITU(500)   |
+  |         | BIKE(40min)  BIKE(40min)  TUBE(500)   | BIKE(40min)  BIKE(40min)  TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
-  |         | BIKE(45min)  BIKE(45min)  TUBE(500)   | BIKE(45min)  BIKE(45min)  TUBE(500)   |
-  |         |                           CALF(500)   |                           CALF(500)   |
   -------------------------------------------------------------------------------------------
   * Do TUBE instead of PULL and RDIP
   * 13+ mile once+ a week (or 2-hour bike)
