@@ -5,7 +5,7 @@
   -------------------------------------------------------------------------------------------
   |  COOK   | PULL(60)     RDIP(60)     OCAL(500)   | PULL(60)     RDIP(60)     OCAL(500)   |
   |         | CURL(120)    PUSH(120)    SITU(500)   | CURL(120)    PUSH(120)    SITU(500)   |
-  |         | BIKE(45min)  BIKE(45min)  TUBE(500)   | BIKE(45min)  BIKE(45min)  TUBE(500)   |
+  |         | BIKE(60min)  BIKE(60min)  TUBE(500)   | BIKE(60min)  BIKE(60min)  TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
   -------------------------------------------------------------------------------------------
   * Do TUBE instead of PULL and RDIP
