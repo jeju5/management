@@ -2666,3 +2666,39 @@ class Solution {
     }
 }
 ```
+### Reverse Bits
+```java
+public class Solution {
+    
+    /*
+    Reverse <--> this way. Not reversing 0<-->1 
+    
+    Java bit operation
+    1) right-shift
+       11111111 >> 1 => 01111111
+       11111111 >> 2 => 00111111
+       
+    2) left-shift   
+       11111111 << 1 => 11111110
+       11111111 << 2 => 11111100   
+       
+       
+    3) How to get the right-most bit (AND1)
+    ___1 & 0001 = 0001
+    ___0 & 0001 = 0000 
+    
+    */
+    public int reverseBits(int n) {
+        int reversed = 0;
+        
+        for (int i=0; i<32; i++) {
+            
+            // append the last digit of n
+            reversed = (reversed << 1) | (n & 1);
+            n = n >> 1;
+        }
+        
+        return reversed;
+    }
+}
+```
