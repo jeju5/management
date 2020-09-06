@@ -2736,18 +2736,37 @@ public class Solution {
 ```
 ### Delete Duplicate Emails
 ```sql
-# Write your MySQL query statement below
 /*
 Delete with join
  
 Delete (the deleting target table)
 FROM (table1)
 ON (table2)
- 
 */
 DELETE p1
 FROM PERSON p1
 JOIN PERSON p2
     ON p1.Email = p2.Email
     AND p2.Id < p1.Id
+    
+  
+/* With & Group By*/
+WITH UNIQUE_PERSON AS (
+    SELECT min(id) unique_id
+    FROM PERSON
+    GROUP BY email
+)
+DELETE
+FROM PERSON
+WHERE id NOT in (
+    SELECT unique_id FROM UNIQUE_PERSON
+)
+```
+### Rising Temperature
+```sql
+SELECT t1.id
+FROM Weather t1
+JOIN Weather t2
+    ON DATEDIFF (t1.recordDate, t2.recordDate) = 1
+    AND t2.Temperature < t1.Temperature
 ```
