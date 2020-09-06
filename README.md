@@ -26,10 +26,10 @@
   
 # YEAR
 ```
-SEP: LEETEASY-100, Node with React: Fullstack Web Development(25.5HR)
-OCT: LEETEASY-100, Modern React with Redux(52HR)
-NOV: LEETEASY-100
-DEC: LEETEASY-100 
+SEP: LEETEASY-30, Node with React: Fullstack Web Development(25.5HR)
+OCT: LEETEASY-30, Modern React with Redux(52HR)
+NOV: LEETEASY-150
+DEC: LEETEASY-150 
 ```
   
 # GOAL
