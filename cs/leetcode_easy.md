@@ -2770,3 +2770,29 @@ JOIN Weather t2
     ON DATEDIFF (t1.recordDate, t2.recordDate) = 1
     AND t2.Temperature < t1.Temperature
 ```
+
+### House Robber
+```java
+class Solution {
+    public int rob(int[] nums) {
+        // previous value
+        int robPrev = 0;
+        int notRobPrev = 0;
+        
+        // rob or not?
+        for (int now=0; now<nums.length; now++) {
+            // [if rob now] = [rob prev] + [now]
+            int ifRobNow = notRobPrev + nums[now];
+            
+            // update not-rob-prev
+            // [not rob now] = [not rob prev] or [rob prev]
+            notRobPrev = Math.max(notRobPrev, robPrev);
+            
+            // update rob-prev
+            robPrev = ifRobNow;
+        }
+        
+        return Math.max(robPrev, notRobPrev);
+    }
+}
+```
