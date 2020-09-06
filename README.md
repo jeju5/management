@@ -8,7 +8,6 @@
   |         | BIKE(60min)  BIKE(60min)  TUBE(500)   | BIKE(60min)  BIKE(60min)  TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
   -------------------------------------------------------------------------------------------
-  * Do TUBE instead of PULL and RDIP
   * 13+ mile once+ a week (or 2-hour bike)
   ```
   
