@@ -2796,3 +2796,41 @@ class Solution {
     }
 }
 ```
+### Happy Number
+```java
+class Solution {
+    
+    /* the problem states that notHappy number will lead to cycle */
+    public boolean isHappy(int n) {
+        Set<Integer> ints = new HashSet<>();
+        boolean isHappy = true; // assume Happy
+        
+        int curr = n;
+        
+        while (isHappy) {
+            ints.add(curr);
+            curr = process(curr);
+            
+            if (curr == 1) {
+                // it is happy
+                return true;
+            } else if (ints.contains(curr)) {
+                // it is unhappy
+                isHappy = false;
+            }
+        }
+        return isHappy;
+    }
+    
+    private int process(int n) {
+        int sum = 0;
+        
+        while (n > 0) {
+            int digit = n % 10;
+            sum = sum + (digit * digit);
+            n = n / 10;
+        }
+        return sum;
+    }
+}
+```
