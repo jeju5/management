@@ -27,10 +27,10 @@
   
 # YEAR
 ```
-SEP: TENNIS
-OCT: TENNIS
-NOV:
-DEC:
+SEP: LEETEASY-100, Node with React: Fullstack Web Development(25.5HR)
+OCT: LEETEASY-100, Modern React with Redux(52HR)
+NOV: LEETEASY-100
+DEC: LEETEASY-100 
 ```
   
 # GOAL
