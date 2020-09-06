@@ -2834,3 +2834,34 @@ class Solution {
     }
 }
 ```
+### Remove Linked List Elements
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode newHead = new ListNode(0, head);
+        ListNode curr = newHead;
+        
+        while (curr != null && curr.next != null) {
+            if (curr.next.val == val) {
+                // remove
+                curr.next = curr.next.next;
+            } else {
+                // iterate
+                curr = curr.next; 
+            }
+        }
+        
+        return newHead.next; 
+    }
+}
+```
