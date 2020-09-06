@@ -2852,11 +2852,12 @@ class Solution {
         ListNode curr = newHead;
         
         while (curr != null && curr.next != null) {
+	    // check next value
             if (curr.next.val == val) {
-                // remove
+                // remove next value
                 curr.next = curr.next.next;
             } else {
-                // iterate
+                // move on
                 curr = curr.next; 
             }
         }
