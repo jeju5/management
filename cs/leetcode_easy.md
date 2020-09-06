@@ -2548,6 +2548,7 @@ JOIN Employee AS mgr ON emp.ManagerId = mgr.Id AND emp.Salary > mgr.Salary
 ```
 ### Duplicate Emails
 ```mysql
+/* group by */
 SELECT Email 
 FROM (
   SELECT Email, COUNT(Email) as num
@@ -2556,6 +2557,12 @@ FROM (
 ) as counts
 where counts.num > 1
 
+/* join */
+SELECT distinct p1.Email
+FROM Person p1
+JOIN Person p2
+    ON p1.Email = p2.Email
+    And p1.Id != p2.Id
 
 /*
 1. Using Group By only
@@ -2584,6 +2591,15 @@ WHERE cnt IS NULL
 
 A = null is incorrect mysql syntax
 A IS NULL is correct mysql syntax
+
+
+
+# With Join
+SELECT p1.Email
+FROM Person p1
+JOIN Person p2
+    ON p1.Email = p2.Email
+    And p1.Id < p2.Id
 ```
 ### Rotate Array
 ```java
