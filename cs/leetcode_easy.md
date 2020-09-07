@@ -2899,3 +2899,84 @@ class Solution {
     }
 }
 ```
+### Isomorphic Strings
+```java
+class Solution {
+    /*
+    Using map
+    - Edge case to consider: "abcd" & "aaaa". You need to think n->1 as well.
+    - Isomorphic means 1:1 relation
+    */
+    public boolean isIsomorphic1(String s, String t) {
+        
+        HashMap<Character, Character> sMap = new HashMap<>(); // s->t
+        HashMap<Character, Character> tMap = new HashMap<>(); // t->s
+            
+        for (int i=0; i<s.length(); i++) {
+            Character sChar = s.charAt(i);
+            Character tChar = t.charAt(i);
+            Character sMapChar = sMap.get(s.charAt(i));
+            Character tMapChar = tMap.get(t.charAt(i));
+            
+            if (sMapChar == null) {
+                // first occurrence
+                sMap.put(sChar, tChar);
+            } else if (!tChar.equals(sMapChar)) {
+                // stored occurrence
+                return false;
+            }
+            
+            if (tMapChar == null) {
+                // first occurrence
+                tMap.put(tChar, sChar);
+            } else if (!sChar.equals(tMapChar)) {
+                // stored occurrence
+                return false;
+            }
+        }
+        
+        return true;
+    }
+    
+    /*
+    Using ASCII List
+    
+    ASCII (=8bit char system)
+    - 7bit for ASCII
+    - 8bit for ASCII + euro chars
+    - 0-127 for basic ASCII, 128-255 for extended ASCII.
+    
+    Approach:
+    We don't care about char found for the first-time.
+    We care about char found more than once.
+    For those char, compare the index of last occurrence.
+    
+    efee & agac
+    123    123
+    
+    at 4th iteratoin
+    map1[e] will return 3
+    map2[c] will return 0
+    
+    map value: '0' means not observed previously.
+    map value: 'non-0' means the index of the most recent occurrence.
+    */
+    public boolean isIsomorphic(String s1, String s2) {
+        int[] map1 = new int[256];
+        int[] map2 = new int[256];
+        
+        for (int i = 0; i < s1.length(); i++) {
+            if (map1[s1.charAt(i)] != map2[s2.charAt(i)]) {
+                // compare the index of each char, previously?
+                return false;
+            }
+        
+            // char found, store its 'index+1' in string
+            // use +1 because all values are 0 by default.
+            map1[s1.charAt(i)] = i+1;
+            map2[s2.charAt(i)] = i+1;
+        }
+        return true;
+    }
+}
+```
