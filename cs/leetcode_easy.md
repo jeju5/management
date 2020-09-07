@@ -2866,3 +2866,36 @@ class Solution {
     }
 }
 ```
+### Count Primes
+```java
+class Solution {
+    
+    
+    /* Sieve Method
+    - You can optimize this sieve by start primeCount as 1 including '2' as a prime
+      and skip looping for multiples of two
+    */
+    public int countPrimes(int n) {
+        if (n < 3) {
+            return 0;
+        }
+        
+        int primeCount = 0;
+        boolean[] notPrime = new boolean[n];
+
+        for (int i = 2; i < n; i++) {
+            
+            if (!notPrime[i]) {
+                // i is a prime. first case will be 'i == 2'.
+                primeCount++;
+                
+                for (int j = 2; i*j < n; j++) {
+                    // mark all multiples of prime(i) as notPrime.
+                    notPrime[i*j] = true;
+                }
+            }
+        }
+        return primeCount;
+    }
+}
+```
