@@ -4,8 +4,8 @@
   |  SUN    | MON          TUE          WED         | THU          FRI          SAT         |
   -------------------------------------------------------------------------------------------
   |  COOK   | PULL(60)     RDIP(60)     CALF(500)   | PULL(60)     RDIP(60)     CALF(500)   |
-  |         | CURL(120)    PUSH(120)    SITU(500)   | CURL(120)    PUSH(120)    SITU(500)   |
-  |         | BIKE(120min) BIKE(120min) TUBE(500)   | BIKE(120min) BIKE(120min) TUBE(500)   |
+  |  CLEAN  | CURL(120)    PUSH(120)    SITU(500)   | CURL(120)    PUSH(120)    SITU(500)   |
+  |  LNDRY  | BIKE(120min) BIKE(120min) TUBE(500)   | BIKE(120min) BIKE(120min) TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
   -------------------------------------------------------------------------------------------
   * 13+ mile once+ a week (or 2-hour bike)
