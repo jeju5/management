@@ -2,12 +2,16 @@
   ```
   -------------------------------------------------------------------------------------------
   |  SUN    | MON          TUE          WED         | THU          FRI          SAT         |
+  |         | 'PULLDAY'    'PUSHDAY'    'REPDAY'    | 'PULLDAY'    'PUSHDAY'    'REPDAY'    |
   -------------------------------------------------------------------------------------------
-  |  COOK   | PULL(60)     RDIP(60)     SITU(500)   | PULL(60)     RDIP(60)     SITU(500)   |
+  |  COOK   | BPUL(60)     RDIP(60)     SITU(500)   | BPUL(60)     RDIP(60)     SITU(500)   |
   |  CLEAN  | CURL(120)    PUSH(120)    TUBE(500)   | CURL(120)    PUSH(120)    TUBE(500)   |
-  |  LNDRY  | BIKE(120min) BIKE(120min) NECK(500)   | BIKE(120min) BIKE(120min) NECK(500)   |
+  |  LNDRY  | BIKE(60min)  BIKE(60min)  NECK(500)   | BIKE(60min)  BIKE(60min)  NECK(500)   |
+  |         |                           PLNC(100)   |                           PLNC(100)   |
   -------------------------------------------------------------------------------------------
   * 13+ mile once+ a week (or 2-hour bike)
+  * PLNC: 점프하면서 벽턱플란체 100회
+  
   ```
   
 # DAY
