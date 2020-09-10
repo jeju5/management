@@ -7,11 +7,10 @@
   |  COOK   | BPUL(60)     RDIP(60)     SITU(500)   | BPUL(60)     RDIP(60)     SITU(500)   |
   |  CLEAN  | CURL(120)    PUSH(120)    TUBE(500)   | CURL(120)    PUSH(120)    TUBE(500)   |
   |  LNDRY  | BIKE(60min)  BIKE(60min)  NECK(500)   | BIKE(60min)  BIKE(60min)  NECK(500)   |
-  |         |                           PLNC(100)   |                           PLNC(100)   |
+  |         |                           PLNC(500)   |                           PLNC(500)   |
   -------------------------------------------------------------------------------------------
   * 13+ mile once+ a week (or 2-hour bike)
-  * PLNC: 점프하면서 벽턱플란체 10초 x 100회
-  
+  * PLNC: 점프하면서 벽턱플란체 10초 x 50회
   ```
   
 # DAY
