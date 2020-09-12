@@ -8,9 +8,11 @@
   |  CLEAN  | CURL(120)    PUSH(120)    SITU(500)   | CURL(120)    PUSH(120)    SITU(500)   |
   |  LNDRY  | BIKE(60min)  BIKE(60min)  TUBE(500)   | BIKE(60min)  BIKE(60min)  TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
-  |         |                           PLNC(500)   |                           PLNC(500)   |
   -------------------------------------------------------------------------------------------
   * 13+ mile once+ a week (or 2-hour bike)
+  * CALF: 왼발카프 250 + 오른발카프 250
+  * TUBE:
+  * NECK: 뒤로200, 왼쪽 100, 오른쪽100, 앞으로100
   * PLNC: 점프하면서 벽턱플란체 10초 x 50회
   ```
   
