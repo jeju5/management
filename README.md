@@ -8,6 +8,8 @@
   |  CLEAN  | CURL(120)    PLAN(120)    SITU(500)   | CURL(120)    PLAN(120)    SITU(500)   |
   |  LNDRY  | BIKE(60min)  BIKE(60min)  TUBE(500)   | BIKE(60min)  BIKE(60min)  TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
+  |         |                                       |                                       |
+  |         |                                       |                           LONG(3HR)   |
   -------------------------------------------------------------------------------------------
   * 13+ mile once+ a week (or 2-hour bike)
   * CALF: 왼발카프 250 + 오른발카프 250
