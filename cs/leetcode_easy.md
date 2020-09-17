@@ -2980,3 +2980,24 @@ class Solution {
     }
 }
 ```
+### Contains Duplicate
+```java
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        // Map<number, count>
+        Set<Integer> numSet = new HashSet<>();
+        
+        for (int num : nums) {
+            if ( numSet.contains(num) ) {
+                // num has appeared before
+                return true;
+            } else {
+                // num if first appeared
+                numSet.add(num);
+            }
+        }
+        
+        return false;
+    }
+}
+```
