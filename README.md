@@ -4,8 +4,8 @@
   |  SUN    | MON          TUE          WED         | THU          FRI          SAT         |
   |         | 'PULLDAY'    'PUSHDAY'    'REPDAY'    | 'PULLDAY'    'PUSHDAY'    'REPDAY'    |
   -------------------------------------------------------------------------------------------
-  |  COOK   | BPUL(60)     RDIP(60)     CALF(500)   | BPUL(60)     RDIP(60)     CALF(500)   |
-  |  CLEAN  | CURL(120)    PLAN(120)    SITU(500)   | CURL(120)    PLAN(120)    SITU(500)   |
+  |  COOK   | PLUP(60)     RDIP(60)     CALF(500)   | PLUP(60)     RDIP(60)     CALF(500)   |
+  |  CLEAN  | CNUP(60)     PLAN(120)    SITU(500)   | CNUP(60)     PLAN(120)    SITU(500)   |
   |  LNDRY  | BIKE(60min)  BIKE(60min)  TUBE(500)   | BIKE(60min)  BIKE(60min)  TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
   |         |                                       |                                       |
