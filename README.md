@@ -5,7 +5,7 @@
   |         | 'PULLDAY'    'PUSHDAY'    'REPDAY'    | 'PULLDAY'    'PUSHDAY'    'REPDAY'    |
   -------------------------------------------------------------------------------------------
   |  COOK   | PLUP(60)     RDIP(60)     CALF(500)   | PLUP(60)     RDIP(60)     CALF(500)   |
-  |  CLEAN  | CNUP(60)     PLAN(120)    SITU(500)   | CNUP(60)     PLAN(120)    SITU(500)   |
+  |  CLEAN  | CURL(60)     PLAN(120)    SITU(500)   | CURL(60)     PLAN(120)    SITU(500)   |
   |  LNDRY  | BIKE(60min)  BIKE(60min)  TUBE(500)   | BIKE(60min)  BIKE(60min)  TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
   |         |                                       |                                       |
