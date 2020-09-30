@@ -4,14 +4,14 @@
   |  SUN    | MON          TUE          WED         | THU          FRI          SAT         |
   |         | 'PULLDAY'    'PUSHDAY'    'REPDAY'    | 'PULLDAY'    'PUSHDAY'    'REPDAY'    |
   -------------------------------------------------------------------------------------------
-  |  COOK   | PLUP(60)     RDIP(60)     OCAL(500)   | PLUP(60)     RDIP(60)     OCAL(500)   |
-  |  CLEAN  | CURL(60)     PLAN(120)    SITU(500)   | CURL(60)     PLAN(120)    SITU(500)   |
+  |  COOK   | PLUP(60)     RDIP(60)     SCAL(500)   | PLUP(60)     RDIP(60)     SCAL(500)   |
+  |  CLEAN  | CURL(60)     PLAN(15min)  SITU(500)   | CURL(60)     PLAN(15min)  SITU(500)   |
   |  LNDRY  | BIKE(60min)  BIKE(60min)  TUBE(500)   | BIKE(60min)  BIKE(60min)  TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
   |         |                                       |                                       |
   |         |                                       |                           LONG(3HR)   |
   ------------------------------------------------------------------------------------------
-  * CALF: 왼발카프 250 + 오른발카프 250
+  * OCAL: 왼쪽250, 오른쪽250
   * TUBE: 뒤로200, 왼쪽 150, 오른쪽150
   * NECK: 뒤로200, 왼쪽 100, 오른쪽100, 앞으로100
   * PLAN: 플란체훈련 (벽턱플란체 10초 x 12세트)
