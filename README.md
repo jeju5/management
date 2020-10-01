@@ -32,7 +32,7 @@
   * APPOINTMENT: WEEKDAY 5PM & WEEKEND 12PM
   * WEEKLY PROTEIN PLAN
     - 56g protein (soymilk 64oz)
-    - 45.5g protein (almond 210g = 7grips)
+    - 45g protein (almond 210g = 7grips)
     - 200g protein (egg white 32oz x 2)
     - 72g protein (egg 12 ct)
     - 300g protein (chicken breast 3lbs)
