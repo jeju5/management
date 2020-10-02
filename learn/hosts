@@ -385,13 +385,16 @@
 # 127.0.0.1 s3-sin-ww.cf.dash.row.aiv-cdn.net
 # 127.0.0.1 s3.ll.dash.row.aiv-cdn.net
 
-# 127.0.0.1 yahoo.com
-# 127.0.0.1 www.yahoo.com
-# 127.0.0.1 yahoo.co.jp
-# 127.0.0.1 www.yahoo.co.jp
-# 127.0.0.1 overview.mail.yahoo.com
-# 127.0.0.1 login.yahoo.com
-# 127.0.0.1 mail.yahoo.com
+127.0.0.1 m.yahoo.com
+127.0.0.1 www.m.yahoo.com
+127.0.0.1 www.m.yahoo.co.jp
+127.0.0.1 yahoo.com
+127.0.0.1 www.yahoo.com
+127.0.0.1 yahoo.co.jp
+127.0.0.1 www.yahoo.co.jp
+127.0.0.1 overview.mail.yahoo.com
+127.0.0.1 login.yahoo.com
+127.0.0.1 mail.yahoo.com
 
 # 127.0.0.1 daum.net
 # 127.0.0.1 www.daum.net
@@ -7084,6 +7087,14 @@
 127.0.0.1 www.youcrazyx.com
 127.0.0.1 daftsex.com
 127.0.0.1 www.daftsex.com
+127.0.0.1 pornflip.com
+127.0.0.1 www.pornflip.com
+127.0.0.1 sxyprn.com
+127.0.0.1 www.sxyprn.com
+127.0.0.1 javpeak.com
+127.0.0.1 www.javpeak.com
+127.0.0.1 www.javland.com
+
 
 # unchecky_begin
 # These rules were added by the Unchecky program in order to block advertising software modules
