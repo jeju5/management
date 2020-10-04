@@ -36,6 +36,10 @@
     - 200g protein (egg white 32oz x 2)
     - 72g protein (egg 12 ct)
     - 300g protein (chicken breast 3lbs)
+  * Cooking
+    일요일아침에: 치킨쌀밥 6끼 + SSS BBB
+    수요일저녁에: SS BB
+    금요일저녁에: SS BB
   ```
   
 # YEAR
