@@ -31,12 +31,12 @@
   ------------------------------------------------------------------
   * APPOINTMENT: WEEKDAY 5PM & WEEKEND 12PM
   * WEEKLY PROTEIN PLAN
-    AM
+    <4AM>
     - 56g protein (soymilk 64oz)
     - 45g protein (almond 210g = 7줌)
     - 200g protein (egg white 32oz x 2)
     - 72g protein (egg 12 ct)
-    PN
+    <4PM>
     - 350g protein (chicken breast 3lbs)
   * WEEKLY COOKING PLAN
     일요일아침에: 치킨쌀밥 6끼 + SSSS BBBB
