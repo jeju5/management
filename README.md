@@ -4,8 +4,8 @@
   |  SUN    | MON          TUE          WED         | THU          FRI          SAT         |
   |         | 'PULLDAY'    'PUSHDAY'    'REPDAY'    | 'PULLDAY'    'PUSHDAY'    'REPDAY'    |
   -------------------------------------------------------------------------------------------
-  |  COOK   | PLUP(60)     PLNC(30min)  SCAL(500)   | PLUP(60)     PLNC(30min)  SCAL(500)   |
-  |  CLEAN  | CURL(60)                  SITU(500)   | CURL(60)                  SITU(500)   |
+  |  COOK   | PLUP(60)     PUSH(300)    SCAL(500)   | PLUP(60)     PUUP(300)    SCAL(500)   |
+  |  CLEAN  | CURL(60)     PLNC(15min)  SITU(500)   | CURL(60)     PLNC(15min)  SITU(500)   |
   |  LNDRY  | BIKE(60min)  BIKE(60min)  TUBE(500)   | BIKE(60min)  BIKE(60min)  TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
   |         |                                       |                                       |
