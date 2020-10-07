@@ -16,8 +16,9 @@
   * NECK: 뒤로200, 왼쪽 100, 오른쪽100, 앞으로100
   * PLAN: 플란체훈련 (벽턱플란체 10초 x 12세트)
   
-  maintenance-weight: 67kg
-  performance-weight: 65kg
+  KEEP: 63kg - 64kg
+  - AMA-LIGHT(63.0kg)
+  - PRO-LIGHT(61.2kg)
   ```
   
 # DAY
