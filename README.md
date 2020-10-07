@@ -15,6 +15,9 @@
   * TUBE: 뒤로200, 왼쪽 150, 오른쪽150
   * NECK: 뒤로200, 왼쪽 100, 오른쪽100, 앞으로100
   * PLAN: 플란체훈련 (벽턱플란체 10초 x 12세트)
+  
+  maintenance-weight: 67kg
+  performance-weight: 65kg
   ```
   
 # DAY
