@@ -38,7 +38,7 @@
     <4AM>
     - 56g protein (soymilk 64oz)
     - 45g protein (almond 210g = 7줌)
-    - 200g protein (egg white 32oz x 2)
+    - 200g protein (egg white 32oz x 2) or Protein Shake (Isopure/MuscleMilk)
     - 72g protein (egg 12 ct)
     <4PM>
     - 350g protein (chicken breast 3lbs)
