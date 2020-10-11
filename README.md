@@ -9,7 +9,7 @@
   |  LNDRY  | BIKE(60min)  BIKE(60min)  TUBE(500)   | BIKE(60min)  BIKE(60min)  TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
   |         |                                       |                                       |
-  |         |                                       |                           LONG(3HR)   |
+  |         |                           LONG        |                           LONG        |
   ------------------------------------------------------------------------------------------
   * SCAL: 왼쪽250, 오른쪽250
   * TUBE: 뒤로200, 왼쪽 150, 오른쪽150
@@ -23,6 +23,10 @@
   MAXHR
   * RUN : MAFFETONE_MAX      = 155 (2020)
   * BIKE: MAFFETONE_MAX - 20 = 135
+  
+  65mi/wk -> 423km/4wk
+  * 5+5+22+5+5+23
+  
   ```
   
 # DAY
