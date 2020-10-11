@@ -17,8 +17,12 @@
   * PLAN: 플란체훈련 (벽턱플란체 10초 x 12세트)
   
   KEEP: 63kg - 64kg
-  - AMA-LIGHT(63.0kg)
-  - PRO-LIGHT(61.2kg)
+  * AMA-LIGHT(63.0kg)
+  * PRO-LIGHT(61.2kg)
+  
+  MAXHR
+  * RUN : MAFFETONE_MAX      = 155 (2020)
+  * BIKE: MAFFETONE_MAX - 20 = 135
   ```
   
 # DAY
