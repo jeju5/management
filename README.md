@@ -4,12 +4,12 @@
   |  SUN    | MON          TUE          WED         | THU          FRI          SAT         |
   |         | 'PULLDAY'    'PUSHDAY'    'REPDAY'    | 'PULLDAY'    'PUSHDAY'    'REPDAY'    |
   -------------------------------------------------------------------------------------------
-  |  COOK   | PLUP(60)     RDIP(60)     SCAL(500)   | PLUP(60)     PLNC(30min)  SCAL(500)   |
-  |  CLEAN  | CURL(60)     PUSH(60)     SITU(500)   | CURL(60)                  SITU(500)   |
-  |  LNDRY  | BIKE(60min)  BIKE(60min)  TUBE(500)   | BIKE(60min)  BIKE(60min)  TUBE(500)   |
+  |  COOK   | PULL(60)     RDIP(60)     OCAL(500)   | BIKE(2.0HR)  PULL(30)     OCAL(500)   |
+  |  CLEAN  | CURL(60)     PUSH(60)     SITU(500)   |              RDIP(30)     SITU(500)   |
+  |  LNDRY  | BIKE(60min)  BIKE(60min)  TUBE(500)   |              BIKE(1.5HR)  TUBE(500)   |
   |         |                           NECK(500)   |                           NECK(500)   |
   |         |                                       |                                       |
-  |         |                           LSD(2HR)    |                           LSD(3HR)    |
+  |         |                                       |                           LSD(3HR)    |
   -------------------------------------------------------------------------------------------
   * SCAL: 왼쪽250, 오른쪽250
   * TUBE: 뒤로200, 왼쪽 150, 오른쪽150
