@@ -45,6 +45,15 @@
   * WEEKLY COOKING PLAN
     일요일아침에: 치킨쌀밥 6끼 + SSSS BBBB
     목요일저녁에: SSS BBB
+  * WEEKLY GROCERYA
+    - 냉동블루베리
+    - 프로틴쉐이크
+    - 우유/두유
+    - 아몬드
+    - 자스민라이스
+    - 양파
+    - Minced Garlic
+    - 닭가슴살 3lbs
   ```
   
 # YEAR
