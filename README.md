@@ -34,6 +34,7 @@
   0500 0800 |  자유 3.0 | 
   ------------------------------------------------------------
   * APPOINTMENT: WEEKDAY 5PM & WEEKEND 12PM
+
   * WEEKLY PROTEIN PLAN
     <4AM>
     - 56g protein (soymilk 64oz)
@@ -42,10 +43,12 @@
     - 72g protein (egg 12 ct)
     <4PM>
     - 350g protein (chicken breast 3lbs)
+
   * WEEKLY COOKING PLAN
     일요일아침에: 치킨쌀밥 6끼 + SSSS BBBB
     목요일저녁에: SSS BBB
-  * WEEKLY GROCERYA
+    
+  * WEEKLY GROCERY
     - 냉동블루베리
     - 프로틴쉐이크
     - 우유/두유
