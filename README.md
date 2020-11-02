@@ -5,9 +5,8 @@
   | REST | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    |
   ------------------------------------------------------------------------------------------
   |      | PULL(60)     RDIP(60)     CARDIO(2HR)  | PULL(60)     RDIP(60)     CARDIO(3HR)  |
-  |      | CURL(60)     PUSH(60)                  | CURL(60)     PUSH(60)                  |
-  |      | BIKE(1HR)    BIKE(1HR)    OCAL(500)    | BIKE(1HR)    BIKE(1HR)    OCAL(500)    |
-  |      |                           SITU(500)    |                           SITU(500)    |
+  |      | CURL(60)     PUSH(60)     OCAL(500)    | CURL(60)     PUSH(60)     OCAL(500)    |
+  |      | BIKE(1HR)    BIKE(1HR)    SITU(500)    | BIKE(1HR)    BIKE(1HR)    SITU(500)    |
   |      |                           TUBE(500)    |                           TUBE(500)    |
   |      |                           NECK(500)    |                           NECK(500)    |
   ------------------------------------------------------------------------------------------
