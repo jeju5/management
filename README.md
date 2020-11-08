@@ -5,12 +5,14 @@
   | REST | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    |
   ------------------------------------------------------------------------------------------
   |      | PULL(60)     RDIP(60)     CARDIO(2HR)  | PULL(60)     RDIP(60)     CARDIO(3HR)  |
-  |      | CURL(60)     PUSH(60)     OCAL(500)    | CURL(60)     PUSH(60)     OCAL(500)    |
-  |      | BIKE(1HR)    BIKE(1HR)    SITU(500)    | BIKE(1HR)    BIKE(1HR)    SITU(500)    |
-  |      |                           TUBE(500)    |                           TUBE(500)    |
-  |      |                           NECK(500)    |                           NECK(500)    |
+  |      | CURL(60)     PUSH(60)                  | CURL(60)     PUSH(60)                  |
+  |      | BIKE(1HR)    BIKE(1HR)                 | BIKE(1HR)    BIKE(1HR)                 |
+  |      |                                        |                                        |
+  |      | 500S                      500S         |              500S                      |
   ------------------------------------------------------------------------------------------
 
+  500S: OCAL, SITU, TUBE, NECK
+  
   KEEP under 64.0kg
   * AMA-LIGHT(63.0kg)
   * PRO-LIGHT(61.2kg)
