@@ -118,7 +118,7 @@ DEC: Leet(solved 250)
 2. CHECKING    : maintain $2000
 3. HIGH SAVING : maintain $20000
 4. SAP SE      : 10%
-5. 401K        : 6%
-6. IRA         : VOO BRKb '산것은 팔지않는다'
+5. 401K ROTH   : 6%
+6. IRA ROTH    : VOO or BRKb '산것은 팔지않는다'
 7. Stock       : '산것은 3년은 가지고 있는다'
 ```
