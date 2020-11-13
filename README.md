@@ -114,25 +114,11 @@ DEC: Leet(solved 250)
  
 # MONEY
 ``` 
-1. CREDIT      : pay credit card
-2. CHECKING    : satisfy $2000 (us bank)
-3. SAVING      : satisfy $2000 (us bank)
-4. HIGH SAVING : deposit $2000 (marcus)
-              
-<OTHERS>
-  - OUT: Auto Insurance
-  - OUT: Auto Maintenance  
-  - OUT: Renters Insurance
-  - IN : SAP Stock
-  - IN : 401K
-  - IN : HSA
-
-
-<Overview>
-1. 1만불 (체킹 2000 + 세이빙2000 + 하이세이빙6000)
-   * 3월 캐쉬보너스와 택스리턴으로 1만불 채우기
-   * 부모님께 1만불은 연말까지 하는 것을 목표로 하자
-2. 주식 (SAP주식)
-3. 인덱스펀드 (1초과 금액은 모두 인덱스펀드)
-4. 401K (매칭까지)
+1. CREDIT
+2. CHECKING    : maintain $2000
+3. HIGH SAVING : maintain $20000
+4. SAP SE      : 10%
+5. 401K        : 6%
+6. IRA         : VOO BRKb '산것은 팔지않는다'
+7. Stock       : '산것은 3년은 가지고 있는다'
 ```
