@@ -5,8 +5,8 @@
   | REST | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    |
   ------------------------------------------------------------------------------------------
   |      | PULL(60)     RDIP(60)     CARDIO(2HR)  | PULL(60)     RDIP(60)     CARDIO(3HR)  |
-  |      | CURL(60)     PUSH(60)                  | CURL(60)     PUSH(60)                  |
-  | 500S | BIKE(1HR)    BIKE(1HR)                 | BIKE(1HR)    BIKE(1HR)                 |
+  |      | CURL(60)     PUSH(60)     500S         | CURL(60)     PUSH(60)     500S         |
+  |      | BIKE(1HR)    BIKE(1HR)                 | BIKE(1HR)    BIKE(1HR)                 |
   |      |                                        |                                        |
   |      |                                        |                                        |
   ------------------------------------------------------------------------------------------
@@ -37,19 +37,9 @@
   0900 0500 |  일과 8.0 | 4PM 블루콜리, 치킨쌀밥
   0500 0800 |  자유 3.0 | 
   -------------------------------------------------------------
-  * APPOINTMENT: WEEKDAY 5PM & WEEKEND 12PM
-
-  * WEEKLY PROTEIN PLAN
-    <4AM>
-    - 56g protein (soymilk 64oz)
-    - 45g protein (almond 210g = 7줌)
-    - 200g protein (egg white 32oz x 2) or Protein Shake (Isopure/MuscleMilk)
-    - 72g protein (egg 12 ct)
-    <4PM>
-    - 350g protein (chicken breast 3lbs)
-
-  * WEEKLY COOKING PLAN
+  * WEEKLY COOKING
     일요일아침에: 치킨쌀밥 6끼 + SSSS BBBB
+    - 치킨쌀밥 6끼 = 쌀(5컵), 고기(3파운드), 양파(1개), 버터
     목요일저녁에: SSS BBB
     
   * WEEKLY GROCERY
@@ -62,7 +52,7 @@
     - Minced Garlic
     - 닭가슴살 3lbs
     
-  * 치킨쌀밥: 쌀(5컵), 고기(3파운드), 양파(1개), 버터
+  
   ```
   
 # YEAR
