@@ -3001,3 +3001,34 @@ class Solution {
     }
 }
 ```
+### Contains Duplicate II
+```
+class Solution {
+    
+    // HashMap approach
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+        // vcMap = <value, index>
+        HashMap<Integer, Integer> vcMap = new HashMap<>();
+        Integer storedIndex = null;
+        
+        for (int i=0; i<nums.length; i++) {
+            storedIndex = vcMap.get(nums[i]);
+            
+            if (storedIndex != null) {
+                // value was stored
+                if ( -k <= (storedIndex-i) || k <= (storedIndex-i) ) {
+                    // duplicate value exists with in 'k to the left' -> true
+                    return true;
+                } else {
+                    // duplicate value doesn't exist within 'k to the left' -> update
+                    vcMap.put(nums[i], i);
+                }
+            } else {
+                // value was not stored -> store it
+                vcMap.put(nums[i], i);
+            }
+        }
+        return false;
+    }
+}
+```
