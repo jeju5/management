@@ -2881,16 +2881,17 @@ class Solution {
         }
         
         int primeCount = 0;
-        boolean[] notPrime = new boolean[n];
+        boolean[] notPrime = new boolean[n]; // assume 1 ~ 'n-1' as primes
 
         for (int i = 2; i < n; i++) {
             
             if (!notPrime[i]) {
-                // i is a prime. first case will be 'i == 2'.
+                // i is a prime. First case will be 'i == 2' -> second case will be 'i == 3'
+		// this is a safe assumption because prime is defined as a number that is not divisible by any '1 < natural number < itself'.
                 primeCount++;
                 
                 for (int j = 2; i*j < n; j++) {
-                    // mark all multiples of prime(i) as notPrime.
+                    // mark all multiples of prime(i) as notPrime, not including the prime value.
                     notPrime[i*j] = true;
                 }
             }
