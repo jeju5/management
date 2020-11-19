@@ -3033,3 +3033,62 @@ class Solution {
     }
 }
 ```
+### Implement Stack using Queues
+```java
+class MyStack {
+    // Queue in java is an interface. LinkedList is one implementation of Queue.
+    Queue<Integer> mainQueue = new LinkedList<Integer>();
+    Queue<Integer> sideQueue = new LinkedList<Integer>();
+    int size = 0;
+    
+
+    /** Initialize your data structure here. */
+    public MyStack() {   
+    }
+    
+    /** Push element x onto stack. */
+    public void push(int x) {
+        mainQueue.add(x);
+        size++;
+    }
+    
+    /** Removes the element on top of the stack and returns that element. */
+    public int pop() {
+        int popVal = 0;
+        for (int i=0; i<size-1; i++) {
+            // transfer all except last value.
+            sideQueue.add(mainQueue.poll());
+        }
+        popVal = mainQueue.poll();
+        mainQueue = sideQueue;
+        sideQueue = new LinkedList<Integer>();
+        size--;
+        return popVal;
+    }
+    
+    /** Get the top element. */
+    public int top() {
+        int topVal = 0;
+        for (int i=0; i<size; i++) {
+            // transfer all
+            int polled = mainQueue.poll();
+            if (i == size-1) {
+                // record 'last-in'
+                topVal = polled;
+            }
+            sideQueue.add(polled);
+        }
+        mainQueue = sideQueue;
+        sideQueue = new LinkedList<Integer>();
+        return topVal;
+    }
+    
+    /** Returns whether the stack is empty. */
+    public boolean empty() {
+        if (size < 1) {
+            return true;
+        }
+        return false;
+    }
+}
+```
