@@ -3002,7 +3002,7 @@ class Solution {
 }
 ```
 ### Contains Duplicate II
-```
+```java
 class Solution {
     
     // HashMap approach
