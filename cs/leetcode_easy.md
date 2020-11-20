@@ -3092,3 +3092,46 @@ class MyStack {
     }
 }
 ```
+### Invert Binary Tree
+```java
+class Solution {
+    // recursive
+    public TreeNode invertTreeR(TreeNode root) {
+        if (root != null) {
+            TreeNode temp = root.left;
+            root.left = root.right;
+            root.right = temp;
+            invertTree(root.left);
+            invertTree(root.right);
+        }
+        
+        return root;
+    }
+    
+    // iterative
+    // how to iterate a recursion? use Queue.
+    public TreeNode invertTree(TreeNode root) {
+        Queue<TreeNode> iterationQueue = new LinkedList<>();
+        if (root != null) {
+            iterationQueue.add(root);
+        }
+        
+        while ( !iterationQueue.isEmpty() ) {
+            TreeNode curr = iterationQueue.poll();
+            TreeNode temp = curr.left;
+            curr.left = curr.right;
+            curr.right = temp;
+            
+            if (curr.left != null) {
+                iterationQueue.add(curr.left);
+            }
+            if (curr.right != null) {
+                iterationQueue.add(curr.right);
+            }
+            
+        }
+        
+        return root;
+    }
+}
+```
