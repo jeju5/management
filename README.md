@@ -45,9 +45,9 @@
   * WEEKLY GROCERY
     - 냉동블루베리
     - 프로틴쉐이크
-    - 우유/두유
+    - 우유
     - 아몬드
-    - 자스민라이스
+    - 쌀 (Kokuho, Cubs)
     - 양파
     - Minced Garlic
     - 닭가슴살 3lbs
