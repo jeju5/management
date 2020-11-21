@@ -59,9 +59,7 @@
     - 175g (Isopure 7scoop)
     - 80g (greek yogurt 32oz)
     - 64g (milk 64oz)
-    - 45g (almond 210g = 7줌)
-
-    
+    - 45g (almond 210g = 7줌)    
     <4PM>
     - 350g (chicken breast 3lbs)
     -  72g (egg 1dozen)
