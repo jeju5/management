@@ -118,5 +118,5 @@ DEC: Leet(solved 250)
 4. SAP SE      : 10%
 5. 401K ROTH   : 6% (S&P 500)
 6. IRA ROTH    : VOO/BRKb '산것은 팔지않는다'
-7. Stock       : VOO 80%, 개별종목 20% '산것은 3년은 가지고 있는다'
+7. Stock       : VOO 80%, 개별종목 20% (BRKb, MSFT, UBER) '산것은 3년은 가지고 있는다'
 ```
