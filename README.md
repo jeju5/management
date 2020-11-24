@@ -117,8 +117,8 @@ DEC: Leet(solved 250)
 3. HIGH SAVING : maintain $12000
 4. SAP SE      : 10%
 5. 401K ROTH   : 6% (S&P 500)
-6. IRA ROTH    : VOO 80%, BRKb 20% '산것은 팔지않는다'
-7. Stock       : ETF 80%, 개별주 20% '산것은 3년은 가지고 있는다'
+6. IRA ROTH    : VOO 75%, BRKb 25% '산것은 팔지않는다'
+7. Stock       : ETF 75%, 개별주 25% '산것은 3년은 가지고 있는다'
 
 % 비율은 넣는기준.
 ```
