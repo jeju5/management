@@ -5,7 +5,7 @@
   | REST | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    |
   ------------------------------------------------------------------------------------------
   |      | PULL(60)     RDIP(60)     CARDIO(2HR)  | PULL(60)     RDIP(60)     CARDIO(3HR)  |
-  |      | CURL(60)     PUSH(60)     500S         | CURL(60)     PUSH(60)     500S         |
+  |      | CURL(60)     PUSH(60)                  | CURL(60)     PUSH(60)                  |
   |      | BIKE(1HR)    BIKE(1HR)                 | BIKE(1HR)    BIKE(1HR)                 |
   |      |                                        |                                        |
   |      |                                        |                                        |
@@ -13,16 +13,18 @@
   * 500S: OCAL, SITU, TUBE, NECK
   * 치팅으로 강도를 낮추더라도 휴식을 짧게 간다.
   
-  KEEP under 64.0kg
+  KEEP 65.0kg
   * AMA-LIGHT(63.0kg)
   * PRO-LIGHT(61.2kg)
   * 식단조절은 그냥 규칙적으로 먹는거다. 여기서 더 줄이지 마라. 보상심리때문에 더 먹더라. 백퍼실패.
+  * 다이어트기간은 유산소만 2시간으로 하자.
   
   MAXHR
   * RUN : MAFFETONE_MAX      = 155 (2020)
   * BIKE: MAFFETONE_MAX - 20 = 135
   
-  65mi/wk -> 423km/4wk
+  DISTANCE
+  * 65mi/wk -> 423km/4wk
   * 5+5+22+5+5+23
   ```
   
@@ -35,12 +37,12 @@
   0700 0900 |  공부 2.0 | 독서/코딩/영어
   --------------------------------------------------------------
   0900 0500 |  일과 8.0 | 4PM 블루콜리, 치킨쌀밥, 계란후라이
-  0500 0800 |  자유 3.0 | 
+  0500 0700 |  자유 2.0 | 
   --------------------------------------------------------------
   * WEEKLY COOKING
-    일요일아침에: 치킨쌀밥 6끼 + SSSS BBBB
+    일요일 아침에: 치킨쌀밥 6끼 + SSSS BBBB
     - 치킨쌀밥 6끼 = 쌀(5컵), 고기(3파운드), 양파(1개), 버터
-    목요일저녁에: SSS BBB
+    목요일 저녁에: SSS BBB
     
   * WEEKLY GROCERY
     - 냉동블루베리
@@ -53,16 +55,15 @@
     - 닭가슴살 3lbs
     
   * WEEKLY PROTEIN PLAN
-    <Target>
-    - 100g per day. 700g per week
+    * 100g/day (700g/week)
     <4AM>
-    - 175g (Isopure 7scoop)
-    - 80g (greek yogurt 32oz)
-    - 64g (milk 64oz)
-    - 45g (almond 210g = 7줌)    
+      - 175g (Isopure 7scoop)
+      - 80g (greek yogurt 32oz)
+      - 64g (milk 64oz x 2)
+      - 45g (almond 210g = 7줌)    
     <4PM>
-    - 350g (chicken breast 3lbs)
-    -  72g (egg 1dozen)
+      - 350g (chicken breast 3lbs)
+      -  72g (egg 1dozen)
   ```
   
 # YEAR
