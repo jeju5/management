@@ -118,8 +118,13 @@ DEC: Leet(solved 250)
 3. HIGH SAVING : maintain $12000
 4. SAP SE      : 10%
 5. 401K ROTH   : 6% (S&P 500)
-6. IRA ROTH    : QQQ 70%, BRKb 15%, 개별주 15% '산것은 팔지않는다'
+6. IRA ROTH    : QQQ 70%, BRKb 15%, 개별주 15%
 7. Stock       : QQQ 70%, 개별주 30% '산것은 3년은 가지고 있는다'
 
 % 비율은 넣는기준.
+
+* 마켓살피기
+  - NASDAQ Log Chart
+  - Buffett Indicator
+  - Fear & Greed
 ```
