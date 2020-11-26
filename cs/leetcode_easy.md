@@ -3166,4 +3166,34 @@ class Solution {
         return result;
     }
 }
+
+// Solution with sliding window: Sliding window is useful when tracking start&end within an array.
+class Solution {
+    public List<String> summaryRanges(int[] nums) {
+        List<String> result = new LinkedList<>();
+        
+        int start = 0; // start of range
+        int end = 0;   // end of range
+        
+        while (start < nums.length) {
+            String chunk = Integer.toString(nums[start]);
+            
+            while ( end < nums.length-1 && nums[end]+1 == nums[end+1] ) {
+                // end is not the end of the array and the next number is +1
+                end++;
+            }
+            
+            if (start < end) {
+                // append if in range
+                chunk += "->" + Integer.toString(nums[end]);
+            }
+            
+            result.add(chunk);
+            end++;
+            start = end;
+        }
+
+        return result;
+    }
+}
 ```
