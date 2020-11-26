@@ -119,11 +119,12 @@ DEC: Leet(solved 250)
 4. SAP SE      : 10%
 5. 401K ROTH   : 6% (S&P 500)
 6. IRA ROTH    : QQQ 70%, BRKb 15%, 개별주 15%
-7. Stock       : QQQ 70%, 개별주 30% '산것은 3년은 가지고 있는다'
+7. GENERAL     : QQQ 70%, 개별주 30% '산것은 1년은 가지고 있는다.'
 
 * Principles
   * % 비율은 넣는기준.
   * 인덱스 펀드는 Fear and Greed 지수가 60밑일때 들어간다.
+  * GENERAL 인덱스 펀드(VOO & QQQ)는 털고 나오기 금지. 필요할때 조금씩 팔아서 쓰는것 만.
 
 * 마켓살피기
   - NASDAQ Log Chart
