@@ -3142,7 +3142,6 @@ class Solution {
         List<String> result = new LinkedList<>();
         String current = "";
         
-        
         for (int i=0; i<nums.length; i++) {
             if (current.equals("")) {
                 // start the current
