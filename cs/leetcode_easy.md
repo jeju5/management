@@ -3135,3 +3135,35 @@ class Solution {
     }
 }
 ```
+### Summary Ranges
+```java
+class Solution {
+    public List<String> summaryRanges(int[] nums) {
+        List<String> result = new LinkedList<>();
+        String current = "";
+        
+        
+        for (int i=0; i<nums.length; i++) {
+            if (current.equals("")) {
+                // start the current
+                current = Integer.toString(nums[i]);
+            }
+            
+            if (i == nums.length-1 || nums[i]+1 != nums[i+1]) {
+                // 'last number' or 'range end' -> 'end the current'
+                if (current.contains("->")) {
+                    result.add(current + Integer.toString(nums[i]));
+                } else {
+                    result.add(current);
+                }
+                current = "";
+            } else if (!current.contains("->")) {
+                // 'range in progress and just started'
+                current += "->";
+            }
+        }
+
+        return result;
+    }
+}
+```
