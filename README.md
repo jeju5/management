@@ -40,17 +40,16 @@
   0500 0700 |  자유 2.0 | 
   --------------------------------------------------------------
   * WEEKLY COOKING
-    토요일 저녁: R6 B4
     수요일 저녁: B3
-    
-
-    - 치킨쌀밥 6끼 = 쌀(4컵), 고기(3파운드), 양파(1개), 버터
+    토요일 저녁: B4 R6
+    - 치킨쌀밥 6끼 = 쌀(5컵), 고기(3파운드), 양파(1개), 버터
     
     
   * WEEKLY GROCERY
     - 냉동블루베리
     - 프로틴쉐이크
-    - 우유
+    - 락토스프리 우유 64oz
+    - 그릭요거트 32oz
     - 아몬드
     - 쌀 (Kokuho, Cubs)
     - 양파
@@ -60,9 +59,8 @@
   * WEEKLY PROTEIN PLAN
     * 100g/day (700g/week)
     <4AM>
-      - 175g (Isopure 7scoop)
-      - 80g (greek yogurt 32oz)
-      - 64g (milk 64oz x 2)
+      - 128g (milk 64oz x 2)
+      - 80g (yogurt 32oz)
       - 45g (almond 210g = 7줌)    
     <4PM>
       - 350g (chicken breast 3lbs)
