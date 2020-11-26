@@ -3150,7 +3150,7 @@ class Solution {
             }
             
             if (i == nums.length-1 || nums[i]+1 != nums[i+1]) {
-                // 'last number' or 'range end' -> 'end the current'
+                // 'arrany end' or 'range end' -> 'end the current'
                 if (current.contains("->")) {
                     result.add(current + Integer.toString(nums[i]));
                 } else {
@@ -3158,7 +3158,7 @@ class Solution {
                 }
                 current = "";
             } else if (!current.contains("->")) {
-                // 'range in progress and just started'
+                // 'range is just started
                 current += "->";
             }
         }
