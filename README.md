@@ -147,4 +147,13 @@ DEC: Leet(solved 250)
   
 * 주식에 대한 십일조
   - 1월에 전년도 세금정산할때 '원수익 + 원손실 - 세금'을 계산하여 그것에 대한 십일조를 헌금한다.
+  
+  
+* Terms
+  * Revenue: Net Sales (매출)
+  * GrossProfit: Revenue - CostOfGoodsSold(COGS) (매출총이익)
+  * OperatingIncome: GrossProfit - 'OperatingExpenses' (영업이익)
+  * Net Income: OperatingIncome - 'AllOtherExpenses' = Net Income = Earning (당기순이익)
+  * PER
+    * Price/Earning = 주식가격/이익
 ```
