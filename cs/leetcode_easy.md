@@ -166,7 +166,7 @@ public class Solution {
    riMap.put("I",1);        
 
 3. substring method
-   string.subString(start, end) returns string from start to end-1
+   string.subString(start, end) returns string from start to 1
 
 4. charAt method
    string.charAt(1);
@@ -536,7 +536,7 @@ class Solution {
 1. distance between start,end
     = j-i (becuase "start + distance = end")
    
-2. distance to the mid from start
+2. distance to the mid from start (end- start is the all node counts excluding 1(start)
     = (end-start)/2
 
     ex) [i,*,_,j]    even elements
