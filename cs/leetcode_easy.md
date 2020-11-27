@@ -3250,3 +3250,9 @@ class MyQueue {
  
  */
 ```
+### Palindrome Linked List
+```java
+* how to find the center of LinkedList?
+  * use slow & fast pointer race where slow advances 1 at a time and fast advances 2 at a time.
+
+```
