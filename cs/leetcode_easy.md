@@ -3268,7 +3268,7 @@ class Solution {
     Iterative Solution
     */
     public boolean isPalindrome(ListNode head) {
-        if (head == null) {
+        if (head == null || head.next == null) {
             return true;
         }
         
