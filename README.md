@@ -4,7 +4,7 @@
   | SUN  | MON          TUE          WED          | THU          FRI          SAT          |
   | REST | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    |
   ------------------------------------------------------------------------------------------
-  |      | PULL(60)     RDIP(60)     CARDIO(2HR)  | PULL(60)     RDIP(60)     CARDIO(3HR)  |
+  |      | PULL(60)     RDIP(60)     CARDIO(2HR)  | PULL(60)     RDIP(60)     CARDIO(2+HR) |
   |      | CURL(60)     PUSH(60)                  | CURL(60)     PUSH(60)                  |
   |      | BIKE(1HR)    BIKE(1HR)                 | BIKE(1HR)    BIKE(1HR)                 |
   |      |                                        |                                        |
