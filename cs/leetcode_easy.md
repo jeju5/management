@@ -3196,3 +3196,26 @@ class Solution {
     }
 }
 ```
+### Power of Two
+```java
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        int curr = n;
+        
+        if (curr < 1) {
+            // zero and negative numbers are not power of two.
+            return false;
+        }
+        
+        while (1 < curr) {
+            if (curr % 2 != 0) {
+                // found an odd divisor.
+                return false;
+            }
+            curr = curr / 2;
+        }
+        
+        return true;
+    }
+}
+```
