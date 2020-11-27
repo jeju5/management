@@ -3252,7 +3252,101 @@ class MyQueue {
 ```
 ### Palindrome Linked List
 ```java
-* how to find the center of LinkedList?
-  * use slow & fast pointer race where slow advances 1 at a time and fast advances 2 at a time.
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    
+    /*
+    Iterative Solution
+    */
+    public boolean isPalindrome(ListNode head) {
+        if (head == null) {
+            return true;
+        }
+        
+        ListNode one = head;
+        ListNode two = head;
+        ListNode temp;
+        
+        // find the Linked-List mid.
+        // in the end: 'one' is the righter-mid
+        while (two != null && two.next != null) {
+            one = one.next;
+            two = two.next.next;
+        }
+        
+        // swap the second half
+        // in the end 'one' is the head of reversed second half (=or original tail)
+        two = one.next;
+        one.next = null;
+        while (two != null) {
+            temp = two.next;
+            two.next = one;
+            one = two;
+            two = temp;
+        }
+        two = one;
+        one = head;
+        
+        // start comparision
+        while (two != null) {
+            if (one.val != two.val) {
+                return false;
+            }
+                
+            one = one.next;
+            two = two.next;
+        }
+    
+        return true;
+    }
+    
+    
+    /*
+    Recursive Solution
+    
+        ----------- is matching? ----------
+        |                                 |
+        |                                 |
+    [partner] [_] [_] [_] ... [_] [_] [current]
+    */
+    
+    private ListNode partner = null;
+    private boolean isDecided = false; // (optional: to make early decision)
 
+    private boolean isMatchingItsPartner(ListNode current) {
+        if (current == null) {
+            // base: end of listNode
+            return true;
+        } else if (!isMatchingItsPartner(current.next)) {
+            // step: next is not matching
+            return false;
+        } else if (isDecided || current == partner || current.next == partner) {
+            // base (optional: to make early decision)
+            isDecided = true;
+            return true;
+        } else {
+            // base: next is matching and current is matching 
+            int partnerVal = partner.val;
+            partner = partner.next;
+            return current.val == partnerVal;
+        } 
+    }
+
+    public boolean isPalindromeR(ListNode head) {
+        this.partner = head;
+        return isMatchingItsPartner(head);
+    }
+}
 ```
+
+
+
