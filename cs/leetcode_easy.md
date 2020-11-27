@@ -3395,3 +3395,116 @@ class Solution {
     }
 }
 ```
+### Valid Anagram
+```java
+class Solution {
+    
+    /*
+    sorting approach
+    
+    how to sort []?
+    => java internal types are [] not class type. use box type in this case. ([] -> Arrays)
+    => int[] ary
+       Arrays.sort(ary);
+    */
+    public boolean isAnagramS(String s, String t) {
+        // length() in Java String is O(1) operation. (cheap)
+        // it is stored as a field.
+        if (s.length() != t.length()) {
+            return false;
+        }
+        
+        char[] sChars = s.toCharArray();
+        char[] tChars = t.toCharArray();
+        
+        Arrays.sort(sChars);
+        Arrays.sort(tChars);
+        
+        for (int i=0; i<s.length(); i++) {
+            if (sChars[i] != tChars[i]) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+    
+    /*
+    light hash approach
+    When input is assumed and limited.
+    You can create hash-table with array.
+    
+    TIP: chars & ints
+    - char <-> int conversion looks like in java? It almost acts as 'Boxing'.
+    - order is 'digit'->'special'->'large alphabet'->'small alphabet'
+    int zero = '0';   // 48
+    int nine = '9';   // 57
+                      // 58 ~ 64 special characters
+    int largeA = 'A'; // 65
+    int smallA = 'a'; // 97
+    */
+    public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+        
+        int[] sHash = new int[26];
+        int[] tHash = new int[26];
+        char[] sChars = s.toCharArray();
+        char[] tChars = t.toCharArray();
+        
+        for (int i=0; i<sChars.length; i++) {
+            sHash[sChars[i]-'a']++;
+            tHash[tChars[i]-'a']++;
+        }
+        for (int i=0; i<26; i++) {
+            if (sHash[i] != tHash[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    
+    /*
+    real hash approach
+    
+    Tip: Unboxing null in java throws NullPointerException
+    ex) int unboxed = new Integer(null);
+    */ 
+    public boolean isAnagramH(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+        // Tip: char's boxtype is Character (not Char. Boxtype is full-named in java)
+        HashMap<Character, Integer> sHash = new HashMap<Character, Integer>();
+        
+        for (char sc : s.toCharArray()) {
+            Integer sVal = sHash.get(sc);
+            
+            if (sVal == null) {
+                sHash.put(sc, 1);   
+            } else {
+                sHash.put(sc, sVal+1);
+            }
+        }
+        
+        for (char tc : t.toCharArray()) {
+            Integer sVal = sHash.get(tc);
+            
+            if (sVal == null) {
+                // case1: not exist in sHash
+                return false;
+            } else if (1 < sVal) {
+                // case2: 2+ occurence left in sHash
+                sHash.put(tc, sVal-1);
+            } else {
+                // case3: 1 occurences left in sHash
+                sHash.remove(tc);
+            }
+        }
+        
+        return sHash.isEmpty();
+    }
+}
+```
