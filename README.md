@@ -156,4 +156,7 @@ DEC: Leet(solved 250)
   * Net Income: OperatingIncome - 'AllOtherExpenses' = Net Income = Earning (당기순이익)
   * PER
     * Price/Earning = 주식가격/이익
+    * "버는거에 대한 주식가격" "PER이 높다 = 버는거에 대해서 주식가격이 높다"
+    
+   
 ```
