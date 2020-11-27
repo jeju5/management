@@ -3347,6 +3347,34 @@ class Solution {
     }
 }
 ```
+### Lowest Common Ancestor of a Binary Search Tree
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
 
-
-
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        int small = (p.val < q.val) ? p.val : q.val;
+        int large = (p.val < q.val) ? q.val : p.val;
+        
+        if (large < root.val) {
+            // step: probe left
+            return lowestCommonAncestor(root.left, p, q);
+        } else if (root.val < small) {
+            // step: probe right
+            return lowestCommonAncestor(root.right, p, q);
+        }
+        
+        // base (else-block)
+        // small <= root.val && root.val <= large
+        return root;
+    }
+}
+```
