@@ -3198,24 +3198,55 @@ class Solution {
 ```
 ### Power of Two
 ```java
-class Solution {
-    public boolean isPowerOfTwo(int n) {
-        int curr = n;
-        
-        if (curr < 1) {
-            // zero and negative numbers are not power of two.
-            return false;
+class MyQueue {
+    private Stack<Integer> mainStack = new Stack<>();
+    private Stack<Integer> sideStack = new Stack<>();
+    
+
+    /** Initialize your data structure here. */
+    public MyQueue() {
+    }
+    
+    /** Push element x to the back of queue. */
+    public void push(int x) {
+        while (!mainStack.empty()) {
+            sideStack.push(mainStack.pop());
         }
+        sideStack.push(x);
         
-        while (1 < curr) {
-            if (curr % 2 != 0) {
-                // found an odd divisor.
-                return false;
-            }
-            curr = curr / 2;
+        while (!sideStack.empty()) {
+            mainStack.push(sideStack.pop());
         }
-        
-        return true;
+    }
+    
+    /** Removes the element from in front of queue and returns that element. */
+    public int pop() {
+        return mainStack.pop();
+    }
+    
+    /** Get the front element. */
+    public int peek() {
+        return mainStack.peek();
+    }
+    
+    /** Returns whether the queue is empty. */
+    public boolean empty() {
+        return mainStack.empty();
     }
 }
+
+/**
+ * Java Stack and Queue
+ 
+ Java Stack
+ - Stack is a class.
+ - Stack<Integer> s = new Stack<>();
+ - methods: push(_), pop(), peek(), isEmpty()
+ 
+ Java Queue
+ - Queue is an interface.
+ - Queue<Integer) q = new LinkedList<>();
+ - methods: add(_), poll(), peek(), isEmpty()
+ 
+ */
 ```
