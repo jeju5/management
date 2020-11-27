@@ -3378,7 +3378,7 @@ class Solution {
     }
 }
 ```
-### 237. Delete Node in a Linked List
+### Delete Node in a Linked List
 ```java
 /**
  * Definition for singly-linked list.
