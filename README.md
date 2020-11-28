@@ -171,15 +171,21 @@ DEC: Leet(solved 250)
     * Cost Of Goods Sold (매출원가)
   * OPEX
     * Operating Expense  (영업비용)
-  * PER
-    * Price/Earning = 주식가격/이익
-    * "버는거에 대한 주식가격" "PER이 높다 = 버는거에 대해서 주식가격이 높다 = 주가가 고평가다"
+
   * Depreciation
     = 감가 (=가치하락)
   * Amortization
     = 상각 (=가치상승)
   * Depreciation and Amortizatoin Expense
     = 감가상각비용
+ 
+  * EPS
+    * Earning per Share = 주당순이익
+    * 한 주가 벌어들이는 금액
+  * 
+  * PER
+    * Price Earning Ratio = Price/Earning= 주식가격/이익
+    * "버는거에 대한 주식가격" "PER이 높다 = 버는거에 대해서 주식가격이 높다 = 주가가 고평가다"
   * EV/EBIDTA
     = PER하고 같은 맥락으로. 버는것에 대한 기업가치. 낮을수록 저평가.
 ```
