@@ -162,8 +162,7 @@ DEC: Leet(solved 250)
                        = Earning before interest and tax
                        = Operating Profit
   * Net Profit       : Revenue - COGS - OPEX - Interest - Tax (당기순이익)
-
-  => Operating Profit(EBIT)과 Net Profit이 가장 중요하다.
+    => Operating Profit(EBIT)과 Net Profit이 가장 중요하다.
 
   * EV
     * Enterprise Value
