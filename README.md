@@ -157,7 +157,7 @@ DEC: Leet(solved 250)
 * Terms
   * Revenue          : Net Sales (매출)
   * Gross Profit     : Revenue - COGS (매출총이익)
-  * EBIDTA           : Revenue - COCS - OPEX + Demortization + Amortization (세전영업이익)
+  * EBITDA           : Revenue - COCS - OPEX + Demortization + Amortization (세전영업이익)
   * EBIT             : Revenue - COGS - OPEX (영업이익)
                        = Earning before interest and tax
                        = Operating Profit
