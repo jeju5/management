@@ -52,20 +52,20 @@
     ---------------------
     - 두유 64oz x 2 (USDA Organic 두유로 구매. 우유는 호르몬 문제도있고, 유당자체가 적어도 대장에 어떻게든 스트레스를 줌.)
     - 아몬드
-    - 그릭요거트 32oz
+    - 그릭요거트 8ct (Triple Zero)
     ---------------------
     - 쌀
     - 양파
     - Minced Garlic
     - 닭가슴살 3lbs
-    - 달걀
+    - 달걀 (USDA Organic)
     ---------------------
     
   * WEEKLY PROTEIN PLAN
     * 100g/day (700g/week)
     <4AM>
-      - 56g (soy milk 64oz x 2)
-      - 80g (yogurt 32oz)
+      - 112g (soy milk 64oz x 2)
+      - 120g (yogurt 150g x 8ct. Triple Zero)
       - 45g (almond 210g = 7줌)    
     <4PM>
       - 350g (chicken breast 3lbs)
