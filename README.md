@@ -155,13 +155,30 @@ DEC: Leet(solved 250)
   - 1월에 전년도 세금정산할때 '원수익 + 원손실 - 세금'을 계산하여 그것에 대한 십일조를 헌금한다.
   
 * Terms
-  * Revenue: Net Sales (매출)
-  * GrossProfit: Revenue - CostOfGoodsSold(COGS) (매출총이익)
-  * OperatingIncome: GrossProfit - 'OperatingExpenses' (영업이익)
-  * Net Income: OperatingIncome - 'AllOtherExpenses' = Net Income = Earning (당기순이익)
+  * Revenue          : Net Sales (매출)
+  * Gross Profit     : Revenue - COGS (매출총이익)
+  * EBIDTA           : Revenue - COCS - OPEX + Demortization + Amortization (세전영업이익)
+  * EBIT             : Revenue - COGS - OPEX (영업이익)
+                       = Earning before interest and tax
+                       = Operating Profit
+  * Net Profit       : Revenue - COGS - OPEX - Interest - Tax (당기순이익)
+
+  * EV
+    * Enterprise Value
+    * 기업가치 = 시가총액 + 기업부채) (시가총액=Market Capitalization) (기업부채=Debt)
+  * COGS
+    * Cost Of Goods Sold (매출원가)
+  * OPEX
+    * Operating Expense  (영업비용)
   * PER
     * Price/Earning = 주식가격/이익
     * "버는거에 대한 주식가격" "PER이 높다 = 버는거에 대해서 주식가격이 높다 = 주가가 고평가다"
-    
-   
+  * Depreciation
+    = 감가 (=가치하락)
+  * Amortization
+    = 상각 (=가치상승)
+  * Depreciation and Amortizatoin Expense
+    = 감가상각비용
+  * EV/EBIDTA
+    = PER하고 같은 맥락으로. 버는것에 대한 기업가치. 낮을수록 저평가.
 ```
