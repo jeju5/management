@@ -163,6 +163,8 @@ DEC: Leet(solved 250)
                        = Operating Profit
   * Net Profit       : Revenue - COGS - OPEX - Interest - Tax (당기순이익)
 
+  => Operating Profit(EBIT)과 Net Profit이 가장 중요하다.
+
   * EV
     * Enterprise Value
     * 기업가치 = 시가총액 + 기업부채) (시가총액=Market Capitalization) (기업부채=Debt)
