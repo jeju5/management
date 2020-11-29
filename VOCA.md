@@ -1,4 +1,4 @@
-# 2020-11-28
+# 2020-11-28 (A River Runs Through It)
 ```
 unwind 감긴 것을 풀다, 긴장을 풀다
 catechism 교리문답서
@@ -20,23 +20,16 @@ bowel 내장
 wee 크기가 아주작은
 foreman 감독 대표 배심원대표
 hold in A A를 억누르다, A라고 생각하다
-
+hunch 예감 / (등을) 구부리다 / 등의 혹
+frontier 국경, 극한
+invective 욕설
+moral 도덕의
+morals 도덕 [모럴스] (s를 붙여씀)
+morale 사기 [모랄]
+buck 수사슴, 달러 / 책임
+snoot 코 / 속물
+surmount 극복하다
+be on the beat 순찰을 돌다
+due west 정-서향의 (due 방향 정방향의)
 ```
-<table border="0">
- <tr>
-  <td>
-   ```
-   unwind
-   catechism
-   chief
-  </td>
-  ```
-  <td>
-   ```
-   감긴 것을 풀다
-교리문답서
-주된 / 우두머리
-   ```
-  </td>
- </tr>
-</table>
+# 2020-11-29 (A River Runs Through It)
