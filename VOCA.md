@@ -25,15 +25,18 @@ hold in A A를 억누르다, A라고 생각하다
 <table border="0">
  <tr>
   <td>
+   ```
    unwind
    catechism
    chief
   </td>
-  
+  ```
   <td>
+   ```
    감긴 것을 풀다
 교리문답서
 주된 / 우두머리
+   ```
   </td>
  </tr>
 </table>
