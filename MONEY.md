@@ -9,6 +9,10 @@
 6. IRA ROTH    : QQQ 70%, BRKb 15%, 개별주 15%
 7. GENERAL     : QQQ 70%, 개별주 30% '산것은 1년은 가지고 있는다.'
 
+* 자산관리의 원칙
+  1. 창조주를 기억하라.
+  2. 함께 즐기는 축복의 통로가 되라.
+
 * 계획
   * 12월,1월에 조정이 오면
     * 401K S&P 500 (100%)
@@ -24,12 +28,10 @@
       * UBER (10%)
       * PLTR (10%)
   
-
-* 마켓살피기
-  - Buffett Indicator
-  - Fear & Greed
-  
-* Principles
+* 전략
+  * 마켓살피기
+    - Buffett Indicator
+    - Fear & Greed
   * % 비율은 넣는기준.
   * 인덱스 펀드는 Fear and Greed 지수가 60밑일때 들어간다.
   * GENERAL 인덱스 펀드(VOO & QQQ)는 털고 나오기 금지. 필요할때 조금씩 팔아서 쓰는것 만.
