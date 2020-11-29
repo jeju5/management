@@ -42,7 +42,9 @@
   * WEEKLY COOKING
     수요일 저녁: B3
     토요일 저녁: B4 R6
-    - 치킨쌀밥 6끼 = 쌀(5컵), 고기(3파운드), 양파(1개), 버터
+    - 치킨쌀밥 6끼
+      - 쌀(5컵), 고기(3파운드), 양파(1개), 버터
+      - 양파를 썰어서 볶는다. 꽤 오래 걸리는데 그동안 고기를 면처럼 잘게 썬다.
     - SAY-3 = Soymilk.Almond.Yogurt.3-Supplements
     
   * WEEKLY GROCERY
