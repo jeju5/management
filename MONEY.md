@@ -9,6 +9,22 @@
 6. IRA ROTH    : QQQ 70%, BRKb 15%, 개별주 15%
 7. GENERAL     : QQQ 70%, 개별주 30% '산것은 1년은 가지고 있는다.'
 
+* 계획
+  * 12월,1월에 조정이 오면
+    * 401K S&P 500 (100%)
+    * IRA
+      * QQQ (50%)
+      * BRKb (30%)
+      * UBER (10%)
+      * TQQQ (10%) -> 
+    * ROBINHOOD
+      * +$3000 넣고
+      * QQQ (70%)
+      * BRKb (10%)
+      * UBER (10%)
+      * PLTR (10%)
+  
+
 * 마켓살피기
   - Buffett Indicator
   - Fear & Greed
