@@ -81,7 +81,10 @@
   * EPS
     * Earning per Share = 주당순이익
     * 한 주가 벌어들이는 금액
-  * 
+  * ROE
+    * Return on Equity
+    * Net Profit / SE
+    * SE = Share Holder's equity
   * PER
     * Price Earning Ratio = Price/Earning= 주식가격/이익
     * "버는거에 대한 주식가격" "PER이 높다 = 버는거에 대해서 주식가격이 높다 = 주가가 고평가다"
