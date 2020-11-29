@@ -1,6 +1,6 @@
 # 2020-11-28
 ```
-unwind 감긴 것 을풀다, 긴장을 풀다
+unwind 감긴 것을 풀다, 긴장을 풀다
 catechism 교리문답서
 chief 주된 / 우두머리
 end 끝 목적
@@ -24,11 +24,16 @@ hold in A A를 억누르다, A라고 생각하다
 ```
 <table border="0">
  <tr>
-    <td><b style="font-size:30px">Title</b></td>
-    <td><b style="font-size:30px">Title 2</b></td>
- </tr>
- <tr>
-    <td>Lorem ipsum ...</td>
-    <td>Lorem ipsum ...</td>
+  <td>
+   unwind
+   catechism
+   chief
+  </td>
+  
+  <td>
+   감긴 것을 풀다
+교리문답서
+주된 / 우두머리
+  </td>
  </tr>
 </table>
