@@ -6,21 +6,17 @@
 3. HIGH SAVING : maintain $12000
 4. SAP SE      : 10%
 5. 401K ROTH   : 6% (S&P 500)
-6. IRA ROTH    : QQQ 70%, BRKb 15%, 개별주 15%
+6. IRA ROTH    : QQQ 70%, 개별주 30%
 7. GENERAL     : QQQ 70%, 개별주 30% '산것은 1년은 가지고 있는다.'
 
-* 원칙
-  1. 창조주를 기억하라.
-  2. 함께 즐기는 축복의 통로가 되라.
-
 * 계획
-  * 12월,1월에 조정이 오면
+  * 12월 - 1월에 조정이 오면
     * 401K S&P 500 (100%)
     * IRA
       * QQQ (70%)
       * BRKb (10%)
       * UBER (10%)
-      * PLTR (10%) 
+      * PLTR (10%)
     * ROBINHOOD
       * +$3000 넣고
       * QQQ (70%)
