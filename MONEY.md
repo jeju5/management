@@ -16,16 +16,16 @@
       * QQQ (60%)
       * VHT (10%)
       * UBER (10%)
-      * INTC (10%)
-      * NVDA (5%)
+      * NVDA (10%)
+      * INTC (5%)
       * PLTR (5%)
 
-    * ROBINHOOD (+$3000)
+    * ROBINHOOD (+$3000 deposit)
       * QQQ (60%)
       * VHT (10%)
       * UBER (10%)
-      * INTC (10%)
-      * NVDA (5%)
+      * NVDA (10%)
+      * INTC (5%)
       * PLTR (5%)
 
   
