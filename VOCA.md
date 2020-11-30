@@ -33,3 +33,21 @@ be on the beat 순찰을 돌다
 due west 정-서향의 (due 방향 정방향의)
 ```
 # 2020-11-29 (A River Runs Through It)
+```
+headwater 상류의 물
+meander 구불구불하다
+tribute 공물, 감사의 표시로하는 찬사
+tributary 강의 지류
+dude ranch 관광용 목장
+account 계좌 / (사건에 대한) 이야기 / 간주하다
+isosceles [아이소.세l.리스] 이등변의
+phosphorus 인 인의 (스펠: rus)
+phosphorescent 인광성의 (스펠: re.scent)
+skirt 치마 / 가장자리를 두르다
+wade (물.진흙을) 헤치며 걷다
+cock 수탉 / 뒤로 젖히다. (공이치기를 뒤로 젖히다)
+uncock 공이치기를 앞으로 풀다.
+strain 압박, 염좌 / 팽팽하게하다.
+reef 암초
+convict
+```
