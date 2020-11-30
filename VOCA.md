@@ -49,5 +49,19 @@ cock 수탉 / 뒤로 젖히다. (공이치기를 뒤로 젖히다)
 uncock 공이치기를 앞으로 풀다.
 strain 압박, 염좌 / 팽팽하게하다.
 reef 암초
-convict
+convict 유죄선고하다, 죄책감을주다
+conviction 유죄선고 / 확신
+associate 연합하다, 연관짓다
+association 연합, 연관지음
+sandbar 모래톱 (강. 바다의 모래벌판)
+nutmeg 너트매그 열매
+penultimate 끝에서 두번째의
+crstacean [크러스테이시언] 갑각류
+barnacle 갑각류
+crevice [크레비스] 돌 사이의 틈
+prospect (금광을) 탐사하다 / 장래성
+prospector (금광) 탐사자
+hydraulic [하이드럴릭] 수력으로 움직이는
+flop 털썩 주저앉다
+multitudinous 다수의
 ```
