@@ -17,7 +17,7 @@
       * VHT (20%)
       * UBER (10%)
       * PLTR (10%)
-      
+       
     * ROBINHOOD
       * +$3000 넣고
       * QQQ (60%)
@@ -39,7 +39,7 @@
   * 종목에 대한 확신이 있으면 그것이 매수의 이유이다. 주가는 이유의 30%로 하자.
   
 * 개별주 리스트
-  AMZN GOOG MSSFT INTC NVDA UBER BABA PLTR
+  AMZN GOOG MSSFT INTC NVDA UBER BABA PLTR BRKb
   * 아마존
     * AWS의 경쟁자가 있지만 기업입장에서 데이터센터를 옮기는 것이 쉬운 결정이 아니다.
       즉 한번 인프라를 선택하면 그 인프라로 오래 간다. AWS는 선점기업이고 클라우드 표준이 되었다.
