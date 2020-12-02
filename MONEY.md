@@ -14,19 +14,19 @@
     * 401K S&P 500 (100%)
     * IRA
       * QQQ (60%)
-      * VHT (10%)
       * UBER (10%)
       * NVDA (10%)
-      * INTC (5%)
-      * PLTR (5%)
+      * INTC (10%)
+      * PLTR (10%)
 
     * ROBINHOOD (+$3000 deposit)
-      * QQQ (60%)
-      * VHT (10%)
+      * QQQ ($5000)
       * UBER (10%)
       * NVDA (10%)
-      * INTC (5%)
-      * PLTR (5%)
+      * INTC (10%)
+      * PLTR (10%)
+      
+    * TQQQ는 고점대비 n% 하락하면 유동자산의 n% 투입 (30<=n)
 
   
 * 전략
