@@ -47,16 +47,16 @@
 
 # MOVE
   ```
+  ----------------------------------------------------------------------------------------------
+  | SUN      | MON          TUE          WED          | THU          FRI          SAT          |
+  | 'REPDAY' | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    |
   ------------------------------------------------------------------------------------------
-  | SUN  | MON          TUE          WED          | THU          FRI          SAT          |
-  | REST | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    |
-  ------------------------------------------------------------------------------------------
-  |      | PULL(60)     RDIP(60)     CARDIO(2HR)  | PULL(60)     RDIP(60)     CARDIO(2+HR) |
-  |      | CURL(60)     PUSH(60)                  | CURL(60)     PUSH(60)                  |
-  |      | BIKE(1HR)    BIKE(1HR)                 | BIKE(1HR)    BIKE(1HR)                 |
-  |      |                                        |                                        |
-  |      |                                        |                                        |
-  ------------------------------------------------------------------------------------------
+  | SITU     | PULL(60)     RDIP(60)     CARDIO(2HR)  | PULL(60)     RDIP(60)     CARDIO(2+HR) |
+  | TUBE     | CURL(60)     PUSH(60)                  | CURL(60)     PUSH(60)                  |
+  | NECK     | BIKE(1HR)    BIKE(1HR)                 | BIKE(1HR)    BIKE(1HR)                 |
+  |          |                                        |                                        |
+  |          |                                        |                                        |
+  ----------------------------------------------------------------------------------------------
   * 500S: OCAL, SITU, TUBE, NECK
   * 치팅으로 강도를 낮추더라도 휴식을 짧게 간다.
   
