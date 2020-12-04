@@ -15,10 +15,10 @@
   ```
   --------------------------------------------------------------------------------------------
   | SUN    | MON          TUE          WED          | THU          FRI          SAT          |
-  | 'REST' | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    |
+  | 'REST' | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'REPSDAY'    'PULLDAY'    'LONGDAY'    |
   --------------------------------------------------------------------------------------------
-  |        | PULL(60)     RDIP(60)     CARDIO(2HR)  | SITU         PULL(MAX)    CARDIO(2+HR) |
-  |        | CURL(60)     PUSH(60)                  | TUBE         RDIP(MAX)                 |
+  |        | PULL(60)     RDIP(60)     CARDIO(2HR)  | SITU         PULL(60)     CARDIO(2+HR) |
+  |        | CURL(60)     PUSH(60)                  | TUBE         CURL(60)                  |
   |        | BIKE(1HR)    BIKE(1HR)                 | NECK         BIKE(1HR)                 |
   |        |                                        | BIKE(1HR)                              |
   |        |                                        |                                        |
