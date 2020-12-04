@@ -25,7 +25,8 @@
     import ReactDOM from "react-dom";
     import App from "./App";
 
-    ReactDOM.render(<App />, document.getElementById("root"));  /* Call 'App' Component from app.js and render it into 'root' DOM element */
+    ReactDOM.render(<App />, document.getElementById("root"));
+    /* Call 'App' Component from app.js and render it into 'root' DOM element */
     ```
   * Browser then makes another requests to bundle.js.
   * bundle.js bundles index.js, app.js and react.js, which gets loaded on the browser.
