@@ -8,8 +8,8 @@
       const [text, setText] = useState("");
 
       return (
-        <div>
-          <Field label="Enter English" onChange={setText} value={text} /> /* dsf */
+        <div>                                                               /* <-- DOM Element */
+          <Field label="Enter English" onChange={setText} value={text} />   /* <-- React Component */
           <Languages language={language} onLanguageChange={setLanguage} />
           <hr />
           <Translate text={text} language={language} />
