@@ -42,6 +42,7 @@
   ```
 
 # EAT
+  ```
   * WEEKLY COOKING
     수요일 저녁: B3
     토요일 저녁: B4 R6
@@ -76,40 +77,4 @@
     <4PM>
       - 350g (chicken breast 3lbs)
       -  72g (egg 1dozen)
- 
-# GOAL
-```
-* English
-  * VOCA Level1: 3000 BASIC
-  * VOCA Level2: 2000 TOEFL (Hackers VOCA)
-  * VOCA Level3: 2000 GRE   (VOCA BIBLE 4.0)
-
-* CS Basics
-  * Data Types
-  * Data Structures
-  * Basic Algorithms
-  * Elements of Programming in Java
-  * LeetCode
-
-* 주일학교
-  * Sumamrize Lord's Prayer Study Material
-  
-* 12/08
-  * 1독
-
-* Math
-  * Calculus (Stewart)
-  * Discrete Mathematics
-  * Linear Algebra
-
-* Tech
-  * UDEMY: Modern React with Redux
-  * UDEMY: Node with React
-  * UDEMY: GraphQL with React
-
-* Athletic
-  * Running - marathon sub4
-  * Boxing - 1match 64kg
-  * Tennis - 2.0
-  * Planche
-```
+   ```
