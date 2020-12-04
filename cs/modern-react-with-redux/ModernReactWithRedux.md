@@ -2,7 +2,7 @@
 * What is App Function?
   * App function is a react component that returns jsx.
   * JSX is javascript xml. It directs reacts to show dom elements or react components. react components are in /component directory.
-    ```react
+    ```js
     export default function App() {
       const [language, setLanguage] = useState("ru");
       const [text, setText] = useState("");
