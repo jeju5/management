@@ -1,4 +1,6 @@
-# Session 1
+* https://www.udemy.com/course/react-redux/learn/lecture/12531052#overview
+
+# Section 1: Let's Dive In!
 * What is App Function?
   * App function is a react component that returns jsx.
   * JSX is javascript xml. It directs reacts to show dom elements or react components. react components are in /component directory.
