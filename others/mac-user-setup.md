@@ -1,5 +1,4 @@
 ```
 whoami
-cd /usr
-sudo chown -R usermj *
+sudo chown -R usermj /usr/local/*
 ```
