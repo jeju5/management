@@ -9,7 +9,7 @@
 
       return (
         <div>
-          <Field label="Enter English" onChange={setText} value={text} />
+          <Field label="Enter English" onChange={setText} value={text} /> /* dsf */
           <Languages language={language} onLanguageChange={setLanguage} />
           <hr />
           <Translate text={text} language={language} />
