@@ -14,11 +14,13 @@
     * 401K
       * S&P500 (100%)
     * IRA
-      * AMZN (50%)
-      * NVDA (50%)
+      * QQQ (70%)
+      * NVDA (30%)
     * ROBINHOOD (+$3000 deposit)
-      * AMZN (50%)
-      * NVDA (50%)      
+      * QQQ (70%)
+      * NVDA (30%)    
+      
+    "PLTR, INTC, NVDA, AMZN"
     * 레버리지 플랜
       * 고점대비 n% 하락하면 여유자산의 n%로 매수하고 전고점보다 조금이라도 높아지면 매도한다. (25 <= n)
   
