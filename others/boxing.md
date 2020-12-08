@@ -117,18 +117,18 @@ jabjab
 
 jabcro 
 1: jab cro jab cro
-2: jab cro lhook rhook
 2: jab cro lupper cro
+3: jab cro (slip)cro lhook
 
 jablow
 1: jab bab cro lhook
 2: jab bro lupper cro
-3: jab rbody lbody jab
+3: jab lhook jab jab cro
 
-rear
-1: cro cro jab cro
-2: rhook lhook jab jab 
-3: rupper lhook jab jab
+counters
+1: (slip)cro lhook jab jab
+2: (slip)rhook lhook jab jab 
+3: (slip)rupper lhook jab jab
 ```
 
 ## R&D
