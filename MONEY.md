@@ -23,16 +23,14 @@ account: amount(ratio)
       * S&P500 (100%)
     * IRA
       * QQQ (50%)
-      * AMZN 
-      * GOOG 
-      * INTC 
-      * NVDA 
+      * AMZN $3000
     * ROBINHOOD (+$4000 deposit)
       * QQQ (50%)
-      * AMZN (30%)
-      * GOOG
-      * INTC
-      * NVDA
+      * AMZN $3000
+      * GOOG $2000
+      * NVDA $500
+      * INTC $500
+
   
 * 장기전략
   * 현금비중: 20% 'Marcus/(Marcus+Robinhood)'
