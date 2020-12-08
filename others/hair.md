@@ -14,11 +14,15 @@
   * 윗뚜껑: 여덟손가락
   * 옆뚜껑: 여섯손가락 (앞머리랑 이어지는 부분은 앞머리랑 같이)
   * 뒤뚜껑: 여섯손가락
-  * 앞머리: 귀 들어가는 부분까지
+  * 앞머리: 눈밑 서클까지
   ---------------------------------
   * 옆베이스: 두손가락 + 클리퍼로 라인정리
   * 뒷베이스: 세손가락
   
   <펌 필수>
+  느낌
+  - https://www.youtube.com/watch?v=i7vf4zjU6MA&ab_channel=%EB%82%B4
+  - https://www.youtube.com/watch?v=S7RYj6fpwAY&ab_channel=%EC%B9%A8%EC%B0%A9%EB%A7%A8
+  - https://www.youtube.com/watch?v=MOFPOi2YgMc&ab_channel=JaehuhuTV
   ```
   
