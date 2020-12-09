@@ -24,5 +24,6 @@
   - https://www.youtube.com/watch?v=i7vf4zjU6MA&ab_channel=%EB%82%B4
   - https://www.youtube.com/watch?v=S7RYj6fpwAY&ab_channel=%EC%B9%A8%EC%B0%A9%EB%A7%A8
   - https://www.youtube.com/watch?v=MOFPOi2YgMc&ab_channel=JaehuhuTV
+  - https://www.youtube.com/watch?v=Ygk-J5VNFIY&ab_channel=%EC%A7%9C%EB%A5%B4%EC%A7%80%EC%98%A4
   ```
   
