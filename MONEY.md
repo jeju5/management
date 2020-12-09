@@ -13,6 +13,8 @@
 account: amount(ratio)
 - CASH (MARCUS)    : 10038(75%)
 - STOCK(ROBINHOOD) : 3477(25%)
+
+- RiskMax = $3000
 ```
 * Plans
 ```
