@@ -154,7 +154,7 @@ account: amount(ratio)
   * Downside
     * 공산당 리스크
     * 정경유착 리스크
-* APPL
+* APLE
   * Upside
     * 충성심있는 고객군
     * 폐쇄적인 마켓전략 -> 오히려 OS나 소프트웨어 관리가 쉽다.
