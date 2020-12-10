@@ -6,8 +6,8 @@
 3. HIGH SAVING : maintain $12000
 4. SAP SE      : 10%
 5. 401K ROTH   : 6% (S&P 500)
-6. IRA ROTH    : ETF 70%, 개별주 30%
-7. GENERAL     : ETF 70%, 개별주 30% '산것은 1+년은 가지고 있는다.'
+6. IRA ROTH    : ETF 30%, 개별주 70% (etf비율은 내 나이로)
+7. GENERAL     : ETF 30%, 개별주 70% '산것은 1+년은 가지고 있는다.'
 (% 비율은 넣는기준)
 
 account: amount(ratio)
