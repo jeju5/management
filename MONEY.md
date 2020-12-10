@@ -21,8 +21,8 @@ account: amount(ratio)
 ```
 * 단기전략
   * 12/19 ~ 12/24 (not sure)
-    * IRA: AMZN 2주, GOOG 1주, NVDA 1주, INTC 10주
-    * RBH: AMZN 2주, GOOG 1주, NVDA 1주
+    * IRA: AMZN 1주, GOOG 1주, NVDA 2주, INTC 10주
+    * RBH: AMZN 2주, GOOG 2주
   * 12/25 ~ 1/20
     * 12/1 - 1/20에 -10%정도의 조정이 오면 그 날을 기준으로. 조정이 없으면 1/21 이후로. 1주일 간격으로 25%씩 들어간다.
     * 401K
