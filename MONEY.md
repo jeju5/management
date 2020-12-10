@@ -11,11 +11,13 @@
 (etf비율은 내 나이)
 (% 비율은 넣는기준)
 
-account: amount(ratio)
+Holdings (ratio)
 - CASH (MARCUS)    : 10038(75%)
 - STOCK(ROBINHOOD) : 3477(25%)
 
-- RiskMax = $3000
+Risk-Max
+- MonthlyRiskMax = $3000 (이정도는 괜찮겠는데 하는 금액으로 설정)
+- YearlyRiskMax = $6000 (내가 부담이 없는 금액으로 설정)
 ```
 * Plans
 ```
