@@ -88,7 +88,7 @@ account: amount(ratio)
   * Downside
     * 반독점 리스크
     * 문어발 사업 리스크
-* NVDAA
+* NVDA
   * Upside
     * GPU: 독보적 GPU로 당분간의 GPU칩은 거의 독점할 것.
     * IoT가 실현되면 거의 모든 기기에 칩이 들어갈 것.
