@@ -17,7 +17,7 @@ Holdings (ratio)
 
 Risk-Max
 - MonthlyRiskMax = $3000 (이정도는 괜찮겠는데 하는 금액으로 설정)
-- YearlyRiskMax = $6000 (내가 부담이 없는 금액으로 설정)
+- YearlyRiskMax = $5000 (내가 부담이 없는 금액으로 설정)
 ```
 * Plans
 ```
