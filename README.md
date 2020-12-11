@@ -17,15 +17,15 @@
   | SUN    | MON          TUE          WED          | THU          FRI          SAT          |
   | 'REST' | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'REPSDAY'    'PULLDAY'    'LONGDAY'    |
   --------------------------------------------------------------------------------------------
-  |        | PULL(60)     RDIP(60)     CARDIO(2HR)  | SITU(500)    PULL(60)     CARDIO(2+HR) |
-  |        | CURL(60)     PUSH(60)                  | TUBE(500)    CURL(60)                  |
-  |        | BIKE(1HR)    BIKE(1HR)                 | NECK(500)    BIKE(1HR)                 |
-  |        |                                        | STEPS(30min)                           |
+  |        | PULL(60)     RDIP(60)     RUN(2HR)     | SITU(500)    1P3P(60)     RUN(2+HR)    |
+  |        | CURL(60)     PUSH(60)                  |                                        |
+  |        | RUN(1HR)     RUN(1HR)                  | RUN(1HR)     RUN(1HR)                  |
+  |        |                                        |                                        |
   |        |                                        |                                        |
   --------------------------------------------------------------------------------------------
-  * 500S: OCAL, SITU, TUBE, NECK
+  * 500S: SITU, TUBE, NECK
   * 치팅으로 강도를 낮추더라도 휴식을 짧게 간다.
-  * STEPS: single, snatch, slip, roll, slip-n-roll
+  * RUN (or AirJog, Bike, Swim)
   
   KEEP 65.0kg
   * AMA-LIGHT(63.0kg)
