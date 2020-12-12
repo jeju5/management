@@ -223,8 +223,7 @@ Risk-Max
     * 기업가치 = 시가총액 + 기업부채 (기업부채= NetDebt-NetCash)
     * 웃긴것이 기업부채를 빼는 것이 아니라 기업부채를 더한다.
       * 왜그럴까? 100만원짜리 기업을 살때 그 기업의 부채가 30만원이 있으면 70만원만 주면 살 수있다. 이때 100만원은 enterprise value, 70만원은 equity value가 된다
-  * Equity Value
-    * Enterprise Value - Debt
+  * Equity Value = Market Capitalization
   * COGS
     * Cost Of Goods Sold (매출원가)
   * OPEX
