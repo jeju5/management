@@ -115,22 +115,25 @@ Risk-Max
     * 사이버트럭, 로드스터를 보면 다른 기업들은 상상도 못할 디자인과 제원을 준비했다.
     * 전기차시장에서는 테슬라가 초격차로 우위이다.
     * 전기차에 필요한 산업과 전기차를 활용한 사업을 잘 준비했다: 택시사업, 자체배터리, 자체OS, 자체충전네트워크, 자체주행기술
-    * 테슬라의 Final Value를 계산해보자
+    * 테슬라의 가치를 비교해보자
       * 2020.12.12기준(Billion USD)
-        * 테슬라 600.55
-        * 도요타 70.2
-        * 페라리 51.38
-        * BMW 79.53
-        * 폴스바겐 -83.37
-        * 다임러 -73.68
-        * 현대 -18.03
-        * 혼다 5.63
+        Corporate Name, SE, FV
+        * 테슬라 16.892, 600.55
+        * 도요타 198.83, 70.2
+        * 폴스바겐 141.78, -83.37
+        * 페라리 1.781, 51.38
+        * BMW 70.06, 79.53
+        * 혼다 76.11, 5.63
+        * 현대 59.04, -18.03
+        * GM 43.34, -21.62
+        * 다임러 67.09, -73.68
         ----------------
-        * 애플 2100
-        * 구글 1300
-        * 아마존 1540
-        * 삼성 532.13
-        * 버크셔 456.18
+        * 버크셔 415.16, 456.18
+        * 삼성 227.67
+        * 구글 212.92, 1300
+        * 애플 64.34, 2100
+        * 아마존 82.78, 1540
+
     * 다른 기업들이 너무 둔하고 멍청하다. 아직도 혁신을 못하고 있고 방향을 못잡고 있다. 포르쉐만 보더라도 evFuel? 이딴걸 만들고있고 향후 10년간 내연기관차를 만든다고 하니.
   * Downside
     * 당분간 누가 차를 살까? 경제가 호황이면 테슬라는 더 불타오르겠지만 경제침체에 들어가면 테슬라는 폭락할 것이다. (그러나 폭락도 기회인듯)
@@ -232,9 +235,12 @@ Risk-Max
       * 왜그럴까? 100만원짜리 기업을 살때 그 기업의 부채가 30만원이 있으면 70만원만 주면 살 수있다. 이때 100만원은 enterprise value, 70만원은 equity value가 된다
   * Equity Value = Market Capitalization
   
-  * ShareHolder's Equity = Total Assets - Total Liabilities    (total liabilities = debt+obligations)
+  * SE =  ShareHolder's Equity = Total Assets - Total Liabilities
+                           (total assets = 복잡함)  
+                           (total liabilities = debt+obligations)
+                           SE에서 현재주가는 의미가 없다 왜냐면 액면가로 계산하니까 기업이 망했을때 남는 금액을 말하는 것같다.
 
-  * Final Value = 2MarketCap - Enterprise Value
+  * FE = Final Equity = Market Cap + Net Cash - Net Debt = 2MarketCap - Enterprise Value (FE 는 내가만든 개념)
     * What I think is important
       * 95만원짜리 차가 있다. 차에 모기지가 40만원이있고, 차의 잔존가치가 70만원이고. 차 트렁크에 15만원이 들었다. "115 = 70 + 30 - 15"
         내가 관심있는건 차를 팔았을때 나에게 돌아오는 돈을 얼마냐?
@@ -244,6 +250,8 @@ Risk-Max
         Enterprise Value - Equity Value = Net Debt - Net Cash
         Equity Value - Enterprise Value = Net Cash - Net Debt
       * Final Value = Equity Value + (Equity Value - Enterprise Value)
+      
+  * SE & FE: 'SE는 회사자산의 절대가치'이고 'FE는 회사브랜드의 절대가치'
       
   * COGS
     * Cost Of Goods Sold (매출원가)
