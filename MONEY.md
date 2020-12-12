@@ -251,7 +251,14 @@ Risk-Max
         Equity Value - Enterprise Value = Net Cash - Net Debt
       * Final Value = Equity Value + (Equity Value - Enterprise Value)
       
-  * SE & FE: 'SE는 회사자산의 절대가치'이고 'FE는 회사브랜드의 절대가치'
+  * SE & FE: 'SE는 회사의 최종가치'이고 'FE는 주가의 최종가치'
+    * 저평가기업: FE가 낮다.
+    * 고평가기업: FE가 높다.
+    * 리스크기업: FE가 마이너스다.
+    * 안전한기업: FE가 플러스다.
+    * 튼튼한기업: SE가 높다.
+    * 부실한기업: SE가 낮다.
+    * 내가 선호하는 기업: "SE가 높고, FE가 0에 가까운 기업." (FE가 0에 가까운건 적절하게 저평가)
       
   * COGS
     * Cost Of Goods Sold (매출원가)
