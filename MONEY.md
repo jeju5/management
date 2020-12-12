@@ -25,7 +25,7 @@ Risk-Max
   * 12/14 ~ 1/15: 전고점대비 -10%정도의 조정이 오면 1주일 간격으로 33%씩 들어간다.
     * 최대한 '12/21 테슬라 S&P500' 편입이후를 노리자
     * S&P500 (100%)
-    * IRA($6300) : AMZN 2주, TSLA
+    * IRA($6300) : AMZN 2주, PLTR 나머지
     * AMR($10000): AMZN 2주, GOOG 1주, TSLA 2주, INTC 20주, PLTR 30주
       * $10000 = $2500(11월) + $2000(12월) + $2000(1월) + $3500(마커스계좌)
       * 12/15에 $4000입금
@@ -121,9 +121,9 @@ Risk-Max
         * 도요타 352.62B
         * 폴스바겐 265.07B
         * 다임러 217.56B
-        * 애플 2100T
-        * 구글 1100T
-        * 아마존 1580T
+        * 애플 2100B
+        * 구글 1100B
+        * 아마존 1580B
     * 다른 기업들이 너무 둔하고 멍청하다. 아직도 혁신을 못하고 있고 방향을 못잡고 있다. 포르쉐만 보더라도 evFuel? 이딴걸 만들고있고 향후 10년간 내연기관차를 만든다고 하니.
   * Downside
     * 당분간 누가 차를 살까? 경제가 호황이면 테슬라는 더 불타오르겠지만 경제침체에 들어가면 테슬라는 폭락할 것이다. (그러나 폭락도 기회인듯)
@@ -218,9 +218,13 @@ Risk-Max
   * Net Profit       : Revenue - COGS - OPEX - Interest - Tax (당기순이익)
     => Operating Profit(EBIT)과 Net Profit이 가장 중요하다.
 
-  * EV
+  * Enterprise Value
     * Enterprise Value = Market Capitalization + Debt
-    * 기업가치 = 시가총액 + 기업부채
+    * 기업가치 = 시가총액 + 기업부채 (기업부채= NetDebt-NetCash)
+    * 웃긴것이 기업부채를 빼는 것이 아니라 기업부채를 더한다.
+      * 왜그럴까? 100만원짜리 기업을 살때 그 기업의 부채가 30만원이 있으면 70만원만 주면 살 수있다. 이때 100만원은 enterprise value, 70만원은 equity value가 된다
+  * Equity Value
+    * Enterprise Value - Debt
   * COGS
     * Cost Of Goods Sold (매출원가)
   * OPEX
