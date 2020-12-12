@@ -224,6 +224,18 @@ Risk-Max
     * 웃긴것이 기업부채를 빼는 것이 아니라 기업부채를 더한다.
       * 왜그럴까? 100만원짜리 기업을 살때 그 기업의 부채가 30만원이 있으면 70만원만 주면 살 수있다. 이때 100만원은 enterprise value, 70만원은 equity value가 된다
   * Equity Value = Market Capitalization
+
+  * Final Value = 2MarketCap - Enterprise Value
+    * What I think is important
+      * 95만원짜리 차가 있다. 차에 모기지가 40만원이있고, 차의 잔존가치가 70만원이고. 차 트렁크에 15만원이 들었다. "115 = 70 + 30 - 15"
+        내가 관심있는건 차를 팔았을때 나에게 돌아오는 돈을 얼마냐?
+        '70-40+15=45' '= Final Value' 라고 부르자 그냥.
+        'Equity Value + Net Cash - Net Debt' = 'Final Value'
+      * Enterprise Value = Equity Value + Net Debt - Net Cash
+        Enterprise Value - Equity Value = Net Debt - Net Cash
+        Equity Value - Enterprise Value = Net Cash - Net Debt
+      * Final Value = Equity Value + (Equity Value - Enterprise Value)
+      
   * COGS
     * Cost Of Goods Sold (매출원가)
   * OPEX
