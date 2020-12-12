@@ -52,9 +52,12 @@
     수요일 저녁: B3
     토요일 저녁: B4 R6
     - 치킨쌀밥 6끼
-      - 쌀(5컵), 고기(3파운드), 양파(1개), 버터
-      - 양파를 썰어서 볶는다. 꽤 오래 걸리는데 그동안 고기를 작게 썬다.
-      - 고기를 넣어서 볶는다. 물이 많이 나오는데. 이것을 덜어내고 마늘과 버터를 넣는다.
+      - 쌀(5컵), 고기(3파운드), 양파(2개), 마늘, 버터
+      - 고기를 먼저 통째로 삶는다.
+      - 삶는동안 양파, 마늘은 같이 갈아놓는다.
+      - 삶은 닭가슴살은 꺼내서 간다.
+      - 다 같이 볶는다.
+      - 랜치소스를 더한다.
     - SAY-3 = Soymilk.Almond.Yogurt.3-Supplements
     
   * WEEKLY GROCERY
@@ -74,12 +77,18 @@
     ---------------------
     
   * WEEKLY PROTEIN PLAN
-    * 100g/day (700g/week)
-    <4AM>
+    * TARGET: 100g/day (700g/week)
+    <아침>
       - 112g (soy milk 64oz x 2)
       - 120g (yogurt 150g x 8ct. Triple Zero)
       - 45g (almond 210g = 7줌)    
-    <4PM>
-      - 350g (chicken breast 3lbs)
-      -  72g (egg 1dozen)
+      - 32.25g (broccoli 2.5lbs)
+    <저녁>
+      - 300g (chicken breast 3lbs)
+      - 72g (egg 1dz)      
+      
+    <저녁 Alternative 400g>
+      - 264g (ground 90/10 grassfed beef 3lbs)
+      - 56g (1+year aged cheddar 8oz)
+      - 72g (egg 1dz)
    ```
