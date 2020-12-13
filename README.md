@@ -78,17 +78,18 @@
     
   * WEEKLY PROTEIN PLAN
     * TARGET: 100g/day (700g/week)
-    <아침>
+    <아침 309.25g>
       - 112g (soy milk 64oz x 2)
       - 120g (yogurt 150g x 8ct. Triple Zero)
       - 45g (almond 210g = 7줌)    
       - 32.25g (broccoli 2.5lbs)
-    <저녁>
+    <저녁 421.25g>
       - 300g (chicken breast 3lbs)
-      - 72g (egg 1dz)      
-      
-    <저녁 Alternative 400g>
-      - 264g (ground 90/10 grassfed beef 3lbs)
-      - 56g (1+year aged cheddar 8oz)
+      - 72g (egg 1dz)
+      - 17.2g (rice 4cup)
+      - 32.25g (broccoli 2.5lbs)
+    <저녁 388g>
+      - 266g (3 lbs grass-fed beef)
+      - 28g (1+year aged cheddar 4oz. Tilamook is rBST-free cow.)
       - 72g (egg 1dz)
    ```
