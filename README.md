@@ -58,7 +58,7 @@
       - 삶는동안 양파, 마늘은 같이 갈아서 그릇에 옮겨 놓는다.
       - 고기가 삶아졌으면 꺼내서 간다.
       - 다 같이 볶는다.
-      - FLAK OIL을 뿌려먹는다.
+      - OLIVE OIL & FLAK OIL을 뿌려먹는다.
     - SAY-3 = Soymilk.Almond.Yogurt.3-Supplements
     
   * WEEKLY GROCERY
