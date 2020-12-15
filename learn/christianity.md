@@ -1,5 +1,6 @@
 * 칼빈주의
   ```
+  'TULIP'
   1. Total Depravity
   2. Unconditional Election
   3. Limited Atonement
@@ -21,28 +22,29 @@
     * 
   * 저항할 수 없는 은혜 (Irresistible Grace)
      * 택자는 하나님의 은혜는 거부할 수 없다.
-  * 무조건적 구원 (Perserverance of Saint)
-    * 하나님은 선택하신 백성은 구원하신다. 택자는 믿음을 잃지 않는다.
+  * 성도의 견인 (Perserverance of Saint)
+    * 하나님은 선택하신 백성은 구원하신다. 택자는 믿음을 잃지 않는다. '성도는 견디고 인내한다' 라는 뜻으로 챕터를 지은 것인 데.
+      사실상 그 의미는 '하나님의 견인'에 가까운 것 같다.
 * 알미니안주의 Arminianism
   ```
   네덜란드의 Jacobus Arminius가 주장.
-  1. Natural Inability
+  1. Human Ability
   2. Condional Election
   3. General Attonement
   4. Resistible Grace
   5. Falling from Grace
   ```
   * 자연적무능력 (Natural Inability)
-    인간은 타락했고 선을 행할 능력을 주시는 분은 하나님이시다. 그러나 복음을 듣고 반응하는 자유의지는 인간의 것
+    * 인간은 전적으로 타락했지만. 그러나 복음을 듣고 반응하는 자유의지는 인간의 것
+    * 요한복음 3:16 '누구든지 그를 믿는자'
   * 예지에 기초한 조건적 선택 (Conditional Election)
-    * 믿음은 인간의 것이고, 믿어서 선택되었다. (
+    * 믿음은 인간의 것이고, 믿어서 선택되었다.
   * 보편속죄
     * 그리스도의 피 흘리심은 모든 사람을 위한것이다. 그러나 속죄의 은혜는 믿을 때만 적용된다.
     * 보편구원과는 다른 개념. 보편구원은 만인이 구원받는다는 주의이다.
   * 조건적 구원
     * 내가 믿기로 결단하여 구원 받았으니 내가 도중에 실족하여 믿음을 버린다면 구원을 상실할 수 있다.
-    
-    
+      
 * John Piper's seminary
   * https://www.youtube.com/watch?v=F-C33QrDxNc&ab_channel=DesiringGod
   * Roman 9
