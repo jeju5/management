@@ -17,9 +17,9 @@
   | SUN    | MON          TUE          WED          | THU          FRI          SAT          |
   | 'REST' | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'REPSDAY'    'PULLDAY'    'LONGDAY'    |
   --------------------------------------------------------------------------------------------
-  |        | PULL(60)     RDIP(60)     RUN(2HR)     | SITU(500)    1P3P(60)     RUN(2+HR)    |
+  |        | PULL(60)     RDIP(60)     BIKE(2HR)    | SITU(500)    1P3P(60)     BIKE(2+HR)   |
   |        | CURL(60)     PUSH(60)                  |                                        |
-  |        | RUN(1HR)     RUN(1HR)                  | BOX(1HR)     RUN(1HR)                  |
+  |        | BIKE(1HR)    BIKE(1HR)                 | BIKE(1HR)    BIKE(1HR)                 |
   |        |                                        |                                        |
   |        |                                        |                                        |
   --------------------------------------------------------------------------------------------
