@@ -17,15 +17,15 @@
   | SUN    | MON          TUE          WED          | THU          FRI          SAT          |
   | 'REST' | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'REPSDAY'    'PULLDAY'    'LONGDAY'    |
   --------------------------------------------------------------------------------------------
-  |        | PULL(60)     RDIP(60)     BIKE(2HR)    | SITU(500)    1P3P(60)     BIKE(2+HR)   |
+  |        | PULL(60)     RDIP(60)     AERO(2HR)    | SITU(500)    1P3P(60)     AERO(2+HR)   |
   |        | CURL(60)     PUSH(60)                  |                                        |
-  |        | BIKE(1HR)    BIKE(1HR)                 | BIKE(1HR)    BIKE(1HR)                 |
+  |        | AERO(1HR)    AERO(1HR)                 | AERO(1HR)    AERO(1HR)                 |
   |        |                                        |                                        |
   |        |                                        |                                        |
   --------------------------------------------------------------------------------------------
   * 500S: SITU, TUBE, NECK
   * 치팅으로 강도를 낮추더라도 휴식을 짧게 간다.
-  * CARDIO: RUN, AirJog, Bike, Swim
+  * AERO(=Aerobic Exercise): Run, AirJog, Bike, Swim
   * 1P3P에서의 풀업은 숏풀업으로 상부자극.
   
   KEEP 65.0kg
