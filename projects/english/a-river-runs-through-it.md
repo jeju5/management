@@ -78,5 +78,6 @@ nutty 견과류의 / 약간 미친
 
 page 28-48 omitted
 
-
+glitter 반짝이다
+practice 연습, 실천, 실무
 ```
