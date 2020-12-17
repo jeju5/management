@@ -1,4 +1,3 @@
-# 2020-11-28 (A River Runs Through It)
 ```
 unwind 감긴 것을 풀다, 긴장을 풀다
 catechism 교리문답서
@@ -31,9 +30,6 @@ snoot 코 / 속물
 surmount 극복하다
 be on the beat 순찰을 돌다
 due west 정-서향의 (due 방향 정방향의)
-```
-# 2020-11-29 (A River Runs Through It)
-```
 headwater 상류의 물
 meander 구불구불하다
 tribute 공물, 감사의 표시로하는 찬사
@@ -64,4 +60,23 @@ prospector (금광) 탐사자
 hydraulic [하이드럴릭] 수력으로 움직이는
 flop 털썩 주저앉다
 multitudinous 다수의
+gossamer [거서멀] 거미줄
+emanate 내뿜다
+halo [헤일로] 후광
+flicker 깜빡거리다
+wreath 화환
+iri.descent 각도에 따라 색이 변하는, 무지개빛의
+more or less 대략
+hatch 알을 부화하고 나오다, 알을 부화시키다 / 천장위에 출입문
+totem [토름] 토템신앙의
+superimpose 위에 겹쳐놓다
+bib 젖먹이 아기의 턱받이
+overalls 멜빵바지
+bib overalls 멜빵으로된 작업복
+grope 손으로 더듬다
+nutty 견과류의 / 약간 미친
+
+page 28-48 omitted
+
+
 ```
