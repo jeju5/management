@@ -49,10 +49,11 @@ INDOOR CARDIO OPTIONS
 - Spinning
 - Air Jogging
 
-MAXHR
-* RUN : MAFFETONE_MAX      = 155 (2020)
+MAXHR (2020)
+* RUN : MAFFETONE_MAX      = 155
+* AirJog: = MAFFETONE_MAX - 10 = 145
 * BIKE: MAFFETONE_MAX - 20 = 135
-* AirJog: = BIKE
+
 
 DISTANCE
 * 65mi/wk -> 423km/4wk
