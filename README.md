@@ -95,8 +95,8 @@
       - 17.2g (rice 4cup)
       - 33g (broccoli 2.5lbs)
       
-    <저녁 381g> - no cooking option
-      - 128g (whole milk 64oz x 2)
+    <저녁 381g> #non-cooking
+      - 128g (fatfree milk 64oz x 2)
       - 175g (isopure 7scoops)
       - 45g (almond 210g = 7줌)
       - 33g (broccoli 2.5lbs)
