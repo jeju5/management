@@ -83,21 +83,21 @@
     
   * WEEKLY PROTEIN PLAN
     * TARGET: 100g/day (700g/week)
-    <아침 309.25g>
+    <아침 310g>
       - 112g (soy milk 64oz x 2)
       - 120g (yogurt 150g x 8ct. Triple Zero)
       - 45g (almond 210g = 7줌)    
-      - 32.25g (broccoli 2.5lbs)
+      - 33g (broccoli 2.5lbs)
       
-    <저녁 421.25g>
+    <저녁 422g>
       - 300g (chicken breast 3lbs)
       - 72g (egg 1dz)
       - 17.2g (rice 4cup)
-      - 32.25g (broccoli 2.5lbs)
+      - 33g (broccoli 2.5lbs)
       
-    <저녁 372.25g> - no cooking
-      - 120g (yogurt 150g x 8ct. Triple Zero)
+    <저녁 381g> - no cooking option
+      - 128g (whole milk 64oz x 2)
       - 175g (isopure 7scoops)
       - 45g (almond 210g = 7줌)
-      - 32.25g (broccoli 2.5lbs)
+      - 33g (broccoli 2.5lbs)
    ```
