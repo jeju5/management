@@ -11,8 +11,12 @@
 --------------------------------------------------------------
 ```
 
-# 2021 GOAL
+# DREAMS
 ```
+2020
+* Finish 'A River Runs Through It and Other Stories'
+
+2021
 * keeping 64kg
 * marathon SUB-3:30
 * read 6 books
