@@ -29,15 +29,16 @@ Risk-Max
       * IRA($6200+a): AMZN 1주, TQQQ 나머지
       * AMR($7000)
         - AMZN 2주
+        
   * 2021
     * 401K: S&P500 100%
     * IRA: 6월에 $6000
     * AMERITRADE
       * AMZN $13000 (4주)
-      * GOOG $5000
-      * NVDA $3000
-      * NVTA $3000
+      * GOOG $6000
+      * NVDA $6000
       * PLTR $2000
+      * ARKK $2000
       * AI _
       * HLT  _
       * INTC _
