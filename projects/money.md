@@ -45,9 +45,9 @@ Risk-Max
       * NVDA $6000
       * PLTR $2000
       * ARKK $2000
-      * NVTA
-      * CRSP _
       * AI _
+      * NVTA _
+      * CRSP _
       * HLT  _
       * INTC _
 
