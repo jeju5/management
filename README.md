@@ -65,12 +65,13 @@ DISTANCE
   수요일 저녁: C2L B3
   토요일 저녁: C2L B4 R6
   - 치킨쌀밥 6끼
-    - 쌀(5컵), 고기(3파운드), 양파(2개), 마늘, 버터
-    - 고기를 먼저 삶는다.
-    - 삶는동안 양파, 마늘은 같이 갈아서 그릇에 옮겨 놓는다.
-    - 고기가 삶아졌으면 꺼내서 간다.
-    - 다 같이 볶는다.
+    - 쌀(5컵), 고기(3파운드), 양파(2개), 쪽파2개, 마늘
+    - 고기를 삶는다.
+    - 삶는동안 양파를 볶는다.
+    - 고기가 삶아졌으면 물을 버리고 계속 가열하면서 잘게 자른다.
+    - 소스 + 마늘 + 볶은양파를 같이 넣고 복는다. (소스예: 간장1:고추장1)
     - OLIVE OIL & FLAK OIL을 뿌려먹는다.
+    
   - SAY-3 = Soymilk.Almond.Yogurt.3-Supplements
 
 * WEEKLY GROCERY
@@ -104,11 +105,5 @@ DISTANCE
     - 300g (chicken breast 3lbs)
     - 72g (egg 1dz)
     - 17.2g (rice 4cup)
-    - 33g (broccoli 2.5lbs)
-
-  <저녁 381g> #non-cooking
-    - 128g (fatfree milk 64oz x 2)
-    - 175g (isopure 7scoops)
-    - 45g (almond 210g = 7줌)
     - 33g (broccoli 2.5lbs)
  ```
