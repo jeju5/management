@@ -1,4 +1,4 @@
-# ROUTINE
+# DAILY ROUTINE
 ```
    TIME   |  TASK    | NOTES
 ---------------------------------------------------------------
@@ -11,18 +11,7 @@
 --------------------------------------------------------------
 ```
 
-# DREAMS
-```
-2020
-* Finish 'A River Runs Through It and Other Stories'
-
-2021
-* keeping 64kg
-* marathon SUB-3:30
-* read 6 books
-```
-
-# MOVE
+# WORKOUT ROUTINE
 ```
 --------------------------------------------------------------------------------------------
 | SUN    | MON          TUE          WED          | THU          FRI          SAT          |
@@ -59,7 +48,7 @@ DISTANCE
 * 5+5+22+5+5+23
 ```
 
-# EAT
+# DIET ROUTINE
 ```
 * WEEKLY COOKING
   수요일 저녁: C2L B3
