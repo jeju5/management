@@ -87,7 +87,7 @@ DISTANCE
   - 양파
   - Minced Garlic
   - 닭가슴살 3lbs
-  - 달걀 (USDA Organic)
+  - 달걀 (cafe-free organic)
   ---------------------
   - OLIVE OIL
   - FLAK OIL
