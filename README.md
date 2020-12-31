@@ -90,9 +90,9 @@ DISTANCE
     - 45g (almond 210g = 7줌)    
     - 33g (broccoli 2.5lbs)
 
-  <저녁 422g>
+  <저녁 426.5g>
     - 300g (chicken breast 3lbs)
     - 72g (egg 1dz)
-    - 17.2g (rice 4cup)
+    - 21.5g (rice 4cup)
     - 33g (broccoli 2.5lbs)
  ```
