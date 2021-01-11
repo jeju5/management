@@ -9,7 +9,7 @@
   * 뒷베이스: 귀위는 네손가락, 귀 아래는 세손가락
   ```
   
-* 단발
+* 리프컷
   ```
   * 윗뚜껑: 열손가락
   * 옆뚜껑: 열손가락 (앞머리랑 이어지는 부분은 앞머리랑 같이)
@@ -21,6 +21,7 @@
   
   <펌 필수>
   느낌
+  - https://www.youtube.com/watch?v=YhPCR1zeVkg&ab_channel=%EC%99%81%EC%8A%A4%EB%A7%88%EC%8A%A4%ED%84%B0%EC%A3%BC%EB%AF%BC%EB%8B%98%EC%95%84
   - https://www.youtube.com/watch?v=i7vf4zjU6MA&ab_channel=%EB%82%B4
   - https://www.youtube.com/watch?v=S7RYj6fpwAY&ab_channel=%EC%B9%A8%EC%B0%A9%EB%A7%A8
   - https://www.youtube.com/watch?v=MOFPOi2YgMc&ab_channel=JaehuhuTV
