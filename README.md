@@ -77,6 +77,9 @@ DISTANCE
   - Minced Garlic
   - 닭가슴살 3lbs
   - 달걀 (cafe-free organic)
+  - 시금치
+  - 김
+  - 김치
   ---------------------
   - OLIVE OIL
   - FLAK OIL
