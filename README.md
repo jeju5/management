@@ -76,15 +76,13 @@ DISTANCE
   - 그릭요거트 8ct (Triple Zero)
   ---------------------
   - 쌀
-  - 양파
+  - 양파x2
+  - 버섯(1/2팩)
+  - 파프리카
   - Minced Garlic
   - 닭가슴살 3lbs
   - 달걀 (cafe-free organic)
-  - 시금치
-  - 버섯
-  - 파프리카
   - 김
-  - 김치
   ---------------------
   - OLIVE OIL
   - FLAK OIL
