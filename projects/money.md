@@ -43,7 +43,7 @@ Risk-Max
   -----------------------------
   * INTC _
   * NVTA _
-  * GOOG $_
+  * GOOG _
   * ICLN (신재생에너지 ETF)
   * AI _
   * ARKK _
