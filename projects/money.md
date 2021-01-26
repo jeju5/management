@@ -33,16 +33,16 @@ Risk-Max
     
 * LIST
   <대기업>
-  * 이커머스: AMZN
-  * 하드웨어: AAPL
+   이커머스: AMZN
+   하드웨어: AAPL
   <ETF>
-  * 반도체: SOXX
-  * 에너지: ICLN
+   반도체: SOXX
+   에너지: ICLN
   <미래>
-  * 데이터: PLTR
-  * 헬스: NVTA, CRSP
+   데이터: PLTR
+   헬스: NVTA, CRSP
   <적립>
-  * 소프트웨어: SAP
+   소프트웨어: SAP
   
   <RUNNER UP>
   * INTC _
