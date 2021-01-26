@@ -32,15 +32,15 @@ Risk-Max
       * 조정오면 IRA: 잔액으로 TQQQ
     
 * LIST
-  <TOP-TEN>
+  <대기업>
   * 이커머스: AMZN
   * 하드웨어: AAPL
   <ETF>
   * 반도체: SOXX(ETF)
-  <미래주>
+  <미래>
   * 데이터: PLTR
   * 헬스: NVTA, CRSP
-  <적립주>
+  <적립>
   * 소프트웨어: SAP
   
   <RUNNER UP>
