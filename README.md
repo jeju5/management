@@ -48,6 +48,11 @@ MAXHR (2020)
 DISTANCE
 * 65mi/wk -> 423km/4wk
 * 5+5+22+5+5+23
+
+CUTTING Estimaates
+체중, 체지방률, 체지방
+80kg, 25%, 20kg
+65kg, 7.7%, 5kg
 ```
 
 # DIET ROUTINE
