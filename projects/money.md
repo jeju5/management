@@ -14,7 +14,6 @@ Holdings (ratio)
 - STOCK(ROBINHOOD) : 3477(25%)
 
 Risk-Max
-- MonthlyRiskMax = $3000 (이정도는 괜찮겠는데 하는 금액으로 설정)
 - YearlyRiskMax = $5000 (내가 부담이 없는 금액으로 설정)
 ```
 * Plans
@@ -27,9 +26,6 @@ Risk-Max
   * 2021
     * 401K: S&P500 100%
     * IRA: 6월에 $6000
-
-    * 1월
-      * 조정오면 IRA: 잔액으로 TQQQ
     
 * LIST
   <대기업>
