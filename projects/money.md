@@ -32,22 +32,24 @@ Risk-Max
       * 조정오면 IRA: 잔액으로 TQQQ
     
 * LIST
+  <TOP-TEN>
   * 이커머스: AMZN
   * 하드웨어: AAPL
-  * 데이터: PLTR
+  <ETF>
   * 반도체: SOXX(ETF)
-  * 헬스: NVTA
-  * B2B: SAP
-  -----------------------------
+  <미래주>
+  * 데이터: PLTR
+  * 헬스: NVTA, CRSP
+  <적립주>
+  * 소프트웨어: SAP
+  
+  <RUNNER UP>
   * INTC _
-  * NVTA _
   * GOOG _
   * ICLN (신재생에너지 ETF)
   * AI _
   * ARKK _
-  * CRSP _
   * HLT  _
-
 
   * 12/1 - 1/20에 -10%정도의 조정이 오면. 조정이 없으면 1주일 간격으로 25%씩 들어간다.
   * 팔란티어는 들어가도 3월이후에 락업관련 상황보고 결정한다.
