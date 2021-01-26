@@ -14,7 +14,7 @@ Holdings (ratio)
 - STOCK(ROBINHOOD) : 3477(25%)
 
 Risk-Max
-- YearlyRiskMax = $5000 (내가 부담이 없는 금액으로 설정)
+- YearlyRiskMax = $5000 (내가 부담이 있을까 말까한 금액으로 설정)
 ```
 * Plans
 ```
