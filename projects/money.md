@@ -36,7 +36,8 @@ Risk-Max
   * 이커머스: AMZN
   * 하드웨어: AAPL
   <ETF>
-  * 반도체: SOXX(ETF)
+  * 반도체: SOXX
+  * 에너지: ICLN
   <미래>
   * 데이터: PLTR
   * 헬스: NVTA, CRSP
