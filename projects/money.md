@@ -27,19 +27,23 @@ Risk-Max
     * 401K: S&P500 100%
     * IRA: 6월에 $6000
     
+* 2021 단기전략
+  * TQQQ -20% => $5000 넣고 +50%에 팔기 (이유: 2021은 무조건 우상향)
+  * SOXX 적립식 구매
+  * ICLN 적립식 구매
+  * SAP주식은 2022년 
+  
 * LIST
   <대기업>
    이커머스: AMZN
    하드웨어: AAPL
   <ETF>
-   반도체: SOXX
+   반도체: SOXX, SOXL
    에너지: ICLN
    나스닥: QQQ, TQQQ
   <미래>
-   데이터: PLTR
+   데이터: PLTR, SNOW
    헬스: NVTA, CRSP
-   관광: HLT
-   
   <적립>
    소프트웨어: SAP
   
