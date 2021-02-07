@@ -17,11 +17,11 @@
 ```
 --------------------------------------------------------------------------------------------
 | SUN    | MON          TUE          WED          | THU          FRI          SAT          |
-| 'REST' | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'REPSDAY'    'PULLDAY'    'LONGDAY'    |
+| '500'  | 'PULLDAY'    'PUSHDAY'    'LONGDAY'    | 'REPSDAY'    'PULLDAY'    'LONGDAY'    |
 --------------------------------------------------------------------------------------------
-|        | PULL(60)     RDIP(30)     AERO(2HR)    | SITU(500)    1P3P(60)     AERO(2+HR)   |
+| 500s   | PULL(60)     RDIP(30)     AERO(2HR)    | AERO(2HR)    1P3P(60)     AERO(2+HR)   |
 |        | CURL(10x10)  PUSH(100)                 |                                        |
-|        | AERO(1HR)    AERO(1HR)                 | AERO(1HR)    AERO(1HR)                 |
+|        | AERO(1HR)    AERO(1HR)                 |              AERO(1HR)                 |
 |        |                                        |                                        |
 |        |                                        |                                        |
 --------------------------------------------------------------------------------------------
