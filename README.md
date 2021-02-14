@@ -19,14 +19,14 @@
 | SUN    | MON          TUE          | WED          THU          | FRI          SAT        |
 | '500'  | 'PULLDAY'    'PUSHDAY'    | 'LONGDAY'    'REPSDAY'    | 'PULLDAY'    'LONGDAY'  |
 --------------------------------------------------------------------------------------------
-| 500S   | PULL(60)     AERO(2HR)    | RDIP(30)     AERO(2HR)    | 1P3P(60)     AERO(2+HR) |
+| 500x3  | PULL(60)     AERO(2HR)    | RDIP(30)     AERO(2HR)    | 1P3P(60)     AERO(2+HR) |
 |        | CURL(10x10)               | PUSH(10x10)               | AERO(1HR)               |
 |        | AERO(1HR)                 | AERO(1HR)                 |                         |
 |        |                           |                           |                         |
 |        |                           |                           |                         |
 --------------------------------------------------------------------------------------------
 * RDIP: 5초 팔피고 
-* 500S: SITU, TUBE, NECK
+* 500x3: 500Situps, 500Tubes, 500Necks
 * 치팅으로 강도를 낮추더라도 휴식을 짧게 간다.
 * AERO(=Aerobic Exercise): Run, AirRun, Bike, Swim
 
