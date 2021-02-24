@@ -22,6 +22,15 @@ Risk-Max
   * 33%: S&P TOP10 회사
   * 33%: ETF
   * 33%: 혁신 중소형 회사
+
+* 2월
+  * +$6000 IRA TRAD -> ROTH Roll Over: SOXX 50%, PLTR 40%, SNOW 9%, CRSP+NVTA <1%
+  * +$1500 AME: PLTR 100%
+* 3월
+  * +$500 AME
+  * +$4000 MARCUS (SAP BONUS받고)
+* 4월
+  * +$1000 AME
   
 * LIST
   <대기업>
