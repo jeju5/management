@@ -22,16 +22,10 @@ Risk-Max
   * 33%: S&P TOP10 회사
   * 33%: ETF
   * 33%: 혁신 중소형 회사
+  * SAP 주가가 전고점을 회복하면 100% 매도. 그 이후에도 매달 구매할때마다 매도
+  * 크리스마스 랠리에 내가 가진 모든 주식 매도 -> 내 가용자산의 15%를 SQQQ 구매
 
-* 2월
-  * +$6000 IRA TRAD -> ROTH Roll Over: SOXX 50%, PLTR 40%, SNOW 9%, CRSP+NVTA <1%
-  * +$1500 AME: PLTR 100%
-* 3월
-  * +$500 AME
-  * +$4000 MARCUS (SAP BONUS받고)
-* 4월
-  * +$1000 AME
-  
+
 * LIST
   <대기업>
    이커머스: AMZN
