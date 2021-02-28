@@ -39,6 +39,8 @@ Risk-Max
    헬스: NVTA, CRSP
   <적립>
    소프트웨어: SAP
+  <일상>
+   식당: MCD
   
   <RUNNER UP>
   * INTC _
