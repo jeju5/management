@@ -12,7 +12,7 @@
 * 예배(1H), 운동(2H), 공부(2H), 일과(8H), 자유(3H), 수면(8H)를 상황에 맞게 잘 계획하자
 ```
 
-# WORKOUT ROUTINE
+# 운동
 ```
 -------------------------------------------------------------------------------------------
 | SUN   | MON          TUE          | WED          THU          | FRI          SAT        |
@@ -35,6 +35,14 @@ CUTTING Estimaates
 체중, 체지방률, 체지방
 80kg, 25%, 20kg
 65kg, 7.7%, 5kg
+```
+
+# 공부
+```
+- English Speech: TED talk (1talk/wk)
+- English Reading: A River Runs Through It
+- Software UI: React
+- Software Algorithm: Leetcode
 ```
 
 # DIET ROUTINE
