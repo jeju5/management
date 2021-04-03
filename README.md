@@ -85,14 +85,16 @@ CUTTING Estimaates
 
 * WEEKLY PROTEIN PLAN
   * TARGET: 100g/day (700g/week)
-  <아침 277g>
+  <아침 307g>
     - 112g (soy milk 64oz x 2)
     - 120g (yogurt 150g x 8ct. Triple Zero)
-    - 45g (almond 210g = 7줌)    
+    - 45g (almond 210g = 7줌)   
+    - 30g (브로콜리 1/2lbs)
 
-  <저녁 386g>
+  <저녁 416g>
     - 250g (chicken breast 2.5lbs)
     - 72g (egg 1dz)
     - 19g (rice 3.5cup)
     - 45g (pea 1lbs)
+    - 30g (브로콜리 1/2lbs)
  ```
