@@ -18,7 +18,7 @@
 | SUN   | MON          TUE          | WED          THU          | FRI          SAT        |
 --------------------------------------------------------------------------------------------
 | 500x3 | PULL(100)    AERO(1.5HR)  | PLNC(10min)  AERO(1.5HR)  | PULL(100)    AERO(2+HR) |
-|       | CURL(100)                 | PUSH(100)                 | CURL(100)               |
+|       | CURL(100)                 | PUSH(200)                 | CURL(100)               |
 |       | AERO(1HR)                 | AERO(1HR)                 | AERO(1HR)               |
 |       |                           |                           |                         |
 |       |                           |                           |                         |
