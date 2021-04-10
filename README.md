@@ -23,7 +23,7 @@
 |       |                           |                           |                         |
 |       |                           |                           |                         |
 -------------------------------------------------------------------------------------------
-* 500x3: 500Situps, 500Tubes, 500Necks
+* 500x3: 250legraise, 250crunch, 500Tubes, 500Necks
 * AERO(=Aerobic Exercise): Run, AirRun, Bike, Swim
 
 KEEP 65.0kg
