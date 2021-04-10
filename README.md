@@ -68,7 +68,7 @@ CUTTING Estimaates
   - 쌀
   - 양파x3
   - 다진마늘
-  - 고기 3lbs (연어1lbs, 닭1lbs)
+  - 고기 3lbs
   - 완두콩 1lbs
   - 달걀 (cafe-free organic)
   ---------------------
@@ -83,9 +83,8 @@ CUTTING Estimaates
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)   
     - 30g (브로콜리 1/2lbs)
-
   <저녁 416g>
-    - 250g (chicken breast 2.5lbs)
+    - 250g (meat 3lbs)
     - 72g (egg 1dz)
     - 19g (rice 3.5cup)
     - 45g (pea 1lbs)
