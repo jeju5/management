@@ -26,10 +26,9 @@
 * 500x3: 250legraise, 250crunch, 500Tubes, 500Necks
 * AERO(=Aerobic Exercise): Run, AirRun, Bike, Swim
 
-KEEP 65.0kg
+KEEP 64.0kg
 * AMA-LIGHT(63.0kg)
 * PRO-LIGHT(61.2kg)
-* 식단조절은 그냥 규칙적으로 먹는거다. 여기서 더 줄이지 마라. 보상심리때문에 더 먹더라. 백퍼실패.
 
 CUTTING Estimaates
 체중, 체지방률, 체지방
