@@ -17,13 +17,13 @@
 -------------------------------------------------------------------------------------------
 | SUN   | MON          TUE          | WED          THU          | FRI          SAT        |
 --------------------------------------------------------------------------------------------
-| 500x3 | PULL(100)    AERO(1.5HR)  | PLNC(10min)  AERO(1.5HR)  | 2P20P(10)    AERO(2+HR) |
+| ARN   | PULL(100)    AERO(1.5HR)  | PLNC(10min)  AERO(1.5HR)  | 2P20P(10)    AERO(2+HR) |
 |       | CURL(100)                 | PUSH(200)                 |                         |
 |       | AERO(1HR)                 | AERO(1HR)                 | AERO(1HR)               |
 |       |                           |                           |                         |
 |       |                           |                           |                         |
 -------------------------------------------------------------------------------------------
-* 500x3: (25leg-raise+25crunch)x10, 500Tubes, 500Necks
+* ARN(Abs,RotatorCuff,Neck): "legraise(10)-plank(30sec)-crunch(10)-plank(30sec)"x10, 500Tubes, 500Necks
 * AERO(=Aerobic Exercise): Run, AirRun, Bike, Swim
 
 KEEP 64.0kg
