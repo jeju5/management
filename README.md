@@ -47,10 +47,12 @@ CUTTING Estimaates
 
 # 공부
 ```
-- English Speech: TED talk (1talk/wk)
-- English Reading: A River Runs Through It
-- Software UI: React
-- Software Algorithm: Leetcode
+- English
+   - Speech: TED talk (1talk/wk)
+   - Reading: A River Runs Through It
+- Software
+   - UI: React
+   - Algorithm: Leetcode
 ```
 
 # DIET ROUTINE
