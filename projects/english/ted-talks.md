@@ -47,65 +47,6 @@
 * falsetto   [f빨세토] 가성
 * timbre   [팀벌] 음색
 
-# TED - How to spot a liar 
-* https://www.youtube.com/watch?v=P_6vDLq64gE
-* REP: 1
-* nitpicky		[닛피키] 사소한 흠을 들추는
-* utter			소리내어 말하다
-* utterance		소리내어 말함
-* crux			가장 중요한 부분
-* prevalent		[프레블런트] 만연한; prevail 만연하다
-* ambivalent		상반되는
-* covert			은밀한
-* breadwinner		생계부양자
-* partisan		당파적인 (파에 휘둘리는)
-* ponzi scheme	다단계 사기
-* schemer		책략가
-* morass		늪
-* allegation		혐의
-* telltale			비밀을 폭로하는 것, 비밀을 폭로하는 사람(밀고자)
-* resort to A		A에 의지하다
-* discredit		신용을 떨어뜨리다
-* infuriate		격분하다
-* herky-jerky		움찔움찔하는
-* squirm		꼼지락대다
-* dupe			속이다
-* wedlock		혼인상태
-* dismiss		해산하다, 해고하다
-* flail			철퇴, 도리깨 / 철퇴.도리깨로 패다, 철퇴.도리깨처럼 움직이다
-* scraggy		말라빠진
-* demeanor		행동
-* veracity		진실성; veracious 진실된
-* panacea		[페네시아] 만병통치약
-
-# TED - The power of introverts
-* https://www.youtube.com/watch?v=c0KYU2j0TM4
-* REP: 4
-* bunk			이층침대
-* mellow		그윽하게 익은
-* forsake		책임을 저버리다
-* grandiose		거창한
-* gregarious		군집성의
-* unwittingly		자신도 모르게
-* helm			배의 조종 키
-* at the helm		조직을 책임지는
-* smack			찰싹 때리다
-* smack in the middle of A	A의  한가운데
-* streak			줄무늬 선
-* emphatic		단호한
-* transcend		초월하다
-* epiphany		[에피퍼니] 예수님의 공현 (동방박사 방문을 상징하는 날)
-* visceral		내장의, 본능적인
-* contemplate		숙고하다
-* rectitude		청렴함
-* intricate		복잡한
-* tapestry		테피스트리 작품
-* podium		강단
-* bliss			큰 행복
-* milieu			생활 환경
-* poise			평형
-* serendipitous		[세렌 디피러스] 뜻밖의
-
 # TED - The surprisingly charming science of your gut
 * https://www.youtube.com/watch?v=HNMQ_w7hXTA
 * REP: 3
@@ -140,12 +81,3 @@
 * probe   캐묻다, 조사하다 / 무인우주탐사선
 * annihilate   [애나힐레잇] 전멸시키다
 * delve into A    A를 파고들다
-
-# TED - 
-*
-
-# TED - 
-*
-
-# TED - 
-*
