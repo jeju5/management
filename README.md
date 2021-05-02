@@ -26,13 +26,13 @@
 -------------------------------------------------------------------------------------------
 | SUN   | MON          TUE          | WED          THU          | FRI          SAT        |
 --------------------------------------------------------------------------------------------
-| ARN   | PULL(100)    AERO(1.5HR)  | PUSH(300)    AERO(1.5HR)  | 2P20P(10)    AERO(2+HR) |
-|       | CURL(100)                 |                           |                         |
-|       | AERO(1HR)                 | AERO(1HR)                 | AERO(1HR)               |
+| A&N   | PULL(100)   ROTA(150)     | PUSH(300)    ROTA(150)    | 2P20P(10)    AERO(2.0HR)|
+|       | CURL(100)   AERO(1.5HR)   | AERO(1HR)    AERO(1.5HR)  | AERO(1HR)               |
+|       | AERO(1HR)                 |                           |                         |
 |       |                           |                           |                         |
 |       |                           |                           |                         |
 -------------------------------------------------------------------------------------------
-* ARN(Abs,RotatorCuff,Neck): "legraise(10)-plank(30sec)-crunch(10)-plank(30sec)"x10, 500Tubes, 500Necks
+* A&N(Abs & Neck): "legraise(10)-plank(30sec)-crunch(10)-plank(30sec)"x10, 500Necks
 * AERO(=Aerobic Exercise): Run, AirRun, Bike, Swim
 * Change PUSH(300) to PLNC(10min)+PUSH(200)
 
