@@ -81,8 +81,8 @@ CUTTING Estimaates
   - 쌀
   - 양파x2
   - 다진마늘
-  - 고기 3.5lbs
-  - 완두콩 1.5lbs
+  - 고기 3lbs
+  - 완두콩 28oz
   - 달걀 1dozen
   - 파스타소스 24oz
   ---------------------
@@ -92,15 +92,14 @@ CUTTING Estimaates
 
 * WEEKLY PROTEIN PLAN
   * TARGET: 100g/day (700g/week)
-  <아침 323g>
-    - 128g (fat free milk 64oz x 2)
-    - 120g (yogurt 150g x 8ct. Triple Zero)
-    - 45g (almond 210g = 7줌)   
+  <아침 315g>
+    - 240g (yogurt 150g x 16ct. Triple Zero)
+    - 45g (almond 210g = 7줌)
     - 30g (브로콜리 1/2lbs)
   <저녁 416g>
     - 270g (meat 3lbs)
     - 72g (egg 1dz)
+    - 45g (pea 28oz)
     - 19g (rice 3.5cup)
-    - 45g (pea 1lbs)
     - 30g (브로콜리 1/2lbs)
  ```
