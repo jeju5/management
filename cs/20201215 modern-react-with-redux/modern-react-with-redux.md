@@ -1731,7 +1731,7 @@ https://www.udemy.com/course/react-redux/
 
   export default Header;
   ```
-* Downside on this approach of using <a href />?
+* Downside on this approach of using `<a href />`?
   * inefficiency
     ```
     user clicks <a> link -> the browser is routed to the url that href states -> the whole page refreshes -> load entire `html, css, scripts...
