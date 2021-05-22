@@ -1268,11 +1268,11 @@ https://www.udemy.com/course/react-redux/
   */
   useEffect(effectFunction, effectCondition);
   
-  useEffect(a);        // execute 'a' after the first render. and no more.
-  useEffect(a, []);    // execute 'a' after the first render. and all afterward.
-  useEffect(a, [b]);   // execute 'a' after the first render. and when 'b' is changed.
-  useEffect(a, [b,c]); // execute 'a' after the first render. and when 'b' or 'c' is changed.
-  useEffect(a, [b,c,d]); // execute 'a' after the first render. and when 'b', 'c' or 'd' is changed.
+  useEffect(a);        // execute 'a' after the first render of the functional component it is defined in. and no more.
+  useEffect(a, []);    // execute 'a' after the first render of the functional component it is defined in. and all afterward.
+  useEffect(a, [b]);   // execute 'a' after the first render of the functional component it is defined in. and when 'b' is changed.
+  useEffect(a, [b,c]); // execute 'a' after the first render of the functional component it is defined in. and when 'b' or 'c' is changed.
+  useEffect(a, [b,c,d]); // execute 'a' after the first render of the functional component it is defined in. and when 'b', 'c' or 'd' is changed.
   ```
   * limitation to useEffect: "effect function can't be defined with async keyword"
     * not allowed
@@ -1335,14 +1335,14 @@ https://www.udemy.com/course/react-redux/
   * use case: `<div dangerouslySetInnerHTML={{ __html: r.snippet}} />`
  
 * useEffect cleanup
-  * useEffect function can return a 'clean up function' this gets executed at when functional component is unmounted (`componentWillUnmount`)
+  * useEffect function can return a 'clean up function' this gets executed at when functional component where useEffect is defined is unmounted (`componentWillUnmount`)
   ```js
-    useEffect(() => {
-     // use effect
-     return (()=> { // clean up });
-    },
-    [term]
-  );
+  const FuncComp = () => {  
+     useEffect(() => {
+      // use effect
+      return (()=> { // clean up logic to execute when FuncComp is unmounted });
+     }, [term]);
+  }
   ```
 * search with timeout using useEffectCleanup
   ```js
