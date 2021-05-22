@@ -1833,7 +1833,7 @@ https://www.udemy.com/course/react-redux/
         }
         </Route>
     </div>
-  );
+   );
    ```
 # Section 14: Hooks in Practice
 * Optional Tutorial. Just watched.
