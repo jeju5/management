@@ -513,6 +513,15 @@ https://www.udemy.com/course/react-redux/
 * Do I need a constructor?
   * If you try in babel, you will notice that 'state initalization outside of a constructor lets babel to create a constructor for you like this
     ```js
+    class App extends React.Component {
+      // state initalization
+      state = {
+        latitude : null,
+        errorMsg : null
+      };
+    }
+    ```
+    ```js
     /* babel try out with state-init outside the constructor */
     
     class App extends React.Component {
