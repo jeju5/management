@@ -1260,19 +1260,26 @@ https://www.udemy.com/course/react-redux/
   const [stateName, stateSetter] = useState(stateInitialValue);
   ```
 * `useEffect` allows functional component to use 'life cycle'
+  * tip: render vs mount? 
+    * render: transformation react code into DOM
+    * mount: embedment rendered DOM into DOM tree.
   * syntax
   ```js
   /*
-  - a is function that is triggered after rendered.
-  - b is a option array type argument that triggers a contionally.
+  - effectFunction is function that is triggered after rendered.
+  - effectCondition is a optional argument. It is an array of 'arguments of the functional component' that defines when to execute 'effectFunction'.
   */
   useEffect(effectFunction, effectCondition);
   
-  useEffect(a);        // execute 'a' after the first render of the functional component it is defined in. and no more.
-  useEffect(a, []);    // execute 'a' after the first render of the functional component it is defined in. and all afterward.
-  useEffect(a, [b]);   // execute 'a' after the first render of the functional component it is defined in. and when 'b' is changed.
-  useEffect(a, [b,c]); // execute 'a' after the first render of the functional component it is defined in. and when 'b' or 'c' is changed.
-  useEffect(a, [b,c,d]); // execute 'a' after the first render of the functional component it is defined in. and when 'b', 'c' or 'd' is changed.
+  const FuncComp = (b,c,d,e,f) => {
+    useEffect(a, []);      // execute 'a' after the first render of the FuncComp and no more.
+    useEffect(a);          // execute 'a' after the first render of the FuncComp and all re-render (whenever b,c,d,e or f are changed then it re-renders.
+    useEffect(a, [b]);     // execute 'a' after the first render of the FuncComp and when 'b' is changed.
+    useEffect(a, [b,c]);   // execute 'a' after the first render of the FuncComp and when 'b' or 'c' is changed.
+    useEffect(a, [b,c,d]); // execute 'a' after the first render of the FuncComp. and when 'b', 'c' or 'd' is changed.
+         
+    return ...
+  }
   ```
   * limitation to useEffect: "effect function can't be defined with async keyword"
     * not allowed
@@ -1335,12 +1342,12 @@ https://www.udemy.com/course/react-redux/
   * use case: `<div dangerouslySetInnerHTML={{ __html: r.snippet}} />`
  
 * useEffect cleanup
-  * useEffect function can return a 'clean up function' this gets executed at when functional component where useEffect is defined is unmounted (`componentWillUnmount`)
+  * useEffect function can return a 'clean up function'. this gets executed at update or unmount. (acts as `componentDidUnmount` & `componentWillUnmount`)
   ```js
-  const FuncComp = () => {  
+  const FuncComp = ({term}) => {  
      useEffect(() => {
       // use effect
-      return (()=> { // clean up logic to execute when FuncComp is unmounted });
+      return (()=> { // clean up logic to execute when term is updated or FuncComp is unmounted });
      }, [term]);
   }
   ```
