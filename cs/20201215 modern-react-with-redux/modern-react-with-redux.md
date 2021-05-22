@@ -1266,7 +1266,7 @@ https://www.udemy.com/course/react-redux/
   - a is function that is triggered after rendered.
   - b is a option array type argument that triggers a contionally.
   */
-  useEffect(a, b);
+  useEffect(effectFunction, effectCondition);
   
   useEffect(a);        // execute 'a' after the first render. and no more.
   useEffect(a, []);    // execute 'a' after the first render. and all afterward.
@@ -1274,29 +1274,32 @@ https://www.udemy.com/course/react-redux/
   useEffect(a, [b,c]); // execute 'a' after the first render. and when 'b' or 'c' is changed.
   useEffect(a, [b,c,d]); // execute 'a' after the first render. and when 'b', 'c' or 'd' is changed.
   ```
-  * limitation to useEffect: you can't directly pass a async method.
-    ```js
-    useEffect(() => {
-      const search = async () => {
-        await axios.get('URL');
-      }
-      search();
-    }, [term]);
-    ```
-    ```js
-    useEffect(() => {
-      (async () => {
-        await axios.get('URL');
-      })();
-    }, [term]);
-    ```
-* you can't directly put async function as the first arg of useEffect hook
-  ```js
-  useEffect(async () => {
-    await axios.get(...)
-  }, [term]);
-  ```
-* make async call inside the function you put in as the first arg of useEffect hook
+  * limitation to useEffect: "effect function can't be defined with async keyword"
+    * not allowed
+      ```js
+      useEffect(async () => {
+        await axios.get(...)
+      }, [term]);
+      ```
+    * allowed: however, you can define async inside the effect function and execute it.
+      * named
+      ```js
+      useEffect(() => {
+        const search = async () => {
+          await axios.get('URL');
+        }
+        search();
+      }, [term]);
+      ```
+      * nameless
+      ```js
+      useEffect(() => {
+        (async () => {
+          await axios.get('URL');
+        })();
+      }, [term]);
+      ```
+* allowed async example
   ```js
   useEffect(async () => {
     await axios.get(...)
