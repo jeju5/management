@@ -920,7 +920,8 @@ https://www.udemy.com/course/react-redux/
     })
   }
   ```
-* method with `async` and `await` keyword 
+* method with `async` and `await` keyword.
+  * If you want to use await in the function. You need to define that function with 'async' keyword. 'asnyc' allows 'promise-based' behavior of the function.
   ```js
     async onSearchBarSubmit(term) {
     const response = await axios.get(
