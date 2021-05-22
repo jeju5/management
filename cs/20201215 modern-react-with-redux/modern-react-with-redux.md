@@ -23,8 +23,8 @@ https://www.udemy.com/course/react-redux/
   * What is State in React? (useState)
     * State is a data system that react keeps track of.
 * How does it render on the browser?
+  * Order: "index.html -> bundle.js -> index.js -> app.js"
   * Browser first loads public/index.html
-
   * Browser then makes another requests to bundle.js.
   * bundle.js bundles index.js, app.js and react.js, which gets loaded on the browser.
   * among three index.js is loaded first.
