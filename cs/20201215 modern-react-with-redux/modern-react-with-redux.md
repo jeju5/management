@@ -113,10 +113,11 @@ https://www.udemy.com/course/react-redux/
     * => It is not mandatory, but it simplifies our code.
 * JSX Syntax: Inline Styling
   ```
+  "DoubleCurly-CamelCase-Quote-Comma"
   <4 RULES>
   1. 'double curly' the double quote.
   2. 'camel case' the hyphen in the property name.
-  3. 'single quote' the property value. (single tick the property value if you are inject a reference into the property string value)
+  3. 'single(or double) quote' the property value. (single tick the property value if you are inject a reference into the property string value)
   4. 'comma or remove' the semicolon
   ```
   * HTML
