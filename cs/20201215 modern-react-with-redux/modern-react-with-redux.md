@@ -1793,6 +1793,47 @@ https://www.udemy.com/course/react-redux/
    };
 
    export default Route;
+   ```js
+   // App.js
+   
+   ...
+     return (
+    <div>
+      <div className="ui secondary pointing menu">
+        <Link href="/" className="item">
+          Accordion
+        </Link>
+        <Link href="/list" className="item">
+          Search
+        </Link>
+        <Link href="/dropdown" className="item">
+          Dropdown
+        </Link>
+        <Link href="/translate" className="item">
+          Translate
+        </Link>
+      </div>
+      <Route path="/">
+        <Accordion items={items} />
+      </Route>
+      <Route path="/list">
+        <Search />
+      </Route>
+      <Route path="/translate">
+        <Translate />
+      </Route>
+      <Route path="/dropdown">
+        <button onClick={() => setShowDropdown(!showDropdown)}>Toggle Dropdown</button>
+        {
+          showDropdown  ?  <Dropdown options={options}
+                                    selected={selected}
+                                    onSelect={setSelected}
+                          />
+                        : null
+        }
+        </Route>
+    </div>
+  );
    ```
 # Section 14: Hooks in Practice
 * Optional Tutorial. Just watched.
