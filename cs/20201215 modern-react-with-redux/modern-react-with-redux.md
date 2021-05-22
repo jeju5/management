@@ -1793,9 +1793,10 @@ https://www.udemy.com/course/react-redux/
    };
 
    export default Route;
+   ```
+
    ```js
    // App.js
-   
    ...
      return (
     <div>
