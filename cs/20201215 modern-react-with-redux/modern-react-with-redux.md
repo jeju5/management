@@ -777,6 +777,7 @@ https://www.udemy.com/course/react-redux/
     const truck = {
       sound : "put!put!"
       driveMyTruck: car.drive // driveMyTruck is simply a reference to drive method. (context of car is gone)
+    }
 
     // this returns "put!put!"
     // truck.driveMyTruck() = truck.'reference to drive method in car' = truck.drive()
@@ -826,13 +827,11 @@ https://www.udemy.com/course/react-redux/
     * In short: since arrow function doesn't have `this`. It takes `this` as the class where it is defined. When you created inside of constructor, it is referencing to class.
     ```js
     class Car {
-      constructor() {
-        this.drive = () => {
-          return this.sound;
-        }
-      }
       setDriveSound(sound) {
         this.sound = sound;
+      }
+      drive = () => {
+        return this.sound;
       }
     }
     ```
