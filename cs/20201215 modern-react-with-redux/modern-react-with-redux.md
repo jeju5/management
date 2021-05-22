@@ -1113,7 +1113,7 @@ https://www.udemy.com/course/react-redux/
 * After ImageCard is loaded, let's get the height of each img
   ```js
   componentDidMount() {
-    console.log(this.imageRef); // imageReft is { current: img }
+    console.log(this.imageRef); // imageReft is { current: img } where img is a reference to the <img />
     console.log(this.imageRef.current.clientHeight);
   }
   ```
