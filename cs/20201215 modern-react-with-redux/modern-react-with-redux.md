@@ -1987,7 +1987,7 @@ https://www.udemy.com/course/react-redux/
      }
      */
     ```
-# Section 17: Section 17: Integrating React with Redux
+# Section 17: Integrating React with Redux
 * Redux is a state management library
   * React-Redux is a library that integrates Redux with React.
     ```
@@ -2128,8 +2128,8 @@ https://www.udemy.com/course/react-redux/
   export default connect()(SongList);
   ```
   * connect() returns a function. Let's say f is returned. Then connect()(SongList) is same as f(SongList)
-* connect with mapStateToProps
-  * connect function may take mapStateToProps as a first argument.
+* connect & mapStateToProps
+  * connect function may take mapStateToProps as the first argument.
   * mapStateToProps is a function that takes the whole state in the redux-store and returns some of them as props
   ```js
   class SongList extends React.Component {
@@ -2158,5 +2158,131 @@ https://www.udemy.com/course/react-redux/
     ```
     * in ES6 JS, if the key-name is the same as the name of the variable that the value refers to. You can just pass
 
-* connect with actionCreators
+* connect & actionCreators
+  * connect function may take an object of actionCreator functions as the second argument.
+  ```js
+  // SongList.js
+  import { selectSong } from '../actions/actions';
+   
+  class SongList extends React.Component {
+    ...
+    return (
+      <div className="item" key={song.title}>
+          <button className="ui button primary" onClick={() => this.props.selectSong(song)}>Select</button>
+      </div>
+    );
+  }
+  ...
+  export default connect(
+      mapStateToProps,
+      { selectSong: selectSong }
+  )(SongList);
+  ```
+  * tip
+    * state or actionCreators that are passed with connect will be part of `this.props`. And this will be the same for either in functional component or class component.
+    * executing actionCreators that are passed is `dispatch` lifecycle of redux lifecycle. 
+  * Question: but why do we import and pass it as a prop with connect? why not just use it right away after import?
+    * using the actionCreator right away have no connection to redux store itself.
+    * actionCreator will send the action to reducers when passed with connect function.
+
+# Section 18: Async Actions with Redux Thunk
+* redux-thunk
+  ```
+  npm install --save redux-thunk
+  ```
+  * what is redux-thunk?
+    * It is a middleware that helps us make request in a redux app.
+* incorrect approach to async actionCreators
+  * this will end up with an error because an action of an actionCreators should be a plain js object. Using `async` and `await` turns the action above into complicated js code (not a plain object). It will make more sense if you try babel.js sandbox.
+  ```js
+  // actions.js
   
+  const requestedJson = axios.create({
+      baseURL: 'https://jsonplaceholder.typicode.com'
+  })
+  
+  export const fetchPosts = async () => {
+      const response = await requestedJson.get('/posts');
+  
+      return {
+          type: "FETCH_POST",
+          payload: response
+      };
+  };
+  ```
+* how about without `async` & `await`? this will end up with unfetched data because axios call is not awaited.
+  ```js
+  // actions.js
+  
+  const requestedJson = axios.create({
+      baseURL: 'https://jsonplaceholder.typicode.com'
+  })
+  
+  export const fetchPosts = () => {
+      const promise = requestedJson.get('/posts');
+  
+      return {
+          type: "FETCH_POST",
+          payload: promise
+      };
+  };
+  ```
+* Rules of regular redux actionCreator
+  * ActionCreator must return a plain-object Action.
+  * Action must have a `type`, and it may have a `payload`.
+
+* Rules of redux-thunk actionCreator
+  * ActionCreator can return a plain-object Action.
+    * If Action is a plain-object, Action must have a `type`, and it may have a `payload`.
+  * ActionCreator can return a dispatching-function
+    * this dispatching-function takes dispatch and getState(optional) and should dispatch manually.
+
+* Usage of Redux-Thunk
+  * init Store with redux-thunk
+  ```js
+  // index.js
+  ...
+  import { createStore, applyMiddleWare } from 'redux';
+  import thunk from 'redux-thunk';
+  ...
+  
+  ReactDOM.render(
+    <Provider store={createStore(reducers, applyMiddleWare(thunk))}>
+      <App />
+    </Provider>,
+    document.getElementById('root')
+  );
+  ```
+  * define a actionCreator that returns a dispatching-function.
+  ```js
+  // actions.js
+  export const fetchPostsThunk = () => {
+    return ( async ( dispatch ) => {
+      const response = await fetchedJson.get('/posts');
+
+      dispatch({
+        type: "FETCH_POST",
+        payload: response
+      })
+    });
+  };
+  ```
+  ```js
+  // PostList.js
+  ...
+  class PostList extends React.Component {
+  
+      componentDidMount() {
+          this.props.fetchPostsThunk();
+      }
+  
+      render() {
+          return <div>Post List</div>
+      }
+  }
+  
+  export default connect(
+      null,
+      { fetchPostsThunk }
+  )(PostList)
+  ```
