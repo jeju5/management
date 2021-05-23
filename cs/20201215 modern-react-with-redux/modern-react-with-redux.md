@@ -1907,3 +1907,256 @@ https://www.udemy.com/course/react-redux/
 * Deploying React App doesn't require a VM (lightweight)
 * Deployment Option1: Vercel (https://vercel.com/)
 * Deployment Option2: Netlify (https://www.netlify.com/)
+
+# Section 16: On We Go...To Redux!
+* Redux: js state(data) management library.
+* Redux lifecycle easy explanation  
+  * Action: 'state change request' js object
+    ```js
+    {
+      type: "CREATE_POLICY",
+      payload: {
+        name: policyName
+        amount: policyAmount
+    }
+    ```
+  * Action Creator: Function that creates 'Action'
+     ```js
+     const createPolicy = (policyName, policyAmount) => {
+       return {
+          type: "CREATE_POLICY",
+          payload: {
+            name: policyName,
+            amountSaved: policyAmount
+          }
+       }
+     }
+    
+     const createClaim = (reason, amount) => {
+       return {
+          type: "CREATE_CLAIM",
+          payload: {
+            reasonClaimed: reason,
+            amountClaimed: amount
+          }
+       }
+     }
+     ```
+  * Reducers: Function that updates state
+     ```js
+     const policyReducer = (prevPolicies = [], action) => { // [] will be the very first policies state of the store
+        if (action.type == 'CREATE_POLICY') {
+          return [...prevPolicies, action.payload.policyName]
+        }
+        return prevPolicies;
+     }
+     
+     const moneyReducer = (prevMoney = 100, action) => {  // 100 will be the very first money state of the store
+        if (action.type == 'CREATE_POLICY') {
+          return prevMoney + action.payload.amountSaved;
+        } else if (action.type == 'CREATE_CLAIM') {
+          return prevMoney - action.payload.amountClaimed;
+        }
+        return prevMoney;
+     }
+     ```
+  * Store: storage of state.
+     ```js
+     const { createStore, combineReducers } = Redux;
+     
+     const myReducers = combineReducers({
+        myMoney: moneyReducer,
+        myPolicies: policyReducer
+     })
+     
+     const store = createStore(reducers);
+     ``` 
+  * Dispatch: Function that delivers 'Action' to 'Reducers"
+    ```js
+    const action1 = createPolicy("PO1", 1000);
+    const action1 = createPolicy("PO332", 100);
+    const action2 = createClaim("Buy Rolex", 300); 
+    
+    store.dispatch(action);
+    console.log(store.getState());
+    
+    /* console.log will return
+     {
+      myMoney: 900,
+      myPolicies: ["PO1", "PO332"}]
+     }
+     */
+    ```
+# Section 17: Section 17: Integrating React with Redux
+* Redux is a state management library
+  * React-Redux is a library that integrates Redux with React.
+    ```
+    npm install --save redux
+    npm install --save react-redux
+    ```
+  * Design Proposal of 'song' app
+    * 'song' app design without redux
+      ```js
+      <App /> state = { songs, selectedSong }, onSongSelect()
+        <SongList /> props = { songs, onSongSelect }  
+        <SongDetail /> props = { selectedSong } 
+      ```
+    * 'song' app design with redux
+      ```js
+      ActionCreators: selectSong
+      Reducers: songListReducer, selectedSongReducer
+      ```
+  * Brief overview of React-Redux
+    ```js
+    Provider (redux-store is defined in here)
+       |          ↑
+      App         connect (connect allows SongList to communicate with Provider)
+       |          ↑
+     SongList  →→→→
+    
+    Connect (redux-actionCreators are defined here. It communicates with Provider)     
+    ```
+* project structure with redux
+  ```
+  /src
+    /actions    -- redux-actionCreators
+    /reducers   -- redux-reducers
+    /components -- react-components
+    index.js
+  ```
+* defining actions
+  ```js
+  export const selectSong = (songName) => {
+      return {
+         type: 'SONG_SELECTED',
+         payload: songName
+      };
+  };
+  ```
+* defining reducers and combining them with 'combineReducers'
+  ```js
+  import { combineReducers } from 'redux';
+  
+  const songsReducer = () => {
+      return [
+          {title: "Surfing", duration: "4:01"},
+          {title: "Safari", duration: "5:01"},
+          {title: "Starkist", duration: "3:01"},
+          {title: "Milk", duration: "1:01"}
+      ];
+  }
+  
+  const selectedSongReducer = (selectedSong = null, action) => {
+      if (action.type === "SONG_SELECTED") {
+          return action.payload;
+      }
+  
+      return selectedSong;
+  }
+  
+  export default combineReducers({
+      songs: songsReducer,
+      selectedSong: selectedSongReducer
+  })
+  ```
+* tip: named-export vs default export
+  * default-export/import
+  ```js
+  // car.js
+  export default const buyCar = () => {
+    //
+  }
+  ```
+  ```js
+  import a from 'car';
+  // a refers to buyCar
+  ```
+  * named-export/import
+  ```js
+  // car.js
+  export const buyCar = () => {
+    //
+  }
+  
+  export const stealCar = () => {
+    //
+  }
+  ```
+  ```js
+  import { buyCar, stealCar } from 'car';
+  ```
+  * named-import with alias
+    * lets say you have buyCars in factory.js and dealer.js. You can use alias to differentiate them using `as`.
+  ```js
+  import { buyCar as buyCarFromFactory, stealCar } from 'factory';
+  import { buyCar as buyCarFromDealer } from 'car';
+  ```
+* Setting up Provider
+  * put App under Provider
+  * pass create store with reducers and pass it to Provider
+  ```js
+  // index.js
+  
+  import React from 'react';
+  import ReactDOM from 'react-dom';
+  import { Provider } from 'react-redux';
+  import { createStore } from 'redux';
+  
+  import App from './components/App';
+  import reducers from './reducers/reducers';
+  
+  ReactDOM.render(
+      <Provider store={createStore(reducers)}>
+          <App />
+      </Provider>,
+      document.querySelector('#root')
+  );
+  ```
+* Setting up connect
+  ```js
+  // SongList.js
+  
+  import React from 'react';
+  import { connect } from 'react-redux';
+  
+  class SongList extends React.Component {
+      render() {
+          return <div>SongList</div>;
+      }
+  }
+  
+  export default connect()(SongList);
+  ```
+  * connect() returns a function. Let's say f is returned. Then connect()(SongList) is same as f(SongList)
+* connect with mapStateToProps
+  * connect function may take mapStateToProps as a first argument.
+  * mapStateToProps is a function that takes the whole state in the redux-store and returns some of them as props
+  ```js
+  class SongList extends React.Component {
+      render() {
+          return <div>SongList</div>;
+      }
+  }
+  
+  const mapStateToProps = (state) => {
+      return {
+          songs: state.songs
+      };
+  }
+  
+  export default connect(mapStateToProps)(SongList);
+  ```
+* tip: js object with ES6
+    ```js
+    const tiger = "tyron";
+    const lion = "lily"
+    
+    const a = { tiger:  tiger, lion: lion}
+    const b = { tiger, lion }
+    
+    // a and b will look identical
+    ```
+    * in ES6 JS, if the key-name is the same as the name of the variable that the value refers to. You can just pass
+
+* connect with actionCreators
+  
