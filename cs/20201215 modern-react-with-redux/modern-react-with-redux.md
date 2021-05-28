@@ -1911,15 +1911,9 @@ https://www.udemy.com/course/react-redux/
 # Section 16: On We Go...To Redux!
 * Redux: js state(data) management library.
 * Redux lifecycle easy explanation  
-  * Action: 'state change request' js object
-    ```js
-    {
-      type: "CREATE_POLICY",
-      payload: {
-        name: policyName
-        amount: policyAmount
-    }
-    ```
+  ```
+  ActionCreator --(Action)--> Dispatch --(Action)--> Reducer --> Store
+  ```
   * Action Creator: Function that creates 'Action'
      ```js
      const createPolicy = (policyName, policyAmount) => {
@@ -1942,6 +1936,31 @@ https://www.udemy.com/course/react-redux/
        }
      }
      ```
+  * Action: 'state change request' js object
+    ```js
+    {
+      type: "CREATE_POLICY",
+      payload: {
+        name: policyName
+        amount: policyAmount
+    }
+    ```
+  * Dispatch: Function that delivers 'Action' to 'Reducers"
+    ```js
+    const action1 = createPolicy("PO1", 1000);
+    const action1 = createPolicy("PO332", 100);
+    const action2 = createClaim("Buy Rolex", 300); 
+    
+    store.dispatch(action);
+    console.log(store.getState());
+    
+    /* console.log will return
+     {
+      myMoney: 900,
+      myPolicies: ["PO1", "PO332"}]
+     }
+     */
+    ```
   * Reducers: Function that updates state
      ```js
      const policyReducer = (prevPolicies = [], action) => { // [] will be the very first policies state of the store
@@ -1971,22 +1990,6 @@ https://www.udemy.com/course/react-redux/
      
      const store = createStore(reducers);
      ``` 
-  * Dispatch: Function that delivers 'Action' to 'Reducers"
-    ```js
-    const action1 = createPolicy("PO1", 1000);
-    const action1 = createPolicy("PO332", 100);
-    const action2 = createClaim("Buy Rolex", 300); 
-    
-    store.dispatch(action);
-    console.log(store.getState());
-    
-    /* console.log will return
-     {
-      myMoney: 900,
-      myPolicies: ["PO1", "PO332"}]
-     }
-     */
-    ```
 # Section 17: Integrating React with Redux
 * Redux is a state management library
   * React-Redux is a library that integrates Redux with React.
@@ -2184,6 +2187,24 @@ https://www.udemy.com/course/react-redux/
   * Question: but why do we import and pass it as a prop with connect? why not just use it right away after import?
     * using the actionCreator right away have no connection to redux store itself.
     * actionCreator will send the action to reducers when passed with connect function.
+  * Summary of connect()
+    ```
+    1. connect method allows js component to talk to redux storage.
+    2. connect's first argument is mapStateToProp function.
+    3. connect's second argument is an object of actionCreator function(s).
+    4. connect returns a function that takes a React Component
+    5. In this React Component, you can access mapped-props and action-creators as this.props.x
+    
+    ex)
+    connect(
+      mapStateToProps,
+      {
+        a1: actionCreator1,
+        a2: actionCreator2
+      }
+    )(SomeComponent)
+    ```
+    
 
 # Section 18: Async Actions with Redux Thunk
 * redux-thunk
@@ -2227,15 +2248,18 @@ https://www.udemy.com/course/react-redux/
       };
   };
   ```
-* Rules of regular redux actionCreator
-  * ActionCreator must return a plain-object Action.
-  * Action must have a `type`, and it may have a `payload`.
+* Rules of redux-actionCreator
+  * ActionCreator must return a plain-object Action. Action must have a `type`, and it may have a `payload`.
 
 * Rules of redux-thunk actionCreator
-  * ActionCreator can return a plain-object Action.
+  * redux-thunk-ActionCreator can return a plain-object Action as well as a "dispatcher function"
     * If Action is a plain-object, Action must have a `type`, and it may have a `payload`.
-  * ActionCreator can return a dispatching-function
-    * this dispatching-function takes dispatch and getState(optional) and should dispatch manually.
+    * dispatcher-function is a function that dispatches. It can take 'dispatch' or 'dispatch and getState'
+      ```js
+      ex1: (dispatch) => { dispatch(someActionCreator()) }
+      ex2: (dispatch, getState) => { dispatch(someActionCreator()) }
+      ```
+      * you can make dispatcher-function `async` so that it can handle `async` api calls.
 
 * Usage of Redux-Thunk
   * init Store with redux-thunk
@@ -2253,7 +2277,7 @@ https://www.udemy.com/course/react-redux/
     document.getElementById('root')
   );
   ```
-  * define a actionCreator that returns a dispatching-function.
+  * define an actionCreator that returns a dispatcher-function.
   ```js
   // actions.js
   export const fetchPostsThunk = () => {
@@ -2267,6 +2291,7 @@ https://www.udemy.com/course/react-redux/
     });
   };
   ```
+  * use actionCreator
   ```js
   // PostList.js
   ...
@@ -2286,3 +2311,213 @@ https://www.udemy.com/course/react-redux/
       { fetchPostsThunk }
   )(PostList)
   ```
+  
+# Section 19: Redux Store Design
+* Rules of Reducers
+  1. Must return something other than undefined
+     * in javascript, null is an assigned value, meaning 'nothing'. undefined is unassigned value.
+  2. Must keep the logic of "coming up with new value for the state" outside of the reducer.  
+     * For example, if you need an api calls to determine the new state value. Then put that logic inside the dispatcher-function of an redux-thunk-actionCreator.
+  3. Must not mutate the prev state object.
+     * clone the prev state -> mutate the cloned state -> return the cloned state.
+
+* js tips
+  * === vs !==
+    * reducers inside compares state with prevState using !==. If you mustate the prevState, then reducer will consider as no-update and the app won't re-render.
+  ```js
+  a = ['1', '2']
+
+  a === a (true)
+  a === ['1', '2'] (false)
+  
+  === compares the reference of the pointer  
+  ``` 
+  ```js
+  overriding ...
+  java script ... operator works in top to bottom order. If you override something in the bottom. The property will be overridden
+  
+  A = {
+    "a": 1,
+    "b": 12,
+    "c": 123,
+  }
+  
+  B = {
+    ...A,
+    "b" : 1234
+  }
+  // B.b will be 1234
+  
+  C = {
+    "b" : 12345,
+    ...A
+  } 
+  // C.b will be 12
+  ```
+* Reducer Good Practice
+  * array type state
+    * to add a property: use ...
+      ```js
+      [ ...prevState, "a" ]
+      ``` 
+    * to update a property: use map
+    * to remove a property: use filter (because filter returns a new object)
+  * object type state
+    * to add a property: use ...
+      ```
+      { ...prevState, a: "a" }
+      ```
+    * to update a property: use ...
+      ```js
+      A = {
+        a : "a",
+        b : "b",
+        c : "c"        
+      }
+      
+      B = {
+        ...A,
+        'b' : 'bbb'
+      }
+      
+      B will be {
+        a : "a",
+        b : "bbb",
+        c : "c"
+      }
+      ```
+    * to remove a property: use ... with undefined (because filter returns a new object)
+      ```js
+      A = {
+        a : "a",
+        b : "b",
+        c : "c"        
+      }
+      
+      B = {
+        ...A,
+        'b' : undefined
+      }
+      
+      B will be {
+        a : "a",
+        c : "c"
+      }
+      ```
+      * otherwise you can use `_omit(object, property)` _.omit(A, "b")
+
+* define a different actionCreator to fetch user with id
+  * tip: with `` ` ` ``(backticks) and `${}` (dollar and curlybraces), you can inject a reference to a string inside the string.
+  ```js
+  export const fetchUsers = (id) => {
+      return (
+          async (dispatch) => {
+              const response = await jsonplaceholder.get(`/users/${id}`)
+              
+          }
+      )
+  }
+  ```
+  
+* The second argument of mapStateToProps.
+  * you can put ownProps of a Component as the second argument of the mapStateToProps function.
+  * In PostList, pass userId as props to UserHeader.
+    ```js
+    // PostList.js
+    ...
+    <UserHeader userId={post.userId} />
+    ...
+    ```
+  * In UserHeader, use userId that is passed in `mapStateToProps` function.
+    ```js
+    // UserHeader.js
+    ...
+    const mapStateToProps = (state, ownProps) => {
+        return {
+            user: state.users.find( (user) => (user.id === ownProps.userId))
+        }
+    }
+    ...
+    ```
+
+* Handling user fetch.
+  * PostList.js
+    ```js
+    import UserHeader from './UserHeader';
+    
+    ...
+      <UserHeader userId={post.userId} />
+    ...
+    ```
+  * UserHeader.js
+    ```js
+    ...
+    class UserHeader extends React.Component {
+    
+        componentDidMount() {
+            this.props.fetchUser(this.props.userId);
+        }
+    
+        render() {
+            if (!this.props.user) {
+                return <div>Loading!</div>
+            }
+    
+            return(
+                <div className="header">
+                    {this.props.user.name}
+                </div>
+            );
+        }
+    }
+    
+    const mapStateToProps = (state, ownProps) => {
+        return {
+            user: state.users.find((user) => (user.id === ownProps.userId))
+        }
+    }
+    
+    export default connect(
+        mapStateToProps,
+        {
+            fetchUser: fetchUser
+        }
+    )(UserHeader);
+    ```
+  * actions.js
+    ```js
+    export const fetchUser = (id) => {
+        return (
+            async (dispatch) => {
+                const response = await jsonplaceholder.get(`/users/${id}`)
+                dispatch({
+                    type: "FETCH_USER",
+                    payload: response.data
+                })
+            }
+        )
+    }
+    ```
+  * usersReducer.js (user reducer)
+    ```js
+    ...
+    const usersReducer = (state = [], action) => {
+        switch (action.type) {
+            case 'FETCH_USER':
+                return [...state, action.payload];
+            default:
+                return state;
+        }
+    }
+    ```
+  * reducers.js (combine reducers)
+    ```js
+    ...
+    export default combineReducers({
+        posts: postsReducer,
+        users: usersReducer
+    });
+    ```
+  * this user-fetch architecture has an issue. There are 100 posts in `<PostList />`. This means you are passing `posts` to `<UserHeader />` 100 times. Each `<UserHeader />` will trigger `fetchUser` as part of ComponentDidMount. The problem is: there are only 10 users and this App will call 100 apis to get 10 users. How can we optimized it?
+
+* Solution1: Optimization by Memoization
