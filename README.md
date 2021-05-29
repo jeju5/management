@@ -13,14 +13,14 @@
 ```
    TIME   |  TASK    | NOTES
 ---------------------------------------------------------------
-0400 0500 |  예배 1.0 | 4AM 식사: [블루콜리, AYFOS]
+0400 0500 |  예배 1.0 | 4AM 식사: [블루콜리, YAFOS]
 0500 0700 |  운동 2.0 | 
 0700 0900 |  공부 2.0 | 영어, 코딩
 --------------------------------------------------------------
 0900 0500 |  일과 8.0 | 4PM 식사: [블루콜리, MEAL-FOS]
 0500 0800 |  자유 3.0 | 
 --------------------------------------------------------------
-* AY (Almond, Yogurt), FOS(FlaxOil, OliveOil, Supplement)
+* YA (Yogurt, Almond), FOS(FlaxOil, OliveOil, Supplement)
 * 일요일은 8시 기상.
 ```
 
@@ -71,7 +71,7 @@ CUTTING Estimaates
 * WEEKLY COOKING
   수요일 저녁: C2L B3
   토요일 저녁: C2L B4 R6
-  - 쌀(3.5컵), 고기(3.5파운드), 완두콩(1.5파운드), 달걀(12ct) 양파(2개), 마늘(3스푼)
+  - 쌀(3컵), 고기(3~4파운드), 완두콩(1.5파운드), 양파(2개), 마늘(3스푼)
   - 쌀을 씻고 밥을 짓는다.
   - 콩을 씻는다.
   - 마늘(웰던) -> 콩(웰던) -> 양파(미디움) 순서로 볶는다. 덜어낸다.
@@ -102,14 +102,15 @@ CUTTING Estimaates
 
 * WEEKLY PROTEIN PLAN
   * TARGET: 100g/day (700g/week)
-  <아침 315g>
-    - 240g (yogurt 150g x 16ct. Triple Zero)
-    - 45g (almond 210g = 7줌)
+  <아침 195g>
     - 30g (브로콜리 1/2lbs)
-  <저녁 416g>
-    - 270g (meat 3lbs)
-    - 72g (egg 1dz)
+    - 120g (yogurt 150g x 8ct. Triple Zero)
+    - 45g (almond 210g = 7줌)
+    
+  <저녁 529g>
+    - 30g (브로콜리 1/2lbs)
+    - 120g (yogurt 150g x 8ct. Triple Zero)
+    - 315 (meat 3.5lbs)
     - 45g (pea 28oz)
     - 19g (rice 3.5cup)
-    - 30g (브로콜리 1/2lbs)
  ```
