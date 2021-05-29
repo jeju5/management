@@ -2520,4 +2520,80 @@ https://www.udemy.com/course/react-redux/
     ```
   * this user-fetch architecture has an issue. There are 100 posts in `<PostList />`. This means you are passing `posts` to `<UserHeader />` 100 times. Each `<UserHeader />` will trigger `fetchUser` as part of ComponentDidMount. The problem is: there are only 10 users and this App will call 100 apis to get 10 users. How can we optimized it?
 
-* Solution1: Optimization by Memoization
+* Solution 1: Optimization by Memoization
+  * Lodash: Lodash is a js library that provides many helper functions.
+    `npm install --save lodash`
+    
+  * _.memoize(f)
+    ```js
+    var adder = _.memoize(
+      function add(a, b) {
+            return a + b;
+          }
+    );
+    
+    adder(20, 5); // this will actually do 20+5 and return 25. 25 will be memoized
+    adder(20, 5); // this will return memoized 25
+    adder(20, 5); // this will return memoized 25
+    ```
+  
+  * fetchUser with memoize
+    * you shouldn't memoize a nameless function because it will return new function everytime its used and memoize can't return the value of a different function even though the function is logically identical.
+    * redux-thunk Action-Creator can return an Action or Dispatcher-Function. Should we memoize the Action-Creator or Dispatcher-Function?
+      1. let's say we memoize the Action-Creator, what is the return value? It is the dispatcher function. In this case, this dispatcher function will be memoized in the cache. This is not what we want because we want to memoize the api calls to prevent multiple&duplicate api calls.
+      2. let's say we memoize the Dispatcher-Function, what is the return value? It is the api response. This is what we want to memoize.
+    ```js
+    // actions.js
+    import _ from 'lodash';
+    
+    export const fetchUserWithMemoization = (id) => (dispatch) => _fetchUser(id, dispatch);
+    
+    const _fetchUser = _.memoize(
+        async (id, dispatch) => {
+           const response = await jsonplaceholder.get(`/users/${id}`)
+           dispatch({
+               type: "FETCH_USER",
+               payload: response.data
+           })
+        }
+    );
+    ```
+    * fetchUserWithMemoization is an Action-Creator that takes an id and return a Dispatcher-Function
+    * Dispatcher function takes dispatch and executes _fetchUser with id and dispatch
+    * _fetchUser makes async api calls and memoizes the value.
+    
+* Solution 2: Optimization by redesigned action-creator.
+  * more on redux-thunk action creator
+    * when redux-thunk action-creator returns a dispatcher-function. This dispatcher function can take either "dispatch" or "dispatch and getState" as an argument.
+      ```js
+      const actionCreator = (dispatch) => { ... }      
+      const actionCreator2 = (dispatch, getState) => { ... }
+      ```
+    * Dispatching a dispatcher function
+      * with redux-thunk, dispatching a "dispatcher-function" takes care of executing dispatch in the "dispatcher-function". That is the beauty of thunk.
+      ```js
+      const actionCreator1 = (dispatch) => {
+        dispatch( actionCreator2() ) // actionCreator2() returns a dispatcher-function. redux-thunk will execute this dispatcher-function.
+        dispatch( actionCreator3() ) // actionCreator3() returns a dispatcher-function. redux-thunk will execute this dispatcher-function.
+      }
+      
+      const actionCreator2 = (dispatch) => { ... dispatch(some-action) }
+      const actionCreator3 = (dispatch) => { ... dispatch( actionCreator4() ) }  // actionCreator4() is a dispatcher function because actionCreator4() returns a dispatcher function.
+      const actionCreator4 = (dispatch) => { ... dispatch(some-action) }
+      
+      ```
+    * Example in our app
+      ```js
+      export const fetchPostsAndUsers = () => async (dispatch, getState) => {
+          await dispatch(fetchPosts());  // fetchPosts() is a dispatcher-function that dispatches FETCH_POST action. FETCH_POST will be dispatched.
+      
+          // get unique userIds from posts
+          const userIds = getState().posts.map(p => p.userId);
+          const uniqueUserIds = _.uniq(userIds);
+      
+          // fetch user
+          uniqueUserIds.forEach(
+              id => dispatch(fetchUser(id)) // // fetchUser() is a dispatcher-function that dispatches FETCH_USER action. FETCH_USER will be dispatched.
+          );
+      }
+      ```
