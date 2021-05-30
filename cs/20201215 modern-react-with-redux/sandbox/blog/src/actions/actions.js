@@ -59,3 +59,44 @@ export const fetchPostsAndUsers = () => async (dispatch, getState) => {
         id => dispatch(fetchUser(id)) // // fetchUser() is a dispatcher-function that dispatches FETCH_USER action. FETCH_USER will be dispatched.
     );
 }
+
+// actionCreator1 returns a dispatcher function.
+export const actionCreator1 = () => (dispatch) => {
+    dispatch( actionCreator2() ) // dispatching action2
+    dispatch( actionCreator3() ) // dispatching action3
+
+    // dispatching action1
+    dispatch( {
+        type: "THUNK_TEST",
+        payload: "action1"
+    });
+}
+
+// actionCreator2 returns action2
+export const actionCreator2 = () => {
+    return {
+        type: "THUNK_TEST",
+        payload: "action2"
+    }
+}
+
+// actionCreator3 returns a dispatcher-function
+export const actionCreator3 = () => {
+
+    return (dispatch) => {
+        dispatch( actionCreator4() );
+
+        dispatch({
+            type: "THUNK_TEST",
+            payload: "action3"
+        });
+    }
+}
+
+// actionCreator4 returns action4
+export const actionCreator4 = () => {
+    return {
+        type: "THUNK_TEST",
+        payload: "action4"
+    }
+}

@@ -2254,7 +2254,9 @@ https://www.udemy.com/course/react-redux/
 * Rules of redux-thunk actionCreator
   * redux-thunk-ActionCreator can return a plain-object Action as well as a "dispatcher function"
     * If Action is a plain-object, Action must have a `type`, and it may have a `payload`.
-    * dispatcher-function is a function that dispatches. It can take 'dispatch' or 'dispatch and getState'
+    * dispatcher-function is a function that dispatches.
+      * It can take 'dispatch' or 'dispatch and getState'
+      * dispatcher-function shouldn't return an action. Instead, it should dispatch an action. If it returns an action, it doesn't get dispatched automatically.
       ```js
       ex1: (dispatch) => { dispatch(someActionCreator()) }
       ex2: (dispatch, getState) => { dispatch(someActionCreator()) }
@@ -2563,37 +2565,70 @@ https://www.udemy.com/course/react-redux/
     * _fetchUser makes async api calls and memoizes the value.
     
 * Solution 2: Optimization by redesigned action-creator.
-  * more on redux-thunk action creator
-    * when redux-thunk action-creator returns a dispatcher-function. This dispatcher function can take either "dispatch" or "dispatch and getState" as an argument.
-      ```js
-      const actionCreator = (dispatch) => { ... }      
-      const actionCreator2 = (dispatch, getState) => { ... }
+  * The redux-thunk dispatcher-function can take "dispatch" or "dispatch and getState" as argument(s).
+    ```js
+    const actionCreator = (dispatch) => { ... }      
+    const actionCreator2 = (dispatch, getState) => { ... }
+    ```
+  * The redux-thunk can dispatch a "dispatcher-function". The action that "dispatcher-function" dispatches will be dispatched in order.
+    ```js
+    store.dispatch( actionCreator1() ); // dispatch a dispatcher-function
+     
+    export const actionCreator1 = () => (dispatch) => {
+        dispatch( actionCreator2() ) // dispatches action2
+        dispatch( actionCreator3() ) // dispatches a dispathcer-function that dispatches action4 => action3
+    
+        dispatch( {                  // dispatches action1
+            type: "THUNK_TEST",
+            payload: "action1"
+        });
+    }
+    
+    // actionCreator2 returns action2
+    export const actionCreator2 = () => {
+        return {
+            type: "THUNK_TEST",
+            payload: "action2"
+        }
+    }
+    
+    // actionCreator3 returns a dispatcher-function
+    export const actionCreator3 = () => {
+    
+        return (dispatch) => {
+            dispatch( actionCreator4() );
+    
+            dispatch({
+                type: "THUNK_TEST",
+                payload: "action3"
+            });
+        }
+    }
+    
+    // actionCreator4 returns action4
+    export const actionCreator4 = () => {
+        return {
+            type: "THUNK_TEST",
+            payload: "action4"
+        }
+    }
+    ```
+  * If you do a console.log in reducers. It will show that actions are dispatched in `action2 -> action4 -> action3 -> action1` order.
+    
+  * Example in our app
+    ```js
+    export const fetchPostsAndUsers = () => async (dispatch, getState) => {
+        await dispatch(fetchPosts());  // fetchPosts() is a dispatcher-function that dispatches FETCH_POST action. FETCH_POST will be dispatched.
+    
+        // get unique userIds from posts
+        const userIds = getState().posts.map(p => p.userId);
+        const uniqueUserIds = _.uniq(userIds);
+    
+        // fetch user
+        uniqueUserIds.forEach(
+            id => dispatch(fetchUser(id)) // // fetchUser() is a dispatcher-function that dispatches FETCH_USER action. FETCH_USER will be dispatched.
+        );
+    }
       ```
-    * Dispatching a dispatcher function
-      * with redux-thunk, dispatching a "dispatcher-function" takes care of executing dispatch in the "dispatcher-function". That is the beauty of thunk.
-      ```js
-      const actionCreator1 = (dispatch) => {
-        dispatch( actionCreator2() ) // actionCreator2() returns a dispatcher-function. redux-thunk will execute this dispatcher-function.
-        dispatch( actionCreator3() ) // actionCreator3() returns a dispatcher-function. redux-thunk will execute this dispatcher-function.
-      }
-      
-      const actionCreator2 = (dispatch) => { ... dispatch(some-action) }
-      const actionCreator3 = (dispatch) => { ... dispatch( actionCreator4() ) }  // actionCreator4() is a dispatcher function because actionCreator4() returns a dispatcher function.
-      const actionCreator4 = (dispatch) => { ... dispatch(some-action) }
-      
-      ```
-    * Example in our app
-      ```js
-      export const fetchPostsAndUsers = () => async (dispatch, getState) => {
-          await dispatch(fetchPosts());  // fetchPosts() is a dispatcher-function that dispatches FETCH_POST action. FETCH_POST will be dispatched.
-      
-          // get unique userIds from posts
-          const userIds = getState().posts.map(p => p.userId);
-          const uniqueUserIds = _.uniq(userIds);
-      
-          // fetch user
-          uniqueUserIds.forEach(
-              id => dispatch(fetchUser(id)) // // fetchUser() is a dispatcher-function that dispatches FETCH_USER action. FETCH_USER will be dispatched.
-          );
-      }
-      ```
+
+* Section 20: Navigation with React Router
