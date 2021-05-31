@@ -391,7 +391,7 @@ https://www.udemy.com/course/react-redux/
   * don't forget to call 'super(prop)'
 * State & setState
   * always use this.setState({key: value})
-  * never do 'this.state = value' when updating the state
+  * never do 'thi s.state = value' when updating the state
     * only exception to 'this.state = value' is when initializing the state
   ```js
   import React from 'react';
@@ -2324,7 +2324,7 @@ https://www.udemy.com/course/react-redux/
      * clone the prev state -> mutate the cloned state -> return the cloned state.
 
 * js tips
-  * === vs !==
+  * !== and re-render
     * reducers inside compares state with prevState using !==. If you mustate the prevState, then reducer will consider as no-update and the app won't re-render.
   ```js
   a = ['1', '2']
@@ -2629,6 +2629,248 @@ https://www.udemy.com/course/react-redux/
             id => dispatch(fetchUser(id)) // // fetchUser() is a dispatcher-function that dispatches FETCH_USER action. FETCH_USER will be dispatched.
         );
     }
-      ```
+    ```
+    * js tip: `==` vs `===`
+      * `==` compares value, but not type. `==` does the auto conversion of types.
+      * `===` compares value and type.
+        ```
+        5 == "5"  // true
+        5 === "5" // false
+        5 === 5   // true
+        ```
+      * for objects `==` and `===` compares the reference.
+    * js tip:
+      * javascript is a dynamic programming language.
+        * this means that the type of a variable is determined dynamically(in run time). Type errors can be found in run time.
+      * java is a static programming language.
+        * this means that the type of a variable is determined statically(in compile time). Type errors can be found in compile time.
 
-* Section 20: Navigation with React Router
+# Section 20: Navigation with React Router
+* react-router-dom?
+  `npm install --save react-router-dom`
+  * react-router: this contains a core items for router
+  * react-router-dom: this is the best package for react apps in browser. (react-router-dom = react-router + DOM routing elements )
+* using react-router
+  ```js
+  import { Router, BrowserRouter } from 'react-router-dom';
+
+  const App = () => {
+    return (
+      <div>
+        <BrowserRouter>
+          <div>
+            <Route path="/" exact component={PageOne}>
+            <Route path="/p2" component={PageTwo}>
+          </div>
+        </BrowserRouter>
+      </div>
+    );
+  };
+  ```
+  * react-router-dom matches the path portion of URL
+    `https://localhost:3000/33/3/a234`
+    * `https://localhost:3000` is the domain of the URL
+    * `33/3/a234` is a path in the URL, and this is what react-router-dom takes as a path.
+* what is `exact` in the `<Route>`?
+  * this property does a exact matching. without `exact` in the following example. If you visit `/p2` then the browser will render PageOne and PageTwo
+    ```js
+    ...
+      <Route path="/" exact component={PageOne}>
+      <Route path="/p2" component={PageTwo}>
+    ...
+    ```
+  * this is because the router first extracts the path and does the comparison with .contains by default
+    `extractedPath.contains(path)`
+  * with exact keyword. you will do the exact matching
+    `extractedPath.equals(path)`
+* Don't use `<a>` with react-router-dom
+  `<a href="/p2">Navigation to P2</a>`
+  * example of bad navigation
+    ```
+    1. user clicks <a href="/p2" />
+    2. browser makes a request to `www.domain/p2`
+    3. react server responds with index.html file.
+    4. browser receives index.html and dumps older index.html.
+    ```
+    * if you check chrome browser inspect Network. you will see that the browser makes a request to localhost:3000(react server) and localhost:300(react server) responds with index.html bundled with react components.
+    * this is inefficient. If we can prevent dumping exising html elements, it would be perfect.
+* Solution: use `<Link>` with react-router-dom
+  `<Link to="/p2">Navigation to P2</Link>`
+  * `<Link>` prevents the full reloading of the browser.
+* Creating a Header that supports navigation
+  ```js
+  import { Link } from 'react-router-dom';
+
+  const Header = () => {
+    return (
+      <div className="ui secondary pointing menu">
+        <Link to="/" className="item">
+          HOME
+        </Link>
+        <Link to="/streams/new" className="item">
+          NEW
+        </Link>
+        <Link to="/streams/show" className="item">
+          SHOW
+        </Link>
+        <Link to="/streams/edit" className="item">
+          EDIT
+        </Link>
+        <Link to="/streams/delete" className="item">
+          DELETE
+        </Link>
+        <div className="right menu">
+          <Link to="/" className="item">
+            All Streams
+          </Link>
+        </div>
+      </div>
+    )
+  }
+  ```
+* Using a header
+  * Rule: put `<Link>` inside `<BrowserRouter>`. If you put `<Link>` outside of `<BrowserRouter>`, the app will throw an error.
+  * In this example below, the app will always show Header because it is not part of Route. Consider Route as an if/else block that shows components when the path condition(s) are met.
+  ```js
+  const App = () => {
+    return (
+      <div>
+        <BrowserRouter>
+          <div>
+            <Header />
+            <Route path="/" exact component={StreamList} />
+            <Route path="/streams" exact component={StreamList} />
+            <Route path="/streams/new" exact component={StreamCreate} />
+            <Route path="/streams/show" exact component={StreamShow} />
+            <Route path="/streams/edit" exact component={StreamEdit} />
+            <Route path="/streams/delete" exact component={StreamDelete} />
+          </div>
+        </BrowserRouter>
+      </div>
+    )
+  }
+  ```
+# Section 21: Handling Authentication with React
+* What is OAuth?
+  * OAuth: Authentication of a user using 3rd party Service Provider.
+    * ex) Accepting user with Google account
+* OAuth in JS App and Google
+  ```js
+  1. JS App: User tries login
+  2. JS App: Google javascript client makes a request to Google Server.
+  3. Google: Google displays popup asking user's consent
+  4. Google: User Accepts.
+  5. Google: Sends authorization token back to JS App.
+  6. JS App: Google javascript client invokes a callback to React App with authorization token
+  ```
+* Setting up Google Auth
+  * visit `console.cloud.google.com`
+    * Create new Project 'Streamy'
+    * Configure OAuth consent screen
+      * configure localhost:3000 as Authorized Javascript origins
+
+* import Google apis js library
+  ```html
+  // index.html
+  <head>
+    ...
+    <script src="https://apis.google.com/js/api.js"></script>
+  </head>
+  ```
+  * this library provides gapi to window object. (window object represents an open window in a browser.)
+    * if you go to the browser console and try gapi. It will show a google api client object.
+    * from React you can access it by `window.gapi`
+* Using Google Auth2 library
+  ```js
+  // GoogleAuth.js
+  class GoogleAuth extends React.Component {
+
+    constructor(prop) {
+      super(prop);
+
+      this.state = {
+        isSignedIn: null
+      }
+
+    }
+
+    componentDidMount() {
+      window.gapi.load('client:auth2', () => {
+        window.gapi.client.init({
+          clientId: 'your-google-api-client-id',
+          scope: 'email'
+        }).then(() => {
+          this.auth = window.gapi.auth2.getAuthInstance();
+          this.onAuthChange();
+          this.auth.isSignedIn.listen(this.onAuthChange);
+        })
+      });
+    }
+
+    onAuthChange = () => {
+      this.setState({
+        isSignedIn: this.auth.isSignedIn.get()
+      })
+    }
+
+    renderAuthButton = () => {
+      if (this.state.isSignedIn === null) {
+        return <div>Please Sign In</div>;
+      } else if (this.state.isSignedIn === true) {
+        return <button onClick={ () => {this.auth.signOut()} }>sign out</button>
+      } else {
+        return <button onClick={ () => {this.auth.signIn()} }>sign in</button>
+      }
+    }
+
+    render() {
+      return this.renderAuthButton()
+    }
+  };
+
+  ```
+  * `load('client:auth2' ...)` downloads google auth2 moudles. The second parameter is a call back function.
+  * `gapi.client.init()` returns a promise. With `then()`, you download the auth instance and set the state.
+
+* Sign-In and Sign-Out with redux
+  ```js
+  // actions.js
+
+  export const signIn = () => {
+  return {
+    type: 'SIGN_IN'
+  }
+}
+
+  export const signOut = () => {
+    return {
+      type: 'SIGN_IN'
+    }
+  }
+  ```
+  ```js
+  // authReducer.js
+  const authReducer = (
+    state = {
+      isSignedIn: null
+    }, 
+    action
+  ) => {
+
+    switch(action.type) {
+      case "SIGN_IN":
+        return {
+          isSignedIn: true
+        }
+      case "SIGN_OUT":
+        return {
+          isSignedIn: false
+        }
+      default:
+        return state;
+    }
+  }
+
+  export default authReducer;
+  ```
+
