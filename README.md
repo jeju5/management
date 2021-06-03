@@ -1,4 +1,4 @@
-# PROJECT-64
+# PROJECT64
 ```
 1. 식단
 - 4AM: 블루콜리, 요거트, 영양제1, 녹차, 2HR BIKE
