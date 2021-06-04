@@ -117,8 +117,8 @@ jabjab
 
 jabcro 
 1: jab cro jab cro
-2: jab cro lupper cro
-3: jab cro (slip)cro lhook
+2: jab cro lhook cro
+3: jab cro cro lhook
 
 jablow
 1: jab bab cro lhook
