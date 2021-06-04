@@ -126,9 +126,9 @@ jablow
 3: jab lbody rbody jab
 
 counters
-1: (slip)cro lhook jab jab
-2: (slip)rhook lhook jab jab 
-3: (slip)rupper lhook jab jab
+1: (slip)cro jab jab jab
+2: (slip)rhook jab jab jab 
+3: (slip)rupper jab jab jab
 ```
 
 ## R&D
