@@ -111,19 +111,19 @@ rupper하고 뒷손커버 rslip
 ## REPEAT OFFENSE
 ```
 jabjab
-1: jab jab cro lhook
-2: jab jab lhook cro
-3: jab jab lbody lhook
+1: jab jab cro lhook jab
+2: jab jab lhook cro jab
+3: jab jab lbody lhook jab
 
 jabcro 
-1: jab cro jab cro
-2: jab cro lhook cro
-3: jab cro cro lhook
+1: jab cro jab cro jab
+2: jab cro lhook cro jab
+3: jab cro cro lhook jab
 
 jablow
-1: jab bab cro lhook
-2: jab bro lupper cro
-3: jab bro lhook rbody
+1: jab bab cro lhook jab
+2: jab bro lupper cro jab
+3: jab bro lhook rbody jab
 
 counters
 1: (slip)cro jab jab jab
