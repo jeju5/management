@@ -114,21 +114,25 @@ jabjab
 1: jab jab cro lhook jab
 2: jab jab lhook cro jab
 3: jab jab lbody lhook jab
+4: jab jab rbody rupper jab
 
 jabcro 
 1: jab cro jab cro jab
 2: jab cro lhook cro jab
-3: jab cro cro lhook jab
+3: jab cro bab cro jab
+4: jab cro cro lhook jab
 
 jablow
 1: jab bab cro lhook jab
 2: jab bro lupper cro jab
 3: jab bro lhook rbody jab
+4. jab rbody lbody lhook jab
 
 counters
-1: (slip)cro jab jab jab
-2: (slip)rhook jab jab jab 
-3: (slip)rupper jab jab jab
+1: (slip)cro jab jab
+2: (slip)rhook jab jab
+3: (slip)rupper jab jab
+4: (slip)rbody jab jab
 ```
 
 ## R&D
