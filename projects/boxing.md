@@ -201,6 +201,14 @@ rupper하고 뒷손커버 rslip
  * Pacquiao
    * jab cro lead-upper rear-upper lead-upper /
    * jab cro jab cro jab (slip-lead) jab cro (slip-rear) cro (rear-roll) & lead-hook
+ 
+ * Pacquiao Shadow
+     * lup-rup-lup-rup-lup-jab-cro-lhk
+     * lup-rup-lup-rup-lup-jab-cro-lhk
+     * lup-rup-lup-rup-lup-rup-lup-jab-cro-lup-rup-lup-jab-rhk-lhk
+     * jab-cro-lup-rup-(lslip)-jab-cro-lup-rup-(lslip)-jab-rhk-lhk-(rslip)
+
+
 
  * Lomachenko
    * (back rear-roll) (lead-roll) (pivot-lead) jab jab
