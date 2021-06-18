@@ -90,10 +90,11 @@ CUTTING Estimaates
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
     
-  <저녁 529g>
+  <저녁 510g>
     - 30g (브로콜리 1/2lbs)
     - 120g (yogurt 150g x 8ct. Triple Zero)
-    - 315 (meat 3.5lbs)
-    - 45g (pea 28oz)
-    - 19g (rice 3.5cup)
+    - 18g (rice 4cup)
+    - 72g (egg 1dozen)
+    - 270g (고기 3lbs)
+
  ```
