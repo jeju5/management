@@ -60,35 +60,34 @@ CUTTING Estimaates
 # 식사
 ```
 * WEEKLY COOKING
-  - 쌀(3.5컵), 고기(5파운드), 양파(1개), 마늘(7스푼)
+  - 쌀(3.5컵)
   - 쌀을 씻고 밥을 짓는다.
-  - 양파(미디움) + 마늘(웰던)을 볶아서 덜어낸다
+  - 닭가슴살 3lbs를 삶는다.
+  - 브로콜리 5lbs를 삶는다. (팔팔 끓기시작하고 10분더)
+  - 양파(미디움)를 dice하고 볶는다.
   - 밥을 덜어낸다.
-  - 브로콜리 -> 찬물에 넣고 같이 끓이고 끓기시작하고 5분더 가열
 
 * WEEKLY GROCERY
   ---------------------
   - 냉동블루베리
   - 브로콜리 5lbs
   ---------------------
-  - 우유 64oz x 2
   - 아몬드
-  - 그릭요거트 8ct (Triple Zero)
+  - 그릭요거트 16ct (Triple Zero)
+  ---------------------
+  - 닭가슴살 5lbs
   ---------------------
   - 쌀
   - 양파x1
-  - 다진마늘
-  - 고기 5lbs
   - 달걀 1dozen
   ---------------------
   - OLIVE OIL
   - FLAX OIL
   ---------------------
 
-* WEEKLY PROTEIN PLAN
-  * TARGET: 100g/day (700g/week)
+* WEEKLY PROTEIN PLAN (targeting 100g/day)
   <아침 195g>
-    - 30g (브로콜리 1/2lbs)
+    - 30g (브로콜리 2.5lbs)
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
     
@@ -98,5 +97,4 @@ CUTTING Estimaates
     - 18g (rice 4cup)
     - 72g (egg 1dozen)
     - 270g (고기 3lbs)
-
  ```
