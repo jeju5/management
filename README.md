@@ -12,7 +12,7 @@
 --------------------------------------------------------------
 * FOS(FlaxOil, OliveOil, Supplement)
 * 일요일은 자유기상
-* 테니스 훈련 2H: 발리1000개, 스트로크, 서브200개
+
 ```
 
 # 예배
@@ -46,7 +46,7 @@ CUTTING Estimaates
 65kg, 7.7%, 5kg
 ```
 
-# 공부
+# 훈련
 ```
 - English
    - Speech: TED talk (1talk/wk)
@@ -54,6 +54,10 @@ CUTTING Estimaates
 - Software
    - UI: React
    - Algorithm: Leetcode
+- 테니스 훈련 (2H)
+   - 발리1000개
+   - 스트로크
+   - 서브200개
 ```
 
 # 식사
