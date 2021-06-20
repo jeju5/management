@@ -33,7 +33,7 @@
 |               |                           |                           |                         |
 |               |                           |                           |                         |
 ---------------------------------------------------------------------------------------------------
-* RAN(Rotator-cuff, Abs, Neck): 200 tubes -> [legraise(10)-plank(1min)-crunch(10)]x10 -> 500Necks
+* RAN(Rotator-cuff, Abs, Neck): tubes(200) -> [legraise(15)-situp(15)-plank(30s)]x10 -> necks(500)
 * AERO(=Aerobic Exercise): Run, Bike, Swim, Jogx(job+box)
 
 KEEP 64.0kg
