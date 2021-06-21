@@ -27,13 +27,13 @@
 --------------------------------------------------------------------------------------------------
 | MON          TUE          | WED          THU          | FRI          SAT          SUN          |
 --------------------------------------------------------------------------------------------------
-| PULL(100)   RAN           | PUSH(300)    RAN          | AERO(2HR)    AERO(2HR)    AERO(2HR)    |
-| CURL(100)   AERO(0.5HR)   | AERO(1HR)    AERO(0.5HR)  |                                        |
+| PULL(100)   RAN           | PUSH(300)    RAN          | 1P10P(10)    AERO(2HR)    AERO(2HR)    |
+| CURL(100)   AERO(0.5HR)   | AERO(1HR)    AERO(0.5HR)  | AERO(1.5HR)                            |
 | AERO(1HR)                 |                           |                                        |
 |                           |                           |                                        |
 |                           |                           |                                        |
 --------------------------------------------------------------------------------------------------
-* RAN(Rotator-cuff, Abs, Neck): tubes(200) -> [legraise(15)-situp(15)-plank(30s)]x10 -> necks(500)
+* RAN(Rotator-cuff, Abs, Neck): tubes(200) -> [legraise(10)-situp(10)-plank(30s)]x10 -> necks(500)
 * AERO(=Aerobic Exercise): Run, Bike, Swim, Jogx(job+box)
 
 KEEP 64.0kg
