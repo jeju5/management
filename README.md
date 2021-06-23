@@ -47,16 +47,18 @@ CUTTING Estimaates
 
 # 훈련
 ```
-- English
+- 영어 훈련
    - Speech: TED talk (1talk/wk)
    - Reading: A River Runs Through It
-- Software
+- 소프트웨어 훈련
    - UI: React
    - Algorithm: Leetcode
+- 기타 훈련
+   - 핑거스타일 1곡 반복
 - 테니스 훈련 (2H)
-   - 발리1000개
-   - 스트로크
-   - 서브200개
+   - 발리1000개 (포핸드발리50, 백핸드발리50, 왼손포핸드발리50, 왼손백핸드발리50) x 5set
+   - 스트로크500개 (포핸드100, 왼손포핸드100, 백핸드100, 포핸드슬라이스100, 백핸드슬라이스100)
+   - 서브200개 (플랫서브 deuceside 100, atside 100)
 ```
 
 # 식사
