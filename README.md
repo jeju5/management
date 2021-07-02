@@ -79,30 +79,23 @@ CUTTING Estimaates
   - 아몬드
   - 그릭요거트 16ct (Triple Zero)
   ---------------------
-  - 카레 2병 (12oz)
-  - 유기농케첩
+  - 토마토 파스타소스 1병
+  - 고기 5lbs (닭가슴살)
   - 양파 1개
   - 마늘 14쪽
-  ---------------------
-  - 고기 2.5lbs (새우, 소고기, 연어)
-  - 계란 1dozen
-  ---------------------
-  - OLIVE OIL
-  - FLAX OIL
-  ---------------------
-  #백종원육개장소스:  고추가루9, 국간장1, 마늘4.5, 소금1
-  #백종원순두부소스:  고추가루3, 진간장6, 마늘3, 소금1.5, 설탕1
-  #백종원부대찌개소스: 고추4, 국간장2, 마늘2, 고추장1, 된장1
 
-* WEEKLY PROTEIN PLAN (targeting 90g/day; 65x1.4)
-  <아침 195g>
+* WEEKLY PROTEIN PLAN (targeting 630g/week == 90g/day; 65x1.4)
+  <오전 195g>
     - 30g (브로콜리 2.5lbs)
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
-  <저녁 460g>
-    - 30g (브로콜리 1/2lbs)
+  <저녁 445g>
+    - 30g (브로콜리 2.5lbs)
     - 120g (yogurt 150g x 8ct. Triple Zero)
-    - 15g (rice 4cup)
-    - 70g (egg 1dozen)
-    - 225g (고기 2.5lbs)
+    - 45g (almond 210g = 7줌)
+    - 250g (고기 2.5lbs)
+
+* Ref
+  - 15g (rice 4cup)
+  - 70g (egg 1dozen)
  ```
