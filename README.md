@@ -27,13 +27,14 @@
 | MON          TUE          | WED          THU          | FRI          SAT          SUN          |
 --------------------------------------------------------------------------------------------------
 | PULL(100)   RAN           | PUSH(300)    RAN          | 5P15P(20)    AERO(2HR)    AERO(2HR)    |
-| CURL(100)   BIKE(0.5HR)   | AERO(1HR)    BIKE(0.5HR)  | AERO(1HR)                              |
+| CURL(100)   SIT(0.5HR)    | AERO(1HR)    AERO(0.5HR)  | AERO(1HR)                              |
 | AERO(1HR)                 |                           |                                        |
 |                           |                           |                                        |
 |                           |                           |                                        |
 --------------------------------------------------------------------------------------------------
 * RAN(Rotator-cuff, Abs, Neck): tubes(200) -> "legraise(10)-situp(10)-plank(30s)"x10 -> necks(500)
-* AERO(=Aerobic Exercise): Run, Bike, Swim, Jogx(job+box)
+* AERO(=Aerobic Exercise): Run, Bike, Swim, Box
+* INTV(=Interval; SIT): "30sec-sprint + 4min-rest" x 4set
 
 KEEP 64.0kg
 * AMA-LIGHT(63.0kg)
