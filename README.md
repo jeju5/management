@@ -27,7 +27,7 @@
 | MON          TUE          | WED          THU          | FRI          SAT          SUN          |
 --------------------------------------------------------------------------------------------------
 | PULL(100)   RAN           | PUSH(300)    RAN          | 5P15P(20)    AERO(2HR)    AERO(2HR)    |
-| CURL(100)   AERO(0.5HR)   | AERO(1HR)    AERO(0.5HR)  | AERO(1HR)                              |
+| CURL(100)   BIKE(0.5HR)   | AERO(1HR)    BIKE(0.5HR)  | AERO(1HR)                              |
 | AERO(1HR)                 |                           |                                        |
 |                           |                           |                                        |
 |                           |                           |                                        |
