@@ -32,7 +32,7 @@
 |                           |                           |                                        |
 |                           |                           |                                        |
 --------------------------------------------------------------------------------------------------
-* RAN(Rotator-cuff, Abs, Neck): tubes(200) -> "legraise(10)-situp(10)-plank(30s)"x10 -> necks(500)
+* ARN(Abs, Rotator-cuff, Neck): "legraise(10)-situp(10)-plank(30s)"x10 -> tubes(200) -> necks(500)
 * AERO(=Aerobic Exercise): Run, Bike, Swim, Box
 * INT(=Interval): SIT "30sec-sprint + 4min-rest" x 4set
 
