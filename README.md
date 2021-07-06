@@ -34,7 +34,7 @@
 --------------------------------------------------------------------------------------------------
 * ARN(Abs, Rotator-cuff, Neck): "legraise(10)-situp(10)-plank(30s)"x10 -> tubes(200) -> necks(500)
 * AERO(=Aerobic Exercise): Run, Bike, Swim, Box
-* INT(=Interval): 5+min warmup -> 20min SIT "(30sec-sprint + 3min30sec-easy)x5set"
+* INT(=Interval): warmup -> 20min SIT "(30sec-sprint + 3min30sec-easy)x5set"
 
 KEEP 64.0kg
 * AMA-LIGHT(63.0kg)
