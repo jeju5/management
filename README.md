@@ -26,13 +26,14 @@
 --------------------------------------------------------------------------------------------------
 | MON          TUE          | WED          THU          | FRI          SAT          SUN          |
 --------------------------------------------------------------------------------------------------
-| PULL(100)   Abs&Neck      | PUSH(300)    Abs&Neck     | 3P15P(10)    AERO(2HR)    SIT(0.5HR)   |
-| CURL(100)   AERO+R(1HR)   | AERO(1HR)    AERO+R(1HR)  | AERO(1HR)                              |
-| AERO(1HR)                 |                           |                                        |
+| PULL(100)   Abs(tttt)     | PUSH(300)    Abs(tttt)    | 3P15P(10)    AERO(2HR)    SIT(0.5HR)   |
+| CURL(100)   Neck(500)     |              Neck(500)    | AERO(1HR)                              |
+| AERO(1HR)   AERO+R(1HR)   | AERO(1HR)    AERO+R(1HR)  |                                        |
 |                           |                           |                                        |
 |                           |                           |                                        |
 --------------------------------------------------------------------------------------------------
-* Abs & Neck: "legraise(10)-crunch(10)-hollow(10s)"x10 -> necks(500)
+* Abs: legraise(10)-crunch(10)-hollow(10s) x 10 "Ten-Ten-Ten-Ten"
+* Neck: 200back -> 100front -> 100left -> 100right
 * AERO(=Aerobic Exercise); +R(Rotator Cuff Tubing)
 * SIT: warm-up(5-10min) -> "(30sec-sprint + 3min30sec-easy)x5set"
 
