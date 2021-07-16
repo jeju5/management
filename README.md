@@ -26,15 +26,15 @@
 --------------------------------------------------------------------------------------------------
 | MON          TUE          | WED          THU          | FRI          SAT          SUN          |
 --------------------------------------------------------------------------------------------------
-| PULL(100)   ARN           | PUSH(300)    ARN          | 3P15P(10)    AERO(2HR)    INT(0.5HR)   |
-| CURL(100)   AERO(0.5HR)   | AERO(1HR)    AERO(0.5HR)  | AERO(1HR)                              |
+| PULL(100)   Abs&Neck      | PUSH(300)    Abs&Neck     | 3P15P(10)    AERO(2HR)    SIT(0.5HR)   |
+| CURL(100)   AERO+R(1HR)   | AERO(1HR)    AERO+R(1HR)  | AERO(1HR)                              |
 | AERO(1HR)                 |                           |                                        |
 |                           |                           |                                        |
 |                           |                           |                                        |
 --------------------------------------------------------------------------------------------------
-* ARN(Abs, Rotator-cuff, Neck): "legraise(10)-situp(10)-plank(30s)"x10 -> tubes(200) -> necks(500)
-* AERO(=Aerobic Exercise): Run, Bike, Swim, Box
-* INT(=Interval): warmup -> 20min SIT "(30sec-sprint + 3min30sec-easy)x5set"
+* Abs & Neck: "legraise(10)-crunch(10)-hollow(10s)"x10 -> necks(500)
+* AERO(=Aerobic Exercise); +R(Rotator Cuff Tubing)
+* SIT: warm-up(5-10min) -> "(30sec-sprint + 3min30sec-easy)x5set"
 
 KEEP 64.0kg
 * AMA-LIGHT(63.0kg)
