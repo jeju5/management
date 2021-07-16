@@ -24,27 +24,22 @@
 # 운동
 ```
 --------------------------------------------------------------------------------------------------
-| MON          TUE          | WED          THU          | FRI          SAT          SUN          |
+| SUN         | MON          TUE          | WED          THU          | FRI          SAT         |
 --------------------------------------------------------------------------------------------------
-| PULL(100)   Abs(tttt)     | PUSH(300)    Abs(tttt)    | 3P15P(10)    AERO(2HR)    SIT(0.5HR)   |
-| CURL(100)   Neck(500)     |              Neck(500)    | AERO(1HR)                              |
-| AERO(1HR)   AERO+R(1HR)   | AERO(1HR)    AERO+R(1HR)  |                                        |
-|                           |                           |                                        |
-|                           |                           |                                        |
+| SIT(5set)   | Pull(100)   Abs(TTTT)     | Push(300)    Abs(TTTT)    | Aero(2HR)    Aero(2HR)   |
+|             | Curl(100)   Neck(500)     |              Neck(500)    |                          |
+|             | Aero+S(1HR) Aero+R(1HR)   | Aero+S(1HR)  Aero+R(1HR)  |                          |
+|             |                           |                           |                          |
+|             |                           |                           |                          |
 --------------------------------------------------------------------------------------------------
-* Abs: legraise(10)-crunch(10)-hollow(10s) x 10 "Ten-Ten-Ten-Ten"
+* SIT: warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
+* Abs: legraise(10)-crunch(10)-hollow(10s) x 10
 * Neck: 200back -> 100front -> 100left -> 100right
-* AERO(=Aerobic Exercise); +R(Rotator Cuff Tubing)
-* SIT: warm-up(5-10min) -> "(30sec-sprint + 3min30sec-easy)x5set"
+* +R: some sets of 50 rotator cuff band pulls
+* +S: some sets of 50 body weight squat
+* Aero(=Aerobic Exercise);
 
-KEEP 64.0kg
-* AMA-LIGHT(63.0kg)
-* PRO-LIGHT(61.2kg)
-
-CUTTING Estimaates
-체중, 체지방률, 체지방
-80kg, 25%, 20kg
-65kg, 7.7%, 5kg
+KEEP 64.0kg; AMA-LIGHT(63.0kg) & PRO-LIGHT(61.2kg)
 ```
 
 # 훈련
@@ -59,7 +54,7 @@ CUTTING Estimaates
    - 핑거스타일 1곡 반복
 - 테니스 훈련
    Program1(2H): 서브300개 (플랫서브 deuceside 100, atside 100)
-   Program2(2H): 벽발리4000개 (포핸드발리500, 왼손포핸드발리500, 백핸드발리500, 왼손백핸드발리500)
+   Program2(2H): 벽발리
    Program3(2H): 스트로크 (buy ball machine)   
 ```
 
