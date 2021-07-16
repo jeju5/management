@@ -67,10 +67,12 @@ CUTTING Estimaates
 * WEEKLY COOKING
   - 브로콜리 5lbs를 삶는다. (55분)
   - 쌀(4컵)을 씻고 밥을 짓는다.
-  - 고기 2.5lbs를 삶는다. (30분)
-  - 양파와 마늘을 dice해서 볶는다.
-  - 케첩과 카레소스를 섞어서 볶는다.
-  - 밥을 덜어낸다.
+  - 고기 3lbs를 삶는다. (30분)
+  - 양파를 dice하고 볶는다.
+  - 콩-당근 Mix를 씻어서 같이 볶는다.
+  - 마늘 7스푼을 꺼내서 물로 씻고 양파랑 볶는다.
+  - 소스를 섞어서 볶는다.
+  - MEAL PREP
 
 * WEEKLY GROCERY
   ---------------------
@@ -80,10 +82,10 @@ CUTTING Estimaates
   - 아몬드
   - 그릭요거트 16ct (Triple Zero)
   ---------------------
-  - 고기 2.5lbs
+  - 고기 3lbs
   - 콩/당근 Mix 1봉지
   - 양파 1개
-  - 간마늘 7스푼
+  - Minced 마늘
 
 * WEEKLY PROTEIN PLAN (targeting 700g/week == 100g/day; 65x1.5)
   <오전 195g>
@@ -94,8 +96,8 @@ CUTTING Estimaates
     - 30g (브로콜리 2.5lbs)
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
-    - 250g (고기 2.5lbs)
-    - 72g (달걀 12ct)
+    - 300g (고기 3lbs)
+   
 
 * Ref
   - 15g (rice 4cup)
