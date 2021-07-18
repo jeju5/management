@@ -11,7 +11,6 @@
 0700 0900 |  자유 2.0 | 9시전에 가능한시간에 바로취침
 ----------------------------------------------------------------
 * 일요일은 자유기상
-* MEAL = 닭5lbs / 7 (65kg뺼때까지)
 ```
 
 # 예배
@@ -78,8 +77,8 @@ KEEP 64.0kg; AMA-LIGHT(63.0kg) & PRO-LIGHT(61.2kg)
   - 그릭요거트 16ct (Triple Zero)
   ---------------------
   - 고기 3lbs
-  - 콩/당근 Mix 1봉지
   - 양파 1개
+  - Frozen 완두콩
   - Minced 마늘
 
 * WEEKLY PROTEIN PLAN (targeting 700g/week == 100g/day; 65x1.5)
@@ -93,7 +92,6 @@ KEEP 64.0kg; AMA-LIGHT(63.0kg) & PRO-LIGHT(61.2kg)
     - 45g (almond 210g = 7줌)
     - 300g (고기 3lbs)
    
-
 * Ref
   - 15g (rice 4cup)
   - 70g (egg 1dozen)
