@@ -27,7 +27,7 @@
 --------------------------------------------------------------------------------------------------
 | SIT(5set)   | Pull(100)   Abs(T-6)      | Push(300)    Abs(T-6)     | Aero(2HR)    Aero(2HR)   |
 |             | Curl(100)   Neck(500)     |              Neck(500)    |                          |
-|             | Aero(1HR)   Aero-R(1HR)   | Box-S(1HR)   Aero-R(1HR)  |                          |
+|             | Aero-S(1HR) Aero-R(1HR)   | AERO-S(1HR)  Aero-R(1HR)  |                          |
 |             |                           |                           |                          |
 |             |                           |                           |                          |
 --------------------------------------------------------------------------------------------------
@@ -35,7 +35,8 @@
 * Abs: legraise(10)-crunch(10)-lsitup(10)-rsitup(10)-hollow(10s) x 10
 * Neck: 200back -> 100front -> 100left -> 100right
 * Aero(=Aerobic Exercise); shadow-box mixed with body-weight-squats
-* -R: some sets of 50 rotator-cuff band pulls
+* -R: 10 sets of 100 theraband pulls
+* -S: 10 sets of 100 body squats
 
 KEEP 64.0kg; AMA-LIGHT(63.0kg) & PRO-LIGHT(61.2kg)
 ```
