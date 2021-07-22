@@ -25,9 +25,9 @@
 --------------------------------------------------------------------------------------------------
 | SUN         | MON          TUE          | WED          THU          | FRI          SAT         |
 --------------------------------------------------------------------------------------------------
-| SIT(5set)   | Pull(100)   Abs(T-6)      | Push(300)    Abs(T-6)     | Aero(2HR)    Aero(2HR)   |
+| SIT(5set)   | Pull(100)   Abs(T-6)      | AERO-P(2HR)  Abs(T-6)     | Aero(2HR)    Aero(2HR)   |
 |             | Curl(100)   Neck(500)     |              Neck(500)    |                          |
-|             | Aero-S(1HR) Aero-R(1HR)   | AERO(1HR)    Aero(1HR)    |                          |
+|             | Aero-S(1HR) Aero-R(1HR)   |              Aero(1HR)    |                          |
 |             |                           |                           |                          |
 |             |                           |                           |                          |
 --------------------------------------------------------------------------------------------------
@@ -35,8 +35,9 @@
 * Abs: legraise(10)-crunch(10)-lsitup(10)-rsitup(10)-hollow(10s) x 10
 * Neck: 200back -> 100front -> 100left -> 100right
 * Aero(=Aerobic Exercise); shadow-box mixed with body-weight-squats
-* -R: 10 sets of 100 theraband pulls
-* -S: 10 sets of 100 body squats
+* -P: 30 push-up x 10 sets
+* -R: 50 band-pull x 10 sets
+* -S: 100 squats x 10 sets
 
 KEEP 64.0kg; AMA-LIGHT(63.0kg) & PRO-LIGHT(61.2kg)
 ```
