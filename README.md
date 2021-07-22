@@ -81,8 +81,10 @@ KEEP 64.0kg; AMA-LIGHT(63.0kg) & PRO-LIGHT(61.2kg)
   - 양파 1개
   - Frozen 완두콩
   - Minced 마늘
+  - 토마토 파스타 소스 2병
+  ---------------------
 
-* WEEKLY PROTEIN PLAN (targeting 700g/week == 100g/day; 65x1.5)
+* WEEKLY PROTEIN PLAN (targeting 690g/week == 98g/day; 65gx1.5)
   <오전 195g>
     - 30g (브로콜리 2.5lbs)
     - 120g (yogurt 150g x 8ct. Triple Zero)
@@ -95,5 +97,4 @@ KEEP 64.0kg; AMA-LIGHT(63.0kg) & PRO-LIGHT(61.2kg)
    
 * Ref
   - 15g (rice 4cup)
-  - 70g (egg 1dozen)
  ```
