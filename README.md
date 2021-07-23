@@ -27,14 +27,14 @@
 --------------------------------------------------------------------------------------------------
 | SIT(5set)   | Pull(100)   Abs(T-4)      |              Abs(T-4)     | Aero(2HR)    Aero(2HR)   |
 |             | Curl(100)   Neck(500)     |              Neck(500)    |                          |
-|             | BOX-S(1HR)  BOX-R(1HR)    | BOX-P(2HR)   BOX-R(1HR)   |                          |
+|             | SBOX-S(1HR) SBOX-R(1HR)   | SBOX-P(2HR)  SBOX-R(1HR)  |                          |
 |             |                           |                           |                          |
 |             |                           |                           |                          |
 --------------------------------------------------------------------------------------------------
 * SIT: warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
 * Abs: [legraise(10)-crunch(10)-hollow(10s) x 10] or [legraise(10)-lsitup(10)-rsitup(10) x 10]
 * Neck: 200back -> 100front -> 100left -> 100right
-* Aero(=Aerobic Exercise); shadow-box mixed with body-weight-squats
+* Aero(=Aerobic Exercise); RUN, BIKE, SBOX, SWIM
 * -P: 30 push-up x 10 sets
 * -R: 50 band-pull x 10 sets
 * -S: 100 squats x 10 sets
