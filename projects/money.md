@@ -87,6 +87,13 @@ Holdings (ratio)
   
 * 분산은 무지에 대한 보험이다.
   * 분산도 필요하지만 집중도 필요하다. 최대 10개 정도의 종목으로 포트폴리오를 유지해보자.
+  
+* 5 체크리스트
+  1. 1< PE Ratio <25
+  2. 10% < Profit Margin
+  3. Liabilities < Assets
+  4. Dividend Cost < Cash Flow
+  5. Total Revenue, Gross Profit, Operating Income, Net Income growing over three years.
 ```
 * Analysis
 ```
