@@ -31,6 +31,8 @@ Holdings (ratio)
     * TQQQ 30%
     * TOP10 25%
 
+  * RSI 40이하면 좋은 찬스라고 봄
+
 * LIST
   <대기업>
    이커머스: AMZN
