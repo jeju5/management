@@ -98,4 +98,6 @@ KEEP 64.0kg; AMA-LIGHT(63.0kg) & PRO-LIGHT(61.2kg)
    
 * Ref
   - 15g (rice 4cup)
+  
+* 버섯전골(별미): 파, 느타리버섯, 팽이버섯, 두부, 소고기, 라면스프
  ```
