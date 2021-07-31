@@ -25,9 +25,9 @@
 --------------------------------------------------------------------------------------------------
 | SUN         | MON          TUE          | WED          THU          | FRI          SAT         |
 --------------------------------------------------------------------------------------------------
-| SIT(5set)   | Pull(100)   Abs(T-4)      |              Abs(T-4)     | Aero(2HR)    Aero(2HR)   |
+| SIT(5set)   | Pull(100)   Abs(T-4)      | PUSH(300)    Abs(T-4)     | Aero(2HR)    Aero(2HR)   |
 |             | Curl(100)   Neck(500)     |              Neck(500)    |                          |
-|             | SBOX-S(1HR) SBOX-R(1HR)   | SBOX-P(2HR)  SBOX-R(1HR)  |                          |
+|             | SBOX(1HR)   SBOX-R(1HR)   | SBOX(1HR)    SBOX-R(1HR)  |                          |
 |             |                           |                           |                          |
 |             |                           |                           |                          |
 --------------------------------------------------------------------------------------------------
@@ -35,9 +35,9 @@
 * Abs: [legraise(10)-crunch(10)-hollow(10s) x 10] or [legraise(10)-lsitup(10)-rsitup(10) x 10]
 * Neck: 200back -> 100front -> 100left -> 100right
 * Aero(=Aerobic Exercise); RUN, BIKE, SBOX, SWIM
+  * SBOX에는 1000개 맨몸스쿼트 항상 포함.
 * -P: 30 push-up x 10 sets
 * -R: 50 band-pull x 10 sets
-* -S: 100 squats x 10 sets
 
 KEEP 64.0kg; AMA-LIGHT(63.0kg) & PRO-LIGHT(61.2kg)
 ```
