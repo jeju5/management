@@ -261,19 +261,21 @@ Holdings (ratio)
 * Terms
   * Revenue          : Net Sales (매출)
   * Gross Profit     : Revenue - COGS (매출총이익)
-  * EBITDA           : Revenue - COCS - OPEX + Demortization + Amortization (세전영업이익)
+  * EBITDA           : Revenue - COGS - OPEX + Demortization + Amortization (세전영업이익)
   * EBIT             : Revenue - COGS - OPEX (영업이익)
                        = Earning before interest and tax
                        = Operating Profit
   * Net Profit       : Revenue - COGS - OPEX - Interest - Tax (당기순이익)
     => Operating Profit(EBIT)과 Net Profit이 가장 중요하다.
 
-  * Enterprise Value
+  * Enterprise Value (기업의 평가가치)
     * Enterprise Value = Market Capitalization + Debt
     * 기업가치 = 시가총액 + 기업부채 (기업부채= NetDebt-NetCash)
     * 웃긴것이 기업부채를 빼는 것이 아니라 기업부채를 더한다.
       * 왜그럴까? 100만원짜리 기업을 살때 그 기업의 부채가 30만원이 있으면 70만원만 주면 살 수있다. 이때 100만원은 enterprise value, 70만원은 equity value가 된다
   * Equity Value = Market Capitalization
+  
+  * EV/EBITDA = 간단하게 말해서 "기업의-평가가치/기업의-1년수입" = 지금수입으로 몇년 지나면 기업가치만큼 버냐 = 적을수록 저평가
   
   * SE =  ShareHolder's Equity = Total Assets - Total Liabilities
                            (total assets = 복잡함)  
