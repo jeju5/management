@@ -35,7 +35,7 @@
 * Abs: [legraise(10)-crunch(10)-hollow(10s) x 10] or [legraise(10)-lsitup(10)-rsitup(10) x 10]
 * Neck: 200back -> 100front -> 100left -> 100right
 * Aero(=Aerobic Exercise); RUN, BIKE, SBOX, SWIM
-  * SBOX에는 1000개 맨몸스쿼트 항상 포함.
+  * SBOX에는 1시간당 500개 맨몸스쿼트 포함.
 * -P: 30 push-up x 10 sets
 * -R: 50 band-pull x 10 sets
 
