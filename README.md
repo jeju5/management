@@ -39,7 +39,9 @@
 * -P: 30 push-up x 10 sets
 * -R: 50 band-pull x 10 sets
 
-KEEP 64.0kg; AMA-LIGHT(63.0kg) & PRO-LIGHT(61.2kg)
+# KEEP 64.0kg
+   # AMA-LIGHT(63.0kg) & PRO-LIGHT(61.2kg)
+   # repeat: 64.0kg ---bulk---> 68.0kg ---cut---> 64.0kg
 ```
 
 # 훈련
