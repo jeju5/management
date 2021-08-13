@@ -7,7 +7,11 @@
 4. SAP SE      : 10%
 5. 401K ROTH   : 6% (S&P 500)
 6. IRA ROTH    : _
+   * 2/3: ETF   (SOXX, ICLN)
+   * 1/3: Stock (AMZN, AAPL, PLTR, SNOW, CRSP, EDIT, NTLA)
 7. GENERAL     : _
+   * 1/2: ETF   (SOXX, ICLN)
+   * 1/2: Stock (AMZN, AAPL, PLTR, SNOW, CRSP, EDIT, NTLA)
 
 Holdings (ratio)
 - CASH (MARCUS)    : 10038(75%)
@@ -52,7 +56,6 @@ Holdings (ratio)
   
   <RUNNER UP>
   * INTC _
-  * GOOG _
   * ICLN (신재생에너지 ETF)
   * AI _
   * ARKK _
