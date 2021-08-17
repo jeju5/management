@@ -6,6 +6,7 @@
 3. HIGH SAVING : maintain $12000
 4. SAP SE      : 10%
 5. 401K ROTH   : 6% (S&P 500)
+   * 100%: S&P 500 ETF
 6. IRA ROTH    : _
    * 2/3: ETF   (SOXX, ICLN)
    * 1/3: Stock (AMZN, AAPL, PLTR, SNOW, CRSP, EDIT, NTLA)
