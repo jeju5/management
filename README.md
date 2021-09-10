@@ -43,9 +43,8 @@
   ----------------------------- 67.0kg max
                 ↑↓            * 65.5kg (loma 30day weight) 
   ----------------------------- 64.0kg max
-                              * 63.0kg (Amateur Lightweight)
-                              
-                              * 61.0kg (Professional Lightweight)
+                              * 63.0kg (Amateur lightweight)
+                              * 61.0kg (Professional lightweight)
 ```
 
 # 훈련
