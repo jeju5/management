@@ -39,7 +39,7 @@
 * -P: 30 push-up x 10 sets
 * -R: 50 band-pull x 10 sets
 
-# Weight Plan
+# Weight Plan (keep it between 64kg & 67kg)
   ----------------------------- 67.0kg max
                 ↑↓            * 65.5kg (loma 30day weight) 
   ----------------------------- 64.0kg max
