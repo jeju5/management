@@ -34,7 +34,9 @@
 * SIT: warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
 * Abs: [legraise(10)-crunch(10)-hollow(10s) x 10] or [legraise(10)-lsitup(10)-rsitup(10) x 10]
 * Neck: 200back -> 100front -> 100left -> 100right
-* Aero(=Aerobic Exercise); RUN, BIKE, SBOX, SWIM; SBOX에는 1시간당 500개 맨몸 하프스쿼트 포함.
+* SBOX: Shadow Boxing with steps + 500squats/hour
+* Aero(=Aerobic Exercise); RUN, BIKE, SWIM
+
 * -P: 30 push-up x 10 sets
 * -B: 50 band-pull x 10 sets
 * -S: 50 dumbbell-shrug x 10 sets
