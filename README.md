@@ -40,8 +40,9 @@
 * -S: 50 dumbbell-shrug x 10 sets
 
 # Weight Plan (keep it between 64kg & 67kg)
-  ----------------------------- 67.0kg maximum (keep it here)
-                ↑↓            * 65.5kg (loma 30day weight) 
+                              * 69kg   (mayweather walkaround) 
+  ----------------------------- 67.0kg maximum
+                ↑↓            * 65.5kg (loma 30day weight) <- keep it here
   ----------------------------- 64.0kg minimum
                               * 63.0kg (Amateur lightweight)
                               * 61.0kg (Professional lightweight)
