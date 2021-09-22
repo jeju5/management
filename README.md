@@ -41,7 +41,7 @@
 * -B: 50 band-pull x 10 sets
 * -S: 50 dumbbell-shrug x 10 sets
 
-# Weight Plan
+# Weight Plan (keep 66kg = 145.5lbs)
   ----------------------------- 67.0kg maximum
                               * 66.0kg <- keep it here
                 ↑↓            * 65.5kg (loma 30day weight)
