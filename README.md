@@ -43,7 +43,8 @@
 
 # Weight Plan
   ----------------------------- 67.0kg maximum
-                ↑↓            * 65.5kg (loma 30day weight) ★ keep it here ★
+                              * 66.0kg <- keep it here
+                ↑↓            * 65.5kg (loma 30day weight)
   ----------------------------- 64.0kg minimum
                               * 63.0kg (Amateur lightweight)
                               * 61.0kg (Professional lightweight)
