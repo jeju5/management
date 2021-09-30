@@ -73,7 +73,6 @@
   - 쌀(4컵)을 씻고 밥을 짓는다.
   - 고기 3lbs를 삶는다. (30분)
   - 양파를 dice하고 볶는다.
-  - 콩-당근 Mix를 씻어서 같이 볶는다.
   - 마늘 7스푼을 꺼내서 물로 씻고 양파랑 볶는다.
   - 소스를 섞어서 볶는다.
   - MEAL PREP
@@ -86,26 +85,22 @@
   - 아몬드
   - 그릭요거트 16ct (Triple Zero)
   ---------------------
-  - 고기 3lbs
+  - 고기 2lbs
+  - 계란 12ct
   - 양파 1개
   - Frozen 완두콩
   - Minced 마늘
   - 토마토 파스타 소스 2병
   ---------------------
 
-* WEEKLY PROTEIN PLAN (targeting 690g/week == 98g/day; 65gx1.5)
-  <오전 195g>
-    - 30g (브로콜리 2.5lbs)
+* WEEKLY PROTEIN PLAN (targeting 700+g/week == 66g x 1.5 = 100g)
+  <오전 185g>
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
+    - 20g (protein 1scoop)
   <저녁 495g>
-    - 30g (브로콜리 2.5lbs)
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
     - 300g (고기 3lbs)
-   
-* Ref
-  - 15g (rice 4cup)
-  
-* 버섯전골(별미): 파, 느타리버섯, 팽이버섯, 두부, 소고기, 라면스프
+    - 72g (달걀 12ct)
  ```
