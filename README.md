@@ -95,12 +95,13 @@
   ---------------------
 
 * WEEKLY PROTEIN PLAN (targeting 700+g/week == 66g x 1.5 = 100g)
-  <오전 165g>
+  <오전 277g>
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
-  <저녁 537>
+    - 112g (soymilk 0.5gal x 2packs; not ideal for testosterone but might be better for skin recovery)
+  <저녁 437>
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
-    - 300g (고기 3lbs)
+    - 200g (고기 2lbs)
     - 72g (달걀 12ct)
  ```
