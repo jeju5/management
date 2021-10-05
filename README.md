@@ -38,7 +38,7 @@
 
 * X(Shadow Box): Shadow Boxing with steps
 * S(Squats): 500squats/hour
-* R(Rotator Cuff Band PUll): 30 x 10 sets
+* R(Rotator Cuff Band PUll): 300band pulls (50 x 6 sets)
 * P(Push Ups): 300push ups
 * G(Dumbbell Shrug): 50 x 10 sets
 
