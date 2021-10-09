@@ -49,6 +49,10 @@
   ----------------------------- 64.0kg minimum
                               * 63.0kg (Amateur lightweight)
                               * 61.0kg (Professional lightweight)
+                              
+# HR
+BIKE: 130-140
+RUN : 145-155
 ```
 
 # 훈련
