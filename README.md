@@ -27,7 +27,7 @@
 | SUN         | MON          TUE          | WED          THU          | FRI          SAT         |
 --------------------------------------------------------------------------------------------------
 | SIT(5set)   | Pull(100)   Abs(T4)       | Push(300)    Abs(T4)      | Aero(2HR)    Aero(2HR)   |
-|             | Curl(100)   Neck(500)     |     /        Neck(500)    |                          |
+|             | Curl(100)   Neck(500)     |              Neck(500)    |                          |
 |             | BIKE(1HR)   XSR(1HR)      | BIKE(1HR)    XSR(1HR)     |                          |
 |             |                           |                           |                          |
 |             |                           |                           |                          |
