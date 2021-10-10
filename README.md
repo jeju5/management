@@ -51,7 +51,7 @@
                               * 61.0kg (Professional lightweight)
                               
 # HR
-BIKE: 130-140
+BIKE: 135-145
 RUN : 145-155
 ```
 
