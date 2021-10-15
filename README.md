@@ -28,7 +28,7 @@
 --------------------------------------------------------------------------------------------------
 |             | Pull(100)   Abs(T4)       | Push(300)    Abs(T4)      | Aero(2HR)    Aero(2HR)   |
 |             | Curl(100)   Neck(500)     |              Neck(500)    |                          |
-|             | BIKE(1HR)   XR(1HR)       | BIKE(1HR)    XR(1HR)      |                          |
+|             | BIKE(1HR)   XSR(1HR)      | BIKE(1HR)    XSR(1HR)     |                          |
 |             |                           |                           |                          |
 |             |                           |                           |                          |
 --------------------------------------------------------------------------------------------------
@@ -37,10 +37,9 @@
 * Neck: 200back -> 100front -> 100left -> 100right
 
 * X(Shadow Box): Shadow Boxing with steps
-* S(Squats): 500squats/hour
+* S(Squats): 600squats/hour
 * R(Rotator Cuff Band PUll): 300band pulls (50 x 6 sets)
-* P(Push Ups): 300push ups
-* G(Dumbbell Shrug): 50 x 10 sets
+* P(Push Ups): 300 push ups
 
 # Weight Plan (keep 66kg = 145.5lbs)
   ----------------------------- 67.0kg maximum
