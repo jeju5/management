@@ -27,14 +27,14 @@
 --------------------------------------------------------------------------------------------------
 | SUN         | MON          TUE          | WED          THU          | FRI          SAT         |
 --------------------------------------------------------------------------------------------------
-|             | Pull(100)   Abs(T3)       | Push(300)    Abs(T3)      | Aero(2HR)    Aero(3HR)   |
+|             | Pull(100)   Abs(T4)       | Push(300)    Abs(T4)      | Aero(2HR)    Aero(3HR)   |
 |             | Curl(100)   Neck(500)     |              Neck(500)    |                          |
 |             | Aero(1HR)   SIT           | Aero(1HR)    Aero(1HR)    |                          |
 |             |                           |                           |                          |
 |             |                           |                           |                          |
 --------------------------------------------------------------------------------------------------
 * SIT: warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
-* Abs: T4 = [legraise(10)-crunch(10)-hollow(10s) x 10]
+* Abs: T4 = [legraise(10)-halfsitup(10)-hollow(10s) x 10]
 * Neck: 200back -> 100front -> 100left -> 100right
 
 * X(Shadow Box): Shadow Boxing with steps
