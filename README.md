@@ -28,7 +28,7 @@
 | SUN         | MON          TUE          | WED          THU          | FRI          SAT         |
 --------------------------------------------------------------------------------------------------
 |             | Pull(100)   Abs(T4)       | Push(300)    Abs(T4)      | Aero(2HR)    Aero(3HR)   |
-|             | Curl(100)   Neck(500)     |              Neck(500)    |                          |
+|             | Curl(100)   Neck(500)     | Tube(300)    Neck(500)    |                          |
 |             | Aero(1HR)   Aero(1HR)     | Aero(1HR)    Aero(1HR)    |                          |
 |             |                           |                           |                          |
 |             |                           |                           |                          |
