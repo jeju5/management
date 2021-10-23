@@ -34,7 +34,7 @@
 |             |                           |                           |                          |
 --------------------------------------------------------------------------------------------------
 * SIT: warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
-* Abs: T4 = [legraise(10)-halfsitup(10)-hollow(10s) x 10]
+* Abs: T4 = [legraise(10)-halfsitup(10)-hollow(10s) x 10]; hollow할때 데드버그 자세에서 시작
 * Neck: 200back -> 100front -> 100left -> 100right
 
 * X(Shadow Box): Shadow Boxing with steps
