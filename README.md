@@ -27,9 +27,9 @@
 --------------------------------------------------------------------------------------------------
 | SUN         | MON          TUE          | WED          THU          | FRI          SAT         |
 --------------------------------------------------------------------------------------------------
-|             | Pull(100)   Abs(T4)       | Push(300)    Abs(T4)      | Aero(2HR)    Aero(3HR)   |
-|             | Curl(100)   Neck(500)     | Tube(300)    Neck(500)    |                          |
-|             | Aero(1HR)   Aero(1HR)     | Aero(1HR)    Aero(1HR)    |                          |
+|             | Pull(100)   Abs(T4)       | Push(300)     Abs(T4)     | Aero(3HR)    Aero(3HR)   |
+|             | Curl(100)   Neck(500)     | Band(300)     Neck(500)   |                          |
+|             | Aero(1HR)   Aero(1HR)     | Aero(1HR)     Aero(1HR)   |                          |
 |             |                           |                           |                          |
 |             |                           |                           |                          |
 --------------------------------------------------------------------------------------------------
@@ -39,8 +39,9 @@
 
 * X(Shadow Box): Shadow Boxing with steps
 * S(Squats): 600squats/hour
-* R(Rotator Cuff Band PUll): 300band pulls (50 x 6 sets)
-* P(Push Ups): 300 push ups
+* Band(Rotator Cuff Band pulls): 300 band pulls (30 x 10 sets)
+* Push(Push ups): 300 push ups (30 x 10 sets)
+
 
 # Weight Plan (keep 66kg = 145.5lbs)
   ----------------------------- 67.0kg maximum
@@ -48,10 +49,6 @@
   ----------------------------- 63.5kg minimum
                               * 63.0kg (Amateur lightweight)
                               * 61.0kg (Professional lightweight)
-                              
-# HR
-BIKE: 135-145
-RUN : 145-155
 ```
 
 # 훈련
