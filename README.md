@@ -44,8 +44,7 @@
 
 # Weight Plan (keep 66kg = 145.5lbs)
   ----------------------------- 67.0kg maximum
-                              * 66.0kg <- keep it here
-                ↑↓            * 65.5kg (loma 30day weight)
+                ↑↓            * 65.5kg (loma 30day weight) <- keep it here
   ----------------------------- 64.0kg minimum
                               * 63.0kg (Amateur lightweight)
                               * 61.0kg (Professional lightweight)
