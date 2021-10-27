@@ -42,13 +42,22 @@
 * Band(Rotator Cuff Band pulls): 300 band pulls (30 x 10 sets)
 * Push(Push ups): 300 push ups (30 x 10 sets)
 
-
 # Weight Plan (keep 66kg = 145.5lbs)
   ----------------------------- 67.0kg maximum
                 ↑↓            * 65.0kg keep      (Loma's 30day weight is 65.5kg)
   ----------------------------- 63.5kg minimum
                               * 63.0kg (Amateur lightweight)
                               * 61.0kg (Professional lightweight)
+                              
+# Performance Plan
+- 평체 65.5kg 달성 (2021)
+- 10km/50분 (2021 Dec)
+- 10km/40분 (2022 June)
+- Sub-4 (2022)
+
+
+# Tips
+- 10km 기록 * 4.5하면 대략적인 풀코스 완주 기록이 나옴
 ```
 
 # 훈련
