@@ -51,9 +51,7 @@
                               
 # Performance Plan
 - 평체 65.5kg 달성 (2021)
-- 10km/50분 (2021 Dec)
-- 10km/40분 (2022 June)
-- Sub-4 (2022)
+- 10k under 40min (2022) - self
 
 
 # Tips
