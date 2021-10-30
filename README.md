@@ -52,6 +52,7 @@
 # Performance Plan
 - 평체 65.5kg 달성 (2021)
 - 10k under 40min (2022) - self
+- 1+ amateur boxing match (2022)
 
 
 # Tips
