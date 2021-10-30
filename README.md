@@ -78,13 +78,11 @@
 
 # 식사
 ```
-* WEEKLY COOKING
+* WEEKLY COOKING (Tomato Meat Soup)
   - 브로콜리 5lbs를 삶는다. (55분)
-  - 쌀(4컵)을 씻고 밥을 짓는다.
-  - 고기 3lbs를 삶는다. (30분)
-  - 양파를 dice하고 볶는다.
-  - 마늘 7스푼을 꺼내서 물로 씻고 양파랑 볶는다.
-  - 소스를 섞어서 볶는다.
+  - 고기 3lbs를 물이 끓을때까지만 삶고 물은 버린다 그리고 물을 아주 조금만 넣고 끓인다.
+  - 양파를 dice하고 마늘과 볶는다.
+  - 토마토 소스, 올리브를 포함해서 모든 것을 넣고 끓인다.
   - MEAL PREP
 
 * WEEKLY GROCERY
@@ -95,7 +93,7 @@
   - 아몬드
   - 그릭요거트 16ct (Triple Zero)
   ---------------------
-  - 고기 2lbs
+  - 고기 3lbs
   - 계란 12ct
   - 양파 1개
   - Frozen 완두콩
@@ -104,15 +102,16 @@
   - 토마토 파스타 소스 2병
   ---------------------
 
-* WEEKLY PROTEIN PLAN (targeting 700+g/week == 66g x 1.5 = 100g)
-  <오전 277g>
+* WEEKLY PROTEIN PLAN (targeting 700+g/week = 66g x 1.5 = 100g)
+  <오전 195g>
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
-    - 112g (soymilk 0.5gal x 2packs; not ideal for testosterone but might be better for skin recovery)
-  <오후 437>
+    - 30g (protein powder)
+  <오후 537>
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
-    - 200g (meat 2lbs)
+    - 30g (protein powder)
+    - 300g (meat 3lbs)
     - 72g (egg 12ct)
     
 * 치즈/우유, 패스트푸드, 인스턴트는 무조건 피한다. (피지막힌 트러블유발)
