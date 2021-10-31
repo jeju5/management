@@ -78,11 +78,11 @@
 
 # 식사
 ```
-* WEEKLY COOKING (Tomato Meat Soup)
-  - 브로콜리 5lbs를 삶는다. (55분)
-  - 고기 3lbs를 물이 끓을때까지만 삶고 물은 버린다 그리고 물을 아주 조금만 넣고 끓인다.
-  - 양파를 dice하고 마늘과 볶는다.
-  - 토마토 소스, 올리브를 포함해서 모든 것을 넣고 끓인다.
+* WEEKLY COOKING (Steamed Broccoli & Tomato Meat Soup)
+  - 브로콜리 5lbs를 삶는다
+  - 고기 3lbs를 물이 끓을때까지만 삶고 물은 버린다. 그리고 물을 아주 조금만 넣고 끓인다.
+  - 양파를 dice하고 마늘과 볶는다. (Minced Garlic은 물로 헹궈서)
+  - 토마토 소스, 올리브를 포함해서 모든 것을 넣고 끓인다. (Pickled Olives는 물로 헹궈서)
   - MEAL PREP
 
 * WEEKLY GROCERY
@@ -96,10 +96,11 @@
   - 고기 3lbs
   - 계란 12ct
   - 양파 1개
-  - Frozen 완두콩
-  - Minced 마늘
-  - Olives
-  - 토마토 파스타 소스 2병
+  - 다진 마늘
+  - 올리브
+  - 토마토 파스타 소스 3병
+  ---------------------
+  - 토띠야, 스파게티면
   ---------------------
 
 * WEEKLY PROTEIN PLAN (targeting 700+g/week = 66g x 1.5 = 100g)
