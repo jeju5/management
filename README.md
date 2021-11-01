@@ -45,8 +45,8 @@
 # Weight Plan (keep 66kg = 145.5lbs)
   ----------------------------- 67.0kg maximum
                 ↑↓            * 65.0kg keep      (Loma's 30day weight is 65.5kg)
-  ----------------------------- 63.5kg minimum
-                              * 63.0kg (Amateur lightweight)
+  ----------------------------- 64.0 kg minimum
+                              * 63.5kg (AIBA Light Welterweight)
                               * 61.0kg (Professional lightweight)
                               
 # Goals
