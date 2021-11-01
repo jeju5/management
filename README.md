@@ -36,7 +36,7 @@
 * SIT: warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
 * Abs: T4 = [legraise(10)-halfsitup(10)-hollow(10s) x 10]; hollow할때 데드버그 자세에서 시작
 * Neck: 200back -> 100front -> 100left -> 100right
-* Curl: 네거티브4초-수축2초; 세트간 네거티브친업 섞어서
+* Curl: 수축2초-네거티브4초; 세트간 네거티브친업 1-5개 섞어서
 * X(Shadow Box): Shadow Boxing with steps
 * S(Squats): 600squats/hour
 * Band(Rotator Cuff Band pulls): 300 band pulls (30 x 10 sets)
