@@ -51,7 +51,7 @@
                               
 # Goals
 - DEC 2021 - 평체 65.5kg 달성
-- JUL 2022 - 10k under 40min - self
+- JUL 2022 - 10k under 40min - self (트레드밀 9.3 ~ 9.4mph로 1시간)
 - JUL 2022 - boxing gym start
 - OCT 2022 - 1+ amateur boxing match (2022)
 
