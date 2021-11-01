@@ -102,19 +102,17 @@
   - 토띠야, 스파게티면
   ---------------------
 
-* WEEKLY PROTEIN PLAN (targeting 700+g/week = 66g x 1.5 = 100g)
-  <오전 195g>
+* WEEKLY PROTEIN PLAN (상승다이어트 1000+g/week = 70g x 2 = 140g)
+  <오전 340g>
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
-    - 30g (protein powder)
-  <오후 537>
+    - 175g (powder 7scoop)
+  <오후 712g>
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
-    - 30g (protein powder)
+    - 175g (powder 7scoop)
     - 300g (meat 3lbs)
     - 72g (egg 12ct)
-  
-상승다이어트때는 단백질량을 2.5배로
-* 닭가슴살 2끼 + 쉐이크 2번더
+    
 * 치즈/우유, 패스트푸드, 인스턴트는 무조건 피한다. (피지막힌 트러블유발) -> 한국음식, 일본음식, 중국음식, 태국음식, 치폴레
  ```
