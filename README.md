@@ -46,8 +46,8 @@
   ----------- 67.0 kg max
       ↑↓      65.5 kg med  (Loma's 30day weight is 65.5kg)
   ----------- 64.0 kg min
-              63.5kg (AIBA Light Welterweight)
-              61.0kg (Pro Lightweight)
+              63.5 kg (AIBA Light Welterweight)
+              61.0 kg (Pro Lightweight)
                               
 # Goals
 - DEC 2021 - 평체 65.5kg 달성
