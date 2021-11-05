@@ -27,20 +27,25 @@
 -------------------------------------------------------------------------------------------
 | SUN  | MON          TUE          | WED          THU          | FRI          SAT         |
 -------------------------------------------------------------------------------------------
-|      | Pull(100)   Abs(T4)       | Push(300)     Abs(T4)     | Aero(3HR)    Aero(3HR)   |
-|      | Curl(100)   Neck(500)     | Band(300)     Neck(500)   |                          |
+|      | Pull(100)   ANT           | Push(300)     ANT         | Aero(3HR)    Aero(3HR)   |
+|      | Curl(100)                 | Band(300)                 |                          |
 |      | Aero(1HR)   Aero(1HR)     | Aero(1HR)     Aero(1HR)   |                          |
 |      |                           |                           |                          |
 |      |                           |                           |                          |
 -------------------------------------------------------------------------------------------
-* SIT: warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
-* Abs: T4 = [legraise(10)-halfsitup(10)-hollow(10s) x 10]; hollow할때 데드버그 자세에서 시작
-* Neck: 200back -> 100front -> 100left -> 100right
-* Curl: 수축2초-네거티브4초; 세트간 네거티브친업 1-5개 섞어서
-* X(Shadow Box): Shadow Boxing with steps
-* S(Squats): 600squats/hour
-* Band(Rotator Cuff Band pulls): 300 band pulls (30 x 10 sets)
-* Push(Push ups): 300 push ups (30 x 10 sets)
+* MON
+  - Pull ups: 수축2초-네거티브4초; 의자 밑에 놓고 보조하면서
+  - Dumbbell Curl: 수축2초-네거티브4초; 세트간 네거티브친업 1-5개 섞어서
+* ANT
+  - Abs(T4): legraise(10)-halfsitup(10)-hollow(10s) x 10
+  - Neck(500): 200back -> 100front -> 100left -> 100right
+  - Trap(100): 100 shrugs
+* WED
+  - Push ups: 300 push ups (30 x 10 sets)
+  - Band(Rotator Cuff Band pulls): 300 band pulls (30 x 10 sets)
+* Aero
+  - Bike, Run, Swim, Shadow-box
+  - Sprint Interval Training(SIT): warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
 
 # Weight Plan (keep 66kg = 145.5lbs)
   -- 67.0 kg -- MAX
