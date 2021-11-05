@@ -43,11 +43,13 @@
 * Push(Push ups): 300 push ups (30 x 10 sets)
 
 # Weight Plan (keep 66kg = 145.5lbs)
-  ----------- 67.0 kg max
-      ↑↓      65.5 kg med  (Loma's 30day weight is 65.5kg)
-  ----------- 64.0 kg min
-              63.5 kg (AIBA Light Welterweight)
-              61.0 kg (Pro Lightweight)
+  -- 67.0 kg -- MAX
+  |           |      
+  |  65.5 kg  | MID (Loma's 30day weight)
+  |           |
+  ---64.0 kg -- MIN
+     63.5 kg    ama Light Welterweight
+     61.0 kg    pro Lightweight
                               
 # Goals
 - DEC 2021 - 평체 65.5kg 달성
