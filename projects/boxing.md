@@ -189,26 +189,10 @@ rupper하고 뒷손커버 rslip
      * (rear-pivot) & rear-hook (rear-roll)
      * (rear-pivot) & rear-body rear-hook (rear-roll)
   
-
-  
- * Mayweather
-   * lead-hook lead-upper lead-hook / cro lead-hook cro lead-block / cro lead-hook cro lead-shoulder / cro lead-hook cro
-   rear-slip lead-roll / cro lead-hook cro sway / cro lead-hook cro jab jab jab
-
- * Fort
-   * rear-upper lead-hook (slip-lead) lead-body lead-hook (lead-roll) jab jab
-
- * Pacquiao
-   * jab cro lead-upper rear-upper lead-upper /
-   * jab cro jab cro jab (slip-lead) jab cro (slip-rear) cro (rear-roll) & lead-hook
- 
  * Pacquiao Shadow
-     * lup-rup-lup-rup-lup-jab-cro-lhk
-     * lup-rup-lup-rup-lup-jab-cro-lhk
-     * lup-rup-lup-rup-lup-rup-lup-jab-cro-lup-rup-lup-jab-rhk-lhk
-     * jab-cro-lup-rup-(lslip)-jab-cro-lup-rup-(lslip)-jab-rhk-lhk-(rslip)
-
-
+    1. lup-rup-lup-rup-lup-jab-cro-lhk
+    2. lup-rup-lup-rup-lup-rup-lup-jab-cro-lup-rup-lup-jab-rhk-lhk
+    3. jab-cro-lup-rup-(lslip)-jab-cro-lup-rup-(lslip)-jab-rhk-lhk-(rslip)
 
  * Lomachenko
    * (back rear-roll) (lead-roll) (pivot-lead) jab jab
@@ -222,3 +206,10 @@ rupper하고 뒷손커버 rslip
    * (lead-slip) (rear-roll) 라이트잽x4ㅡ라이트ㅡ레프트훅
    * rear-hook (rear-cover) lead-hook (lead-cover) 'jab cro'x4 lead-hook (lead-roll) (rear-roll)
    * 'rear-body lead-body'x4 rear-body lead-hook
+
+
+ * Mayweather
+   * lead-hook lead-upper lead-hook / cro lead-hook cro lead-block / cro lead-hook cro lead-shoulder / cro lead-hook cro
+   rear-slip lead-roll / cro lead-hook cro sway / cro lead-hook cro jab jab jab
+
+
