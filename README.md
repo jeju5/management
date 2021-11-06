@@ -51,6 +51,10 @@
   ---64.0 kg -- MIN
      63.5 kg    ama Light Welterweight
      61.0 kg    pro Lightweight
+     
+# Lomachenko Weight
+- 30day: 65.5kg (vs luke)
+- 14day: 62.2kg (vs luke), 64.1kg (vs teofimo)
                               
 # Goals
 - DEC 2021 - 평체 65.5kg 달성
