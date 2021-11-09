@@ -33,9 +33,9 @@
   - Pull ups: 빠른수축-2초이완; 의자 밑에 놓고 보조하면서
   - Dumbbell Curl: 빠른수축-4초이완; 세트간 네거티브친업 0-5개 섞어서
 * ANT
-  - Abs(T4): legraise(10)-halfsitup(10)-hollow(10s) x 10
-  - Neck(500): 200back -> 100front -> 100left -> 100right
-  - Trap(100): 100 shrugs
+  - Abs: T4 = legraise(10)-halfsitup(10)-hollow(10s) x 10
+  - Neck: 500 neck moves (200back, 100left, 100right, 100front)
+  - Trap: 100 dumbbell shrug (10 x 10 sets)
 * WED
   - Push ups: 300 push ups (30 x 10 sets)
   - Band(Rotator Cuff Band pulls): 300 band pulls (30 x 10 sets)
