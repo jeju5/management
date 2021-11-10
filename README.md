@@ -45,10 +45,10 @@
 
 # Weight Plan
   -- 68.0 kg -- max (full-load)
-  |  66.0 kg  | ◀ casual (145.5lbs)
+  |  66.0 kg  | ◀ casual
   ---64.0 kg -- min
-     63.5 kg    ama Light Welterweight
-     61.0 kg    pro Lightweight
+     63.5 kg    amateur light welterweight
+     61.0 kg    professional lightweight
      
 # Lomachenko Weight
 - 30day: 65.5kg (vs luke)
