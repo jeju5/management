@@ -43,10 +43,11 @@
   - Bike, Run, Swim, Shadow-box
   - Sprint Interval Training(SIT): warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
 
-# Weight Plan (keep 66kg = 145.5lbs)
-  -- 67.0 kg -- MAX
-  |  65.5 kg  | MID (Loma's 30day weight)
-  ---64.0 kg -- MIN
+# Weight Plan
+  -- 68.0 kg -- max (casually full loaded)
+  |  66.0 kg  | ◀ casual
+  |  65.0 kg  | action
+  ---64.0 kg -- Min
      63.5 kg    ama Light Welterweight
      61.0 kg    pro Lightweight
      
