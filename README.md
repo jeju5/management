@@ -44,10 +44,10 @@
   - Sprint Interval Training(SIT): warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
 
 # Weight Plan
-  -- 68.0 kg -- max (casually full loaded)
+  -- 68.0 kg -- max (full-load)
   |  66.0 kg  | ◀ casual
   |  65.0 kg  | action
-  ---64.0 kg -- Min
+  ---64.0 kg -- min
      63.5 kg    ama Light Welterweight
      61.0 kg    pro Lightweight
      
