@@ -45,8 +45,7 @@
 
 # Weight Plan
   -- 68.0 kg -- max (full-load)
-  |  66.0 kg  | ◀ casual
-  |  65.0 kg  | action
+  |  66.0 kg  | ◀ casual (145.5lbs)
   ---64.0 kg -- min
      63.5 kg    ama Light Welterweight
      61.0 kg    pro Lightweight
