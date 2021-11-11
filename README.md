@@ -107,15 +107,17 @@
   - 토띠야, 스파게티면
   ---------------------
 
-* WEEKLY PROTEIN PLAN (상승다이어트 1000+g/week = 70g x 2 = 140g)
-  <오전 340g>
+* WEEKLY PROTEIN PLAN (상승다이어트 1052+g/week; 7x 70g x2 =980)
+  <오전 165g>
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
+  <오전보충 175g>
     - 175g (powder 7scoop)
-  <오후 712g>
+  <오후보충 175g>
+    - 175g (powder 7scoop)
+  <오후 537g>
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
-    - 175g (powder 7scoop)
     - 300g (meat 3lbs)
     - 72g (egg 12ct)
     
