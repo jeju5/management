@@ -44,15 +44,13 @@
   - Sprint Interval Training(SIT): warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
 
 # Weight Plan
-  -- 68.0 kg -- max
-  |  66.0 kg  | ◀ casual
-  ---64.0 kg -- min
-     63.5 kg    amateur light welterweight
-     61.0 kg    professional lightweight
-     
-# Lomachenko Weight
-- 30day: 65.5kg (vs luke)
-- 14day: 62.2kg (vs luke), 64.1kg (vs teofimo)
+  -- 68.0kg -- max
+  |  65.5kg  | ◀ casual
+  ---63.0kg -- min
+  ref) 
+  - 63.5kg (amateur light welter), 61.2kg (professional light)       
+  - Loma 30day: 65.5kg (vs luke)
+  - Loma 14day: 62.2kg (vs luke), 64.1kg (vs teofimo)
                               
 # Goals
 - DEC 2021 - 평체 66.0kg 달성
