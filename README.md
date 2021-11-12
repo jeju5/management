@@ -38,8 +38,7 @@
   - Trap: 100 dumbbell shrug (10 x 10 sets)
 * WED
   - Push ups: 300 push ups (30 x 10 sets)
-  - Band(Rotator Cuff Band pulls): 300 band pulls (30 x 10 sets)
-* Aero
+  - Band works: 300 band pulls (30 x 10 sets); rotator cuff, trapezoid
   - Bike, Run, Swim, Shadow-box
   - Sprint Interval Training(SIT): warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
 
