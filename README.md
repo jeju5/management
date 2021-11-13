@@ -43,13 +43,11 @@
   - Sprint Interval Training(SIT): warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
 
 # Weight Plan
-     71.0kg    ◀ current
-     ...
   -- 68.0kg -- max
-  |  65.5kg  | ◀ casual
+  |  65.0kg  | ◀ casual
   ---63.0kg -- min
   
-  weight ref) 
+  ref) 
   - 63.5kg (amateur light welter), 61.2kg (professional light)       
   - Loma 30day: 65.5kg (vs luke)
   - Loma 14day: 62.2kg (vs luke), 64.1kg (vs teofimo)
