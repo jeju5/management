@@ -54,9 +54,12 @@
                               
 # Goals
 - DEC 2021 - 평체 65.0kg 달성
-- MAR 2022 - 10k under 45min - test (트레드밀 8.2mph로 1시간)
-- JUL 2022 - 10k under 40min - test (트레드밀 9.3mph로 1시간)
+- JAN 2022 - 10k test
+- APR 2022 - 10k under __min
+- JUL 2022 - 10k under __min
 - JUL 2022 - competitive boxing training start at Gym
+
+* 10k 45분(8.2mph 1hr), 40분(9.3mph 1hr)
 
 # Tips
 - 10km 기록 * 4.5하면 대략적인 풀코스 완주 기록이 나옴
