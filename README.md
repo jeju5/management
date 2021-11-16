@@ -52,13 +52,6 @@
   - Loma 30day: 65.5kg (vs luke)
   - Loma 14day: 62.2kg (vs luke), 64.1kg (vs teofimo)
                               
-# Goals
-- DEC 2021 - 평체 65.0kg 달성
-- JAN 2022 - 10k test
-- APR 2022 - 10k under __min
-- JUL 2022 - 10k under __min
-- JUL 2022 - competitive boxing training start at Gym
-
 * 10k 45분(8.2mph 1hr), 40분(9.3mph 1hr)
 
 # Tips
@@ -124,3 +117,19 @@
 * 치즈/우유, 패스트푸드, 인스턴트는 무조건 피한다. 피지막힌 트러블유발
 * 사먹는다면 동양음식 "한국음식, 일본음식, 중국음식, 태국음식", 치폴레
  ```
+ 
+ # GOALS
+```
+# Basic Fitness
+- DEC 2021 평체 65.0kg 달성
+- JAN 2022 10k test
+- APR 2022 10k under __min
+- JUL 2022 10k under __min
+- JUL 2022 competitive boxing training start at Gym
+
+# English Vocabulary
+- JAN 2022 ~ JUN 2022 해커스 보카, 보카 바이블
+
+# Data Structures and Algorithms
+- JUL 2022 ~ DEC 2022 기본 DS 학습
+```
