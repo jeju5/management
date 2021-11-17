@@ -52,10 +52,11 @@
   - Loma 30day: 65.5kg (vs luke)
   - Loma 14day: 62.2kg (vs luke), 64.1kg (vs teofimo)
                               
-* 10k 45분(8.2mph 1hr), 40분(9.3mph 1hr)
+
 
 # Tips
-- 10km 기록 * 4.5하면 대략적인 풀코스 완주 기록이 나옴
+- 10k 45분(8.2mph 1hr), 40분(9.3mph 1hr)
+- 10k 기록 * 4.5하면 대략적인 풀코스 완주 기록이 나옴
 ```
 
 # 훈련
