@@ -102,12 +102,12 @@
     - 45g (almond 210g = 7줌)
   <보충 175g>
     - 175g (powder 7scoop)
-  <오후 165g>
-    - 120g (yogurt 150g x 8ct. Triple Zero)
-    - 45g (almond 210g = 7줌)
   <저녁 372g>
     - 300g (meat 3lbs)
     - 72g (egg 12ct)
+  <오후 165g>
+    - 120g (yogurt 150g x 8ct. Triple Zero)
+    - 45g (almond 210g = 7줌)
     
 * 치즈/우유, 패스트푸드, 인스턴트는 무조건 피한다. 피지막힌 트러블유발
 * 사먹는다면 동양음식 "한국음식, 일본음식, 중국음식, 태국음식", 치폴레
