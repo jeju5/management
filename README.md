@@ -60,7 +60,7 @@
    - Speech: TED talk (1talk/wk)
    - Reading: A River Runs Through It
 - 소프트웨어 훈련
-   - UI: React
+   - Data Structure & Python
    - Algorithm: Leetcode
 - 기타 훈련
    - 핑거스타일 1곡 반복
