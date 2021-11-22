@@ -116,11 +116,11 @@
  # GOALS
 ```
 # Basic Fitness
-- DEC 2021 평체 65.0kg 달성
-- JAN 2022 10k test
-- JAN 2022 include planche workouts
+- JAN 2022 평체 65.0kg 달성
+- FEB 2022 10k test
+- FEB 2022 include planche workouts
 - APR 2022 10k under __min
-- JUL 2022 10k under __min
+- JUN 2022 10k under __min
 - JUL 2022 competitive boxing training start at Gym
 
 # English Vocabulary
