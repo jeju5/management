@@ -43,9 +43,9 @@
   - Sprint Interval Training(SIT): warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
 
 # Weight Plan
-  -- 68.0kg -- max
-  |  65.0kg  | ◀ casual
-  ---63.0kg -- min
+  -- 68.0kg -- max (bulk)
+  |  65.5kg  | mid (casual)
+  ---63.0kg -- min (competition)
   
   ref) 
   - 63.5kg (amateur light welter), 61.2kg (professional light)       
