@@ -120,12 +120,13 @@
  # GOALS
 ```
 # Basic Fitness
-- JAN 2022 평체 65.0kg 달성
-- FEB 2022 10k test
+- JAN 2022 평체 65.5kg 달성
+- FEB 2022 10k test & 10k 목표수립
 - FEB 2022 include planche workouts
 - APR 2022 10k under __min
 - JUN 2022 10k under __min
 - JUL 2022 competitive boxing training start at Gym
+- JUL 2022 buy a tennis ball machine and practice
 
 # English Vocabulary
 - JAN 2022 ~ JUN 2022 해커스 보카, 보카 바이블
