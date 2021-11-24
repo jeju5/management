@@ -46,7 +46,7 @@
   -- 68.0kg -- max (bulk)
   |  65.5kg  | mid (casual)
   ---63.0kg -- min (competition)
-  Natural Weight: 아침에 일어나서 식사와 정리후 유지되는 
+  Natural Weight: 아침에 일어나서 식사와 정리후 유지되는 체중 (대략 공복기상 +0.5kg)
   
   ref) 
   - 63.5kg (amateur light welter), 61.2kg (professional light)       
