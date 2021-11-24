@@ -42,10 +42,11 @@
   - Bike, Run, Swim, Shadow-box
   - Sprint Interval Training(SIT): warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
 
-# Weight Plan
+# Natural Weight Plan
   -- 68.0kg -- max (bulk)
   |  65.5kg  | mid (casual)
   ---63.0kg -- min (competition)
+  Natural Weight: 아침에 일어나서 식사와 정리후 유지되는 
   
   ref) 
   - 63.5kg (amateur light welter), 61.2kg (professional light)       
