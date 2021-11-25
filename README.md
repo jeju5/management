@@ -23,7 +23,7 @@
 | SUN  | MON          TUE        | WED          THU          | FRI          SAT         |
 -----------------------------------------------------------------------------------------
 |      | Pull(100)   Abs         | Push(300)     Abs         | Aero(3HR)    Aero(3HR)   |
-|      | Curl(100)   Neck        | Swing(30)     Neck        |                          |
+|      | Curl(100)   Neck        | Swing(50)     Neck        |                          |
 |      | Aero(1HR)   Aero(1HR)   | Band(300)     Aero(1HR)   |                          |
 |      |                         | Aero(0.5HR)               |                          |
 -----------------------------------------------------------------------------------------
@@ -36,7 +36,7 @@
 * Wednesday
   - Do it as a super-set with SBOX
   - Push ups: 300 (30 x 10 sets)
-  - Bar Swing: 30 (3 x 10 sets) 무반동으로
+  - Bar Swing: 50 (5 x 10 sets) 무반동으로. 발을 앞에 대고 시작자세
   - Band pulls: 300 (30 x 10 sets); 15vertical + 15horizontal
 * Aerobic Trainings
   - Bike, Run, Swim, Shadow-box
