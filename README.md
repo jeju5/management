@@ -23,17 +23,18 @@
 | SUN  | MON          TUE          | WED          THU          | FRI          SAT         |
 -------------------------------------------------------------------------------------------
 |      | Pull(100)   Abs&Neck      | Push(300)     Abs&Neck    | Aero(3HR)    Aero(3HR)   |
-|      | Curl(100)                 | Band(300)                 |                          |
+|      | Curl(100)                 | IRow(300)                 |                          |
 |      | Aero(1HR)   Aero(1HR)     | Aero(1HR)     Aero(1HR)   |                          |
 -------------------------------------------------------------------------------------------
-* Pull-Curl
+* Pull & Curl
   - Pull ups: 빠른수축-2초이완; 의자 밑에 놓고 보조하면서
   - Dumbbell Curl: 빠른수축-4초이완; 세트간 네거티브친업 0-5개 섞어서
-* Abs& Neck
+* Abs & Neck
   - Abs: T4 = legraise(10)-halfsitup(10)-hollow(10s) x 10
   - Neck: 500 neck moves (200back, 100left, 100right, 100front)
-* Push-Band
+* Push & IRow
   - Push ups: 300 push ups (30 x 10 sets)
+  - Inverted rows: 300 inverted rows (30 x 10 sets)
   - Band works: 300 band pulls (30 x 10 sets); 15 vertical pulls + 15 horizontal pulls
 * BodyWeights
   - Muscle Up
