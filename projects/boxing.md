@@ -62,7 +62,7 @@ jablow
 1: jab bab cro lhook jab
 2: jab bro lupper cro jab
 3: jab bro lhook rbody jab
-4. jab rbody lbody lhook jab
+4. jab rbody lbody lup jab
 
 counters
 1: (slip)cro jab jab
