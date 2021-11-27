@@ -1,4 +1,4 @@
-# 루틴
+# DAY ROUTINE
 ```
    TIME   |  TASK    | NOTES
 ----------------------------------------------------------------------------------------------------------------------
@@ -9,14 +9,14 @@
 ----------------------------------------------------------------------------------------------------------------------
 ```
 
-# 예배
+# WORSHIP
 ```
-찬양: "거룩 거룩 거룩"
-말씀: 읽고, 묵상, 설교듣기
-기도: 기도는 부담없이. 같은 말의 반복은 의미가 없다. 진솔한 고백과 구함.
+찬양: 거룩 거룩 거룩.
+말씀: 읽거나 듣기.
+기도: 말을 많이 하는 것이 최선이 아니다.
 ```
 
-# 운동
+# WORKOUT
 ```
 # Schedule
 -----------------------------------------------------------------------------------------
@@ -41,40 +41,9 @@
 * Aerobic Trainings
   - Bike, Run, Swim, Shadow-box
   - Sprint Interval Training(SIT): warm-up(5-10min) -> (30sec-sprint + 3min30sec-easy) x 5set
-
-# Natural Weight Plan
-  -- 68.0kg -- max (bulk)
-  |  65.5kg  | mid (casual)
-  ---63.0kg -- min (competition)
-  Natural Weight: 아침에 일어나서 식사와 정리후 유지되는 체중 (대략 공복기상 +0.5kg)
-  
-  ref) 
-  - 63.5kg (amateur light welter), 61.2kg (professional light)       
-  - Loma 30day: 65.5kg (vs luke)
-  - Loma 14day: 62.2kg (vs luke), 64.1kg (vs teofimo)
-                              
-# Tips
-- 10k 45분(8.2mph 1hr), 40분(9.3mph 1hr)
-- 10k 기록 * 4.5하면 대략적인 풀코스 완주 기록이 나옴
 ```
 
-# 훈련
-```
-- 영어 훈련
-   - Speech: TED talk (1talk/wk)
-   - Reading: A River Runs Through It
-- 소프트웨어 훈련
-   - Data Structure & Python
-   - Algorithm: Leetcode
-- 기타 훈련
-   - 핑거스타일 1곡 반복
-- 테니스 훈련
-   Program1(2H): 서브300개 (플랫서브 deuceside 100, atside 100)
-   Program2(2H): 벽발리
-   Program3(2H): 스트로크 (buy ball machine)   
-```
-
-# 식사
+# EAT
 ```
 * WEEKLY COOKING (Steamed Broccoli & Tomato Meat Soup)
   - 브로콜리 5lbs를 삶는다
@@ -116,7 +85,36 @@
 * 치즈/우유, 패스트푸드, 인스턴트는 무조건 피한다. 피지막힌 트러블유발
 * 사먹는다면 동양음식 "한국음식, 일본음식, 중국음식, 태국음식", 치폴레
  ```
- 
+
+# Weight
+```
+  -- 68.0kg -- max (bulk)
+  |  65.5kg  | mid (casual)
+  ---63.0kg -- min (competition)
+  * 아침에 일어나서 식사와 정리후 유지되는 체중 (대략 공복기상 +0.5kg)
+  
+  ref) 
+  - 63.5kg (amateur light welter), 61.2kg (professional light)       
+  - Loma 30day: 65.5kg (vs luke)
+  - Loma 14day: 62.2kg (vs luke), 64.1kg (vs teofimo)
+```       
+
+# Other Trainings
+```
+- 영어 훈련
+   - Speech: TED talk (1talk/wk)
+   - Reading: A River Runs Through It
+- 소프트웨어 훈련
+   - Data Structure & Python
+   - Algorithm: Leetcode
+- 기타 훈련
+   - 핑거스타일 1곡 반복
+- 테니스 훈련
+   Program1(2H): 서브300개 (플랫서브 deuceside 100, atside 100)
+   Program2(2H): 벽발리
+   Program3(2H): 스트로크 (buy ball machine)   
+```
+
  # GOALS
 ```
 # Basic Fitness
@@ -141,4 +139,5 @@
 * 일요일은 자유기상 (8AM)
 * 지방은 콜라겐 합성에 방해
 * 카페인은 콜라겐 합성에 방해 (운동에는 좋은 듯)
+
 ```
