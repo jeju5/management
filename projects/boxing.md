@@ -23,25 +23,14 @@
 ```
 
 ## TRAINING
-* 5R rope/ladder
-* 10R combos
-* 5R speed
-
-## WARM-UP
 ```
-- STEPS
+* steps
   - single
   - snatch
   - slip
   - roll
   - slip & roll
-```
-
-## MOVE COMBINATION
-```
-FOOT  : step, pivot, slide, switch
-EVADE : slip, roll, pull
-COVER : block, shoulder, full
+* 12R bags
 ```
 
 ## OFFENSE COMBO
@@ -117,7 +106,14 @@ https://www.youtube.com/watch?v=-RpJMCa4e6M (Vasyl Lomachenko)
     rear-slip lead-roll / cro lead-hook cro sway / cro lead-hook cro jab jab jab
 ```
 
+## Tips
+```
+- 왼쪽으로 돌아나올때 왼손을 뻗어서 상대를 막고 오른손으로 나를 커버
+- 오른쪽으로 돌아나올떄 오른손을 뻗어서 상대를 막고 왼손으로 나를 커버
+```
+
 ## R&D
+```
 * slip
   * lead-slip
     * lead-slip lead-hook
@@ -170,7 +166,4 @@ https://www.youtube.com/watch?v=-RpJMCa4e6M (Vasyl Lomachenko)
      * (rear-pivot) cro lead-hook (lead-roll)
      * (rear-pivot) & rear-hook (rear-roll)
      * (rear-pivot) & rear-body rear-hook (rear-roll)
-  
-
-
-
+```
