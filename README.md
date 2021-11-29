@@ -95,22 +95,6 @@
   - 63.5kg (amateur light welter), 61.2kg (professional light)       
   - Loma 30day: 65.5kg (vs luke)
   - Loma 14day: 62.2kg (vs luke), 64.1kg (vs teofimo)
-```       
-
-# Other Trainings
-```
-- 영어 훈련
-   - Speech: TED talk (1talk/wk)
-   - Reading: A River Runs Through It
-- 소프트웨어 훈련
-   - Data Structure & Python
-   - Algorithm: Leetcode
-- 기타 훈련
-   - 핑거스타일 1곡 반복
-- 테니스 훈련
-   Program1(2H): 서브300개 (플랫서브 deuceside 100, atside 100)
-   Program2(2H): 벽발리
-   Program3(2H): 스트로크 (buy ball machine)   
 ```
 
  # GOALS
