@@ -23,9 +23,8 @@
 | SUN  | MON          TUE        | WED          THU          | FRI          SAT         |
 -----------------------------------------------------------------------------------------
 |      | Pull(100)   Abs         | Push(300)     Abs         | Aero(3HR)    Aero(3HR)   |
-|      | Curl(100)   Neck        | Swing(50)     Neck        |                          |
-|      | Aero(1HR)   Aero(1HR)   | Band(300)     Aero(1HR)   |                          |
-|      |                         | Aero(1HR)                 |                          |
+|      | Curl(100)   Neck        | Band(300)     Neck        |                          |
+|      | Aero(1HR)   Aero(1HR)   | Aero(1HR)     Aero(1HR)   |                          |
 -----------------------------------------------------------------------------------------
 * Monday
   - Pull ups: 빠른수축-2초이완; 의자 밑에 놓고 보조하면서. 수축시 엘보가 앞 옆구리로 가게
@@ -36,7 +35,6 @@
 * Wednesday
   - Do it as a super-set with SBOX
   - Push ups: 300 (30 x 10 sets)
-  - Bar Swing: 50 (5 x 10 sets) 무반동으로. 발을 앞에 대고 시작자세
   - Band pulls: 300 (30 x 10 sets); 15vertical + 15horizontal
 * Aerobic Trainings
   - Bike, Run, Swim, Shadow-box
