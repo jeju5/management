@@ -115,17 +115,29 @@
 
  # GOALS
 ```
-# Basic Fitness
-- JAN 2022 평체 65.5kg 달성
-- FEB 2022 10k test & 10k 목표수립
-- FEB 2022 include planche workouts
-- APR 2022 10k under __min
-- JUN 2022 10k under __min
-- JUL 2022 competitive boxing training start at Gym
-- JUL 2022 buy a tennis ball machine and practice
-
-# English Vocabulary
-- JAN 2022 ~ JUN 2022 해커스 보카, 보카 바이블
+* Dec 2021
+  - 제주도의 푸른밤 핑거스타일
+  - 평체 66.5kg 달성
+* Jan 2022
+  - 평체 65.5kg 달성
+  - 해커스 보카 (1/3)
+* Feb 2022
+  - 10k test & 10k 목표수립
+  - 플란체 트레이닝시작
+  - 해커스 보카 (2/3)
+* Mar 2022
+  - 해커스 보카 (3/3)
+* Apr 2022
+  - 10k under __min
+  - 보카 바이블 (1/3)
+* May 2022
+  - 보카 바이블 (2/3)
+* Jun 2022
+  - 10k under __min
+  - 보카 바이블 (3/3)
+* Jul 2022
+  - competitive boxing training starts at Gym
+  - buy a tennis ball machine and practice (토일: 서브연습, 월화수목금: 스윙연습)
 
 # Data Structures and Algorithms
 - JUL 2022 ~ DEC 2022 기본 DS 학습
