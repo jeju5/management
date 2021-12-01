@@ -95,6 +95,8 @@
   - 63.5kg (amateur light welter), 61.2kg (professional light)       
   - Loma 30day: 65.5kg (vs luke)
   - Loma 14day: 62.2kg (vs luke), 64.1kg (vs teofimo)
+  
+  - Naoya Inoue walks around at 164cm, 62kg (BMI: 23.1)
 ```
 
  # GOALS
