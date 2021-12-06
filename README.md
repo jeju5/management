@@ -28,7 +28,7 @@
 -----------------------------------------------------------------------------------------
 * Monday
   - Pull ups: 빠른수축-2초이완; 의자 밑에 놓고 보조하면서. 수축시 엘보가 앞 옆구리로 가게
-  - Curl: 빠른수축-2초이완; 친업과 덤벨 Mix
+  - Curl: 한 셋트에서 친업으로 최대한 하고 나머지는 덤벨컬
 * Tuesday & Thursday
   - Abs: T4 = legraise(10)-halfsitup(10)-hollow(10s) x 10
   - Neck: 500 neck moves (200back, 100left, 100right, 100front)
