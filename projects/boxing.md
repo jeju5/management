@@ -65,13 +65,13 @@ counters
 1. lslip rroll pull
 2. lslip rslip lroll
 3. lslip pull rslip
-4. lslip pull pull
+4. pull pull lslip
 5. lroll rroll lroll
 
 1. rslip lroll pull
 2. rslip lslip rroll
 3. rslip pull lslip
-4. rslip pull pull
+4. pull pull rslip
 5. rroll lroll rroll
 
 https://www.youtube.com/watch?v=2C1i8XKp-0A (Andy Cruz)
