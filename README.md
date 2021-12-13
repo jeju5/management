@@ -103,7 +103,7 @@
 # Principles
 ```
 대화
-1. "긍정적 이성적 미래적인 내 이야기를 / 낮고 적게하기" (TOPICS & TECHNIQUES)
+1. "긍정적 이성적 미래적인 / 내 이야기를 / 낮고 적게하기" (TOPICS & TECHNIQUES)
 2. "어, 그래, 진짜"를 섞어서         (TOOLS)
 
 ```
