@@ -87,8 +87,8 @@
 
 # Weight
 ```
-  -- 68.0kg -- max (bulk)
-  |  65.5kg  | mid (casual)
+  -- 67.0kg -- max (bulk)
+  |  65.0kg  | mid (casual)
   ---63.0kg -- min (competition)
   * 아침에 일어나서 식사와 정리후 유지되는 체중 (대략 공복기상 +0.5kg)
   
