@@ -169,7 +169,7 @@
 3. 아이디어
 - 레버리지
    - 미국
-      - 버핏지수 TMC/(GDP+Bank)가 100% 이하인 순간부터 2X/3X 레버리지 TQQQ ETF매수를 고려한다. 매수한 ETF는 들고간다. (올인은 하지마라)
+      - 버핏지수 TMC/(GDP+Bank)가 100% 이하인 순간부터 2X 레버리지 QLD ETF매수를 고려한다. 매수한 ETF는 들고간다. (올인은 하지마라)
       - 버핏지수 TMC/(GDP+Bank)가 60% 이하인 순간부터 3X 레버리지 TQQQ ETF매수를 고려한다. 매수한 ETF는 들고간다. (Good Buying Chance)
    - 중국
       - 버핏지수 TMC/(GDP+Bank)가 30% 이하인 순간부터 2X/3X 레버리지 YINN ETF매수를 고려한다. 매수한 ETF는 2년내에 매도한다.
