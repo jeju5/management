@@ -71,9 +71,9 @@
   <오전 165g>
     - 120g (yogurt 150g x 8ct. Triple Zero)
     - 45g (almond 210g = 7줌)
-  <보충1 175g>
+  <보충 175g>
     - 175g (powder 7scoop)
-  <저녁 372g>
+  <식사 372g>
     - 300g (meat 3lbs)
     - 72g (egg 12ct)
   <오후 165g>
