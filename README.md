@@ -114,16 +114,16 @@
   - 평체 65.5kg 달성
   - 해커스 보카 정리
 * Feb 2022
+  - 10k test & 10k 목표수립 (confirm if bike training helped)
   - 제주도의 푸른밤 핑거스타일
   - 해커스 보카 (1/3)
 * Mar 2022
-  - 10k test & 10k 목표수립 (confirm if bike training helped)
   - 행복의 나라로 핑거스타일 (https://www.youtube.com/watch?v=24B9VJ9ot1Y)
   - 해커스 보카 (2/3)
 * Apr 2022
+  - 10k under __min
   - 해커스 보카 (3/3)
 * May 2022
-  - 10k under __min
   - Boxing Gym Starts
   - Tennis Training Starts (with SlingerBag)
   - 보카 바이블 정리
