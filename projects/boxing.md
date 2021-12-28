@@ -110,6 +110,7 @@ https://www.youtube.com/watch?v=-RpJMCa4e6M (Vasyl Lomachenko)
 ```
 - 왼쪽으로 돌아나올때 왼손을 뻗어서 상대를 막고 오른손으로 나를 커버
 - 오른쪽으로 돌아나올떄 오른손을 뻗어서 상대를 막고 왼손으로 나를 커버
+- 잽으로 상대 앞손건드리고 카운터오면 Pull하고 리드훅
 ```
 
 ## R&D
