@@ -108,35 +108,33 @@
 
 ```
 
- # GOALS
+ # 6-MONTHS GOALS
 ```
-* Dec 2021
-  - 평체 66.5kg 달성
-  - 제주도의 푸른밤 핑거스타일
 * Jan 2022
   - 평체 65.5kg 달성
-  - 행복의 나라로 핑거스타일 (https://www.youtube.com/watch?v=24B9VJ9ot1Y)
   - 해커스 보카 (1/3)
 * Feb 2022
-  - 10k test & 10k 목표수립
-  - 플란체 트레이닝시작
+  - 제주도의 푸른밤 핑거스타일
   - 해커스 보카 (2/3)
 * Mar 2022
+  - 10k test & 10k 목표수립 (confirm if bike training helped)
+  - 행복의 나라로 핑거스타일 (https://www.youtube.com/watch?v=24B9VJ9ot1Y)
   - 해커스 보카 (3/3)
 * Apr 2022
-  - 10k under __min
-  - 보카 바이블 (1/3)
+  - 보카 바이블 (1/4)
 * May 2022
-  - 보카 바이블 (2/3)
+  - Boxing Gym Starts
+  - Tennis Training Starts (with SlingerBag)
+  - 보카 바이블 (2/4)
 * Jun 2022
   - 10k under __min
-  - 보카 바이블 (3/3)
-* Jul 2022
-  - competitive boxing training starts at Gym
-  - buy a tennis ball machine and practice (토일: 서브연습, 월화수목금: 스윙연습)
+  - 보카 바이블 (3/4)
 
-# Data Structures and Algorithms
-- JUL 2022 ~ DEC 2022 기본 DS 학습
+
+* Backlog
+  - LeetCode with Python
+  - 10km 40min
+  - 보카 바이블 (4/4)
 ```
 
 # TIPS
