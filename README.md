@@ -121,6 +121,7 @@
   - 행복의 나라로 핑거스타일 (https://www.youtube.com/watch?v=24B9VJ9ot1Y)
   - 해커스 보카 (2/3)
 * Apr 2022
+  - 8th MTS
   - 10k under __min
   - 해커스 보카 (3/3)
 * May 2022
